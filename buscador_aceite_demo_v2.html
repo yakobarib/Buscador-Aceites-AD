@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador de Aceite · Recambios Ibiza × AD Parts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* =============================================================================
+   RECAMBIOS IBIZA × AD PARTS · BUSCADOR DE ACEITE
+   Estética: Moderno automotive premium · Inspiración Tesla/BMW digital
+   ============================================================================= */
+
+:root {
+  /* AD Parts oficial */
+  --ad-red: #E20613;
+  --ad-red-dark: #B8050F;
+  --ad-red-glow: rgba(226, 6, 19, 0.35);
+  --ad-blue: #002D5A;
+  --ad-blue-darker: #001838;
+  --ad-blue-light: #003D7A;
+  /* Recambios Ibiza */
+  --ri-orange: #E8704A;
+  --ri-orange-light: #F08A6A;
+  --ri-blue: #1A3A5C;
+  /* Sistema light */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F4F4F4;
+  --bg-tertiary: #FAFAFA;
+  --bg-elevated: #FFFFFF;
+  --border-subtle: rgba(0, 45, 90, 0.08);
+  --border-strong: rgba(0, 45, 90, 0.16);
+  --text-primary: #001838;
+  --text-secondary: #4A6890;
+  --text-tertiary: #8A9DB3;
+  --shadow-sm: 0 1px 2px rgba(0, 24, 56, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 24, 56, 0.08), 0 1px 3px rgba(0, 24, 56, 0.04);
+  --shadow-lg: 0 12px 40px rgba(0, 24, 56, 0.12), 0 4px 12px rgba(0, 24, 56, 0.06);
+  --shadow-xl: 0 24px 60px rgba(0, 24, 56, 0.16), 0 8px 24px rgba(0, 24, 56, 0.08);
+  --success: #00875A;
+  --success-bg: rgba(0, 135, 90, 0.08);
+  --warning: #C48700;
+  --warning-bg: rgba(196, 135, 0, 0.08);
+  --danger-bg: rgba(226, 6, 19, 0.06);
+  /* Tipografía */
+  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'SF Mono', Menlo, monospace;
+  /* Spacing */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px;
+  --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+  /* Radius */
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px; --r-xl: 20px; --r-2xl: 28px; --r-full: 999px;
+  /* Transitions */
+  --t-fast: 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-base: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-bounce: 480ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #050B14;
+  --bg-secondary: #0A1525;
+  --bg-tertiary: #0F1E33;
+  --bg-elevated: #11223D;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --text-primary: #FFFFFF;
+  --text-secondary: #8DA8C8;
+  --text-tertiary: #5A7090;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.6), 0 8px 24px rgba(0, 0, 0, 0.4);
+  --success-bg: rgba(0, 135, 90, 0.18);
+  --warning-bg: rgba(196, 135, 0, 0.18);
+  --danger-bg: rgba(226, 6, 19, 0.18);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background var(--t-base), color var(--t-base);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-feature-settings: 'ss01' on, 'cv11' on;
+}
+
+/* Atmósfera de fondo (dark mode) */
+body::before {
+  content: '';
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, var(--ad-red-glow) 0%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-slow);
+  z-index: 0;
+}
+[data-theme="dark"] body::before { opacity: 0.5; }
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -300px;
+  left: -200px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0, 61, 122, 0.6) 0%, transparent 70%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-slow);
+  z-index: 0;
+}
+[data-theme="dark"] body::after { opacity: 0.7; }
+
+/* Grid pattern overlay (dark mode) */
+[data-theme="dark"] body {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
+  background-position: -1px -1px;
+}
+
+.app-shell {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ──── HEADER co-branded ──── */
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--s-4) var(--s-8);
+  transition: background var(--t-base), border-color var(--t-base);
+}
+
+[data-theme="dark"] .top-header {
+  background: rgba(5, 11, 20, 0.7);
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-6);
+}
+
+.brand-stack {
+  display: flex;
+  align-items: center;
+  gap: var(--s-5);
+}
+
+.brand-ri {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.ri-mark { width: 120px; height: 40px; flex-shrink: 0; display: flex; align-items: center; padding: 4px 8px; border-radius: 6px; transition: background var(--t-base); }
+.ri-mark svg { width: 100%; height: 100%; }
+.ri-logo-img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+/* En modo oscuro, fondo claro para que el texto azul oscuro del logo se vea bien */
+[data-theme="dark"] .ri-mark {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.brand-ri-text { display: flex; flex-direction: column; line-height: 1; }
+
+.brand-ri-name {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+.brand-ri-sub {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 3px;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--border-strong);
+}
+
+.brand-ad {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.ad-mark { width: 52px; height: 28px; flex-shrink: 0; }
+.ad-logo-svg { width: 100%; height: 100%; display: block; }
+
+/* Letras "ad" adaptan color al tema; puntos rojos siempre fijos */
+.ad-logo-letters { fill: var(--ad-blue); transition: fill var(--t-base); }
+[data-theme="dark"] .ad-logo-letters { fill: #FFFFFF; }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+/* Toggle theme */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+}
+
+.theme-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  transition: all var(--t-base);
+}
+
+.theme-btn.active {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.theme-btn svg { width: 14px; height: 14px; }
+
+/* View switcher */
+.view-switcher {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+}
+
+.view-btn {
+  padding: 7px 14px;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--r-full);
+  transition: all var(--t-base);
+  letter-spacing: -0.005em;
+}
+
+.view-btn.active {
+  background: var(--ad-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 45, 90, 0.25);
+}
+
+[data-theme="dark"] .view-btn.active {
+  background: white;
+  color: var(--ad-blue);
+}
+
+/* ──── MAIN ──── */
+.main-content {
+  flex: 1;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--s-12) var(--s-8);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: var(--s-10);
+  animation: heroIn 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: 6px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--s-5);
+}
+
+.hero-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(0, 135, 90, 0.18);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+.hero-title {
+  font-family: var(--font-sans);
+  font-size: clamp(28px, 4.5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin-bottom: var(--s-4);
+  background: linear-gradient(180deg, var(--text-primary) 0%, var(--text-secondary) 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.hero-title .highlight {
+  background: linear-gradient(135deg, var(--ad-red) 0%, var(--ri-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 580px;
+  margin: 0 auto;
+  letter-spacing: -0.005em;
+}
+
+/* ──── SEARCH BOX ──── */
+.search-container {
+  max-width: 720px;
+  margin: 0 auto var(--s-10);
+  animation: searchIn 900ms cubic-bezier(0.16, 1, 0.3, 1) 100ms backwards;
+}
+
+@keyframes searchIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.search-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-2xl);
+  padding: var(--s-3);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+[data-theme="dark"] .search-card {
+  background: linear-gradient(135deg, rgba(17, 34, 61, 0.9) 0%, rgba(10, 21, 37, 0.9) 100%);
+  backdrop-filter: blur(20px);
+}
+
+.method-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 4px;
+  background: var(--bg-secondary);
+  border-radius: var(--r-xl);
+  margin-bottom: var(--s-3);
+}
+
+.method-tab {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: var(--r-lg);
+  transition: all var(--t-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  letter-spacing: -0.005em;
+  position: relative;
+}
+
+.method-tab svg { width: 14px; height: 14px; }
+
+.method-tab.active {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.method-tab .badge-fase {
+  font-size: 8.5px;
+  font-weight: 700;
+  padding: 2px 6px;
+  background: var(--warning-bg);
+  color: var(--warning);
+  border-radius: var(--r-sm);
+  letter-spacing: 0.06em;
+  margin-left: 4px;
+}
+
+.method-panel { display: none; padding: var(--s-2) var(--s-1) var(--s-1); }
+.method-panel.active { display: block; }
+
+/* Plate input - matrícula española */
+.plate-row { display: flex; gap: var(--s-3); align-items: center; }
+
+.plate-container {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  height: 56px;
+  border: 2.5px solid #1A1A1A;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 2px 8px rgba(0, 24, 56, 0.06);
+  max-width: 360px;
+  transition: all var(--t-base);
+}
+
+.plate-container:focus-within {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0 0 4px rgba(226, 6, 19, 0.15);
+  border-color: var(--ad-red);
+}
+
+.plate-eu {
+  background: linear-gradient(180deg, #1F4FA8 0%, #163F8C 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--s-3);
+  min-width: 38px;
+  gap: 2px;
+}
+
+.plate-stars { font-size: 9px; line-height: 1; letter-spacing: -1px; color: #FFD119; }
+.plate-country { font-size: 14px; font-weight: 800; line-height: 1; }
+
+.plate-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  padding: 0 var(--s-4);
+  color: #1A1A1A;
+  text-transform: uppercase;
+  min-width: 0;
+  outline: none;
+}
+
+.plate-input::placeholder { color: #888; font-weight: 600; }
+
+/* VIN input */
+.vin-row { display: flex; gap: var(--s-3); align-items: center; }
+
+.vin-input {
+  flex: 1;
+  height: 56px;
+  padding: 0 var(--s-5);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
+  outline: none;
+  transition: all var(--t-base);
+}
+
+.vin-input:focus {
+  border-color: var(--ad-red);
+  box-shadow: 0 0 0 4px rgba(226, 6, 19, 0.12);
+  background: var(--bg-elevated);
+}
+
+.vin-input::placeholder { color: var(--text-tertiary); font-weight: 400; }
+
+/* Manual selectors grid */
+.manual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-3);
+  margin-bottom: var(--s-3);
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.field-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.combo { position: relative; }
+
+.combo-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 38px 0 14px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  outline: none;
+  transition: all var(--t-base);
+  box-sizing: border-box;
+}
+
+.combo-input:focus {
+  border-color: var(--ad-red);
+  box-shadow: 0 0 0 3px rgba(226, 6, 19, 0.1);
+  background: var(--bg-elevated);
+}
+
+.combo-input:disabled {
+  background: var(--bg-secondary);
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+  border-color: var(--border-subtle);
+}
+
+.combo-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-tertiary);
+  width: 16px;
+  height: 16px;
+}
+
+.combo-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 30;
+  display: none;
+  padding: 4px;
+}
+
+.combo-dropdown.open { display: block; }
+
+.combo-item {
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: var(--r-sm);
+  color: var(--text-primary);
+  transition: background var(--t-fast);
+}
+
+.combo-item:hover { background: var(--bg-secondary); }
+
+.combo-empty {
+  padding: 14px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+/* Botones */
+.btn-primary {
+  height: 56px;
+  padding: 0 var(--s-6);
+  background: var(--ad-red);
+  color: white;
+  border: none;
+  border-radius: var(--r-lg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--t-base);
+  letter-spacing: -0.005em;
+  box-shadow: 0 4px 14px rgba(226, 6, 19, 0.28), 0 1px 3px rgba(226, 6, 19, 0.18);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: var(--ad-red-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(226, 6, 19, 0.35), 0 2px 6px rgba(226, 6, 19, 0.22);
+}
+
+.btn-primary:active { transform: translateY(0); }
+
+.btn-primary svg { width: 16px; height: 16px; }
+
+.btn-primary.full { width: 100%; }
+
+/* Demo suggestions */
+.demo-hints {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--s-3);
+  padding-left: var(--s-2);
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.demo-hints-label {
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.demo-hint-chip {
+  padding: 4px 10px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.demo-hint-chip:hover {
+  background: var(--bg-elevated);
+  border-color: var(--ad-red);
+  color: var(--ad-red);
+}
+
+/* ──── RESULTS ──── */
+.result-section { animation: resultIn 600ms cubic-bezier(0.16, 1, 0.3, 1); }
+
+@keyframes resultIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Vehicle hero card */
+.vehicle-hero {
+  background: linear-gradient(135deg, var(--ad-blue) 0%, var(--ad-blue-darker) 100%);
+  border-radius: var(--r-xl);
+  padding: var(--s-6) var(--s-8);
+  margin-bottom: var(--s-8);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.vehicle-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(226, 6, 19, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.vehicle-hero-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-6);
+  flex-wrap: wrap;
+}
+
+.vehicle-info-block { flex: 1; min-width: 280px; }
+
+.vehicle-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--r-full);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--s-3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.vehicle-eyebrow svg { width: 12px; height: 12px; }
+
+.vehicle-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: var(--s-2);
+}
+
+.vehicle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-5);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.vehicle-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vehicle-meta-item strong {
+  color: white;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.vehicle-actions {
+  display: flex;
+  gap: var(--s-3);
+  flex-shrink: 0;
+}
+
+.btn-ghost {
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  border-radius: var(--r-md);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--t-base);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.btn-ghost svg { width: 14px; height: 14px; }
+
+/* Section title */
+.section-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--s-5);
+  gap: var(--s-4);
+}
+
+.section-title h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-title-count {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+/* ──── PUBLIC VIEW: accordion fluids ──── */
+.fluids-accordion { display: flex; flex-direction: column; gap: var(--s-2); }
+
+.fluid-item {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  transition: all var(--t-base);
+}
+
+.fluid-item:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.fluid-item.featured {
+  border-color: var(--ad-red);
+  background: linear-gradient(135deg, rgba(226, 6, 19, 0.04) 0%, transparent 60%);
+  box-shadow: 0 4px 16px rgba(226, 6, 19, 0.08);
+}
+
+[data-theme="dark"] .fluid-item.featured {
+  background: linear-gradient(135deg, rgba(226, 6, 19, 0.12) 0%, rgba(17, 34, 61, 0.5) 60%);
+  border-color: rgba(226, 6, 19, 0.4);
+  box-shadow: 0 4px 24px rgba(226, 6, 19, 0.15);
+}
+
+.fluid-item.disabled { opacity: 0.55; }
+
+.fluid-header {
+  padding: var(--s-4) var(--s-5);
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--t-fast);
+}
+
+.fluid-header:hover { background: rgba(0, 24, 56, 0.02); }
+
+[data-theme="dark"] .fluid-header:hover { background: rgba(255, 255, 255, 0.02); }
+
+.fluid-icon-box {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: var(--r-md);
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--t-base);
+}
+
+.fluid-item.featured .fluid-icon-box {
+  background: rgba(226, 6, 19, 0.1);
+}
+
+.fluid-icon-box svg { width: 22px; height: 22px; }
+
+.fluid-info { flex: 1; min-width: 0; }
+
+.fluid-name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.fluid-summary {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.fluid-summary code {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  background: var(--bg-secondary);
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.fluid-status {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  flex-shrink: 0;
+}
+
+.match-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  background: var(--success-bg);
+  color: var(--success);
+  border-radius: var(--r-full);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.match-badge::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+.match-badge.warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.match-badge.warning::before { background: var(--warning); }
+
+.fluid-chev {
+  width: 18px;
+  height: 18px;
+  color: var(--text-tertiary);
+  transition: transform var(--t-base);
+}
+
+.fluid-item.open .fluid-chev { transform: rotate(180deg); }
+
+.fluid-body {
+  display: none;
+  padding: 0 var(--s-5) var(--s-5);
+  animation: bodyIn 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fluid-item.open .fluid-body { display: block; }
+
+@keyframes bodyIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Recommended product card (interior of accordion) */
+.recommended-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  background: linear-gradient(135deg, var(--ad-red) 0%, #C00410 100%);
+  color: white;
+  border-radius: var(--r-full);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--s-3);
+  box-shadow: 0 2px 8px rgba(226, 6, 19, 0.3);
+}
+
+.recommended-pill svg { width: 11px; height: 11px; }
+
+.product-block {
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.product-name {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.product-sub {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  margin-bottom: var(--s-4);
+  font-weight: 500;
+}
+
+.product-sub code {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--ad-red);
+  background: var(--danger-bg);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.specs-grid {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: var(--s-5);
+}
+
+.spec-pill {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 5px 11px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-radius: var(--r-sm);
+  letter-spacing: -0.005em;
+}
+
+.spec-pill.oem {
+  background: var(--ad-blue);
+  color: white;
+}
+
+[data-theme="dark"] .spec-pill.oem {
+  background: var(--ad-blue-light);
+}
+
+.spec-pill code {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* Equivalences */
+.equivs-block {
+  background: var(--bg-tertiary);
+  border-radius: var(--r-md);
+  padding: var(--s-4);
+  border: 1px solid var(--border-subtle);
+}
+
+.equivs-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--s-3);
+  gap: var(--s-3);
+}
+
+.equivs-title {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.equivs-note {
+  font-size: 10.5px;
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.equivs-list { display: flex; flex-direction: column; gap: 6px; }
+
+.equiv-row {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-3);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  transition: all var(--t-fast);
+}
+
+.equiv-row:hover {
+  border-color: var(--border-strong);
+  transform: translateX(2px);
+}
+
+.brand-chip {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 9px;
+  border-radius: var(--r-sm);
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+  min-width: 64px;
+  text-align: center;
+  font-family: var(--font-sans);
+}
+
+.brand-chip.b-castrol { background: #E8F4F8; color: #00833E; }
+.brand-chip.b-repsol { background: #FFF1ED; color: #FF6900; }
+.brand-chip.b-shell { background: #FFFBEB; color: #C99A06; }
+.brand-chip.b-eni { background: #FFF0E5; color: #FFAB00; }
+.brand-chip.b-febi { background: #EAF3FB; color: #0078D4; }
+
+[data-theme="dark"] .brand-chip.b-castrol { background: rgba(0, 131, 62, 0.18); color: #4FCC8A; }
+[data-theme="dark"] .brand-chip.b-repsol { background: rgba(255, 105, 0, 0.18); color: #FFA85C; }
+[data-theme="dark"] .brand-chip.b-shell { background: rgba(201, 154, 6, 0.18); color: #FFD158; }
+[data-theme="dark"] .brand-chip.b-eni { background: rgba(255, 171, 0, 0.18); color: #FFCC66; }
+[data-theme="dark"] .brand-chip.b-febi { background: rgba(0, 120, 212, 0.18); color: #5AABE0; }
+
+.equiv-text { flex: 1; min-width: 0; }
+
+.equiv-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.equiv-ref {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.equiv-score {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
+  flex-shrink: 0;
+  letter-spacing: -0.01em;
+}
+
+.equiv-score.perfect { background: var(--success-bg); color: var(--success); }
+.equiv-score.partial { background: var(--warning-bg); color: var(--warning); }
+
+/* Alert (no aplica) */
+.alert-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+  padding: var(--s-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--r-md);
+  border-left: 3px solid var(--text-tertiary);
+}
+
+.alert-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.alert-content { flex: 1; }
+
+.alert-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.alert-msg {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* CTAs final */
+.cta-row {
+  display: flex;
+  gap: var(--s-3);
+  margin-top: var(--s-8);
+  padding-top: var(--s-8);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.btn-secondary {
+  flex: 1;
+  height: 52px;
+  padding: 0 var(--s-5);
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--r-lg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--t-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: -0.005em;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-secondary);
+  border-color: var(--text-secondary);
+}
+
+.btn-secondary svg { width: 16px; height: 16px; }
+
+.btn-primary.full-cta {
+  flex: 1;
+  height: 52px;
+}
+
+
+/* ──── INTERNAL VIEW: cards grid ──── */
+.fluids-grid-internal {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--s-3);
+}
+
+.fluid-card {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  padding: var(--s-5);
+  transition: all var(--t-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.fluid-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.fluid-card.featured {
+  border-color: var(--ad-red);
+  background: linear-gradient(135deg, rgba(226, 6, 19, 0.04) 0%, transparent 60%);
+}
+
+[data-theme="dark"] .fluid-card.featured {
+  background: linear-gradient(135deg, rgba(226, 6, 19, 0.12) 0%, rgba(17, 34, 61, 0.5) 60%);
+  border-color: rgba(226, 6, 19, 0.4);
+}
+
+.fluid-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--ad-red);
+}
+
+.fluid-card.disabled-card { opacity: 0.5; }
+
+.fluid-card-head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
+  padding-bottom: var(--s-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.fluid-card-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: var(--r-sm);
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fluid-card.featured .fluid-card-icon { background: rgba(226, 6, 19, 0.1); }
+
+.fluid-card-icon svg { width: 18px; height: 18px; }
+
+.fluid-card-title-block { flex: 1; }
+
+.fluid-card-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+
+.fluid-card-match {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--success);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fluid-card-match::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--success);
+}
+
+.card-prod-name {
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  line-height: 1.25;
+}
+
+.card-prod-ref {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ad-red);
+  background: var(--danger-bg);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: var(--s-3);
+}
+
+.card-specs-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--s-4);
+}
+
+.card-spec {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 3px 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  letter-spacing: -0.01em;
+}
+
+.card-spec.oem-spec {
+  background: var(--ad-blue);
+  color: white;
+}
+
+[data-theme="dark"] .card-spec.oem-spec { background: var(--ad-blue-light); }
+
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--s-3);
+  padding: var(--s-3);
+  background: var(--bg-tertiary);
+  border-radius: var(--r-sm);
+  margin-bottom: var(--s-3);
+}
+
+.card-stat { text-align: center; }
+
+.card-stat-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: 2px;
+}
+
+.card-stat-value {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.equivs-toggle-btn {
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: var(--r-sm);
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all var(--t-fast);
+  letter-spacing: -0.005em;
+}
+
+.equivs-toggle-btn:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.equivs-toggle-btn svg { width: 12px; height: 12px; transition: transform var(--t-base); }
+
+.equivs-toggle-btn.open svg { transform: rotate(180deg); }
+
+.equivs-list-card {
+  display: none;
+  margin-top: var(--s-3);
+  flex-direction: column;
+  gap: 4px;
+}
+
+.equivs-list-card.open { display: flex; }
+
+.equiv-row-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  background: var(--bg-tertiary);
+  border-radius: var(--r-sm);
+}
+
+.equiv-row-card .brand-chip { min-width: 56px; font-size: 9.5px; padding: 3px 7px; }
+
+.equiv-row-card .equiv-text-card {
+  flex: 1;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.equiv-row-card .equiv-ref-card {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+}
+
+/* Disabled fluid card content */
+.disabled-content {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  font-style: italic;
+  text-align: center;
+  padding: var(--s-3) 0;
+  line-height: 1.5;
+}
+
+/* Internal actions bar */
+.internal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-8);
+  padding-top: var(--s-6);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.action-btn {
+  padding: 9px 14px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  border-radius: var(--r-md);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--t-base);
+  letter-spacing: -0.005em;
+}
+
+.action-btn:hover {
+  background: var(--bg-secondary);
+  border-color: var(--border-strong);
+}
+
+.action-btn.primary {
+  background: var(--ad-red);
+  color: white;
+  border-color: var(--ad-red);
+}
+
+.action-btn.primary:hover {
+  background: var(--ad-red-dark);
+  border-color: var(--ad-red-dark);
+}
+
+.action-btn svg { width: 13px; height: 13px; }
+
+/* Recents */
+.recents-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--s-4);
+  padding-left: var(--s-2);
+}
+
+.recents-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-right: 4px;
+}
+
+.recent-chip {
+  padding: 5px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.recent-chip:hover {
+  background: var(--bg-elevated);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+/* States: loading, error, empty */
+.state-block {
+  text-align: center;
+  padding: var(--s-12) var(--s-6);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-xl);
+  animation: resultIn 400ms ease-out;
+}
+
+.state-icon-wrap {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--s-4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-icon-wrap.error { background: var(--danger-bg); color: var(--ad-red); }
+.state-icon-wrap.empty { background: var(--bg-secondary); color: var(--text-secondary); }
+.state-icon-wrap.warn { background: var(--warning-bg); color: var(--warning); }
+
+.state-icon-wrap svg { width: 28px; height: 28px; }
+
+.state-title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.state-msg {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.loading-block {
+  text-align: center;
+  padding: var(--s-12);
+}
+
+.loader-ring {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto var(--s-4);
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--ad-red);
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loader-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Status footer */
+.demo-footer {
+  text-align: center;
+  padding: var(--s-8) var(--s-6);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+.demo-footer strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.demo-footer code {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .main-content { padding: var(--s-6) var(--s-4); }
+  .header-inner { gap: var(--s-3); flex-wrap: wrap; }
+  .brand-stack { gap: var(--s-3); }
+  .brand-ri-sub { display: none; }
+  .vehicle-hero { padding: var(--s-5); }
+  .vehicle-hero-inner { gap: var(--s-4); }
+  .vehicle-actions { width: 100%; }
+  .vehicle-actions .btn-ghost { flex: 1; justify-content: center; }
+  .method-tab { font-size: 11px; padding: 8px 10px; }
+  .method-tab .badge-fase { display: none; }
+  .plate-row { flex-direction: column; align-items: stretch; }
+  .vin-row { flex-direction: column; align-items: stretch; }
+  .manual-grid { grid-template-columns: 1fr; }
+  .plate-input { font-size: 20px; }
+  .hero-title { font-size: 26px; white-space: normal; }
+  .fluids-grid-internal { grid-template-columns: 1fr; }
+  .cta-row { flex-direction: column; }
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="app-shell">
+
+<!-- ═══════════ HEADER co-branded ═══════════ -->
+<header class="top-header">
+  <div class="header-inner">
+
+    <div class="brand-stack">
+      <!-- Recambios Ibiza (empresa principal) -->
+      <div class="brand-ri">
+        <div class="ri-mark">
+          <img src="data:image/webp;base64,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" alt="Recambios Ibiza" class="ri-logo-img">
+        </div>
+        <div class="brand-ri-text">
+          <div class="brand-ri-sub">Buscador de aceite</div>
+        </div>
+      </div>
+
+      <div class="brand-divider"></div>
+
+      <!-- AD Parts (marca del grupo) -->
+      <div class="brand-ad">
+        <div class="ad-mark">
+          <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" class="ad-logo-svg">
+            <path class="ad-logo-letters" d="M790.2,901.5L770.4,847c-55.7,66.3-139.2,108.4-232.5,108.4c-167.7,0-303.7-135.9-303.7-303.6c0-167.7,135.9-303.7,303.7-303.7c131.9,0,244.1,84.1,286,201.6l128,351.7H790.2z M537.8,803.7c83.9,0,151.8-68,151.8-151.8c0-83.8-68-151.8-151.8-151.8C454,500,386,568,386,651.8C386,735.7,454,803.7,537.8,803.7z"/>
+            <path class="ad-logo-letters" d="M1231.2,275.6l-417.5,0.1L758,124.3l418.1-0.3L1231.2,275.6z M1558.2,547.1c-2.1-5.8-4.3-11.4-6.7-17l-149.5-405.8h-161.3l83.1,225.7c-16.8-2.9-34-4.4-51.6-4.4c-167.7,0-303.7,135.9-303.7,303.7c0,167.7,135.9,303.6,303.7,303.6c93.3,0,176.8-42.2,232.5-108.4l19.8,54.5l161.7,0L1558.2,547.1z M1120.3,649.2c0-83.8,68-151.8,151.8-151.8c83.9,0,151.8,68,151.8,151.8c0,83.9-68,151.8-151.8,151.8C1188.3,801,1120.3,733.1,1120.3,649.2z"/>
+            <ellipse transform="matrix(0.9736 -0.2284 0.2284 0.9736 -134.9149 140.0963)" fill="#E63312" cx="537.8" cy="652.9" rx="151.8" ry="151.8"/>
+            <path fill="#E63312" d="M1272.1,802.1c83.9,0,151.8-68,151.8-151.8c0-83.8-68-151.8-151.8-151.8c-83.8,0-151.8,68-151.8,151.8C1120.3,734.2,1188.3,802.1,1272.1,802.1z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <!-- View toggle (pública / interna) -->
+      <div class="view-switcher">
+        <button class="view-btn active" data-view="public" onclick="setView('public')">
+          Cliente
+        </button>
+        <button class="view-btn" data-view="internal" onclick="setView('internal')">
+          Interno
+        </button>
+      </div>
+
+      <!-- Theme toggle (light / dark) -->
+      <div class="theme-toggle" role="group" aria-label="Tema">
+        <button class="theme-btn active" data-theme-mode="light" onclick="setTheme('light')" aria-label="Tema claro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="theme-btn" data-theme-mode="dark" onclick="setTheme('dark')" aria-label="Tema oscuro">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ MAIN ═══════════ -->
+<main class="main-content">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      <span>Sistema activo · Base de datos sincronizada</span>
+    </div>
+    <h1 class="hero-title">ENCUENTRA EL ACEITE <span class="highlight">RECOMENDADO</span></h1>
+    <p class="hero-sub">Identifica el vehículo por matrícula, número de bastidor o marca y modelo. Obtén la recomendación oficial AD Parts y todas sus equivalencias.</p>
+  </section>
+
+  <!-- Search -->
+  <section class="search-container">
+    <div class="search-card">
+
+      <!-- Tabs de método -->
+      <div class="method-tabs">
+        <button class="method-tab" onclick="setMethod('plate')" data-method="plate">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="6" width="18" height="12" rx="2"/>
+            <path d="M7 10h2M7 14h2M13 10h4M13 14h4"/>
+          </svg>
+          Por matrícula
+          <span class="badge-fase">FASE 2</span>
+        </button>
+        <button class="method-tab active" onclick="setMethod('vin')" data-method="vin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 7h16M4 12h16M4 17h10"/>
+          </svg>
+          Por VIN
+        </button>
+        <button class="method-tab" onclick="setMethod('manual')" data-method="manual">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 5h13l5 6h-5v9H3z"/>
+            <circle cx="7" cy="17" r="2"/>
+            <circle cx="17" cy="17" r="2"/>
+          </svg>
+          Marca y modelo
+        </button>
+      </div>
+
+      <!-- Panel: matrícula -->
+      <div class="method-panel" id="panel-plate">
+        <div class="plate-row">
+          <div class="plate-container">
+            <div class="plate-eu">
+              <div class="plate-stars">★ ★ ★</div>
+              <div class="plate-country">E</div>
+              <div class="plate-stars">★ ★ ★</div>
+            </div>
+            <input class="plate-input" id="input-plate" placeholder="0000 BBB" maxlength="8" autocomplete="off">
+          </div>
+          <button class="btn-primary" onclick="searchByPlate()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+            Buscar
+          </button>
+        </div>
+        <div class="demo-hints">
+          <span class="demo-hints-label">Prueba:</span>
+          <span class="demo-hint-chip" onclick="fillPlate('0000BBB')">0000BBB</span>
+          <span class="demo-hint-chip" onclick="fillPlate('1234FGH')">1234FGH</span>
+        </div>
+      </div>
+
+      <!-- Panel: VIN -->
+      <div class="method-panel active" id="panel-vin">
+        <div class="vin-row">
+          <input class="vin-input" id="input-vin" placeholder="WVWZZZ1KZAW123456" maxlength="17" autocomplete="off">
+          <button class="btn-primary" onclick="searchByVin()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+            Buscar
+          </button>
+        </div>
+        <div class="demo-hints">
+          <span class="demo-hints-label">Prueba:</span>
+          <span class="demo-hint-chip" onclick="fillVin('WVWZZZ1KZAW123456')">Golf VI · WVWZZZ1KZAW123456</span>
+          <span class="demo-hint-chip" onclick="fillVin('WVWZZZ6RZHY654321')">Polo V · WVWZZZ6RZHY654321</span>
+          <span class="demo-hint-chip" onclick="fillVin('XXXX')">VIN inválido</span>
+        </div>
+      </div>
+
+      <!-- Panel: manual -->
+      <div class="method-panel" id="panel-manual">
+        <div class="manual-grid">
+          <div class="field">
+            <label class="field-label">Marca</label>
+            <div class="combo">
+              <input class="combo-input" placeholder="Selecciona…" data-level="0" autocomplete="off">
+              <svg class="combo-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <div class="combo-dropdown"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label">Modelo</label>
+            <div class="combo">
+              <input class="combo-input" placeholder="Selecciona marca primero" data-level="1" disabled autocomplete="off">
+              <svg class="combo-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <div class="combo-dropdown"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label">Año</label>
+            <div class="combo">
+              <input class="combo-input" placeholder="Selecciona modelo" data-level="2" disabled autocomplete="off">
+              <svg class="combo-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <div class="combo-dropdown"></div>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label">Motorización</label>
+            <div class="combo">
+              <input class="combo-input" placeholder="Selecciona año" data-level="3" disabled autocomplete="off">
+              <svg class="combo-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+              <div class="combo-dropdown"></div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-primary full" onclick="searchByManual()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          Buscar aceite recomendado
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Recents (solo vista interna) -->
+    <div class="recents-bar" id="recents-bar" style="display:none">
+      <span class="recents-label">Recientes:</span>
+      <span class="recent-chip" onclick="loadDemo('golf')">VW Golf VI · 2.0 TDI 140 CV</span>
+      <span class="recent-chip" onclick="loadDemo('polo')">VW Polo V · 1.0 TSI 95 CV</span>
+      <span class="recent-chip">Renault Clio IV · 1.5 dCi</span>
+      <span class="recent-chip">BMW Serie 3 · 320d</span>
+    </div>
+  </section>
+
+  <!-- Results placeholder -->
+  <section id="results-section"></section>
+
+</main>
+
+<footer class="demo-footer">
+  <code>DEMO</code> &nbsp;·&nbsp; Crafted by <strong>Yakoba Moreno</strong>
+</footer>
+
+</div>
+
+
+<script>
+'use strict';
+
+// ═══════════════════════════════════════════════════════════════════════
+// DATOS DEL SEED (los mismos que en PostgreSQL)
+// ═══════════════════════════════════════════════════════════════════════
+
+const VEHICLES_DB = {
+  golf: {
+    vin: 'WVWZZZ1KZAW123456',
+    plate: '0000BBB',
+    name: 'Volkswagen Golf VI 2.0 TDI 140 CV',
+    sub: { year: 2010, engine: 'CBAB', trans: 'Manual 6v', emissions: 'Euro 5' },
+    fluids: [
+      { type: 'engine_oil', label: 'Aceite de motor', icon: 'motor', featured: true,
+        req: { sae: '5W-30', acea: 'C3', oem: ['VW 504.00', 'VW 507.00'], capacity: '4.3 L', interval: '30.000 km / 24m' },
+        rec: { brand: 'AD Parts', sku: 'ADP67005', name: 'AD SCA 5W-30', line: 'Vehículo Ligero',
+               full_name: 'AD SCB 5W-30 · 5 litros' },
+        match: 'perfect',
+        equivs: [
+          { brand: 'Repsol',  tag: 'b-repsol',  sku: 'REP135X51',   name: 'Repsol Elite Long Life 50700/50400 5W-30', score: 1.00 },
+          { brand: 'Castrol', tag: 'b-castrol', sku: 'CAT15F624',   name: 'Castrol EDGE 5W-30 LL',                    score: 1.00 },
+          { brand: 'Shell',   tag: 'b-shell',   sku: 'SHE550046303',name: 'Shell Helix Ultra Professional AV-L 5W-30',score: 1.00 },
+          { brand: 'ENI',     tag: 'b-eni',     sku: 'ENI102595',   name: 'ENI i-Sint Tech P 5W-30',                  score: 1.00 },
+          { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB32946',    name: 'Febi Bilstein 32946 LongLifePlus 5W-30',   score: 1.00 }
+        ]},
+      { type: 'gear_oil', label: 'Caja de cambios', icon: 'gear', featured: false,
+        req: { sae: '75W-80', api: 'GL-4', oem: ['VW G 052 171'], capacity: '2.3 L', interval: 'De por vida' },
+        rec: { brand: 'AD Parts', sku: 'ADP91005', name: 'AD GTM 75W-80', line: 'Transmisiones' },
+        match: 'perfect',
+        equivs: [
+          { brand: 'Castrol', tag: 'b-castrol', sku: 'CAT15D7B2',   name: 'Castrol Syntrans FE 75W-80',         score: 1.00 },
+          { brand: 'Repsol',  tag: 'b-repsol',  sku: 'REP024R55',   name: 'Repsol Cartago Cajas FE 75W-80',     score: 1.00 },
+          { brand: 'Shell',   tag: 'b-shell',   sku: 'SHE550027966',name: 'Shell Spirax S6 GME 75W-80',         score: 1.00 },
+          { brand: 'ENI',     tag: 'b-eni',     sku: 'ENI100428',   name: 'ENI Rotra FE 75W-80',                score: 1.00 }
+        ]},
+      { type: 'transfer_oil', label: 'Diferencial / Eje', icon: 'diff', applies: false,
+        reason: 'Tracción delantera sin diferencial independiente. La transmisión utiliza el aceite de la caja de cambios.' },
+      { type: 'steering_fluid', label: 'Dirección asistida', icon: 'steer', applies: false,
+        reason: 'Dirección asistida eléctrica (EPS). Este sistema no utiliza fluido hidráulico.' },
+      { type: 'brake_fluid', label: 'Líquido de frenos', icon: 'brake', featured: false,
+        req: { oem: ['DOT 4', 'ISO 4925'], capacity: '1.0 L', interval: 'Cada 24 meses' },
+        rec: { brand: 'AD Parts', sku: 'ADP70401', name: 'AD BRK DOT 4', line: 'Frenos' },
+        match: 'perfect',
+        equivs: [
+          { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB26749',    name: 'Febi Bilstein 26749 DOT 4',  score: 1.00 },
+          { brand: 'Repsol',  tag: 'b-repsol',  sku: 'REP701B96',   name: 'Repsol Brake Fluid DOT 4',   score: 1.00 },
+          { brand: 'Castrol', tag: 'b-castrol', sku: 'CAT15036E',   name: 'Castrol Brake Fluid DOT 4',  score: 1.00 },
+          { brand: 'Shell',   tag: 'b-shell',   sku: 'SHE550027148',name: 'Shell Donax YB DOT 4',       score: 1.00 }
+        ]},
+      { type: 'coolant', label: 'Refrigerante', icon: 'coolant', featured: false,
+        req: { oem: ['VW TL 774-G'], type_lbl: 'G12++', capacity: '7.5 L', interval: 'Long Life' },
+        rec: { brand: 'AD Parts', sku: 'ADP60125', name: 'AD COOL G12++', line: 'Refrigerantes' },
+        match: 'perfect',
+        equivs: [
+          { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB172000',  name: 'Febi Bilstein 172000 G12++',                  score: 1.00 },
+          { brand: 'Repsol',  tag: 'b-repsol',  sku: 'REP701U58',  name: 'Repsol Anticongelante Premium G12++',          score: 1.00 },
+          { brand: 'Castrol', tag: 'b-castrol', sku: 'CAT15B1E2',  name: 'Castrol Radicool SF Premium',                  score: 1.00 },
+          { brand: 'Shell',   tag: 'b-shell',   sku: 'SHE550035794',name: 'Shell Premium Antifreeze 778',                score: 1.00 }
+        ]},
+      { type: 'adblue', label: 'AdBlue', icon: 'adblue', applies: false,
+        reason: 'Motor 2.0 TDI Euro 5 (2010) sin sistema SCR. Este vehículo no utiliza AdBlue.' }
+    ]
+  },
+
+  polo: {
+    vin: 'WVWZZZ6RZHY654321',
+    plate: null,
+    name: 'Volkswagen Polo V 1.0 TSI 95 CV',
+    sub: { year: 2014, engine: 'CHZB', trans: 'Manual 5v', emissions: 'Euro 6' },
+    fluids: [
+      { type: 'engine_oil', label: 'Aceite de motor', icon: 'motor', featured: true,
+        req: { sae: '0W-20', acea: 'C5', oem: ['VW 508.00', 'VW 509.00'], capacity: '3.8 L', interval: '30.000 km / 24m' },
+        rec: { brand: 'AD Parts', sku: 'ADP67005', name: 'AD SCA 0W-20', line: 'Vehículo Ligero' },
+        match: 'perfect',
+        equivs: [
+          { brand: 'Repsol',  tag: 'b-repsol',  sku: 'REP024Y58',   name: 'Repsol Elite Long Life 50800 0W-20', score: 1.00 },
+          { brand: 'Castrol', tag: 'b-castrol', sku: 'CAT15F7CE',   name: 'Castrol EDGE 0W-20 LL IV',           score: 1.00 },
+          { brand: 'Shell',   tag: 'b-shell',   sku: 'SHE550046321',name: 'Shell Helix Ultra Pro AV-L 0W-20',   score: 1.00 },
+          { brand: 'ENI',     tag: 'b-eni',     sku: 'ENI103420',   name: 'ENI i-Sint Tech R 0W-20',            score: 1.00 },
+          { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB173140',   name: 'Febi Bilstein 173140 LL V 0W-20',    score: 1.00 }
+        ]},
+      { type: 'transfer_oil', label: 'Diferencial / Eje', icon: 'diff', applies: false,
+        reason: 'Tracción delantera sin diferencial independiente.' },
+      { type: 'steering_fluid', label: 'Dirección asistida', icon: 'steer', applies: false,
+        reason: 'Dirección asistida eléctrica (EPS).' },
+      { type: 'adblue', label: 'AdBlue', icon: 'adblue', applies: false,
+        reason: 'Motor TSI gasolina · No utiliza AdBlue.' }
+    ]
+  }
+};
+
+// Catálogo manual (para autocompletado)
+const TREE = {
+  'Volkswagen': {
+    'Golf VI':  { '2008-2013': ['1.4 TSI 122 CV (CAXA)', '1.6 TDI 105 CV (CAYC)', '2.0 TDI 140 CV (CBAB)'] },
+    'Polo V':   { '2014-2017': ['1.0 TSI 95 CV (CHZB)', '1.2 TSI 90 CV (CJZC)'] },
+    'Golf VII': { '2012-2020': ['1.0 TSI 115 CV', '2.0 TDI 150 CV'] }
+  },
+  'Renault': { 'Clio IV': { '2012-2019': ['0.9 TCe 90 CV', '1.5 dCi 90 CV'] } },
+  'BMW':     { 'Serie 3': { '2012-2019': ['320d 184 CV', '320i 184 CV'] } },
+  'Seat':    { 'León III':{ '2012-2020': ['1.4 TSI 125 CV', '2.0 TDI 150 CV'] } },
+  'Peugeot': { '308':     { '2013-2021': ['1.2 PureTech 130 CV', '1.6 BlueHDi 120 CV'] } },
+  'Audi':    { 'A3':      { '2012-2020': ['1.6 TDI 110 CV', '2.0 TDI 150 CV'] } }
+};
+
+// SVG icons de fluidos
+const FLUID_ICONS = {
+  motor:   '<svg viewBox="0 0 24 24" fill="none" stroke="#E20613" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9h2l1-2h4l1 2h2v6h-2l-1 2H8l-1-2H5z"/><line x1="14" y1="11" x2="20" y2="11"/><line x1="14" y1="13" x2="20" y2="13"/><line x1="20" y1="9" x2="20" y2="15"/></svg>',
+  gear:    '<svg viewBox="0 0 24 24" fill="none" stroke="#7E57C2" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><line x1="7" y1="9" x2="7" y2="14"/><line x1="17" y1="9" x2="17" y2="14"/><line x1="7" y1="14" x2="17" y2="14"/><line x1="12" y1="14" x2="12" y2="15"/></svg>',
+  diff:    '<svg viewBox="0 0 24 24" fill="none" stroke="#00875A" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>',
+  steer:   '<svg viewBox="0 0 24 24" fill="none" stroke="#1A73E8" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="14" x2="12" y2="21"/><line x1="14" y1="12" x2="21" y2="12"/><line x1="10" y1="12" x2="3" y2="12"/></svg>',
+  brake:   '<svg viewBox="0 0 24 24" fill="none" stroke="#D32F2F" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>',
+  coolant: '<svg viewBox="0 0 24 24" fill="none" stroke="#0288D1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l-4 7a4.5 4.5 0 1 0 8 0z"/></svg>',
+  adblue:  '<svg viewBox="0 0 24 24" fill="none" stroke="#F57C00" stroke-width="1.8" stroke-linecap="round"><rect x="6" y="6" width="12" height="14" rx="2"/><path d="M9 6V4a3 3 0 0 1 6 0v2"/><line x1="9" y1="12" x2="15" y2="12"/></svg>'
+};
+
+// ═══════════════════════════════════════════════════════════════════════
+// THEME & VIEW
+// ═══════════════════════════════════════════════════════════════════════
+
+let currentView = 'public';
+let currentTheme = 'light';
+let currentVehicle = null;
+
+function setTheme(theme) {
+  currentTheme = theme;
+  document.documentElement.setAttribute('data-theme', theme);
+  document.querySelectorAll('.theme-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.themeMode === theme);
+  });
+}
+
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll('.view-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.view === view);
+  });
+  document.getElementById('recents-bar').style.display = view === 'internal' ? 'flex' : 'none';
+  if (currentVehicle) renderResult(currentVehicle);
+}
+
+function setMethod(method) {
+  document.querySelectorAll('.method-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.method === method);
+  });
+  document.querySelectorAll('.method-panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'panel-' + method);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// SEARCH HANDLERS
+// ═══════════════════════════════════════════════════════════════════════
+
+function normalizePlate(p) { return (p || '').replace(/[\s\-\.]/g, '').toUpperCase(); }
+
+function fillPlate(p) { document.getElementById('input-plate').value = p; searchByPlate(); }
+function fillVin(v) { document.getElementById('input-vin').value = v; searchByVin(); }
+function loadDemo(key) { renderResult(VEHICLES_DB[key]); }
+
+function searchByPlate() {
+  const raw = document.getElementById('input-plate').value;
+  const plate = normalizePlate(raw);
+  if (!plate) return;
+
+  // Validar formato
+  if (!/^[0-9]{4}[BCDFGHJKLMNPRSTVWXYZ]{3}$/.test(plate) && !/^[A-Z]{1,2}[0-9]{4}[A-Z]{1,2}$/.test(plate)) {
+    showState('error', 'Formato de matrícula incorrecto',
+              'La matrícula debe seguir el formato español: 4 dígitos + 3 letras (sin vocales, Ñ ni Q). Ejemplo: 0000BBB.');
+    return;
+  }
+
+  showLoading('Consultando proveedor DGT…');
+  setTimeout(() => {
+    // Buscar el vehículo
+    let found = null;
+    for (const key in VEHICLES_DB) {
+      if (VEHICLES_DB[key].plate === plate) { found = VEHICLES_DB[key]; break; }
+    }
+    if (found) {
+      renderResult(found);
+    } else {
+      showState('empty', 'Matrícula no encontrada',
+                'No tenemos esa matrícula en nuestra base de datos. En producción se consultará automáticamente al proveedor DGT (Fase 2). Mientras tanto, prueba la búsqueda por VIN o por marca y modelo.');
+    }
+  }, 800);
+}
+
+function searchByVin() {
+  const vin = (document.getElementById('input-vin').value || '').toUpperCase().trim();
+  if (!vin) return;
+  if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) {
+    showState('error', 'VIN no válido',
+              'El VIN debe tener exactamente 17 caracteres alfanuméricos. No se permiten las letras I, O ni Q.');
+    return;
+  }
+  showLoading('Consultando vehículo…');
+  setTimeout(() => {
+    let found = null;
+    for (const key in VEHICLES_DB) {
+      if (VEHICLES_DB[key].vin === vin) { found = VEHICLES_DB[key]; break; }
+    }
+    if (found) renderResult(found);
+    else showState('empty', 'Vehículo no encontrado',
+                   'Este VIN no figura en nuestra base de datos. En producción se consultará a TecDoc automáticamente. Pruebas válidas: WVWZZZ1KZAW123456 o WVWZZZ6RZHY654321.');
+  }, 700);
+}
+
+function searchByManual() {
+  const inputs = document.querySelectorAll('.combo-input');
+  const v = Array.from(inputs).map(i => i.value);
+  if (v.some(x => !x)) {
+    showState('warn', 'Faltan datos', 'Selecciona los 4 campos: marca, modelo, año y motorización.');
+    return;
+  }
+  showLoading('Buscando…');
+  setTimeout(() => {
+    const golfMatch = v[0] === 'Volkswagen' && v[1] === 'Golf VI' && v[3].includes('CBAB');
+    const poloMatch = v[0] === 'Volkswagen' && v[1] === 'Polo V' && v[3].includes('CHZB');
+    if (golfMatch) renderResult(VEHICLES_DB.golf);
+    else if (poloMatch) renderResult(VEHICLES_DB.polo);
+    else showState('empty', 'Combinación no encontrada',
+                   'En la base de datos de prueba solo están cargados el Golf VI 2.0 TDI (CBAB) y el Polo V 1.0 TSI (CHZB). En producción, TecDoc cubrirá todas las combinaciones.');
+  }, 600);
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// RENDER STATES
+// ═══════════════════════════════════════════════════════════════════════
+
+function showLoading(text) {
+  document.getElementById('results-section').innerHTML =
+    `<div class="loading-block"><div class="loader-ring"></div><p class="loader-text">${text}</p></div>`;
+}
+
+function showState(kind, title, msg) {
+  const icons = {
+    error: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
+    empty: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+    warn:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>'
+  };
+  document.getElementById('results-section').innerHTML = `
+    <div class="state-block">
+      <div class="state-icon-wrap ${kind}">${icons[kind]}</div>
+      <h2 class="state-title">${title}</h2>
+      <p class="state-msg">${msg}</p>
+    </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// RENDER VEHICLE RESULT
+// ═══════════════════════════════════════════════════════════════════════
+
+function renderResult(vehicle) {
+  currentVehicle = vehicle;
+  const target = document.getElementById('results-section');
+  // NOTA: las funciones renderPublicView/renderInternalView se mantienen con sus
+  // nombres originales por simplicidad, pero el mapeo está intercambiado:
+  //   - Vista CLIENTE   → renderInternalView (rejilla de tarjetas, más visual)
+  //   - Vista INTERNO   → renderPublicView   (acordeón limpio, más profesional)
+  target.innerHTML = renderVehicleHero(vehicle) + (currentView === 'public' ? renderInternalView(vehicle) : renderPublicView(vehicle));
+}
+
+function renderVehicleHero(v) {
+  return `
+    <div class="vehicle-hero">
+      <div class="vehicle-hero-inner">
+        <div class="vehicle-info-block">
+          <div class="vehicle-eyebrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Vehículo identificado
+          </div>
+          <h2 class="vehicle-name">${v.name}</h2>
+          <div class="vehicle-meta">
+            <span class="vehicle-meta-item">Año <strong>${v.sub.year}</strong></span>
+            <span class="vehicle-meta-item">Motor <strong>${v.sub.engine}</strong></span>
+            <span class="vehicle-meta-item">${v.sub.trans}</span>
+            <span class="vehicle-meta-item">${v.sub.emissions}</span>
+          </div>
+        </div>
+        <div class="vehicle-actions">
+          <button class="btn-ghost" onclick="document.getElementById('results-section').innerHTML=''; currentVehicle=null;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            Cambiar
+          </button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderPublicView(v) {
+  let html = `<div class="result-section">
+    <div class="section-title"><h3>Ficha técnica · ${v.fluids.length} categorías</h3><span class="section-title-count">Vista comercial / taller</span></div>
+    <div class="fluids-accordion">`;
+  v.fluids.forEach((f, i) => html += renderFluidAccordion(f, i === 0));
+  html += `</div>`;
+  html += `<div class="internal-actions">
+    <button class="action-btn primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Crear presupuesto</button>
+    <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Imprimir todo</button>
+    <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Crear PDF</button>
+    <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Ver Stock</button>
+    <button class="action-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Ver PVP</button>
+  </div>`;
+  html += `</div>`;
+  return html;
+}
+
+function renderFluidAccordion(f, openByDefault) {
+  const classes = ['fluid-item'];
+  if (f.featured) classes.push('featured');
+  if (!f.applies && f.applies !== undefined) classes.push('disabled');
+  if (openByDefault) classes.push('open');
+
+  let summary = '';
+  if (f.applies === false) summary = 'No aplica · Pulsa para ver el motivo';
+  else {
+    const parts = [];
+    if (f.req.sae) parts.push(`<code>${f.req.sae}</code>`);
+    if (f.req.acea) parts.push(`ACEA <code>${f.req.acea}</code>`);
+    if (f.req.type_lbl) parts.push(`<code>${f.req.type_lbl}</code>`);
+    if (f.req.capacity) parts.push(f.req.capacity);
+    summary = parts.join(' · ');
+  }
+
+  let body = '';
+  if (f.applies === false) {
+    body = `<div class="alert-card">
+      <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div class="alert-content">
+        <div class="alert-title">Este vehículo no requiere ${f.label.toLowerCase()}</div>
+        <div class="alert-msg">${f.reason}</div>
+      </div>
+    </div>`;
+  } else {
+    const chips = [];
+    if (f.req.sae) chips.push(`<span class="spec-pill"><code>${f.req.sae}</code></span>`);
+    if (f.req.acea) chips.push(`<span class="spec-pill">ACEA <code>${f.req.acea}</code></span>`);
+    if (f.req.api) chips.push(`<span class="spec-pill">API <code>${f.req.api}</code></span>`);
+    if (f.req.oem) f.req.oem.forEach(o => chips.push(`<span class="spec-pill oem"><code>${o}</code></span>`));
+    if (f.req.type_lbl) chips.push(`<span class="spec-pill"><code>${f.req.type_lbl}</code></span>`);
+    if (f.req.capacity) chips.push(`<span class="spec-pill">${f.req.capacity}</span>`);
+
+    body = `<div class="product-block">
+      <div class="recommended-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Recomendado AD Parts
+      </div>
+      <div class="product-name">${f.rec.name}</div>
+      <div class="product-sub"><code>${f.rec.sku}</code>${f.rec.line ? f.rec.line : ''}</div>
+      <div class="specs-grid">${chips.join('')}</div>
+      ${renderEquivalents(f.equivs)}
+    </div>`;
+  }
+
+  return `<div class="${classes.join(' ')}" onclick="toggleFluid(this, event)">
+    <div class="fluid-header">
+      <div class="fluid-icon-box">${FLUID_ICONS[f.icon]}</div>
+      <div class="fluid-info">
+        <div class="fluid-name">${f.label}</div>
+        <div class="fluid-summary">${summary}</div>
+      </div>
+      <div class="fluid-status">
+        ${f.applies !== false ? `<span class="match-badge">Match 100%</span>` : ''}
+        <svg class="fluid-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+    <div class="fluid-body">${body}</div>
+  </div>`;
+}
+
+function renderEquivalents(equivs) {
+  if (!equivs || !equivs.length) return '';
+  let html = `<div class="equivs-block">
+    <div class="equivs-header">
+      <span class="equivs-title">Marcas equivalentes (${equivs.length})</span>
+      <span class="equivs-note">Orden: Repsol → Castrol → resto por score</span>
+    </div>
+    <div class="equivs-list">`;
+  equivs.forEach(e => {
+    const score = e.score >= 1.00 ? 'perfect' : 'partial';
+    const scoreText = e.score >= 1.00 ? '100%' : Math.round(e.score * 100) + '%';
+    html += `<div class="equiv-row">
+      <span class="brand-chip ${e.tag}">${e.brand}</span>
+      <div class="equiv-text">
+        <div class="equiv-name">${e.name}</div>
+        <div class="equiv-ref">${e.sku}</div>
+      </div>
+      <span class="equiv-score ${score}">${scoreText}</span>
+    </div>`;
+  });
+  html += `</div></div>`;
+  return html;
+}
+
+function toggleFluid(el, event) {
+  if (event.target.closest('.equiv-row, button')) return;
+  if (!event.target.closest('.fluid-header')) return;
+  el.classList.toggle('open');
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// INTERNAL VIEW
+// ═══════════════════════════════════════════════════════════════════════
+
+function renderInternalView(v) {
+  let html = `<div class="result-section">
+    <div class="section-title">
+      <h3>Fluidos recomendados · ${v.fluids.length} categorías</h3>
+      <span class="section-title-count">Tu vehículo, tus fluidos</span>
+    </div>
+    <div class="fluids-grid-internal">`;
+  v.fluids.forEach((f, idx) => html += renderFluidCard(f, idx));
+  html += `</div>`;
+  html += `<div class="cta-row">
+    <button class="btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Descargar ficha completa</button>
+    <button class="btn-primary full-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Solicitar presupuesto</button>
+  </div>`;
+  html += `</div>`;
+  return html;
+}
+
+function renderFluidCard(f, idx) {
+  const classes = ['fluid-card'];
+  if (f.featured) classes.push('featured');
+  if (f.applies === false) classes.push('disabled-card');
+
+  if (f.applies === false) {
+    return `<div class="${classes.join(' ')}">
+      <div class="fluid-card-head">
+        <div class="fluid-card-icon">${FLUID_ICONS[f.icon]}</div>
+        <div class="fluid-card-title-block">
+          <div class="fluid-card-title">${f.label}</div>
+        </div>
+      </div>
+      <div class="disabled-content">${f.reason}</div>
+    </div>`;
+  }
+
+  const chips = [];
+  if (f.req.sae) chips.push(`<span class="card-spec">${f.req.sae}</span>`);
+  if (f.req.acea) chips.push(`<span class="card-spec">ACEA ${f.req.acea}</span>`);
+  if (f.req.api) chips.push(`<span class="card-spec">API ${f.req.api}</span>`);
+  if (f.req.oem) f.req.oem.forEach(o => chips.push(`<span class="card-spec oem-spec">${o}</span>`));
+  if (f.req.type_lbl) chips.push(`<span class="card-spec">${f.req.type_lbl}</span>`);
+
+  const stats = [];
+  if (f.req.capacity) stats.push(['Cap.', f.req.capacity]);
+  if (f.req.interval) stats.push(['Int.', f.req.interval.split(' ')[0] + ' km']);
+  stats.push(['Match', '100%']);
+
+  let equivsHtml = '';
+  if (f.equivs && f.equivs.length) {
+    equivsHtml = `<button class="equivs-toggle-btn" onclick="toggleEquivsCard(this)">
+      Ver ${f.equivs.length} equivalencias
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="equivs-list-card">`;
+    f.equivs.forEach(e => {
+      equivsHtml += `<div class="equiv-row-card">
+        <span class="brand-chip ${e.tag}">${e.brand}</span>
+        <span class="equiv-text-card">${e.name}</span>
+        <span class="equiv-ref-card">${e.sku}</span>
+      </div>`;
+    });
+    equivsHtml += `</div>`;
+  }
+
+  return `<div class="${classes.join(' ')}">
+    <div class="fluid-card-head">
+      <div class="fluid-card-icon">${FLUID_ICONS[f.icon]}</div>
+      <div class="fluid-card-title-block">
+        <div class="fluid-card-title">${f.label}</div>
+        <div class="fluid-card-match">Match perfecto</div>
+      </div>
+    </div>
+    <div class="card-prod-name">${f.rec.name}</div>
+    <span class="card-prod-ref">${f.rec.sku}</span>
+    <div class="card-specs-row">${chips.join('')}</div>
+    <div class="card-stats">
+      ${stats.map(s => `<div class="card-stat"><div class="card-stat-label">${s[0]}</div><div class="card-stat-value">${s[1]}</div></div>`).join('')}
+    </div>
+    ${equivsHtml}
+  </div>`;
+}
+
+function toggleEquivsCard(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// COMBO AUTOCOMPLETE
+// ═══════════════════════════════════════════════════════════════════════
+
+function getOpts(level) {
+  const inputs = document.querySelectorAll('.combo-input');
+  const get = l => inputs[l] ? inputs[l].value : '';
+  if (level === 0) return Object.keys(TREE).sort();
+  if (level === 1) return Object.keys(TREE[get(0)] || {}).sort();
+  if (level === 2) return Object.keys((TREE[get(0)] || {})[get(1)] || {});
+  if (level === 3) return ((TREE[get(0)] || {})[get(1)] || {})[get(2)] || [];
+  return [];
+}
+
+function refreshDownstream(from) {
+  const inputs = document.querySelectorAll('.combo-input');
+  for (let l = from + 1; l <= 3; l++) {
+    inputs[l].value = '';
+    const ph = ['', 'Selecciona marca primero', 'Selecciona modelo', 'Selecciona año'];
+    inputs[l].placeholder = ph[l];
+    inputs[l].disabled = !inputs[l - 1].value;
+  }
+}
+
+function renderCombo(combo, opts, filter) {
+  const dd = combo.querySelector('.combo-dropdown');
+  const filtered = filter ? opts.filter(o => o.toLowerCase().includes(filter.toLowerCase())) : opts;
+  if (!filtered.length) { dd.innerHTML = '<div class="combo-empty">Sin resultados</div>'; }
+  else {
+    dd.innerHTML = filtered.map(o => `<div class="combo-item">${o}</div>`).join('');
+    dd.querySelectorAll('.combo-item').forEach(it => {
+      it.addEventListener('mousedown', e => {
+        e.preventDefault();
+        const inp = combo.querySelector('.combo-input');
+        inp.value = it.textContent;
+        dd.classList.remove('open');
+        const level = parseInt(inp.dataset.level);
+        refreshDownstream(level);
+      });
+    });
+  }
+  dd.classList.add('open');
+}
+
+document.querySelectorAll('.combo-input').forEach(inp => {
+  inp.addEventListener('focus', () => {
+    if (inp.disabled) return;
+    renderCombo(inp.closest('.combo'), getOpts(parseInt(inp.dataset.level)), inp.value);
+  });
+  inp.addEventListener('input', () => {
+    const level = parseInt(inp.dataset.level);
+    renderCombo(inp.closest('.combo'), getOpts(level), inp.value);
+    refreshDownstream(level);
+  });
+  inp.addEventListener('blur', () => {
+    setTimeout(() => inp.closest('.combo').querySelector('.combo-dropdown').classList.remove('open'), 150);
+  });
+});
+
+// ═══════════════════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════════════════
+
+// Enter triggers search
+document.getElementById('input-vin').addEventListener('keydown', e => { if (e.key === 'Enter') searchByVin(); });
+document.getElementById('input-plate').addEventListener('keydown', e => { if (e.key === 'Enter') searchByPlate(); });
+
+// Detectar preferencia del sistema
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  setTheme('dark');
+}
+
+</script>
+</body>
+</html>
