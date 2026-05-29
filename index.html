@@ -671,6 +671,16 @@ body::after {
 .btn-primary.btn-plate-buscar { width: 240px; flex-shrink: 1; max-width: 100%; }
 .btn-primary.btn-vin-buscar { width: 320px; flex-shrink: 1; max-width: 100%; }
 
+/* Estado "Nueva búsqueda": botón verde cuando hay resultado */
+.btn-primary.is-reset {
+  background: #00875A;
+  box-shadow: 0 4px 14px rgba(0, 135, 90, 0.28), 0 1px 3px rgba(0, 135, 90, 0.18);
+}
+.btn-primary.is-reset:hover {
+  background: #006D48;
+  box-shadow: 0 6px 20px rgba(0, 135, 90, 0.35), 0 2px 6px rgba(0, 135, 90, 0.22);
+}
+
 /* Demo suggestions */
 .demo-hints {
   display: flex;
@@ -2276,7 +2286,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             </div>
           </div>
         </div>
-        <button class="btn-primary full" onclick="searchByManual()">
+        <button class="btn-primary full" id="btn-manual-buscar" onclick="searchByManual()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="7"/>
             <path d="m21 21-4.3-4.3"/>
@@ -2554,7 +2564,50 @@ function fillPlate(p) { document.getElementById('input-plate').value = p; search
 function fillVin(v) { document.getElementById('input-vin').value = v; searchByVin(); }
 function loadDemo(key) { renderResult(VEHICLES_DB[key]); }
 
+// Cambia los botones de búsqueda al estado "Nueva búsqueda" (verde) o "Buscar" (rojo)
+function setSearchButtonsResetMode(enabled) {
+  const searchIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>`;
+  const resetIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>`;
+  
+  document.querySelectorAll('.btn-plate-buscar, .btn-vin-buscar, #btn-manual-buscar').forEach(btn => {
+    btn.classList.toggle('is-reset', enabled);
+    const label = enabled ? 'Nueva búsqueda' : (btn.id === 'btn-manual-buscar' ? 'Buscar aceite recomendado' : 'Buscar');
+    const icon = enabled ? resetIcon : searchIcon;
+    btn.innerHTML = `${icon}${label}`;
+  });
+}
+
+// Resetea el sistema al estado inicial
+function resetSearch() {
+  // Limpiar inputs
+  const plateInput = document.getElementById('input-plate');
+  const vinInput = document.getElementById('input-vin');
+  if (plateInput) plateInput.value = '';
+  if (vinInput) vinInput.value = '';
+  document.querySelectorAll('.combo-input').forEach((inp, idx) => {
+    inp.value = '';
+    if (idx > 0) {
+      inp.disabled = true;
+      const ph = ['', 'Selecciona marca primero', 'Selecciona modelo', 'Selecciona año'];
+      inp.placeholder = ph[idx];
+    }
+  });
+  
+  // Limpiar resultados
+  document.getElementById('results-section').innerHTML = '';
+  currentVehicle = null;
+  
+  // Restaurar botones a estado normal
+  setSearchButtonsResetMode(false);
+  
+  // Scroll suave al buscador
+  document.querySelector('.search-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
 function searchByPlate() {
+  // Si estamos en modo reset, hacer reset en lugar de buscar
+  if (currentVehicle) { resetSearch(); return; }
+  
   const raw = document.getElementById('input-plate').value;
   const plate = normalizePlate(raw);
   if (!plate) return;
@@ -2583,6 +2636,7 @@ function searchByPlate() {
 }
 
 function searchByVin() {
+  if (currentVehicle) { resetSearch(); return; }
   const vin = (document.getElementById('input-vin').value || '').toUpperCase().trim();
   if (!vin) return;
   if (!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)) {
@@ -2603,6 +2657,7 @@ function searchByVin() {
 }
 
 function searchByManual() {
+  if (currentVehicle) { resetSearch(); return; }
   const inputs = document.querySelectorAll('.combo-input');
   const v = Array.from(inputs).map(i => i.value);
   if (v.some(x => !x)) {
@@ -2655,6 +2710,8 @@ function renderResult(vehicle) {
   //   - Vista CLIENTE   → renderInternalView (rejilla de tarjetas, más visual)
   //   - Vista INTERNO   → renderPublicView   (acordeón limpio, más profesional)
   target.innerHTML = renderVehicleHero(vehicle) + (currentView === 'public' ? renderInternalView(vehicle) : renderPublicView(vehicle));
+  // Activar modo "Nueva búsqueda" en los botones
+  setSearchButtonsResetMode(true);
 }
 
 function renderVehicleHero(v) {
@@ -2673,12 +2730,6 @@ function renderVehicleHero(v) {
             <span class="vehicle-meta-item">${v.sub.trans}</span>
             <span class="vehicle-meta-item">${v.sub.emissions}</span>
           </div>
-        </div>
-        <div class="vehicle-actions">
-          <button class="btn-ghost" onclick="document.getElementById('results-section').innerHTML=''; currentVehicle=null;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-            Cambiar
-          </button>
         </div>
       </div>
     </div>`;
