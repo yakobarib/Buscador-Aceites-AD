@@ -456,7 +456,7 @@ body::after {
   display: flex;
   align-items: stretch;
   height: 60px;
-  width: 320px;
+  width: 240px;
   flex-shrink: 1;
   border: 2.5px solid #1A1A1A;
   border-radius: 8px;
@@ -508,7 +508,7 @@ body::after {
 .vin-row { display: flex; gap: var(--s-3); align-items: center; justify-content: center; }
 
 .vin-input {
-  width: 400px;
+  width: 320px;
   max-width: 100%;
   flex-shrink: 1;
   height: 60px;
@@ -665,6 +665,10 @@ body::after {
 .btn-primary svg { width: 16px; height: 16px; }
 
 .btn-primary.full { width: 100%; }
+
+/* Botones de búsqueda con mismo ancho que su input correspondiente */
+.btn-primary.btn-plate-buscar { width: 240px; flex-shrink: 1; max-width: 100%; }
+.btn-primary.btn-vin-buscar { width: 320px; flex-shrink: 1; max-width: 100%; }
 
 /* Demo suggestions */
 .demo-hints {
@@ -2200,7 +2204,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             </div>
             <input class="plate-input" id="input-plate" placeholder="0000 BBB" maxlength="8" autocomplete="off">
           </div>
-          <button class="btn-primary" onclick="searchByPlate()">
+          <button class="btn-primary btn-plate-buscar" onclick="searchByPlate()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="7"/>
               <path d="m21 21-4.3-4.3"/>
@@ -2219,7 +2223,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
       <div class="method-panel active" id="panel-vin">
         <div class="vin-row">
           <input class="vin-input" id="input-vin" placeholder="WVWZZZ1KZAW123456" maxlength="17" autocomplete="off">
-          <button class="btn-primary" onclick="searchByVin()">
+          <button class="btn-primary btn-vin-buscar" onclick="searchByVin()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="7"/>
               <path d="m21 21-4.3-4.3"/>
