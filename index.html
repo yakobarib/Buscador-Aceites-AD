@@ -717,7 +717,437 @@ body::after {
   color: var(--ad-red);
 }
 
-/* ──── PANEL: PRÓXIMAMENTE (Por descripción) ──── */
+/* ──── PANEL: HOMOLOGACIONES (búsqueda inteligente) ──── */
+.desc-search-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+
+.desc-search-row {
+  display: flex;
+  gap: var(--s-3);
+  align-items: center;
+  justify-content: center;
+}
+
+.desc-input-container {
+  position: relative;
+  width: 480px;
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
+.desc-input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--text-tertiary);
+  pointer-events: none;
+}
+
+.desc-input {
+  width: 100%;
+  height: 60px;
+  padding: 0 var(--s-5) 0 44px;
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  outline: none;
+  transition: all var(--t-base);
+}
+
+.desc-input:focus {
+  border-color: var(--ad-red);
+  box-shadow: 0 0 0 4px rgba(226, 6, 19, 0.12);
+  background: var(--bg-elevated);
+}
+
+.desc-input::placeholder {
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+
+.btn-primary.btn-desc-buscar {
+  width: 200px;
+  flex-shrink: 1;
+  max-width: 100%;
+}
+
+.btn-primary.btn-free-buscar {
+  width: 200px;
+  flex-shrink: 1;
+  max-width: 100%;
+  background: #6D28D9;
+  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.25), 0 1px 3px rgba(109, 40, 217, 0.15);
+}
+
+.btn-primary.btn-free-buscar:hover {
+  background: #5B21B6;
+  box-shadow: 0 6px 20px rgba(109, 40, 217, 0.32), 0 2px 6px rgba(109, 40, 217, 0.20);
+}
+
+/* Tip informativo en cabecera de panel */
+.search-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(0, 24, 88, 0.04);
+  border: 1px solid rgba(0, 24, 88, 0.08);
+  border-radius: var(--r-md);
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin-bottom: var(--s-3);
+}
+
+.search-tip.free {
+  background: rgba(109, 40, 217, 0.06);
+  border-color: rgba(109, 40, 217, 0.18);
+}
+
+.search-tip svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--ad-blue);
+}
+
+.search-tip.free svg { color: #6D28D9; }
+
+.search-tip strong { color: var(--text-primary); font-weight: 600; }
+
+.search-tip-link {
+  color: #6D28D9;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(109, 40, 217, 0.35);
+}
+
+.search-tip-link:hover {
+  border-bottom-style: solid;
+}
+
+/* Resultado de búsqueda libre */
+.free-redirect-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  margin-bottom: var(--s-4);
+  background: rgba(0, 24, 88, 0.04);
+  border-radius: var(--r-md);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.free-redirect-hint svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  color: var(--ad-blue);
+}
+
+.free-color-hint {
+  padding: 10px 14px;
+  background: rgba(109, 40, 217, 0.06);
+  border-left: 3px solid #6D28D9;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: var(--s-4);
+  line-height: 1.5;
+}
+
+.free-color-hint strong { color: var(--text-primary); }
+
+.free-brand-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  background: rgba(109, 40, 217, 0.1);
+  border-radius: var(--r-full);
+  font-size: 11px;
+  font-weight: 600;
+  color: #6D28D9;
+}
+
+.free-specs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.free-spec-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.free-advice {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  margin: var(--s-4) 0;
+  background: rgba(0, 135, 90, 0.06);
+  border-left: 3px solid #00875A;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.free-advice svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #00875A;
+}
+
+.free-advice strong { color: var(--text-primary); }
+
+.desc-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.desc-chips-label {
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.desc-chip {
+  padding: 5px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.desc-chip:hover {
+  background: var(--bg-elevated);
+  border-color: var(--ad-red);
+  color: var(--ad-red);
+}
+
+/* Resultado de la búsqueda inteligente */
+.desc-result-container {
+  margin-top: var(--s-6);
+  padding: var(--s-6);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.desc-result-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-4);
+  padding-bottom: var(--s-4);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: var(--s-5);
+}
+
+.desc-result-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 135, 90, 0.1);
+  border-radius: var(--r-md);
+  flex-shrink: 0;
+}
+
+.desc-result-icon.warn { background: rgba(245, 158, 11, 0.12); }
+.desc-result-icon.error { background: rgba(226, 6, 19, 0.10); }
+
+.desc-result-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #00875A;
+}
+
+.desc-result-icon.warn svg { color: #B45309; }
+.desc-result-icon.error svg { color: var(--ad-red); }
+
+.desc-result-headinfo { flex: 1; min-width: 0; }
+
+.desc-result-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #00875A;
+  margin-bottom: 4px;
+}
+
+.desc-result-eyebrow.warn { color: #B45309; }
+.desc-result-eyebrow.error { color: var(--ad-red); }
+
+.desc-result-norm {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+  font-family: var(--font-mono);
+}
+
+.desc-result-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.desc-result-section {
+  margin-bottom: var(--s-5);
+}
+
+.desc-result-section:last-child {
+  margin-bottom: 0;
+}
+
+.desc-result-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+  margin-bottom: var(--s-3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.desc-result-section-title .count {
+  background: var(--bg-secondary);
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-tertiary);
+}
+
+.desc-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--s-3);
+}
+
+.desc-product-card {
+  padding: var(--s-3) var(--s-4);
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  transition: all var(--t-fast);
+}
+
+.desc-product-card.ad {
+  border-color: var(--ad-red);
+  background: rgba(226, 6, 19, 0.03);
+}
+
+.desc-product-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.desc-product-brand {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-tertiary);
+}
+
+.desc-product-card.ad .desc-product-brand {
+  color: var(--ad-red);
+}
+
+.desc-product-ref {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.desc-product-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 4px;
+}
+
+.desc-product-specs {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.desc-result-empty {
+  text-align: center;
+  padding: var(--s-5);
+  color: var(--text-tertiary);
+  font-size: 13px;
+}
+
+.desc-clarify-options {
+  display: flex;
+  gap: var(--s-3);
+  margin-top: var(--s-4);
+  flex-wrap: wrap;
+}
+
+.desc-clarify-btn {
+  padding: 10px 20px;
+  background: var(--bg-secondary);
+  border: 1.5px solid var(--border-subtle);
+  border-radius: var(--r-md);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.desc-clarify-btn:hover {
+  border-color: var(--ad-red);
+  background: var(--bg-elevated);
+}
+
+/* ──── PANEL: PRÓXIMAMENTE (Por descripción) ──── (legacy, mantengo por compatibilidad) ──── */
 .badge-coming {
   background: linear-gradient(135deg, var(--ad-red) 0%, var(--ri-orange) 100%) !important;
   color: white !important;
@@ -2195,12 +2625,21 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </button>
         <button class="method-tab" onclick="setMethod('desc')" data-method="desc">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="7"/>
-            <path d="m21 21-4.3-4.3"/>
-            <path d="M8 11h6M11 8v6"/>
+            <path d="M4 11h11v8H4z"/>
+            <path d="M9 11V8h5v3"/>
+            <path d="M15 13l5-2 1 2-5 2"/>
           </svg>
           Homologaciones
-          <span class="badge-fase badge-coming">PRÓXIMAMENTE</span>
+          <span class="badge-fase">FASE 1</span>
+        </button>
+        <button class="method-tab" onclick="setMethod('free')" data-method="free">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/>
+            <path d="M5 3v4"/><path d="M3 5h4"/>
+            <path d="M19 17v4"/><path d="M17 19h4"/>
+          </svg>
+          Búsqueda libre
+          <span class="badge-fase">FASE 1</span>
         </button>
       </div>
 
@@ -2297,93 +2736,70 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
 
       <!-- Panel: descripción / homologación (preview) -->
       <div class="method-panel" id="panel-desc">
-        <div class="desc-preview">
-          <div class="desc-preview-header">
-            <div class="desc-preview-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 1 0 10 10"/>
-                <path d="M22 4 12 14.01l-3-3"/>
+        <div class="search-tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span><strong>¿Tienes la homologación oficial?</strong> Aquí. Para preguntas en lenguaje natural ("aceite para Haldex BMW", "qué refrigerante para mi Audi"), usa <span class="search-tip-link" onclick="setMethod('free')">Búsqueda libre →</span></span>
+        </div>
+        <div class="desc-search-wrap">
+          <div class="desc-search-row">
+            <div class="desc-input-container">
+              <svg class="desc-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
               </svg>
+              <input type="text" class="desc-input" id="input-desc" placeholder="Escribe la norma, abreviatura o descripción..." autocomplete="off">
             </div>
-            <div>
-              <div class="desc-preview-tag">EN DESARROLLO · FASE 1</div>
-              <h3 class="desc-preview-title">Búsqueda inteligente por descripción</h3>
-              <p class="desc-preview-sub">El buscador que entiende cualquier cosa que pida el cliente, aunque la escriba mal o use un nombre comercial.</p>
-            </div>
+            <button class="btn-primary btn-desc-buscar" onclick="searchByDesc()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              Buscar
+            </button>
           </div>
-
-          <div class="desc-mock-input">
-            <svg class="desc-mock-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
-            </svg>
-            <span class="desc-mock-placeholder" id="desc-rotator">VW 508.00</span>
-            <span class="desc-mock-cursor">|</span>
+          
+          <div class="desc-chips-row">
+            <span class="desc-chips-label">Prueba con:</span>
+            <span class="desc-chip" onclick="fillDesc('VW 508.00')">VW 508.00</span>
+            <span class="desc-chip" onclick="fillDesc('B712290')">B712290</span>
+            <span class="desc-chip" onclick="fillDesc('MB229.51')">MB229.51</span>
+            <span class="desc-chip" onclick="fillDesc('VDS-3')">VDS-3</span>
+            <span class="desc-chip" onclick="fillDesc('VOLVO VDS-4')">VOLVO VDS-4</span>
+            <span class="desc-chip" onclick="fillDesc('Porsche C30')">Porsche C30</span>
+            <span class="desc-chip" onclick="fillDesc('GF-6A')">GF-6A</span>
+            <span class="desc-chip" onclick="fillDesc('5W30')">5W30</span>
           </div>
+        </div>
+      </div>
 
-          <p class="desc-examples-label">Pulsa cualquier ejemplo para ver cómo lo entenderá el buscador:</p>
-          <div class="desc-examples-grid">
-            <div class="desc-example" onclick="showDescExample(this, 'VW 508.00', 'oem', 'Homologación VW oficial · Match directo a la tabla oem_specs.')">
-              <code>VW 508.00</code>
-              <span class="desc-ex-tag">Norma OEM exacta</span>
+      <!-- Panel: Búsqueda libre (lenguaje natural, casos difíciles) -->
+      <div class="method-panel" id="panel-free">
+        <div class="search-tip free">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/></svg>
+          <span><strong>Pregunta lo que sea.</strong> Describe el problema, el componente, el síntoma o el vehículo. El sistema interpreta la intención y propone la solución.</span>
+        </div>
+        <div class="desc-search-wrap">
+          <div class="desc-search-row">
+            <div class="desc-input-container">
+              <svg class="desc-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/>
+              </svg>
+              <input type="text" class="desc-input" id="input-free" placeholder="Ej: 'aceite para embrague Haldex de BMW' o 'refrigerante para mi Audi del 2018'..." autocomplete="off">
             </div>
-            <div class="desc-example" onclick="showDescExample(this, 'MB236.9', 'normalize', 'Sin espacio → normalizado a MB 236.9 (transmisión automática Mercedes).')">
-              <code>MB236.9</code>
-              <span class="desc-ex-tag">Sin espacio</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'B712010', 'normalize', 'Sin prefijo ni espacios → normalizado a PSA B71 2010 (Stellantis BlueHDi).')">
-              <code>B712010</code>
-              <span class="desc-ex-tag">Compactado</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'HONDA CVT', 'alias', 'Nombre comercial → alias resuelto a Honda HCF-2 (fluido CVT Honda).')">
-              <code>HONDA CVT</code>
-              <span class="desc-ex-tag">Alias comercial</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'HVLP-3', 'alias', 'Estándar industrial → alias resuelto a DIN 51524-3 (hidráulico industrial).')">
-              <code>HVLP-3</code>
-              <span class="desc-ex-tag">Estándar industrial</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'VDS-3', 'alias', 'Abreviatura → alias resuelto a Volvo VDS-3 (motor diésel pesado).')">
-              <code>VDS-3</code>
-              <span class="desc-ex-tag">Abreviatura sectorial</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'Hidráulico 46', 'pattern', 'Tipo + grado ISO → aceites hidráulicos con viscosidad ISO VG 46.')">
-              <code>Hidráulico 46</code>
-              <span class="desc-ex-tag">Tipo + grado</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, '5W30 E9', 'clarify', 'Combinación válida tanto en ligero como pesado → preguntará tipo de vehículo.')">
-              <code>5W30 E9</code>
-              <span class="desc-ex-tag">Requiere clarificación</span>
-            </div>
-            <div class="desc-example" onclick="showDescExample(this, 'GF-6A', 'pattern', 'Categoría ILSAC → productos que cumplen GF-6A (motores gasolina modernos).')">
-              <code>GF-6A</code>
-              <span class="desc-ex-tag">Clase ILSAC</span>
-            </div>
+            <button class="btn-primary btn-free-buscar" onclick="searchByFree()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/>
+              </svg>
+              Buscar
+            </button>
           </div>
-
-          <div class="desc-example-result" id="desc-example-result"></div>
-
-          <div class="desc-benefits">
-            <div class="desc-benefit">
-              <div class="desc-benefit-num">5</div>
-              <div class="desc-benefit-content">
-                <div class="desc-benefit-title">Fases de procesamiento</div>
-                <div class="desc-benefit-sub">Normalización → exacto → patrones → similitud → clarificación</div>
-              </div>
-            </div>
-            <div class="desc-benefit">
-              <div class="desc-benefit-num">400+</div>
-              <div class="desc-benefit-content">
-                <div class="desc-benefit-title">Alias previstos</div>
-                <div class="desc-benefit-sub">Variantes, abreviaturas, nombres comerciales y typos</div>
-              </div>
-            </div>
-            <div class="desc-benefit">
-              <div class="desc-benefit-num">~10s</div>
-              <div class="desc-benefit-content">
-                <div class="desc-benefit-title">Tiempo medio actual</div>
-                <div class="desc-benefit-sub">Frente a 5-15 min buscando en catálogos PDF</div>
-              </div>
-            </div>
+          
+          <div class="desc-chips-row">
+            <span class="desc-chips-label">Casos típicos:</span>
+            <span class="desc-chip" onclick="fillFree('Aceite para embrague Haldex de BMW')">Embrague Haldex BMW</span>
+            <span class="desc-chip" onclick="fillFree('Refrigerante violeta para Audi A4 2018')">Refrigerante violeta Audi</span>
+            <span class="desc-chip" onclick="fillFree('Aceite caja CVT Honda Civic')">CVT Honda Civic</span>
+            <span class="desc-chip" onclick="fillFree('Líquido de frenos para mi coche')">Líquido frenos</span>
+            <span class="desc-chip" onclick="fillFree('Aceite para DSG VW Golf')">DSG VW Golf</span>
+            <span class="desc-chip" onclick="fillFree('Aceite caja manual Renault Clio')">Caja manual Renault</span>
           </div>
         </div>
       </div>
@@ -2555,8 +2971,1065 @@ function setMethod(method) {
 }
 
 // ═══════════════════════════════════════════════════════════════════════
-// SEARCH HANDLERS
+// BÚSQUEDA INTELIGENTE POR HOMOLOGACIONES
+// Motor de 5 fases: normalización → alias → patrón → similitud → clarificación
 // ═══════════════════════════════════════════════════════════════════════
+
+// ─── CATÁLOGO AD PARTS con sus homologaciones (extraído del project knowledge) ───
+const AD_PARTS_CATALOG = [
+  // VEHÍCULO LIGERO · Motor
+  { ref: 'AD SCA 0W20',         sku: 'ADP67005', viscosity: '0W20',  type: 'motor', segment: 'ligero', specs: ['VW 508.00', 'VW 509.00', 'PORSCHE C20'] },
+  { ref: 'AD SFA 5W20',         sku: 'ADP70005', viscosity: '5W20',  type: 'motor', segment: 'ligero', specs: ['JAGUAR STJLR.03.5004', 'FORD WSS-M2C948-B'] },
+  { ref: 'AD SC2 5W30',         sku: 'ADP72005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['PSA B71 2290', 'ACEA C2'] },
+  { ref: 'AD SFE Plus 5W30',    sku: 'ADP75005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['FORD WSS-M2C913-D', 'ACEA A5/B5'] },
+  { ref: 'AD SRC3 5W30',        sku: 'ADP77005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['RENAULT RN17', 'ACEA C3'] },
+  { ref: 'AD SCC 5W30',         sku: 'ADP78005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'ACEA C3'] },
+  { ref: 'AD SFC 0W30',         sku: 'ADP79005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['FORD WSS-M2C950-A', 'JAGUAR STJLR.03.5007'] },
+  { ref: 'AD SDI 5W40',         sku: 'ADP80005', viscosity: '5W40',  type: 'motor', segment: 'ligero', specs: ['VW 502.00', 'VW 505.00', 'MB 229.3', 'MB 226.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'ACEA A3/B4'] },
+  { ref: 'AD SCD 0W30',         sku: 'ADP81005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'ACEA C3'] },
+  { ref: 'AD SRC4 5W30',        sku: 'ADP82005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['MB 226.51', 'RENAULT RN0720', 'ACEA C3'] },
+  { ref: 'AD SPC 0W30',         sku: 'ADP83005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['PSA B71 2312', 'ACEA C2'] },
+  { ref: 'AD SC1 5W30',         sku: 'ADP84005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['JAGUAR STJLR.03.5005', 'ACEA C1'] },
+  { ref: 'AD SCB 5W30',         sku: 'ADP85005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'BMW LL-04', 'ACEA C3'] },
+  { ref: 'AD MDXs PLUS 10W40',  sku: 'ADP86005', viscosity: '10W40', type: 'motor', segment: 'ligero', specs: ['MB 229.3', 'VW 501.01', 'VW 505.00', 'ACEA A3/B4'] },
+  { ref: 'AD SC3 5W30',         sku: 'ADP87005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['MB 229.51', 'MB 229.52', 'VW 505.00', 'VW 505.01', 'ACEA C3'] },
+  { ref: 'AD SRC5 0W20',        sku: 'ADP88005', viscosity: '0W20',  type: 'motor', segment: 'ligero', specs: ['RENAULT RN17 FE', 'ACEA C5'] },
+  { ref: 'AD MDXs MEGA PLUS 5W40', sku: 'ADP89005', viscosity: '5W40', type: 'motor', segment: 'ligero', specs: ['VW 505.00', 'VW 505.01', 'MB 229.51', 'ACEA A3/B4'] },
+  { ref: 'AD SHT PLUS 0W40',    sku: 'ADP90005', viscosity: '0W40',  type: 'motor', segment: 'ligero', specs: ['MB 229.5', 'VW 502.00', 'VW 505.00', 'ACEA A3/B4'] },
+
+  // VEHÍCULO PESADO · Motor
+  { ref: 'AD SDX PLUS 10W40',   sku: 'ADP91005', viscosity: '10W40', type: 'motor', segment: 'pesado', specs: ['MB 228.51', 'MB 235.28', 'DTFR 13D110', 'VOLVO VDS-4', 'RENAULT RLD-3', 'MACK EO-O Premium Plus', 'ACEA E6/E7/E9', 'API CJ-4'] },
+  { ref: 'AD ZTD 15W40',        sku: 'ADP92005', viscosity: '15W40', type: 'motor', segment: 'pesado', specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EO-N', 'ACEA E7/E9', 'API CJ-4'] },
+  { ref: 'AD SDX 10W40',        sku: 'ADP93005', viscosity: '10W40', type: 'motor', segment: 'pesado', specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RDX', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E4/E7'] },
+  { ref: 'AD STB 10W30',        sku: 'ADP94005', viscosity: '10W30', type: 'motor', segment: 'pesado', specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EO.S-4.5', 'API CK-4'] },
+  { ref: 'AD XTD ECOPLUS 15W40', sku: 'ADP95005', viscosity: '15W40', type: 'motor', segment: 'pesado', specs: ['MB 228.3', 'VOLVO VDS-3', 'RENAULT RVI RLD', 'RENAULT RLD-2', 'MACK EO-N', 'ACEA E7'] },
+  { ref: 'AD STFE 5W30',        sku: 'ADP96005', viscosity: '5W30',  type: 'motor', segment: 'pesado', specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RXD', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E7'] },
+  { ref: 'AD SDV 5W30',         sku: 'ADP97005', viscosity: '5W30',  type: 'motor', segment: 'pesado', specs: ['MB 228.51', 'MB 228.52', 'DTFR 15C120', 'DTFR 15C110', 'MAN M3677', 'VOLVO VDS-4.5', 'RENAULT VI RLD-3', 'MACK EO.S-4.5', 'SCANIA LDF-4', 'ACEA E6/E7/E9'] },
+
+  // TRANSMISIÓN
+  { ref: 'AD SHP 75W90',        sku: 'ADP60005', viscosity: '75W90', type: 'transmision', segment: 'pesado', specs: ['SCANIA STO 2:0 A FS', 'SCANIA STO 1:1 G', 'API GL-4', 'API GL-5'] },
+];
+
+// ─── CATÁLOGO DE EQUIVALENCIAS (otras marcas) ───
+const EQUIV_CATALOG = [
+  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 C3',        viscosity: '5W30', specs: ['ACEA C3', 'API SP', 'BMW LL-04', 'MB 229.31', 'MB 229.52', 'FIAT 9.55535-S3', 'OPEL OV 040 1547-D30'] },
+  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 C2',        viscosity: '5W30', specs: ['ACEA C2', 'PSA B71 2290', 'FIAT 9.55535-S1'] },
+  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 DX',        viscosity: '5W30', specs: ['API SP', 'ILSAC GF-6', 'GM dexos1 Gen3', 'OPEL OV 040 1547-G30', 'FORD WSS-M2C946-A/B1', 'FORD WSS-M2C961-A1'] },
+  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 P',         viscosity: '5W30', specs: ['PSA B71 2290', 'PSA B71 2297', 'STELLANTIS FPW9.55535/03'] },
+  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-40 C3',        viscosity: '5W40', specs: ['ACEA C3', 'API SN', 'BMW LL-04', 'MB 229.31', 'MB 229.51', 'MB 229.52', 'RENAULT RN0700', 'RENAULT RN0710', 'FIAT 9.55535-S2'] },
+  { brand: 'Castrol', ref: 'Castrol Edge 5W-40',               viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN', 'BMW LL-01', 'MB 226.5', 'MB 229.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00'] },
+
+  { brand: 'Repsol',  ref: 'Repsol Elite Multivalvulas 5W-40', viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN/CF', 'MB 229.3', 'VW 502.00', 'VW 505.00', 'RENAULT RN0700'] },
+  { brand: 'Repsol',  ref: 'Repsol Elite TDI 50501 5W-40',     viscosity: '5W40', specs: ['ACEA A3/B4', 'API SL/CF', 'VW 505.01', 'VW 502.00', 'PORSCHE A40'] },
+  { brand: 'Repsol',  ref: 'Repsol Leader C2 C3 5W-30',        viscosity: '5W30', specs: ['ACEA C2', 'ACEA C3', 'API SN/CF', 'PSA B71 2290', 'PSA B71 2297'] },
+  { brand: 'Repsol',  ref: 'Repsol Leader Inyección 15W-40',   viscosity: '15W40', specs: ['API SL/CF', 'ACEA A3/B4', 'MB 229.1'] },
+  { brand: 'Repsol',  ref: 'Repsol Premium Tech 5W-30',        viscosity: '5W30', specs: ['ACEA A5/B5', 'API SN', 'FORD WSS-M2C913-D', 'RENAULT RN0700'] },
+  { brand: 'Repsol',  ref: 'Repsol Giant 9660 5W-30',          viscosity: '5W30', specs: ['ACEA E4/E6/E7/E9', 'API CK-4', 'MB 228.52', 'MAN M3677', 'VOLVO VDS-4.5', 'SCANIA LDF-4', 'RENAULT RLD-3', 'MACK EOS-4.5', 'JASO DH-2'] },
+  { brand: 'Repsol',  ref: 'Repsol Automator ATF Diafluid',    viscosity: 'ATF',  specs: ['HONDA Z-1', 'HONDA HMMF', 'HONDA HCF-2', 'NISSAN NS-1', 'NISSAN NS-2', 'NISSAN NS-3', 'TOYOTA CVTF TC', 'TOYOTA CVTF FE', 'SUZUKI CVTF', 'MAZDA JWS 3320', 'MITSUBISHI SP-III', 'SUBARU ECVT'] },
+
+  { brand: 'Shell',   ref: 'Shell Helix Ultra 5W-40',          viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN', 'BMW LL-01', 'MB 229.3', 'MB 229.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00'] },
+  { brand: 'Shell',   ref: 'Shell Helix Ultra Pro AF 5W-30',   viscosity: '5W30', specs: ['ACEA A5/B5', 'API SN', 'FORD WSS-M2C913-D', 'JAGUAR STJLR.03.5003'] },
+
+  { brand: 'ENI',     ref: 'Eni i-Sigma Performance E7 15W-40', viscosity: '15W40', specs: ['ACEA E7', 'API CI-4', 'MB 228.3', 'MAN M3275-1', 'VOLVO VDS-3', 'MACK EO-N', 'RENAULT RLD-2'] },
+  { brand: 'ENI',     ref: 'Eni i-Sigma Top MS 5W-30',          viscosity: '5W30', specs: ['ACEA E6/E7/E9', 'API CJ-4', 'MB 228.51', 'MAN M3477', 'VOLVO VDS-4', 'RENAULT RLD-3', 'JASO DH-2'] },
+  { brand: 'ENI',     ref: 'Eni i-Sint Tech R 5W-30',           viscosity: '5W30', specs: ['ACEA C4', 'RENAULT RN0720', 'MB 226.51'] },
+
+  { brand: 'Febi',    ref: 'Febi 32944 ATF DSG',                viscosity: 'ATF',  specs: ['VW G 052 182', 'VW G 060 162', 'AUDI MULTITRONIC'] },
+  { brand: 'Febi',    ref: 'Febi 39091 DOT 4',                  viscosity: 'DOT4', specs: ['DOT 4', 'FMVSS 116', 'ISO 4925', 'SAE J1704'] },
+  { brand: 'Febi',    ref: 'Febi 22271 G12++',                  viscosity: '-',    specs: ['VW TL-774-G', 'G12++', 'MB 325.5', 'MAN 324 Type Si-OAT'] },
+];
+
+// ─── NORMAS CANÓNICAS (con descripción humana) ───
+const SPECS_DB = {
+  // VW
+  'VW 500.00':  { description: 'Aceite motor multigrado para gasolina (antiguo, anterior a 2000)', segment: 'ligero', tipo: 'motor' },
+  'VW 501.01':  { description: 'Aceite motor convencional para vehículos VW anteriores a 2000', segment: 'ligero', tipo: 'motor' },
+  'VW 502.00':  { description: 'Aceite motor gasolina sucesor de VW 500/501. Condiciones severas', segment: 'ligero', tipo: 'motor' },
+  'VW 503.01':  { description: 'Aceite motor gasolina Long Life para motores deportivos (Audi RS)', segment: 'ligero', tipo: 'motor' },
+  'VW 504.00':  { description: 'Aceite motor Long Life III para gasolina y diésel modernos con DPF', segment: 'ligero', tipo: 'motor' },
+  'VW 505.00':  { description: 'Aceite motor diésel sin inyector bomba', segment: 'ligero', tipo: 'motor' },
+  'VW 505.01':  { description: 'Aceite motor diésel con inyector bomba (PD)', segment: 'ligero', tipo: 'motor' },
+  'VW 507.00':  { description: 'Aceite Long Life III para motores diésel con DPF (la mayoría de TDI modernos)', segment: 'ligero', tipo: 'motor' },
+  'VW 508.00':  { description: 'Fuel-economy 0W20 para motores gasolina TSI/TFSI modernos', segment: 'ligero', tipo: 'motor' },
+  'VW 509.00':  { description: 'Fuel-economy 0W20 para motores diésel TDI evo modernos', segment: 'ligero', tipo: 'motor' },
+  'VW 508.88':  { description: 'Aceite alta protección para camionetas/diésel con combustible de calidad variable', segment: 'ligero', tipo: 'motor' },
+  'VW 509.99':  { description: 'Aceite alta protección para camionetas/diésel con combustible de calidad variable', segment: 'ligero', tipo: 'motor' },
+  'VW G 052 171':   { description: 'Fluido transmisión manual VW', segment: 'ligero', tipo: 'transmision' },
+  'VW G 052 180':   { description: 'Fluido CVT VW (cajas Multitronic)', segment: 'ligero', tipo: 'transmision' },
+  'VW G 052 182':   { description: 'Fluido DSG (caja automática de doble embrague)', segment: 'ligero', tipo: 'transmision' },
+  'VW G 052 516':   { description: 'Fluido CVT VW (Mini Cooper EZL 799/799A)', segment: 'ligero', tipo: 'transmision' },
+  'VW TL-774-G':    { description: 'Refrigerante G12++ (orgánico, larga duración)', segment: 'ligero', tipo: 'refrigerante' },
+
+  // PSA / Stellantis
+  'PSA B71 2290':   { description: 'Aceite 5W-30 C2/C3 para motores PSA hasta Euro 5 (diésel y gasolina)', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2294':   { description: 'Aceite 10W-40 semisintético (sustituye minerales). Cambios 10-15.000 km', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2295':   { description: 'Aceite 15W-40 mineral para vehículos PSA antiguos (anteriores 2000)', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2296':   { description: 'Aceite 5W-40 C3 sintético para PSA. Cambios 15.000 km', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2297':   { description: 'Aceite 5W-30 C2/C3 para motores gasolina PSA a altas temperaturas', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2300':   { description: 'Aceite 10W-40 semisintético PSA. Cambios 10-15.000 km', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2302':   { description: 'Aceite 0W-30 C2 para PSA Euro 6 con FAP/SCR (eHDi, Stop&Start)', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2010':   { description: 'Aceite 0W-20 C5/C6 para Stellantis BlueHDi, PureTech S&S, híbridos', segment: 'ligero', tipo: 'motor' },
+  'PSA B71 2312':   { description: 'Aceite 0W-30 C2/C3 para PSA Euro 6 (diésel y gasolina)', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/03': { description: 'Aceite Stellantis 5W-30 sucesor de PSA B71 2290/2297', segment: 'ligero', tipo: 'motor' },
+
+  // Mercedes-Benz
+  'MB 229.1':       { description: 'Aceite motor gasolina/diésel multigrado convencional', segment: 'ligero', tipo: 'motor' },
+  'MB 229.3':       { description: 'Aceite motor 5W-40 / 0W-40 alto rendimiento para MB clásicos', segment: 'ligero', tipo: 'motor' },
+  'MB 229.31':      { description: 'Aceite motor MB Low SAPS para motores con DPF', segment: 'ligero', tipo: 'motor' },
+  'MB 229.5':       { description: 'Aceite motor 5W-40 / 0W-40 alta protección para MB modernos', segment: 'ligero', tipo: 'motor' },
+  'MB 229.51':      { description: 'Aceite motor MB Long Life Low SAPS (DPF). El más usado en MB modernos', segment: 'ligero', tipo: 'motor' },
+  'MB 229.52':      { description: 'Aceite motor MB última generación, mejora 229.51', segment: 'ligero', tipo: 'motor' },
+  'MB 226.5':       { description: 'Aceite motor MB Smart y motores PSA bajo licencia', segment: 'ligero', tipo: 'motor' },
+  'MB 226.51':      { description: 'Aceite motor MB Smart con Low SAPS', segment: 'ligero', tipo: 'motor' },
+  'MB 228.3':       { description: 'Aceite motor diésel pesado MB Long Life (camiones, autobuses)', segment: 'pesado', tipo: 'motor' },
+  'MB 228.31':      { description: 'Aceite motor diésel pesado MB Low SAPS (Euro 6)', segment: 'pesado', tipo: 'motor' },
+  'MB 228.5':       { description: 'Aceite motor diésel pesado MB Long Life sin Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'MB 228.51':      { description: 'Aceite motor diésel pesado MB Long Life Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'MB 228.52':      { description: 'Aceite motor diésel pesado MB última generación', segment: 'pesado', tipo: 'motor' },
+  'MB 235.28':      { description: 'Aceite engranajes pesados MB (cajas de cambio)', segment: 'pesado', tipo: 'transmision' },
+  'MB 236.9':       { description: 'ATF para transmisión automática Mercedes (cajas 7G-Tronic)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.14':      { description: 'ATF para transmisión automática Mercedes última generación (9G-Tronic)', segment: 'ligero', tipo: 'transmision' },
+
+  // BMW
+  'BMW LL-01':      { description: 'Aceite motor Long Life BMW gasolina/diésel (motores anteriores)', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-04':      { description: 'Aceite motor Long Life BMW para diésel con DPF', segment: 'ligero', tipo: 'motor' },
+
+  // Porsche
+  'PORSCHE A40':    { description: 'Aceite motor Porsche refrigerado por agua (911, Boxster, Cayman)', segment: 'ligero', tipo: 'motor' },
+  'PORSCHE C30':    { description: 'Aceite motor Porsche Low SAPS para Macan/Cayenne diésel', segment: 'ligero', tipo: 'motor' },
+  'PORSCHE C20':    { description: 'Aceite motor Porsche 0W-20 para híbridos y modernos', segment: 'ligero', tipo: 'motor' },
+
+  // Renault
+  'RENAULT RN0700': { description: 'Aceite motor 5W-40 Renault para gasolina y diésel sin DPF', segment: 'ligero', tipo: 'motor' },
+  'RENAULT RN0710': { description: 'Aceite motor 5W-40 Renault para motores deportivos', segment: 'ligero', tipo: 'motor' },
+  'RENAULT RN0720': { description: 'Aceite motor 5W-30 Renault Low SAPS para diésel con DPF', segment: 'ligero', tipo: 'motor' },
+  'RENAULT RN17':   { description: 'Aceite motor 5W-30 Renault Energy (motores TCe modernos)', segment: 'ligero', tipo: 'motor' },
+  'RENAULT RN17 FE':{ description: 'Aceite motor 0W-20 Renault Energy Fuel Economy', segment: 'ligero', tipo: 'motor' },
+  'RENAULT RLD-2':  { description: 'Aceite motor diésel pesado Renault Trucks (Euro V)', segment: 'pesado', tipo: 'motor' },
+  'RENAULT RLD-3':  { description: 'Aceite motor diésel pesado Renault Trucks Low SAPS (Euro VI)', segment: 'pesado', tipo: 'motor' },
+  'RENAULT RXD':    { description: 'Aceite motor diésel pesado Renault Trucks (Extended Drain)', segment: 'pesado', tipo: 'motor' },
+  'RENAULT RGD':    { description: 'Aceite motor diésel pesado Renault Trucks (Gas Drain)', segment: 'pesado', tipo: 'motor' },
+
+  // Ford
+  'FORD WSS-M2C913-D': { description: 'Aceite motor 5W-30 Ford gasolina/diésel A5/B5', segment: 'ligero', tipo: 'motor' },
+  'FORD WSS-M2C948-B': { description: 'Aceite motor 5W-20 Ford EcoBoost', segment: 'ligero', tipo: 'motor' },
+  'FORD WSS-M2C950-A': { description: 'Aceite motor 0W-30 Ford diésel con DPF', segment: 'ligero', tipo: 'motor' },
+  'FORD WSS-M2C946-A': { description: 'Aceite motor Ford 5W-30 GF-6', segment: 'ligero', tipo: 'motor' },
+  'FORD WSS-M2C961-A1':{ description: 'Aceite motor Ford 5W-30 dexos1 Gen3 compatible', segment: 'ligero', tipo: 'motor' },
+
+  // Jaguar / Land Rover
+  'JAGUAR STJLR.03.5004': { description: 'Aceite motor 5W-20 Jaguar/Land Rover gasolina', segment: 'ligero', tipo: 'motor' },
+  'JAGUAR STJLR.03.5005': { description: 'Aceite motor 5W-30 Jaguar/Land Rover diésel C1', segment: 'ligero', tipo: 'motor' },
+  'JAGUAR STJLR.03.5007': { description: 'Aceite motor 0W-30 Jaguar/Land Rover diésel C2', segment: 'ligero', tipo: 'motor' },
+
+  // FIAT / GM / Opel
+  'FIAT 9.55535-S1':{ description: 'Aceite Fiat 5W-30 C2 (PSA B71 2290 equivalente)', segment: 'ligero', tipo: 'motor' },
+  'FIAT 9.55535-S2':{ description: 'Aceite Fiat 5W-40 C3 (gasolina/diésel)', segment: 'ligero', tipo: 'motor' },
+  'FIAT 9.55535-S3':{ description: 'Aceite Fiat 5W-30 C3 (gasolina/diésel con DPF)', segment: 'ligero', tipo: 'motor' },
+  'GM DEXOS1 GEN3': { description: 'Aceite GM/Chevrolet 5W-30 última generación', segment: 'ligero', tipo: 'motor' },
+  'OPEL OV 040 1547-D30': { description: 'Aceite Opel 5W-30 ACEA C3 (motores diésel)', segment: 'ligero', tipo: 'motor' },
+  'OPEL OV 040 1547-G30': { description: 'Aceite Opel 5W-30 dexos1 (motores gasolina)', segment: 'ligero', tipo: 'motor' },
+
+  // Volvo trucks
+  'VOLVO VDS-3':    { description: 'Aceite motor diésel pesado Volvo Trucks (Euro 5)', segment: 'pesado', tipo: 'motor' },
+  'VOLVO VDS-4':    { description: 'Aceite motor diésel pesado Volvo Trucks Low SAPS (Euro 6)', segment: 'pesado', tipo: 'motor' },
+  'VOLVO VDS-4.5':  { description: 'Aceite motor diésel pesado Volvo Trucks última generación', segment: 'pesado', tipo: 'motor' },
+  'VOLVO CNG':      { description: 'Aceite motor gas natural Volvo Trucks', segment: 'pesado', tipo: 'motor' },
+  'VOLVO 97341':    { description: 'Fluido transmisión automática Volvo Trucks', segment: 'pesado', tipo: 'transmision' },
+
+  // MAN, Mack, Cummins, Cat, Scania, MTU, Deutz, DTFR, DAF
+  'MAN M3271-1':    { description: 'Aceite motor MAN para vehículos pesados con SCR', segment: 'pesado', tipo: 'motor' },
+  'MAN M3277':      { description: 'Aceite motor MAN Euro 5', segment: 'pesado', tipo: 'motor' },
+  'MAN M3377':      { description: 'Aceite motor MAN', segment: 'pesado', tipo: 'motor' },
+  'MAN M3477':      { description: 'Aceite motor MAN Long Life para Euro 6', segment: 'pesado', tipo: 'motor' },
+  'MAN M3575':      { description: 'Aceite motor MAN Euro 6 con SCR', segment: 'pesado', tipo: 'motor' },
+  'MAN M3677':      { description: 'Aceite motor MAN última generación', segment: 'pesado', tipo: 'motor' },
+  'MAN M3775':      { description: 'Aceite motor MAN para Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'MACK EO-N':      { description: 'Aceite motor Mack diésel Euro 5', segment: 'pesado', tipo: 'motor' },
+  'MACK EO-M Plus': { description: 'Aceite motor Mack diésel anterior', segment: 'pesado', tipo: 'motor' },
+  'MACK EO-O Premium Plus': { description: 'Aceite motor Mack Low SAPS para Euro 6', segment: 'pesado', tipo: 'motor' },
+  'MACK EOS-4.5':   { description: 'Aceite motor Mack última generación', segment: 'pesado', tipo: 'motor' },
+  'CUMMINS CES 20076': { description: 'Aceite motor Cummins diésel Euro 5', segment: 'pesado', tipo: 'motor' },
+  'CUMMINS CES 20081': { description: 'Aceite motor Cummins Low SAPS Euro 6', segment: 'pesado', tipo: 'motor' },
+  'CUMMINS CES 20086': { description: 'Aceite motor Cummins última generación', segment: 'pesado', tipo: 'motor' },
+  'CATERPILLAR ECF-1a': { description: 'Aceite motor Caterpillar para motores diésel pesados', segment: 'pesado', tipo: 'motor' },
+  'CATERPILLAR ECF-2':  { description: 'Aceite motor Caterpillar mejorado', segment: 'pesado', tipo: 'motor' },
+  'CATERPILLAR ECF-3':  { description: 'Aceite motor Caterpillar Low SAPS Euro 6', segment: 'pesado', tipo: 'motor' },
+  'SCANIA LDF-3':   { description: 'Aceite motor Scania Long Drain (Euro 5)', segment: 'pesado', tipo: 'motor' },
+  'SCANIA LDF-4':   { description: 'Aceite motor Scania Long Drain Low SAPS (Euro 6)', segment: 'pesado', tipo: 'motor' },
+  'SCANIA LOW ASH': { description: 'Aceite motor Scania Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'MTU Type 2':     { description: 'Aceite motor MTU diésel pesado (clásico)', segment: 'pesado', tipo: 'motor' },
+  'MTU Type 2.1':   { description: 'Aceite motor MTU diésel pesado Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'MTU Type 3':     { description: 'Aceite motor MTU Long Drain', segment: 'pesado', tipo: 'motor' },
+  'MTU Type 3.1':   { description: 'Aceite motor MTU Long Drain Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'DEUTZ DQC III-10':   { description: 'Aceite motor Deutz Long Drain', segment: 'pesado', tipo: 'motor' },
+  'DEUTZ DQC IV-10 LA': { description: 'Aceite motor Deutz Long Ash (Euro 6)', segment: 'pesado', tipo: 'motor' },
+  'DEUTZ DQC IV-18 LA': { description: 'Aceite motor Deutz última generación', segment: 'pesado', tipo: 'motor' },
+  'DTFR 13C170':    { description: 'Norma transmisión Daimler Trucks (cambio automático)', segment: 'pesado', tipo: 'transmision' },
+  'DTFR 13D110':    { description: 'Norma motor Daimler Trucks', segment: 'pesado', tipo: 'motor' },
+  'DTFR 15B120':    { description: 'Norma motor Daimler Trucks Euro 5', segment: 'pesado', tipo: 'motor' },
+  'DTFR 15C100':    { description: 'Norma motor Daimler Trucks Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'DTFR 15C110':    { description: 'Norma motor Daimler Trucks última generación', segment: 'pesado', tipo: 'motor' },
+  'DTFR 15C120':    { description: 'Norma motor Daimler Trucks última generación', segment: 'pesado', tipo: 'motor' },
+  'DAF Extended Drain': { description: 'Aceite motor DAF para intervalos extendidos', segment: 'pesado', tipo: 'motor' },
+  'VOITH Retarder Oil Class B': { description: 'Aceite para retarder Voith Class B', segment: 'pesado', tipo: 'transmision' },
+  'VOITH H55.6336': { description: 'Fluido transmisión automática Voith Diwa', segment: 'pesado', tipo: 'transmision' },
+  'ZF TE-ML 03C':   { description: 'Aceite hidráulico/transmisión ZF maquinaria', segment: 'pesado', tipo: 'transmision' },
+  'ZF TE-ML 04D':   { description: 'Aceite ATF para transmisiones ZF', segment: 'pesado', tipo: 'transmision' },
+  'ZF TE-ML 14C':   { description: 'Aceite ATF ZF para autocares', segment: 'pesado', tipo: 'transmision' },
+  'ZF TE-ML 16M':   { description: 'Aceite ATF ZF Ecomat', segment: 'pesado', tipo: 'transmision' },
+  'ZF TE-ML 20C':   { description: 'Aceite ATF ZF EcoLife', segment: 'pesado', tipo: 'transmision' },
+
+  // Transmisión asiática (CVT/ATF)
+  'HONDA HCF-2':    { description: 'Fluido CVT Honda (Honda Continuously Variable Fluid 2)', segment: 'ligero', tipo: 'transmision' },
+  'HONDA HMMF':     { description: 'Fluido CVT Honda (Honda Multi Matic Fluid)', segment: 'ligero', tipo: 'transmision' },
+  'HONDA Z-1':      { description: 'Fluido ATF Honda Z-1 (transmisión automática)', segment: 'ligero', tipo: 'transmision' },
+  'TOYOTA WS':      { description: 'Fluido ATF Toyota World Standard (multi-vehicle)', segment: 'ligero', tipo: 'transmision' },
+  'TOYOTA T-IV':    { description: 'Fluido ATF Toyota Type IV', segment: 'ligero', tipo: 'transmision' },
+  'TOYOTA CVTF TC': { description: 'Fluido CVT Toyota (cajas TC)', segment: 'ligero', tipo: 'transmision' },
+  'TOYOTA CVTF FE': { description: 'Fluido CVT Toyota Fuel Economy', segment: 'ligero', tipo: 'transmision' },
+  'NISSAN NS-1':    { description: 'Fluido CVT Nissan Nissan Standard 1', segment: 'ligero', tipo: 'transmision' },
+  'NISSAN NS-2':    { description: 'Fluido CVT Nissan Nissan Standard 2', segment: 'ligero', tipo: 'transmision' },
+  'NISSAN NS-3':    { description: 'Fluido CVT Nissan Nissan Standard 3 (más reciente)', segment: 'ligero', tipo: 'transmision' },
+  'NISSAN MATIC-D': { description: 'Fluido ATF Nissan MATIC-D', segment: 'ligero', tipo: 'transmision' },
+  'MAZDA JWS 3320': { description: 'Fluido CVT Mazda (JATCO Standard 3320)', segment: 'ligero', tipo: 'transmision' },
+  'MITSUBISHI SP-III':  { description: 'Fluido ATF Mitsubishi SP-III', segment: 'ligero', tipo: 'transmision' },
+  'MITSUBISHI CVTF-J1': { description: 'Fluido CVT Mitsubishi J1', segment: 'ligero', tipo: 'transmision' },
+  'SUBARU ECVT':    { description: 'Fluido CVT Subaru (electric CVT)', segment: 'ligero', tipo: 'transmision' },
+  'SUZUKI CVTF':    { description: 'Fluido CVT Suzuki', segment: 'ligero', tipo: 'transmision' },
+  'HYUNDAI CVT-J1': { description: 'Fluido CVT Hyundai/Kia', segment: 'ligero', tipo: 'transmision' },
+
+  // ACEA / API / ILSAC / JASO
+  'ACEA A3/B4':     { description: 'Aceites motor gasolina/diésel alto rendimiento (sin DPF)', segment: 'ligero', tipo: 'motor' },
+  'ACEA A5/B5':     { description: 'Aceites motor gasolina/diésel Fuel Economy', segment: 'ligero', tipo: 'motor' },
+  'ACEA C1':        { description: 'Aceites motor Low SAPS de baja viscosidad HTHS (Ford EcoBoost)', segment: 'ligero', tipo: 'motor' },
+  'ACEA C2':        { description: 'Aceites motor Mid SAPS Fuel Economy (PSA, Citroën, Fiat)', segment: 'ligero', tipo: 'motor' },
+  'ACEA C3':        { description: 'Aceites motor Mid SAPS para motores VAG, BMW, MB modernos', segment: 'ligero', tipo: 'motor' },
+  'ACEA C4':        { description: 'Aceites motor Low SAPS alto HTHS (Renault Energy)', segment: 'ligero', tipo: 'motor' },
+  'ACEA C5':        { description: 'Aceites motor Fuel Economy Low SAPS 0W-20', segment: 'ligero', tipo: 'motor' },
+  'ACEA C6':        { description: 'Aceites motor Fuel Economy Low SAPS última generación', segment: 'ligero', tipo: 'motor' },
+  'ACEA E4':        { description: 'Aceites motor diésel pesado Long Drain sin Low SAPS', segment: 'pesado', tipo: 'motor' },
+  'ACEA E6':        { description: 'Aceites motor diésel pesado Low SAPS con SCR/EGR', segment: 'pesado', tipo: 'motor' },
+  'ACEA E7':        { description: 'Aceites motor diésel pesado sin Low SAPS para Euro 5', segment: 'pesado', tipo: 'motor' },
+  'ACEA E9':        { description: 'Aceites motor diésel pesado Low SAPS (DPF, Euro 6)', segment: 'pesado', tipo: 'motor' },
+  'API SN':         { description: 'Aceite motor gasolina API SN', segment: 'ligero', tipo: 'motor' },
+  'API SP':         { description: 'Aceite motor gasolina API SP (última norma)', segment: 'ligero', tipo: 'motor' },
+  'API SL':         { description: 'Aceite motor gasolina API SL (anterior)', segment: 'ligero', tipo: 'motor' },
+  'API CF':         { description: 'Aceite motor diésel API CF', segment: 'ligero', tipo: 'motor' },
+  'API CK-4':       { description: 'Aceite motor diésel pesado API CK-4', segment: 'pesado', tipo: 'motor' },
+  'API CJ-4':       { description: 'Aceite motor diésel pesado API CJ-4', segment: 'pesado', tipo: 'motor' },
+  'API CI-4':       { description: 'Aceite motor diésel pesado API CI-4 (anterior)', segment: 'pesado', tipo: 'motor' },
+  'API GL-4':       { description: 'Aceite engranajes manuales y diferenciales GL-4', segment: 'ligero', tipo: 'transmision' },
+  'API GL-5':       { description: 'Aceite engranajes alta presión GL-5', segment: 'ligero', tipo: 'transmision' },
+  'ILSAC GF-6A':    { description: 'Aceite motor gasolina ILSAC GF-6A (Fuel Economy)', segment: 'ligero', tipo: 'motor' },
+  'ILSAC GF-6B':    { description: 'Aceite motor gasolina ILSAC GF-6B (0W-16 ultra-bajo)', segment: 'ligero', tipo: 'motor' },
+  'JASO MA':        { description: 'Aceite motor 4T moto con embrague húmedo (estándar)', segment: 'ligero', tipo: 'motor' },
+  'JASO MA2':       { description: 'Aceite motor 4T moto última generación', segment: 'ligero', tipo: 'motor' },
+  'JASO MB':        { description: 'Aceite motor 4T moto con embrague seco (scooters)', segment: 'ligero', tipo: 'motor' },
+  'JASO DH-2':      { description: 'Aceite motor diésel pesado para Japón', segment: 'pesado', tipo: 'motor' },
+
+  // Hidráulicos (DIN/ISO)
+  'DIN 51524-1':    { description: 'Aceite hidráulico HL (sin antidesgaste)', segment: 'industrial', tipo: 'hidraulico' },
+  'DIN 51524-2':    { description: 'Aceite hidráulico HLP (antidesgaste estándar)', segment: 'industrial', tipo: 'hidraulico' },
+  'DIN 51524-3':    { description: 'Aceite hidráulico HVLP (alto índice de viscosidad)', segment: 'industrial', tipo: 'hidraulico' },
+  'ISO VG 32':      { description: 'Aceite hidráulico viscosidad ISO 32', segment: 'industrial', tipo: 'hidraulico' },
+  'ISO VG 46':      { description: 'Aceite hidráulico viscosidad ISO 46', segment: 'industrial', tipo: 'hidraulico' },
+  'ISO VG 68':      { description: 'Aceite hidráulico viscosidad ISO 68', segment: 'industrial', tipo: 'hidraulico' },
+  'ISO VG 100':     { description: 'Aceite hidráulico viscosidad ISO 100', segment: 'industrial', tipo: 'hidraulico' },
+
+  // Frenos
+  'DOT 3':          { description: 'Líquido de frenos DOT 3 (vehículos antiguos)', segment: 'ligero', tipo: 'frenos' },
+  'DOT 4':          { description: 'Líquido de frenos DOT 4 (estándar moderno)', segment: 'ligero', tipo: 'frenos' },
+  'DOT 5.1':        { description: 'Líquido de frenos DOT 5.1 (alto rendimiento)', segment: 'ligero', tipo: 'frenos' },
+
+  // Refrigerantes
+  'G11':            { description: 'Refrigerante azul/verde silicato (VW antiguo)', segment: 'ligero', tipo: 'refrigerante' },
+  'G12':            { description: 'Refrigerante rojo OAT (VW posteriores 1996)', segment: 'ligero', tipo: 'refrigerante' },
+  'G12+':           { description: 'Refrigerante violeta mejorado (compatible G11/G12)', segment: 'ligero', tipo: 'refrigerante' },
+  'G12++':          { description: 'Refrigerante violeta lobrid (VW TL-774-G)', segment: 'ligero', tipo: 'refrigerante' },
+  'G13':            { description: 'Refrigerante violeta con glicerina (VW última gen.)', segment: 'ligero', tipo: 'refrigerante' },
+};
+
+// ─── DICCIONARIO DE ALIAS (claves ya normalizadas: sin espacios, mayúsculas, sin separadores) ───
+// Mapea variantes → norma canónica
+const SPEC_ALIASES = {
+  // VW: muchas variantes posibles
+  'VW50000': 'VW 500.00', 'VW50101': 'VW 501.01', 'VW50200': 'VW 502.00', 'VW50301': 'VW 503.01',
+  'VW50400': 'VW 504.00', 'VW50500': 'VW 505.00', 'VW50501': 'VW 505.01', 'VW50700': 'VW 507.00',
+  'VW50800': 'VW 508.00', 'VW50900': 'VW 509.00', 'VW50888': 'VW 508.88', 'VW50999': 'VW 509.99',
+  '50000': 'VW 500.00', '50101': 'VW 501.01', '50200': 'VW 502.00', '50301': 'VW 503.01',
+  '50400': 'VW 504.00', '50500': 'VW 505.00', '50501': 'VW 505.01', '50700': 'VW 507.00',
+  '50800': 'VW 508.00', '50900': 'VW 509.00',
+  'VWG052171': 'VW G 052 171', 'VWG052180': 'VW G 052 180', 'VWG052182': 'VW G 052 182',
+  'VWG052516': 'VW G 052 516', 'G052171': 'VW G 052 171', 'G052182': 'VW G 052 182',
+  'VWTL774G': 'VW TL-774-G', 'TL774G': 'VW TL-774-G',
+
+  // PSA / Stellantis
+  'B712290': 'PSA B71 2290', 'B712294': 'PSA B71 2294', 'B712295': 'PSA B71 2295',
+  'B712296': 'PSA B71 2296', 'B712297': 'PSA B71 2297', 'B712300': 'PSA B71 2300',
+  'B712302': 'PSA B71 2302', 'B712010': 'PSA B71 2010', 'B712312': 'PSA B71 2312',
+  'PSAB712290': 'PSA B71 2290', 'PSAB712010': 'PSA B71 2010', 'PSAB712312': 'PSA B71 2312',
+  'PSAB712296': 'PSA B71 2296', 'PSAB712297': 'PSA B71 2297',
+  'FPW955535/03': 'STELLANTIS FPW9.55535/03', 'FPW9.55535/03': 'STELLANTIS FPW9.55535/03',
+  'STELLANTISFPW': 'STELLANTIS FPW9.55535/03',
+
+  // Mercedes-Benz
+  'MB2291': 'MB 229.1', 'MB2293': 'MB 229.3', 'MB22931': 'MB 229.31',
+  'MB2295': 'MB 229.5', 'MB22951': 'MB 229.51', 'MB22952': 'MB 229.52',
+  'MB2265': 'MB 226.5', 'MB22651': 'MB 226.51',
+  'MB2283': 'MB 228.3', 'MB22831': 'MB 228.31', 'MB2285': 'MB 228.5',
+  'MB22851': 'MB 228.51', 'MB22852': 'MB 228.52',
+  'MB23528': 'MB 235.28', 'MB2369': 'MB 236.9', 'MB23614': 'MB 236.14',
+  'MBAPPROVAL2291': 'MB 229.1', 'MBAPPROVAL22951': 'MB 229.51',
+  'APPROVAL22951': 'MB 229.51', 'APPROVAL2295': 'MB 229.5',
+  '2291': 'MB 229.1', '2293': 'MB 229.3', '22931': 'MB 229.31', '2295': 'MB 229.5',
+  '22951': 'MB 229.51', '22952': 'MB 229.52', '2265': 'MB 226.5', '22651': 'MB 226.51',
+
+  // BMW
+  'BMWLL01': 'BMW LL-01', 'BMWLL04': 'BMW LL-04',
+  'LL01': 'BMW LL-01', 'LL04': 'BMW LL-04',
+  'BMWLONGLIFE01': 'BMW LL-01', 'BMWLONGLIFE04': 'BMW LL-04',
+  'LONGLIFE01': 'BMW LL-01', 'LONGLIFE04': 'BMW LL-04',
+
+  // Porsche
+  'PORSCHEA40': 'PORSCHE A40', 'PORSCHEC30': 'PORSCHE C30', 'PORSCHEC20': 'PORSCHE C20',
+  'A40': 'PORSCHE A40', 'C30': 'PORSCHE C30', 'C20': 'PORSCHE C20',
+
+  // Renault (nombres antiguos y nuevos)
+  'RN0700': 'RENAULT RN0700', 'RN0710': 'RENAULT RN0710', 'RN0720': 'RENAULT RN0720',
+  'RN700': 'RENAULT RN0700', 'RN710': 'RENAULT RN0710', 'RN720': 'RENAULT RN0720',
+  'RN17': 'RENAULT RN17', 'RN17FE': 'RENAULT RN17 FE',
+  'RLD2': 'RENAULT RLD-2', 'RLD3': 'RENAULT RLD-3', 'RXD': 'RENAULT RXD', 'RGD': 'RENAULT RGD',
+  'RENAULTRLD2': 'RENAULT RLD-2', 'RENAULTRLD3': 'RENAULT RLD-3',
+  'RVIRLD2': 'RENAULT RLD-2', 'RVIRLD3': 'RENAULT RLD-3',
+
+  // Ford
+  'FORDWSSM2C913D': 'FORD WSS-M2C913-D', 'M2C913D': 'FORD WSS-M2C913-D', 'WSSM2C913D': 'FORD WSS-M2C913-D',
+  'FORDWSSM2C948B': 'FORD WSS-M2C948-B', 'M2C948B': 'FORD WSS-M2C948-B',
+  'FORDWSSM2C950A': 'FORD WSS-M2C950-A', 'M2C950A': 'FORD WSS-M2C950-A',
+  'FORDWSSM2C946A': 'FORD WSS-M2C946-A', 'M2C946A': 'FORD WSS-M2C946-A',
+  'FORDWSSM2C961A1': 'FORD WSS-M2C961-A1', 'M2C961A1': 'FORD WSS-M2C961-A1',
+
+  // Jaguar/Land Rover
+  'STJLR035004': 'JAGUAR STJLR.03.5004', 'JAGUAR035004': 'JAGUAR STJLR.03.5004',
+  'STJLR035005': 'JAGUAR STJLR.03.5005', 'STJLR035007': 'JAGUAR STJLR.03.5007',
+
+  // Fiat / GM / Opel
+  'FIAT955535S1': 'FIAT 9.55535-S1', '955535S1': 'FIAT 9.55535-S1',
+  'FIAT955535S2': 'FIAT 9.55535-S2', '955535S2': 'FIAT 9.55535-S2',
+  'FIAT955535S3': 'FIAT 9.55535-S3', '955535S3': 'FIAT 9.55535-S3',
+  'DEXOS1GEN3': 'GM DEXOS1 GEN3', 'GMDEXOS1GEN3': 'GM DEXOS1 GEN3', 'DEXOS1': 'GM DEXOS1 GEN3',
+  'OPELOV040': 'OPEL OV 040 1547-D30', 'OV0401547D30': 'OPEL OV 040 1547-D30',
+  'OV0401547G30': 'OPEL OV 040 1547-G30',
+
+  // Volvo / pesado
+  'VDS3': 'VOLVO VDS-3', 'VOLVOVDS3': 'VOLVO VDS-3',
+  'VDS4': 'VOLVO VDS-4', 'VOLVOVDS4': 'VOLVO VDS-4',
+  'VDS45': 'VOLVO VDS-4.5', 'VOLVOVDS45': 'VOLVO VDS-4.5',
+  'VOLVOCNG': 'VOLVO CNG', 'VOLVO97341': 'VOLVO 97341',
+
+  // MAN
+  'M32711': 'MAN M3271-1', 'M3271': 'MAN M3271-1', 'MANM3271': 'MAN M3271-1', 'MANM32711': 'MAN M3271-1',
+  'M3277': 'MAN M3277', 'MANM3277': 'MAN M3277',
+  'M3377': 'MAN M3377', 'MANM3377': 'MAN M3377',
+  'M3477': 'MAN M3477', 'MANM3477': 'MAN M3477',
+  'M3575': 'MAN M3575', 'MANM3575': 'MAN M3575',
+  'M3677': 'MAN M3677', 'MANM3677': 'MAN M3677',
+  'M3775': 'MAN M3775', 'MANM3775': 'MAN M3775',
+
+  // Mack
+  'MACKEON': 'MACK EO-N', 'EON': 'MACK EO-N',
+  'MACKEOMPLUS': 'MACK EO-M Plus', 'EOMPLUS': 'MACK EO-M Plus',
+  'MACKEOOPREMIUMPLUS': 'MACK EO-O Premium Plus', 'EOOPREMIUMPLUS': 'MACK EO-O Premium Plus',
+  'EOOPREMIUM': 'MACK EO-O Premium Plus', 'MACKEOS45': 'MACK EOS-4.5', 'EOS45': 'MACK EOS-4.5',
+
+  // Cummins, CAT, Scania, MTU, Deutz
+  'CES20076': 'CUMMINS CES 20076', 'CUMMINSCES20076': 'CUMMINS CES 20076', 'CUMMINS20076': 'CUMMINS CES 20076',
+  'CES20081': 'CUMMINS CES 20081', 'CUMMINSCES20081': 'CUMMINS CES 20081',
+  'CES20086': 'CUMMINS CES 20086', 'CUMMINSCES20086': 'CUMMINS CES 20086',
+  'CATECF1A': 'CATERPILLAR ECF-1a', 'ECF1A': 'CATERPILLAR ECF-1a',
+  'CATECF2': 'CATERPILLAR ECF-2', 'ECF2': 'CATERPILLAR ECF-2',
+  'CATECF3': 'CATERPILLAR ECF-3', 'ECF3': 'CATERPILLAR ECF-3',
+  'LDF3': 'SCANIA LDF-3', 'SCANIALDF3': 'SCANIA LDF-3',
+  'LDF4': 'SCANIA LDF-4', 'SCANIALDF4': 'SCANIA LDF-4',
+  'LOWASH': 'SCANIA LOW ASH', 'SCANIALOWASH': 'SCANIA LOW ASH',
+  'MTUTYPE2': 'MTU Type 2', 'MTUTYPE21': 'MTU Type 2.1',
+  'MTUTYPE3': 'MTU Type 3', 'MTUTYPE31': 'MTU Type 3.1',
+  'DQCIII10': 'DEUTZ DQC III-10', 'DEUTZDQCIII10': 'DEUTZ DQC III-10',
+  'DQCIV10LA': 'DEUTZ DQC IV-10 LA', 'DEUTZDQCIV10LA': 'DEUTZ DQC IV-10 LA',
+  'DQCIV18LA': 'DEUTZ DQC IV-18 LA', 'DEUTZDQCIV18LA': 'DEUTZ DQC IV-18 LA',
+  'DAFEXTENDEDDRAIN': 'DAF Extended Drain', 'DAFXD': 'DAF Extended Drain',
+
+  // Transmisión asiática (alias comerciales muy comunes)
+  'HONDACVT': 'HONDA HCF-2', 'HONDACVTF': 'HONDA HCF-2', 'HONDAHCF2': 'HONDA HCF-2', 'HCF2': 'HONDA HCF-2',
+  'HONDAHMMF': 'HONDA HMMF', 'HMMF': 'HONDA HMMF',
+  'HONDAZ1': 'HONDA Z-1', 'Z1': 'HONDA Z-1',
+  'TOYOTAWS': 'TOYOTA WS', 'WS': 'TOYOTA WS',
+  'TOYOTATIV': 'TOYOTA T-IV', 'TIV': 'TOYOTA T-IV', 'T4': 'TOYOTA T-IV',
+  'TOYOTACVTFTC': 'TOYOTA CVTF TC', 'CVTFTC': 'TOYOTA CVTF TC',
+  'TOYOTACVTFFE': 'TOYOTA CVTF FE', 'CVTFFE': 'TOYOTA CVTF FE',
+  'NISSANNS1': 'NISSAN NS-1', 'NS1': 'NISSAN NS-1',
+  'NISSANNS2': 'NISSAN NS-2', 'NS2': 'NISSAN NS-2',
+  'NISSANNS3': 'NISSAN NS-3', 'NS3': 'NISSAN NS-3',
+  'NISSANMATIC-D': 'NISSAN MATIC-D', 'MATICD': 'NISSAN MATIC-D',
+  'MAZDAJWS3320': 'MAZDA JWS 3320', 'JWS3320': 'MAZDA JWS 3320',
+  'MITSUBISHISPIII': 'MITSUBISHI SP-III', 'SPIII': 'MITSUBISHI SP-III', 'SP3': 'MITSUBISHI SP-III',
+  'CVTFJ1': 'MITSUBISHI CVTF-J1', 'MITSUBISHICVTFJ1': 'MITSUBISHI CVTF-J1',
+  'SUBARUECVT': 'SUBARU ECVT', 'ECVT': 'SUBARU ECVT',
+  'SUZUKICVTF': 'SUZUKI CVTF',
+  'HYUNDAICVTJ1': 'HYUNDAI CVT-J1', 'CVTJ1': 'HYUNDAI CVT-J1', 'KIACVTJ1': 'HYUNDAI CVT-J1',
+
+  // ACEA / API / ILSAC / JASO (variantes habituales)
+  'ACEAA3B4': 'ACEA A3/B4', 'A3B4': 'ACEA A3/B4',
+  'ACEAA5B5': 'ACEA A5/B5', 'A5B5': 'ACEA A5/B5',
+  'ACEAC1': 'ACEA C1', 'ACEAC2': 'ACEA C2', 'ACEAC3': 'ACEA C3',
+  'ACEAC4': 'ACEA C4', 'ACEAC5': 'ACEA C5', 'ACEAC6': 'ACEA C6',
+  'ACEAE4': 'ACEA E4', 'ACEAE6': 'ACEA E6', 'ACEAE7': 'ACEA E7', 'ACEAE9': 'ACEA E9',
+  'APISN': 'API SN', 'APISP': 'API SP', 'APISL': 'API SL', 'APICF': 'API CF',
+  'APICK4': 'API CK-4', 'APICJ4': 'API CJ-4', 'APICI4': 'API CI-4',
+  'APIGL4': 'API GL-4', 'APIGL5': 'API GL-5', 'GL4': 'API GL-4', 'GL5': 'API GL-5',
+  'ILSACGF6A': 'ILSAC GF-6A', 'GF6A': 'ILSAC GF-6A',
+  'ILSACGF6B': 'ILSAC GF-6B', 'GF6B': 'ILSAC GF-6B',
+  'JASOMA': 'JASO MA', 'JASOMA2': 'JASO MA2', 'JASOMB': 'JASO MB', 'JASODH2': 'JASO DH-2',
+
+  // Hidráulicos (HVLP, HLP, ISO VG)
+  'HVLP1': 'DIN 51524-3', 'HVLP2': 'DIN 51524-3', 'HVLP3': 'DIN 51524-3',
+  'HVLP': 'DIN 51524-3', 'HLP': 'DIN 51524-2', 'HL': 'DIN 51524-1',
+  'DIN515241': 'DIN 51524-1', 'DIN515242': 'DIN 51524-2', 'DIN515243': 'DIN 51524-3',
+  'ISOVG32': 'ISO VG 32', 'ISO32': 'ISO VG 32', 'VG32': 'ISO VG 32',
+  'ISOVG46': 'ISO VG 46', 'ISO46': 'ISO VG 46', 'VG46': 'ISO VG 46',
+  'ISOVG68': 'ISO VG 68', 'ISO68': 'ISO VG 68', 'VG68': 'ISO VG 68',
+  'ISOVG100': 'ISO VG 100', 'ISO100': 'ISO VG 100', 'VG100': 'ISO VG 100',
+
+  // Frenos
+  'DOT3': 'DOT 3', 'DOT4': 'DOT 4', 'DOT51': 'DOT 5.1', 'DOT5.1': 'DOT 5.1',
+
+  // Refrigerantes
+  'G12+': 'G12+', 'G12++': 'G12++', 'G11': 'G11', 'G12': 'G12', 'G13': 'G13',
+};
+
+// ─── NORMALIZACIÓN AGRESIVA (Fase 1) ───
+function normalizeDesc(s) {
+  return (s || '')
+    .toUpperCase()
+    .replace(/[\s\-\.\_\/\\,;:]/g, '')
+    .replace(/[ÁÀÄÂÃ]/g, 'A').replace(/[ÉÈËÊ]/g, 'E').replace(/[ÍÌÏÎ]/g, 'I')
+    .replace(/[ÓÒÖÔÕ]/g, 'O').replace(/[ÚÙÜÛ]/g, 'U').replace(/Ñ/g, 'N')
+    .trim();
+}
+
+// ─── ALGORITMO DE BÚSQUEDA INTELIGENTE ───
+function intelligentSearch(query) {
+  if (!query || !query.trim()) return null;
+  
+  const raw = query.trim();
+  // Fase 1: Normalización agresiva
+  const normalized = normalizeDesc(raw);
+
+  // Fase 2: ¿Es ya una norma canónica exacta?
+  for (const spec in SPECS_DB) {
+    if (normalizeDesc(spec) === normalized) {
+      return { match: 'exact', canonical: spec, info: SPECS_DB[spec], phase: 2 };
+    }
+  }
+
+  // Fase 3: ¿Está en el diccionario de alias?
+  if (SPEC_ALIASES[normalized]) {
+    const canonical = SPEC_ALIASES[normalized];
+    return { match: 'alias', canonical, info: SPECS_DB[canonical] || null, original: raw, phase: 3 };
+  }
+
+  // Fase 4: Patrones (SAE viscosity, ACEA, API, etc.) - búsqueda múltiple
+  const matches = [];
+
+  // 4.1: Viscosidad SAE (5W30, 10W40, etc.)
+  const sae = raw.toUpperCase().match(/\b(\d{1,2})W[-]?(\d{2})\b/);
+  if (sae) {
+    const visc = `${sae[1]}W${sae[2]}`;
+    const products = AD_PARTS_CATALOG.filter(p => p.viscosity === visc);
+    if (products.length) {
+      return { match: 'viscosity', viscosity: visc, products, equivs: EQUIV_CATALOG.filter(e => e.viscosity === visc), phase: 4 };
+    }
+  }
+
+  // 4.2: Categoría ACEA suelta (C3, A3/B4, E9, etc.) - intenta varias formas
+  const aceaPatterns = [
+    /^ACEA?\s*([A-E]\d[\/\s]*[A-E]?\d?)$/i,
+    /^([A-E]\d)\/([A-E]\d)$/i,
+    /^([CE]\d)$/i,
+  ];
+  for (const pat of aceaPatterns) {
+    const m = raw.toUpperCase().match(pat);
+    if (m) {
+      // Buscar productos que cumplan esta categoría
+      const key = `ACEA ${m[1].replace(/\s+/g, '')}`;
+      const norm = normalizeDesc(key);
+      for (const spec in SPECS_DB) {
+        if (normalizeDesc(spec) === norm) {
+          return { match: 'category', canonical: spec, info: SPECS_DB[spec], phase: 4 };
+        }
+      }
+    }
+  }
+
+  // Fase 5: Similitud (búsqueda parcial en specs canónicas)
+  const candidates = [];
+  for (const spec in SPECS_DB) {
+    const normSpec = normalizeDesc(spec);
+    if (normSpec.includes(normalized) || normalized.includes(normSpec)) {
+      candidates.push(spec);
+    }
+  }
+  if (candidates.length === 1) {
+    return { match: 'partial', canonical: candidates[0], info: SPECS_DB[candidates[0]], phase: 5 };
+  }
+  if (candidates.length > 1 && candidates.length <= 8) {
+    return { match: 'multiple', candidates, phase: 5 };
+  }
+
+  // No encontrado
+  return { match: 'none', query: raw, phase: 5 };
+}
+
+// ─── DEVUELVE PRODUCTOS AD PARTS Y EQUIVALENCIAS PARA UNA NORMA CANÓNICA ───
+function productsForSpec(canonicalSpec) {
+  // Normalizar para comparación
+  const target = canonicalSpec.toUpperCase();
+  const adProducts = AD_PARTS_CATALOG.filter(p =>
+    p.specs.some(s => s.toUpperCase() === target)
+  );
+  const equivs = EQUIV_CATALOG.filter(p =>
+    p.specs.some(s => s.toUpperCase() === target)
+  );
+  return { adProducts, equivs };
+}
+
+// ─── RENDERIZADO DE RESULTADO ───
+function renderDescResult(result) {
+  const target = document.getElementById('results-section');
+  
+  if (!result || result.match === 'none') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon error">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow error">No identificado</div>
+            <div class="desc-result-norm">"${result ? result.query : ''}"</div>
+            <div class="desc-result-desc">No se ha podido identificar esta entrada. Prueba con una norma OEM, ACEA, API o un alias comercial conocido.</div>
+          </div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  if (result.match === 'multiple') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow warn">Varias coincidencias</div>
+            <div class="desc-result-norm">Selecciona la norma exacta</div>
+            <div class="desc-result-desc">Hay ${result.candidates.length} normas que coinciden con tu búsqueda. Elige una:</div>
+          </div>
+        </div>
+        <div class="desc-clarify-options">
+          ${result.candidates.map(c => `<button class="desc-clarify-btn" onclick="searchByDescResolved('${c}')">${c}</button>`).join('')}
+        </div>
+      </div>`;
+    return;
+  }
+
+  // Match exitoso (exact, alias, partial, category)
+  let canonical, info;
+  if (result.match === 'viscosity') {
+    // Caso especial: viscosidad — mostrar productos directamente
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow">Identificada como viscosidad</div>
+            <div class="desc-result-norm">SAE ${result.viscosity}</div>
+            <div class="desc-result-desc">Productos disponibles con esta viscosidad. Para mayor precisión, indica también la norma OEM (ej. "5W30 VW 504.00").</div>
+          </div>
+        </div>
+        ${renderProductsBlock(result.products, result.equivs)}
+      </div>`;
+    return;
+  }
+
+  canonical = result.canonical;
+  info = result.info;
+  const { adProducts, equivs } = productsForSpec(canonical);
+  
+  let phaseLabel = '';
+  if (result.match === 'exact') phaseLabel = 'Identificación directa';
+  else if (result.match === 'alias') phaseLabel = `Normalizado a partir de "${result.original}"`;
+  else if (result.match === 'partial') phaseLabel = 'Coincidencia parcial';
+  else if (result.match === 'category') phaseLabel = 'Categoría ACEA';
+  
+  target.innerHTML = `
+    <div class="desc-result-container">
+      <div class="desc-result-header">
+        <div class="desc-result-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="desc-result-headinfo">
+          <div class="desc-result-eyebrow">${phaseLabel}</div>
+          <div class="desc-result-norm">${canonical}</div>
+          ${info ? `<div class="desc-result-desc">${info.description}</div>` : ''}
+        </div>
+      </div>
+      ${renderProductsBlock(adProducts, equivs)}
+    </div>`;
+}
+
+function renderProductsBlock(adProducts, equivs) {
+  let html = '';
+  
+  if (adProducts.length > 0) {
+    html += `
+      <div class="desc-result-section">
+        <div class="desc-result-section-title">
+          AD Parts recomendado <span class="count">${adProducts.length}</span>
+        </div>
+        <div class="desc-products-grid">
+          ${adProducts.map(p => `
+            <div class="desc-product-card ad">
+              <div class="desc-product-card-header">
+                <span class="desc-product-brand">AD Parts</span>
+                <span class="desc-product-ref">${p.sku}</span>
+              </div>
+              <div class="desc-product-name">${p.ref}</div>
+              <div class="desc-product-specs">${p.specs.slice(0, 4).join(' · ')}${p.specs.length > 4 ? ` +${p.specs.length - 4}` : ''}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  }
+  
+  if (equivs.length > 0) {
+    html += `
+      <div class="desc-result-section">
+        <div class="desc-result-section-title">
+          Equivalencias de otras marcas <span class="count">${equivs.length}</span>
+        </div>
+        <div class="desc-products-grid">
+          ${equivs.map(p => `
+            <div class="desc-product-card">
+              <div class="desc-product-card-header">
+                <span class="desc-product-brand">${p.brand}</span>
+              </div>
+              <div class="desc-product-name">${p.ref}</div>
+              <div class="desc-product-specs">${p.specs.slice(0, 4).join(' · ')}${p.specs.length > 4 ? ` +${p.specs.length - 4}` : ''}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+  }
+  
+  if (adProducts.length === 0 && equivs.length === 0) {
+    html += `<div class="desc-result-empty">No hay productos en catálogo que cumplan esta norma de momento.</div>`;
+  }
+  
+  return html;
+}
+
+// Resolver tras clarificación
+function searchByDescResolved(canonical) {
+  const result = { match: 'exact', canonical, info: SPECS_DB[canonical] };
+  renderDescResult(result);
+  setSearchButtonsResetMode(true);
+  // Llenar el input visualmente con la norma resuelta
+  document.getElementById('input-desc').value = canonical;
+}
+
+// ─── ENTRADA PRINCIPAL ───
+function fillDesc(s) { document.getElementById('input-desc').value = s; searchByDesc(); }
+
+function searchByDesc() {
+  if (currentVehicle) { resetSearch(); return; }
+  const input = document.getElementById('input-desc');
+  const q = (input.value || '').trim();
+  if (!q) return;
+  const result = intelligentSearch(q);
+  renderDescResult(result);
+  // Marcamos un "vehículo virtual" para activar modo reset
+  currentVehicle = { _desc: true, query: q };
+  setSearchButtonsResetMode(true);
+}
+
+
+// ═══════════════════════════════════════════════════════════════════════
+// BÚSQUEDA LIBRE — Lenguaje natural / casos difíciles
+// El motor entiende intención: marca + componente + tipo de fluido
+// ═══════════════════════════════════════════════════════════════════════
+
+// ─── BASE DE CONOCIMIENTO: COMPONENTES Y SISTEMAS ───
+const COMPONENT_KNOWLEDGE = {
+  'HALDEX': {
+    aliases: ['haldex', '4motion', 'xdrive', 'quattro ultra', 'embrague haldex'],
+    fluidType: 'Fluido Haldex (hidráulico específico para acoplador electrohidráulico AWD)',
+    canonicalSpecs: ['VW G 052 175', 'BMW Haldex Oil', 'VOLVO Haldex Gen 4'],
+    interpretation: 'Sistema de tracción a las cuatro ruedas (AWD) que usa un acoplador Haldex. Requiere fluido hidráulico específico, NO aceite motor ni ATF estándar.',
+    advice: 'Usa siempre el fluido específico del fabricante. Es un cambio de poco volumen (700-900 ml) pero crítico.',
+  },
+  'DSG': {
+    aliases: ['dsg', 's-tronic', 'stronic', 'caja dsg', 'doble embrague', 'dq200', 'dq250', 'dq381', 'dq500'],
+    fluidType: 'Fluido DSG (caja automática de doble embrague)',
+    canonicalSpecs: ['VW G 052 182', 'VW G 060 162', 'VW G 052 529'],
+    interpretation: 'Caja de doble embrague de VW/Audi/Skoda/SEAT. DQ200 (seco) y DQ250/DQ381/DQ500 (húmedo) usan fluidos distintos.',
+    advice: 'Importante distinguir entre DSG seco (DQ200, sin aceite) y DSG húmedo (DQ250+, con G 052 182 o equivalente).',
+  },
+  'CVT': {
+    aliases: ['cvt', 'caja cvt', 'variador continuo', 'transmision variable', 'multitronic'],
+    fluidType: 'Fluido CVT (cambio continuo variable)',
+    canonicalSpecs: ['HONDA HCF-2', 'NISSAN NS-3', 'TOYOTA CVTF FE', 'MITSUBISHI CVTF-J1', 'SUBARU ECVT'],
+    interpretation: 'Cambio continuo variable. Cada fabricante usa un fluido específico y NO son intercambiables.',
+    advice: 'Honda, Nissan, Toyota, Subaru y Mitsubishi tienen sus propios fluidos CVT. Comprueba el manual del vehículo.',
+  },
+  'EMBRAGUE_HIDRAULICO': {
+    aliases: ['embrague hidraulico', 'liquido embrague', 'circuito embrague'],
+    fluidType: 'Líquido de embrague (mismo que líquido de frenos)',
+    canonicalSpecs: ['DOT 4', 'DOT 5.1'],
+    interpretation: 'El circuito hidráulico del embrague usa el mismo líquido que el circuito de frenos (DOT 4 / DOT 5.1).',
+    advice: 'Usa DOT 4 estándar a menos que el fabricante indique DOT 5.1.',
+  },
+  'EMBRAGUE_HUMEDO': {
+    aliases: ['embrague humedo', 'embrague baño aceite', 'moto'],
+    fluidType: 'Aceite motor con norma JASO MA/MA2 (moto)',
+    canonicalSpecs: ['JASO MA', 'JASO MA2'],
+    interpretation: 'Motos con embrague húmedo (en baño de aceite) necesitan aceite específico no deslizante.',
+    advice: 'JASO MA o MA2 según severidad. NO usar aceites de coche con modificadores de fricción API SH+.',
+  },
+  'REFRIGERANTE': {
+    aliases: ['refrigerante', 'anticongelante', 'liquido refrigerante', 'coolant'],
+    fluidType: 'Refrigerante (anticongelante)',
+    canonicalSpecs: ['G11', 'G12', 'G12+', 'G12++', 'G13', 'VW TL-774-G'],
+    interpretation: 'El color del refrigerante orienta pero no determina la norma. Lo correcto es seguir la especificación del fabricante.',
+    colorHints: {
+      'azul': 'G11 (silicato, generaciones antiguas)',
+      'verde': 'G11 / IAT (antiguo)',
+      'rojo': 'G12 (OAT, VW posteriores 1996)',
+      'rosa': 'G12+ (compatible con G11 y G12)',
+      'rosado': 'G12+ (compatible con G11 y G12)',
+      'morado': 'G12++ / G13 (lobrid, modernos)',
+      'violeta': 'G12++ / G13 (lobrid, modernos)',
+      'lila': 'G12++ / G13 (lobrid, modernos)',
+      'amarillo': 'G13 o universal (verificar norma)',
+      'naranja': 'IAT/OAT — depende del fabricante (GM dexcool típicamente)',
+    },
+    advice: 'NUNCA mezcles refrigerantes de colores/normas distintas sin verificar compatibilidad. Pueden generarse depósitos que obstruyan el sistema.',
+  },
+  'FRENOS': {
+    aliases: ['frenos', 'liquido frenos', 'liquido de frenos', 'brake fluid'],
+    fluidType: 'Líquido de frenos',
+    canonicalSpecs: ['DOT 3', 'DOT 4', 'DOT 5.1'],
+    interpretation: 'La mayoría de vehículos modernos usan DOT 4. Vehículos con ESP/ABS de alto rendimiento pueden requerir DOT 5.1.',
+    advice: 'Cambia el líquido cada 2 años o según fabricante. NUNCA mezcles DOT 5 (silicona) con DOT 4 (glicol).',
+  },
+  'DIRECCION': {
+    aliases: ['direccion asistida', 'direccion', 'power steering', 'servodireccion'],
+    fluidType: 'Fluido dirección asistida (PSF)',
+    canonicalSpecs: ['Pentosin CHF 11S', 'Pentosin CHF 202', 'Dexron III', 'ATF específico'],
+    interpretation: 'Algunos vehículos usan ATF, otros un fluido específico (Pentosin CHF). Verificar tapón del depósito.',
+    advice: 'No mezcles tipos diferentes. Pentosin CHF 11S es la opción más común en Europa.',
+  },
+  'CAJA_MANUAL': {
+    aliases: ['caja manual', 'caja de cambios manual', 'transmision manual', 'engranajes'],
+    fluidType: 'Aceite caja manual (engranajes)',
+    canonicalSpecs: ['API GL-4', 'API GL-5', 'SAE 75W90', 'SAE 80W90'],
+    interpretation: 'Aceite para engranajes manuales. API GL-4 para cajas estándar, GL-5 para diferenciales y cajas con alta carga.',
+    advice: 'Cuidado: GL-5 puede dañar sincronizadores de latón en cajas que pidan GL-4.',
+  },
+  'CAJA_AUTOMATICA': {
+    aliases: ['caja automatica', 'transmision automatica', 'automatica', 'atf'],
+    fluidType: 'ATF (Automatic Transmission Fluid)',
+    canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14'],
+    interpretation: 'ATF varía mucho según fabricante de la caja (ZF, Aisin, Jatco, Mercedes 7G/9G).',
+    advice: 'NUNCA uses ATF universal en cajas modernas. Cada caja tiene su norma específica.',
+  },
+  'AdBlue': {
+    aliases: ['adblue', 'urea', 'def'],
+    fluidType: 'Disolución urea AdBlue (DEF)',
+    canonicalSpecs: ['ISO 22241', 'AdBlue', 'DEF'],
+    interpretation: 'Disolución acuosa de urea al 32,5% para sistema SCR de motores diésel Euro 6.',
+    advice: 'No tiene "marca". Solo asegúrate de que cumpla ISO 22241 (todos los AdBlue homologados la cumplen).',
+  },
+  'DIRECCION_HALDEX_AUDI': {
+    aliases: ['quattro audi', 'audi quattro'],
+    fluidType: 'Sistema quattro Audi (diferencial central + Haldex en versiones Ultra)',
+    canonicalSpecs: ['VW G 052 175 (Haldex Audi Q3/A3 quattro)', 'API GL-5 (diferencial Torsen)'],
+    interpretation: 'Audi quattro tiene varios sistemas: Torsen (diferencial central) o Haldex (acoplador en Q3, A3).',
+    advice: 'Comprueba si tu modelo lleva Torsen (aceite engranajes GL-5) o Haldex (fluido específico G 052 175).',
+  },
+};
+
+// ─── MARCAS RECONOCIDAS ───
+const BRAND_KEYWORDS = {
+  'BMW': ['bmw'],
+  'VW': ['vw', 'volkswagen'],
+  'AUDI': ['audi'],
+  'SEAT': ['seat'],
+  'SKODA': ['skoda', 'škoda'],
+  'MERCEDES': ['mercedes', 'mb', 'mercedes-benz', 'mercedes benz'],
+  'PORSCHE': ['porsche'],
+  'FORD': ['ford'],
+  'RENAULT': ['renault'],
+  'PEUGEOT': ['peugeot', 'psa'],
+  'CITROEN': ['citroen', 'citroën'],
+  'OPEL': ['opel', 'vauxhall'],
+  'FIAT': ['fiat'],
+  'JAGUAR': ['jaguar'],
+  'LAND_ROVER': ['land rover', 'land-rover', 'landrover', 'range rover'],
+  'TOYOTA': ['toyota'],
+  'HONDA': ['honda'],
+  'NISSAN': ['nissan'],
+  'MAZDA': ['mazda'],
+  'SUBARU': ['subaru'],
+  'MITSUBISHI': ['mitsubishi'],
+  'SUZUKI': ['suzuki'],
+  'HYUNDAI': ['hyundai'],
+  'KIA': ['kia'],
+  'VOLVO': ['volvo'],
+  'DACIA': ['dacia'],
+  'MAN': ['camion man', 'man tgx', 'man tgs'],
+  'SCANIA': ['scania'],
+  'IVECO': ['iveco'],
+  'DAF': ['daf'],
+};
+
+// ─── ALGORITMO DE BÚSQUEDA LIBRE ───
+function freeSearch(query) {
+  if (!query || !query.trim()) return null;
+  const raw = query.trim();
+  const q = raw.toLowerCase();
+  // Normalización suave (manteniendo espacios para matching de frases)
+  const qNorm = q
+    .replace(/[áàäâã]/g, 'a').replace(/[éèëê]/g, 'e').replace(/[íìïî]/g, 'i')
+    .replace(/[óòöôõ]/g, 'o').replace(/[úùüû]/g, 'u').replace(/ñ/g, 'n');
+
+  // Detectar componentes/sistemas mencionados
+  const detectedComponents = [];
+  for (const [key, comp] of Object.entries(COMPONENT_KNOWLEDGE)) {
+    for (const alias of comp.aliases) {
+      if (qNorm.includes(alias.toLowerCase())) {
+        detectedComponents.push({ key, comp });
+        break;
+      }
+    }
+  }
+
+  // Detectar marca
+  let detectedBrand = null;
+  for (const [brand, keywords] of Object.entries(BRAND_KEYWORDS)) {
+    for (const kw of keywords) {
+      if (qNorm.includes(kw)) {
+        detectedBrand = brand;
+        break;
+      }
+    }
+    if (detectedBrand) break;
+  }
+
+  // Detectar color (para refrigerantes)
+  let detectedColor = null;
+  if (detectedComponents.some(c => c.key === 'REFRIGERANTE')) {
+    const refComp = COMPONENT_KNOWLEDGE.REFRIGERANTE;
+    for (const color in refComp.colorHints) {
+      if (qNorm.includes(color)) {
+        detectedColor = { color, hint: refComp.colorHints[color] };
+        break;
+      }
+    }
+  }
+
+  // Si detectamos algún componente, construimos respuesta
+  if (detectedComponents.length > 0) {
+    return {
+      match: 'found',
+      query: raw,
+      components: detectedComponents,
+      brand: detectedBrand,
+      color: detectedColor,
+    };
+  }
+
+  // Si solo detectamos marca, ofrecer clarificación
+  if (detectedBrand) {
+    return {
+      match: 'needs_clarification',
+      query: raw,
+      brand: detectedBrand,
+      reason: 'brand_only',
+    };
+  }
+
+  // Nada reconocible — intentar pasar a Homologaciones por si es una norma
+  const formalResult = intelligentSearch(raw);
+  if (formalResult && formalResult.match !== 'none') {
+    return {
+      match: 'redirect_formal',
+      query: raw,
+      formalResult,
+    };
+  }
+
+  return { match: 'none', query: raw };
+}
+
+// ─── RENDERIZADO DE RESULTADO DE BÚSQUEDA LIBRE ───
+function renderFreeResult(result) {
+  const target = document.getElementById('results-section');
+  
+  if (!result || result.match === 'none') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon error">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow error">No comprendido</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${result ? result.query : ''}"</div>
+            <div class="desc-result-desc">El sistema no ha identificado el componente, fluido o marca en tu consulta. Intenta ser más específico (ej: "aceite caja DSG VW Golf 2015") o usa la pestaña <strong>Homologaciones</strong> si conoces la norma exacta.</div>
+          </div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  if (result.match === 'redirect_formal') {
+    // Reusar el renderizado de Homologaciones
+    renderDescResult(result.formalResult);
+    // Añadir aviso superior
+    const cont = target.querySelector('.desc-result-container');
+    if (cont) {
+      const hint = document.createElement('div');
+      hint.className = 'free-redirect-hint';
+      hint.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Tu consulta parecía una norma formal. Lo he procesado como tal.`;
+      cont.insertBefore(hint, cont.firstChild);
+    }
+    return;
+  }
+
+  if (result.match === 'needs_clarification') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow warn">Necesito más datos</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">${result.brand}</div>
+            <div class="desc-result-desc">He identificado la marca pero no el componente o fluido. Indica qué buscas: aceite motor, refrigerante, líquido de frenos, fluido de transmisión, embrague, etc.</div>
+          </div>
+        </div>
+        <div class="desc-clarify-options">
+          <button class="desc-clarify-btn" onclick="fillFree('aceite motor ${result.brand}')">Aceite motor</button>
+          <button class="desc-clarify-btn" onclick="fillFree('refrigerante ${result.brand}')">Refrigerante</button>
+          <button class="desc-clarify-btn" onclick="fillFree('liquido frenos ${result.brand}')">Líquido frenos</button>
+          <button class="desc-clarify-btn" onclick="fillFree('caja cambios ${result.brand}')">Caja cambios</button>
+        </div>
+      </div>`;
+    return;
+  }
+
+  // match: 'found'
+  const mainComp = result.components[0];
+  const comp = mainComp.comp;
+  
+  // Si hay varios componentes detectados, priorizar más específico
+  let finalComp = comp;
+  let finalKey = mainComp.key;
+  if (result.components.length > 1) {
+    // Si Haldex + BMW → quedarse con Haldex, no con BMW
+    // Si embrague + Haldex → quedarse con Haldex (más específico)
+    finalComp = result.components[result.components.length - 1].comp;
+    finalKey = result.components[result.components.length - 1].key;
+  }
+
+  // Recopilar productos AD y equivalencias que cumplen las specs del componente
+  let allAd = [], allEquivs = [];
+  for (const spec of finalComp.canonicalSpecs) {
+    const { adProducts, equivs } = productsForSpec(spec);
+    allAd.push(...adProducts);
+    allEquivs.push(...equivs);
+  }
+  // Deduplicar
+  allAd = [...new Map(allAd.map(p => [p.sku, p])).values()];
+  allEquivs = [...new Map(allEquivs.map(p => [p.ref, p])).values()];
+
+  let colorBlock = '';
+  if (result.color) {
+    colorBlock = `
+      <div class="free-color-hint">
+        <strong>Detecté color "${result.color.color}":</strong> sugiere ${result.color.hint}.
+      </div>`;
+  }
+
+  let brandBlock = '';
+  if (result.brand) {
+    brandBlock = `<div class="free-brand-tag">Marca detectada: <strong>${result.brand}</strong></div>`;
+  }
+
+  target.innerHTML = `
+    <div class="desc-result-container">
+      <div class="desc-result-header">
+        <div class="desc-result-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="desc-result-headinfo">
+          <div class="desc-result-eyebrow">Interpretación de tu consulta</div>
+          <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">${finalComp.fluidType}</div>
+          <div class="desc-result-desc">${finalComp.interpretation}</div>
+          ${brandBlock}
+        </div>
+      </div>
+
+      ${colorBlock}
+
+      <div class="desc-result-section">
+        <div class="desc-result-section-title">
+          Normas aplicables <span class="count">${finalComp.canonicalSpecs.length}</span>
+        </div>
+        <div class="free-specs-list">
+          ${finalComp.canonicalSpecs.map(s => `<code class="free-spec-tag">${s}</code>`).join('')}
+        </div>
+      </div>
+
+      <div class="free-advice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div><strong>Recomendación:</strong> ${finalComp.advice}</div>
+      </div>
+
+      ${renderProductsBlock(allAd, allEquivs)}
+    </div>`;
+}
+
+function fillFree(s) { document.getElementById('input-free').value = s; searchByFree(); }
+
+function searchByFree() {
+  if (currentVehicle) { resetSearch(); return; }
+  const input = document.getElementById('input-free');
+  const q = (input.value || '').trim();
+  if (!q) return;
+  const result = freeSearch(q);
+  renderFreeResult(result);
+  currentVehicle = { _free: true, query: q };
+  setSearchButtonsResetMode(true);
+}
+
+
 
 function normalizePlate(p) { return (p || '').replace(/[\s\-\.]/g, '').toUpperCase(); }
 
@@ -2569,9 +4042,16 @@ function setSearchButtonsResetMode(enabled) {
   const searchIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>`;
   const resetIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>`;
   
-  document.querySelectorAll('.btn-plate-buscar, .btn-vin-buscar, #btn-manual-buscar').forEach(btn => {
+  document.querySelectorAll('.btn-plate-buscar, .btn-vin-buscar, #btn-manual-buscar, .btn-desc-buscar, .btn-free-buscar').forEach(btn => {
     btn.classList.toggle('is-reset', enabled);
-    const label = enabled ? 'Nueva búsqueda' : (btn.id === 'btn-manual-buscar' ? 'Buscar aceite recomendado' : 'Buscar');
+    let label;
+    if (enabled) {
+      label = 'Nueva búsqueda';
+    } else if (btn.id === 'btn-manual-buscar') {
+      label = 'Buscar aceite recomendado';
+    } else {
+      label = 'Buscar';
+    }
     const icon = enabled ? resetIcon : searchIcon;
     btn.innerHTML = `${icon}${label}`;
   });
@@ -2582,8 +4062,12 @@ function resetSearch() {
   // Limpiar inputs
   const plateInput = document.getElementById('input-plate');
   const vinInput = document.getElementById('input-vin');
+  const descInput = document.getElementById('input-desc');
   if (plateInput) plateInput.value = '';
   if (vinInput) vinInput.value = '';
+  if (descInput) descInput.value = '';
+  const freeInput = document.getElementById('input-free');
+  if (freeInput) freeInput.value = '';
   document.querySelectorAll('.combo-input').forEach((inp, idx) => {
     inp.value = '';
     if (idx > 0) {
@@ -3042,6 +4526,8 @@ function showDescExample(el, input, type, explanation) {
 // Enter triggers search
 document.getElementById('input-vin').addEventListener('keydown', e => { if (e.key === 'Enter') searchByVin(); });
 document.getElementById('input-plate').addEventListener('keydown', e => { if (e.key === 'Enter') searchByPlate(); });
+document.getElementById('input-desc').addEventListener('keydown', e => { if (e.key === 'Enter') searchByDesc(); });
+document.getElementById('input-free').addEventListener('keydown', e => { if (e.key === 'Enter') searchByFree(); });
 
 // Detectar preferencia del sistema
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
