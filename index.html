@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buscador de Aceite · Recambios Ibiza × AD Parts</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23E20613'/><g fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><rect x='12' y='34' width='28' height='18' rx='2'/><path d='M22 34 V 24 H 32 V 34'/><path d='M40 38 L 56 30 L 58 36 L 42 44'/></g></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -405,15 +406,20 @@ body::after {
   background: var(--bg-secondary);
   border-radius: var(--r-xl);
   margin-bottom: var(--s-3);
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
+.method-tabs::-webkit-scrollbar { display: none; }
+
 .method-tab {
-  flex: 1;
-  padding: 10px 12px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 10px;
   border: none;
   background: transparent;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
@@ -423,27 +429,66 @@ body::after {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   position: relative;
+  white-space: nowrap;
 }
 
-.method-tab svg { width: 14px; height: 14px; }
+.method-tab svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 .method-tab.active {
-  background: var(--bg-elevated);
-  color: var(--text-primary);
-  box-shadow: var(--shadow-sm);
+  background: var(--ad-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 45, 90, 0.25);
+}
+
+[data-theme="dark"] .method-tab.active {
+  background: white;
+  color: var(--ad-blue);
+}
+
+/* ── Toast emergente de fase (sustituye al badge) ── */
+.phase-toast {
+  position: fixed;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--ad-blue);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: var(--r-full);
+  box-shadow: 0 4px 20px rgba(0, 45, 90, 0.30);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.phase-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+[data-theme="dark"] .phase-toast {
+  background: white;
+  color: var(--ad-blue);
 }
 
 .method-tab .badge-fase {
-  font-size: 8.5px;
+  font-size: 8px;
   font-weight: 700;
-  padding: 2px 6px;
+  padding: 2px 5px;
   background: var(--warning-bg);
   color: var(--warning);
   border-radius: var(--r-sm);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   margin-left: 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .method-panel { display: none; padding: var(--s-2) var(--s-1) var(--s-1); }
@@ -2607,7 +2652,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <path d="M7 10h2M7 14h2M13 10h4M13 14h4"/>
           </svg>
           Matrícula
-          <span class="badge-fase">FASE 2</span>
+          
         </button>
         <button class="method-tab active" onclick="setMethod('vin')" data-method="vin">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -2625,12 +2670,12 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </button>
         <button class="method-tab" onclick="setMethod('desc')" data-method="desc">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 11h11v8H4z"/>
-            <path d="M9 11V8h5v3"/>
-            <path d="M15 13l5-2 1 2-5 2"/>
+            <rect x="3" y="12" width="11" height="8" rx="1"/>
+            <path d="M7 12 V 8 H 11 V 12"/>
+            <path d="M14 14 L 21 11 L 22 13 L 15 17"/>
           </svg>
           Homologaciones
-          <span class="badge-fase">FASE 1</span>
+          
         </button>
         <button class="method-tab" onclick="setMethod('free')" data-method="free">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -2639,7 +2684,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <path d="M19 17v4"/><path d="M17 19h4"/>
           </svg>
           Búsqueda libre
-          <span class="badge-fase">FASE 1</span>
+          
         </button>
       </div>
 
@@ -2817,6 +2862,9 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
   <code>DEMO</code> &nbsp;·&nbsp; Crafted by <strong>Yakoba Moreno</strong>
 </footer>
 
+<!-- Toast de fase -->
+<div class="phase-toast" id="phase-toast"></div>
+
 </div>
 
 
@@ -2961,6 +3009,22 @@ function setView(view) {
   if (currentVehicle) renderResult(currentVehicle);
 }
 
+// Qué mensaje mostrar por pestaña (solo las que están en fases de prueba)
+const METHOD_PHASE_LABELS = {
+  'plate':   '⚠ Matrícula — Fase 2, en desarrollo',
+  'vin':     '⚠ VIN — Fase 2, en desarrollo',
+};
+
+let _toastTimer = null;
+function showPhaseToast(message) {
+  const toast = document.getElementById('phase-toast');
+  if (!toast) return;
+  if (_toastTimer) clearTimeout(_toastTimer);
+  toast.textContent = message;
+  toast.classList.add('show');
+  _toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
 function setMethod(method) {
   document.querySelectorAll('.method-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.method === method);
@@ -2968,6 +3032,10 @@ function setMethod(method) {
   document.querySelectorAll('.method-panel').forEach(p => {
     p.classList.toggle('active', p.id === 'panel-' + method);
   });
+  // Mostrar toast si la pestaña tiene aviso de fase
+  if (METHOD_PHASE_LABELS[method]) {
+    showPhaseToast(METHOD_PHASE_LABELS[method]);
+  }
 }
 
 // ═══════════════════════════════════════════════════════════════════════
