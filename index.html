@@ -256,6 +256,259 @@ body::after {
 
 .theme-btn svg { width: 14px; height: 14px; }
 
+/* Single theme toggle button */
+.theme-toggle-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.theme-toggle-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+.theme-toggle-btn svg { width: 15px; height: 15px; }
+
+/* Help button */
+.help-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.help-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Help modal overlay */
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.help-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.help-dialog {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 0;
+  max-width: 580px;
+  width: 92%;
+  max-height: 82vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+  transform: translateY(8px);
+  transition: transform 0.2s ease;
+}
+.help-overlay.open .help-dialog {
+  transform: translateY(0);
+}
+.help-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+.help-dialog-header h2 {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.help-close-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: 16px;
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.help-close-btn:hover { background: var(--bg-elevated); color: var(--text-primary); }
+
+/* Help tabs */
+.help-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 12px 24px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+.help-tab {
+  padding: 8px 14px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--t-base);
+  letter-spacing: -0.005em;
+}
+.help-tab:hover { color: var(--text-secondary); }
+.help-tab.active {
+  color: var(--ad-blue);
+  border-bottom-color: var(--ad-blue);
+}
+[data-theme="dark"] .help-tab.active { color: #FFFFFF; border-bottom-color: #FFFFFF; }
+
+/* Help body */
+.help-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 20px 24px 24px;
+}
+.help-panel { display: none; }
+.help-panel.active { display: block; }
+
+/* Help usage content */
+.help-section {
+  margin-bottom: 20px;
+}
+.help-section:last-child { margin-bottom: 0; }
+.help-section h3 {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin: 0 0 10px;
+}
+.help-section p, .help-section li {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 0 6px;
+}
+.help-section ul { padding-left: 18px; margin: 0; }
+.help-section li { margin-bottom: 4px; }
+.help-section code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--ad-blue);
+}
+[data-theme="dark"] .help-section code { color: #7ABFFF; }
+
+/* About section */
+.about-app-name {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 2px;
+}
+.about-version {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--ad-blue);
+  color: white;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-bottom: 16px;
+}
+.about-credits {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.about-credits strong { color: var(--text-primary); font-weight: 600; }
+.about-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 16px 0;
+}
+
+/* Changelog entry */
+.changelog-entry { margin-bottom: 18px; }
+.changelog-entry:last-child { margin-bottom: 0; }
+.changelog-version {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ad-blue);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+[data-theme="dark"] .changelog-version { color: #7ABFFF; }
+.changelog-date {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+.changelog-entry ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.changelog-entry li {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 3px;
+}
+
 /* View switcher */
 .view-switcher {
   display: flex;
@@ -2621,6 +2874,9 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
     <div class="brand-title-center">Buscador de aceite</div>
 
     <div class="header-actions">
+      <!-- Help button -->
+      <button class="help-btn" onclick="openHelp()" aria-label="Ayuda">?</button>
+
       <!-- View toggle (pública / interna) -->
       <div class="view-switcher">
         <button class="view-btn active" data-view="public" onclick="setView('public')">
@@ -2631,20 +2887,17 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </button>
       </div>
 
-      <!-- Theme toggle (light / dark) -->
-      <div class="theme-toggle" role="group" aria-label="Tema">
-        <button class="theme-btn active" data-theme-mode="light" onclick="setTheme('light')" aria-label="Tema claro">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-          </svg>
-        </button>
-        <button class="theme-btn" data-theme-mode="dark" onclick="setTheme('dark')" aria-label="Tema oscuro">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-      </div>
+      <!-- Theme toggle (single button) -->
+      <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
+        <!-- icon swaps via JS -->
+        <svg id="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg id="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -3018,9 +3271,11 @@ let currentVehicle = null;
 function setTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
-  document.querySelectorAll('.theme-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.themeMode === theme);
-  });
+  // update single-toggle icon: show the icon for the OTHER mode
+  const iconDark  = document.getElementById('theme-icon-dark');
+  const iconLight = document.getElementById('theme-icon-light');
+  if (iconDark)  iconDark.style.display  = theme === 'light' ? 'block' : 'none';
+  if (iconLight) iconLight.style.display = theme === 'dark'  ? 'block' : 'none';
 }
 
 function setView(view) {
@@ -3243,6 +3498,80 @@ const CASTROL_NAMES = {
   '15BA27': 'Castrol Vecton 10W-40 E7',
 };
 
+// Mapeo nombres ENI (ref → nombre producto)
+const ENI_NAMES = {
+  // Motor 0W-20 (fuente: Tarifa Eni Abril 2026)
+  '104483': 'Eni i-Sint 0W-20',
+  '104410': 'Eni i-Sint 0W-20',
+  '104481': 'Eni i-Sint 0W-20',
+  '104423': 'Eni i-Sint 0W-20',
+  '103687': 'Eni i-Sint XEF 0W-20',
+  '103610': 'Eni i-Sint XEF 0W-20',
+  '103623': 'Eni i-Sint XEF 0W-20',
+  '111687': 'Eni i-Sint tech P 0W-20',
+  '111610': 'Eni i-Sint tech P 0W-20',
+  '111623': 'Eni i-Sint tech P 0W-20',
+  '105883': 'Eni i-Sint tech VK 0W-20',
+  '105810': 'Eni i-Sint tech VK 0W-20',
+  '105823': 'Eni i-Sint tech VK 0W-20',
+  '104383': 'Eni i-Sint 0W-40',
+  // Motor 0W-30
+  '106287': 'Eni i-Sint tech VK 0W-30',
+  '105783': 'Eni i-Sint tech F 0W-30',
+  '105710': 'Eni i-Sint tech F 0W-30',
+  '101483': 'Eni i-Sint tech P 0W-30',
+  '101410': 'Eni i-Sint tech P 0W-30',
+  '101423': 'Eni i-Sint tech P 0W-30',
+  // Motor 5W-20
+  '101883': 'Eni i-Sint tech eco F 5W-20',
+  '101810': 'Eni i-Sint tech eco F 5W-20',
+  '101823': 'Eni i-Sint tech eco F 5W-20',
+  // Motor 5W-30
+  '100983': 'Eni i-Sint tech F 5W-30',
+  '100910': 'Eni i-Sint tech F 5W-30',
+  '100923': 'Eni i-Sint tech F 5W-30',
+  '103083': 'Eni i-Sint tech M 5W-30',
+  '103010': 'Eni i-Sint tech M 5W-30',
+  '103023': 'Eni i-Sint tech M 5W-30',
+  '105387': 'Eni i-Sint tech R17 5W-30',
+  '105310': 'Eni i-Sint tech R17 5W-30',
+  '105323': 'Eni i-Sint tech R17 5W-30',
+  '102183': 'Eni i-Sint MS 5W-30',
+  '102110': 'Eni i-Sint MS 5W-30',
+  '102123': 'Eni i-Sint MS 5W-30',
+  '101683': 'Eni i-Sint 5W-30',
+  '101610': 'Eni i-Sint 5W-30',
+  '101623': 'Eni i-Sint 5W-30',
+  '101583': 'Eni i-Sint tech R 5W-30',
+  '101510': 'Eni i-Sint tech R 5W-30',
+  '101523': 'Eni i-Sint tech R 5W-30',
+  // Motor 5W-40
+  '102383': 'Eni i-Sint 5W-40',
+  '102310': 'Eni i-Sint 5W-40',
+  '102323': 'Eni i-Sint 5W-40',
+  // Motor 10W-40
+  '103883': 'Eni i-Sint professional 10W-40',
+  '103810': 'Eni i-Sint professional 10W-40',
+  '103823': 'Eni i-Sint professional 10W-40',
+  '102483': 'Eni i-Sint 10W-40',
+  '102410': 'Eni i-Sint 10W-40',
+  '102423': 'Eni i-Sint 10W-40',
+  // Transmisiones
+  '108087': 'Eni Rotra 75W-90',
+  '106787': 'Eni Rotra STB',
+  '106887': 'Eni Rotra SDV',
+  '127597': 'Eni i-Sigma MHP',
+  '127697': 'Eni i-Sigma MHP Special',
+  // Hidráulicos
+  'G00187': 'Eni Arnica HV 46',
+  'G00483': 'Eni Arnica HM 46',
+  'G00583': 'Eni Arnica HM 68',
+  // ATF
+  '129797': 'Eni ATF Dexron II',
+  '129897': 'Eni ATF Dexron III',
+  '128197': 'Eni Agri Fluid',
+};
+
 // Mapeo nombres Repsol (ref → nombre producto)
 const REPSOL_NAMES = {
   'RPP0069IFB': 'Repsol Elite Evolution S 5W-30',
@@ -3285,8 +3614,8 @@ const REPSOL_NAMES = {
   'RPP0006HBA': 'Repsol Elite Evolution Eco F 5W-20',
   'RPQ0004DFB': 'Repsol Elite Evolution Eco V 0W-20',
   'RPP0004DBA': 'Repsol Elite Evolution Eco V 0W-20',
-  'RPP0005DFB': 'Repsol Elite Evolution Eco 0W-20 C5',
-  'RPP0005DAB': 'Repsol Elite Evolution Eco 0W-20 C5',
+  'RPP0005DFB': 'Repsol Master Eco P 0W-20',
+  'RPP0005DAB': 'Repsol Master Eco P 0W-20',
   'RPP0008DFB': 'Repsol Elite Evolution 0W-20 C5/C6',
   'RPP0008DBA': 'Repsol Elite Evolution 0W-20 C5/C6',
   'RPP0100DGB': 'Repsol Elite Long Life 0W-20',
@@ -3352,6 +3681,130 @@ const REPSOL_NAMES = {
   'RPP1163CFB': 'Repsol Visco Diesel 30W',
   'RPP1163DFB': 'Repsol Visco Diesel 40W',
   'RPP3082ZID': 'Repsol Brake Fluid DOT 5.1',
+};
+
+// Mapeo nombres Shell (ref → nombre producto, fuente: Tarifa Shell Abril 2026)
+const SHELL_NAMES = {
+  // Motor 0W-20
+  '550068492': 'Shell Helix Ultra Professional AVL 0W-20',
+  '550050916': 'Shell Helix Ultra Professional ARL 0W-20',
+  '550049078': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550049075': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550075284': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550069003': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550069004': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550056696': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550055735': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550055736': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550045106': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550063070': 'Shell Helix Ultra SP 0W-20',
+  '550063071': 'Shell Helix Ultra SP 0W-20',
+  '550063048': 'Shell Helix Ultra SP 0W-20',
+  '550074666': 'Shell Helix Ultra ECT C6 0W-20',
+  '550074671': 'Shell Helix Ultra ECT C6 0W-20',
+  '550074674': 'Shell Helix Ultra ECT C6 0W-20',
+  '550051981': 'Shell Helix Ultra Professional ARL 0W-20',
+  // Motor 0W-30
+  '550046307': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550046305': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550042331': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550042158': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550047974': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550047973': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550047972': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550074739': 'Shell Helix Ultra ECT C3 0W-30',
+  '550074740': 'Shell Helix Ultra ECT C3 0W-30',
+  '550074737': 'Shell Helix Ultra ECT C3 0W-30',
+  '550073849': 'Shell Helix Ultra Professional APL 0W-30',
+  '550074013': 'Shell Helix Ultra Professional APL 0W-30',
+  '550073843': 'Shell Helix Ultra Professional APL 0W-30',
+  '550073861': 'Shell Helix Ultra Professional APL 0W-30',
+  // Motor 0W-40
+  '550077110': 'Shell Helix Ultra ECT 0W-40',
+  // Motor 5W-20
+  '550056802': 'Shell Helix Ultra Professional AF 5W-20',
+  '550055210': 'Shell Helix Ultra Professional AF 5W-20',
+  '550042278': 'Shell Helix Ultra Professional AF 5W-20',
+  // Motor 5W-30
+  '550054289': 'Shell Helix HX8 Professional AG 5W-30',
+  '550048138': 'Shell Helix HX8 Professional AG 5W-30',
+  '550046289': 'Shell Helix Ultra Professional AF 5W-30',
+  '550040247': 'Shell Helix Ultra Professional AF 5W-30',
+  '550040265': 'Shell Helix Ultra Professional AF 5W-30',
+  '550059446': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550059445': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550059447': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550046293': 'Shell Helix Ultra Professional APL 5W-30',
+  '550046655': 'Shell Helix Ultra Professional APL 5W-30',
+  '550040092': 'Shell Helix Ultra Professional APL 5W-30',
+  '550051433': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550051568': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550051434': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550077395': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550067698': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550049781': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550042824': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550042832': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550046394': 'Shell Helix HX8 ECT 5W-30 C3',
+  '550046663': 'Shell Helix HX8 ECT 5W-30 C3',
+  '550046684': 'Shell Helix HX7 Professional ARL 5W-30',
+  '550046589': 'Shell Helix HX7 Professional AF 5W-30',
+  '550046287': 'Shell Helix HX7 Professional AF 5W-30',
+  '550040410': 'Shell Helix HX7 Professional AF 5W-30',
+  '550046292': 'Shell Helix HX7 Professional AV 5W-30',
+  '550046311': 'Shell Helix HX7 Professional AV 5W-30',
+  '550040412': 'Shell Helix HX7 Professional AV 5W-30',
+  '550047905': 'Shell Helix Ultra Professional ATL 5W-30 C2',
+  '550047903': 'Shell Helix Ultra Professional ATL 5W-30 C2',
+  '550076476': 'Shell Helix Ultra Professional ASTL 5W-30',
+  // Motor 5W-40
+  '550073578': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073591': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073574': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073575': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550070318': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070416': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070415': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070414': 'Shell Helix HX7 5W-40 A3/B4',
+  // Motor 10W-40
+  '550053777': 'Shell Helix HX6 10W-40 A3/B4',
+  '550053775': 'Shell Helix HX6 10W-40 A3/B4',
+  '550052688': 'Shell Helix HX6 10W-40 A3/B4',
+  '550053772': 'Shell Helix HX6 10W-40 A3/B4',
+  '550070413': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070412': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070410': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070332': 'Shell Helix HX7 10W-40 A3/B4',
+  // Motor 20W-50
+  '550046585': 'Shell Helix HX3 20W-50',
+  '550046586': 'Shell Helix HX3 20W-50',
+  // Motor 15W-40 diesel
+  '550047337': 'Shell Rimula R4 L 15W-40',
+  '550047252': 'Shell Rimula R4 L 15W-40',
+  '550055173': 'Shell Rimula R4 X 15W-40',
+  '550036775': 'Shell Rimula R4 X 15W-40',
+  '550036747': 'Shell Rimula R4 X 15W-40',
+  // Motor diesel pesado 5W-30 / 10W-40
+  '550054436': 'Shell Rimula Ultra 5W-30',
+  '550044850': 'Shell Rimula Ultra 5W-30',
+  '550054435': 'Shell Rimula R6 M 10W-40',
+  '550044826': 'Shell Rimula R6 M 10W-40',
+  '550053997': 'Shell Rimula R6 LME 5W-30',
+  '550043091': 'Shell Rimula R6 LME 5W-30',
+  // Transmisiones / ejes
+  '550047671': 'Shell Spirax S2 A 80W-90',
+  '550056384': 'Shell Spirax S2 A 80W-90',
+  '550027903': 'Shell Spirax S2 A 80W-90',
+  '550027931': 'Shell Spirax S6 AXME 75W-90',
+  '550027907': 'Shell Spirax S6 AXME 75W-90',
+  // ATF
+  '550027842': 'Shell Spirax S4 ATF HDX',
+  '550033840': 'Shell Spirax S4 ATF HDX',
+  '550027843': 'Shell Spirax S6 ATF ZM',
+  '550058231': 'Shell Spirax S6 ATF X',
+  // Agrícola
+  '550027809': 'Shell Spirax S4 TXM',
+  '550045025': 'Shell Spirax S4 TXM',
 };
 
 // Mapeo ref numérica → AD_NAME (del Excel, 5L como formato de referencia)
@@ -3483,6 +3936,8 @@ function resolveEquivRef(brand, ref) {
   const brandUp = brand.toUpperCase();
   if (brandUp === 'CASTROL') name = CASTROL_NAMES[ref] || null;
   else if (brandUp === 'REPSOL') name = REPSOL_NAMES[ref] || null;
+  else if (brandUp === 'ENI') name = ENI_NAMES[ref] || null;
+  else if (brandUp === 'SHELL') name = SHELL_NAMES[ref] || null;
 
   return { brand, sku: ref, ref: name || `${brand} (ref. ${ref})`, otrosFormatos: false };
 }
@@ -5042,11 +5497,138 @@ document.getElementById('input-plate').addEventListener('keydown', e => { if (e.
 document.getElementById('input-desc').addEventListener('keydown', e => { if (e.key === 'Enter') searchByDesc(); });
 document.getElementById('input-free').addEventListener('keydown', e => { if (e.key === 'Enter') searchByFree(); });
 
+// ── THEME TOGGLE ──────────────────────────────────────────────
+function toggleTheme() {
+  setTheme(currentTheme === 'light' ? 'dark' : 'light');
+}
+
+// ── HELP MODAL ────────────────────────────────────────────────
+function openHelp() {
+  document.getElementById('help-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeHelp() {
+  document.getElementById('help-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function switchHelpTab(tab) {
+  document.querySelectorAll('.help-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.help-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
+}
+document.getElementById('help-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeHelp();
+});
+
 // Detectar preferencia del sistema
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   setTheme('dark');
+} else {
+  setTheme('light');
 }
 
 </script>
+
+<!-- ═══════════ MODAL AYUDA ═══════════ -->
+<div class="help-overlay" id="help-overlay" role="dialog" aria-modal="true" aria-labelledby="help-title">
+  <div class="help-dialog">
+    <div class="help-dialog-header">
+      <h2 id="help-title">Ayuda</h2>
+      <button class="help-close-btn" onclick="closeHelp()" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="help-tabs">
+      <button class="help-tab active" data-tab="uso" onclick="switchHelpTab('uso')">Cómo usar</button>
+      <button class="help-tab" data-tab="about" onclick="switchHelpTab('about')">About</button>
+      <button class="help-tab" data-tab="changelog" onclick="switchHelpTab('changelog')">Changelog</button>
+    </div>
+
+    <div class="help-body">
+
+      <!-- PANEL: USO -->
+      <div class="help-panel active" data-panel="uso">
+        <div class="help-section">
+          <h3>¿Qué hace esta app?</h3>
+          <p>Identifica el aceite de motor recomendado por AD Parts para cualquier vehículo, junto con sus equivalencias en Castrol, Repsol, Shell y Eni. También cubre aceites de transmisión, hidráulicos y fluidos especiales.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Matrícula</h3>
+          <p>Introduce la matrícula española (ej. <code>1234ABC</code>) para identificar el vehículo automáticamente y obtener su recomendación de aceite.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Bastidor (VIN)</h3>
+          <p>Introduce el VIN de 17 caracteres (ej. <code>WVWZZZ1KZAM123456</code>) para identificar el vehículo con precisión máxima.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Vehículo</h3>
+          <p>Selecciona marca, modelo, año y versión manualmente si no dispones de matrícula ni bastidor.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda Libre</h3>
+          <p>Escribe cualquiera de estos términos directamente:</p>
+          <ul>
+            <li>Norma OEM: <code>B712010</code>, <code>229.51</code>, <code>507.00</code></li>
+            <li>Referencia de producto: <code>RPP0005DFB</code>, <code>1608A7</code>, <code>111687</code></li>
+            <li>Viscosidad + categoría: <code>5W30 C3</code>, <code>0W20 C5</code></li>
+            <li>Código AD Parts: <code>HSD</code>, <code>SPA</code>, <code>SC3</code></li>
+          </ul>
+        </div>
+        <div class="help-section">
+          <h3>Vista Cliente / Call Center</h3>
+          <p>Usa el selector del encabezado para cambiar entre la vista simplificada para el cliente y la vista con información técnica completa para el agente de Call Center.</p>
+        </div>
+      </div>
+
+      <!-- PANEL: ABOUT -->
+      <div class="help-panel" data-panel="about">
+        <div class="about-app-name">Buscador de Aceites AD Parts</div>
+        <span class="about-version">v20</span>
+        <hr class="about-divider">
+        <div class="about-credits">
+          <p><strong>Crafted by</strong> Yakoba Moreno</p>
+          <p><strong>Coded in</strong> Claude Code · Anthropic</p>
+        </div>
+        <hr class="about-divider">
+        <div class="help-section">
+          <h3>Tecnología</h3>
+          <p>Aplicación web de archivo único (HTML + CSS + JS). Sin dependencias externas ni servidor. Datos de homologaciones, equivalencias y referencias integrados directamente en el archivo.</p>
+        </div>
+        <div class="help-section">
+          <h3>Fuentes de datos</h3>
+          <ul>
+            <li>Tarifas Castrol, Repsol, Shell, Eni — Abril 2026</li>
+            <li>Catálogos de homologaciones por fabricante</li>
+            <li>Equivalencias AD Parts / AD Standard — mantenidas por Yakoba Moreno</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PANEL: CHANGELOG -->
+      <div class="help-panel" data-panel="changelog">
+        <div class="changelog-entry">
+          <div class="changelog-version">v20 <span class="changelog-date">Junio 2026</span></div>
+          <ul>
+            <li>Añadido botón <strong>Ayuda</strong> con guía de uso, About y Changelog</li>
+            <li>Toggle de tema claro/oscuro convertido a botón único</li>
+            <li>Diccionario <strong>SHELL_NAMES</strong>: nombres de producto para todas las referencias Shell en equivalencias (~80 refs de Tarifa Abril 2026)</li>
+            <li>Diccionario <strong>ENI_NAMES</strong> ampliado y corregido con Tarifa Eni Abril 2026: eliminado sufijo «tech» incorrecto en gama XEF, corregido nombre gama genérica 0W-20, añadidas 12 nuevas referencias (5W-20, 5W-30, 5W-40, 10W-40)</li>
+            <li>Corregido nombre <strong>Repsol RPP0005DFB</strong>: era «Elite Evolution Eco 0W-20 C5» (inexistente), ahora «Master Eco P 0W-20»</li>
+            <li>ENI 111687 muestra ahora nombre correcto: «Eni i-Sint tech P 0W-20»</li>
+          </ul>
+        </div>
+        <div class="changelog-entry">
+          <div class="changelog-version">v19 <span class="changelog-date">Mayo 2026</span></div>
+          <ul>
+            <li>Búsqueda libre por norma OEM, referencia de producto y código AD</li>
+            <li>Equivalencias multi-marca con resolución de nombres Castrol y Repsol</li>
+            <li>Vista Cliente y Call Center diferenciadas</li>
+            <li>Soporte completo de aceites de transmisión, hidráulicos y fluidos especiales</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.help-body -->
+  </div><!-- /.help-dialog -->
+</div><!-- /.help-overlay -->
+
 </body>
 </html>
