@@ -1,0 +1,51 @@
+# ── Sistema operativo ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Archivos temporales de Office ──────────────────────────────
+~$*.xlsx
+~$*.xls
+~$*.docx
+~$*.doc
+
+# ── Documentos pesados (consultar localmente) ──────────────────
+# PDFs — demasiado pesados para git; conservar en disco local
+*.pdf
+*.PDF
+# Word / PowerPoint / RTF
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.rtf
+# ZIPs
+*.zip
+
+# ── Claude Code (sesiones internas) ───────────────────────────
+.claude/
+
+# ── Carpetas de solo referencia local ─────────────────────────
+PROMPTS/
+/DOCUMENTOS/
+
+# ── Versiones antiguas del HTML (solo se trackea la activa) ───
+# Las viejas permanecen en disco pero no en el repo.
+# Para excluir todas excepto la activa, añade aquí las viejas:
+APP/HTML/buscador_aceite_demo_v2.html
+APP/HTML/buscador_aceite_demo_v3.html
+APP/HTML/buscador_aceite_demo_v4.html
+APP/HTML/buscador_aceite_demo_v5.html
+APP/HTML/buscador_aceite_demo_v6.html
+APP/HTML/buscador_aceite_demo_v7.html
+APP/HTML/buscador_aceite_demo_v8.html
+APP/HTML/buscador_aceite_demo_v9.html
+APP/HTML/buscador_aceite_demo_v10.html
+APP/HTML/buscador_aceite_demo_v11.html
+APP/HTML/buscador_aceite_demo_v12.html
+APP/HTML/buscador_aceite_demo_v13.html
+APP/HTML/buscador_aceite_demo_v14.html
+APP/HTML/buscador_aceite_demo_v16.html
+APP/HTML/buscador_aceite_demo_v17.html
+APP/HTML/buscador_aceite_demo_v18.html
+APP/HTML/buscador_aceite_demo_v19.html

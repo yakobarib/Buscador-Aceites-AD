@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buscador de Aceite · Recambios Ibiza × AD Parts</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23E20613'/><g fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'><rect x='12' y='34' width='28' height='18' rx='2'/><path d='M22 34 V 24 H 32 V 34'/><path d='M40 38 L 56 30 L 58 36 L 42 44'/></g></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -255,6 +256,259 @@ body::after {
 
 .theme-btn svg { width: 14px; height: 14px; }
 
+/* Single theme toggle button */
+.theme-toggle-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.theme-toggle-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+.theme-toggle-btn svg { width: 15px; height: 15px; }
+
+/* Help button */
+.help-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.help-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Help modal overlay */
+.help-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.help-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.help-dialog {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 0;
+  max-width: 580px;
+  width: 92%;
+  max-height: 82vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.22);
+  transform: translateY(8px);
+  transition: transform 0.2s ease;
+}
+.help-overlay.open .help-dialog {
+  transform: translateY(0);
+}
+.help-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+.help-dialog-header h2 {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.help-close-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  border-radius: var(--r-full);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: 16px;
+  transition: all var(--t-base);
+  flex-shrink: 0;
+}
+.help-close-btn:hover { background: var(--bg-elevated); color: var(--text-primary); }
+
+/* Help tabs */
+.help-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 12px 24px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-shrink: 0;
+}
+.help-tab {
+  padding: 8px 14px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: all var(--t-base);
+  letter-spacing: -0.005em;
+}
+.help-tab:hover { color: var(--text-secondary); }
+.help-tab.active {
+  color: var(--ad-blue);
+  border-bottom-color: var(--ad-blue);
+}
+[data-theme="dark"] .help-tab.active { color: #FFFFFF; border-bottom-color: #FFFFFF; }
+
+/* Help body */
+.help-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 20px 24px 24px;
+}
+.help-panel { display: none; }
+.help-panel.active { display: block; }
+
+/* Help usage content */
+.help-section {
+  margin-bottom: 20px;
+}
+.help-section:last-child { margin-bottom: 0; }
+.help-section h3 {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin: 0 0 10px;
+}
+.help-section p, .help-section li {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 0 6px;
+}
+.help-section ul { padding-left: 18px; margin: 0; }
+.help-section li { margin-bottom: 4px; }
+.help-section code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: var(--ad-blue);
+}
+[data-theme="dark"] .help-section code { color: #7ABFFF; }
+
+/* About section */
+.about-app-name {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 2px;
+}
+.about-version {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  background: var(--ad-blue);
+  color: white;
+  border-radius: 4px;
+  padding: 2px 7px;
+  margin-bottom: 16px;
+}
+.about-credits {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+.about-credits strong { color: var(--text-primary); font-weight: 600; }
+.about-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 16px 0;
+}
+
+/* Changelog entry */
+.changelog-entry { margin-bottom: 18px; }
+.changelog-entry:last-child { margin-bottom: 0; }
+.changelog-version {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ad-blue);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+[data-theme="dark"] .changelog-version { color: #7ABFFF; }
+.changelog-date {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 400;
+}
+.changelog-entry ul {
+  padding-left: 18px;
+  margin: 0;
+}
+.changelog-entry li {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 3px;
+}
+
 /* View switcher */
 .view-switcher {
   display: flex;
@@ -405,15 +659,20 @@ body::after {
   background: var(--bg-secondary);
   border-radius: var(--r-xl);
   margin-bottom: var(--s-3);
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
+.method-tabs::-webkit-scrollbar { display: none; }
+
 .method-tab {
-  flex: 1;
-  padding: 10px 12px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 10px 10px;
   border: none;
   background: transparent;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
@@ -423,27 +682,66 @@ body::after {
   align-items: center;
   justify-content: center;
   gap: 6px;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
   position: relative;
+  white-space: nowrap;
 }
 
-.method-tab svg { width: 14px; height: 14px; }
+.method-tab svg { width: 14px; height: 14px; flex-shrink: 0; }
 
 .method-tab.active {
-  background: var(--bg-elevated);
-  color: var(--text-primary);
-  box-shadow: var(--shadow-sm);
+  background: var(--ad-blue);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 45, 90, 0.25);
+}
+
+[data-theme="dark"] .method-tab.active {
+  background: white;
+  color: var(--ad-blue);
+}
+
+/* ── Toast emergente de fase (sustituye al badge) ── */
+.phase-toast {
+  position: fixed;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  background: var(--ad-blue);
+  color: white;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: var(--r-full);
+  box-shadow: 0 4px 20px rgba(0, 45, 90, 0.30);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.phase-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+[data-theme="dark"] .phase-toast {
+  background: white;
+  color: var(--ad-blue);
 }
 
 .method-tab .badge-fase {
-  font-size: 8.5px;
+  font-size: 8px;
   font-weight: 700;
-  padding: 2px 6px;
+  padding: 2px 5px;
   background: var(--warning-bg);
   color: var(--warning);
   border-radius: var(--r-sm);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   margin-left: 4px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .method-panel { display: none; padding: var(--s-2) var(--s-1) var(--s-1); }
@@ -922,6 +1220,28 @@ body::after {
 }
 
 .free-advice strong { color: var(--text-primary); }
+
+/* Tarjeta equivalencia "en otros formatos" */
+.desc-product-card.otros-formatos {
+  border-color: var(--border-subtle);
+  background: var(--bg-secondary);
+  opacity: 0.82;
+}
+
+.otros-formatos-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--r-full);
+  font-size: 10px;
+  font-weight: 600;
+  color: #B45309;
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
 
 .desc-chips-row {
   display: flex;
@@ -2554,6 +2874,9 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
     <div class="brand-title-center">Buscador de aceite</div>
 
     <div class="header-actions">
+      <!-- Help button -->
+      <button class="help-btn" onclick="openHelp()" aria-label="Ayuda">?</button>
+
       <!-- View toggle (pública / interna) -->
       <div class="view-switcher">
         <button class="view-btn active" data-view="public" onclick="setView('public')">
@@ -2564,20 +2887,17 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </button>
       </div>
 
-      <!-- Theme toggle (light / dark) -->
-      <div class="theme-toggle" role="group" aria-label="Tema">
-        <button class="theme-btn active" data-theme-mode="light" onclick="setTheme('light')" aria-label="Tema claro">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-          </svg>
-        </button>
-        <button class="theme-btn" data-theme-mode="dark" onclick="setTheme('dark')" aria-label="Tema oscuro">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-      </div>
+      <!-- Theme toggle (single button) -->
+      <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
+        <!-- icon swaps via JS -->
+        <svg id="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg id="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
@@ -2607,7 +2927,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <path d="M7 10h2M7 14h2M13 10h4M13 14h4"/>
           </svg>
           Matrícula
-          <span class="badge-fase">FASE 2</span>
+          
         </button>
         <button class="method-tab active" onclick="setMethod('vin')" data-method="vin">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -2625,12 +2945,12 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </button>
         <button class="method-tab" onclick="setMethod('desc')" data-method="desc">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 11h11v8H4z"/>
-            <path d="M9 11V8h5v3"/>
-            <path d="M15 13l5-2 1 2-5 2"/>
+            <rect x="3" y="12" width="11" height="8" rx="1"/>
+            <path d="M7 12 V 8 H 11 V 12"/>
+            <path d="M14 14 L 21 11 L 22 13 L 15 17"/>
           </svg>
           Homologaciones
-          <span class="badge-fase">FASE 1</span>
+          
         </button>
         <button class="method-tab" onclick="setMethod('free')" data-method="free">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -2639,7 +2959,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <path d="M19 17v4"/><path d="M17 19h4"/>
           </svg>
           Búsqueda libre
-          <span class="badge-fase">FASE 1</span>
+          
         </button>
       </div>
 
@@ -2817,6 +3137,9 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
   <code>DEMO</code> &nbsp;·&nbsp; Crafted by <strong>Yakoba Moreno</strong>
 </footer>
 
+<!-- Toast de fase -->
+<div class="phase-toast" id="phase-toast"></div>
+
 </div>
 
 
@@ -2948,9 +3271,11 @@ let currentVehicle = null;
 function setTheme(theme) {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
-  document.querySelectorAll('.theme-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.themeMode === theme);
-  });
+  // update single-toggle icon: show the icon for the OTHER mode
+  const iconDark  = document.getElementById('theme-icon-dark');
+  const iconLight = document.getElementById('theme-icon-light');
+  if (iconDark)  iconDark.style.display  = theme === 'light' ? 'block' : 'none';
+  if (iconLight) iconLight.style.display = theme === 'dark'  ? 'block' : 'none';
 }
 
 function setView(view) {
@@ -2961,6 +3286,22 @@ function setView(view) {
   if (currentVehicle) renderResult(currentVehicle);
 }
 
+// Qué mensaje mostrar por pestaña (solo las que están en fases de prueba)
+const METHOD_PHASE_LABELS = {
+  'plate':   '⚠ Matrícula — Fase 2, en desarrollo',
+  'vin':     '⚠ VIN — Fase 2, en desarrollo',
+};
+
+let _toastTimer = null;
+function showPhaseToast(message) {
+  const toast = document.getElementById('phase-toast');
+  if (!toast) return;
+  if (_toastTimer) clearTimeout(_toastTimer);
+  toast.textContent = message;
+  toast.classList.add('show');
+  _toastTimer = setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
 function setMethod(method) {
   document.querySelectorAll('.method-tab').forEach(t => {
     t.classList.toggle('active', t.dataset.method === method);
@@ -2968,6 +3309,10 @@ function setMethod(method) {
   document.querySelectorAll('.method-panel').forEach(p => {
     p.classList.toggle('active', p.id === 'panel-' + method);
   });
+  // Mostrar toast si la pestaña tiene aviso de fase
+  if (METHOD_PHASE_LABELS[method]) {
+    showPhaseToast(METHOD_PHASE_LABELS[method]);
+  }
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -2978,65 +3323,655 @@ function setMethod(method) {
 // ─── CATÁLOGO AD PARTS con sus homologaciones (extraído del project knowledge) ───
 const AD_PARTS_CATALOG = [
   // VEHÍCULO LIGERO · Motor
-  { ref: 'AD SCA 0W20',         sku: 'ADP67005', viscosity: '0W20',  type: 'motor', segment: 'ligero', specs: ['VW 508.00', 'VW 509.00', 'PORSCHE C20'] },
-  { ref: 'AD SFA 5W20',         sku: 'ADP70005', viscosity: '5W20',  type: 'motor', segment: 'ligero', specs: ['JAGUAR STJLR.03.5004', 'FORD WSS-M2C948-B'] },
-  { ref: 'AD SC2 5W30',         sku: 'ADP72005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['PSA B71 2290', 'ACEA C2'] },
-  { ref: 'AD SFE Plus 5W30',    sku: 'ADP75005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['FORD WSS-M2C913-D', 'ACEA A5/B5'] },
-  { ref: 'AD SRC3 5W30',        sku: 'ADP77005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['RENAULT RN17', 'ACEA C3'] },
-  { ref: 'AD SCC 5W30',         sku: 'ADP78005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'ACEA C3'] },
-  { ref: 'AD SFC 0W30',         sku: 'ADP79005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['FORD WSS-M2C950-A', 'JAGUAR STJLR.03.5007'] },
-  { ref: 'AD SDI 5W40',         sku: 'ADP80005', viscosity: '5W40',  type: 'motor', segment: 'ligero', specs: ['VW 502.00', 'VW 505.00', 'MB 229.3', 'MB 226.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'ACEA A3/B4'] },
-  { ref: 'AD SCD 0W30',         sku: 'ADP81005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'ACEA C3'] },
-  { ref: 'AD SRC4 5W30',        sku: 'ADP82005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['MB 226.51', 'RENAULT RN0720', 'ACEA C3'] },
-  { ref: 'AD SPC 0W30',         sku: 'ADP83005', viscosity: '0W30',  type: 'motor', segment: 'ligero', specs: ['PSA B71 2312', 'ACEA C2'] },
-  { ref: 'AD SC1 5W30',         sku: 'ADP84005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['JAGUAR STJLR.03.5005', 'ACEA C1'] },
-  { ref: 'AD SCB 5W30',         sku: 'ADP85005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'BMW LL-04', 'ACEA C3'] },
-  { ref: 'AD MDXs PLUS 10W40',  sku: 'ADP86005', viscosity: '10W40', type: 'motor', segment: 'ligero', specs: ['MB 229.3', 'VW 501.01', 'VW 505.00', 'ACEA A3/B4'] },
-  { ref: 'AD SC3 5W30',         sku: 'ADP87005', viscosity: '5W30',  type: 'motor', segment: 'ligero', specs: ['MB 229.51', 'MB 229.52', 'VW 505.00', 'VW 505.01', 'ACEA C3'] },
-  { ref: 'AD SRC5 0W20',        sku: 'ADP88005', viscosity: '0W20',  type: 'motor', segment: 'ligero', specs: ['RENAULT RN17 FE', 'ACEA C5'] },
-  { ref: 'AD MDXs MEGA PLUS 5W40', sku: 'ADP89005', viscosity: '5W40', type: 'motor', segment: 'ligero', specs: ['VW 505.00', 'VW 505.01', 'MB 229.51', 'ACEA A3/B4'] },
-  { ref: 'AD SHT PLUS 0W40',    sku: 'ADP90005', viscosity: '0W40',  type: 'motor', segment: 'ligero', specs: ['MB 229.5', 'VW 502.00', 'VW 505.00', 'ACEA A3/B4'] },
+  { ref: 'AD SCA 0W20',          sku: 'ADP67005', viscosity: '0W20',  type: 'motor', segment: 'ligero',
+    specs: ['VW 508.00', 'VW 509.00', 'PORSCHE C20', 'ACEA C5'] },
+  { ref: 'AD SPA 0W20',          sku: 'ADP78005', viscosity: '0W20',  type: 'motor', segment: 'ligero',
+    specs: ['PSA B71 2010', 'ACEA C5', 'ACEA C6', 'API SP'] },
+  { ref: 'AD SMC 0W20',          sku: 'ADP79005', viscosity: '0W20',  type: 'motor', segment: 'ligero',
+    specs: ['MB 229.71', 'GM DEXOS1 GEN3', 'FORD WSS-M2C952-A1', 'JAGUAR STJLR.03.5006', 'OPEL OV 040 1547-G30', 'ACEA C5', 'ACEA C6', 'API SP'] },
+  { ref: 'AD SRC5 0W20',         sku: 'ADP88005', viscosity: '0W20',  type: 'motor', segment: 'ligero',
+    specs: ['RENAULT RN17 FE', 'ACEA C5'] },
+  { ref: 'AD SFA 5W20',          sku: 'ADP70005', viscosity: '5W20',  type: 'motor', segment: 'ligero',
+    specs: ['JAGUAR STJLR.03.5004', 'FORD WSS-M2C948-B', 'ACEA C1'] },
+  { ref: 'AD SC2 5W30',          sku: 'ADP56005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['PSA B71 2290', 'ACEA C2'] },
+  { ref: 'AD SFE Plus 5W30',     sku: 'ADP75005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['FORD WSS-M2C913-D', 'ACEA A5/B5'] },
+  { ref: 'AD SRC3 5W30',         sku: 'ADP77005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['RENAULT RN17', 'ACEA C3'] },
+  { ref: 'AD SCC 5W30',          sku: 'ADP78005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'ACEA C3'] },
+  { ref: 'AD SFC 0W30',          sku: 'ADP79005', viscosity: '0W30',  type: 'motor', segment: 'ligero',
+    specs: ['FORD WSS-M2C950-A', 'JAGUAR STJLR.03.5007', 'ACEA C2'] },
+  { ref: 'AD SDI 5W40',          sku: 'ADP22005', viscosity: '5W40',  type: 'motor', segment: 'ligero',
+    specs: ['VW 502.00', 'VW 505.00', 'MB 229.3', 'MB 226.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'PSA B71 2296', 'ACEA A3/B4'] },
+  { ref: 'AD SCD 0W30',          sku: 'ADP81005', viscosity: '0W30',  type: 'motor', segment: 'ligero',
+    specs: ['VW 504.00', 'VW 507.00', 'ACEA C3'] },
+  { ref: 'AD SRC4 5W30',         sku: 'ADP82005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['MB 226.51', 'RENAULT RN0720', 'ACEA C3'] },
+  { ref: 'AD SPC 0W30',          sku: 'ADP66005', viscosity: '0W30',  type: 'motor', segment: 'ligero',
+    specs: ['PSA B71 2312', 'PSA B71 2302', 'ACEA C2'] },
+  { ref: 'AD SC1 5W30',          sku: 'ADP84005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['JAGUAR STJLR.03.5005', 'ACEA C1'] },
+  { ref: 'AD SCB 5W30',          sku: 'ADP85005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['VW 504.00', 'VW 507.00', 'MB 229.51', 'PORSCHE C30', 'BMW LL-04', 'ACEA C3'] },
+  { ref: 'AD STL 5W30',          sku: 'ADP92005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['PSA B71 2297', 'STELLANTIS FPW9.55535/03', 'ACEA C3'] },
+  { ref: 'AD MDXs PLUS 10W40',   sku: 'ADP86005', viscosity: '10W40', type: 'motor', segment: 'ligero',
+    specs: ['MB 229.3', 'VW 501.01', 'VW 505.00', 'ACEA A3/B4'] },
+  { ref: 'AD SC3 5W30',          sku: 'ADP87005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+    specs: ['MB 229.51', 'MB 229.52', 'VW 505.00', 'VW 505.01', 'ACEA C3'] },
+  { ref: 'AD MDXs MEGA PLUS 5W40', sku: 'ADP89005', viscosity: '5W40', type: 'motor', segment: 'ligero',
+    specs: ['VW 505.00', 'VW 505.01', 'MB 229.51', 'ACEA A3/B4'] },
+  { ref: 'AD SHT PLUS 0W40',     sku: 'ADP90005', viscosity: '0W40',  type: 'motor', segment: 'ligero',
+    specs: ['MB 229.5', 'VW 502.00', 'VW 505.00', 'ACEA A3/B4'] },
 
   // VEHÍCULO PESADO · Motor
-  { ref: 'AD SDX PLUS 10W40',   sku: 'ADP91005', viscosity: '10W40', type: 'motor', segment: 'pesado', specs: ['MB 228.51', 'MB 235.28', 'DTFR 13D110', 'VOLVO VDS-4', 'RENAULT RLD-3', 'MACK EO-O Premium Plus', 'ACEA E6/E7/E9', 'API CJ-4'] },
-  { ref: 'AD ZTD 15W40',        sku: 'ADP92005', viscosity: '15W40', type: 'motor', segment: 'pesado', specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EO-N', 'ACEA E7/E9', 'API CJ-4'] },
-  { ref: 'AD SDX 10W40',        sku: 'ADP93005', viscosity: '10W40', type: 'motor', segment: 'pesado', specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RDX', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E4/E7'] },
-  { ref: 'AD STB 10W30',        sku: 'ADP94005', viscosity: '10W30', type: 'motor', segment: 'pesado', specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EO.S-4.5', 'API CK-4'] },
-  { ref: 'AD XTD ECOPLUS 15W40', sku: 'ADP95005', viscosity: '15W40', type: 'motor', segment: 'pesado', specs: ['MB 228.3', 'VOLVO VDS-3', 'RENAULT RVI RLD', 'RENAULT RLD-2', 'MACK EO-N', 'ACEA E7'] },
-  { ref: 'AD STFE 5W30',        sku: 'ADP96005', viscosity: '5W30',  type: 'motor', segment: 'pesado', specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RXD', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E7'] },
-  { ref: 'AD SDV 5W30',         sku: 'ADP97005', viscosity: '5W30',  type: 'motor', segment: 'pesado', specs: ['MB 228.51', 'MB 228.52', 'DTFR 15C120', 'DTFR 15C110', 'MAN M3677', 'VOLVO VDS-4.5', 'RENAULT VI RLD-3', 'MACK EO.S-4.5', 'SCANIA LDF-4', 'ACEA E6/E7/E9'] },
+  { ref: 'AD SDX PLUS 10W40',    sku: 'ADP91005', viscosity: '10W40', type: 'motor', segment: 'pesado',
+    specs: ['MB 228.51', 'MB 235.28', 'DTFR 13D110', 'VOLVO VDS-4', 'RENAULT RLD-3', 'MACK EO-O Premium Plus', 'ACEA E6/E7/E9', 'API CJ-4'] },
+  { ref: 'AD ZTD 15W40',         sku: 'ADP92005', viscosity: '15W40', type: 'motor', segment: 'pesado',
+    specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EO-N', 'ACEA E7/E9', 'API CJ-4'] },
+  { ref: 'AD SDX 10W40',         sku: 'ADP93005', viscosity: '10W40', type: 'motor', segment: 'pesado',
+    specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RDX', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E4/E7'] },
+  { ref: 'AD STB 10W30',         sku: 'ADP94005', viscosity: '10W30', type: 'motor', segment: 'pesado',
+    specs: ['MB 228.31', 'DTFR 15C100', 'MAN M3775', 'VOLVO VDS-4.5', 'RENAULT RLD-3', 'MACK EOS-4.5', 'API CK-4'] },
+  { ref: 'AD XTD ECOPLUS 15W40', sku: 'ADP95005', viscosity: '15W40', type: 'motor', segment: 'pesado',
+    specs: ['MB 228.3', 'VOLVO VDS-3', 'RENAULT RVI RLD', 'RENAULT RLD-2', 'MACK EO-N', 'ACEA E7'] },
+  { ref: 'AD STFE 5W30',         sku: 'ADP96005', viscosity: '5W30',  type: 'motor', segment: 'pesado',
+    specs: ['MB 228.5', 'DTFR 15B120', 'MAN M3277', 'VOLVO VDS-3', 'RENAULT RXD', 'RENAULT RLD-2', 'MACK EO-N', 'SCANIA LDF-3', 'ACEA E7'] },
+  { ref: 'AD SDV 5W30',          sku: 'ADP97005', viscosity: '5W30',  type: 'motor', segment: 'pesado',
+    specs: ['MB 228.51', 'MB 228.52', 'DTFR 15C120', 'MAN M3677', 'VOLVO VDS-4.5', 'RENAULT VI RLD-3', 'MACK EOS-4.5', 'SCANIA LDF-4', 'ACEA E6/E7/E9'] },
 
   // TRANSMISIÓN
-  { ref: 'AD SHP 75W90',        sku: 'ADP60005', viscosity: '75W90', type: 'transmision', segment: 'pesado', specs: ['SCANIA STO 2:0 A FS', 'SCANIA STO 1:1 G', 'API GL-4', 'API GL-5'] },
+  { ref: 'AD SHP 75W90',         sku: 'ADP60005', viscosity: '75W90', type: 'transmision', segment: 'pesado',
+    specs: ['SCANIA STO 2:0 A FS', 'SCANIA STO 1:1 G', 'API GL-4', 'API GL-5'] },
+
+  // REFRIGERANTE
+  { ref: 'AD COOL G12++',        sku: 'ADP60125', viscosity: '-',     type: 'refrigerante', segment: 'ligero',
+    specs: ['G12++', 'VW TL-774-G', 'MB 325.5', 'MAN 324 Si-OAT', 'ASTM D 3306'] },
+
+  // FRENOS
+  { ref: 'AD BRK DOT 4',         sku: 'ADP70401', viscosity: 'DOT4',  type: 'frenos', segment: 'ligero',
+    specs: ['DOT 4', 'FMVSS 116', 'ISO 4925', 'SAE J1704'] },
+
+  // AdBlue
+  { ref: 'AD AdBlue',            sku: 'ADP50010', viscosity: '-',     type: 'adblue', segment: 'ligero',
+    specs: ['ISO 22241', 'AdBlue', 'DEF'] },
 ];
 
-// ─── CATÁLOGO DE EQUIVALENCIAS (otras marcas) ───
+// ─── EQUIVALENCIAS REVISADAS POR HUMANO (fuente: Excel Yakoba Moreno) ───
+// Estructura: AD_NAME → {castrol:{sku,name}, repsol:{sku,name}, shell:{sku,name}, eni:{sku,name}}
+// Solo se muestran equivalencias que el Excel marca como válidas (no SIN EQUIVALENCIA, no EN OTROS FORMATOS)
+
+// Mapeo nombres Castrol (ref → nombre producto)
+const CASTROL_NAMES = {
+  '1612B5': 'Castrol Magnatec 5W-30 P',
+  '1612B4': 'Castrol Magnatec 5W-30 P',
+  '1608A7': 'Castrol Magnatec 0W-20 FE',
+  '1608A4': 'Castrol Magnatec 0W-20 FE',
+  '15F6EB': 'Castrol Magnatec 0W-20',
+  '15CC97': 'Castrol Magnatec 0W-20',
+  '15F612': 'Castrol Edge 0W-20',
+  '15F7E7': 'Castrol Magnatec 5W-30 C3',
+  '15664F': 'Castrol Magnatec 5W-30 C3',
+  '15F927': 'Castrol GTX 5W-30 C3',
+  '15F6E5': 'Castrol GTX 5W-30 RN17',
+  '15CC33': 'Castrol GTX 5W-30 RN17',
+  '15F6C5': 'Castrol Magnatec 5W-30 C2',
+  '15F6C1': 'Castrol Magnatec 5W-30 C2',
+  '15F827': 'Castrol Magnatec 5W-30 C1',
+  '15F908': 'Castrol Magnatec 5W-30 A5',
+  '15CA40': 'Castrol Magnatec 5W-30 A5',
+  '15C327': 'Castrol Magnatec 5W-30',
+  '15F6BE': 'Castrol Magnatec 0W-30 C2',
+  '15F6BA': 'Castrol Magnatec 0W-30 C2',
+  '1533F5': 'Castrol GTX 0W-30 504/507',
+  '15F640': 'Castrol GTX 0W-30 504/507',
+  '15F67B': 'Castrol Magnatec 0W-30 D',
+  '15F677': 'Castrol Magnatec 0W-30 D',
+  '15F6A5': 'Castrol Magnatec 0W-30 A5',
+  '15F6B5': 'Castrol Edge 0W-40',
+  '15F64A': 'Castrol Edge 5W-40',
+  '1535AB': 'Castrol Magnatec 5W-40 A3/B4',
+  '15F624': 'Castrol Magnatec 5W-40 C3',
+  '15C9C5': 'Castrol Magnatec 5W-40 C3',
+  '15F9C6': 'Castrol Magnatec 5W-20 E',
+  '15F64F': 'Castrol GTX 5W-30 C4',
+  '15900E': 'Castrol GTX 5W-30 C4',
+  '15F8FC': 'Castrol GTX 10W-40 A3/B4',
+  '15F8F9': 'Castrol GTX 10W-40 A3/B4',
+  '15F08D': 'Castrol GTX 10W-40 A3/B4',
+  '15F092': 'Castrol GTX 10W-40 A3/B4',
+  '15F7CE': 'Castrol Magnatec 10W-40 A/B',
+  '15F09D': 'Castrol Magnatec 10W-40 A/B',
+  '15F646': 'Castrol GTX 20W-50 A3/B4',
+  '15F872': 'Castrol Edge 0W-20 LL',
+  '15F249': 'Castrol Edge 0W-20 LL',
+  '15F3CF': 'Castrol Vecton 15W-40 E7',
+  '15F43B': 'Castrol Vecton 15W-40 E7',
+  '15C302': 'Castrol Vecton 15W-40 E9',
+  '15C373': 'Castrol Vecton 15W-40 E9',
+  '15B381': 'Castrol Vecton 10W-30 E9',
+  '15B384': 'Castrol Vecton 10W-30 E9',
+  '15B349': 'Castrol Vecton 10W-40 E9',
+  '15B34A': 'Castrol Vecton 10W-40 E9',
+  '15F3D1': 'Castrol Vecton FS 5W-30 E7',
+  '154C32': 'Castrol Vecton FS 5W-30 E7',
+  '159CA9': 'Castrol Vecton FS 5W-30 E9',
+  '14337A': 'Castrol Hyspin AWS 46',
+  '14336E': 'Castrol Hyspin AWS 46',
+  '14337B': 'Castrol Hyspin AWS 68',
+  '143AB1': 'Castrol Hyspin HLP 32',
+  '14606C': 'Castrol Hyspin HLP 32',
+  '143AB3': 'Castrol Hyspin HLP 46',
+  '15F040': 'Castrol Hyspin HLP 46',
+  '143AB7': 'Castrol Hyspin HLP 68',
+  '14606E': 'Castrol Hyspin HLP 68',
+  '15D678': 'Castrol Transmax ATF Dex III',
+  '15D675': 'Castrol Transmax ATF Dex III',
+  '15D671': 'Castrol Transmax ATF Dex III',
+  '15D73A': 'Castrol Transmax Dex VI',
+  '15D7B3': 'Castrol Transmax ATF CVT',
+  '15D911': 'Castrol Transmax ATF DCT/DSG',
+  '15D91C': 'Castrol Transmax ATF DCT/DSG',
+  '15D94C': 'Castrol Axle EPX 80W-90',
+  '15D94D': 'Castrol Axle EPX 80W-90',
+  '15D761': 'Castrol Axle EPX 80W-90',
+  '15D76E': 'Castrol Axle EPX 80W-90',
+  '15F1B2': 'Castrol Axle EPX 80W-90',
+  '15DD09': 'Castrol Syntrax Long Life 75W-90',
+  '15DD06': 'Castrol Syntrax Long Life 75W-90',
+  '15D8B7': 'Castrol Syntrax Long Life 75W-90',
+  '15DC46': 'Castrol Syntrax Multivehicle 75W-90',
+  '15BF80': 'Castrol Agri MP 15W-40',
+  '15BF7F': 'Castrol Agri MP 15W-40',
+  '15BF79': 'Castrol Agri 10W-30',
+  '15BF7B': 'Castrol Agri 10W-30',
+  '15BB35': 'Castrol RX Super 15W-40 (Pesado)',
+  '15BB34': 'Castrol RX Super 15W-40 (Pesado)',
+  '15B9F8': 'Castrol RX Super 30W (Pesado)',
+  '15B9F7': 'Castrol RX Super 30W (Pesado)',
+  '15BB45': 'Castrol RX Super 40W (Pesado)',
+  '15BA19': 'Castrol Vecton 15W-40 E7',
+  '15EA3A': 'Castrol Vecton 15W-40 E7',
+  '15BA24': 'Castrol Vecton 10W-40 E7',
+  '15BA27': 'Castrol Vecton 10W-40 E7',
+};
+
+// Mapeo nombres ENI (ref → nombre producto)
+const ENI_NAMES = {
+  // Motor 0W-20 (fuente: Tarifa Eni Abril 2026)
+  '104483': 'Eni i-Sint 0W-20',
+  '104410': 'Eni i-Sint 0W-20',
+  '104481': 'Eni i-Sint 0W-20',
+  '104423': 'Eni i-Sint 0W-20',
+  '103687': 'Eni i-Sint XEF 0W-20',
+  '103610': 'Eni i-Sint XEF 0W-20',
+  '103623': 'Eni i-Sint XEF 0W-20',
+  '111687': 'Eni i-Sint tech P 0W-20',
+  '111610': 'Eni i-Sint tech P 0W-20',
+  '111623': 'Eni i-Sint tech P 0W-20',
+  '105883': 'Eni i-Sint tech VK 0W-20',
+  '105810': 'Eni i-Sint tech VK 0W-20',
+  '105823': 'Eni i-Sint tech VK 0W-20',
+  '104383': 'Eni i-Sint 0W-40',
+  // Motor 0W-30
+  '106287': 'Eni i-Sint tech VK 0W-30',
+  '105783': 'Eni i-Sint tech F 0W-30',
+  '105710': 'Eni i-Sint tech F 0W-30',
+  '101483': 'Eni i-Sint tech P 0W-30',
+  '101410': 'Eni i-Sint tech P 0W-30',
+  '101423': 'Eni i-Sint tech P 0W-30',
+  // Motor 5W-20
+  '101883': 'Eni i-Sint tech eco F 5W-20',
+  '101810': 'Eni i-Sint tech eco F 5W-20',
+  '101823': 'Eni i-Sint tech eco F 5W-20',
+  // Motor 5W-30
+  '100983': 'Eni i-Sint tech F 5W-30',
+  '100910': 'Eni i-Sint tech F 5W-30',
+  '100923': 'Eni i-Sint tech F 5W-30',
+  '103083': 'Eni i-Sint tech M 5W-30',
+  '103010': 'Eni i-Sint tech M 5W-30',
+  '103023': 'Eni i-Sint tech M 5W-30',
+  '105387': 'Eni i-Sint tech R17 5W-30',
+  '105310': 'Eni i-Sint tech R17 5W-30',
+  '105323': 'Eni i-Sint tech R17 5W-30',
+  '102183': 'Eni i-Sint MS 5W-30',
+  '102110': 'Eni i-Sint MS 5W-30',
+  '102123': 'Eni i-Sint MS 5W-30',
+  '101683': 'Eni i-Sint 5W-30',
+  '101610': 'Eni i-Sint 5W-30',
+  '101623': 'Eni i-Sint 5W-30',
+  '101583': 'Eni i-Sint tech R 5W-30',
+  '101510': 'Eni i-Sint tech R 5W-30',
+  '101523': 'Eni i-Sint tech R 5W-30',
+  // Motor 5W-40
+  '102383': 'Eni i-Sint 5W-40',
+  '102310': 'Eni i-Sint 5W-40',
+  '102323': 'Eni i-Sint 5W-40',
+  // Motor 10W-40
+  '103883': 'Eni i-Sint professional 10W-40',
+  '103810': 'Eni i-Sint professional 10W-40',
+  '103823': 'Eni i-Sint professional 10W-40',
+  '102483': 'Eni i-Sint 10W-40',
+  '102410': 'Eni i-Sint 10W-40',
+  '102423': 'Eni i-Sint 10W-40',
+  // Transmisiones
+  '108087': 'Eni Rotra 75W-90',
+  '106787': 'Eni Rotra STB',
+  '106887': 'Eni Rotra SDV',
+  '127597': 'Eni i-Sigma MHP',
+  '127697': 'Eni i-Sigma MHP Special',
+  // Hidráulicos
+  'G00187': 'Eni Arnica HV 46',
+  'G00483': 'Eni Arnica HM 46',
+  'G00583': 'Eni Arnica HM 68',
+  // ATF
+  '129797': 'Eni ATF Dexron II',
+  '129897': 'Eni ATF Dexron III',
+  '128197': 'Eni Agri Fluid',
+};
+
+// Mapeo nombres Repsol (ref → nombre producto)
+const REPSOL_NAMES = {
+  'RPP0069IFB': 'Repsol Elite Evolution S 5W-30',
+  'RPP0069IGB': 'Repsol Elite Evolution S 5W-30',
+  'RPQ0052IFB': 'Repsol Elite Evolution FE 5W-30',
+  'RPP0052IAB': 'Repsol Elite Evolution FE 5W-30',
+  'RPP0052IBA': 'Repsol Elite Evolution FE 5W-30',
+  'RPP0057IFB': 'Repsol Elite Long Life 50700/50400',
+  'RPP0057IAB': 'Repsol Elite Long Life 50700/50400',
+  'RPQ0057IBA': 'Repsol Elite Long Life 50700/50400',
+  'RPP0055IFB': 'Repsol Elite Evolution Power 5W-30 C3',
+  'RPQ0050IFB': 'Repsol Elite Long Life 50400 5W-30',
+  'RPP0050IAB': 'Repsol Elite Long Life 50400 5W-30',
+  'RPQ0050IBA': 'Repsol Elite Long Life 50400 5W-30',
+  'RPP0105IFB': 'Repsol Elite Common Rail 5W-30',
+  'RPP0105IAB': 'Repsol Elite Common Rail 5W-30',
+  'RPQ0105IBA': 'Repsol Elite Common Rail 5W-30',
+  'RPP0060IGB': 'Repsol Elite Cosmos F FE 5W-30',
+  'RPP0060IAB': 'Repsol Elite Cosmos F FE 5W-30',
+  'RPP0060IBA': 'Repsol Elite Cosmos F FE 5W-30',
+  'RPP0051IFB': 'Repsol Elite Evolution Power 1 5W-30',
+  'RPP0051IAB': 'Repsol Elite Evolution Power 1 5W-30',
+  'RPP0054IFB': 'Repsol Elite Evolution Power 4 5W-30',
+  'RPP0054IAB': 'Repsol Elite Evolution Power 4 5W-30',
+  'RPP0054IBA': 'Repsol Elite Evolution Power 4 5W-30',
+  'RPP0056EFB': 'Repsol Elite Long Life 504/507 0W-30',
+  'RPP0056EBA': 'Repsol Elite Long Life 504/507 0W-30',
+  'RPP0006EFB': 'Repsol Elite Evolution Eco F 0W-30',
+  'RPP0006EBA': 'Repsol Elite Evolution Eco F 0W-30',
+  'RPQ0005EFB': 'Repsol Elite Evolution Power 2 0W-30',
+  'RPQ0005EBA': 'Repsol Elite Evolution Power 2 0W-30',
+  'RPP0005EAB': 'Repsol Elite Evolution Power 2 0W-30',
+  'RPP0066EHA': 'Repsol Elite Evolution Eco 0W-30 A5',
+  'RPP0059FFB': 'Repsol Elite Cosmos HP 0W-40',
+  'RPP0059JGB': 'Repsol Elite Multivalvulas 5W-40',
+  'RPP0059JBA': 'Repsol Elite Multivalvulas 5W-40',
+  'RPP0106JFB': 'Repsol Elite 50501 TDI 5W-40',
+  'RPP0106JBA': 'Repsol Elite 50501 TDI 5W-40',
+  'RPP0006HFB': 'Repsol Elite Evolution Eco F 5W-20',
+  'RPP0006HBA': 'Repsol Elite Evolution Eco F 5W-20',
+  'RPQ0004DFB': 'Repsol Elite Evolution Eco V 0W-20',
+  'RPP0004DBA': 'Repsol Elite Evolution Eco V 0W-20',
+  'RPP0005DFB': 'Repsol Master Eco P 0W-20',
+  'RPP0005DAB': 'Repsol Master Eco P 0W-20',
+  'RPP0008DFB': 'Repsol Elite Evolution 0W-20 C5/C6',
+  'RPP0008DBA': 'Repsol Elite Evolution 0W-20 C5/C6',
+  'RPP0100DGB': 'Repsol Elite Long Life 0W-20',
+  'RPP0100DBA': 'Repsol Elite Long Life 0W-20',
+  'RPP0152MGB': 'Repsol Elite Injection 10W-40',
+  'RPP0152MBA': 'Repsol Elite Injection 10W-40',
+  'RPP0152MHA': 'Repsol Elite Injection 10W-40',
+  'RPP0064MBA': 'Repsol Elite Injection 10W-40',
+  'RPP0064MAB': 'Repsol Elite Injection 10W-40',
+  'RPP0064MFB': 'Repsol Elite Injection 10W-40',
+  'RPP0104MAB': 'Repsol Elite Injection 10W-40',
+  'RPP0103TFB': 'Repsol Elite Super 20W-50',
+  'RPP0103TBA': 'Repsol Elite Super 20W-50',
+  'RPP1042QFB': 'Repsol Giant 9100 15W-40 E7',
+  'RPP1042QBA': 'Repsol Giant 9100 15W-40 E7',
+  'RPP1041QFB': 'Repsol Giant 9200 15W-40 E9',
+  'RPP1041QDA': 'Repsol Giant 9200 15W-40 E9',
+  'RPP1042MFB': 'Repsol Giant 9100 10W-40 E7',
+  'RPP1042MBA': 'Repsol Giant 9100 10W-40 E7',
+  'RPP1042MAB': 'Repsol Giant 9100 10W-40 E7',
+  'RPP1002MFB': 'Repsol Giant 9200 10W-40 E9',
+  'RPP1002MBA': 'Repsol Giant 9200 10W-40 E9',
+  'RPP1002MAB': 'Repsol Giant 9200 10W-40 E9',
+  'RPP1004IFB': 'Repsol Giant 9660 5W-30 E7',
+  'RPP1004IBA': 'Repsol Giant 9660 5W-30 E7',
+  'RPP1004IAB': 'Repsol Giant 9660 5W-30 E7',
+  'RPP1040LAB': 'Repsol Giant 9200 10W-30 E9',
+  'RPP1040LBA': 'Repsol Giant 9200 10W-30 E9',
+  'RPP1000IAB': 'Repsol Giant 9660 5W-30 E9',
+  'RPP1000IBA': 'Repsol Giant 9660 5W-30 E9',
+  'RPP4002JBA': 'Repsol Cartago FE 75W-90',
+  'RPP4002JDA': 'Repsol Cartago FE 75W-90',
+  'RPP4002JHA': 'Repsol Cartago FE 75W-90',
+  'RPP4014LFA': 'Repsol Cartago EP 80W-90',
+  'RPP4014LBA': 'Repsol Cartago EP 80W-90',
+  'RPP4014LDA': 'Repsol Cartago EP 80W-90',
+  'RPP4014LHA': 'Repsol Cartago EP 80W-90',
+  'RPP4014LAB': 'Repsol Cartago EP 80W-90',
+  'RPP4066ZBA': 'Repsol Matic ATF III',
+  'RPP4066ZFA': 'Repsol Matic ATF III',
+  'RPP4066ZHA': 'Repsol Matic ATF III',
+  'RPP4067ZBA': 'Repsol Matic ATF II',
+  'RPP4067ZFA': 'Repsol Matic ATF II',
+  'RPP4067ZHA': 'Repsol Matic ATF II',
+  'RPP4064ZGA': 'Repsol Matic ATF +4',
+  'RPP4064ZHA': 'Repsol Matic ATF +4',
+  'RPP6002HAB': 'Repsol Telex HV 46',
+  'RPP6002HBA': 'Repsol Telex HV 46',
+  'RPP6002HFA': 'Repsol Telex HV 46',
+  'RPP6002IAB': 'Repsol Telex HV 68',
+  'RPP6002IBA': 'Repsol Telex HV 68',
+  'RPP6002IFA': 'Repsol Telex HV 68',
+  'RPP6008HAB': 'Repsol Telex HLP 46',
+  'RPP6008HBA': 'Repsol Telex HLP 46',
+  'RPP6008HFA': 'Repsol Telex HLP 46',
+  'RPP6008IAB': 'Repsol Telex HLP 68',
+  'RPP6008IBA': 'Repsol Telex HLP 68',
+  'RPP6008IFA': 'Repsol Telex HLP 68',
+  'RPP4130QBA': 'Repsol Agrimax RT 915',
+  'RPP4130QFA': 'Repsol Agrimax RT 915',
+  'RPP4131ZBA': 'Repsol Agrimax FE 10W-30',
+  'RPP4131ZFA': 'Repsol Agrimax FE 10W-30',
+  'RPP1163CFB': 'Repsol Visco Diesel 30W',
+  'RPP1163DFB': 'Repsol Visco Diesel 40W',
+  'RPP3082ZID': 'Repsol Brake Fluid DOT 5.1',
+};
+
+// Mapeo nombres Shell (ref → nombre producto, fuente: Tarifa Shell Abril 2026)
+const SHELL_NAMES = {
+  // Motor 0W-20
+  '550068492': 'Shell Helix Ultra Professional AVL 0W-20',
+  '550050916': 'Shell Helix Ultra Professional ARL 0W-20',
+  '550049078': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550049075': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550075284': 'Shell Helix Ultra Professional AJL 0W-20',
+  '550069003': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550069004': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550056696': 'Shell Helix Ultra Professional AOL 0W-20',
+  '550055735': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550055736': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550045106': 'Shell Helix Ultra Professional ASL 0W-20',
+  '550063070': 'Shell Helix Ultra SP 0W-20',
+  '550063071': 'Shell Helix Ultra SP 0W-20',
+  '550063048': 'Shell Helix Ultra SP 0W-20',
+  '550074666': 'Shell Helix Ultra ECT C6 0W-20',
+  '550074671': 'Shell Helix Ultra ECT C6 0W-20',
+  '550074674': 'Shell Helix Ultra ECT C6 0W-20',
+  '550051981': 'Shell Helix Ultra Professional ARL 0W-20',
+  // Motor 0W-30
+  '550046307': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550046305': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550042331': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550042158': 'Shell Helix Ultra ECT 0W-30 C2/C3',
+  '550047974': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550047973': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550047972': 'Shell Helix Ultra Professional AJL 0W-30',
+  '550074739': 'Shell Helix Ultra ECT C3 0W-30',
+  '550074740': 'Shell Helix Ultra ECT C3 0W-30',
+  '550074737': 'Shell Helix Ultra ECT C3 0W-30',
+  '550073849': 'Shell Helix Ultra Professional APL 0W-30',
+  '550074013': 'Shell Helix Ultra Professional APL 0W-30',
+  '550073843': 'Shell Helix Ultra Professional APL 0W-30',
+  '550073861': 'Shell Helix Ultra Professional APL 0W-30',
+  // Motor 0W-40
+  '550077110': 'Shell Helix Ultra ECT 0W-40',
+  // Motor 5W-20
+  '550056802': 'Shell Helix Ultra Professional AF 5W-20',
+  '550055210': 'Shell Helix Ultra Professional AF 5W-20',
+  '550042278': 'Shell Helix Ultra Professional AF 5W-20',
+  // Motor 5W-30
+  '550054289': 'Shell Helix HX8 Professional AG 5W-30',
+  '550048138': 'Shell Helix HX8 Professional AG 5W-30',
+  '550046289': 'Shell Helix Ultra Professional AF 5W-30',
+  '550040247': 'Shell Helix Ultra Professional AF 5W-30',
+  '550040265': 'Shell Helix Ultra Professional AF 5W-30',
+  '550059446': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550059445': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550059447': 'Shell Helix Ultra Professional AJL 5W-30',
+  '550046293': 'Shell Helix Ultra Professional APL 5W-30',
+  '550046655': 'Shell Helix Ultra Professional APL 5W-30',
+  '550040092': 'Shell Helix Ultra Professional APL 5W-30',
+  '550051433': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550051568': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550051434': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550077395': 'Shell Helix Ultra Professional ARL 5W-30',
+  '550067698': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550049781': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550042824': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550042832': 'Shell Helix Ultra ECT 5W-30 C3',
+  '550046394': 'Shell Helix HX8 ECT 5W-30 C3',
+  '550046663': 'Shell Helix HX8 ECT 5W-30 C3',
+  '550046684': 'Shell Helix HX7 Professional ARL 5W-30',
+  '550046589': 'Shell Helix HX7 Professional AF 5W-30',
+  '550046287': 'Shell Helix HX7 Professional AF 5W-30',
+  '550040410': 'Shell Helix HX7 Professional AF 5W-30',
+  '550046292': 'Shell Helix HX7 Professional AV 5W-30',
+  '550046311': 'Shell Helix HX7 Professional AV 5W-30',
+  '550040412': 'Shell Helix HX7 Professional AV 5W-30',
+  '550047905': 'Shell Helix Ultra Professional ATL 5W-30 C2',
+  '550047903': 'Shell Helix Ultra Professional ATL 5W-30 C2',
+  '550076476': 'Shell Helix Ultra Professional ASTL 5W-30',
+  // Motor 5W-40
+  '550073578': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073591': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073574': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550073575': 'Shell Helix Ultra 5W-40 A3/B4',
+  '550070318': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070416': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070415': 'Shell Helix HX7 5W-40 A3/B4',
+  '550070414': 'Shell Helix HX7 5W-40 A3/B4',
+  // Motor 10W-40
+  '550053777': 'Shell Helix HX6 10W-40 A3/B4',
+  '550053775': 'Shell Helix HX6 10W-40 A3/B4',
+  '550052688': 'Shell Helix HX6 10W-40 A3/B4',
+  '550053772': 'Shell Helix HX6 10W-40 A3/B4',
+  '550070413': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070412': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070410': 'Shell Helix HX7 10W-40 A3/B4',
+  '550070332': 'Shell Helix HX7 10W-40 A3/B4',
+  // Motor 20W-50
+  '550046585': 'Shell Helix HX3 20W-50',
+  '550046586': 'Shell Helix HX3 20W-50',
+  // Motor 15W-40 diesel
+  '550047337': 'Shell Rimula R4 L 15W-40',
+  '550047252': 'Shell Rimula R4 L 15W-40',
+  '550055173': 'Shell Rimula R4 X 15W-40',
+  '550036775': 'Shell Rimula R4 X 15W-40',
+  '550036747': 'Shell Rimula R4 X 15W-40',
+  // Motor diesel pesado 5W-30 / 10W-40
+  '550054436': 'Shell Rimula Ultra 5W-30',
+  '550044850': 'Shell Rimula Ultra 5W-30',
+  '550054435': 'Shell Rimula R6 M 10W-40',
+  '550044826': 'Shell Rimula R6 M 10W-40',
+  '550053997': 'Shell Rimula R6 LME 5W-30',
+  '550043091': 'Shell Rimula R6 LME 5W-30',
+  // Transmisiones / ejes
+  '550047671': 'Shell Spirax S2 A 80W-90',
+  '550056384': 'Shell Spirax S2 A 80W-90',
+  '550027903': 'Shell Spirax S2 A 80W-90',
+  '550027931': 'Shell Spirax S6 AXME 75W-90',
+  '550027907': 'Shell Spirax S6 AXME 75W-90',
+  // ATF
+  '550027842': 'Shell Spirax S4 ATF HDX',
+  '550033840': 'Shell Spirax S4 ATF HDX',
+  '550027843': 'Shell Spirax S6 ATF ZM',
+  '550058231': 'Shell Spirax S6 ATF X',
+  // Agrícola
+  '550027809': 'Shell Spirax S4 TXM',
+  '550045025': 'Shell Spirax S4 TXM',
+};
+
+// Mapeo ref numérica → AD_NAME (del Excel, 5L como formato de referencia)
+const AD_REF_TO_NAME = {
+  '61005':'HSD','61208':'HSD','611000':'HSD',
+  '79005':'SMC','79208':'SMC','791000':'SMC',
+  '78005':'SPA','78208':'SPA',
+  '67005':'SCA','67208':'SCA','671000':'SCA','67001':'SCA',
+  '73005':'SRC5','73208':'SRC5',
+  '69005':'SCV','69208':'SCV',
+  '68005':'SFC','68208':'SFC',
+  '66005':'SPC','66208':'SPC','661000':'SPC',
+  '71005':'SCD','71208':'SCD',
+  '18005':'SHT+','18208':'SHT+',
+  '62005':'SFA','62208':'SFA','621000':'SFA',
+  '70005':'SFG','70208':'SFG',
+  '34005':'SFE+','34208':'SFE+','341000':'SFE+',
+  '58005':'SC1','58208':'SC1','581000':'SC1',
+  '56005':'SC2','56208':'SC2','561000':'SC2',
+  '46005':'SCC','46208':'SCC','461000':'SCC',
+  '72005':'SRC3','72208':'SRC3',
+  '55005':'SC3','55208':'SC3','551000':'SC3',
+  '60005':'SCB','60208':'SCB','601000':'SCB',
+  '92005':'STL','92208':'STL',
+  '48005':'SRC4','48208':'SRC4','481000':'SRC4',
+  '22005':'SDI','22208':'SDI','221000':'SDI',
+  '35005':'MDXS','35208':'MDXS','351000':'MDXS',
+  '16005':'MDX+','16208':'MDX+','161000':'MDX+','16001':'MDX+',
+  '57005':'MDXS+','57208':'MDXS+','571000':'MDXS+',
+  '12005':'MDX','12208':'MDX','121000':'MDX',
+  '21005':'LDX','21208':'LDX','211000':'LDX',
+  '59005':'ZTD','59208':'ZTD','591000':'ZTD',
+  '32005':'XTD','32208':'XTD','321000':'XTD','32020':'XTD',
+  '45005':'SDX+','45208':'SDX+','451000':'SDX+',
+  '19005':'SDX','19208':'SDX','191000':'SDX',
+  '64005':'STB','64208':'STB','641000':'STB',
+  '65005':'SDV','65208':'SDV','651000':'SDV',
+  '49005':'STFE','49208':'STFE','491000':'STFE',
+  '17005':'SHP','17208':'SHP','17020':'SHP','17050':'SHP',
+  '54005':'SHP PLUS',
+  '63005':'SLD',
+  '13005':'MHP','13208':'MHP','13020':'MHP','131000':'MHP',
+  '36005':'MHP SPECIAL',
+  '37005':'MMP',
+  '38005':'MLS',
+  '25005':'HHV 46','25208':'HHV 46','251000':'HHV 46','25020':'HHV 46',
+  '30005':'HHV 68','30208':'HHV 68','301000':'HHV 68','30020':'HHV 68',
+  '26005':'HHM 32','26208':'HHM 32','261000':'HHM 32','26020':'HHM 32',
+  '23005':'HHM 46','23208':'HHM 46','231000':'HHM 46','23020':'HHM 46',
+  '24005':'HHM 68','24208':'HHM 68','241000':'HHM 68','24020':'HHM 68',
+  '20005':'ATF DEX','20208':'ATF DEX','20001':'ATF DEX',
+  '40005':'ATF DEX III','40208':'ATF DEX III','40001':'ATF DEX III','40050':'ATF DEX III',
+  '51005':'ATF +3 +4',
+  '27005':'AGR STOU','27208':'AGR STOU','271000':'AGR STOU','27020':'AGR STOU',
+  '28005':'AGR FLUID','28208':'AGR FLUID','281000':'AGR FLUID','28020':'AGR FLUID',
+  '39005':'HTO 10','39208':'HTO 10','391000':'HTO 10','39050':'HTO 10',
+  '10005':'DS3 30','10208':'DS3 30','10050':'DS3 30',
+  '11005':'DS3 40','11208':'DS3 40','11050':'DS3 40',
+};
+
+// Tabla de equivalencias indexada por AD_NAME (fuente: Excel revisado por Yakoba)
+// Valores son las refs del proveedor — vacío = SIN EQUIVALENCIA
+const HUMAN_EQUIV = {
+  'HSD':    { castrol:'15F872',  repsol:'RPP0100DGB', shell:'550056348', eni:'104483' },
+  'SMC':    { castrol:'15F6EB',  repsol:'RPP0008DFB',                   eni:'103687' },
+  'SPA':    { castrol:'1608A7',  repsol:'RPP0005DFB',                   eni:'111687' },
+  'SCA':    { castrol:'15F612',  repsol:'RPQ0004DFB', shell:'550068492', eni:'105883' },
+  'SRC5':   { repsol:'OTROS_FORMATOS',               shell:'550050916'              },
+  'SCV':    { castrol:'15F6A5',  repsol:'RPP0066EHA'                                 },
+  'SFC':    { castrol:'15F67B',  repsol:'RPP0006EFB', shell:'550048343', eni:'105783' },
+  'SPC':    { castrol:'15F6BE',  repsol:'RPQ0005EFB', shell:'550050863', eni:'101483' },
+  'SCD':    { castrol:'15F640',  repsol:'RPP0056EFB', shell:'550046307', eni:'106287' },
+  'SHT+':   { castrol:'15F6B5',  repsol:'RPP0059FFB', shell:'550052669', eni:'104383' },
+  'SFA':    { castrol:'15F9C6',  repsol:'RPP0006HFB', shell:'550056802', eni:'101883' },
+  'SFG':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', shell:'550054289'              },
+  'SFE+':   { castrol:'15F908',  repsol:'RPP0060IGB', shell:'550046289', eni:'100983' },
+  'SC1':    { castrol:'15F827',  repsol:'RPP0051IFB', shell:'550059446', eni:'103083' },
+  'SC2':    { castrol:'15F6C5',  repsol:'RPQ0052IFB', shell:'550046293', eni:'101283' },
+  'SCC':    {                    repsol:'RPP0105IFB',                   eni:'G06887' },
+  'SRC3':   { castrol:'15F6E5',  repsol:'RPP0055IFB', shell:'550051433', eni:'105387' },
+  'SC3':    { castrol:'15F927',  repsol:'RPQ0050IFB', shell:'550067698', eni:'102183' },
+  'SCB':    { castrol:'15F7E7',  repsol:'RPP0057IFB', shell:'550046394', eni:'101683' },
+  'STL':    { castrol:'1612B5',  repsol:'RPP0069IFB'                                 },
+  'SRC4':   { castrol:'15F64F',  repsol:'RPP0054IFB', shell:'550046684', eni:'101583' },
+  'SDI':    { castrol:'15F64A',  repsol:'RPP0059JGB', shell:'550052838', eni:'102383' },
+  'MDXS':   { castrol:'15F624',  repsol:'RPP0106JFB',                   eni:'102283' },
+  'MDX+':   { castrol:'15F8FC',  repsol:'RPP0152MGB', shell:'550053777', eni:'103883' },
+  'MDXS+':  { castrol:'15F7CE',  repsol:'RPP0152MHA', shell:'550070413', eni:'102483' },
+  'LDX':    { castrol:'15F646',  repsol:'RPP0103TFB', shell:'550046585', eni:'104283' },
+  'ZTD':    { castrol:'15F3CF',  repsol:'RPP1041QFB', shell:'550047337', eni:'OTROS_FORMATOS' },
+  'XTD':    { castrol:'15F43B',  repsol:'RPP1042QFB', shell:'550055173', eni:'108087' },
+  'SDX+':   { castrol:'15F3D1',  repsol:'RPP1002MFB', shell:'550054436', eni:'OTROS_FORMATOS' },
+  'SDX':    { castrol:'OTROS_FORMATOS', repsol:'RPP1042MFB', shell:'550054435', eni:'OTROS_FORMATOS' },
+  'STB':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS',                eni:'106787' },
+  'SDV':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS',               eni:'106887' },
+  'STFE':   { castrol:'OTROS_FORMATOS', repsol:'RPP1004IFB', shell:'550053997', eni:'OTROS_FORMATOS' },
+  'SHP':    { castrol:'15DD09',  repsol:'RPP4002JBA', shell:'550027931', eni:'OTROS_FORMATOS' },
+  'MHP':    { castrol:'15F1B2',  repsol:'RPP4014LFA', shell:'550047671', eni:'127597' },
+  'MHP SPECIAL': { castrol:'OTROS_FORMATOS', repsol:'RPP4005MFA',        eni:'127697' },
+  'MMP':    { castrol:'OTROS_FORMATOS', repsol:'RPP4006KFA'                           },
+  'MLS':    { castrol:'15D987',  repsol:'OTROS_FORMATOS'                              },
+  'SLD':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS'                       },
+  'SHP PLUS': { eni:'OTROS_FORMATOS'                                                  },
+  'HHV 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6002HFA',            eni:'G00187' },
+  'HHV 68': { castrol:'14337B',  repsol:'RPP6002IFA', eni:'OTROS_FORMATOS'           },
+  'HHM 32': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
+  'HHM 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6008HFA',            eni:'G00483' },
+  'HHM 68': { castrol:'OTROS_FORMATOS', repsol:'RPP6008IFA',            eni:'G00583' },
+  'ATF DEX':{ repsol:'RPP4067ZFA',                                       eni:'129797' },
+  'ATF DEX III':{ castrol:'15D678', repsol:'RPP4066ZFA',                eni:'129897' },
+  'ATF +3 +4':{ repsol:'RPP4064ZGA', eni:'OTROS_FORMATOS'                            },
+  'AGR STOU':{ castrol:'OTROS_FORMATOS', repsol:'RPP4130QFA'                         },
+  'AGR FLUID':{ castrol:'OTROS_FORMATOS', repsol:'RPP4131ZFA', shell:'550045025', eni:'128197' },
+  'HTO 10': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
+  'DS3 30': { castrol:'OTROS_FORMATOS', repsol:'RPP1163CFB',            eni:'108887' },
+  'DS3 40': { castrol:'OTROS_FORMATOS', repsol:'RPP1163DFB', eni:'OTROS_FORMATOS'   },
+};
+
+// Función que resuelve ref → {brand, sku, name, otrosFormatos?}
+function resolveEquivRef(brand, ref) {
+  if (!ref || ref === 'null' || ref === null) return null;
+  
+  // Caso especial: disponible en otros formatos
+  if (ref === 'OTROS_FORMATOS') {
+    return { brand, sku: null, ref: null, otrosFormatos: true };
+  }
+
+  let name = null;
+  const brandUp = brand.toUpperCase();
+  if (brandUp === 'CASTROL') name = CASTROL_NAMES[ref] || null;
+  else if (brandUp === 'REPSOL') name = REPSOL_NAMES[ref] || null;
+  else if (brandUp === 'ENI') name = ENI_NAMES[ref] || null;
+  else if (brandUp === 'SHELL') name = SHELL_NAMES[ref] || null;
+
+  return { brand, sku: ref, ref: name || `${brand} (ref. ${ref})`, otrosFormatos: false };
+}
+
+// Obtiene equivalencias revisadas para un producto AD dado su SKU
+function humanEquivsForAdSku(adSku) {
+  const numRef = adSku.replace(/^ADP0*/,'');
+  const adName = AD_REF_TO_NAME[numRef] || AD_REF_TO_NAME[adSku.replace(/^ADP/,'')];
+  if (!adName || !HUMAN_EQUIV[adName]) return [];
+  
+  const equivRefs = HUMAN_EQUIV[adName];
+  const result = [];
+  for (const brand of ['castrol','repsol','shell','eni']) {
+    const ref = equivRefs[brand];
+    if (ref !== undefined && ref !== null && ref !== 'null') {
+      const resolved = resolveEquivRef(
+        brand.charAt(0).toUpperCase() + brand.slice(1), ref
+      );
+      if (resolved) result.push(resolved);
+    }
+  }
+  return result;
+}
+
+// EQUIV_CATALOG (solo para fallback cuando no hay en HUMAN_EQUIV — fluidos especiales)
 const EQUIV_CATALOG = [
-  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 C3',        viscosity: '5W30', specs: ['ACEA C3', 'API SP', 'BMW LL-04', 'MB 229.31', 'MB 229.52', 'FIAT 9.55535-S3', 'OPEL OV 040 1547-D30'] },
-  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 C2',        viscosity: '5W30', specs: ['ACEA C2', 'PSA B71 2290', 'FIAT 9.55535-S1'] },
-  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 DX',        viscosity: '5W30', specs: ['API SP', 'ILSAC GF-6', 'GM dexos1 Gen3', 'OPEL OV 040 1547-G30', 'FORD WSS-M2C946-A/B1', 'FORD WSS-M2C961-A1'] },
-  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-30 P',         viscosity: '5W30', specs: ['PSA B71 2290', 'PSA B71 2297', 'STELLANTIS FPW9.55535/03'] },
-  { brand: 'Castrol', ref: 'Castrol Magnatec 5W-40 C3',        viscosity: '5W40', specs: ['ACEA C3', 'API SN', 'BMW LL-04', 'MB 229.31', 'MB 229.51', 'MB 229.52', 'RENAULT RN0700', 'RENAULT RN0710', 'FIAT 9.55535-S2'] },
-  { brand: 'Castrol', ref: 'Castrol Edge 5W-40',               viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN', 'BMW LL-01', 'MB 226.5', 'MB 229.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00'] },
-
-  { brand: 'Repsol',  ref: 'Repsol Elite Multivalvulas 5W-40', viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN/CF', 'MB 229.3', 'VW 502.00', 'VW 505.00', 'RENAULT RN0700'] },
-  { brand: 'Repsol',  ref: 'Repsol Elite TDI 50501 5W-40',     viscosity: '5W40', specs: ['ACEA A3/B4', 'API SL/CF', 'VW 505.01', 'VW 502.00', 'PORSCHE A40'] },
-  { brand: 'Repsol',  ref: 'Repsol Leader C2 C3 5W-30',        viscosity: '5W30', specs: ['ACEA C2', 'ACEA C3', 'API SN/CF', 'PSA B71 2290', 'PSA B71 2297'] },
-  { brand: 'Repsol',  ref: 'Repsol Leader Inyección 15W-40',   viscosity: '15W40', specs: ['API SL/CF', 'ACEA A3/B4', 'MB 229.1'] },
-  { brand: 'Repsol',  ref: 'Repsol Premium Tech 5W-30',        viscosity: '5W30', specs: ['ACEA A5/B5', 'API SN', 'FORD WSS-M2C913-D', 'RENAULT RN0700'] },
-  { brand: 'Repsol',  ref: 'Repsol Giant 9660 5W-30',          viscosity: '5W30', specs: ['ACEA E4/E6/E7/E9', 'API CK-4', 'MB 228.52', 'MAN M3677', 'VOLVO VDS-4.5', 'SCANIA LDF-4', 'RENAULT RLD-3', 'MACK EOS-4.5', 'JASO DH-2'] },
-  { brand: 'Repsol',  ref: 'Repsol Automator ATF Diafluid',    viscosity: 'ATF',  specs: ['HONDA Z-1', 'HONDA HMMF', 'HONDA HCF-2', 'NISSAN NS-1', 'NISSAN NS-2', 'NISSAN NS-3', 'TOYOTA CVTF TC', 'TOYOTA CVTF FE', 'SUZUKI CVTF', 'MAZDA JWS 3320', 'MITSUBISHI SP-III', 'SUBARU ECVT'] },
-
-  { brand: 'Shell',   ref: 'Shell Helix Ultra 5W-40',          viscosity: '5W40', specs: ['ACEA A3/B4', 'API SN', 'BMW LL-01', 'MB 229.3', 'MB 229.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00'] },
-  { brand: 'Shell',   ref: 'Shell Helix Ultra Pro AF 5W-30',   viscosity: '5W30', specs: ['ACEA A5/B5', 'API SN', 'FORD WSS-M2C913-D', 'JAGUAR STJLR.03.5003'] },
-
-  { brand: 'ENI',     ref: 'Eni i-Sigma Performance E7 15W-40', viscosity: '15W40', specs: ['ACEA E7', 'API CI-4', 'MB 228.3', 'MAN M3275-1', 'VOLVO VDS-3', 'MACK EO-N', 'RENAULT RLD-2'] },
-  { brand: 'ENI',     ref: 'Eni i-Sigma Top MS 5W-30',          viscosity: '5W30', specs: ['ACEA E6/E7/E9', 'API CJ-4', 'MB 228.51', 'MAN M3477', 'VOLVO VDS-4', 'RENAULT RLD-3', 'JASO DH-2'] },
-  { brand: 'ENI',     ref: 'Eni i-Sint Tech R 5W-30',           viscosity: '5W30', specs: ['ACEA C4', 'RENAULT RN0720', 'MB 226.51'] },
-
-  { brand: 'Febi',    ref: 'Febi 32944 ATF DSG',                viscosity: 'ATF',  specs: ['VW G 052 182', 'VW G 060 162', 'AUDI MULTITRONIC'] },
-  { brand: 'Febi',    ref: 'Febi 39091 DOT 4',                  viscosity: 'DOT4', specs: ['DOT 4', 'FMVSS 116', 'ISO 4925', 'SAE J1704'] },
-  { brand: 'Febi',    ref: 'Febi 22271 G12++',                  viscosity: '-',    specs: ['VW TL-774-G', 'G12++', 'MB 325.5', 'MAN 324 Type Si-OAT'] },
+  { brand: 'Repsol',  ref: 'Repsol Automator ATF Diafluid', sku: 'RPP4061ZFA', viscosity: 'ATF',
+    specs: ['HONDA Z-1','HONDA HMMF','HONDA HCF-2','NISSAN NS-1','NISSAN NS-2','NISSAN NS-3','TOYOTA CVTF TC','TOYOTA CVTF FE','SUZUKI CVTF','MAZDA JWS 3320','MITSUBISHI SP-III','SUBARU ECVT'] },
+  { brand: 'Febi', ref: 'Febi 32944 ATF DSG', sku: '32944', viscosity: 'ATF',
+    specs: ['VW G 052 182','VW G 060 162','AUDI MULTITRONIC'] },
+  { brand: 'Febi', ref: 'Febi 39091 DOT 4', sku: '39091', viscosity: 'DOT4',
+    specs: ['DOT 4','FMVSS 116','ISO 4925','SAE J1704'] },
+  { brand: 'Febi', ref: 'Febi 22271 G12++', sku: '22271', viscosity: '-',
+    specs: ['VW TL-774-G','G12++','MB 325.5','MAN 324 Type Si-OAT'] },
 ];
 
 // ─── NORMAS CANÓNICAS (con descripción humana) ───
@@ -3493,14 +4428,37 @@ function intelligentSearch(query) {
 
 // ─── DEVUELVE PRODUCTOS AD PARTS Y EQUIVALENCIAS PARA UNA NORMA CANÓNICA ───
 function productsForSpec(canonicalSpec) {
-  // Normalizar para comparación
   const target = canonicalSpec.toUpperCase();
   const adProducts = AD_PARTS_CATALOG.filter(p =>
     p.specs.some(s => s.toUpperCase() === target)
   );
-  const equivs = EQUIV_CATALOG.filter(p =>
-    p.specs.some(s => s.toUpperCase() === target)
-  );
+
+  // Equivalencias: primero usar el Excel revisado por humano (prioridad)
+  let equivs = [];
+  const seenRefs = new Set();
+
+  if (adProducts.length > 0) {
+    // Para cada producto AD encontrado, buscar sus equivalencias en el Excel
+    for (const adProd of adProducts) {
+      const humanEquivs = humanEquivsForAdSku(adProd.sku);
+      for (const eq of humanEquivs) {
+        if (!seenRefs.has(eq.sku)) {
+          seenRefs.add(eq.sku);
+          equivs.push(eq);
+        }
+      }
+    }
+  }
+
+  // Fallback al EQUIV_CATALOG solo para productos sin entrada en el Excel
+  // (fluidos especiales: ATF CVT, DOT4, G12++, etc.)
+  if (equivs.length === 0) {
+    const fallback = EQUIV_CATALOG.filter(p =>
+      p.specs.some(s => s.toUpperCase() === target)
+    );
+    equivs = fallback.map(p => ({ brand: p.brand, sku: p.sku || '', ref: p.ref }));
+  }
+
   return { adProducts, equivs };
 }
 
@@ -3620,16 +4578,26 @@ function renderProductsBlock(adProducts, equivs) {
     html += `
       <div class="desc-result-section">
         <div class="desc-result-section-title">
-          Equivalencias de otras marcas <span class="count">${equivs.length}</span>
+          Equivalencias de otras marcas <span class="count">${equivs.filter(e => !e.otrosFormatos).length}</span>
         </div>
         <div class="desc-products-grid">
-          ${equivs.map(p => `
-            <div class="desc-product-card">
+          ${equivs.map(p => p.otrosFormatos ? `
+            <div class="desc-product-card otros-formatos">
               <div class="desc-product-card-header">
                 <span class="desc-product-brand">${p.brand}</span>
               </div>
+              <div class="otros-formatos-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:10px;height:10px"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                Disponible en otros formatos
+              </div>
+            </div>
+          ` : `
+            <div class="desc-product-card">
+              <div class="desc-product-card-header">
+                <span class="desc-product-brand">${p.brand}</span>
+                ${p.sku ? `<span class="desc-product-ref">${p.sku}</span>` : ''}
+              </div>
               <div class="desc-product-name">${p.ref}</div>
-              <div class="desc-product-specs">${p.specs.slice(0, 4).join(' · ')}${p.specs.length > 4 ? ` +${p.specs.length - 4}` : ''}</div>
             </div>
           `).join('')}
         </div>
@@ -3713,7 +4681,7 @@ const COMPONENT_KNOWLEDGE = {
   'REFRIGERANTE': {
     aliases: ['refrigerante', 'anticongelante', 'liquido refrigerante', 'coolant'],
     fluidType: 'Refrigerante (anticongelante)',
-    canonicalSpecs: ['G11', 'G12', 'G12+', 'G12++', 'G13', 'VW TL-774-G'],
+    canonicalSpecs: ['G12++', 'VW TL-774-G', 'G12+', 'G13', 'G12', 'G11'],
     interpretation: 'El color del refrigerante orienta pero no determina la norma. Lo correcto es seguir la especificación del fabricante.',
     colorHints: {
       'azul': 'G11 (silicato, generaciones antiguas)',
@@ -3758,7 +4726,7 @@ const COMPONENT_KNOWLEDGE = {
     advice: 'NUNCA uses ATF universal en cajas modernas. Cada caja tiene su norma específica.',
   },
   'AdBlue': {
-    aliases: ['adblue', 'urea', 'def'],
+    aliases: ['adblue', 'urea', 'def', 'ad blue', 'adblu', 'addblue'],
     fluidType: 'Disolución urea AdBlue (DEF)',
     canonicalSpecs: ['ISO 22241', 'AdBlue', 'DEF'],
     interpretation: 'Disolución acuosa de urea al 32,5% para sistema SCR de motores diésel Euro 6.',
@@ -4529,11 +5497,138 @@ document.getElementById('input-plate').addEventListener('keydown', e => { if (e.
 document.getElementById('input-desc').addEventListener('keydown', e => { if (e.key === 'Enter') searchByDesc(); });
 document.getElementById('input-free').addEventListener('keydown', e => { if (e.key === 'Enter') searchByFree(); });
 
+// ── THEME TOGGLE ──────────────────────────────────────────────
+function toggleTheme() {
+  setTheme(currentTheme === 'light' ? 'dark' : 'light');
+}
+
+// ── HELP MODAL ────────────────────────────────────────────────
+function openHelp() {
+  document.getElementById('help-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeHelp() {
+  document.getElementById('help-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function switchHelpTab(tab) {
+  document.querySelectorAll('.help-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  document.querySelectorAll('.help-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
+}
+document.getElementById('help-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeHelp();
+});
+
 // Detectar preferencia del sistema
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
   setTheme('dark');
+} else {
+  setTheme('light');
 }
 
 </script>
+
+<!-- ═══════════ MODAL AYUDA ═══════════ -->
+<div class="help-overlay" id="help-overlay" role="dialog" aria-modal="true" aria-labelledby="help-title">
+  <div class="help-dialog">
+    <div class="help-dialog-header">
+      <h2 id="help-title">Ayuda</h2>
+      <button class="help-close-btn" onclick="closeHelp()" aria-label="Cerrar">✕</button>
+    </div>
+
+    <div class="help-tabs">
+      <button class="help-tab active" data-tab="uso" onclick="switchHelpTab('uso')">Cómo usar</button>
+      <button class="help-tab" data-tab="about" onclick="switchHelpTab('about')">About</button>
+      <button class="help-tab" data-tab="changelog" onclick="switchHelpTab('changelog')">Changelog</button>
+    </div>
+
+    <div class="help-body">
+
+      <!-- PANEL: USO -->
+      <div class="help-panel active" data-panel="uso">
+        <div class="help-section">
+          <h3>¿Qué hace esta app?</h3>
+          <p>Identifica el aceite de motor recomendado por AD Parts para cualquier vehículo, junto con sus equivalencias en Castrol, Repsol, Shell y Eni. También cubre aceites de transmisión, hidráulicos y fluidos especiales.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Matrícula</h3>
+          <p>Introduce la matrícula española (ej. <code>1234ABC</code>) para identificar el vehículo automáticamente y obtener su recomendación de aceite.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Bastidor (VIN)</h3>
+          <p>Introduce el VIN de 17 caracteres (ej. <code>WVWZZZ1KZAM123456</code>) para identificar el vehículo con precisión máxima.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda por Vehículo</h3>
+          <p>Selecciona marca, modelo, año y versión manualmente si no dispones de matrícula ni bastidor.</p>
+        </div>
+        <div class="help-section">
+          <h3>Búsqueda Libre</h3>
+          <p>Escribe cualquiera de estos términos directamente:</p>
+          <ul>
+            <li>Norma OEM: <code>B712010</code>, <code>229.51</code>, <code>507.00</code></li>
+            <li>Referencia de producto: <code>RPP0005DFB</code>, <code>1608A7</code>, <code>111687</code></li>
+            <li>Viscosidad + categoría: <code>5W30 C3</code>, <code>0W20 C5</code></li>
+            <li>Código AD Parts: <code>HSD</code>, <code>SPA</code>, <code>SC3</code></li>
+          </ul>
+        </div>
+        <div class="help-section">
+          <h3>Vista Cliente / Call Center</h3>
+          <p>Usa el selector del encabezado para cambiar entre la vista simplificada para el cliente y la vista con información técnica completa para el agente de Call Center.</p>
+        </div>
+      </div>
+
+      <!-- PANEL: ABOUT -->
+      <div class="help-panel" data-panel="about">
+        <div class="about-app-name">Buscador de Aceites AD Parts</div>
+        <span class="about-version">v20</span>
+        <hr class="about-divider">
+        <div class="about-credits">
+          <p><strong>Crafted by</strong> Yakoba Moreno</p>
+          <p><strong>Coded in</strong> Claude Code · Anthropic</p>
+        </div>
+        <hr class="about-divider">
+        <div class="help-section">
+          <h3>Tecnología</h3>
+          <p>Aplicación web de archivo único (HTML + CSS + JS). Sin dependencias externas ni servidor. Datos de homologaciones, equivalencias y referencias integrados directamente en el archivo.</p>
+        </div>
+        <div class="help-section">
+          <h3>Fuentes de datos</h3>
+          <ul>
+            <li>Tarifas Castrol, Repsol, Shell, Eni — Abril 2026</li>
+            <li>Catálogos de homologaciones por fabricante</li>
+            <li>Equivalencias AD Parts / AD Standard — mantenidas por Yakoba Moreno</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PANEL: CHANGELOG -->
+      <div class="help-panel" data-panel="changelog">
+        <div class="changelog-entry">
+          <div class="changelog-version">v20 <span class="changelog-date">Junio 2026</span></div>
+          <ul>
+            <li>Añadido botón <strong>Ayuda</strong> con guía de uso, About y Changelog</li>
+            <li>Toggle de tema claro/oscuro convertido a botón único</li>
+            <li>Diccionario <strong>SHELL_NAMES</strong>: nombres de producto para todas las referencias Shell en equivalencias (~80 refs de Tarifa Abril 2026)</li>
+            <li>Diccionario <strong>ENI_NAMES</strong> ampliado y corregido con Tarifa Eni Abril 2026: eliminado sufijo «tech» incorrecto en gama XEF, corregido nombre gama genérica 0W-20, añadidas 12 nuevas referencias (5W-20, 5W-30, 5W-40, 10W-40)</li>
+            <li>Corregido nombre <strong>Repsol RPP0005DFB</strong>: era «Elite Evolution Eco 0W-20 C5» (inexistente), ahora «Master Eco P 0W-20»</li>
+            <li>ENI 111687 muestra ahora nombre correcto: «Eni i-Sint tech P 0W-20»</li>
+          </ul>
+        </div>
+        <div class="changelog-entry">
+          <div class="changelog-version">v19 <span class="changelog-date">Mayo 2026</span></div>
+          <ul>
+            <li>Búsqueda libre por norma OEM, referencia de producto y código AD</li>
+            <li>Equivalencias multi-marca con resolución de nombres Castrol y Repsol</li>
+            <li>Vista Cliente y Call Center diferenciadas</li>
+            <li>Soporte completo de aceites de transmisión, hidráulicos y fluidos especiales</li>
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /.help-body -->
+  </div><!-- /.help-dialog -->
+</div><!-- /.help-overlay -->
+
 </body>
 </html>

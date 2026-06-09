@@ -1,0 +1,42 @@
+IDENTIDAD CORPORATIVA Y BRANDING: AD PARTS
+
+1. LOGOTIPO E IDENTIDAD VISUAL
+-------------------------------
+El logotipo de AD Parts se basa en una identidad de red internacional.
+- Símbolo: El distintivo "AD" encerrado en un círculo o forma ovalada (AD International).
+- Composición: Acrónimo "AD" en tamaño prominente seguido de "Parts".
+- Iconografía: Estilo lineal y limpio para representar servicios, logística y puntos de venta.
+
+2. PALETA DE COLORES (TECHNICAL DATA)
+--------------------------------------
+Colores principales utilizados en la identidad visual:
+
+- ROJO CORPORATIVO (Acción y Marca):
+  Hex: #E20613
+  Uso: Logotipo, botones de llamada a la acción, alertas y acentos principales.
+
+- AZUL PROFUNDO (Seriedad y Confianza):
+  Hex: #002D5A
+  Uso: Tipografía principal, encabezados, pies de página y fondos de contraste.
+
+- GRIS HUMO (Soporte):
+  Hex: #F4F4F4
+  Uso: Fondos de sección, tarjetas de producto y separadores.
+
+- BLANCO PURO (Claridad):
+  Hex: #FFFFFF
+  Uso: Fondos generales y espacios negativos para legibilidad.
+
+3. TIPOGRAFÍA
+--------------
+- Estilo: Moderno, de palo seco (Sans Serif).
+- Familias sugeridas: Inter, Roboto o similares de estilo Neo-Grotesque.
+- Aplicación: Pesos "Bold" muy marcados para cifras y títulos; pesos regulares para cuerpo de texto técnico.
+
+4. VALORES VISUALES Y MARCA PROPIA
+----------------------------------
+- Estética: Industrial, profesional y de gran capacidad logística.
+- Fotografía: Centros logísticos, almacenes y flotas de vehículos reales.
+- Marcas asociadas: AD Premium Private Brand (enfocada en calidad y tecnología).
+
+Copyright © 2022 Grupo AD - Análisis realizado para uso interno.
