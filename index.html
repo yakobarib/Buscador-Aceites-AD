@@ -2875,7 +2875,12 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
 
     <div class="header-actions">
       <!-- Help button -->
-      <button class="help-btn" onclick="openHelp()" aria-label="Ayuda">?</button>
+      <button class="help-btn" onclick="openHelp()" aria-label="Ayuda">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 6C5.5 4.3 6.6 3 8 3C9.4 3 10.5 4.1 10.5 5.5C10.5 6.7 9.6 7.4 8.8 8L8 8.7V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="8" cy="12.5" r="1" fill="currentColor"/>
+        </svg>
+      </button>
 
       <!-- View toggle (pública / interna) -->
       <div class="view-switcher">
