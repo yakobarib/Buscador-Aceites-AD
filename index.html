@@ -4931,6 +4931,48 @@ const COMPONENT_KNOWLEDGE = {
     interpretation: 'Audi quattro tiene varios sistemas: Torsen (diferencial central) o Haldex (acoplador en Q3, A3).',
     advice: 'Comprueba si tu modelo lleva Torsen (aceite engranajes GL-5) o Haldex (fluido específico G 052 175).',
   },
+  'HIDRAULICO': {
+    aliases: ['hidraulico', 'hidráulico', 'aceite hidraulico', 'aceite hidráulico', 'hydraulic', 'aceite maquinaria', 'sistema hidraulico', 'circuito hidraulico', 'hvlp', 'hlp', 'iso vg'],
+    fluidType: 'Aceite hidráulico (HM/HV)',
+    canonicalSpecs: ['DIN 51524-2', 'DIN 51524-3', 'ISO VG 32', 'ISO VG 46', 'ISO VG 68'],
+    interpretation: 'Aceite hidráulico para sistemas de maquinaria industrial. HM (DIN 51524-2) es mineral estándar. HV (DIN 51524-3) tiene alto índice de viscosidad para rangos amplios de temperatura. El grado ISO VG (32, 46, 68) depende del caudal y temperatura.',
+    advice: 'ISO VG 46 es el grado más habitual. Elige HV si hay grandes variaciones de temperatura o si el fabricante lo especifica.',
+  },
+  'GRASA': {
+    aliases: ['grasa', 'grease', 'grasa ep', 'grasa nlgi', 'grasa litio', 'grasa multiuso', 'grasa spray', 'lubricante solido', 'rodamiento', 'engrasado'],
+    fluidType: 'Grasa lubricante',
+    canonicalSpecs: ['DIN 51825 K2K-20', 'DIN 51825 KPF2K-20', 'DIN 51825 KP2N-20', 'DIN 51825 KP2K-20', 'DIN 51825 KP0K-20'],
+    interpretation: 'Grasas lubricantes para rodamientos, articulaciones y mecanismos. NLGI 2 es el grado universal. GLEP-2 (aditivo EP) para alta carga, GLMO (MoS2) para presiones extremas, GRL-00 para sistemas de engrase centralizado.',
+    advice: 'GLIT o GLAT NLGI2 para uso general. GLMO con MoS2 para alta carga. GRL-00 para engrase centralizado. Grasa Spray para piezas de difícil acceso.',
+  },
+  'AGRICOLA': {
+    aliases: ['tractor', 'agricola', 'agrícola', 'maquinaria agricola', 'maquinaria agrícola', 'aceite tractor', 'utto', 'stou', 'john deere', 'kubota', 'massey ferguson', 'fendt', 'case ih', 'new holland', 'deutz fahr', 'aceite multifuncion tractor'],
+    fluidType: 'Aceite agrícola multifunción (UTTO / STOU)',
+    canonicalSpecs: ['API GL-4', 'CATERPILLAR TO-2'],
+    interpretation: 'Aceites específicos para tractores y maquinaria agrícola. UTTO (Universal Tractor Transmission Oil) lubrica hidráulica, transmisión y frenos húmedos en un solo aceite. STOU incluye además el motor.',
+    advice: 'AGR FLUID 10W30 para sistemas UTTO puros. AGR STOU 15W40 cuando se necesita un único aceite para motor, transmisión e hidráulica.',
+  },
+  'MOTOR_PESADO': {
+    aliases: ['motor pesado', 'aceite camion', 'aceite vehiculo industrial', 'vehiculo pesado', 'truck oil', 'aceite diesel pesado', 'euro vi', 'camion euro', 'aceite euro 6', 'daf', 'renault trucks', 'mercedes actros', 'volvo fh'],
+    fluidType: 'Aceite motor vehículo industrial (pesado)',
+    canonicalSpecs: ['ACEA E9', 'ACEA E11', 'ACEA E7', 'API CK-4'],
+    interpretation: 'Aceites para motores diésel de camiones, autobuses y maquinaria pesada. Normas ACEA E9/E11 para motores Euro 6 con filtro de partículas. ACEA E7 para motores anteriores sin DPF.',
+    advice: 'Euro 6: SDV 5W30 (low SAPS) o STB 10W30. Para flotas mixtas o motores sin DPF: ZTD o XTD 15W40.',
+  },
+  'TRANSMISION_EJES': {
+    aliases: ['aceite eje', 'aceite puente', 'diferencial camion', 'puente trasero', 'aceite caja camion', 'gl5', 'gl-5 camion', 'sae 80w90', '80w90', '85w140', 'aceite engranajes camion', 'reductor'],
+    fluidType: 'Aceite de transmisión y ejes (GL-4/GL-5)',
+    canonicalSpecs: ['API GL-5', 'API GL-4', 'MB 235.0'],
+    interpretation: 'Aceites para cajas de cambios manuales, ejes y diferenciales de vehículos industriales. GL-4 para cajas sincronizadas, GL-5 para diferenciales y ejes de alta carga.',
+    advice: 'MHP 80W90 para ejes y diferenciales. MHP Special 85W140 para ejes de alta carga. MMP 80W y MLS 85W90 para aplicaciones específicas.',
+  },
+  'INDUSTRIAL_PNEU': {
+    aliases: ['compresor', 'compresor aire', 'aceite neumatico', 'aceite neumático', 'pneumatic', 'pneu', 'herramienta neumatica', 'herramienta neumática', 'aceite compresor', 'aceite neumatica'],
+    fluidType: 'Aceite para herramientas neumáticas y compresores (NSF H1)',
+    canonicalSpecs: ['NSF H1', 'FDA'],
+    interpretation: 'Aceite lubricante para herramientas neumáticas, compresores de aire y sistemas neumáticos. Certificación NSF H1 (apto para contacto incidental con alimentos).',
+    advice: 'AD PNEU Air es el aceite específico. Ideal para pistolas, martillos y compresores de taller.',
+  },
 };
 
 // ─── MARCAS RECONOCIDAS ───
@@ -5033,6 +5075,20 @@ function freeSearch(query) {
     };
   }
 
+  // Búsqueda directa en catálogo por nombre/ref de producto (antes de declarar NO COMPRENDIDO)
+  // Permite encontrar "hv 46", "ztd", "sc3", "ds3", "atf dex", "glit", etc.
+  const qAgg = normalizeDesc(raw); // uppercase, sin espacios ni acentos
+  if (qAgg.length >= 2) {
+    const directMatches = AD_PARTS_CATALOG.filter(p => {
+      const refAgg = normalizeDesc(p.ref).replace(/^AD/, '');
+      const viscAgg = normalizeDesc(p.viscosity);
+      return refAgg.includes(qAgg) || viscAgg === qAgg;
+    });
+    if (directMatches.length > 0 && directMatches.length <= 20) {
+      return { match: 'direct_product', query: raw, products: directMatches };
+    }
+  }
+
   // Nada reconocible — intentar pasar a Homologaciones por si es una norma
   const formalResult = intelligentSearch(raw);
   if (formalResult && formalResult.match !== 'none') {
@@ -5063,6 +5119,34 @@ function renderFreeResult(result) {
             <div class="desc-result-desc">El sistema no ha identificado el componente, fluido o marca en tu consulta. Intenta ser más específico (ej: "aceite caja DSG VW Golf 2015") o usa la pestaña <strong>Homologaciones</strong> si conoces la norma exacta.</div>
           </div>
         </div>
+      </div>`;
+    return;
+  }
+
+  if (result.match === 'direct_product') {
+    let allEquivs = [];
+    const seenRefs = new Set();
+    for (const p of result.products) {
+      for (const eq of humanEquivsForAdSku(p.sku)) {
+        if (!seenRefs.has(eq.ref)) { seenRefs.add(eq.ref); allEquivs.push(eq); }
+      }
+    }
+    const label = result.products.length === 1
+      ? result.products[0].ref
+      : `${result.products.length} productos encontrados`;
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow">Coincidencia en catálogo AD Parts</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">${label}</div>
+            <div class="desc-result-desc">Producto encontrado directamente en el catálogo. Aquí tienes el producto AD y sus equivalencias entre marcas.</div>
+          </div>
+        </div>
+        ${renderProductsBlock(result.products, allEquivs)}
       </div>`;
     return;
   }
