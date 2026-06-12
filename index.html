@@ -3344,7 +3344,7 @@ const AD_PARTS_CATALOG = [
     specs: ['VOLVO VCC 95200377', 'ACEA A5/B5', 'API SL'] },
   // ── MOTOR LIGERO · 5W20 ──
   { ref: 'AD SFA 5W20',            sku: 'ADP62005', viscosity: '5W20',  type: 'motor', segment: 'ligero',
-    specs: ['FORD WSS-M2C948-B', 'JAGUAR STJLR.03.5004', 'ACEA C1'] },
+    specs: ['FORD WSS-M2C948-B', 'JAGUAR STJLR.03.5004', 'ACEA A1/B1', 'ACEA C5', 'API SN'] },
   // ── MOTOR LIGERO · 5W30 ──
   { ref: 'AD SC1 5W30',            sku: 'ADP58005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
     specs: ['JAGUAR STJLR.03.5005', 'ACEA C1'] },
@@ -3403,10 +3403,10 @@ const AD_PARTS_CATALOG = [
     specs: ['MB 228.0', 'ACEA E2', 'API CF'] },
 
   // ── TRANSMISIÓN ──
-  { ref: 'AD ATF DEX III',         sku: 'ADP20005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
-    specs: ['MB 236.9', 'ZF TE-ML 04D', 'ZF TE-ML 14C', 'ZF TE-ML 20C'] },
-  { ref: 'AD ATF DEX',             sku: 'ADP40005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
-    specs: ['MB 236.9', 'ZF TE-ML 04D', 'ZF TE-ML 03C'] },
+  { ref: 'AD ATF DEX III',         sku: 'ADP40005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
+    specs: ['DEXRON III H', 'MERCON V', 'MB 236.9', 'ZF TE-ML 03D', 'ZF TE-ML 04D', 'ZF TE-ML 14B', 'ZF TE-ML 16L', 'ZF TE-ML 17C', 'ZF TE-ML 20B', 'ZF TE-ML 25B'] },
+  { ref: 'AD ATF DEX',             sku: 'ADP20005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
+    specs: ['DEXRON II D', 'MERCON', 'MB 236.9', 'ZF TE-ML 03D', 'ZF TE-ML 04D', 'ZF TE-ML 11A', 'ZF TE-ML 14A', 'ZF TE-ML 17C'] },
   { ref: 'AD ATF Plus',            sku: 'ADP51005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
     specs: [] },
   { ref: 'AD SHP Plus 75W80',      sku: 'ADP54005', viscosity: '75W80', type: 'transmision', segment: 'ligero',
@@ -3426,7 +3426,7 @@ const AD_PARTS_CATALOG = [
 
   // ── MULTIFUNCIÓN AGRÍCOLA ──
   { ref: 'AD AGR FLUID 10W30',     sku: 'ADP28005', viscosity: '10W30', type: 'multifuncion', segment: 'ligero',
-    specs: ['API GL-4', 'CATERPILLAR TO-2', 'ZF TE-ML 03C', 'ZF TE-ML 05A', 'ZF TE-ML 17E', 'ZF TE-ML 21F'] },
+    specs: ['API GL-4', 'CATERPILLAR TO-2', 'ZF TE-ML 03E', 'ZF TE-ML 05F', 'ZF TE-ML 17E', 'ZF TE-ML 21F'] },
   { ref: 'AD AGR STOU 15W40',      sku: 'ADP27005', viscosity: '15W40', type: 'multifuncion', segment: 'ligero',
     specs: ['ACEA E2', 'API GL-4', 'API CF', 'CATERPILLAR TO-2', 'ZF TE-ML 06B', 'ZF TE-ML 06C', 'ZF TE-ML 07B', 'MB 228.1'] },
 
@@ -3443,6 +3443,26 @@ const AD_PARTS_CATALOG = [
     specs: ['DIN 51524-3', 'ISO VG 68'] },
   { ref: 'AD HTO 10',              sku: 'ADP39005', viscosity: '10W',   type: 'hidraulico', segment: 'industrial',
     specs: ['CATERPILLAR TO-4'] },
+
+  // ── INDUSTRIAL ──
+  { ref: 'AD PNEU Air',            sku: 'ADP41005', viscosity: '22W',   type: 'industrial', segment: 'industrial',
+    specs: ['NSF H1', 'FDA'] },
+  { ref: 'AD EGP 100',             sku: 'ADP91005', viscosity: '100W',  type: 'industrial', segment: 'industrial',
+    specs: ['ISO 6743/1-AN', 'DIN 51501L-AN'] },
+
+  // ── GRASAS ──
+  { ref: 'AD Grasa Spray',         sku: 'ADP66501', viscosity: 'NLGI0', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 KP0K-20'] },
+  { ref: 'AD GLIT NLGI2',          sku: 'ADP60530', viscosity: 'NLGI2', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 K2K-20'] },
+  { ref: 'AD GLMO NLGI2',          sku: 'ADP60540', viscosity: 'NLGI2', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 KPF2K-20'] },
+  { ref: 'AD GRL-00 NLGI00',       sku: 'ADP60550', viscosity: 'NLGI00', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 KP00K-20'] },
+  { ref: 'AD GLEP-2 NLGI2',        sku: 'ADP60520', viscosity: 'NLGI2', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 KP2N-20'] },
+  { ref: 'AD GLAT NLGI2',          sku: 'ADP60510', viscosity: 'NLGI2', type: 'grasa', segment: 'industrial',
+    specs: ['DIN 51825 KP2K-20'] },
 
   // ── REFRIGERANTE ──
   { ref: 'AD COOL G12++',          sku: 'ADP60125', viscosity: '-',     type: 'refrigerante', segment: 'ligero',
@@ -3955,14 +3975,22 @@ const AD_REF_TO_NAME = {
   '26005':'HHM 32','26208':'HHM 32','261000':'HHM 32','26020':'HHM 32',
   '23005':'HHM 46','23208':'HHM 46','231000':'HHM 46','23020':'HHM 46',
   '24005':'HHM 68','24208':'HHM 68','241000':'HHM 68','24020':'HHM 68',
-  '20001':'ATF DEX III','20005':'ATF DEX III','20020':'ATF DEX III','20050':'ATF DEX III','20208':'ATF DEX III','201000':'ATF DEX III',
-  '40001':'ATF DEX','40005':'ATF DEX','40050':'ATF DEX','40208':'ATF DEX',
+  '20001':'ATF DEX','20005':'ATF DEX','20020':'ATF DEX','20050':'ATF DEX','20208':'ATF DEX','201000':'ATF DEX',
+  '40001':'ATF DEX III','40005':'ATF DEX III','40050':'ATF DEX III','40208':'ATF DEX III',
   '51005':'ATF +3 +4','51020':'ATF +3 +4',
   '27005':'AGR STOU','27208':'AGR STOU','271000':'AGR STOU','27020':'AGR STOU',
   '28005':'AGR FLUID','28208':'AGR FLUID','281000':'AGR FLUID','28020':'AGR FLUID',
   '39005':'HTO 10','39208':'HTO 10','391000':'HTO 10','39050':'HTO 10',
   '10005':'DS3 30','10208':'DS3 30','10050':'DS3 30','10020':'DS3 30',
   '11005':'DS3 40','11208':'DS3 40','11050':'DS3 40','11020':'DS3 40',
+  '41001':'PNEU AIR','41005':'PNEU AIR',
+  '91005':'EGP 100','91208':'EGP 100',
+  '66501':'GRASA SPRAY',
+  '60130':'GLIT','60530':'GLIT','61830':'GLIT','64530':'GLIT',
+  '60440':'GLMO','60140':'GLMO','60540':'GLMO','61840':'GLMO','64540':'GLMO',
+  '60150':'GRL','60550':'GRL','64550':'GRL',
+  '60120':'GLEP','60520':'GLEP','61820':'GLEP','64520':'GLEP','62020':'GLEP',
+  '60410':'GLAT','60510':'GLAT','61810':'GLAT','64510':'GLAT','62010':'GLAT',
 };
 
 // Tabla de equivalencias indexada por AD_NAME (fuente: Excel revisado por Yakoba)
@@ -5740,7 +5768,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v22</span>
+        <span class="about-version">v23</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -5764,6 +5792,14 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v23 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>Corregido ATF DEX / ATF DEX III: refs 40xxx corresponden a DEX III y 20xxx a DEX (SKUs y specs actualizados)</li>
+            <li>Corregidas specs SFA: ACEA A1/B1 + C5 (antes C1 incorrecto)</li>
+            <li>Corregidas specs AGR FLUID: ZF TE-ML 03E y 05F (antes 03C y 05A)</li>
+            <li>Añadidos 8 productos del catálogo: AD PNEU Air, AD EGP 100 y 6 grasas (GLIT, GLMO, GRL-00, GLEP-2, GLAT, Grasa Spray)</li>
+            <li>Añadidas referencias completas en AD_REF_TO_NAME para todos los nuevos productos</li>
+          </ul>
           <div class="changelog-version">v22 <span class="changelog-date">Junio 2026</span></div>
           <ul>
             <li>Catálogo AD Parts 2025 incorporado como fuente autoritativa: <strong>SKUs corregidos</strong> en toda la tabla AD_PARTS_CATALOG (casi todos estaban equivocados)</li>
