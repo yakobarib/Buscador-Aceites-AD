@@ -3930,6 +3930,26 @@ const SHELL_NAMES = {
   // Agrícola
   '550027809': 'Shell Spirax S4 TXM',
   '550045025': 'Shell Spirax S4 TXM',
+  // Hidráulico — Tellus S2 MX (HM) y S2 VX (HV)
+  '550045731': 'Shell Tellus S2 MX 32',
+  '550045742': 'Shell Tellus S2 MX 32',
+  '550065933': 'Shell Tellus S2 MX 32',
+  '550045526': 'Shell Tellus S2 VX 46',
+  '550045524': 'Shell Tellus S2 VX 46',
+  '550065931': 'Shell Tellus S2 VX 46',
+  '550060143': 'Shell Tellus S2 VX 46',
+  '550045431': 'Shell Tellus S2 MX 46',
+  '550045419': 'Shell Tellus S2 MX 46',
+  '550065934': 'Shell Tellus S2 MX 46',
+  '550045737': 'Shell Tellus S2 VX 32',
+  '550045739': 'Shell Tellus S2 VX 32',
+  '550065930': 'Shell Tellus S2 VX 32',
+  '550045432': 'Shell Tellus S2 MX 68',
+  '550045417': 'Shell Tellus S2 MX 68',
+  '550065935': 'Shell Tellus S2 MX 68',
+  '550045528': 'Shell Tellus S2 VX 68',
+  '550045527': 'Shell Tellus S2 VX 68',
+  '550065932': 'Shell Tellus S2 VX 68',
 };
 
 // Mapeo ref numérica → AD_NAME (del Excel, 5L como formato de referencia)
@@ -4041,11 +4061,11 @@ const HUMAN_EQUIV = {
   'MLS':    { castrol:'15D987',  repsol:'OTROS_FORMATOS'                              },
   'SLD':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS'                       },
   'SHP PLUS': { eni:'OTROS_FORMATOS'                                                  },
-  'HHV 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6002HFA',            eni:'G00187' },
-  'HHV 68': { castrol:'14337B',  repsol:'RPP6002IFA', eni:'OTROS_FORMATOS'           },
-  'HHM 32': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
-  'HHM 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6008HFA',            eni:'G00483' },
-  'HHM 68': { castrol:'OTROS_FORMATOS', repsol:'RPP6008IFA',            eni:'G00583' },
+  'HHV 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6002HFA', shell:'550060143',    eni:'G00187' },
+  'HHV 68': { castrol:'14337B',  repsol:'RPP6002IFA',  shell:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
+  'HHM 32': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', shell:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
+  'HHM 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6008HFA', shell:'OTROS_FORMATOS', eni:'G00483' },
+  'HHM 68': { castrol:'OTROS_FORMATOS', repsol:'RPP6008IFA', shell:'OTROS_FORMATOS', eni:'G00583' },
   'ATF DEX':{ repsol:'RPP4067ZFA',                                       eni:'129797' },
   'ATF DEX III':{ castrol:'15D678', repsol:'RPP4066ZFA',                eni:'129897' },
   'ATF +3 +4':{ repsol:'RPP4064ZGA', eni:'OTROS_FORMATOS'                            },
@@ -5010,6 +5030,25 @@ const BRAND_KEYWORDS = {
 };
 
 // ─── ALGORITMO DE BÚSQUEDA LIBRE ───
+// Formatos de envase reconocidos en búsqueda libre
+const FORMAT_DETECT = [
+  { re: /\b1\s*l\b|1\s*litro\b/i,                                      label: '1L',    suffix: '001' },
+  { re: /\b5\s*l\b|5\s*litros?\b/i,                                     label: '5L',    suffix: '005' },
+  { re: /\b20\s*l\b|20\s*litros?\b/i,                                   label: '20L',   suffix: '020' },
+  { re: /\b50\s*l\b|50\s*litros?\b/i,                                   label: '50L',   suffix: '050' },
+  { re: /\b200\s*l\b|200\s*litros?\b|208\s*l?\b|bid[oó]n\b|tambor\b/i, label: '208L',  suffix: '208' },
+  { re: /\b600\s*l\b|600\s*litros?\b/i,                                 label: '600L',  suffix: '600' },
+  { re: /\b1000\s*l\b|1000\s*litros?\b|ibc\b|paleta?\b/i,              label: '1000L', suffix: '1000' },
+];
+
+// Devuelve el SKU para un producto AD en un formato concreto (sufijo de ref)
+function skuForProductFormat(adName, suffix) {
+  const entry = Object.entries(AD_REF_TO_NAME).find(
+    ([ref, name]) => name === adName && ref.endsWith(suffix)
+  );
+  return entry ? 'ADP' + entry[0] : null;
+}
+
 function freeSearch(query) {
   if (!query || !query.trim()) return null;
   const raw = query.trim();
@@ -5075,9 +5114,19 @@ function freeSearch(query) {
     };
   }
 
-  // Búsqueda directa en catálogo por nombre/ref de producto (antes de declarar NO COMPRENDIDO)
-  // Permite encontrar "hv 46", "ztd", "sc3", "ds3", "atf dex", "glit", etc.
-  const qAgg = normalizeDesc(raw); // uppercase, sin espacios ni acentos
+  // Detectar formato/volumen en la consulta ("200 litros", "1000l", "bidón"…)
+  let detectedFormat = null;
+  let queryForProduct = raw;
+  for (const fd of FORMAT_DETECT) {
+    if (fd.re.test(raw)) {
+      detectedFormat = fd;
+      queryForProduct = raw.replace(fd.re, '').replace(/\s{2,}/g, ' ').trim();
+      break;
+    }
+  }
+
+  // Búsqueda directa en catálogo por nombre/ref de producto
+  const qAgg = normalizeDesc(queryForProduct);
   if (qAgg.length >= 2) {
     const directMatches = AD_PARTS_CATALOG.filter(p => {
       const refAgg = normalizeDesc(p.ref).replace(/^AD/, '');
@@ -5085,7 +5134,7 @@ function freeSearch(query) {
       return refAgg.includes(qAgg) || viscAgg === qAgg;
     });
     if (directMatches.length > 0 && directMatches.length <= 20) {
-      return { match: 'direct_product', query: raw, products: directMatches };
+      return { match: 'direct_product', query: raw, products: directMatches, format: detectedFormat };
     }
   }
 
@@ -5124,9 +5173,39 @@ function renderFreeResult(result) {
   }
 
   if (result.match === 'direct_product') {
+    const fmt = result.format;
+
+    // Si se pidió un formato, ajustar el SKU de cada producto al formato solicitado
+    let displayProducts = result.products;
+    let formatBlock = '';
+    if (fmt) {
+      displayProducts = result.products.map(p => {
+        const adName = AD_REF_TO_NAME[p.sku.replace('ADP', '')];
+        const fmtSku = adName ? skuForProductFormat(adName, fmt.suffix) : null;
+        if (fmtSku) {
+          return { ...p, sku: fmtSku, _formatLabel: fmt.label };
+        }
+        return { ...p, _formatLabel: null }; // formato no disponible para este producto
+      });
+      const available = displayProducts.filter(p => p._formatLabel).length;
+      const total = displayProducts.length;
+      if (available > 0) {
+        formatBlock = `<div class="free-advice" style="margin-bottom:8px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <div>Formato solicitado: <strong>${fmt.label}</strong> — SKU ajustado${available < total ? ` (${total - available} producto(s) sin este formato, mostrando 5L)` : ''}.</div>
+        </div>`;
+      } else {
+        formatBlock = `<div class="free-advice" style="margin-bottom:8px;color:var(--text-secondary)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <div>Formato <strong>${fmt.label}</strong> no disponible para este producto. Mostrando formato estándar (5L).</div>
+        </div>`;
+        displayProducts = result.products; // volver al 5L original
+      }
+    }
+
     let allEquivs = [];
     const seenRefs = new Set();
-    for (const p of result.products) {
+    for (const p of displayProducts) {
       for (const eq of humanEquivsForAdSku(p.sku)) {
         if (!seenRefs.has(eq.ref)) { seenRefs.add(eq.ref); allEquivs.push(eq); }
       }
@@ -5146,7 +5225,8 @@ function renderFreeResult(result) {
             <div class="desc-result-desc">Producto encontrado directamente en el catálogo. Aquí tienes el producto AD y sus equivalencias entre marcas.</div>
           </div>
         </div>
-        ${renderProductsBlock(result.products, allEquivs)}
+        ${formatBlock}
+        ${renderProductsBlock(displayProducts, allEquivs)}
       </div>`;
     return;
   }
@@ -5857,7 +5937,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v23</span>
+        <span class="about-version">v24</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -5881,6 +5961,12 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v24 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>Shell Tellus S2 VX 46 (5L: 550060143) añadida como equivalencia de HHV 46; resto de hidráulicos con Shell marcados como otros formatos</li>
+            <li>SHELL_NAMES ampliado con toda la gama Tellus S2 MX/VX (32, 46, 68)</li>
+            <li>Búsqueda libre: detección de formato/volumen ("200 litros", "1000l", "bidón", "IBC"…) — ajusta el SKU al formato pedido</li>
+          </ul>
           <div class="changelog-version">v23 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
             <li>Corregido ATF DEX / ATF DEX III: refs 40xxx corresponden a DEX III y 20xxx a DEX (SKUs y specs actualizados)</li>
