@@ -5240,6 +5240,34 @@ function freeSearch(query) {
     };
   }
 
+  // Multi-parámetro: viscosidad + norma OEM (ej. "LL04 5W30", "229.51 en 5W40")
+  const saePattern = /\b(\d{1,2})W[-]?(\d{2,3})\b/i;
+  const saeInQuery = raw.match(saePattern);
+  if (saeInQuery) {
+    const visc = `${saeInQuery[1].toUpperCase()}W${saeInQuery[2]}`;
+    const remainder = raw
+      .replace(saePattern, '')
+      .replace(/\b(en|de|para|con|y|a)\b/gi, ' ')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+    if (remainder.length >= 2) {
+      const specResult = intelligentSearch(remainder);
+      if (specResult && specResult.canonical && specResult.match !== 'none' && specResult.match !== 'viscosity') {
+        const normCanon = normalizeDesc(specResult.canonical);
+        const combined = AD_PARTS_CATALOG.filter(p =>
+          p.viscosity === visc && p.specs.some(s => normalizeDesc(s) === normCanon)
+        );
+        if (combined.length > 0) {
+          return { match: 'multi_param', query: raw, viscosity: visc, spec: specResult.canonical, specInfo: specResult.info, products: combined, noViscMatch: false };
+        }
+        const specOnly = AD_PARTS_CATALOG.filter(p => p.specs.some(s => normalizeDesc(s) === normCanon));
+        if (specOnly.length > 0) {
+          return { match: 'multi_param', query: raw, viscosity: visc, spec: specResult.canonical, specInfo: specResult.info, products: specOnly, noViscMatch: true };
+        }
+      }
+    }
+  }
+
   // Detectar formato/volumen en la consulta ("200 litros", "1000l", "bidón"…)
   let detectedFormat = null;
   let queryForProduct = raw;
@@ -5347,6 +5375,42 @@ function renderFreeResult(result) {
             <div class="desc-result-desc">El sistema no ha identificado el componente, fluido o marca en tu consulta. Intenta ser más específico (ej: "aceite caja DSG VW Golf 2015") o usa la pestaña <strong>Homologaciones</strong> si conoces la norma exacta.</div>
           </div>
         </div>
+      </div>`;
+    return;
+  }
+
+  if (result.match === 'multi_param') {
+    let allEquivs = [];
+    const seenRefs = new Set();
+    for (const p of result.products) {
+      for (const eq of humanEquivsForAdSku(p.sku)) {
+        if (!seenRefs.has(eq.ref)) { seenRefs.add(eq.ref); allEquivs.push(eq); }
+      }
+    }
+    const noViscNote = result.noViscMatch ? `
+      <div class="free-advice" style="margin-bottom:8px;color:var(--text-secondary)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+        <div>No hay productos <strong>${result.spec}</strong> con viscosidad <strong>${result.viscosity}</strong> en catálogo. Mostrando todos los productos ${result.spec}.</div>
+      </div>` : '';
+    const descText = result.specInfo ? result.specInfo.description : result.spec;
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow">Búsqueda combinada</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">
+              <code class="free-spec-tag">${result.spec}</code>
+              <span style="margin:0 6px;color:var(--text-secondary)">+</span>
+              <code class="free-spec-tag">${result.viscosity}</code>
+            </div>
+            <div class="desc-result-desc">${descText}</div>
+          </div>
+        </div>
+        ${noViscNote}
+        ${renderProductsBlock(result.products, allEquivs)}
       </div>`;
     return;
   }
@@ -6118,7 +6182,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v27</span>
+        <span class="about-version">v28</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -6142,6 +6206,12 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v28 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>Búsqueda multi-parámetro: combina norma OEM + viscosidad en una sola consulta (ej. "LL04 5W30", "229.51 en 5W40", "VW 504 0W30")</li>
+            <li>Si no hay productos con la combinación exacta, muestra todos los de esa norma con aviso informativo</li>
+            <li>Conectores ignorados automáticamente: "en", "de", "para", "con", "y"</li>
+          </ul>
           <div class="changelog-version">v27 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
             <li>SPECS_DB ampliado: MB 229.41, MB 235.0/1/10/17, MB 236.11/12/15/16/17/21/24/41/51, MB 239.21/41</li>
