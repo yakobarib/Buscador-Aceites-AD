@@ -1451,10 +1451,11 @@ body::after {
 
 .desc-product-name {
   font-size: 11.5px;
-  font-weight: 400;
-  color: var(--text-secondary);
+  font-weight: 500;
+  color: var(--text-primary);
   letter-spacing: -0.005em;
   margin-bottom: 4px;
+  opacity: 0.65;
 }
 
 .desc-product-specs {
@@ -4171,6 +4172,7 @@ const SPECS_DB = {
   'VW 509.00':  { description: 'Fuel-economy 0W20 para motores diésel TDI evo modernos', segment: 'ligero', tipo: 'motor' },
   'VW 508.88':  { description: 'Aceite alta protección para camionetas/diésel con combustible de calidad variable', segment: 'ligero', tipo: 'motor' },
   'VW 509.99':  { description: 'Aceite alta protección para camionetas/diésel con combustible de calidad variable', segment: 'ligero', tipo: 'motor' },
+  'VW 511 00':  { description: 'Aceite motor gasolina con GPF 5W-30 ACEA C3 (motores gasolina altas prestaciones con filtro de partículas, desde 2019)', segment: 'ligero', tipo: 'motor' },
   'VW G 052 171':   { description: 'Fluido transmisión manual VW', segment: 'ligero', tipo: 'transmision' },
   'VW G 052 180':   { description: 'Fluido CVT VW (cajas Multitronic)', segment: 'ligero', tipo: 'transmision' },
   'VW G 052 182':   { description: 'Fluido DSG (caja automática de doble embrague)', segment: 'ligero', tipo: 'transmision' },
@@ -4187,7 +4189,12 @@ const SPECS_DB = {
   'PSA B71 2302':   { description: 'Aceite 0W-30 C2 para PSA Euro 6 con FAP/SCR (eHDi, Stop&Start)', segment: 'ligero', tipo: 'motor' },
   'PSA B71 2010':   { description: 'Aceite 0W-20 C5/C6 para Stellantis BlueHDi, PureTech S&S, híbridos', segment: 'ligero', tipo: 'motor' },
   'PSA B71 2312':   { description: 'Aceite 0W-30 C2/C3 para PSA Euro 6 (diésel y gasolina)', segment: 'ligero', tipo: 'motor' },
-  'STELLANTIS FPW9.55535/03': { description: 'Aceite Stellantis 5W-30 sucesor de PSA B71 2290/2297', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/03': { description: 'Aceite Stellantis 5W-30 ACEA C2 sucesor de PSA B71 2290/2297', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/01': { description: 'Aceite Stellantis 0W-20 ACEA C5 sucesor de PSA B71 2010, Fiat 9.55535-DM1/DSX/GSX', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/02': { description: 'Aceite Stellantis 0W-30 sucesor de PSA B71 2312/2302/2311, Fiat 9.55535-DS1/GS1/S1', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/09': { description: 'Aceite Stellantis 5W-40 ACEA C3 sucesor de Fiat 9.55535-GH2/S2/T2 y Abarth', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/10': { description: 'Aceite Stellantis 5W-40 ACEA A3/B4 sucesor de Fiat 9.55535-M2/N2/Z2 y PSA B71 2296', segment: 'ligero', tipo: 'motor' },
+  'STELLANTIS FPW9.55535/04': { description: 'Aceite Stellantis 10W-40 ACEA A3/B4 sucesor de PSA B71 2300, Fiat 9.55535-G2/H2', segment: 'ligero', tipo: 'motor' },
 
   // Mercedes-Benz
   'MB 229.1':       { description: 'Aceite motor gasolina/diésel multigrado convencional', segment: 'ligero', tipo: 'motor' },
@@ -4196,6 +4203,8 @@ const SPECS_DB = {
   'MB 229.5':       { description: 'Aceite motor 5W-40 / 0W-40 alta protección para MB modernos', segment: 'ligero', tipo: 'motor' },
   'MB 229.51':      { description: 'Aceite motor MB Long Life Low SAPS (DPF). El más usado en MB modernos', segment: 'ligero', tipo: 'motor' },
   'MB 229.52':      { description: 'Aceite motor MB última generación, mejora 229.51', segment: 'ligero', tipo: 'motor' },
+  'MB 229.6':       { description: 'Aceite motor MB ACEA A5/B5 Fuel Economy (no retrocompatible, solo motores seleccionados)', segment: 'ligero', tipo: 'motor' },
+  'MB 229.61':      { description: 'Aceite motor MB ACEA C2 baja viscosidad Fuel Economy', segment: 'ligero', tipo: 'motor' },
   'MB 226.5':       { description: 'Aceite motor MB Smart y motores PSA bajo licencia', segment: 'ligero', tipo: 'motor' },
   'MB 226.51':      { description: 'Aceite motor MB Smart con Low SAPS', segment: 'ligero', tipo: 'motor' },
   'MB 228.3':       { description: 'Aceite motor diésel pesado MB Long Life (camiones, autobuses)', segment: 'pesado', tipo: 'motor' },
@@ -4226,11 +4235,17 @@ const SPECS_DB = {
   // BMW
   'BMW LL-01':      { description: 'Aceite motor Long Life BMW gasolina/diésel (motores anteriores)', segment: 'ligero', tipo: 'motor' },
   'BMW LL-04':      { description: 'Aceite motor Long Life BMW para diésel con DPF', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-12 FE':   { description: 'Aceite BMW 0W-30 ACEA C2 Fuel Economy (desde año modelo 2013, solo motores seleccionados)', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-14 FE+':  { description: 'Aceite BMW ACEA A1/B1 ultra-baja viscosidad HTHS (desde 2014, solo motores seleccionados)', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-17 FE+':  { description: 'Aceite BMW ACEA C5 0W-20 para motores gasolina modernos (desde 2014, incluye LL-14 FE+)', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-19 FE':   { description: 'Aceite BMW 0W-30 ACEA C3 diésel (técnicamente válido para muchos motores LL-04 desde 2004)', segment: 'ligero', tipo: 'motor' },
+  'BMW LL-22 FE++': { description: 'Aceite BMW gasolina última generación (solo motores gasolina homologados desde año modelo 2022)', segment: 'ligero', tipo: 'motor' },
 
   // Porsche
   'PORSCHE A40':    { description: 'Aceite motor Porsche refrigerado por agua (911, Boxster, Cayman)', segment: 'ligero', tipo: 'motor' },
-  'PORSCHE C30':    { description: 'Aceite motor Porsche Low SAPS para Macan/Cayenne diésel', segment: 'ligero', tipo: 'motor' },
-  'PORSCHE C20':    { description: 'Aceite motor Porsche 0W-20 para híbridos y modernos', segment: 'ligero', tipo: 'motor' },
+  'PORSCHE C20':    { description: 'Aceite motor Porsche 0W-20 C5 = VW 508/509, no retrocompatible (solo motores seleccionados)', segment: 'ligero', tipo: 'motor' },
+  'PORSCHE C30':    { description: 'Aceite motor Porsche C3 = VW 504.00/507.00 para Macan/Cayenne diésel', segment: 'ligero', tipo: 'motor' },
+  'PORSCHE C40':    { description: 'Aceite motor Porsche C3 = VW 511 00 para motores gasolina con GPF (desde año modelo 2019)', segment: 'ligero', tipo: 'motor' },
 
   // Renault
   'RENAULT RN0700': { description: 'Aceite motor 5W-40 Renault para gasolina y diésel sin DPF', segment: 'ligero', tipo: 'motor' },
@@ -4260,8 +4275,9 @@ const SPECS_DB = {
   'FIAT 9.55535-S2':{ description: 'Aceite Fiat 5W-40 C3 (gasolina/diésel)', segment: 'ligero', tipo: 'motor' },
   'FIAT 9.55535-S3':{ description: 'Aceite Fiat 5W-30 C3 (gasolina/diésel con DPF)', segment: 'ligero', tipo: 'motor' },
   'GM DEXOS1 GEN3': { description: 'Aceite GM/Chevrolet 5W-30 última generación', segment: 'ligero', tipo: 'motor' },
-  'OPEL OV 040 1547-D30': { description: 'Aceite Opel 5W-30 ACEA C3 (motores diésel)', segment: 'ligero', tipo: 'motor' },
-  'OPEL OV 040 1547-G30': { description: 'Aceite Opel 5W-30 dexos1 (motores gasolina)', segment: 'ligero', tipo: 'motor' },
+  'OPEL OV 040 1547-A20': { description: 'Aceite Opel/Vauxhall 0W-20 ACEA C5 (nueva denominación Dexos2 Gen2 para gasolina y diésel)', segment: 'ligero', tipo: 'motor' },
+  'OPEL OV 040 1547-D30': { description: 'Aceite Opel 5W-30 ACEA C3 (nueva denominación Dexos2 para motores diésel)', segment: 'ligero', tipo: 'motor' },
+  'OPEL OV 040 1547-G30': { description: 'Aceite Opel 5W-30 ACEA C3 (nueva denominación Dexos1 Gen2 para motores gasolina)', segment: 'ligero', tipo: 'motor' },
 
   // Volvo trucks
   'VOLVO VDS-3':    { description: 'Aceite motor diésel pesado Volvo Trucks (Euro 5)', segment: 'pesado', tipo: 'motor' },
@@ -4333,8 +4349,10 @@ const SPECS_DB = {
   'HYUNDAI CVT-J1': { description: 'Fluido CVT Hyundai/Kia', segment: 'ligero', tipo: 'transmision' },
 
   // ACEA / API / ILSAC / JASO
-  'ACEA A3/B4':     { description: 'Aceites motor gasolina/diésel alto rendimiento (sin DPF)', segment: 'ligero', tipo: 'motor' },
-  'ACEA A5/B5':     { description: 'Aceites motor gasolina/diésel Fuel Economy', segment: 'ligero', tipo: 'motor' },
+  'ACEA A3/B3':     { description: 'Aceites motor gasolina/diésel estables alta viscosidad (motores antiguos o servicio severo)', segment: 'ligero', tipo: 'motor' },
+  'ACEA A3/B4':     { description: 'Aceites motor gasolina/diésel alto rendimiento (inyección directa, sin DPF)', segment: 'ligero', tipo: 'motor' },
+  'ACEA A5/B5':     { description: 'Aceites motor gasolina/diésel baja viscosidad Fuel Economy', segment: 'ligero', tipo: 'motor' },
+  'ACEA A7/B7':     { description: 'Aceites motor premium 2021 con protección LSPI y anti-desgaste para turbo (incluye propiedades A3/B4)', segment: 'ligero', tipo: 'motor' },
   'ACEA C1':        { description: 'Aceites motor Low SAPS de baja viscosidad HTHS (Ford EcoBoost)', segment: 'ligero', tipo: 'motor' },
   'ACEA C2':        { description: 'Aceites motor Mid SAPS Fuel Economy (PSA, Citroën, Fiat)', segment: 'ligero', tipo: 'motor' },
   'ACEA C3':        { description: 'Aceites motor Mid SAPS para motores VAG, BMW, MB modernos', segment: 'ligero', tipo: 'motor' },
@@ -4437,6 +4455,7 @@ const SPEC_ALIASES = {
   'VW50000': 'VW 500.00', 'VW50101': 'VW 501.01', 'VW50200': 'VW 502.00', 'VW50301': 'VW 503.01',
   'VW50400': 'VW 504.00', 'VW50500': 'VW 505.00', 'VW50501': 'VW 505.01', 'VW50700': 'VW 507.00',
   'VW50800': 'VW 508.00', 'VW50900': 'VW 509.00', 'VW50888': 'VW 508.88', 'VW50999': 'VW 509.99',
+  'VW51100': 'VW 511 00', '51100': 'VW 511 00', 'VW51000': 'VW 511 00',
   '50000': 'VW 500.00', '50101': 'VW 501.01', '50200': 'VW 502.00', '50301': 'VW 503.01',
   '50400': 'VW 504.00', '50500': 'VW 505.00', '50501': 'VW 505.01', '50700': 'VW 507.00',
   '50800': 'VW 508.00', '50900': 'VW 509.00',
@@ -4451,11 +4470,18 @@ const SPEC_ALIASES = {
   'PSAB712290': 'PSA B71 2290', 'PSAB712010': 'PSA B71 2010', 'PSAB712312': 'PSA B71 2312',
   'PSAB712296': 'PSA B71 2296', 'PSAB712297': 'PSA B71 2297',
   'FPW955535/03': 'STELLANTIS FPW9.55535/03', 'FPW9.55535/03': 'STELLANTIS FPW9.55535/03',
+  'FPW955535/01': 'STELLANTIS FPW9.55535/01', 'FPW9.55535/01': 'STELLANTIS FPW9.55535/01',
+  'FPW955535/02': 'STELLANTIS FPW9.55535/02', 'FPW9.55535/02': 'STELLANTIS FPW9.55535/02',
+  'FPW955535/09': 'STELLANTIS FPW9.55535/09', 'FPW9.55535/09': 'STELLANTIS FPW9.55535/09',
+  'FPW955535/10': 'STELLANTIS FPW9.55535/10', 'FPW9.55535/10': 'STELLANTIS FPW9.55535/10',
+  'FPW955535/04': 'STELLANTIS FPW9.55535/04', 'FPW9.55535/04': 'STELLANTIS FPW9.55535/04',
   'STELLANTISFPW': 'STELLANTIS FPW9.55535/03',
 
   // Mercedes-Benz
   'MB2291': 'MB 229.1', 'MB2293': 'MB 229.3', 'MB22931': 'MB 229.31',
   'MB2295': 'MB 229.5', 'MB22951': 'MB 229.51', 'MB22952': 'MB 229.52',
+  'MB2296': 'MB 229.6', 'MB22961': 'MB 229.61',
+  '2296': 'MB 229.6', '22961': 'MB 229.61',
   'MB2265': 'MB 226.5', 'MB22651': 'MB 226.51',
   'MB2283': 'MB 228.3', 'MB22831': 'MB 228.31', 'MB2285': 'MB 228.5',
   'MB22851': 'MB 228.51', 'MB22852': 'MB 228.52',
@@ -4484,12 +4510,19 @@ const SPEC_ALIASES = {
 
   // BMW
   'BMWLL01': 'BMW LL-01', 'BMWLL04': 'BMW LL-04',
+  'BMWLL12FE': 'BMW LL-12 FE', 'BMWLL14FE': 'BMW LL-14 FE+', 'BMWLL17FE': 'BMW LL-17 FE+',
+  'BMWLL19FE': 'BMW LL-19 FE', 'BMWLL22FE': 'BMW LL-22 FE++',
   'LL01': 'BMW LL-01', 'LL04': 'BMW LL-04',
+  'LL12FE': 'BMW LL-12 FE', 'LL14FE': 'BMW LL-14 FE+', 'LL17FE': 'BMW LL-17 FE+',
+  'LL19FE': 'BMW LL-19 FE', 'LL22FE': 'BMW LL-22 FE++',
+  'LONGLIFE12FE': 'BMW LL-12 FE', 'LONGLIFE14FE': 'BMW LL-14 FE+', 'LONGLIFE17FE': 'BMW LL-17 FE+',
+  'LONGLIFE19FE': 'BMW LL-19 FE', 'LONGLIFE22FE': 'BMW LL-22 FE++',
   'BMWLONGLIFE01': 'BMW LL-01', 'BMWLONGLIFE04': 'BMW LL-04',
   'LONGLIFE01': 'BMW LL-01', 'LONGLIFE04': 'BMW LL-04',
 
   // Porsche
-  'PORSCHEA40': 'PORSCHE A40', 'PORSCHEC30': 'PORSCHE C30', 'PORSCHEC20': 'PORSCHE C20',
+  'PORSCHEA40': 'PORSCHE A40', 'PORSCHEC20': 'PORSCHE C20', 'PORSCHEC30': 'PORSCHE C30', 'PORSCHEC40': 'PORSCHE C40',
+  'C20': 'PORSCHE C20', 'C30': 'PORSCHE C30', 'C40': 'PORSCHE C40',
   'A40': 'PORSCHE A40', 'C30': 'PORSCHE C30', 'C20': 'PORSCHE C20',
 
   // Renault (nombres antiguos y nuevos)
@@ -4529,6 +4562,7 @@ const SPEC_ALIASES = {
   'FIAT955535S3': 'FIAT 9.55535-S3', '955535S3': 'FIAT 9.55535-S3',
   'DEXOS1GEN3': 'GM DEXOS1 GEN3', 'GMDEXOS1GEN3': 'GM DEXOS1 GEN3', 'DEXOS1': 'GM DEXOS1 GEN3',
   'OPELOV040': 'OPEL OV 040 1547-D30', 'OV0401547D30': 'OPEL OV 040 1547-D30',
+  'OV0401547A20': 'OPEL OV 040 1547-A20', 'OPELOV040A20': 'OPEL OV 040 1547-A20',
   'OV0401547G30': 'OPEL OV 040 1547-G30',
 
   // Volvo / pesado
@@ -4589,7 +4623,9 @@ const SPEC_ALIASES = {
   'HYUNDAICVTJ1': 'HYUNDAI CVT-J1', 'CVTJ1': 'HYUNDAI CVT-J1', 'KIACVTJ1': 'HYUNDAI CVT-J1',
 
   // ACEA / API / ILSAC / JASO (variantes habituales)
+  'ACEAA3B3': 'ACEA A3/B3', 'A3B3': 'ACEA A3/B3',
   'ACEAA3B4': 'ACEA A3/B4', 'A3B4': 'ACEA A3/B4',
+  'ACEAA7B7': 'ACEA A7/B7', 'A7B7': 'ACEA A7/B7', 'ACEAA7': 'ACEA A7/B7',
   'ACEAA5B5': 'ACEA A5/B5', 'A5B5': 'ACEA A5/B5',
   'ACEAC1': 'ACEA C1', 'ACEAC2': 'ACEA C2', 'ACEAC3': 'ACEA C3',
   'ACEAC4': 'ACEA C4', 'ACEAC5': 'ACEA C5', 'ACEAC6': 'ACEA C6',
