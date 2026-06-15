@@ -4901,6 +4901,11 @@ const COMPONENT_KNOWLEDGE = {
     febiProducts: [
       { ref: '170367', volume: '1 L', desc: 'Transfer Case Fluid BMW/MB', oem: '83 22 2 409 710', approvals: 'BMW DTF-1 · MB 239.41 · TF 0870 · TF 0870 B' },
     ],
+    tcmaticProducts: [
+      { ref: '121.000.0006', desc: 'TCF ITC', homol: 'BMW ITC · Magna ITC · Haldex ITC transfer',         febiRef: null },
+      { ref: '121.000.0007', desc: 'TCF ATC', homol: 'ATC (Active Torque Control) · BorgWarner 4WD',      febiRef: null },
+      { ref: '121.000.0008', desc: 'TCF 0AQ', homol: 'VW 0AQ · BorgWarner rear axle · Haldex Gen 4/5',   febiRef: null },
+    ],
   },
   'DSG': {
     aliases: ['dsg', 's-tronic', 'stronic', 'caja dsg', 'doble embrague', 'dq200', 'dq250', 'dq381', 'dq500', 'dct', 'dctf', 'pdk dsg', 'cambio directo'],
@@ -4914,6 +4919,17 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '49700', volume: '1 L', desc: 'DCTF-2 — VW/Audi',                   oem: 'G 055 529 A2', approvals: 'VW DCTF-2 · VW TL 52529-C' },
       { ref: '171871', volume: '1 L', desc: 'DCTF-G — BMW/Ford/MB/Renault',      oem: '83 22 2 433 157', approvals: 'BMW DCTF 2 · Ford F-DC · Ford WSS-M2C218-A1 · MB 239.21 · Renault DW5' },
     ],
+    tcmaticProducts: [
+      { ref: '109.000.0009', desc: 'DCTF VAG 182', homol: 'DCTF-1 · VW G 052 182 · MB 236.21/24 · BMW Drivelogic · Ford WSS-M2C936-A · PDK · PSA · Renault EDC', febiRef: '39070'  },
+      { ref: '109.000.0010', desc: 'DCTF VAG 529', homol: 'DCTF-2 · VW G 055 529 · VW TL 52529-C',                                                               febiRef: '49700'  },
+      { ref: '109.000.0016', desc: 'DCTF PDK8',    homol: 'Porsche PDK 8-velocidades',                                                                            febiRef: null     },
+      { ref: '109.000.0017', desc: 'DCTF MB22',    homol: 'MB 239.21 · MB 239.22',                                                                               febiRef: null     },
+      { ref: '109.000.0020', desc: 'DCTF MB21',    homol: 'DCTF-1/+ · MB 236.21',                                                                                febiRef: '39070'  },
+      { ref: '109.000.0021', desc: 'DCTF PDK7',    homol: 'Porsche PDK 7-spd · BMW DCTF 2 · Ford F-DC · MB 239.21 · Renault DW5',                               febiRef: '171871' },
+      { ref: '109.000.0022', desc: 'DCTF GETRAG',  homol: 'DCTF-1 · Getrag · BMW Drivelogic · Ford · MB 236.21/24',                                              febiRef: '39070'  },
+      { ref: '109.000.0031', desc: 'DCTF GETRAG 3G', homol: 'DCTF-1/+ · Getrag 3G hybrid',                                                                       febiRef: '39070'  },
+      { ref: '109.000.0023', desc: 'DSG MKF Mechatronic', homol: 'VW MKF · mecatrónica DSG (DQ200/DQ250 unidad electrónica)',                                    febiRef: null     },
+    ],
   },
   'CVT': {
     aliases: ['cvt', 'caja cvt', 'variador continuo', 'transmision variable', 'multitronic'],
@@ -4921,6 +4937,10 @@ const COMPONENT_KNOWLEDGE = {
     canonicalSpecs: ['HONDA HCF-2', 'NISSAN NS-3', 'TOYOTA CVTF FE', 'MITSUBISHI CVTF-J1', 'SUBARU ECVT'],
     interpretation: 'Cambio continuo variable. Cada fabricante usa un fluido específico y NO son intercambiables.',
     advice: 'Honda, Nissan, Toyota, Subaru y Mitsubishi tienen sus propios fluidos CVT. Comprueba el manual del vehículo.',
+    tcmaticProducts: [
+      { ref: '109.000.0008', desc: 'CVTF FLUID',  homol: 'Universal CVT · VW G 052 180 · Aisin Warner CVT', febiRef: '27975' },
+      { ref: '109.000.0018', desc: 'CVTF MB20',   homol: 'CVT Mercedes-Benz · G 052 180 A2',                febiRef: '27975' },
+    ],
   },
   'EMBRAGUE_HIDRAULICO': {
     aliases: ['embrague hidraulico', 'liquido embrague', 'circuito embrague'],
@@ -4970,11 +4990,18 @@ const COMPONENT_KNOWLEDGE = {
     advice: 'No mezcles tipos diferentes. Pentosin CHF 11S es la opción más común en Europa.',
   },
   'CAJA_MANUAL': {
-    aliases: ['caja manual', 'caja de cambios manual', 'transmision manual', 'engranajes'],
+    aliases: ['caja manual', 'caja de cambios manual', 'transmision manual', 'engranajes', 'mtf', 'aceite caja manual'],
     fluidType: 'Aceite caja manual (engranajes)',
     canonicalSpecs: ['API GL-4', 'API GL-5', 'SAE 75W90', 'SAE 80W90'],
     interpretation: 'Aceite para engranajes manuales. API GL-4 para cajas estándar, GL-5 para diferenciales y cajas con alta carga.',
     advice: 'Cuidado: GL-5 puede dañar sincronizadores de latón en cajas que pidan GL-4.',
+    tcmaticProducts: [
+      { ref: '121.000.0001', desc: 'MTF VAG 512',   homol: 'VW TL 521 12 · MB 235.17 · DSG DQ200 seco (clutch fluid)', febiRef: null    },
+      { ref: '121.000.0002', desc: 'MTF 75W-80',    homol: 'GL-4 75W-80 · BMW MTF-LT-3 · Ford M2C200 · PSA B71 2330 · VW 501 50', febiRef: '180073' },
+      { ref: '121.000.0003', desc: 'MTF 75W-85',    homol: 'GL-4 75W-85 · MB 235.10 · VW TL 521 71/78',                febiRef: '48785'  },
+      { ref: '121.000.0004', desc: 'MTF 75W-90',    homol: 'GL-5 75W-90 · API GL-5',                                   febiRef: '32590'  },
+      { ref: '121.000.0005', desc: 'MTF 75W-140',   homol: 'GL-5 75W-140 · alta carga diferencial',                    febiRef: null     },
+    ],
   },
   'CAJA_AUTOMATICA': {
     aliases: ['caja automatica', 'transmision automatica', 'automatica', 'atf'],
@@ -4982,6 +5009,22 @@ const COMPONENT_KNOWLEDGE = {
     canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14'],
     interpretation: 'ATF varía mucho según fabricante de la caja (ZF, Aisin, Jatco, Mercedes 7G/9G).',
     advice: 'NUNCA uses ATF universal en cajas modernas. Cada caja tiene su norma específica.',
+    tcmaticProducts: [
+      { ref: '109.000.0001', desc: 'ATF MB14',  homol: 'MB 236.14 · ATF 134 · DSIH 6P805',                          febiRef: '29449'  },
+      { ref: '109.000.0002', desc: 'ATF MB15',  homol: 'MB 236.15 · ATF 134 FE',                                    febiRef: '33889'  },
+      { ref: '109.000.0003', desc: 'ATF MB17',  homol: 'MB 236.16 · MB 236.17',                                     febiRef: '47716'  },
+      { ref: '109.000.0004', desc: 'ATF AW4',   homol: 'Dexron III · BMW ATF 6 · Toyota T-IV · ZF 4HP 14/18',      febiRef: '29934'  },
+      { ref: '109.000.0005', desc: 'ATF DEX 3', homol: 'Dexron III H · Mercon V · MB 236.6/9/10',                  febiRef: '22806'  },
+      { ref: '109.000.0006', desc: 'ATF DEX 6', homol: 'Dexron VI · MB 236.41/51 · Mercon LV',                     febiRef: '29934'  },
+      { ref: '109.000.0007', desc: 'ATF AW6',   homol: 'Dexron III · AISIN WARNER AW-1',                           febiRef: '29934'  },
+      { ref: '109.000.0011', desc: 'ATF ZF5',   homol: 'ZF Lifeguard 5 · BMW ATF 4 · MB 236.11 · Toyota PSF EH',  febiRef: '14738'  },
+      { ref: '109.000.0012', desc: 'ATF ZF6',   homol: 'ZF Lifeguard 6 · Mercon SP · BMW ATF 2 · Ford/VW/MB/Porsche/PSA/Renault', febiRef: '34608' },
+      { ref: '109.000.0013', desc: 'ATF ZF8',   homol: 'ZF Lifeguard 8 · ATF 3+ · Jeep ATF LGF8',                 febiRef: '39095'  },
+      { ref: '109.000.0019', desc: 'ATF ZF9',   homol: 'ZF Lifeguard 8/9',                                         febiRef: '39095'  },
+      { ref: '109.000.0014', desc: 'ATF DSI',   homol: 'DSI (Aisin Seiki)',                                         febiRef: null     },
+      { ref: '109.000.0015', desc: 'ATF MB12',  homol: 'MB 236.12',                                                 febiRef: null     },
+      { ref: '109.000.0032', desc: 'ATF AW8',   homol: 'Dexron ULV · BMW ATF 7 · Ford WSS-M2C949-A',              febiRef: '183413' },
+    ],
   },
   'AdBlue': {
     aliases: ['adblue', 'urea', 'def', 'ad blue', 'adblu', 'addblue'],
@@ -5197,6 +5240,37 @@ function freeSearch(query) {
   return { match: 'none', query: raw };
 }
 
+// Renderiza bloque de productos TC-Matic para búsqueda libre
+function renderTCMaticBlock(tcmaticProducts) {
+  if (!tcmaticProducts || tcmaticProducts.length === 0) return '';
+  const hasFebiCol = tcmaticProducts.some(p => p.febiRef);
+  const rows = tcmaticProducts.map(p => {
+    const febiCell = hasFebiCol
+      ? (p.febiRef
+          ? `<td><code style="font-size:10px;background:var(--bg-secondary);padding:2px 5px;border-radius:3px;border:1px solid var(--border-subtle)">${p.febiRef}</code></td>`
+          : `<td style="color:var(--text-secondary);font-size:11px">—</td>`)
+      : '';
+    return `<tr>
+      <td><strong>${p.ref}</strong></td>
+      <td>${p.desc}</td>
+      <td style="font-size:11px;color:var(--text-secondary)">${p.homol}</td>
+      ${febiCell}
+    </tr>`;
+  }).join('');
+  const febiHeader = hasFebiCol ? '<th>Equiv. Febi</th>' : '';
+  return `
+    <div class="desc-result-section" style="margin-top:12px">
+      <div class="desc-result-section-title">
+        Productos TC-Matic disponibles <span class="count">${tcmaticProducts.length}</span>
+        <span style="font-weight:400;font-size:10px;margin-left:8px;color:var(--text-secondary)">Formatos: 1L · 20L · 25L · caja 12×1L</span>
+      </div>
+      <table class="febi-products-table">
+        <thead><tr><th>Ref. 1L</th><th>Producto</th><th>Homologaciones</th>${febiHeader}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
 // Renderiza bloque de productos Febi Bilstein para búsqueda libre
 function renderFebiProductsBlock(febiProducts) {
   if (!febiProducts || febiProducts.length === 0) return '';
@@ -5406,6 +5480,7 @@ function renderFreeResult(result) {
 
       ${renderProductsBlock(allAd, allEquivs)}
       ${renderFebiProductsBlock(finalComp.febiProducts)}
+      ${renderTCMaticBlock(finalComp.tcmaticProducts)}
     </div>`;
 }
 
@@ -6006,7 +6081,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v25</span>
+        <span class="about-version">v26</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -6030,6 +6105,16 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v26 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>TC-Matic incorporado: 32 productos (14 ATF, 8 DCT, 2 CVT, 1 MKF, 5 MTF, 3 TCF) procedentes del catálogo Abril 2026</li>
+            <li>Búsqueda libre "caja automática/atf": tabla con los 14 fluidos ATF TC-Matic (ZF5/6/8/9, MB14/15/17, DEX3/6, AW4/6/8, DSI, MB12)</li>
+            <li>Búsqueda libre "dsg/dct/doble embrague": 9 fluidos DCT TC-Matic + Mechatronic Fluid MKF</li>
+            <li>Búsqueda libre "cvt": CVTF Fluid y CVTF MB20 TC-Matic</li>
+            <li>Búsqueda libre "caja manual/mtf": 5 fluidos MTF TC-Matic (VAG512, 75W80/85/90/140)</li>
+            <li>Búsqueda libre "caja de transferencia": 3 fluidos TCF TC-Matic (ITC, ATC, 0AQ)</li>
+            <li>Equivalencias Febi↔TC-Matic integradas: columna "Equiv. Febi" en tablas TC-Matic cuando existe</li>
+          </ul>
           <div class="changelog-version">v25 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
             <li>Búsqueda libre: "haldex" muestra los 3 fluidos Febi (Gen 1/2, Gen 3/4, Gen 5) con refs y homologaciones</li>
