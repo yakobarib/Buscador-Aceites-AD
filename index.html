@@ -4199,9 +4199,25 @@ const SPECS_DB = {
   'MB 228.5':       { description: 'Aceite motor diésel pesado MB Long Life sin Low SAPS', segment: 'pesado', tipo: 'motor' },
   'MB 228.51':      { description: 'Aceite motor diésel pesado MB Long Life Low SAPS', segment: 'pesado', tipo: 'motor' },
   'MB 228.52':      { description: 'Aceite motor diésel pesado MB última generación', segment: 'pesado', tipo: 'motor' },
+  'MB 229.41':      { description: 'Aceite motor MB 5W-30 Low SAPS para diésel con DPF (entre 229.31 y 229.51)', segment: 'ligero', tipo: 'motor' },
+  'MB 235.0':       { description: 'Aceite engranajes caja manual MB multigrado GL-4/GL-5 (75W-90, 80W-90)', segment: 'ligero', tipo: 'transmision' },
+  'MB 235.1':       { description: 'Aceite caja manual MB GL-4 75W (sincronizadores)', segment: 'ligero', tipo: 'transmision' },
+  'MB 235.10':      { description: 'Aceite caja manual MB GL-4 75W-85 (compatible VW TL 521 71/78)', segment: 'ligero', tipo: 'transmision' },
+  'MB 235.17':      { description: 'Aceite caja manual MB / fluido embrague seco DSG DQ200 (MTF VAG 512)', segment: 'ligero', tipo: 'transmision' },
   'MB 235.28':      { description: 'Aceite engranajes pesados MB (cajas de cambio)', segment: 'pesado', tipo: 'transmision' },
-  'MB 236.9':       { description: 'ATF para transmisión automática Mercedes (cajas 7G-Tronic)', segment: 'ligero', tipo: 'transmision' },
-  'MB 236.14':      { description: 'ATF para transmisión automática Mercedes última generación (9G-Tronic)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.9':       { description: 'ATF para transmisión automática Mercedes (cajas 7G-Tronic, Dexron III H)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.11':      { description: 'ATF Mercedes 5G-Tronic (ZF Lifeguard 5 · BMW ATF 4)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.12':      { description: 'ATF Mercedes (cajas clásicas NAG1)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.14':      { description: 'ATF Mercedes 9G-Tronic (ATF 134 · DSIH 6P805)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.15':      { description: 'ATF Mercedes 7G-Tronic Plus eficiencia mejorada (ATF 134 FE)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.16':      { description: 'ATF Mercedes 7G-Tronic Plus MB17', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.17':      { description: 'ATF Mercedes MB17 — variante de 236.16', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.21':      { description: 'Fluido DCT Mercedes / DCTF-1 (caja doble embrague 7DCT)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.24':      { description: 'Fluido DCT Mercedes / DCTF-1 — variante de 236.21', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.41':      { description: 'ATF Mercedes Dexron VI (cajas modernas 7G/9G)', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.51':      { description: 'ATF Mercedes Dexron VI sucesor de 236.41', segment: 'ligero', tipo: 'transmision' },
+  'MB 239.21':      { description: 'Fluido DCT Mercedes DCTF-G (caja doble embrague húmeda)', segment: 'ligero', tipo: 'transmision' },
+  'MB 239.41':      { description: 'Fluido caja de transferencia Mercedes 4Matic (Transfer Case, equivalente BMW DTF-1)', segment: 'ligero', tipo: 'transmision' },
 
   // BMW
   'BMW LL-01':      { description: 'Aceite motor Long Life BMW gasolina/diésel (motores anteriores)', segment: 'ligero', tipo: 'motor' },
@@ -4439,11 +4455,28 @@ const SPEC_ALIASES = {
   'MB2265': 'MB 226.5', 'MB22651': 'MB 226.51',
   'MB2283': 'MB 228.3', 'MB22831': 'MB 228.31', 'MB2285': 'MB 228.5',
   'MB22851': 'MB 228.51', 'MB22852': 'MB 228.52',
-  'MB23528': 'MB 235.28', 'MB2369': 'MB 236.9', 'MB23614': 'MB 236.14',
+  // MB motor oil — sin decimales y con decimales normalizados
+  'MB22941': 'MB 229.41',
+  'MB23528': 'MB 235.28',
+  // MB manual gearbox 235.X
+  'MB2350': 'MB 235.0', 'MB2351': 'MB 235.1', 'MB23510': 'MB 235.10', 'MB23517': 'MB 235.17',
+  // MB ATF 236.X
+  'MB2369': 'MB 236.9', 'MB23611': 'MB 236.11', 'MB23612': 'MB 236.12', 'MB23614': 'MB 236.14',
+  'MB23615': 'MB 236.15', 'MB23616': 'MB 236.16', 'MB23617': 'MB 236.17',
+  'MB23621': 'MB 236.21', 'MB23624': 'MB 236.24', 'MB23641': 'MB 236.41', 'MB23651': 'MB 236.51',
+  // MB DCT + Transfer Case 239.X
+  'MB23921': 'MB 239.21', 'MB23941': 'MB 239.41',
   'MBAPPROVAL2291': 'MB 229.1', 'MBAPPROVAL22951': 'MB 229.51',
   'APPROVAL22951': 'MB 229.51', 'APPROVAL2295': 'MB 229.5',
+  // Alias sólo número (sin "MB" delante — el usuario escribe "229.41", "239.41", etc.)
+  '22941': 'MB 229.41',
   '2291': 'MB 229.1', '2293': 'MB 229.3', '22931': 'MB 229.31', '2295': 'MB 229.5',
   '22951': 'MB 229.51', '22952': 'MB 229.52', '2265': 'MB 226.5', '22651': 'MB 226.51',
+  '2350': 'MB 235.0', '2351': 'MB 235.1', '23510': 'MB 235.10', '23517': 'MB 235.17',
+  '2369': 'MB 236.9', '23611': 'MB 236.11', '23612': 'MB 236.12', '23614': 'MB 236.14',
+  '23615': 'MB 236.15', '23616': 'MB 236.16', '23617': 'MB 236.17',
+  '23621': 'MB 236.21', '23624': 'MB 236.24', '23641': 'MB 236.41', '23651': 'MB 236.51',
+  '23921': 'MB 239.21', '23941': 'MB 239.41',
 
   // BMW
   'BMWLL01': 'BMW LL-01', 'BMWLL04': 'BMW LL-04',
@@ -5193,8 +5226,12 @@ function freeSearch(query) {
     };
   }
 
-  // Si solo detectamos marca, ofrecer clarificación
+  // Si solo detectamos marca, primero intentar como norma formal ("MB 239.41", "BMW LL-04"…)
   if (detectedBrand) {
+    const formalResult = intelligentSearch(raw);
+    if (formalResult && formalResult.match !== 'none') {
+      return { match: 'redirect_formal', query: raw, formalResult };
+    }
     return {
       match: 'needs_clarification',
       query: raw,
@@ -6081,7 +6118,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v26</span>
+        <span class="about-version">v27</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -6105,6 +6142,13 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v27 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>SPECS_DB ampliado: MB 229.41, MB 235.0/1/10/17, MB 236.11/12/15/16/17/21/24/41/51, MB 239.21/41</li>
+            <li>SPEC_ALIASES: alias numéricos para todas las nuevas specs (ej. "23941" → MB 239.41)</li>
+            <li>Búsqueda libre: cuando se detecta una marca OEM (Mercedes, BMW…) ahora primero intenta resolver la norma antes de pedir clarificación — "MB 239.41" ya devuelve el fluido correcto</li>
+            <li>"229.41", "239.41", "236.14" reconocidos directamente sin necesidad de prefijo "MB"</li>
+          </ul>
           <div class="changelog-version">v26 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
             <li>TC-Matic incorporado: 32 productos (14 ATF, 8 DCT, 2 CVT, 1 MKF, 5 MTF, 3 TCF) procedentes del catálogo Abril 2026</li>
