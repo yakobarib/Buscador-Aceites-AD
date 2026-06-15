@@ -4733,6 +4733,24 @@ function productsForSpec(canonicalSpec) {
 }
 
 // ─── RENDERIZADO DE RESULTADO ───
+function febiTCForSpec(canonical) {
+  const normCanon = normalizeDesc(canonical);
+  const febi = [];
+  const tcmatic = [];
+  for (const comp of Object.values(COMPONENT_KNOWLEDGE)) {
+    if (!comp.canonicalSpecs || !comp.canonicalSpecs.some(s => normalizeDesc(s) === normCanon)) continue;
+    if (comp.febiProducts && comp.febiProducts.length > 0) {
+      const filtered = comp.febiProducts.filter(p => normalizeDesc(p.approvals || '').includes(normCanon));
+      febi.push(...(filtered.length > 0 ? filtered : comp.febiProducts));
+    }
+    if (comp.tcmaticProducts && comp.tcmaticProducts.length > 0) {
+      const filtered = comp.tcmaticProducts.filter(p => normalizeDesc(p.homol || '').includes(normCanon));
+      tcmatic.push(...(filtered.length > 0 ? filtered : comp.tcmaticProducts));
+    }
+  }
+  return { febi, tcmatic };
+}
+
 function renderDescResult(result) {
   const target = document.getElementById('results-section');
   
@@ -4797,13 +4815,18 @@ function renderDescResult(result) {
   canonical = result.canonical;
   info = result.info;
   const { adProducts, equivs } = productsForSpec(canonical);
-  
+  const { febi: febiProds, tcmatic: tcmaticProds } = febiTCForSpec(canonical);
+
   let phaseLabel = '';
   if (result.match === 'exact') phaseLabel = 'Identificación directa';
   else if (result.match === 'alias') phaseLabel = `Normalizado a partir de "${result.original}"`;
   else if (result.match === 'partial') phaseLabel = 'Coincidencia parcial';
   else if (result.match === 'category') phaseLabel = 'Categoría ACEA';
-  
+
+  const emptyMsg = (adProducts.length === 0 && equivs.length === 0 && febiProds.length === 0 && tcmaticProds.length === 0)
+    ? `<div class="desc-result-empty">No hay productos en catálogo que cumplan esta norma de momento.</div>`
+    : '';
+
   target.innerHTML = `
     <div class="desc-result-container">
       <div class="desc-result-header">
@@ -4817,6 +4840,9 @@ function renderDescResult(result) {
         </div>
       </div>
       ${renderProductsBlock(adProducts, equivs)}
+      ${renderFebiProductsBlock(febiProds)}
+      ${renderTCMaticBlock(tcmaticProds)}
+      ${emptyMsg}
     </div>`;
 }
 
@@ -4872,10 +4898,6 @@ function renderProductsBlock(adProducts, equivs) {
           `).join('')}
         </div>
       </div>`;
-  }
-  
-  if (adProducts.length === 0 && equivs.length === 0) {
-    html += `<div class="desc-result-empty">No hay productos en catálogo que cumplan esta norma de momento.</div>`;
   }
   
   return html;
