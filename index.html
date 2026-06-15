@@ -1221,6 +1221,31 @@ body::after {
 
 .free-advice strong { color: var(--text-primary); }
 
+.febi-products-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.febi-products-table th {
+  text-align: left;
+  padding: 5px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.febi-products-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top;
+}
+.febi-products-table tbody tr:last-child td { border-bottom: none; }
+.febi-products-table tbody tr:hover { background: var(--bg-secondary); }
+
 /* Tarjeta equivalencia "en otros formatos" */
 .desc-product-card.otros-formatos {
   border-color: var(--border-subtle);
@@ -4861,13 +4886,34 @@ const COMPONENT_KNOWLEDGE = {
     canonicalSpecs: ['VW G 052 175', 'BMW Haldex Oil', 'VOLVO Haldex Gen 4'],
     interpretation: 'Sistema de tracción a las cuatro ruedas (AWD) que usa un acoplador Haldex. Requiere fluido hidráulico específico, NO aceite motor ni ATF estándar.',
     advice: 'Usa siempre el fluido específico del fabricante. Es un cambio de poco volumen (700-900 ml) pero crítico.',
+    febiProducts: [
+      { ref: '101170', volume: '0,275 L', desc: 'Haldex Gen 1/2', oem: 'G 052 175 A1', approvals: 'Ford AWD-2 · VW TL 52175' },
+      { ref: '101171', volume: '1 L',     desc: 'Haldex Gen 3/4', oem: 'G 055 175 A2', approvals: 'VW TL 52175-X' },
+      { ref: '101172', volume: '0,85 L',  desc: 'Haldex Gen 5',   oem: 'G 060 175 A2', approvals: 'VW TL 52175-Y' },
+    ],
+  },
+  'TRANSFER_CASE': {
+    aliases: ['caja de transferencia', 'caja transferencia', 'transfer case', 'transfer fluid', 'aceite transferencia', 'dtf transferencia', 'aceite caja 4x4'],
+    fluidType: 'Aceite de caja de transferencia (Transfer Case)',
+    canonicalSpecs: ['BMW DTF-1', 'MB 239.41', 'TF 0870'],
+    interpretation: 'Fluido específico para la caja de transferencia en vehículos 4x4/AWD. Distinto al aceite de caja manual y al diferencial.',
+    advice: 'Usa siempre el fluido especificado por el fabricante. BMW y Mercedes tienen normas propias (DTF-1, MB 239.41). No intercambiable con ATF ni GL-4/5.',
+    febiProducts: [
+      { ref: '170367', volume: '1 L', desc: 'Transfer Case Fluid BMW/MB', oem: '83 22 2 409 710', approvals: 'BMW DTF-1 · MB 239.41 · TF 0870 · TF 0870 B' },
+    ],
   },
   'DSG': {
-    aliases: ['dsg', 's-tronic', 'stronic', 'caja dsg', 'doble embrague', 'dq200', 'dq250', 'dq381', 'dq500'],
-    fluidType: 'Fluido DSG (caja automática de doble embrague)',
+    aliases: ['dsg', 's-tronic', 'stronic', 'caja dsg', 'doble embrague', 'dq200', 'dq250', 'dq381', 'dq500', 'dct', 'dctf', 'pdk dsg', 'cambio directo'],
+    fluidType: 'Fluido DSG/DCT (caja automática de doble embrague)',
     canonicalSpecs: ['VW G 052 182', 'VW G 060 162', 'VW G 052 529'],
-    interpretation: 'Caja de doble embrague de VW/Audi/Skoda/SEAT. DQ200 (seco) y DQ250/DQ381/DQ500 (húmedo) usan fluidos distintos.',
+    interpretation: 'Caja de doble embrague de VW/Audi/Skoda/SEAT y otras marcas. DQ200 (seco) y DQ250/DQ381/DQ500 (húmedo) usan fluidos distintos.',
     advice: 'Importante distinguir entre DSG seco (DQ200, sin aceite) y DSG húmedo (DQ250+, con G 052 182 o equivalente).',
+    febiProducts: [
+      { ref: '39070', volume: '1 L', desc: 'DCTF-1 — VW/Audi/Porsche/Ford/MB', oem: 'G 052 529 A2', approvals: 'DCTF-1 · FFL-3 · Ford WSS-M2C936-A · MB 236.21/236.24 · Porsche PDK · VW TL 52 182' },
+      { ref: '39071', volume: '5 L', desc: 'DCTF-1 5L',                          oem: 'G 052 182',   approvals: 'DCTF-1 · Porsche PDK · VW TL 52 182' },
+      { ref: '49700', volume: '1 L', desc: 'DCTF-2 — VW/Audi',                   oem: 'G 055 529 A2', approvals: 'VW DCTF-2 · VW TL 52529-C' },
+      { ref: '171871', volume: '1 L', desc: 'DCTF-G — BMW/Ford/MB/Renault',      oem: '83 22 2 433 157', approvals: 'BMW DCTF 2 · Ford F-DC · Ford WSS-M2C218-A1 · MB 239.21 · Renault DW5' },
+    ],
   },
   'CVT': {
     aliases: ['cvt', 'caja cvt', 'variador continuo', 'transmision variable', 'multitronic'],
@@ -5151,6 +5197,28 @@ function freeSearch(query) {
   return { match: 'none', query: raw };
 }
 
+// Renderiza bloque de productos Febi Bilstein para búsqueda libre
+function renderFebiProductsBlock(febiProducts) {
+  if (!febiProducts || febiProducts.length === 0) return '';
+  const rows = febiProducts.map(p => `
+    <tr>
+      <td><strong>${p.ref}</strong></td>
+      <td>${p.desc}</td>
+      <td style="white-space:nowrap">${p.volume}</td>
+      <td style="font-size:11px;color:var(--text-secondary)">${p.approvals}</td>
+    </tr>`).join('');
+  return `
+    <div class="desc-result-section" style="margin-top:12px">
+      <div class="desc-result-section-title">
+        Productos Febi Bilstein disponibles <span class="count">${febiProducts.length}</span>
+      </div>
+      <table class="febi-products-table">
+        <thead><tr><th>Ref. Febi</th><th>Descripción</th><th>Formato</th><th>Homologaciones</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+}
+
 // ─── RENDERIZADO DE RESULTADO DE BÚSQUEDA LIBRE ───
 function renderFreeResult(result) {
   const target = document.getElementById('results-section');
@@ -5337,6 +5405,7 @@ function renderFreeResult(result) {
       </div>
 
       ${renderProductsBlock(allAd, allEquivs)}
+      ${renderFebiProductsBlock(finalComp.febiProducts)}
     </div>`;
 }
 
@@ -5937,7 +6006,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v24</span>
+        <span class="about-version">v25</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -5961,6 +6030,13 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
         <div class="changelog-entry">
+          <div class="changelog-version">v25 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>Búsqueda libre: "haldex" muestra los 3 fluidos Febi (Gen 1/2, Gen 3/4, Gen 5) con refs y homologaciones</li>
+            <li>Búsqueda libre: "caja de transferencia" muestra Febi 170367 (BMW DTF-1 · MB 239.41)</li>
+            <li>Búsqueda libre: "dsg", "dct", "doble embrague" muestran 4 fluidos DCT Febi (DCTF-1, DCTF-2, DCTF-G)</li>
+            <li>Datos Febi procedentes del catálogo oficial Productos Febi Abril 2026</li>
+          </ul>
           <div class="changelog-version">v24 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
             <li>Shell Tellus S2 VX 46 (5L: 550060143) añadida como equivalencia de HHV 46; resto de hidráulicos con Shell marcados como otros formatos</li>
