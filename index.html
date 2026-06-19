@@ -2798,6 +2798,55 @@ body::after {
   .ad-mark { width: 42px; }
 }
 
+/* ── Búsqueda semántica IA ────────────────────────────────────────────── */
+.ai-progress-wrap {
+  padding: 0 var(--s-6) var(--s-4);
+}
+.ai-progress-bar {
+  height: 3px;
+  background: var(--border-subtle);
+  border-radius: var(--r-full);
+  overflow: hidden;
+}
+.ai-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: var(--r-full);
+  transition: width 0.4s ease;
+}
+.ai-match-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-3) var(--s-6);
+  background: linear-gradient(90deg, rgba(99,102,241,0.08), transparent);
+  border-bottom: 1px solid rgba(99,102,241,0.15);
+  font-size: 12px;
+  color: var(--text-secondary);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+}
+.ai-match-banner strong { color: var(--text-primary); }
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 7px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-radius: var(--r-full);
+  flex-shrink: 0;
+}
+.ai-spinning {
+  animation: ai-spin 1.2s linear infinite;
+}
+@keyframes ai-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
 </style>
 </head>
 <body>
@@ -5179,6 +5228,57 @@ const COMPONENT_KNOWLEDGE = {
   },
 };
 
+// ─── CORPUS PARA BÚSQUEDA SEMÁNTICA ───
+// Cada entrada describe un concepto con texto rico para embedding.
+// triggerQuery: consulta que se pasa a freeSearch si esta entrada gana la similitud.
+const EMBEDDINGS_CORPUS = [
+  // Aceites hidráulicos HM (DIN 51524-2 HLP)
+  { id: 'HHM_32', triggerQuery: 'HHM 32',
+    text: 'aceite hidráulico HM 32 ISO VG 32 DIN 51524 parte 2 HLP mineral estándar baja viscosidad maquinaria industrial prensa hidrostático 32' },
+  { id: 'HHM_46', triggerQuery: 'HHM 46',
+    text: 'aceite hidráulico HM 46 ISO VG 46 DIN 51524 parte 2 HLP HLP2 mineral estándar universal excavadora grúa prensa taller construcción industrial hidrostático grado 46 medio' },
+  { id: 'HHM_68', triggerQuery: 'HHM 68',
+    text: 'aceite hidráulico HM 68 ISO VG 68 DIN 51524 parte 2 HLP mineral alta viscosidad maquinaria pesada industrial hidrostático 68' },
+  // Aceites hidráulicos HV (DIN 51524-3 HVLP)
+  { id: 'HHV_46', triggerQuery: 'HHV 46',
+    text: 'aceite hidráulico HV HVLP 46 ISO VG 46 DIN 51524 parte 3 HLP3 alto índice viscosidad temperatura amplia variación exterior frío calor MAG Vickers 46' },
+  { id: 'HHV_68', triggerQuery: 'HHV 68',
+    text: 'aceite hidráulico HV HVLP 68 ISO VG 68 DIN 51524 parte 3 HLP3 alto índice viscosidad temperatura exterior variación 68' },
+  // Aceite de dirección hidráulica / servo
+  { id: 'SERVO', triggerQuery: 'dirección asistida',
+    text: 'aceite dirección asistida servodirección servo steering fluid PSF bomba dirección hidráulica power steering' },
+  // ATF / Caja automática
+  { id: 'ATF', triggerQuery: 'ATF Dexron',
+    text: 'aceite transmisión automática ATF Dexron III caja automática cambio automático dirección asistida automatic fluid' },
+  // Refrigerante
+  { id: 'REFRIGERANTE', triggerQuery: 'refrigerante',
+    text: 'refrigerante anticongelante líquido refrigeración circuito motor coolant temperatura G12 G13 G11 agua mezcla radiador' },
+  // Frenos
+  { id: 'FRENOS', triggerQuery: 'frenos',
+    text: 'líquido frenos brake fluid DOT4 DOT3 freno ABS embrague hidráulico servofreno' },
+  // Motor turismos
+  { id: 'MOTOR_LIGERO', triggerQuery: 'aceite motor',
+    text: 'aceite motor coche turismo diésel gasolina turbo ACEA VW Mercedes BMW Ford sintético semisintético lubricante motor 5W30 5W40 0W30 0W20' },
+  // Motor vehículos pesados
+  { id: 'MOTOR_PESADO', triggerQuery: 'aceite camion',
+    text: 'aceite motor camión vehículo industrial pesado diésel diesel Euro 6 ACEA E9 E11 truck camión furgón remolque' },
+  // Tractor / agrícola
+  { id: 'AGRICOLA', triggerQuery: 'aceite tractor',
+    text: 'aceite tractor maquinaria agrícola agrícola UTTO John Deere Kubota Massey Ferguson New Holland Case transmisión hidráulica frenos húmedos' },
+  // Grasa
+  { id: 'GRASA', triggerQuery: 'grasa',
+    text: 'grasa lubricante rodamiento articulación EP NLGI2 litio multiusos bomba engrasadora grease resistente agua temperatura cojinete' },
+  // Caja cambios manual
+  { id: 'CAJA_MANUAL', triggerQuery: 'caja cambios',
+    text: 'aceite caja cambios transmisión manual GL4 GL5 75W80 75W90 cambio manual palanca sincronizado engranajes' },
+  // Diferencial / eje
+  { id: 'DIFERENCIAL', triggerQuery: 'diferencial',
+    text: 'aceite diferencial eje puente trasero delantero GL5 80W90 85W90 LSD autoblocante tracción engranajes cónico hipoides' },
+  // Compresor / neumática
+  { id: 'COMPRESOR', triggerQuery: 'compresor',
+    text: 'aceite compresor aire herramienta neumática pistola martillo neumático NSF FDA taller pneu compressor' },
+];
+
 // ─── MARCAS RECONOCIDAS ───
 const BRAND_KEYWORDS = {
   'BMW': ['bmw'],
@@ -5279,6 +5379,23 @@ function freeSearch(query) {
 
   // Si detectamos algún componente, construimos respuesta
   if (detectedComponents.length > 0) {
+    // Refinamiento para HIDRÁULICO: si el usuario especificó grado ISO (32/46/68), devolver producto exacto
+    if (detectedComponents.some(c => c.key === 'HIDRAULICO')) {
+      const gradeMatch = qNorm.match(/\b(32|46|68)\b/);
+      if (gradeMatch) {
+        let fmt = null;
+        for (const fd of FORMAT_DETECT) { if (fd.re.test(raw)) { fmt = fd; break; } }
+        const grade = gradeMatch[1];
+        const isHV = /\bhvlp\b|\bhlp3\b|\bhlp\s+3\b/.test(qNorm);
+        const type = isHV ? 'HV' : 'HM';
+        const products = AD_PARTS_CATALOG.filter(p =>
+          p.type === 'hidraulico' && p.viscosity === `${type}${grade}`
+        );
+        if (products.length > 0) {
+          return { match: 'direct_product', query: raw, products, format: fmt };
+        }
+      }
+    }
     return {
       match: 'found',
       query: raw,
@@ -5367,6 +5484,87 @@ function freeSearch(query) {
   return { match: 'none', query: raw };
 }
 
+// ─── MOTOR DE BÚSQUEDA SEMÁNTICA (Transformers.js) ───
+const SemanticSearch = (() => {
+  let _extractor = null;
+  let _corpusVectors = null;
+  let _initPromise = null;
+
+  function cosineSim(a, b) {
+    let dot = 0, mA = 0, mB = 0;
+    for (let i = 0; i < a.length; i++) { dot += a[i]*b[i]; mA += a[i]*a[i]; mB += b[i]*b[i]; }
+    const d = Math.sqrt(mA) * Math.sqrt(mB);
+    return d === 0 ? 0 : dot / d;
+  }
+
+  function setStatus(msg, pct) {
+    const el = document.getElementById('ai-status-msg');
+    const bar = document.getElementById('ai-progress-fill');
+    if (el) el.textContent = msg;
+    if (bar && pct != null) bar.style.width = pct + '%';
+  }
+
+  async function init() {
+    if (_extractor && _corpusVectors) return true;
+    setStatus('Descargando motor semántico…', 8);
+    let pipeline;
+    try {
+      const mod = await import('https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2');
+      pipeline = mod.pipeline;
+      if (mod.env) { mod.env.allowRemoteModels = true; mod.env.useBrowserCache = true; }
+    } catch (e) {
+      console.warn('[IA] Transformers.js no disponible:', e);
+      return false;
+    }
+    setStatus('Cargando modelo de lenguaje…', 20);
+    try {
+      _extractor = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2', {
+        progress_callback: (info) => {
+          if (info.status === 'progress' && info.progress != null) {
+            setStatus(`Descargando modelo (${Math.round(info.progress)}%)…`, 20 + Math.round(info.progress * 0.6));
+          }
+        }
+      });
+    } catch (e) {
+      console.warn('[IA] Error al cargar modelo:', e);
+      return false;
+    }
+    setStatus('Indexando catálogo…', 85);
+    _corpusVectors = [];
+    for (const entry of EMBEDDINGS_CORPUS) {
+      try {
+        const out = await _extractor(entry.text, { pooling: 'mean', normalize: true });
+        _corpusVectors.push({ id: entry.id, vector: Array.from(out.data) });
+      } catch (_) {}
+    }
+    setStatus('Motor IA listo', 100);
+    return true;
+  }
+
+  return {
+    async search(query) {
+      if (!_initPromise) _initPromise = init();
+      const ok = await _initPromise;
+      if (!ok || !_extractor || !_corpusVectors) return null;
+      try {
+        const out = await _extractor(query, { pooling: 'mean', normalize: true });
+        const qVec = Array.from(out.data);
+        let bestId = null, bestScore = 0;
+        for (const cv of _corpusVectors) {
+          const s = cosineSim(qVec, cv.vector);
+          if (s > bestScore) { bestScore = s; bestId = cv.id; }
+        }
+        if (bestScore < 0.50) return null;
+        const entry = EMBEDDINGS_CORPUS.find(e => e.id === bestId);
+        return entry ? { entry, score: bestScore } : null;
+      } catch (e) {
+        console.warn('[IA] Error en búsqueda:', e);
+        return null;
+      }
+    }
+  };
+})();
+
 // Renderiza bloque de productos TC-Matic para búsqueda libre
 function renderTCMaticBlock(tcmaticProducts) {
   if (!tcmaticProducts || tcmaticProducts.length === 0) return '';
@@ -5423,21 +5621,65 @@ function renderFebiProductsBlock(febiProducts) {
 // ─── RENDERIZADO DE RESULTADO DE BÚSQUEDA LIBRE ───
 function renderFreeResult(result) {
   const target = document.getElementById('results-section');
-  
+
   if (!result || result.match === 'none') {
+    const q = result ? result.query : '';
+    // Mostrar estado "buscando con IA" y lanzar búsqueda semántica asíncrona
     target.innerHTML = `
-      <div class="desc-result-container">
+      <div class="desc-result-container" id="semantic-container">
         <div class="desc-result-header">
-          <div class="desc-result-icon error">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div class="desc-result-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">
+            <svg class="ai-spinning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
           </div>
           <div class="desc-result-headinfo">
-            <div class="desc-result-eyebrow error">No comprendido</div>
-            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${result ? result.query : ''}"</div>
-            <div class="desc-result-desc">El sistema no ha identificado el componente, fluido o marca en tu consulta. Intenta ser más específico (ej: "aceite caja DSG VW Golf 2015") o usa la pestaña <strong>Homologaciones</strong> si conoces la norma exacta.</div>
+            <div class="desc-result-eyebrow" style="color:#6366f1">Búsqueda semántica IA</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${q}"</div>
+            <div class="desc-result-desc" id="ai-status-msg">Analizando con inteligencia semántica…</div>
           </div>
         </div>
+        <div class="ai-progress-wrap">
+          <div class="ai-progress-bar"><div class="ai-progress-fill" id="ai-progress-fill" style="width:5%"></div></div>
+        </div>
       </div>`;
+
+    SemanticSearch.search(q).then(semanticResult => {
+      const container = document.getElementById('semantic-container');
+      if (!container) return; // el usuario navegó a otra cosa
+
+      if (!semanticResult) {
+        // No hay coincidencia semántica: mostrar error clásico
+        container.innerHTML = `
+          <div class="desc-result-header">
+            <div class="desc-result-icon error">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <div class="desc-result-headinfo">
+              <div class="desc-result-eyebrow error">No comprendido</div>
+              <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${q}"</div>
+              <div class="desc-result-desc">La IA tampoco ha identificado el fluido o componente. Intenta ser más específico o usa la pestaña <strong>Homologaciones</strong> si conoces la norma exacta.</div>
+            </div>
+          </div>`;
+        return;
+      }
+
+      // Hay coincidencia: renderizar el resultado del triggerQuery y añadir banner IA
+      const triggerResult = freeSearch(semanticResult.entry.triggerQuery);
+      if (!triggerResult || triggerResult.match === 'none') {
+        container.innerHTML = `<div class="desc-result-header"><div class="desc-result-icon error"></div><div class="desc-result-headinfo"><div class="desc-result-eyebrow error">Sin productos</div><div class="desc-result-desc">La IA identificó "${semanticResult.entry.id}" pero no hay productos disponibles en catálogo.</div></div></div>`;
+        return;
+      }
+
+      renderFreeResult(triggerResult); // sobrescribe results-section con el resultado
+      // Añadir banner IA encima del resultado renderizado
+      const newContainer = target.querySelector('.desc-result-container');
+      if (newContainer) {
+        const pct = Math.round(semanticResult.score * 100);
+        const banner = document.createElement('div');
+        banner.className = 'ai-match-banner';
+        banner.innerHTML = `<span class="ai-badge">IA</span> Resultado semántico · confianza&nbsp;<strong>${pct}%</strong> · interpretado como: <strong>${semanticResult.entry.triggerQuery}</strong>`;
+        newContainer.insertBefore(banner, newContainer.firstChild);
+      }
+    });
     return;
   }
 
