@@ -5377,20 +5377,32 @@ function freeSearch(query) {
 
   // Si detectamos algún componente, construimos respuesta
   if (detectedComponents.length > 0) {
-    // Refinamiento para HIDRÁULICO: si el usuario especificó grado ISO (32/46/68), devolver producto exacto
+    // Refinamiento para HIDRÁULICO: filtrar por tipo y/o grado ISO cuando se especifican
     if (detectedComponents.some(c => c.key === 'HIDRAULICO')) {
       const gradeMatch = qNorm.match(/\b(32|46|68)\b/);
+      const isHV  = /\bhvlp\b|\bhlp3\b|\bhlp\s+3\b|\biso.*hv\b/.test(qNorm);
+      const isHM  = /\bhlp2\b|\bhlp\s+2\b|\bhlp2\b|\bhm\b/.test(qNorm);
+      let fmt = null;
+      for (const fd of FORMAT_DETECT) { if (fd.re.test(raw)) { fmt = fd; break; } }
+
       if (gradeMatch) {
-        let fmt = null;
-        for (const fd of FORMAT_DETECT) { if (fd.re.test(raw)) { fmt = fd; break; } }
+        // Tipo Y grado conocidos → producto exacto
         const grade = gradeMatch[1];
-        const isHV = /\bhvlp\b|\bhlp3\b|\bhlp\s+3\b/.test(qNorm);
         const type = isHV ? 'HV' : 'HM';
         const products = AD_PARTS_CATALOG.filter(p =>
           p.type === 'hidraulico' && p.viscosity === `${type}${grade}`
         );
         if (products.length > 0) {
           return { match: 'direct_product', query: raw, products, format: fmt };
+        }
+      } else if (isHV || isHM) {
+        // Solo tipo conocido, sin grado → filtrar por tipo y pedir grado
+        const typePrefix = isHV ? 'HV' : 'HM';
+        const products = AD_PARTS_CATALOG.filter(p =>
+          p.type === 'hidraulico' && p.viscosity.startsWith(typePrefix)
+        );
+        if (products.length > 0) {
+          return { match: 'hidraulico_sin_grado', query: raw, products, typePrefix, format: fmt };
         }
       }
     }
@@ -5678,6 +5690,37 @@ function renderFreeResult(result) {
         newContainer.insertBefore(banner, newContainer.firstChild);
       }
     });
+    return;
+  }
+
+  if (result.match === 'hidraulico_sin_grado') {
+    const typeName = result.typePrefix === 'HV' ? 'HV / HVLP (alto índice de viscosidad)' : 'HM / HLP (mineral estándar)';
+    const grades = result.products.map(p => p.viscosity.replace(result.typePrefix, ''));
+    let allEquivs = [];
+    const seenRefs = new Set();
+    for (const p of result.products) {
+      for (const eq of humanEquivsForAdSku(p.sku)) {
+        if (!seenRefs.has(eq.ref)) { seenRefs.add(eq.ref); allEquivs.push(eq); }
+      }
+    }
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow">Aceite hidráulico ${result.typePrefix}</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">${typeName}</div>
+            <div class="desc-result-desc">Tipo identificado. Indica el grado ISO VG para afinar: elige entre los productos disponibles abajo.</div>
+          </div>
+        </div>
+        <div class="free-advice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <div>Grados disponibles: ${grades.map(g => `<button class="desc-clarify-btn" onclick="fillFree('${result.query} ${g}')">${result.typePrefix === 'HV' ? 'HVLP' : 'HLP'} ${g}</button>`).join(' ')}</div>
+        </div>
+        ${renderProductsBlock(result.products, allEquivs)}
+      </div>`;
     return;
   }
 
