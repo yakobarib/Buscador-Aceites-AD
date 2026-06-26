@@ -5061,15 +5061,15 @@ function searchByDesc() {
 // ─── BASE DE CONOCIMIENTO: COMPONENTES Y SISTEMAS ───
 const COMPONENT_KNOWLEDGE = {
   'HALDEX': {
-    aliases: ['haldex', '4motion', 'xdrive', 'quattro ultra', 'embrague haldex'],
+    aliases: ['haldex', '4motion', 'xdrive', 'quattro ultra', 'embrague haldex', 'g 052 175', 'g052175', 'g055175', 'g 055 175', 'g065175', 'g 065 175', 'g060175', 'g 060 175', 'tl 52175', 'vw tl 52175', 'ford awd-2', 'haldex oil', 'bmw hoc', 'bmw hok'],
     fluidType: 'Fluido Haldex (hidráulico específico para acoplador electrohidráulico AWD)',
-    canonicalSpecs: ['VW G 052 175', 'BMW Haldex Oil', 'VOLVO Haldex Gen 4'],
+    canonicalSpecs: ['VW TL 52175 / TL 52175-X / TL 52175-Y', 'Ford AWD-2', 'BMW HOC / HOK OIL'],
     interpretation: 'Sistema de tracción a las cuatro ruedas (AWD) que usa un acoplador Haldex. Requiere fluido hidráulico específico, NO aceite motor ni ATF estándar.',
     advice: 'Usa siempre el fluido específico del fabricante. Es un cambio de poco volumen (700-900 ml) pero crítico.',
     febiProducts: [
-      { ref: '101170', volume: '0,275 L', desc: 'Haldex Gen 1/2', oem: 'G 052 175 A1', approvals: 'Ford AWD-2 · VW TL 52175' },
-      { ref: '101171', volume: '1 L',     desc: 'Haldex Gen 3/4', oem: 'G 055 175 A2', approvals: 'VW TL 52175-X' },
-      { ref: '101172', volume: '0,85 L',  desc: 'Haldex Gen 5',   oem: 'G 060 175 A2', approvals: 'VW TL 52175-Y' },
+      { ref: '101170', volume: '0,275 L', desc: 'Haldex Gen 1/2', oem: 'VW/Audi/Seat/Škoda G 052 175 A1 · Ford 1 931 273 / FU7J-8708687-AA / 8U7J-8708687-AA · Land Rover LR 054941 / LR 003136', approvals: 'Ford AWD-2 · VW TL 52175' },
+      { ref: '101171', volume: '1 L',     desc: 'Haldex Gen 3/4', oem: 'VW/Audi/Seat/Škoda G 055 175 A2 / G 055 175 A1 · Volvo 31367941 / 31325136 / 30759648 · Opel/Saab 93 165 387', approvals: 'VW TL 52175-X' },
+      { ref: '101172', volume: '0,85 L',  desc: 'Haldex Gen 5',   oem: 'VW/Audi/Seat/Škoda/CUPRA G 065 175 A2 / G 065 165 A2 / G 060 175 A2 · BMW/MINI 83 22 2 413 513', approvals: 'BMW HOC · BMW HOK OIL · VW TL 52175-Y' },
     ],
   },
   'TRANSFER_CASE': {
@@ -5459,9 +5459,9 @@ const EMBEDDINGS_CORPUS = [
   { id: 'FEBI_HID_05', triggerQuery: 'aceite hidráulico', text: 'aceite hidráulico sistema hidrostático febi MB - 344.0 Servodireccion e Hidráulica referencias febi 21648' },
   { id: 'FEBI_HID_06', triggerQuery: 'aceite hidráulico', text: 'aceite hidráulico sistema hidrostático febi DIN 51524 Teil3; ISO 7308; LHM Plus; PSA - B71 2710. LHM Plus referencias febi 24704' },
   { id: 'FEBI_HID_07', triggerQuery: 'aceite hidráulico', text: 'aceite hidráulico sistema hidrostático febi CHF-202; Chrysler - MS-11655b; Ford - WSS-M2C195-A; WSS-M2C204-A2; GM - B 040 2012; B040 19 40715; Pentosin - CHF-202; VAG - TL52 519-B Servodireccion e Hidráulica referencias febi 46161' },
-  { id: 'FEBI_MOTOR_21', triggerQuery: 'aceite motor', text: 'aceite de motor gasolina diésel febi Ford - AWD-2; VAG - TL 52175. Embrague Haldex referencias febi 101170' },
-  { id: 'FEBI_MOTOR_22', triggerQuery: 'aceite motor', text: 'aceite de motor gasolina diésel febi VAG - TL 52175-X. Embrague Haldex referencias febi 101171' },
-  { id: 'FEBI_MOTOR_23', triggerQuery: 'aceite motor', text: 'aceite de motor gasolina diésel febi BMW - HOC; VAG - TL 52175-Y. Embrague Haldex referencias febi 101172' },
+  { id: 'FEBI_HALDEX_101170', triggerQuery: 'fluido Haldex Gen 1/2 embrague AWD 4x4 Ford AWD-2 VW TL 52175 G 052 175', text: 'Febi 101170. Aceite para embrague Haldex Gen 1/2. 0,275 L. Síntesis HC, color amarillo. Normas: Ford AWD-2, VW TL 52175. Referencias OEM: Audi G 052 175 A1, VW G 052 175 A1, Seat G 052 175 A1, Škoda G 052 175 A1, Ford 1 931 273 / FU7J-8708687-AA / 8U7J-8708687-AA, Land Rover LR 054941 / SL01-301 / LR 003136.' },
+  { id: 'FEBI_HALDEX_101171', triggerQuery: 'fluido Haldex Gen 3/4 embrague AWD 4x4 VW TL 52175-X G 055 175 Volvo Opel', text: 'Febi 101171. Aceite para embrague Haldex Gen 3/4. 1 L. Síntesis HC, color amarillo. Normas: VW TL 52175-X. Referencias OEM: Audi G 055 175 A2 / G 055 175 A1, VW G 055 175 A2 / G 055 175 A1, Seat G 055 175 A2 / G 055 175 A1, Škoda G 055 175 A2 / G 055 175 A1, Volvo 31367941 / 1161641 / 30759648 / 31325136 / 31367940, Opel 19 40 057 / 93 165 387, Saab 93 165 387.' },
+  { id: 'FEBI_HALDEX_101172', triggerQuery: 'fluido Haldex Gen 5 embrague AWD 4x4 BMW HOC HOK VW TL 52175-Y G 065 175 CUPRA MINI', text: 'Febi 101172. Aceite para embrague Haldex Gen 5. 0,85 L. Síntesis HC, color amarillo. Normas: BMW HOC, BMW HOK OIL, VW TL 52175-Y. Referencias OEM: Audi G 065 175 A2 / G 060 175 A2, VW G 065 175 A2 / G 065 165 A2 / G 060 175 A2, Seat G 065 175 A2 / G 065 165 A2 / G 060 175 A2, Škoda G 065 175 A2 / G 065 165 A2 / G 060 175 A2, CUPRA G 065 175 A2, BMW 83 22 2 413 513, MINI 83 22 2 413 513.' },
   { id: 'FEBI_GEN_01', triggerQuery: 'lubricante', text: 'fluido lubricante febi Dexron II; MB - 236.3; VOITH - 55.6335; ZF - TE-ML03D; TE-ML04D; TE-ML09; TE-ML11; TE-ML14A; TE-ML17C. Servodirección referencias febi 08972 1003306' },
   { id: 'FEBI_GEN_02', triggerQuery: 'lubricante', text: 'fluido lubricante febi BMW - DTF-1; MB - 239.41; TF 0870; TF0870B. Caja de Transferencia TF-1 referencias febi 170367' },
   { id: 'FEBI_MOTOR_24', triggerQuery: 'aceite motor', text: 'aceite de motor gasolina diésel  referencias febi     ' },
