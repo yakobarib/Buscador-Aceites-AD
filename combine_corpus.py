@@ -10,6 +10,8 @@ with open(BASE + r"\corpus_embeddings_marcas.json", encoding="utf-8") as f:
     marcas_extra = json.load(f)
 with open(BASE + r"\corpus_embeddings_normativas.json", encoding="utf-8") as f:
     normativas = json.load(f)
+with open(BASE + r"\corpus_embeddings_fichas.json", encoding="utf-8") as f:
+    fichas = json.load(f)
 
 # ── Trigger map for AD Parts by tipo/segmento ────────────────────────────────
 def adparts_trigger(p):
@@ -69,7 +71,7 @@ for p in adparts:
 # Combine: AD Parts PDF corpus, Febi/TC-Matic, brand catalogs
 # Deduplicate brand catalog entries by ID (keep first occurrence)
 seen_ids = set()
-all_entries = adparts_unified + febi_tcm + marcas_extra + normativas
+all_entries = adparts_unified + febi_tcm + marcas_extra + normativas + fichas
 combined = []
 for e in all_entries:
     if e["id"] not in seen_ids:
@@ -82,6 +84,7 @@ print(f"AD Parts PDF:   {len(adparts_unified)}")
 print(f"Febi+TC-Matic:  {len(febi_tcm)}")
 print(f"Marcas (Castrol/Shell/Repsol/Eni/AD): {len(marcas_extra)}")
 print(f"Normativas:     {len(normativas)}")
+print(f"Fichas técnicas:{len(fichas)}")
 print(f"Duplicates removed: {dupes_count}")
 print(f"Total:          {len(combined)}")
 print("No duplicate IDs" if dupes_count == 0 else f"Removed {dupes_count} duplicates")

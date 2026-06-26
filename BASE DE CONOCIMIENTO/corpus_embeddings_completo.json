@@ -6010,5 +6010,161 @@
     "marca": "normativa",
     "triggerQuery": "VW 503.00 aceite motor gasolina Longlife ahorro combustible VAG",
     "text": "Norma VW 503.00 para motores gasolina del Grupo VAG con ahorro de combustible. Intervalos de cambio extendidos. Alta resistencia térmica y buena bombeabilidad. Viscosidades: 0W-30, 0W-40, 5W-30, 5W-40. Sustituida en su mayor parte por VW 504.00."
+  },
+  {
+    "id": "ADPARTS_LIMPIAPARABRISAS_9C",
+    "marca": "adparts",
+    "triggerQuery": "limpiaparabrisas anticongelante sin metanol -9 grados ad parts",
+    "text": "Limpiaparabrisas Anticongelante AD -9°C Sin Metanol. Líquido para depósitos lavaparabrisas y lavafaros. Protección anticongelante hasta -9°C. Formulado sin metanol (isopropanol+etanol). pH 6.7, densidad 0.983. Refs: 41303 (1L), 45303 (5L), 42301 (200L), 40300 (1000L)."
+  },
+  {
+    "id": "ADPARTS_LIMPIAPARABRISAS_18C",
+    "marca": "adparts",
+    "triggerQuery": "limpiaparabrisas anticongelante sin metanol -18 grados ad parts",
+    "text": "Limpiaparabrisas Anticongelante AD -18°C Sin Metanol. Líquido para depósitos lavaparabrisas y lavafaros. Protección anticongelante hasta -18°C. Formulado sin metanol. pH 6.9, densidad 0.975. Refs: 41503 (1L), 45503 (5L), 42501 (200L), 40500 (1000L)."
+  },
+  {
+    "id": "ADPARTS_LIMPIAPARABRISAS_5C",
+    "marca": "adparts",
+    "triggerQuery": "limpiaparabrisas anticongelante sin metanol -5 grados ad parts",
+    "text": "Limpiaparabrisas Anticongelante AD -5°C Sin Metanol. Líquido para depósitos lavaparabrisas y lavafaros. Protección anticongelante hasta -5°C. Formulado sin metanol. pH 6.6, densidad 0.991. Refs: 41603 (1L), 45603 (5L), 42601 (200L), 40601 (1000L)."
+  },
+  {
+    "id": "REPSOL_MASTER_RACING_0W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite motor repsol master racing 0w40 alto rendimiento sintético",
+    "text": "Repsol Master Racing 0W-40. Sintético para motores gasolina de alto rendimiento en vehículo ligero. API SN/CF. Viscosidad 100°C: 14 cSt, CCS -30°C <6200 cP, Noack 8.6%. Máxima protección a altas temperaturas y revoluciones. Ficha RP_0001F."
+  },
+  {
+    "id": "REPSOL_MASTER_RACING_5W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite motor repsol master racing 5w50 sintético",
+    "text": "Repsol Master Racing 5W-50. Sintético para motores gasolina de alto rendimiento en vehículo ligero. API SN/CF. Viscosidad 100°C: 17.5 cSt. Protección extrema en circuito y uso exigente en carretera. Ficha RP_0001K."
+  },
+  {
+    "id": "REPSOL_MASTER_ECO_HYBRID_0W16",
+    "marca": "repsol",
+    "triggerQuery": "aceite motor repsol master eco hybrid 0w16 híbrido toyota",
+    "text": "Repsol Master ECO Hybrid 0W-16. Sintético para vehículos híbridos HEV/PHEV. API SP, ILSAC GF-6B. Máximo ahorro de combustible. Especialmente recomendado para Toyota, Lexus, Mitsubishi Outlander, Subaru. Ficha RP_0002C."
+  },
+  {
+    "id": "REPSOL_MASTER_ECO_HYBRID_0W20",
+    "marca": "repsol",
+    "triggerQuery": "aceite motor repsol master eco hybrid 0w20 híbrido toyota lexus",
+    "text": "Repsol Master ECO Hybrid 0W-20. Sintético para vehículos híbridos HEV/PHEV. API SP, ILSAC GF-6A. Ahorro de combustible optimizado para ciclos mixtos eléctrico-gasolina. Recomendado para Toyota, Lexus, Mitsubishi, Subaru. Ficha RP_0002D."
+  },
+  {
+    "id": "REPSOL_MASTER_ECO_HYBRID_5W30",
+    "marca": "repsol",
+    "triggerQuery": "aceite motor repsol master eco hybrid 5w30 híbrido",
+    "text": "Repsol Master ECO Hybrid 5W-30. Sintético para vehículos híbridos HEV/PHEV. API SP, ILSAC GF-6A. Formulado para motores que alternan ciclos eléctrico y gasolina. Recomendado para Toyota, Lexus, Mitsubishi, Subaru. Ficha RP_0002I."
+  },
+  {
+    "id": "REPSOL_RACING_4T_10W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol racing 4t 10w50 sintético jaso ma2",
+    "text": "Repsol Racing 4T 10W-50. Sintético para motos 4T de alto rendimiento. API SP, JASO MA2. Válido en carretera y circuito. Protege embrague húmedo y caja de cambios. Ficha RP_2000R."
+  },
+  {
+    "id": "REPSOL_RACING_ATV_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite quad atv repsol racing atv 4t 10w40 jaso ma2",
+    "text": "Repsol Racing ATV 4T 10W-40. Sintético para quads y ATVs. API SN, JASO MA2. Compatible con embrague húmedo. Diseñado para las exigencias de los motores de vehículos todo terreno. Ficha RP_2005M."
+  },
+  {
+    "id": "REPSOL_RACING_OFFROAD_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto offroad repsol racing off road 4t 10w40 enduro trial cross",
+    "text": "Repsol Racing Off Road 4T 10W-40. Sintético para motos off-road: trial, enduro, motocross. API SN, JASO MA2. Alta protección en condiciones extremas de uso todo terreno. Ficha RP_2006M."
+  },
+  {
+    "id": "REPSOL_RACING_MIX_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol racing mix 2t jaso fd éster competición premezcla inyector",
+    "text": "Repsol Racing Mix 2T. Con éster. Para motores 2T de competición y uso diario. API TC, JASO FD, ISO L-EGD, Aprilia DFI, TISI 1040. Válido en premezcla o inyector. Máxima protección 2T. Ficha RP_2051Z."
+  },
+  {
+    "id": "REPSOL_RACING_OFFROAD_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol racing off road 2t jaso fd éster enduro cross",
+    "text": "Repsol Racing Off Road 2T. Con éster. Para motos off-road 2T: enduro, motocross. API TC, JASO FD, ISO L-EGD, Aprilia DFI. Alta lubricación en condiciones extremas todo terreno. Ficha RP_2052Z."
+  },
+  {
+    "id": "REPSOL_RACING_SYNTH_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol racing synth 2t 100% sintético éster jaso fd",
+    "text": "Repsol Racing Synth 2T. 100% sintético con éster para motores 2T de altas prestaciones. API TC, ISO L-EGD, TISI 1040. Máxima limpieza del motor y protección a altas temperaturas. Ficha RP_2053Z."
+  },
+  {
+    "id": "REPSOL_SMARTER_SCOOTER_4T_5W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite scooter repsol smarter scooter 4t 5w40 jaso ma2 embrague húmedo seco",
+    "text": "Repsol Smarter Scooter 4T 5W-40. Sintético para scooters 4T. API SN, JASO MA2. Válido con embrague húmedo (JASO MA) y seco (JASO MB). Protección ampliada para scooters de uso urbano. Ficha RP_2060J."
+  },
+  {
+    "id": "REPSOL_SMARTER_SCOOTER_MB_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite scooter repsol smarter scooter mb 4t 10w40 jaso mb embrague seco baja fricción",
+    "text": "Repsol Smarter Scooter MB 4T 10W-40. Para scooters 4T con embrague seco. API SL, JASO MB. Baja fricción, diseñado específicamente para transmisiones automáticas con embrague seco. Ficha RP_2061M."
+  },
+  {
+    "id": "REPSOL_SMARTER_SPORT_4T_20W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol smarter sport 4t 20w50 semisintético jaso ma2",
+    "text": "Repsol Smarter Sport 4T 20W-50. Semisintético para motos 4T. API SL, JASO MA2. Viscosidad muy alta para motores de gran cilindrada y climas cálidos. Ficha RP_2065T."
+  },
+  {
+    "id": "REPSOL_SMARTER_VTWIN_4T_20W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol smarter v-twin 4t 20w50 mineral harley davidson v-twin refrigeración aire",
+    "text": "Repsol Smarter V-Twin 4T 20W-50. Mineral para grandes V-Twin refrigerados por aire o líquida. API SL, JASO MA2. Diseñado para motos estilo Harley Davidson con motores bicilíndricos en V. Ficha RP_2066T."
+  },
+  {
+    "id": "REPSOL_SMARTER_VTWIN_CUSTOM_4T_20W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol smarter v-twin custom 4t 20w50 100% sintético PAO harley indian kawasaki",
+    "text": "Repsol Smarter V-Twin Custom 4T 20W-50. 100% sintético PAO (Grupo IV) para V-Twin. API SN, JASO MA2. Para Harley Davidson, Indian, Honda, Kawasaki, Suzuki, Yamaha, BMW, Ducati. Máxima protección bicilíndrico en V. Ficha RP_2067T."
+  },
+  {
+    "id": "REPSOL_SMARTER_SCOOTER_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite scooter repsol smarter scooter 2t jaso fd smokeless bajo humo",
+    "text": "Repsol Smarter Scooter 2T. Para scooters 2T. JASO FD, API TC, Aprilia DFI, ISO L-EGD. Tecnología smokeless (bajo nivel de humo). Ideal para uso urbano en scooters de 2 tiempos. Ficha RP_2121Z."
+  },
+  {
+    "id": "REPSOL_RIDER_HIGH_MILEAGE_4T_25W60",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto repsol rider high mileage 4t 25w60 mototaxi alto recorrido mineral",
+    "text": "Repsol Rider High Mileage 4T 25W-60. Mineral para mototaxis y motos 4T de alto recorrido. API SG, JASO MA2. Alta viscosidad para mayor sellado en pistones. Viscosidad 100°C: 24 cSt."
+  },
+  {
+    "id": "REPSOL_SAILOR_OUTBOARD_JET_SKI_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite náutico repsol sailor outboard jet ski 2t nmma tc-w3 fueraborda moto de agua",
+    "text": "Repsol Sailor Outboard & Jet Ski 2T. Mineral de alta calidad para motores 2T fueraborda y motos de agua. NMMA TC-W3. Anticorrosión marina, evita pegado de segmentos y perlado de bujías. Ficha RP_5140Z."
+  },
+  {
+    "id": "REPSOL_SAILOR_GEAR_GL5_80W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite transmisión náutico repsol sailor gear gl-5 80w90 yamaha suzuki honda fueraborda",
+    "text": "Repsol Sailor Gear GL-5 80W-90. Aceite de transmisión para sistemas de cajas de cambio de embarcaciones. API GL-5. Para motores 2T y 4T fueraborda e intraborda: Yamaha, Nissan, Suzuki, Honda, Tohatsu. Ficha RP_5145L."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_FORK_OIL_5W",
+    "marca": "repsol",
+    "triggerQuery": "aceite horquilla repsol qualifier fork oil 5w amortiguador moto hidráulico sintético",
+    "text": "Repsol Qualifier Fork Oil 5W. Sintético hidráulico para horquillas y amortiguadores de moto. DIN 51524-HVLP. Viscosidad 40°C: 22 cSt. Alto índice de viscosidad 150. Para uso deportivo y urbano. Ficha RP_9000A."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_FORK_OIL_10W",
+    "marca": "repsol",
+    "triggerQuery": "aceite horquilla repsol qualifier fork oil 10w amortiguador moto hidráulico",
+    "text": "Repsol Qualifier Fork Oil 10W. Sintético hidráulico para horquillas y amortiguadores de moto. DIN 51524-HVLP. Viscosidad 40°C: 46 cSt. Índice de viscosidad 157. Compatibilidad con retenes. Ficha RP_9000B."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_FORK_OIL_15W",
+    "marca": "repsol",
+    "triggerQuery": "aceite horquilla repsol qualifier fork oil 15w amortiguador moto hidráulico",
+    "text": "Repsol Qualifier Fork Oil 15W. Sintético hidráulico para horquillas y amortiguadores de moto. Viscosidad 40°C: 64 cSt. Índice de viscosidad 160. Para usos que requieran mayor viscosidad. Ficha RP_9000G."
   }
 ]
