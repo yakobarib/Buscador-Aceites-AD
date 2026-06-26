@@ -1,0 +1,332 @@
+[
+  {
+    "id": "ADPARTS_FICHA_10",
+    "marca": "adparts",
+    "triggerQuery": "AD DS3 SAE 30 40 motor diesel MB 228.0 MAN 270",
+    "text": "AD Parts DS3 SAE 30/40 (ref. 10). Aceite mineral monogrado para motores diésel aspirados y sobrealimentados, flotas industriales y maquinaria obra pública. ACEA E2, API CF/SF. Homologaciones: MB 228.0, MAN 270, ALLISON C-3, MTU Type 1, CATERPILLAR TO-2, MIL L-2104-D/L-46152-C."
+  },
+  {
+    "id": "ADPARTS_FICHA_11",
+    "marca": "adparts",
+    "triggerQuery": "AD DS3 SAE 30 SAE 40 motor diesel aspirado ACEA E2 API CF MB 228.0 MAN 270 Caterpillar TO-2",
+    "text": "AD DS3 SAE 30 / SAE 40 (ref. 11). Aceite mineral monogrado para motores diésel aspirados y sobrealimentados en condiciones severas. ACEA E2, API CF/SF, MIL L-2104-D/L-46152-C. Homologaciones: ALLISON C-3, MB 228.0, MAN 270, MTU Type 1, CATERPILLAR TO-2. Para flotas de transporte industrial y maquinaria de obra pública."
+  },
+  {
+    "id": "ADPARTS_FICHA_12",
+    "marca": "adparts",
+    "triggerQuery": "AD MDX 15W50 motor gasolina diesel VW 501 MB 229.1",
+    "text": "AD Parts MDX 15W50 (ref. 12). Aceite mineral multigrado para motores gasolina y diésel incluyendo turbos con catalizador. ACEA A3/B4, API SM/CF. Homologaciones: MB 229.1, VW 501.01/505.00."
+  },
+  {
+    "id": "ADPARTS_FICHA_13",
+    "marca": "adparts",
+    "triggerQuery": "AD MHP 80W90 caja cambios diferencial MB 235.0 ZF TE-ML Voith",
+    "text": "AD Parts MHP 80W90 (ref. 13). Aceite mineral EP para cajas de cambio y diferenciales helicoidales e hipoides. API GL-5. Homologaciones: MB 235.0, MAN 342 Type M1, DTFR 12B100, DAF API GL-5, Renault Axles, Voith Turbo 132.00374400, MIL-L-2105D, ZF TE-ML 16B/17B/19B/21A."
+  },
+  {
+    "id": "ADPARTS_FICHA_16",
+    "marca": "adparts",
+    "triggerQuery": "AD MDX 10W40 Plus motor turismo gasolina diesel API SL",
+    "text": "AD Parts MDX 10W40 Plus (ref. 16). Aceite hidro-sintético para motores gasolina y diésel con/sin inyección directa, turismos y vehículos ligeros sin DPF ni SCR. API SL/CF."
+  },
+  {
+    "id": "ADPARTS_FICHA_17",
+    "marca": "adparts",
+    "triggerQuery": "AD SHP 75W90 caja cambios diferencial sintético ZF Volvo Scania MAN MB 235",
+    "text": "AD Parts SHP 75W90 (ref. 17). Aceite sintético para cajas de cambio y diferenciales. API GL-4/GL-5/MT-1. Homologaciones: MB 235.0/235.8, MAN 341 Z2/342 S1, ZF TE-ML 02B/05A/12L/12N/16F/17B/19C/21A, Volvo 97312, Scania STO 2:0/1:0/1:1, DAF GL-5, IVECO 18-1805 RAS1, Mack GO-J, Arvin Meritor 0-76-N, DTFR 12B140, Renault Axles, MIL PRF-2105E."
+  },
+  {
+    "id": "ADPARTS_FICHA_182",
+    "marca": "adparts",
+    "triggerQuery": "AD SHT 0W40 PLUS motor sintético MB 229.5 VW 502 Porsche A40",
+    "text": "AD Parts SHT 0W40 PLUS (ref. 182). Aceite 100% sintético para motores gasolina y diésel turbo, alta gama, intervalos extra largos. ACEA A3/B4, API SN. Homologaciones: MB 229.5, VW 502.00/505.00, Renault RN0700/RN0710, Porsche A40."
+  },
+  {
+    "id": "ADPARTS_FICHA_19",
+    "marca": "adparts",
+    "triggerQuery": "AD SDX 10W40 motor diesel pesado ACEA E4 E7 MB 228.5 MAN 3277 Volvo Scania",
+    "text": "AD Parts SDX 10W40 (ref. 19). Aceite sintético UHPD para motores diésel pesados, camiones, autobuses e industrial sin DPF. ACEA E4/E7, API CF. Homologaciones: MB 228.5, MAN M3277, Cummins CES 20072, DAF Extended Drain, Mack EO-N, MTU Type 3, Renault Trucks RXD/RLD-2, Scania LDF-3, Volvo VDS-3, DTFR 15B120."
+  },
+  {
+    "id": "ADPARTS_FICHA_20",
+    "marca": "adparts",
+    "triggerQuery": "AD ATF DEX II transmisión automática Dexron MB 236.9 ZF Volvo MAN",
+    "text": "AD Parts ATF DEX II (ref. 20). Fluido para transmisiones automáticas, convertidores de par y servodirecciones. Homologaciones: GM DEXRON II D, Ford Mercon, MB 236.9, MAN 339 V-1/Z-1/L-2, Allison C4, Volvo 97341, ZF TE-ML 04D/14A, Voith H55.6335, DTFR 13C170."
+  },
+  {
+    "id": "ADPARTS_FICHA_21",
+    "marca": "adparts",
+    "triggerQuery": "AD LDX 20W50 motor gasolina diesel ACEA A3 MB 229.1 VW 501",
+    "text": "AD Parts LDX 20W50 (ref. 21). Aceite mineral multigrado para motores gasolina y diésel, turismos e intensivo (taxi, GNC). ACEA A3/B4, API SM/CF. Homologaciones: MB 229.1, VW 501.01/505.00."
+  },
+  {
+    "id": "ADPARTS_FICHA_22",
+    "marca": "adparts",
+    "triggerQuery": "AD SDI 5W40 motor sintético ACEA A3 B4 MB 229.3 VW 502 GM Renault Porsche",
+    "text": "AD Parts SDI 5W40 (ref. 22). Aceite sintético para motores gasolina, diesel y turbo-diesel de turismos, furgonetas y 4x4. ACEA A3/B4, API SN/CF. Homologaciones: MB 229.3/226.5, VW 502.00/505.00, GM LL-B-025, Renault RN0700/RN0710, Porsche A40."
+  },
+  {
+    "id": "ADPARTS_FICHA_27",
+    "marca": "adparts",
+    "triggerQuery": "AD AGR STOU 15W40 tractor agrícola John Deere Massey Ferguson Ford ZF",
+    "text": "AD Parts AGR STOU 15W40 (ref. 27). Aceite mineral STOU para tractores agrícolas: motor, transmisión, embrague, frenos en baño e hidráulica. ACEA E2, API GL-4/CG-4/SF. Homologaciones: MB 228.1/227.1, John Deere J-27, Massey Ferguson M1145, Ford M2C-159B/C, Allison C-4, Caterpillar TO-2, ZF TE-ML 06B/07B."
+  },
+  {
+    "id": "ADPARTS_FICHA_28",
+    "marca": "adparts",
+    "triggerQuery": "AD AGR FLUID 10W30 UTTO tractor hidráulico John Deere Massey Ferguson Kubota ZF",
+    "text": "AD Parts AGR FLUID 10W30 (ref. 28). Aceite mineral UTTO para transmisiones, hidráulica, frenos en baño y tomas de fuerza en tractores. API GL-4. Homologaciones: John Deere J-20C, Massey Ferguson M1143/M1145, Ford M2C-134D, Kubota UDT, Volvo WB 101, Allison C-4, Caterpillar TO-2, ZF TE-ML 03E/05F/17E/21F, Parker Denison UTTO/THF, Valtra G2-08."
+  },
+  {
+    "id": "ADPARTS_FICHA_32",
+    "marca": "adparts",
+    "triggerQuery": "AD XTD ECO PLUS 15W40 motor diesel pesado ACEA E7 MB 228.3 Cummins Volvo MAN",
+    "text": "AD Parts XTD ECO PLUS 15W40 (ref. 32). Aceite mineral SHPD larga duración para motores diésel pesados Euro IV/V sin DPF. ACEA E7/E5, API CI-4/CH-4. Homologaciones: MB 228.3, MAN M3275-1, Cummins CES 20076/77/78, Volvo VDS-3, Renault RLD/RLD-2, Mack EO-N, CAT ECF-1-a/ECF-2, Detroit DFS 93K215, Deutz DQC III-18, MTU Type 2, JASO Global DHD-1."
+  },
+  {
+    "id": "ADPARTS_FICHA_34",
+    "marca": "adparts",
+    "triggerQuery": "AD SFE Plus 5W-30 ACEA A5/B5 Ford WSS-M2C-913-C/D Jaguar Land Rover",
+    "text": "AD SFE PLUS+ 5W-30. Aceite de motor sintético. ACEA A5/B5, API SL/CF. Aprobaciones OEM: FORD WSS-M2C-913-C/D, RENAULT RN0700, STJLR 03.5003 (Jaguar/Land Rover). Fuel Economy, low HTHS, alta resistencia al biodiesel. Intervalos extendidos."
+  },
+  {
+    "id": "ADPARTS_FICHA_35",
+    "marca": "adparts",
+    "triggerQuery": "AD MDXS Mega Plus 5W-40 ACEA C3 BMW LL-04 MB 229.51 VW 505",
+    "text": "AD MDXS Mega Plus 5W-40. Aceite de motor sintético. ACEA C3, API SN/CF. Aprobaciones OEM: BMW Long Life-04, GM Dexos2, FORD WSS-M2C917-A, MB 229.51, PORSCHE A40, VW 505.00/505.01. Mid SAPS, apto para DPF y catalizadores TWC. EURO 4/5."
+  },
+  {
+    "id": "ADPARTS_FICHA_36",
+    "marca": "adparts",
+    "triggerQuery": "AD MHP Special 85W-140 API GL-5 ZF TE-ML Volvo MAN diferencial",
+    "text": "AD MHP SPECIAL 85W-140. Aceite mineral para cajas de cambio y diferenciales. API GL-5, MIL-L-2105-D. Aprobaciones: MAN 342 Type M-1, VOLVO 1273.10/97310/97313/97314, ZF TE-ML 05A/07A/08/12E/16C/16D/21A. Para diferenciales e hipoides en condiciones severas."
+  },
+  {
+    "id": "ADPARTS_FICHA_37",
+    "marca": "adparts",
+    "triggerQuery": "AD MMP 80W API GL-4 MB 235.1 ZF TE-ML caja de cambios",
+    "text": "AD MMP 80W. Aceite mineral para cajas de cambio y diferenciales. API GL-4. Aprobaciones OEM: MB 235.1, ZF TE-ML 02B/17A. Para cambios, reductores finales y tomas de fuerza que requieran API GL-4."
+  },
+  {
+    "id": "ADPARTS_FICHA_38",
+    "marca": "adparts",
+    "triggerQuery": "AD MLS 85W-90 API GL-5 LS diferencial autoblocante limited slip",
+    "text": "AD MLS 85W-90. Aceite mineral para cajas de cambio y diferenciales. API GL-5 (LS), MIL-L-2105-D. Especialmente diseñado para diferenciales autoblocantes (limited slip) y frenos/embragues en baño de aceite. Aditivos LS anti-vibración y anti-ruido."
+  },
+  {
+    "id": "ADPARTS_FICHA_39",
+    "marca": "adparts",
+    "triggerQuery": "AD HTO 10W hidráulico transmisión Caterpillar TO-4 Allison C-4 ZF Komatsu",
+    "text": "AD HTO 10W. Fluido hidráulico y de transmisiones para maquinaria de obra pública. Aprobaciones: ALLISON C-4, CATERPILLAR TO-4, KOMATSU KES 07.868.1, ZF TE-ML 03C. Para circuitos hidráulicos, mandos finales, diferenciales, servotransmisiones, embragues y frenos de disco."
+  },
+  {
+    "id": "ADPARTS_FICHA_40",
+    "marca": "adparts",
+    "triggerQuery": "AD ATF DEX III transmisión automática GM Dexron III MB 236.9 ZF Allison Volvo",
+    "text": "AD ATF DEX III. Fluido sintético para transmisiones automáticas y servodirecciones. Aprobaciones: ALLISON C4/TES389/TES295, FORD MERCON V, GM DEXRON III H, MAN 339 V-2/Z-2/Z-11/L-1, MB 236.9, VOITH 55.6336, VOLVO 97341/AT101, ZF TE-ML 03D/04D/14B/17C/20B/25B."
+  },
+  {
+    "id": "ADPARTS_FICHA_41",
+    "marca": "adparts",
+    "triggerQuery": "AD PNEU AIR aceite neumático NSF H1 FDA alimentario parafínico",
+    "text": "AD PNEU AIR. Aceite para circuitos neumáticos. Aprobaciones: European/US Pharmacopoeia, NSF H1, Japan Food Additives, FDA 21 CFR 172.878/178.3620(a). Apto para contacto con alimentos. Para herramientas y mecanismos neumáticos."
+  },
+  {
+    "id": "ADPARTS_FICHA_45",
+    "marca": "adparts",
+    "triggerQuery": "AD SDX Plus 10W-40 ACEA E4 E6 E7 E9 API CK-4 MB 228.51 Volvo VDS-4 Scania MAN camión EURO VI",
+    "text": "AD SDX PLUS+ 10W-40. Aceite 100% sintético motor diésel vehículos pesados. ACEA E4/E6/E7/E8/E9/E11, API CK-4, JASO DH-2. Aprobaciones: CAT ECF-3, CUMMINS CES 20081/20086, DETROIT DIESEL 93K222, DEUTZ DQC-IV-18 LA, MACK EOS-4.5, MAN 3477/3775/3271-1, MB 228.51/235.31/228.52, MTU 3.1, RENAULT RLD-4, SCANIA LOW ASH, VOLVO VDS-4/4.5, DAF Extended Drain. EURO VI, low SAPS, DPF."
+  },
+  {
+    "id": "ADPARTS_FICHA_46",
+    "marca": "adparts",
+    "triggerQuery": "AD SCC 5W-30 ACEA C3 BMW LL-04 VW 504 507 MB 229.51 Porsche C30 long life",
+    "text": "AD SCC 5W-30. Aceite sintético Long Life motor turismo. ACEA C2/C3/A3/B4-08, API SN. Aprobaciones: BMW LL-04, MB 229.51, PORSCHE C30, VW 501.01/502.00/503.00/503.01/504.00/505.00/505.01/506.00/506.01/507.00. Para VW/Audi/BMW/Mercedes con DPF y TWC. EURO 4/5."
+  },
+  {
+    "id": "ADPARTS_FICHA_48",
+    "marca": "adparts",
+    "triggerQuery": "AD SRC 5W-30 ACEA C4 Renault RN0720 MB 226.51 low SAPS DPF",
+    "text": "AD SRC4 5W-30. Aceite de síntesis para motores Renault EURO 4 y EURO 5. ACEA C4 (cumple también C3). Aprobaciones: MB 226.51, RENAULT RN0720. Formulación low-SAPS y Fuel Economy. Intervalos de cambio 30.000 km."
+  },
+  {
+    "id": "ADPARTS_FICHA_49",
+    "marca": "adparts",
+    "triggerQuery": "AD STFE 5W-30 ACEA E7 E4 MB 228.5 MAN 3277 Volvo VDS-3 camión largo recorrido",
+    "text": "AD STFE 5W-30. Aceite motor diésel vehículos pesados, intervalos prolongados. ACEA E7/E4. Aprobaciones: DAF Extended Drain, DEUTZ DQC IV-10, MACK EO-N, MAN 3277, MB 228.5, MTU Type 3, RENAULT VI RXD/RLD-2, SCANIA LDF-3, VOLVO VDS-3. Más de 100.000 km. EURO III/IV/V."
+  },
+  {
+    "id": "ADPARTS_FICHA_54",
+    "marca": "adparts",
+    "triggerQuery": "AD SHP Plus 75W-80 API GL-4 VW G009317 BMW MTF LT-2 PSA Fiat caja cambios sintético",
+    "text": "AD SHP PLUS 75W-80. Aceite sintético para cajas de cambio y diferenciales. API GL-4. Aprobaciones OEM: VW G 009 317, BMW MTF LT-2, GM 1940764/1940768, PSA B71 2330, FIAT MZ6. Facilita cambio de marchas, excelente comportamiento en frío hasta -42°C."
+  },
+  {
+    "id": "ADPARTS_FICHA_55",
+    "marca": "adparts",
+    "triggerQuery": "AD SC3 5W-30 ACEA C3 BMW LL-04 GM Dexos2 MB 229.51 VW 505 Opel DPF",
+    "text": "AD SC3 5W-30. Aceite sintético motor turismo EURO 4/5. ACEA C3, API SN/CF. Aprobaciones: BMW Long Life-04, GM DEXOS2, MB 229.51/229.52, VW 505.00/505.01. Especialmente para motores GM/Opel con DPF y TWC. Low SAPS, Fuel Economy."
+  },
+  {
+    "id": "ADPARTS_FICHA_56",
+    "marca": "adparts",
+    "triggerQuery": "AD SC2 5W-30 ACEA C2 PSA B71 2290 Peugeot Citroën FAP DPF fuel economy",
+    "text": "AD SC2 5W-30. Aceite sintético motor turismo Peugeot/Citroën. ACEA C2, API SP/SN PLUS. Aprobaciones: PSA B 71 2290. Para Citroën y Peugeot con Filtro Activo de Partículas (FAP/DPF) y TWC. Low SAPS, ahorro combustible >2.5%. EURO 4/5."
+  },
+  {
+    "id": "ADPARTS_FICHA_57",
+    "marca": "adparts",
+    "triggerQuery": "AD MDXS 10W-40 Plus ACEA A3/B4 API SN/CF MB 229.3 VW 501 505 Renault RN0700",
+    "text": "AD MDXS 10W40 Plus+. Aceite de motor hidrosintético turismo y transporte ligero. ACEA A3/B4, API SN/CF. Aprobaciones: MB 229.3, VW 501.01/505.00, RENAULT RN0700/RN0710. Para gasolina y diésel con y sin inyección directa. Sin DPF ni catalizadores TWC."
+  },
+  {
+    "id": "ADPARTS_FICHA_58",
+    "marca": "adparts",
+    "triggerQuery": "AD SC1 5W-30 ACEA C1 Jaguar Land Rover STJLR 03.5005 Mazda JASO DL-1 low SAPS",
+    "text": "AD SC1 5W-30. Aceite sintético low SAPS para motores EURO 4/5. ACEA C1. Aprobaciones: JAGUAR/LAND ROVER STJLR.03.5005. Apto también para Mazda (JASO DL-1 o ACEA C1). Para motores Diesel V6 3.0L con DPF desde 2009. Muy bajo SAPS, HTHS < 3.5 mPas."
+  },
+  {
+    "id": "ADPARTS_FICHA_59",
+    "marca": "adparts",
+    "triggerQuery": "AD ZTD 15W-40 ACEA E7 E9 API CK-4 CJ-4 MB 228.31 Volvo VDS-4.5 MAN Renault camión",
+    "text": "AD ZTD 15W-40. Aceite motor diésel vehículos pesados tecnología THPD. ACEA E7/E9, API CK-4/CJ-4/CI-4/CI-4 Plus/SN. Aprobaciones: CAT ECF-3, CUMMINS CES 20086, DETROIT DFS93K222, DEUTZ DQC III-10 LA, MAN 3775, MACK EO-S-4.5, MB 228.31, MTU Type 2.1, RENAULT RLD-3, VOLVO VDS-4.5, FORD WSS-M2C171-F1. Mid SAPS, EURO VI."
+  },
+  {
+    "id": "ADPARTS_FICHA_60",
+    "marca": "adparts",
+    "triggerQuery": "AD SCB 5W-30 ACEA C3 VW 504 507 BMW LL-04 MB 229.51 Audi Seat Skoda long life DPF",
+    "text": "AD SCB 5W-30. Aceite sintético Long Life turismo gasolina y diésel. ACEA C3, API SN. Aprobaciones: BMW LL-04, MB 229.51, PORSCHE C30, VW 504.00/507.00. Para VW/Audi/Seat/Skoda con DPF y TWC. Intervalos extendidos, apto también para motores de gas."
+  },
+  {
+    "id": "ADPARTS_FICHA_61",
+    "marca": "adparts",
+    "triggerQuery": "AD HSD 0W-20 vehículo híbrido API SN RC ILSAC GF-6A arranque-parada",
+    "text": "AD HSD 0W-20. Aceite sintético para motores de gasolina en vehículos híbridos. API SN RC, ILSAC GF-6A (cumple también GF-5). Para ciclos frecuentes arranque-parada. Muy baja viscosidad, HTHS ≥ 2.6 cP. Facilita arranque en frío y reduce consumo eléctrico del motor de arranque."
+  },
+  {
+    "id": "ADPARTS_FICHA_62",
+    "marca": "adparts",
+    "triggerQuery": "AD SFA 5W-20 ACEA C5 Ford WSS-M2C 948-B Jaguar Land Rover STJLR EcoBoost",
+    "text": "AD SFA 5W-20. Aceite sintético motor turismo fuel economy. ACEA A1/B1/C5, API SN. Aprobaciones: FORD WSS-M2C 948-B (motor 1.0L EcoBoost 3 cilindros), JAGUAR-LAND ROVER STJLR.03.5004. Baja fricción, baja viscosidad HTHS, reducción emisiones CO2."
+  },
+  {
+    "id": "ADPARTS_FICHA_63",
+    "marca": "adparts",
+    "triggerQuery": "AD SLD 75W-80 API GL-4 MAN Volvo ZF TE-ML DAF Iveco Renault Eaton caja cambios pesado",
+    "text": "AD SLD 75W-80. Aceite sintético para cajas de cambio y diferenciales manuales vehículos pesados. API GL-4. Aprobaciones: MAN 341 Z-4, VOLVO 97307, ZF TE-ML 01L/02L/08/16K, DAF TRANSMISSIONS, IVECO 18-1807 MGS, RENAULT B0032/2 Annex 3, Eaton Europe Extended Drain. Hasta 300.000 km."
+  },
+  {
+    "id": "ADPARTS_FICHA_64",
+    "marca": "adparts",
+    "triggerQuery": "AD STB 10W-30 ACEA E9 E7 API CK-4 MB 228.31 Volvo VDS-4.5 MAN Cummins Renault camión mid SAPS",
+    "text": "AD STB 10W-30. Aceite sintético Mid SAPS motor diésel vehículos pesados. ACEA E9/E7, API CI-4/CI-4 Plus/CJ-4/CK-4, JASO DH-2. Aprobaciones: MB 228.31, VOLVO VDS-4.5, MACK EO-S-4.5, CUMMINS CES 20086, DETROIT DIESEL 93K222, DEUTZ DQC-III-18 LA, MAN 3775, MTU 2.1, CAT ECF-3, RENAULT RLD-3. EURO VI, apto GNC/GLP/biodiesel."
+  },
+  {
+    "id": "ADPARTS_FICHA_65",
+    "marca": "adparts",
+    "triggerQuery": "AD SDV 5W-30 ACEA E4 E6 E7 E9 API CK-4 MB 228.51 Volvo VDS-4.5 Scania LDF-4 MAN Renault camión",
+    "text": "AD SDV 5W-30. Aceite sintético motor diésel vehículos pesados EURO IV/V/VI. ACEA E4/E6/E7/E8/E9/E11, API CK-4/SN, JASO DH-2. Aprobaciones: MB 228.51/228.52, VOLVO VDS-4.5/VDS-3/CNG, CUMMINS CES 20081/20086, MAN M3677/3777/3477/3271-1/3775, DEUTZ DQC-IV-18 LA, CAT ECF-3/ECF-2/ECF-1-a, RENAULT RXD/RLD-3/RLD-2/RGD, SCANIA LDF-4, MACK EOS-4.5, DETROIT 93K222, DAF Extended Drain, MTU 3.1. Intervalos extendidos, low SAPS."
+  },
+  {
+    "id": "ADPARTS_FICHA_66",
+    "marca": "adparts",
+    "triggerQuery": "AD SPC 0W-30 ACEA C2 PSA B71 2312 Peugeot Citroën Fiat Suzuki Honda Mitsubishi DPF",
+    "text": "AD SPC 0W-30. Aceite sintético motor turismo fuel economy. ACEA C2, Mid SAPS. Aprobaciones: PSA PEUGEOT CITROËN B71 2312, FIAT 9.55535-GS1/9.55535-DS1. Diseñado para Suzuki, Citroën, Peugeot, Mitsubishi y Honda. Para DPF, nivel calidad ACEA C2. HTHS 2.9 cP mín."
+  },
+  {
+    "id": "ADPARTS_FICHA_67",
+    "marca": "adparts",
+    "triggerQuery": "AD SCA 0W-20 ACEA C5 C6 VW 508.00 509.00 Porsche C20 ILSAC GF-6A VAG Longlife",
+    "text": "AD SCA 0W-20 (ref. 67). Aceite sintético Low SAPS para motores del grupo VW (Audi, VW, Seat, Skoda). ACEA C5/C6, API SP/SN PLUS, ILSAC GF-6A. Homologaciones: VW 508.00/509.00, Porsche C20. Solo para motores de última generación (gasolina 2.0L TFSI, diésel 3.0L TDI CR). HTHS ≥ 2.6 mPas."
+  },
+  {
+    "id": "ADPARTS_FICHA_68",
+    "marca": "adparts",
+    "triggerQuery": "AD SFC 0W-30 ACEA C2 Ford WSS-M2C950-A Jaguar Land Rover STJLR 03.5007 Fiat 9.55535 DPF",
+    "text": "AD SFC 0W-30 (ref. 68). Aceite sintético Mid SAPS para vehículos Ford, Jaguar, Land Rover y Fiat con DPF. ACEA C2. Homologaciones: Ford WSS-M2C950-A, Jaguar-Land Rover STJLR.03.5007, Fiat 9.55535-GS1/DS1. Fuel Economy >2.5%, excelente comportamiento en frío."
+  },
+  {
+    "id": "ADPARTS_FICHA_69",
+    "marca": "adparts",
+    "triggerQuery": "AD SCV 0W-30 ACEA A5 B5 Renault RN0700 Volvo VCC 95200377 fuel economy",
+    "text": "AD SCV 0W-30 (ref. 69). Aceite sintético Fuel Economy para motores gasolina y diésel. ACEA A5/B5, API SL. Homologaciones: Renault RN0700, Volvo VCC 95200377. Compatible con postcatalizadores."
+  },
+  {
+    "id": "ADPARTS_FICHA_71",
+    "marca": "adparts",
+    "triggerQuery": "AD SCD 0W-30 ACEA C3 BMW Longlife-04 Porsche C30 VW 504.00 507.00 DPF VAG larga duración",
+    "text": "AD SCD 0W-30 (ref. 71). Aceite sintético Long Life para motores VAG gasolina y diésel con DPF. ACEA C3. Homologaciones: BMW Longlife-04, Porsche C30, VW 504.00/507.00. Intervalos hasta 50.000 km, HTHS ≥ 3.5 mPas."
+  },
+  {
+    "id": "ADPARTS_FICHA_72",
+    "marca": "adparts",
+    "triggerQuery": "AD SRC3 5W-30 ACEA C3 Renault RN17 Mid SAPS diesel gasolina intervalo prolongado",
+    "text": "AD SRC3 5W-30 (ref. 72). Aceite sintético Mid SAPS para vehículos Renault diésel y gasolina. ACEA C3. Homologaciones: Renault RN17. Alta resistencia a cizallamiento y oxidación, intervalos extendidos. Reducción CO2 hasta 1%."
+  },
+  {
+    "id": "ADPARTS_FICHA_73",
+    "marca": "adparts",
+    "triggerQuery": "AD SRC5 0W-20 ACEA C5 Renault RN17 FE Dacia Samsung motores 2018 sistemas postratamiento",
+    "text": "AD SRC5 0W-20 (ref. 73). Aceite sintético Fuel Economy para Renault, Dacia y Samsung desde 2018 con motores gasolina y diésel con postratamiento. ACEA C5, API SN. Homologaciones: Renault RN17 FE. No compatible con versiones Renault anteriores. Volatilidad Noack máx. 11%."
+  },
+  {
+    "id": "ADPARTS_FICHA_741",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD SC 5W-30 ACEA C2 C3 MB 229.51 VW 505 BMW LL-04 GM LL-B-025 Renault RN700 DPF",
+    "text": "AD Standard SC 5W-30 (ref. 741). Aceite sintético Mid SAPS para motores gasolina y diésel ligeros. ACEA C2/C3, API SN/CF. Homologaciones: Renault RN710/RN700, MB 229.51, GM LL-B-025, VW 505.00/505.01, BMW LL-04. Compatible con DPF. Reducción consumo combustible."
+  },
+  {
+    "id": "ADPARTS_FICHA_761",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD 80W90 API GL-5 MAN 342 MIL L-2105-D ZF TE-ML 05A 07A 08 diferencial hipoide",
+    "text": "AD Standard 80W90 (ref. 761). Aceite mineral EP para diferenciales hipoides y helicoidales. API GL-5, MIL L-2105-D. Homologaciones: MAN 342 Type M1/M2, ZF TE-ML 05A/07A/08/12E/16B/17B/19B/21A. Alta resistencia a cargas y temperaturas elevadas."
+  },
+  {
+    "id": "ADPARTS_FICHA_78",
+    "marca": "adparts",
+    "triggerQuery": "AD SPA 0W-20 ACEA C5 C6 PSA B71 2010 Peugeot Citroën Suzuki Honda Mitsubishi DPF",
+    "text": "AD Parts SPA 0W-20 (ref. 78). Aceite sintético Mid SAPS para motores gasolina y diésel ligeros con DPF. ACEA C5/C6, API SP. Homologaciones: PSA B71 2010. Diseñado para Peugeot, Citroën, Suzuki, Honda y Mitsubishi. Menor consumo de combustible, reducción CO2."
+  },
+  {
+    "id": "ADPARTS_FICHA_781",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD 75W90 API GL-4 MIL-L-2105 DAF IVECO ZF TE-ML 08 caja cambios manual sintético",
+    "text": "AD Standard 75W90 (ref. 781). Aceite sintético GL-4 para cajas de cambio manuales. API GL-4, MIL-L-2105. Homologaciones: DAF Transmissions, IVECO Transmissions, ZF TE-ML 08. Facilita el cambio y sincronización a bajas temperaturas."
+  },
+  {
+    "id": "ADPARTS_FICHA_79",
+    "marca": "adparts",
+    "triggerQuery": "AD SMC 0W-20 ACEA C5 C6 MB 229.71 GM DexosD Ford STJLR Opel Long Life",
+    "text": "AD Parts SMC 0W-20 (ref. 79). Aceite sintético Long Life para motores gasolina y diésel. ACEA C5/C6, API SP/SN PLUS. Homologaciones: MB-Approval 229.71, GM DexosD, FORD WSS-M2C952-A1, JAGUAR STJLR.03.5006, OPEL OV401547. Intervalos extendidos, bajo en cenizas."
+  },
+  {
+    "id": "ADPARTS_FICHA_791",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD SDV 5W-30 ACEA E6 E7 MB 228.51 camión pesado EURO V VI Mid SAPS",
+    "text": "AD Standard SDV 5W-30 (ref. 791). Aceite sintético Mid SAPS para vehículos pesados diésel EURO V/VI. ACEA E6/E7. Homologaciones: MB 228.51. Bajo SAPS, apto para postratamiento de gases. Fuel Economy."
+  },
+  {
+    "id": "ADPARTS_FICHA_801",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD SDX 10W-40 ACEA E4 E7 API CI-4 MAN M3277 Volvo VDS-3 MB 228.5 Mack EO-N Cummins Deutz camión pesado",
+    "text": "AD Standard SDX 10W-40 (ref. 801). Aceite sintético para vehículos pesados con intervalos extendidos. ACEA E4/E7, API CI-4. Homologaciones: MAN M3277, Volvo VDS-3, MB 228.5, Mack EO-N, MTU Type 3, Renault VI RLD-2, Cummins CES 20078, Deutz DQC III-18."
+  },
+  {
+    "id": "ADPARTS_FICHA_811",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD SDX PLUS 10W-40 ACEA E6 E7 E9 MAN M3477 M3271 MB 228.51 Volvo VDS-3 Cummins Deutz DQC IV low SAPS",
+    "text": "AD Standard SDX PLUS 10W-40 (ref. 811). Aceite sintético Low SAPS para vehículos pesados diésel con postratamiento, intervalos prolongados. ACEA E6/E7/E9, API CI-4. Homologaciones: MAN M3477/M3271-1, Volvo VDS-3, MB 228.51, Mack EO-N, MTU Type 3.1, Renault VI RLD-2, Cummins CES 20076/20077, Deutz DQC IV-10 LA."
+  },
+  {
+    "id": "ADPARTS_FICHA_821",
+    "marca": "adparts",
+    "triggerQuery": "AD STANDARD C3 5W-40 ACEA C3 MB 229.51 226.5 VW 505 BMW LL-04 GM Renault Ford DPF Mid SAPS turismo",
+    "text": "AD Standard C3 5W-40 (ref. 821). Aceite sintético Mid SAPS para motores gasolina y diésel ligeros con DPF. ACEA C3, API SN/CF. Homologaciones: Renault RN710/RN700, MB 229.51/226.5, GM LL-B-025, VW 505.00/505.01, BMW LL-04, Ford M2C-917A."
+  },
+  {
+    "id": "ADPARTS_FICHA_92",
+    "marca": "adparts",
+    "triggerQuery": "AD STL 5W-30 ACEA C3 Stellantis FPW9.55535 PSA B71 2297 Peugeot Citroën Fiat",
+    "text": "AD Parts STL 5W-30 (ref. 92). Aceite sintético Long Life para vehículos gasolina, híbridos y diésel del grupo Stellantis (PSA y FCA) con sistemas postratamiento. ACEA C3, API SP. Homologaciones: PSA B71 2297, STELLANTIS FPW9.55535/03. Mejora protección correas distribución. Intervalos 30.000 km."
+  }
+]

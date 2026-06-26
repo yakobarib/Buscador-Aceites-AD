@@ -14,6 +14,16 @@ with open(BASE + r"\corpus_embeddings_fichas.json", encoding="utf-8") as f:
     fichas = json.load(f)
 with open(BASE + r"\corpus_embeddings_repsol_pesado.json", encoding="utf-8") as f:
     repsol_pesado = json.load(f)
+with open(BASE + r"\corpus_embeddings_zf_teml.json", encoding="utf-8") as f:
+    zf_teml = json.load(f)
+with open(BASE + r"\corpus_embeddings_adparts_industrial.json", encoding="utf-8") as f:
+    adparts_industrial = json.load(f)
+with open(BASE + r"\corpus_embeddings_fuchs.json", encoding="utf-8") as f:
+    fuchs = json.load(f)
+with open(BASE + r"\corpus_embeddings_equivalencias.json", encoding="utf-8") as f:
+    equivalencias = json.load(f)
+with open(BASE + r"\corpus_embeddings_adparts_fichas.json", encoding="utf-8") as f:
+    adparts_fichas = json.load(f)
 
 # ── Trigger map for AD Parts by tipo/segmento ────────────────────────────────
 def adparts_trigger(p):
@@ -73,7 +83,7 @@ for p in adparts:
 # Combine: AD Parts PDF corpus, Febi/TC-Matic, brand catalogs
 # Deduplicate brand catalog entries by ID (keep first occurrence)
 seen_ids = set()
-all_entries = adparts_unified + febi_tcm + marcas_extra + normativas + fichas + repsol_pesado
+all_entries = adparts_unified + febi_tcm + marcas_extra + normativas + fichas + repsol_pesado + zf_teml + adparts_industrial + fuchs + equivalencias + adparts_fichas
 combined = []
 for e in all_entries:
     if e["id"] not in seen_ids:
@@ -88,6 +98,11 @@ print(f"Marcas (Castrol/Shell/Repsol/Eni/AD): {len(marcas_extra)}")
 print(f"Normativas:     {len(normativas)}")
 print(f"Fichas técnicas:{len(fichas)}")
 print(f"Repsol Motor Pesado+ATF+Trans:{len(repsol_pesado)}")
+print(f"ZF TE-ML specs:         {len(zf_teml)}")
+print(f"AD Parts Industrial:    {len(adparts_industrial)}")
+print(f"Fuchs (Titan+Pentosin): {len(fuchs)}")
+print(f"Equivalencias:          {len(equivalencias)}")
+print(f"AD Parts fichas PDF:    {len(adparts_fichas)}")
 print(f"Duplicates removed: {dupes_count}")
 print(f"Total:          {len(combined)}")
 print("No duplicate IDs" if dupes_count == 0 else f"Removed {dupes_count} duplicates")
