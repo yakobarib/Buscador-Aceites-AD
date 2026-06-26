@@ -1,0 +1,1010 @@
+[
+  {
+    "id": "FEBI_ADBLUE_01",
+    "marca": "febi",
+    "triggerQuery": "AdBlue",
+    "text": "AdBlue urea solución SCR NOx febi AUS32; DIN 70070; ISO 22241. referencias febi 171331 171335 46329 171336 171337"
+  },
+  {
+    "id": "FEBI_ATF_01",
+    "marca": "febi",
+    "triggerQuery": "ATF Dexron II",
+    "text": "aceite ATF caja automática transmisión febi Allison - C3/C4; ATF22; Dexron IID; Elf Renault Matic D2; Ford - ESD  M2C138-CJ; M2C186-A; M2c166-H; SQM-2C9010-A; Man - 339-V1; 339-Z1; MB 236.1; 236.2; 236.5; 236.6; 236.7; TUTELA - GI/A; ZF - TE-ML02F; TE-ML03; TE-ML09; TE-ML11; TE-ML14. for autom. transmission, converter and hydraulic steerings referencias febi 08971 30017 194478"
+  },
+  {
+    "id": "FEBI_ATF_02",
+    "marca": "febi",
+    "triggerQuery": "ATF ZF Lifeguard 5",
+    "text": "aceite ATF caja automática transmisión febi BMW - ATF-4; LA2634; Honda - PSF-S; Hyundai - PSF-3; Kia  - PSF-III; LGF5; MB - 236.11; Toyota - PSF-EH; VOITH - G607; VAG - LT71141; TL 52162; ZF - Lifeguardfluid 5; TE-ML11B; TE-ML14B. referencias febi 14738 29738 194472"
+  },
+  {
+    "id": "FEBI_ATF_03",
+    "marca": "febi",
+    "triggerQuery": "ATF Dexron III",
+    "text": "aceite ATF caja automática transmisión febi DEXRON 3; DEXRON IIIG; DEXRON IIIH; Ford - 9U7J-M2C919-AB; 9U7J-M2C919-BA; WSA-M2C195-A; WSS-M2C919-E; WSS-M2C938-A;Honda - Z1; MAN - 339 V1; 339 V2; MB - 339.V2; 339.Z2; 235.71; 236.6; 236.9; 236.10; 236.13; MERCON - V; Peugeot - ZF4HP 14; ZF4HP 18; VAG - TL 52533; ZF - TE-ML14C. for autom. transmission, converter and hydraulic steerings referencias febi 22806 30018 194477 26680 26681"
+  },
+  {
+    "id": "FEBI_ATF_04",
+    "marca": "febi",
+    "triggerQuery": "ATF CVT",
+    "text": "aceite ATF caja automática transmisión Blue Print BMW - CVT Fluid EZL799; Daihatsu - AMIX CVTF-DC; Dodge - CVTF+4; NS-2; Fiat - CVT 75W80; Ford - CVT 23/30; WSS -M2C928-A; WSS-M2C933-A; GM - DEX-CVT; Honda - HCF-2; Hyundai - CVTF; MB - 236.20; MERCON - C; Mitsubishi - CVTF-J4; Nissan - NS-1; NS-2; NS-3; Renault - NS-2; Subaru - Lineartronic ECVT; Lineartronic iCVT; NS-II; Suzuki - CVT Green1; NS-2; TC; Toyota - CVT Fluid FE; CVT Fluid Fc; VAG - TL521 16; TL521 80. for CVT gearbox referencias febi ADG05529 27975 193916 195989"
+  },
+  {
+    "id": "FEBI_ATF_05",
+    "marca": "febi",
+    "triggerQuery": "ATF Dexron VI",
+    "text": "aceite ATF caja automática transmisión Blue Print DEXRON VI; MB - 236.41; MERCON LV; VOITH - H55.6335.XX. referencias febi ADG05531 32600 32605 194470"
+  },
+  {
+    "id": "FEBI_ATF_06",
+    "marca": "febi",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión febi ATF 134; DSIH 6P805; MB - 236.14. referencias febi 29449 36449 194428 38901 38902"
+  },
+  {
+    "id": "FEBI_ATF_07",
+    "marca": "febi",
+    "triggerQuery": "ATF SP-IV",
+    "text": "aceite ATF caja automática transmisión Blue Print ATF - M-1375.4; BMW - ATF2; Ford - WSS-M2C938-A; Hyundai - ATF SP-IV; Jaguar - Fluid 8432; Kia - ATF SP-IV; Mercon - SP; ZF - S671 090 255. referencias febi ADG05530 34608 38935 38936 38937"
+  },
+  {
+    "id": "FEBI_ATF_08",
+    "marca": "febi",
+    "triggerQuery": "ATF Dexron III",
+    "text": "aceite ATF caja automática transmisión Blue Print Aisin Warner - AW-1; ATF -AW-1; SP-II; SP-IIM; SP-III; T-IV; BMW - ATF-6; Chrysler - ATF +4; Daihatsu - Alumix ATF; DEXRON III; ELFMATIC J^; Fiat - 9.55550-AV1; 9.55550-AV2; Typo T-IV; Ford - WSS-M2C922-A1; WSS-M2C924-A; Honda - ATF Z-I; DW1; Isuzu - Besco ATFII; Besco ATFIII; JASO - M135 Typ 1A; JWS 3309; JWS 3324; Kia - ATF Red 1K; SP-II; SP-III; SP-IVRR; Mazda - ATF M-III; ATF M-V; Mitsubishi - SPII; SPIII; Nissan - ATF-Matic D; ATF-Matic J; C/D/J; Matic S; Peugeot - ATF AW-1; SAAB - ATF 3309; Subaru - ATF Special; Suzuki - 3309; 3317; AW1; Toyota - Type D-2/WS; Type T-II; TTPE T-III; TYPE T-IV; WS; TUTELA - GI/E; GI/V; VI. referencias febi ADG05532 29934 101161 194411 101162"
+  },
+  {
+    "id": "FEBI_ATF_09",
+    "marca": "febi",
+    "triggerQuery": "ATF ZF Lifeguard 8",
+    "text": "aceite ATF caja automática transmisión febi ATF3+; Fiat - 9.55550-AV5; Jeep - ATF LGF8; Tutela - AS8; ZF - Lifeguardfluid d8; Lifeguardfluid d9. referencias febi 39095 39096 39097 39098 107393"
+  },
+  {
+    "id": "FEBI_ATF_10",
+    "marca": "febi",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión febi ATF 134FE; MB - 236.15. referencias febi 33889 100706 194429 100707 108991"
+  },
+  {
+    "id": "FEBI_ATF_11",
+    "marca": "febi",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión febi MB - 236.16; 236.17. referencias febi 47716 100708 194473 100709 107394"
+  },
+  {
+    "id": "FEBI_ATF_12",
+    "marca": "febi",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión febi Mazda - ATF FZ. referencias febi 177652 197758 194427"
+  },
+  {
+    "id": "FEBI_ATF_13",
+    "marca": "febi",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión febi AISIN WARNER AW-2; AW2; FORD MERCON ULV; DEXRON ULV; BMW ATF 7 referencias febi 183413 197771 194445"
+  },
+  {
+    "id": "FEBI_FRENOS_01",
+    "marca": "febi",
+    "triggerQuery": "líquido frenos DOT 4",
+    "text": "líquido de frenos DOT febi DOT DOT 4 FMVSS 116 DOT3/4; FORD - SAM-6C9103-A; GM - GME L5104; Jaguar - MNA2829AA; XR83M6C25 A; MB - 331.0; Renault - 41-02-001; SAE J 1703; Super DOT 4; VAG - TL 766X/Y. DOT4 Plus referencias febi 26748 180589 23930 23932"
+  },
+  {
+    "id": "FEBI_FRENOS_02",
+    "marca": "febi",
+    "triggerQuery": "líquido frenos DOT 4",
+    "text": "líquido de frenos DOT febi DOT DOT 4 DBL 7760 Typ DOT4; DOT 4; FMVSS -116 DOT3; DOT4; Ford - SAM-6C9103-A; GM - GME L5 104; ISO 4985; Renault - 41-02-001; SAE J 1703; VAG - TL7766X/Y. DOT4 referencias febi 26746 180588 26461 21754"
+  },
+  {
+    "id": "FEBI_FRENOS_03",
+    "marca": "febi",
+    "triggerQuery": "líquido frenos DOT 4; DOT 4 LV",
+    "text": "líquido de frenos DOT febi DOT DOT 4; DOT 4 LV DOT 4 Class6; FMVSS- 116 DOT4; Ford - WSS-M6C65-A2; ISO - 4925 class3; class4; class6; JIS - K2233 class3; class4; class6; SAE- J 1703; J 1704; VAG - VW501 14. DOT4 LV referencias febi 171876 180590 171874 171875"
+  },
+  {
+    "id": "FEBI_FRENOS_04",
+    "marca": "febi",
+    "triggerQuery": "líquido frenos DOT 5.1",
+    "text": "líquido de frenos DOT febi DOT DOT 5.1 FMVSS - 116 DOT 5.1; ISO - 4925 class 3; 4925 class 4; 4925 class 5.1; SAE - J1703; J1704. DOT 5.1 DOT 5.1 0,5L referencias febi 180583 180584 180591"
+  },
+  {
+    "id": "FEBI_FRENOS_05",
+    "marca": "febi",
+    "triggerQuery": "líquido frenos DOT 5.1",
+    "text": "líquido de frenos DOT febi DOT DOT 5.1 FMVSS - 116 DOT 5.1; ISO - 4925 class 3; 4925 class 4; 4925 class 5.1; SAE - J1703; J1704. DOT 5.1 EHV DOT 5.1 EHV 0,25L referencias febi 180585 180586 180587 180592"
+  },
+  {
+    "id": "FEBI_REFRIG_01",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi MB - 325.2. G11 (Concentrate) referencias febi 02374 88541"
+  },
+  {
+    "id": "FEBI_REFRIG_02",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi ASTM - D3306; CUNA - NC 956-16; G48; MAN - 324NF; MB 325.2; Paraflu - 11; VAG - TL774-C G11 (Concentrate) referencias febi 01089 22268 22270 05011 31276"
+  },
+  {
+    "id": "FEBI_REFRIG_03",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi VAG - TL774-D. G12 (Concentrate) referencias febi 01381 22272 22274 12710 33830"
+  },
+  {
+    "id": "FEBI_REFRIG_04",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi ASTM D3306; D4340; D4985; DEXCOOL; Ford - WSS-M97B44-D; G12 PLUS; G30; G33; GM - 1825M; 1899M; SATURN; MAN - 324SNF; MB - 325.3; NATO S-729; NF R15 1601; Paraflu - HT; UP; PSA - B71 5110; SAE - J1034; Toyota - Super Long Life Coolant; VAG  - TL774-D; TL774-F; Volvo - VCS. G12+ (Concentrate) LILA, G12 + referencias febi 19400 19402 22276 22278 33831"
+  },
+  {
+    "id": "FEBI_REFRIG_05",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi VAG - TL774D. G12 (-35°C Ready Mix) referencias febi 172005 172006 172007"
+  },
+  {
+    "id": "FEBI_REFRIG_06",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi Glaceol RX Typ D; GM - 1825M; 1899M; Renault - Type D; SAE J 1034 (-35°C Ready Mix) referencias febi 26580 26581 26582"
+  },
+  {
+    "id": "FEBI_REFRIG_07",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi MB - 325.0 (-35°C Ready Mix) referencias febi 24196"
+  },
+  {
+    "id": "FEBI_REFRIG_08",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi MAN - 324 Type Si-OAT; MB - 325.5; 325.6; SAE J1034; Scania - TB1451; VAG - TL 774G. G12++ (Concentrate) referencias febi 37400 37401 37402"
+  },
+  {
+    "id": "FEBI_REFRIG_09",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi SAE J1034; VAG - TL 774-J. G13 (Concentrate) referencias febi 38200 38201 38202"
+  },
+  {
+    "id": "FEBI_REFRIG_10",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi Chrysler - MS-7170; Deutz - DQC CA-14; Fiat - 9.55523; Ford - ESD-M97B49-A; GM - GME L1304; Iveco - Standard 18-1830; MTL 5048; VAG - TL774C. G11 (-35°C Ready Mix) referencias febi 171998 171999 172003"
+  },
+  {
+    "id": "FEBI_REFRIG_11",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi BMW - GS94000; Cummings - CES 14439; CES 14603; DAF - 74002; Deutz - DQC CB-14; Ford - WSS-M97B44-D; GM - 6277M; GMW3420; MAK - A4.05.09.01; Mazda - MEZ MN121D; MB - 325.3; SAAB - B0401065; STLLR651.5003; VAG - TL-774F. G12+ (-35°C Ready Mix) referencias febi 172009 172010 172011"
+  },
+  {
+    "id": "FEBI_REFRIG_12",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi ASTM D 3306; G13; VW TL 774-J G13 (-35°C Ready Mix) referencias febi 172015 172016 172017"
+  },
+  {
+    "id": "FEBI_REFRIG_13",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi G12++; MAN 324 Typ Si-OAT; MB 325.5; MB 325.6; SAE J1034; Scania TB 1451; VW TL 774-G G12++ (-35°C Ready Mix) referencias febi 172018 172019 172020"
+  },
+  {
+    "id": "FEBI_REFRIG_14",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi VW TL 774 C; A1 (G11)/D(G12)/F(G12+)/G(12++)/J(G13)/L(G12Evo); BMW LC-18; BMW LC-87; Deutz DQC CC-14; ASTM D3306; A1ASTM D4985; AS 2108-2004; BS 6580:2010; CUNA NC 956-16; JIS K 2234:2006; SAE J1034; A1SANS 1251:2005; Cummins CES 14603/14439; ASTM D6210; China GB 29743-2013; MTU MTL 5048; Toyota Long Life Coolant 1WW/2WW; MB 325.0; MAN 324 NF/324; SNF/324 Si-OAT; Deutz DQC CA-14/CB-14; Iveco 18-1830 G12evo (Concentrate) G12evo (concentrado) referencias febi 183366 183367 183368"
+  },
+  {
+    "id": "FEBI_REFRIG_15",
+    "marca": "febi",
+    "triggerQuery": "refrigerante",
+    "text": "refrigerante anticongelante febi BMW LC-18; ASTM D3306; Cummins CES 14603/14439; Deutz DQC CC-14; ASTM D6210; China GB 29743-2013; Deutz DQC CA-14/CB-14; Fiat 9.55523; Ford ESD-M97B49-A; Iveco 18-1830; MAN 324 NF/324 SNF/324 Si-OAT; MB 325.0 ;MTU MTL 5048; Toyota Long Life Coolant 1WW/2WW; VW TL 774C (G11)/D(G12)/F(G12+)/G(12++)/J(G13)/L(G12Evo); ASTM D4985; AS 2108-2004 ;BS 6580:2010; CUNA NC 956-16; JIS K 2234:2006; SAE J1034; SANS 1251:2005; BMW LC-87 18 LC (Concentrate) 18 LC (concentrado) referencias febi 183409 183410 183411"
+  },
+  {
+    "id": "FEBI_MOTOR_01",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 10W-40",
+    "text": "aceite de motor gasolina diésel febi viscosidad 10W-40 ACEA A3/B4 API CF; SN ACEA - A3; B4; API - SL/CF; MB - 229.1; VAG - 501 01; 505 00. SAE 10W-40 referencias febi 32931 32932 32933 32934 32935"
+  },
+  {
+    "id": "FEBI_MOTOR_02",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 20W-50",
+    "text": "aceite de motor gasolina diésel febi viscosidad 20W-50 ACEA A3/B4; E7 API CI-4/SL ACEA - A3; B3; B4; E7; ALLISON - C; API - CI-4 / SL; CAT - ECF-1a; ECF-2; Cummins - CES 20071/72/76/77/78; CES 2072; CES 20076; CES 20077; CES 20078; Deutz - DQCIII-05; MACK - EO-MPLUS; MAN - 3275; MB - 228.3; 229.1; MTU - Type2; Renault - RLD-2; Volvo - VDS-3. SAE 20W-50 referencias febi 32921 32922 195448 32923 32924"
+  },
+  {
+    "id": "FEBI_MOTOR_03",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-40",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-40 ACEA A3/B4 API SN/CF ACEA - A3; B4; API - SN/CF; BMW - Longlife-01; GM - LL-B 025; MB - 226.5; 229.3; Porsche - A40; PSA - B 712296; Renault - RN0710; VAG - 502 00; 505 00. SAE 5W-40 referencias febi 32936 32937 32938 32939 32940"
+  },
+  {
+    "id": "FEBI_MOTOR_04",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 ACEA C3 API SN/CF ACEA - C3; API - SN/CF; BMW - Longlife-04; Chrysler - MS-11106; MB - 229.51; Porsche - C30; VAG - 504 00; 507 00. SAE 5W-30 Longlife Plus referencias febi 32945 32946 32947 32948 39337"
+  },
+  {
+    "id": "FEBI_MOTOR_05",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 15W-40",
+    "text": "aceite de motor gasolina diésel febi viscosidad 15W-40 ACEA A3/B4; E2; E7 API CI-4/SL ACEA - A3; B4; E2; E7; API - CI-4/SL; CAT - ECF-1a; ECF-2; CUMMINS - CES 20076; CES 20077; CES 20078; Deutz - DQC-III; MACK - EO-MPLUS; MAN - 3275; MB - 228.3; 229.1; MTU Type 2; Renault - RLD-2; Volvo - VDS-3; VAG - VW501 01; 505 00. SAE 15W-40 referencias febi 32925 32926 32927 195455 32928"
+  },
+  {
+    "id": "FEBI_MOTOR_06",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 ACEA C2; C3 API SN/CF ACEA - C3; API - SN/CF; BMW - Longlife-04; GM - Dexos 2; MB - 229.51; 229.52; VAG - 502 00; 505 00; 505 01. SAE 5W-30 Longlife referencias febi 32941 32942 32943 32944 39336"
+  },
+  {
+    "id": "FEBI_MOTOR_07",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-20",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-20 ACEA C5 VW 508 00 / 509 00 SAE 0W-20 Longlife IV referencias febi 177649 177650 177651"
+  },
+  {
+    "id": "FEBI_MOTOR_08",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-40",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-40 ACEA A3/B4 API SN/CF ACEA - A3; B4; API - SN/CF; BMW - Longlife-01; Ford - WSS M2C937-A; MB - 229.3; 229.5; Porsche - A40 ; VAG - 502.00; 505.00. SAE 0W-40 referencias febi 101140 101141 101142 101144"
+  },
+  {
+    "id": "FEBI_MOTOR_09",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 ACEA A1/B1; A5/B5 API SN ILSAC GF-3; GF-4 ACEA - A1; B1; A5; B5; API - SN/CF; Ford - WSS- M2C913-C;  WSS- M2C913-D; ILSAC - GF-3; GF-4; Mazda - Original motor oil Ultra 5W-30; Renault - RN0700; STJLR.03.5003. SAE 5W-30 HC-FO referencias febi 101150 101151 101152 101154"
+  },
+  {
+    "id": "FEBI_MOTOR_10",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 10W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 10W-30 ACEA A3/B4 API SN/CF ACEA - A3; B4; API - SN/CF; MB - 229.3; VAG - VW502 00; 505 00. SAE 10W-30 ACEITE DE MOTOR 1L referencias febi 104912 104913"
+  },
+  {
+    "id": "FEBI_MOTOR_11",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-20",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-20 ACEA A1/B1; C5 API SN ILSAC GF-5 API - SN; Chrysler - MS6395; Fiat - 9.55535-CR1; Ford - WSS-M2C948-B; ISLAC GF-5. SAE 5W-20 HC E-FO referencias febi 108350 108351 108352"
+  },
+  {
+    "id": "FEBI_MOTOR_12",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 ACEA C3; C4 ACEA - C3;C4; MB - 226.51; 229.31; 229.51; Renault - RN0720. SAE 5W-30 C4 referencias febi 108360 108361 108362"
+  },
+  {
+    "id": "FEBI_MOTOR_13",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 API SN Plus/RC ILSAC GF-5 API - SN PLUS RC; Chrysler - MS6395; DEXOS - Dexos1; Dexos1 Gen 2; GM - 4718M; 6094M; Honda - HTO-06; ISLAC - GF-5; GF-6; Fiat - 9.55535-CR1; Ford - WSS-M2C946-A; WSS-M2C946-B1; WSS-M2C959-A; WSS-M2C961-A1. SAE 5W-30 D1 referencias febi 172169"
+  },
+  {
+    "id": "FEBI_MOTOR_14",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-30 ACEA C2 PSA B71 2312 (pend) SAE 0W-30 C2 referencias febi 172187 172188 172189"
+  },
+  {
+    "id": "FEBI_MOTOR_15",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-30 ACEA C2 ACEA - C2; Ford - WSS-M2C950-A; Jaguar/Land Rover - STJLR.03.5007; Toyota - Quartz Ineo First. SAE 0W-30 D-FO referencias febi 172202 172203 172204"
+  },
+  {
+    "id": "FEBI_MOTOR_16",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-30 ACEA A5/B5; C2 API SN/CF ACEA - A5; B5;C2; API - CF; SN; Fiat - 9.55535-S1; Honda; PSA - B71 2290; Subaru; Toyota. SAE 5W-30 C2 referencias febi 173443 173444 173445"
+  },
+  {
+    "id": "FEBI_MOTOR_17",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-20",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-20 ACEA C5; C6 API SN; SN Plus/RC; SN+; SP/RC ILSAC GF-5; GF-6A BMW Longlife-17 FE+; MB 229.71 SAE 0W-20 Flex LA referencias febi 177640 177647 177648"
+  },
+  {
+    "id": "FEBI_MOTOR_18",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-30",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-30 ACEA C3 API SN BMW Longlife-04; MB 229.52; VW 504 00 / 507 00 SAE 0W-30 Longlife Plus referencias febi 194614 194635 194638 195096 195097"
+  },
+  {
+    "id": "FEBI_MOTOR_19",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 5W-40",
+    "text": "aceite de motor gasolina diésel febi viscosidad 5W-40 ACEA C3 API SN ACEA C3; API CF; API SN; BMW Longlife-04; Fiat 9.55535-GH2; Fiat 9.55535-S2; Fiat 9.55535-T2; Ford WSS-M2C917-A; GM dexos 2; GM-LL-A-025; GM-LL-B-025; MB 226.5; MB 229.31; MB 229.51; Porsche A40; Renault RN0700; Renault RN0710; VW 502 00; VW 505 00; VW 505 01 SAE 5W-40 C3 referencias febi 195457 195458 195459 195460 195461"
+  },
+  {
+    "id": "FEBI_MOTOR_20",
+    "marca": "febi",
+    "triggerQuery": "aceite motor 0W-20",
+    "text": "aceite de motor gasolina diésel febi viscosidad 0W-20 ACEA C5; C6 API SP ACEA C5; ACEA C6; API SP; Fiat 9.55535-DM1; Fiat 9.55535-DSX; Fiat 9.55535-GSX; PSA B71 2010 SAE 0W-20 P SAE 0W-20 referencias febi 197292 197293 197294 197295 197296"
+  },
+  {
+    "id": "FEBI_TRANS_01",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-85",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-85 API - GL-5; API - GL-5; BMW - Hypoid Axle Oil G1; Fiat - 9.55550-DA3; MB - 235.7; SAE 75W-85 (GL-5) referencias febi 48785"
+  },
+  {
+    "id": "FEBI_TRANS_02",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W API GL-4 API - GL-4; BOT 303; 350M3; GM - BOT 303; MB - 235.73; SAE - 75W; 75W (GL4); Toyota - Gear Oil LV - GL-4 75W. SAE 75W (GL-4) referencias febi 21829"
+  },
+  {
+    "id": "FEBI_TRANS_03",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-90",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-90 API GL-5 Castrol - MTF 97309; ESD -M8049; MTF - 0063; Subaru - Gear Oil Extra T; SAE 75W-90 (GL-5) referencias febi 32590 194014"
+  },
+  {
+    "id": "FEBI_TRANS_04",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi API - GL4; BMW Drivelogic 7-speed; DCTF-1; DCTF-1+; Dia Queen SSTF-1; Ford WSS-M2C936-A; MB - 236.21; 236.24; Mitsubishi - XTC-SST; MTF-LT-5; Petosin - FFL-3; FFL-4; Porsche - DCT; PSA - DCS 6-speed; Renault - EDC 6-speed; VAG - TL52 182. Cambio marchas directo (DCTF-1) referencias febi 39070 39071 194480 109672"
+  },
+  {
+    "id": "FEBI_TRANS_05",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-80",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-80 API - GL-5; GL-3 (SAE 75W85); GL-4 PLUS (SAE 75W85); BOT 402; Castrol - MTF BOT338; Honda - MTF; Land Rover - MTF-94; MS-9224. SAE 75W-80 (GL-5) CAJA DE CAMBIOS referencias febi 40580"
+  },
+  {
+    "id": "FEBI_TRANS_06",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi VAG - TL 52 529-C Cambio marchas directo (DCTF-2) referencias febi 49700 194479"
+  },
+  {
+    "id": "FEBI_TRANS_07",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-80",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-80 API GL-4 API - GL-4; DAF - Premium 75W80; Xtreme75W80; Iveco - 18-1807 MGS2; MAN - 341 Type Z5; MB - 235.41; Volvo - 97307; ZF - TE-ML01E; TE-ML01L; TE-ML02D; TE-ML02E; TE-ML02L; TE-ML08; TE-ML16K; ZF003373. SAE 75W-80 (GL-4) referencias febi 170126 170127 170134"
+  },
+  {
+    "id": "FEBI_TRANS_08",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi API GL-4 / GL-5; MT-1 API - GL-4; GL5; Arvin Meritor - 0-76-N; Detroit Diesel - 93K219.01; John Deere - JDM J11E; J11G; Man - 341 Type E3; 341 Type Z2; 342 Type M2; 342 Type M3; M3343 Type S; MB - 235.0; 235.8; MF1134; MIL - L2105; PRF-2105E; SAE J2360; Scania - STO 1:0; Total - Transmission dual9FE 75W90; Volvo - 97312; ZF -TE-ML02B; TE-ML05A;Te-Ml05B; TE-ML07A; TE-ML08; TE-ML12B; TE-ML12E; TE-ML12L; TE-ML12N; TE-ML16B; TE-ML16F; TE-ML17B; TE-ML19B; TE-ML19C; TE-ML21A; TE-ML21B SAE 75W-90 (GL-4/5) referencias febi 170140 170141 170142"
+  },
+  {
+    "id": "FEBI_TRANS_09",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 80W-90; 90",
+    "text": "aceite transmisión caja cambios febi viscosidad 80W-90; 90 API GL-4 / GL-5 API GL-4; API GL4 SAE 80W; API GL4 SAE 80W-90; API GL-5; API GL5 SAE 80W-90; CASE MS 1316; Castrol EPX; DTFR 12B100; Ford WSP-M2C197-A; John Deere JDM J11E; MAN 341 TYPE E2; MAN 341 TYPE Z2; MAN 342 TYPE M1; MAN 342 TYPE M2; MAN M 3343 TYPE M; MB 235.0; NH 520A; SAE 80W-90; Scania STO 1:0; SDFG OP 1705; STEYR B-101; Tranself Universal FE 80W90; Volvo 97310; ZF TE-ML 01H; ZF TE-ML 02B; ZF TE-ML 05A; ZF TE-ML 07; ZF TE-ML 08; ZF TE-ML 12L; ZF TE-ML 12M; ZF TE-ML 16B; ZF TE-ML 17H; ZF TE-ML 19B; ZF TE-ML 21A SAE 80W-90 (GL-4/5) SAE 80W-90 (GL-4/5) referencias febi 196599 170166 170167 170168"
+  },
+  {
+    "id": "FEBI_TRANS_10",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi BMW - DCTF-2; Ford - F-DC; MB - 239.21; Renault - DW5 Cambio marchas directo (DCTF-G) referencias febi 171871 196735 194483"
+  },
+  {
+    "id": "FEBI_TRANS_11",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-80",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-80 API GL-4 API GL-4; BMW MTF LT-3; FIAT 9.55550-MX3; FIAT 9.55550-MZ1; FORD M2C200-C; JWS 227; LAND ROVER MTF-94; NISSAN MT-XZ; NISSAN MT-XZ TYP TL/JR; PSA B71 2330; SAE 75W-80; VOLVO 97308; VW 501 50; FORD M2C200-C2; FORD M2C200-C3 SAE 75W-80 (GL-4) SAE 75W-80 (GL-4) referencias febi 180073"
+  },
+  {
+    "id": "FEBI_TRANS_12",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 70W-80",
+    "text": "aceite transmisión caja cambios febi viscosidad 70W-80 API GL-5; BMW G3; BMW G5; BMW Hypoid Axle Oil G3; BMW Hypoid Axle Oil G5; SAE 75W-80 (GL-5) SAE 70W-80 (GL-5) SAE 70W-80 (GL-5) referencias febi 184247"
+  },
+  {
+    "id": "FEBI_TRANS_13",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi EDF2; KAF1; MB 237.11; TESLA EDF-2; TESLA KAF1 EDF-2 referencias febi 184251"
+  },
+  {
+    "id": "FEBI_TRANS_14",
+    "marca": "febi",
+    "triggerQuery": "caja cambios",
+    "text": "aceite transmisión caja cambios febi API GL-5-LS BMW Hypoid Axle Oil G1; FIAT 9.55550-DA6; FIAT 9.55550-DA7; FIAT 9.55550-DA9; FORD WSD-M2C200-C; FORD WSD-M2C200-C2; Hypoid Axle Oil G1; SAE 75W-90 SAE 75W-90 (GL-5) LS referencias febi 194490"
+  },
+  {
+    "id": "FEBI_TRANS_15",
+    "marca": "febi",
+    "triggerQuery": "caja cambios 75W-80",
+    "text": "aceite transmisión caja cambios febi viscosidad 75W-80 API GL-4 BMW MTF LT-3; Fiat 9.55550-MX3; Fiat 9.55550-MZ1; Ford M2C200-C; Ford M2C200-C2; Ford M2C200-C3; JWS 227; LAND ROVER MTF-94; NISSAN MT-XZ; NISSAN MT-XZ TYP JR; NISSAN MT-XZ TYP TL; PSA B71 2330; Volvo 97308; VW 501 50 SAE 75W-80 (GL-4) SAE 75W-80 (GL-4) referencias febi 197766"
+  },
+  {
+    "id": "FEBI_HID_01",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi MB - 343.0 Suspension Hydroneumática y Regulación Nivel referencias febi 02615"
+  },
+  {
+    "id": "FEBI_HID_02",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi CHF - 11S; Chrysler - MS-11655; Citroen - Fluide LDS; Pentosin - CHF 11-S. Hidraulica Central , Sevodireccion y Control de Nivel referencias febi 06161"
+  },
+  {
+    "id": "FEBI_HID_03",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi CHF - 7.1; Pentosin - CHF 7.1 Hidráulica Central referencias febi 06162"
+  },
+  {
+    "id": "FEBI_HID_04",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi MB - 345.0 Servodirección referencias febi 21647"
+  },
+  {
+    "id": "FEBI_HID_05",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi MB - 344.0 Servodireccion e Hidráulica referencias febi 21648"
+  },
+  {
+    "id": "FEBI_HID_06",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi DIN 51524 Teil3; ISO 7308; LHM Plus; PSA - B71 2710. LHM Plus referencias febi 24704"
+  },
+  {
+    "id": "FEBI_HID_07",
+    "marca": "febi",
+    "triggerQuery": "aceite hidráulico",
+    "text": "aceite hidráulico sistema hidrostático febi CHF-202; Chrysler - MS-11655b; Ford - WSS-M2C195-A; WSS-M2C204-A2; GM - B 040 2012; B040 19 40715; Pentosin - CHF-202; VAG - TL52 519-B Servodireccion e Hidráulica referencias febi 46161"
+  },
+  {
+    "id": "FEBI_MOTOR_21",
+    "marca": "febi",
+    "triggerQuery": "aceite motor",
+    "text": "aceite de motor gasolina diésel febi Ford - AWD-2; VAG - TL 52175. Embrague Haldex referencias febi 101170"
+  },
+  {
+    "id": "FEBI_MOTOR_22",
+    "marca": "febi",
+    "triggerQuery": "aceite motor",
+    "text": "aceite de motor gasolina diésel febi VAG - TL 52175-X. Embrague Haldex referencias febi 101171"
+  },
+  {
+    "id": "FEBI_MOTOR_23",
+    "marca": "febi",
+    "triggerQuery": "aceite motor",
+    "text": "aceite de motor gasolina diésel febi BMW - HOC; VAG - TL 52175-Y. Embrague Haldex referencias febi 101172"
+  },
+  {
+    "id": "FEBI_GEN_01",
+    "marca": "febi",
+    "triggerQuery": "lubricante",
+    "text": "fluido lubricante febi Dexron II; MB - 236.3; VOITH - 55.6335; ZF - TE-ML03D; TE-ML04D; TE-ML09; TE-ML11; TE-ML14A; TE-ML17C. Servodirección referencias febi 08972 1003306"
+  },
+  {
+    "id": "FEBI_GEN_02",
+    "marca": "febi",
+    "triggerQuery": "lubricante",
+    "text": "fluido lubricante febi BMW - DTF-1; MB - 239.41; TF 0870; TF0870B. Caja de Transferencia TF-1 referencias febi 170367"
+  },
+  {
+    "id": "FEBI_MOTOR_24",
+    "marca": "febi",
+    "triggerQuery": "aceite motor",
+    "text": "aceite de motor gasolina diésel  referencias febi     "
+  },
+  {
+    "id": "TCMATIC_ATF_01",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 14",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB14 homologación MB 14 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0001 109.000.2001 109.000.2501 29449 Rojo ATF 134"
+  },
+  {
+    "id": "TCMATIC_ATF_02",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 15",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB15 homologación MB 15 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0002 109.000.2002 109.000.2502 33889 Azul ATF 134 FE MB"
+  },
+  {
+    "id": "TCMATIC_ATF_03",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 17",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB17 homologación MB 17 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0003 109.000.2003 109.000.2503 47716 Amarillo MB"
+  },
+  {
+    "id": "TCMATIC_ATF_04",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW4 homologación AW 4 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0004 109.000.2004 109.000.2504 29934 Rojo Dexron III"
+  },
+  {
+    "id": "TCMATIC_ATF_05",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 3 homologación DEX III CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0005 109.000.2005 109.000.2505 22806 Rojo Dexron III (H) Mercon V"
+  },
+  {
+    "id": "TCMATIC_ATF_06",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 6 homologación DEX VI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0006 109.000.2006 109.000.2506 29934 Rojo Dexron III"
+  },
+  {
+    "id": "TCMATIC_ATF_07",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW6 homologación AW 6 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0007 109.000.2007 109.000.2507 29934 Rojo Dexron III"
+  },
+  {
+    "id": "TCMATIC_CVT_01",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF CVT",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVTF FLUID homologación  CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.0008 27975 Amarillo ATF CVT VW"
+  },
+  {
+    "id": "TCMATIC_DCT_01",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision DSG VW",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF VAG 182 homologación VW 182 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0009 109.000.2009 109.000.2509 39070 Amarillo DCTF-1/+ TL 52 182 236,21/24 Drivelogic 7-spd WSS-M2C936-A PDK DCS 6-speed EDC 6-speed"
+  },
+  {
+    "id": "TCMATIC_DCT_02",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision DSG VW",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF VAG 529 homologación VW 529 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0010 109.000.2010 109.000.2510 49700 Amarillo DCTF-2 VW"
+  },
+  {
+    "id": "TCMATIC_ATF_08",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 5",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF5 homologación ZF 5 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0011 109.000.2011 109.000.2511 14738 Amarillo ATF ZF Lifeguard 5 TL 521 62 236.11 BMW ATF 4 PSF EH"
+  },
+  {
+    "id": "TCMATIC_ATF_09",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 6",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF6 homologación ZF 6 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0012 109.000.2012 109.000.2512 34608 Amarillo Mercon SP DCTF-1/+ VW MB Ford Porsche PSA Renault"
+  },
+  {
+    "id": "TCMATIC_ATF_10",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 8",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF8 homologación ZF 8 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0013 109.000.2013 109.000.2513 39095 Verde ATF 3+ ZF Lifeguard 8/9 ATF LGF8"
+  },
+  {
+    "id": "TCMATIC_ATF_11",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DSI homologación DSI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0014 109.000.2014 109.000.2514"
+  },
+  {
+    "id": "TCMATIC_ATF_12",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 12",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB12 homologación MB 12 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0015 109.000.2015 109.000.2515"
+  },
+  {
+    "id": "TCMATIC_DCT_03",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF PDK8 homologación PDK 8 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0016 109.000.2016 109.000.2516"
+  },
+  {
+    "id": "TCMATIC_DCT_04",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF MB22 homologación MB 22 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0017 109.000.2017 109.000.2517"
+  },
+  {
+    "id": "TCMATIC_CVT_02",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 20",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVTF MB20 homologación MB 20 CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.0018 27975 Amarillo ATF CVT"
+  },
+  {
+    "id": "TCMATIC_ATF_13",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF9 homologación ZF 9 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0019 109.000.2019 109.000.2519 39095 Verde ATF 3+ ZF Lifeguard 8/9 ATF LGF8"
+  },
+  {
+    "id": "TCMATIC_DCT_05",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF MB21 homologación MB 21 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0020 109.000.2020 109.000.2520 39070 Amarillo DCTF-1/+ TL 52 182 236,21/24 Drivelogic 7-spd WSS-M2C936-A PDK DCS 6-speed EDC 6-speed"
+  },
+  {
+    "id": "TCMATIC_DCT_06",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF PDK7 homologación PDK 7 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0021 109.000.2021 109.000.2521"
+  },
+  {
+    "id": "TCMATIC_DCT_07",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF GETRAG homologación GETRAG CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0022 109.000.2022 109.000.2522 39070 Amarillo DCTF-1/+ TL 52 182 236,21/24 Drivelogic 7-spd WSS-M2C936-A PDK DCS 6-speed EDC 6-speed"
+  },
+  {
+    "id": "TCMATIC_DSG_01",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DSG MKF mechatronic fluid caja doble embrague Volkswagen TC-Matic TCMATIC MKF DSG MECHATRONIC FLUID homologación MKF MECATRONIC FLUID referencias 109.000.0023"
+  },
+  {
+    "id": "TCMATIC_DCT_08",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF GETRAG 3G homologación GETRAG 3G CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0031 109.000.2031 109.000.2531 39070 Amarillo DCTF-1/+ TL 52 182 236,21/24 Drivelogic 7-spd WSS-M2C936-A PDK DCS 6-speed EDC 6-speed"
+  },
+  {
+    "id": "TCMATIC_ATF_14",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW8 homologación AW 8 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0032 109.000.2032 183413 Rojo Dexron ULV BMW ATF 7 WSS-M2C949-A"
+  },
+  {
+    "id": "TCMATIC_CVT_03",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF CVT",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVT FLUID homologación  CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.2008 109.000.2508"
+  },
+  {
+    "id": "TCMATIC_CVT_04",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 20",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVT MB20 homologación MB 20 CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.2018 109.000.2518"
+  },
+  {
+    "id": "TCMATIC_DSG_02",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DSG MKF mechatronic fluid caja doble embrague Volkswagen TC-Matic TCMATIC DSG MKF MECHATRONIC FLUID homologación MKF MECATRONIC FLUID referencias 109.000.2023 109.000.2523"
+  },
+  {
+    "id": "TCMATIC_DCT_09",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF AW8 homologación AW 8 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.2532"
+  },
+  {
+    "id": "TCMATIC_ATF_15",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 14",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB14 (12 x 1L) homologación MB 14 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7001"
+  },
+  {
+    "id": "TCMATIC_ATF_16",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 15",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB15 (12 x 1L) homologación MB 15 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7002"
+  },
+  {
+    "id": "TCMATIC_ATF_17",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 17",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB17 (12 x 1L) homologación MB 17 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7003"
+  },
+  {
+    "id": "TCMATIC_ATF_18",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW4 (12 x 1L) homologación AW4 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7004"
+  },
+  {
+    "id": "TCMATIC_ATF_19",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 3 (12 x 1L) homologación DEX III CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7005"
+  },
+  {
+    "id": "TCMATIC_ATF_20",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 6 (12 x 1L) homologación DEX VI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7006"
+  },
+  {
+    "id": "TCMATIC_ATF_21",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW6 (12 x 1L) homologación AW 6 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7007"
+  },
+  {
+    "id": "TCMATIC_CVT_05",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF CVT",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVTF FLUID (12 x 1L) homologación  CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.7008"
+  },
+  {
+    "id": "TCMATIC_DCT_10",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision DSG VW",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF VAG 182 (12 x 1L) homologación VW 182 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7009"
+  },
+  {
+    "id": "TCMATIC_DCT_11",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision DSG VW",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF VAG 529 (12 x 1L) homologación VW 529 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7010"
+  },
+  {
+    "id": "TCMATIC_ATF_22",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 5",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF5 (12 x 1L) homologación ZF 5 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7011"
+  },
+  {
+    "id": "TCMATIC_ATF_23",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 6",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF6 (12 x 1L) homologación ZF 6 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7012"
+  },
+  {
+    "id": "TCMATIC_ATF_24",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF ZF Lifeguard 8",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF8 (12 x 1L) homologación ZF 8 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7013"
+  },
+  {
+    "id": "TCMATIC_ATF_25",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DSI (12 x 1L) homologación DSI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7014"
+  },
+  {
+    "id": "TCMATIC_ATF_26",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 12",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB12 (12 x 1L) homologación MB 12 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7015"
+  },
+  {
+    "id": "TCMATIC_DCT_12",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF PDK8 (12 x 1L) homologación PDK 8 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7016"
+  },
+  {
+    "id": "TCMATIC_DCT_13",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF MB22 (12 x 1L) homologación MB 22 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7017"
+  },
+  {
+    "id": "TCMATIC_CVT_06",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF Mercedes MB 20",
+    "text": "aceite CVT transmisión continua variador TC-Matic TCMATIC CVTF MB20 (12 x 1L) homologación MB 20 CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.7018"
+  },
+  {
+    "id": "TCMATIC_ATF_27",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF ZF9 (12 x 1L) homologación ZF 9 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7019"
+  },
+  {
+    "id": "TCMATIC_DCT_14",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF MB21 (12 x 1L) homologación MB 21 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7020"
+  },
+  {
+    "id": "TCMATIC_DCT_15",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF PDK7 (12 x 1L) homologación PDK 7 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7021"
+  },
+  {
+    "id": "TCMATIC_DCT_16",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF GETRAG (12 x 1L) homologación GETRAG CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7022"
+  },
+  {
+    "id": "TCMATIC_DSG_03",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite MKF DSG mechatronic fluid caja doble embrague TC-Matic TCMATIC MKF DSG MECHATRONIC FLUID (12 x 1L) homologación MKF MECATRONIC FLUID referencias 109.000.7023"
+  },
+  {
+    "id": "TCMATIC_DCT_17",
+    "marca": "tcmatic",
+    "triggerQuery": "aceite transmision",
+    "text": "aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF GETRAG 3G (12 x 1L) homologación GETRAG 3G CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.7031"
+  },
+  {
+    "id": "TCMATIC_ATF_28",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW8 (12 x 1L) homologación AW 8 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.7032"
+  },
+  {
+    "id": "TCMATIC_MTF_01",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios VW VW 512",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF VAG 512 homologación VW 512 CAJA DE CAMBIOS MANUAL referencias 121.000.0001 121.000.2001 - Amarillo Dry Clutch 235.17"
+  },
+  {
+    "id": "TCMATIC_MTF_02",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W80",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-80 homologación 75W80 CAJA DE CAMBIOS MANUAL referencias 121.000.0002 121.000.2002 121.000.2502"
+  },
+  {
+    "id": "TCMATIC_MTF_03",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W85",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-85 homologación 75W85 CAJA DE CAMBIOS MANUAL referencias 121.000.0003 121.000.2003 121.000.2503"
+  },
+  {
+    "id": "TCMATIC_MTF_04",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W90",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-90 homologación 75W90 CAJA DE CAMBIOS MANUAL referencias 121.000.0004 121.000.2004 121.000.2504"
+  },
+  {
+    "id": "TCMATIC_MTF_05",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W140",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-140 homologación 75W140 CAJA DE CAMBIOS MANUAL referencias 121.000.0005 121.000.2005 121.000.2505"
+  },
+  {
+    "id": "TCMATIC_TCF_01",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF ITC homologación ITC CAJA DE TRANSFERENCIA referencias 121.000.0006 121.000.2006 121.000.2506"
+  },
+  {
+    "id": "TCMATIC_TCF_02",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF ATC homologación ATC CAJA DE TRANSFERENCIA referencias 121.000.0007 121.000.2007 121.000.2507"
+  },
+  {
+    "id": "TCMATIC_TCF_03",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF 0AQ homologación 0AQ CAJA DE TRANSFERENCIA referencias 121.000.0008 121.000.2008 121.000.2508"
+  },
+  {
+    "id": "TCMATIC_MTF_06",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios VW VAG 512",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF VAG 512 homologación VAG 512 CAJA DE CAMBIOS MANUAL referencias 121.000.2501"
+  },
+  {
+    "id": "TCMATIC_MTF_07",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios VW VW 512",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF VAG 512 (12 x 1L) homologación VW 512 CAJA DE CAMBIOS MANUAL referencias 121.000.7001"
+  },
+  {
+    "id": "TCMATIC_MTF_08",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W80",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-80 (12 x 1L) homologación 75W80 CAJA DE CAMBIOS MANUAL referencias 121.000.7002"
+  },
+  {
+    "id": "TCMATIC_MTF_09",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W85",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-85 (12 x 1L) homologación 75W85 CAJA DE CAMBIOS MANUAL referencias 121.000.7003"
+  },
+  {
+    "id": "TCMATIC_MTF_10",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W90",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-90 (12 x 1L) homologación 75W90 CAJA DE CAMBIOS MANUAL referencias 121.000.7004"
+  },
+  {
+    "id": "TCMATIC_MTF_11",
+    "marca": "tcmatic",
+    "triggerQuery": "caja cambios 75W140",
+    "text": "aceite transmisión manual MTF caja cambios manual TC-Matic TCMATIC MTF 75W-140 (12 x 1L) homologación 75W140 CAJA DE CAMBIOS MANUAL referencias 121.000.7005"
+  },
+  {
+    "id": "TCMATIC_TCF_04",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF ITC (12 x 1L) homologación ITC CAJA DE TRANSFERENCIA referencias 121.000.7006"
+  },
+  {
+    "id": "TCMATIC_TCF_05",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF ATC (12 x 1L) homologación ATC CAJA DE TRANSFERENCIA referencias 121.000.7007"
+  },
+  {
+    "id": "TCMATIC_TCF_06",
+    "marca": "tcmatic",
+    "triggerQuery": "ATF",
+    "text": "aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF 0AQ (12 x 1L) homologación 0AQ CAJA DE TRANSFERENCIA referencias 121.000.7008"
+  },
+  {
+    "id": "TCMATIC__01",
+    "marca": "tcmatic",
+    "triggerQuery": "",
+    "text": " TC-Matic CASCO CONVERTIDOR DE PAR homologación   referencias 903.118.2008 903.118.2009 903.118.2010"
+  },
+  {
+    "id": "EQUIV_ATF_01",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ZF Lifeguard 8/9",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0013 109.000.0019 equivale febi 39095 especificaciones ATF 3+ ZF Lifeguard 8/9 ATF LGF8 transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_02",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Dexron III",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0006 109.000.0007 109.000.0004 equivale febi 29934 especificaciones Dexron III transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_03",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Mercedes 236,21/24",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0009 109.000.0022 109.000.0020 109.000.0031 equivale febi 39070 especificaciones 236,21/24 TL 52 182 Drivelogic 7-spd WSS-M2C936-A EDC 6-speed DCS 6-speed PDK transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_04",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ATF 134",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0001 equivale febi 29449 especificaciones ATF 134 transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_05",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF VW ",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0010 equivale febi 49700 especificaciones VW transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_06",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Mercedes MB",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0012 equivale febi 34608 especificaciones Mercon SP MB VW Ford Renault PSA Porsche transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_07",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ATF",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0008 equivale febi 27975 especificaciones ATF VW transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_08",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ATF 134 FE",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0002 equivale febi 33889 especificaciones ATF 134 FE MB transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_09",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ATF",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0018 equivale febi 27975 especificaciones ATF transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_10",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Dexron III (H)",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0005 equivale febi 22806 especificaciones Dexron III (H) Mercon V transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_11",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Mercedes MB",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0003 equivale febi 47716 especificaciones MB transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_12",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Dexron ULV",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0032 equivale febi 183413 especificaciones Dexron ULV BMW ATF 7 WSS-M2C949-A transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_13",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF ZF Lifeguard 5",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 109.000.0011 equivale febi 14738 especificaciones ATF ZF Lifeguard 5 236.11 TL 521 62 BMW ATF 4 PSF EH transmisión automática caja cambios"
+  },
+  {
+    "id": "EQUIV_ATF_14",
+    "marca": "equivalencia",
+    "triggerQuery": "ATF Mercedes 235.17",
+    "text": "equivalencia aceite ATF caja automática TC-Matic 121.000.0001 equivale febi - especificaciones 235.17 transmisión automática caja cambios"
+  }
+]
