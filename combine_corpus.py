@@ -26,6 +26,14 @@ with open(BASE + r"\corpus_embeddings_adparts_fichas.json", encoding="utf-8") as
     adparts_fichas = json.load(f)
 with open(BASE + r"\corpus_embeddings_marcas_extra2.json", encoding="utf-8") as f:
     marcas_extra2 = json.load(f)
+with open(BASE + r"\corpus_embeddings_zf_ecofluid.json", encoding="utf-8") as f:
+    zf_ecofluid = json.load(f)
+with open(BASE + r"\corpus_embeddings_repsol_moto.json", encoding="utf-8") as f:
+    repsol_moto = json.load(f)
+with open(BASE + r"\corpus_embeddings_repsol_transmision.json", encoding="utf-8") as f:
+    repsol_transmision = json.load(f)
+with open(BASE + r"\corpus_embeddings_repsol_ev.json", encoding="utf-8") as f:
+    repsol_ev = json.load(f)
 
 # ── Trigger map for AD Parts by tipo/segmento ────────────────────────────────
 def adparts_trigger(p):
@@ -85,7 +93,7 @@ for p in adparts:
 # Combine: AD Parts PDF corpus, Febi/TC-Matic, brand catalogs
 # Deduplicate brand catalog entries by ID (keep first occurrence)
 seen_ids = set()
-all_entries = adparts_unified + febi_tcm + marcas_extra + normativas + fichas + repsol_pesado + zf_teml + adparts_industrial + fuchs + equivalencias + adparts_fichas + marcas_extra2
+all_entries = adparts_unified + febi_tcm + marcas_extra + normativas + fichas + repsol_pesado + zf_teml + adparts_industrial + fuchs + equivalencias + adparts_fichas + marcas_extra2 + zf_ecofluid + repsol_moto + repsol_transmision + repsol_ev
 combined = []
 for e in all_entries:
     if e["id"] not in seen_ids:
@@ -106,6 +114,10 @@ print(f"Fuchs (Titan+Pentosin): {len(fuchs)}")
 print(f"Equivalencias:          {len(equivalencias)}")
 print(f"AD Parts fichas PDF:    {len(adparts_fichas)}")
 print(f"Marcas extra (Eni/Castrol/Shell nuevos): {len(marcas_extra2)}")
+print(f"ZF EcoFluids + TE-ML aprobados: {len(zf_ecofluid)}")
+print(f"Repsol Moto:   {len(repsol_moto)}")
+print(f"Repsol Trans+Automator: {len(repsol_transmision)}")
+print(f"Repsol EV/Hybrid+Agricola: {len(repsol_ev)}")
 print(f"Duplicates removed: {dupes_count}")
 print(f"Total:          {len(combined)}")
 print("No duplicate IDs" if dupes_count == 0 else f"Removed {dupes_count} duplicates")

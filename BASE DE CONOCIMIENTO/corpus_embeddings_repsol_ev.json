@@ -1,0 +1,38 @@
+[
+  {
+    "id": "REPSOL_DRIVE_ATF_EV",
+    "marca": "repsol",
+    "triggerQuery": "ATF vehículo eléctrico híbrido Repsol Drive ATF GM Dexron VI Ford eCVT Toyota THSII Jatco",
+    "text": "Repsol Drive ATF (EV). Fluido para transmisiones automáticas de vehículos eléctricos e híbridos. GM DEXRON VI. Homologaciones: Ford Escape hybrid eCVT, Jatco JR712E, Toyota THS II (sistema de tracción híbrida). Para vehículos híbridos con transmisión automática o CVT."
+  },
+  {
+    "id": "REPSOL_EV_COOLANT_ANTIFREEZE",
+    "marca": "repsol",
+    "triggerQuery": "refrigerante anticongelante vehículo eléctrico híbrido Repsol EV Coolant 50% Si-OAT VW G12++ MB 326.5 MAN 324",
+    "text": "Repsol EV Coolant Antifreeze 50%. Refrigerante Si-OAT para vehículos eléctricos e híbridos. ASTM D 3306, BS 6580, VW TL 774 G (G12++), MB 326.5, MAN 324 Si-OAT, CUMMINS CES 14603, SAE J1034/J814. Para sistemas de refrigeración de baterías y motores eléctricos."
+  },
+  {
+    "id": "REPSOL_BATTERY_THERMAL_FLUID",
+    "marca": "repsol",
+    "triggerQuery": "fluido térmico batería vehículo eléctrico Repsol Battery Thermal Fluid dieléctrico refrigeración directa",
+    "text": "Repsol Battery Thermal Fluid. Fluido dieléctrico para refrigeración directa de baterías en vehículos eléctricos. IEC 61100 tipo K3, IEC 61099 (ésteres orgánicos sintéticos). Para sistemas de gestión térmica de baterías de alta tensión (EV de última generación)."
+  },
+  {
+    "id": "REPSOL_EV_BRAKE_FLUID_DOT51",
+    "marca": "repsol",
+    "triggerQuery": "líquido frenos DOT 5.1 vehículo eléctrico híbrido Repsol Brake Fluid baja viscosidad ABS regenerativo",
+    "text": "Repsol Brake Fluid DOT 5.1 (EV). Líquido de frenos para vehículos eléctricos e híbridos con frenado regenerativo. ISO 4925 clases 3/4/5.1/6, SAE J-1703/J-1704, FMVSS 116 DOT 5.1/4LV/4/3. Baja viscosidad para sistemas ABS y control dinámico en VE."
+  },
+  {
+    "id": "REPSOL_COMPLEX_SYNTH_GREASE_EV",
+    "marca": "repsol",
+    "triggerQuery": "grasa sintética rodamientos motor eléctrico vehículo eléctrico Repsol Complex Synth Grease DIN 51825 KPEHC",
+    "text": "Repsol Complex Synth Grease (EV). Grasa sintética para rodamientos de motores eléctricos de tracción en vehículos eléctricos e híbridos. DIN 51825 KPEHC 2/3N-40. Base PAO, litio complejo. Alta velocidad, amplio rango de temperatura (-40°C a 150°C). Para rodamientos de motores eléctricos de alto rendimiento."
+  },
+  {
+    "id": "REPSOL_FARMER_CERES_STOU_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite tractor agrícola Repsol Farmer Ceres STOU 10W-40 ACEA E2 GL-4 Allison C-4 Caterpillar TO-2 John Deere Ford Fendt",
+    "text": "Repsol Farmer Ceres STOU 10W-40. Aceite universal para tractores agrícolas (motor + transmisión + hidráulico). API CF-4/SF/GL-4, ACEA E2. Homologaciones: ALLISON C-4, CATERPILLAR TO-2, JOHN DEERE J-2, FENDT-VARIO, FORD M2C 159B, MASSEY FERGUSON M-1145, MB 227.1, ZF TE-ML 06B/06C/07B."
+  }
+]

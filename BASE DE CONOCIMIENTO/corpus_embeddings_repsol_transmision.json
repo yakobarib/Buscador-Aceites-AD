@@ -1,0 +1,116 @@
+[
+  {
+    "id": "REPSOL_NAVIGATOR_FE_LL_75W80",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 75W-80 Repsol Navigator FE LL ZF TE-ML 01L 02L camión pesado fuel economy MAN 341",
+    "text": "Repsol Navigator FE LL 75W-80. Aceite sintético fuel economy para cajas de cambio manuales de vehículo pesado. API GL-4, MAN 341 Z-4. Homologaciones: ZF TE-ML 01L/02L/08/16K, DAF, MAN 341 E-3, IVECO 18-1807 MGS, EATON Europe Extended Drain, RENAULT B0032, VOLVO 97307. Hasta 540.000 km."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_FE_LL_75W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial 75W-90 Repsol Navigator FE LL GL-4 GL-5 ZF TE-ML 02B 05A 12L 16F MB 235.8 MAN camión",
+    "text": "Repsol Navigator FE LL 75W-90. Aceite sintético GL-4/GL-5/MT-1 para diferenciales y cajas de cambio de vehículo pesado. SAE J 2360. Homologaciones: ZF TE-ML 02B/05A/12L/12N/16F/17B/19C/21A, MB 235.8, MAN 341 Z2/342 S1, DAF, IVECO 18-1805, MACK GO-J, RENAULT Axles, SCANIA STO 1:0/2:0/1:1G, MERITOR O-76-N, MIL-PRF-2105E, VOLVO 97312."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_MBT_LL_75W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 75W-90 Repsol Navigator MBT LL API GL-4 MT-1 MB 235.11 MAN 341 MB vehículo pesado",
+    "text": "Repsol Navigator MBT LL 75W-90. Aceite para cajas de cambio manuales de vehículo pesado. API GL-4/MT-1. Homologaciones: MB 235.11, MAN 341 Type MB."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TRANSAXLE_75W80",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 75W-80 Repsol Navigator Transaxle GL-4 BMW MTF LT-2 VW G 009 317 PSA B71 Honda FIAT turismo",
+    "text": "Repsol Navigator Transaxle 75W-80. Aceite sintético GL-4 para cajas de cambio manuales y diferencial integrado de turismos. Homologaciones: BMW MTF LT-2, FIAT MZ6, GM 1940764/1940768, HONDA MTF/MTF-II/MTF-III, NISSAN MT-XZ, PSA B71 2330, VOLVO 97308/97309, VW G 009 317, TRANSELF TRJ/TRT/TRZ/NFJ/NFP."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_HQ_GL4_80W",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 80W Repsol Navigator HQ GL-4 MB 235.1 ZF TE-ML 08 17A DAF IVECO monogrado",
+    "text": "Repsol Navigator HQ GL-4 SAE 80W. Aceite mineral monogrado GL-4 para cajas de cambio. Homologaciones: MB 235.1, ZF TE-ML 08/17A, DAF, IVECO 18-1807 MGS2, RENAULT Transmissions, VW 726."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_LL_80W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial 80W-90 Repsol Navigator LL GL-5 MT-1 ZF TE-ML 05A 12L 16B 17B MB 235.20 MAN Volvo camión",
+    "text": "Repsol Navigator LL 80W-90. Aceite GL-5/MT-1 para diferenciales de vehículo pesado. SAE J 2360. Homologaciones: ZF TE-ML 05A/07A/08/12L/12M/16B/17B/19B/21A, MB 235.20, DAF, IVECO 18-1805, MACK GO-J, MAN 342 M3/341 GA1, RENAULT Axle, MERITOR O76-D, VOLVO 97310."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_LL_85W140",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial 85W-140 Repsol Navigator LL GL-5 MT-1 ZF TE-ML 05A 12M 16D camión pesado",
+    "text": "Repsol Navigator LL 85W-140. Aceite GL-5/MT-1 para diferenciales de vehículo pesado. SAE J 2360. Homologaciones: ZF TE-ML 05A/07A/08/12M/16D/21A, DAF, IVECO 18-1805, MACK GO-J, SCANIA STO 1:0, MERITOR O76-A, VOLVO 97310."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_HQ_GL5_80W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial 80W-90 Repsol Navigator HQ GL-5 ZF TE-ML 07A 16B 17B MB 235.0 MAN 342 hipoide",
+    "text": "Repsol Navigator HQ GL-5 80W-90. Aceite GL-5 para diferenciales hipoides. Homologaciones: ZF TE-ML 07A/08/16B/16C/17B/19B/21A, MB 235.0, DAF, MAN 342 M1, RENAULT Axles, VOITH Turbo, MIL-L-2105 D."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_LSD_80W90",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial autoblocante LSD 80W-90 Repsol Navigator LSD GL-5 ZF TE-ML 05C 12C limited slip",
+    "text": "Repsol Navigator LSD 80W-90. Aceite GL-5 para diferenciales autoblocantes (limited slip). API GL-5, MIL L-2105-D. Homologaciones: ZF TE-ML 05C/07A/08/12C/21C."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_LSD_85W140",
+    "marca": "repsol",
+    "triggerQuery": "aceite diferencial autoblocante LSD 85W-140 Repsol Navigator LSD GL-5 ZF TE-ML 05C limited slip",
+    "text": "Repsol Navigator LSD 85W-140. Aceite GL-5 para diferenciales autoblocantes (limited slip). API GL-5, MIL L-2105-D. Homologaciones: ZF TE-ML 05C/07A/08/12C/21C."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TO4_10W",
+    "marca": "repsol",
+    "triggerQuery": "aceite maquinaria obra pública Repsol Navigator TO-4 SAE 10W Allison C-4 Caterpillar TO-4 ZF TE-ML 03C hidráulico transmisión",
+    "text": "Repsol Navigator TO-4 SAE 10W. Aceite multifunción para maquinaria de obra pública: servotransmisiones, frenos en baño de aceite, circuitos hidráulicos y mandos finales. ALLISON C-4, CATERPILLAR TO-4, KOMATSU KES 07.868.1, ZF TE-ML 03C."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TO4_30",
+    "marca": "repsol",
+    "triggerQuery": "aceite maquinaria obra pública Repsol Navigator TO-4 SAE 30 API CF GL-4 Allison C-4 Caterpillar ZF TE-ML 03C",
+    "text": "Repsol Navigator TO-4 SAE 30. Aceite para maquinaria de obra pública. API CF/GL-4, ALLISON C-4, CATERPILLAR TO-4, KOMATSU KES 07.868.1, ZF TE-ML 03C/07F."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_ATF_VI",
+    "marca": "repsol",
+    "triggerQuery": "ATF Repsol Automator ATF VI Dexron VI GM BMW Toyota Honda Ford Mercon LV transmisión automática universal",
+    "text": "Repsol Automator ATF VI. Fluido sintético universal para transmisiones automáticas de última generación. GM DEXRON VI, Ford MERCON LV/WSS-M2C924-A. Homologaciones: BMW LA2634/ETL-8072B/JWS3309, Toyota ATF WS/T-III/T-IV, Honda ATF-Z1/DW-1, Hyundai/Kia SP-III/SP-IV, Porsche T-IV/ATF ZF8-speed, VW G055025/G055162/G060162, Jaguar LR023288/ATF LT71141, ZF TE-ML 05L/09/11A/11B/21L, Volvo CE 97340, Subaru ATF 5AT/HP, Nissan MATIC C/D/J/K/S, Mitsubishi, Mazda ATF M-III/M-V, JASO M315 1A-LV."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_DCT",
+    "marca": "repsol",
+    "triggerQuery": "ATF DCT DSG Repsol Automator DCT MB 236.21 236.24 BMW Ford WSS VW TL doble embrague",
+    "text": "Repsol Automator DCT. Fluido para transmisiones de doble embrague (DCT/DSG). Homologaciones: MB 236.21/236.24/236.25, BMW 83 22 2 148 578/579, Ford WSS-M2C-936-A, Mitsubishi SSTF-I, Nissan 999MP-GTRTOOP, Porsche 999.917.080.00/01, PSA 9734.S2, VW TL 052 182/TL 052 529, Volvo 1161838/1161839."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_CVT",
+    "marca": "repsol",
+    "triggerQuery": "ATF CVT Repsol Automator CVT transmisión variador continuo Honda HMMF Nissan NS Toyota CVTF Subaru",
+    "text": "Repsol Automator CVT. Fluido para transmisiones CVT (variador continuo). JASO M315 1A. Homologaciones: Honda HMMF/HCF2, Nissan NS-1/NS-2/NS-3, Toyota CVTF TC/FE, Hyundai/Kia CVT-J1, Mitsubishi CVT-J1/J4/J4+, Subaru ECVT/ICVT/FG/NS-2, Suzuki CVTF/NS-2/CVT Green 1&2, Audi Multitronic, Mazda JWS3320, VW G052516/G052180 A2, MINI EZL 799."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_ATF_14C",
+    "marca": "repsol",
+    "triggerQuery": "ATF Repsol Automator ATF 14C ZF EcoLife Voith autobús autocar MAN 339 MB 236.9 transmisión automática pesado",
+    "text": "Repsol Automator ATF 14C. Fluido para transmisiones automáticas de vehículos industriales y autobuses ZF EcoLife y Voith. DTFR 13C170, MAN 339 Tipo V1/Z3/Z12. Homologaciones: ZF TE-ML 04D/14C/16M/16S/20C/25C, ZF Approval ZF008282, MB 236.9, VOITH H55.6336XX/150.014524.XX, VOLVO 97341."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_ATF_III",
+    "marca": "repsol",
+    "triggerQuery": "ATF Repsol Automator ATF III Dexron III Allison TES-295 389 ZF TE-ML Voith MB 236.9 transmisión automática",
+    "text": "Repsol Automator ATF III. Fluido para transmisiones automáticas ligeras y pesadas (Allison, ZF, Voith). GM DEXRON III H, ALLISON TES-295/TES-389/C-4. Homologaciones: ZF TE-ML 03D/04D/14B/17C/20B/25B, MB 236.9, VOITH 55.6336, VOLVO 97341/AT101, FORD MERCON V, MAN 339 V-2/Z-2/Z-11/L-1."
+  },
+  {
+    "id": "REPSOL_AUTOMATOR_ATF_DIAFLUID",
+    "marca": "repsol",
+    "triggerQuery": "ATF Repsol Automator Diafluid Dexron III Honda Z-1 Toyota T-IV Nissan MATIC Mitsubishi CVT asiático",
+    "text": "Repsol Automator ATF Diafluid. Fluido para transmisiones automáticas de vehículos asiáticos. DEXRON III H, JASO M315-2004 1A-03. Homologaciones: Honda Z-1/CVT, Toyota T-II/T-IV, Mitsubishi SP-II/SP-III/CVT, Nissan MATIC-D/J/K/CVT, Subaru ATF MATIC J/CVTF, Suzuki ATF 3317, Daihatsu AMMIX, Chrysler ATF +3/+4, Ford MERCON, Allison C-4."
+  },
+  {
+    "id": "REPSOL_ORION_UTTO",
+    "marca": "repsol",
+    "triggerQuery": "aceite UTTO tractor agrícola Repsol Farmer Orion UTTO SAE 80W GL-4 John Deere J-20C Massey Ferguson Ford New Holland ZF TE-ML 17E",
+    "text": "Repsol Farmer Orion UTTO SAE 80W. Aceite universal transmisión-hidráulico-frenos para tractores agrícolas. API GL-4. Homologaciones: ALLISON C-4, CATERPILLAR TO-2, FNHA 201.00, FORD M2C 134D, JOHN DEERE J-20C, KUBOTA UDT, MASSEY FERGUSON M-1145/M-1143, NEW HOLLAND CNH MAT 3525, PARKER DENISON UTTO-THF, ZF TE-ML 03E/05F/17E/21F."
+  }
+]

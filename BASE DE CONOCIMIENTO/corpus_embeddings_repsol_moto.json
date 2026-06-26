@@ -1,0 +1,116 @@
+[
+  {
+    "id": "REPSOL_RACING_4T_5W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing 5W-40 JASO MA2 API SN competición sport",
+    "text": "Repsol Racing 4T 5W-40. Aceite sintético para motores de moto 4T de altas prestaciones. API SN, JASO MA2. Para motocicletas sport y competición."
+  },
+  {
+    "id": "REPSOL_RACING_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing 10W-40 JASO MA2 API SP competición",
+    "text": "Repsol Racing 4T 10W-40. Aceite sintético para motores de moto 4T de competición. API SP, JASO MA2."
+  },
+  {
+    "id": "REPSOL_RACING_4T_10W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing 10W-50 JASO MA2 API SP competición sport alta viscosidad",
+    "text": "Repsol Racing 4T 10W-50. Aceite sintético para motores de moto 4T de alta competición. API SP, JASO MA2."
+  },
+  {
+    "id": "REPSOL_RACING_4T_15W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing 15W-50 JASO MA2 API SN motos sport",
+    "text": "Repsol Racing 4T 15W-50. Aceite sintético para motores de moto 4T de altas prestaciones. API SN, JASO MA2."
+  },
+  {
+    "id": "REPSOL_RACING_4T_10W60",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing 10W-60 JASO MA2 API SN alta viscosidad circuit track",
+    "text": "Repsol Racing 4T 10W-60. Aceite sintético de muy alta viscosidad para motores 4T en circuito. API SN, JASO MA2."
+  },
+  {
+    "id": "REPSOL_RACING_OFFROAD_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Racing Off Road 10W-40 JASO MA2 enduro cross moto tierra",
+    "text": "Repsol Racing Off Road 4T 10W-40. Aceite sintético para motos 4T off-road (enduro, cross, trial). API SN, JASO MA2."
+  },
+  {
+    "id": "REPSOL_RACING_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 2T Repsol Racing 2T 100% éster competición Honda Repsol Team",
+    "text": "Repsol Racing 2T. Aceite 100% ester para motores 2T de competición. Aceite oficial del equipo Repsol Honda. Para motos 2T de competición."
+  },
+  {
+    "id": "REPSOL_RACING_MIX_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 2T Repsol Racing Mix JASO FD API TC TPI inyección directa",
+    "text": "Repsol Racing Mix 2T. Aceite sintético para motores 2T. API TC, JASO FD. Compatible con sistemas TPI (Transfer Port Injection). Para motos 2T modernas."
+  },
+  {
+    "id": "REPSOL_SMARTER_SYNTHETIC_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Smarter Synthetic 10W-40 JASO MA2 API SN sport touring",
+    "text": "Repsol Smarter Synthetic 4T 10W-40. Aceite sintético para motos 4T. API SN, JASO MA2."
+  },
+  {
+    "id": "REPSOL_SMARTER_SCOOTER_4T_5W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite scooter 4T Repsol Smarter Scooter 5W-40 JASO MA2 API SN scooter urbano",
+    "text": "Repsol Smarter Scooter 4T 5W-40. Aceite sintético para motores de scooter 4T. API SN, JASO MA2. Para scooters urbanos de 4T."
+  },
+  {
+    "id": "REPSOL_SMARTER_MATIC_MB_4T_10W30",
+    "marca": "repsol",
+    "triggerQuery": "aceite scooter matic 4T Repsol Smarter Matic MB 10W-30 JASO MB scooter automático",
+    "text": "Repsol Smarter Matic MB 4T 10W-30. Aceite sintético para scooters automáticos 4T con embrague en baño de aceite JASO MB. API SN, JASO MB."
+  },
+  {
+    "id": "REPSOL_SMARTER_VTWIN_4T_20W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto V-Twin 4T Repsol Smarter V-Twin Custom 20W-50 JASO MA2 custom cruiser Harley",
+    "text": "Repsol Smarter V-Twin Custom 4T 20W-50. Aceite sintético para motores V-Twin custom y cruiser. API SN, JASO MA2. Para motos estilo americano con motor bicilíndrico en V."
+  },
+  {
+    "id": "REPSOL_SMARTER_COMMUTER_0W30",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto scooter Repsol Smarter Commuter 0W-30 sintético commutig urbano bajo consumo",
+    "text": "Repsol Smarter Commuter 0W-30. Aceite sintético de baja viscosidad para motos y scooters urbanos. Uso diario, ahorro de combustible, motores modernos de cilindrada media-baja."
+  },
+  {
+    "id": "REPSOL_SMARTER_SYNTHETIC_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 2T Repsol Smarter Synthetic JASO FD API TC sintético",
+    "text": "Repsol Smarter Synthetic 2T. Aceite sintético para motores 2T. API TC, JASO FD. Para motos y ciclomotores 2T de gama sport."
+  },
+  {
+    "id": "REPSOL_RIDER_4T_10W40",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Rider 10W-40 JASO MA2 API SL mineral económico",
+    "text": "Repsol Rider 4T 10W-40. Aceite mineral para motores de moto 4T. API SL, JASO MA2. Uso general, gama económica."
+  },
+  {
+    "id": "REPSOL_RIDER_4T_20W50",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 4T Repsol Rider 20W-50 JASO MA2 API SL mineral motos antiguas",
+    "text": "Repsol Rider 4T 20W-50. Aceite mineral para motores de moto 4T. API SL, JASO MA2. Para motos de alta cilindrada y motores antiguos."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_FORK_OIL",
+    "marca": "repsol",
+    "triggerQuery": "aceite horquilla moto Repsol Qualifier Fork Oil 5W 10W 15W sintético suspensión",
+    "text": "Repsol Qualifier Fork Oil 5W / 10W / 15W. Aceite sintético para horquillas de motocicletas. DIN 51524 Parte 3 HVLP. Para horquillas telescópicas. Viscosidades 5W (suave), 10W (estándar), 15W (pesada). Para ajuste de la suspensión delantera."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_TRANSMISSION",
+    "marca": "repsol",
+    "triggerQuery": "aceite transmisión caja cambios moto Repsol Qualifier Transmission 75W 10W-40 80W-90 API GL-4 sintético",
+    "text": "Repsol Qualifier Transmission. Gama de aceites para cajas de cambio de motocicletas. SAE 75W sintético GL-4/GL-5, 10W-40 sintético JASO MA2, 80W-90 mineral GL-4. Para transmisiones y cajas de cambio de motos y scooters."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_BRAKE_FLUID",
+    "marca": "repsol",
+    "triggerQuery": "líquido frenos moto Repsol Qualifier Brake Fluid DOT 4 DOT 5.1 moto ABS",
+    "text": "Repsol Qualifier Brake Fluid. Líquido de frenos para motocicletas. DOT 4: FMVSS 116 DOT 4, SAE J1703/J1704, ISO 4925. DOT 5.1: FMVSS 116 DOT 5.1. Para frenos de disco y sistemas ABS de motocicletas."
+  }
+]

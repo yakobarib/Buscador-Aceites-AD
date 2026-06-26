@@ -8266,5 +8266,149 @@
     "marca": "shell",
     "triggerQuery": "ATF Shell Spirax S6 ATF A295 transmisión automática BMW ZF 8HP Mercedes 7G",
     "text": "Shell Spirax S6 ATF A295. Fluido sintético de alta gama para transmisiones automáticas ZF y BMW. Aprobaciones: BMW AG (7G Steptronic, 8HP), ZF TE-ML 09/14/16/17. Excelente estabilidad oxidativa, bajo coeficiente de fricción para cambios suaves. Para vehículos BMW, Rolls-Royce, Bentley con transmisión ZF."
+  },
+  {
+    "id": "ZF_ECOFLUID_HV_80W90",
+    "marca": "zf",
+    "triggerQuery": "aceite transmisión ZF EcoFluid HV 80W-90 TE-ML 02V caja cambios automática manual vehículo pesado camión autobús",
+    "text": "ZF EcoFluid HV 80W-90. Aceite hidrocrack de altas prestaciones para transmisiones ZF (manuales y automáticas) en condiciones severas: climas cálidos, cargas duras. ZF TE-ML 02V. Intervalo de cambio hasta 360.000 km o 2 años. IV 157, flashpoint 252°C. Aceite original ZF ref. 0671.090.503. Ahorro combustible hasta 1% frente a aceites minerales."
+  },
+  {
+    "id": "ZF_ECOFLUID_LIFE_PLUS_ATF",
+    "marca": "zf",
+    "triggerQuery": "ATF ZF EcoFluid Life Plus transmisión automática EcoLife autobús autocar ZF TE-ML 20G MAN 339",
+    "text": "ZF EcoFluid Life Plus. Fluido ATF sintético XHVI para transmisiones automáticas ZF EcoLife (autobuses urbanos, autocares, tráfico stop-and-go, uso intensivo de retarder). ZF TE-ML 20G. MAN 339 Tipo Z-14. Ahorro combustible hasta 1,5% en ciclo SORT. Punto fluidez -57°C, Brookfield a -40°C: 10.000 mPas. Refs ZF: bidón 20L AA01.320.099, barril 209L AA01.320.098."
+  },
+  {
+    "id": "ZF_ECOFLUID_M_75W80",
+    "marca": "zf",
+    "triggerQuery": "aceite caja cambios ZF EcoFluid M 75W-80 TE-ML 01E 02E 16P transmisión manual automatizada camión autobús Ecosplit TraXon",
+    "text": "ZF EcoFluid M 75W-80. Aceite hidrocrack sintético para transmisiones manuales y automatizadas ZF de vehículos comerciales (camiones, autobuses, furgonetas). ZF TE-ML 01E, 02E, 16P. MAN 341 Tipo Z-5. Intervalo de cambio hasta 540.000 km o 3 años. IV 157, Brookfield a -40°C: 42.400 mPas. Ahorro combustible hasta 1%. ZF refs: 0671.090.384 (20L), 0671.090.385 (200L)."
+  },
+  {
+    "id": "ZF_ECOFLUID_X_80W90",
+    "marca": "zf",
+    "triggerQuery": "aceite eje ZF EcoFluid X 80W-90 TE-ML 12L 12M eje camión autobús diferencial hipoide alta carga",
+    "text": "ZF EcoFluid X 80W-90. Lubricante de altas prestaciones para ejes ZF de vehículos pesados (autobuses y camiones). ZF TE-ML 12L, 12M; también cumple 02B, 05A, 16B, 17H, 19B, 21A. Para ejes expuestos a cargas elevadas y altas temperaturas. Alta estabilidad al cizallamiento (viscosidad a 100°C tras 100h: 14,2 mm²/s). ZF refs: 0681.000.412 (20L), 0681.000.411 (205L)."
+  },
+  {
+    "id": "ZF_ECOFLUID_XL_75W85",
+    "marca": "zf",
+    "triggerQuery": "aceite eje ZF EcoFluid XL 75W-85 TE-ML 12F eje camión autobús fuel economy sintético alta eficiencia",
+    "text": "ZF EcoFluid XL 75W-85. Lubricante sintético para ejes ZF de vehículos pesados. Alta eficiencia energética. ZF TE-ML 12F. IV 154, punto fluidez -54°C, Brookfield a -40°C: 49.000 mPas. Excelente para zonas frías y cálidas. ZF refs: 0671.090.507 (20L), 0671.090.508 (209L), 0671.090.509 (1000L)."
+  },
+  {
+    "id": "ZF_POWERFLUID_PLUS_75W80",
+    "marca": "zf",
+    "triggerQuery": "aceite transmisión hidráulico ZF PowerFluid Plus 75W-80 TE-ML 03G 05G 06K 17G 21G maquinaria off-highway tractor carretilla cosechadora",
+    "text": "ZF PowerFluid Plus 75W-80. Aceite universal para ejes, transmisiones y sistemas hidráulicos de maquinaria off-highway (primer llenado y servicio). ZF TE-ML 03G, 05G, 06K, 17G, 21G. John Deere JDM J20C. Para tractores, carretillas elevadoras, cosechadoras y ejes agrícolas. Compatible con aceites convencionales de eje/transmisión/hidráulico. ZF refs: 0671.090.535 (20L), 0671.090.536 (205L)."
+  },
+  {
+    "id": "ZF_TEML_01_02_APROBADOS",
+    "marca": "zf",
+    "triggerQuery": "ZF TE-ML 01 02 caja cambios manual automatizada camión Ecosplit Ecomid TraXon lubricantes aprobados Castrol Fuchs Shell Repsol Eni",
+    "text": "ZF TE-ML 01/02 — Cajas manuales y automatizadas ZF para camiones (Ecosplit, Ecomid, TraXon, AS Tronic). Clase 01E/02E (primer llenado): Castrol Transmax Manual Z Long Life 75W-80, Fuchs Titan Cytrac Ultra Synth 75W-80. Clase 01L/02L (servicio): Castrol Transmax Manual Z 75W-80, Eni Rotra Multigear 75W-80, Fuchs Titan Cytrac Man Synth 75W-80, Fuchs Titan Cytrac MAT 75W-80, Repsol Navigator FE LL 75W-80, Shell Spirax S6 GXME 75W-80. Clase 02B (80W-90): Castrol Manual EP 80W-90, Eni Rotra LSX/MP 75W-90, Fuchs Titan Supergear MC 80W-90, Repsol Cartago FE LD/Navigator FE LL 75W-90, Shell Spirax S3 AM 80W-90, Shell Spirax S6 ADME 75W-90. Nota: Febi y TC Matic NO figuran en las listas oficiales ZF TE-ML 01/02."
+  },
+  {
+    "id": "ZF_TEML_16_17_APROBADOS",
+    "marca": "zf",
+    "triggerQuery": "ZF TE-ML 16 17 transmisión ferroviaria carretilla elevadora lubricantes aprobados Castrol Fuchs Shell Repsol Eni Pentosin",
+    "text": "ZF TE-ML 16 (vehículos ferroviarios) / TE-ML 17 (carretillas elevadoras). Productos aprobados clase 16F/17B (sintéticos 75W-90/80W-90): Castrol Syntrax Universal Plus/Transmax Universal LL 75W-90, Eni Rotra LSX 75W-90/MP 80W-90, Fuchs Titan Cytrac HSY/RR/TD 75W-90, Pentosin Gear Ultra/Pro 75W-90, Repsol Cartago FE LD 75W-90/Navigator FE LL 75W-90, Shell Spirax S6 AXME/ADME 75W-90. ATF clase 16S/17C: Fuchs Titan ATF 5500, Repsol Automator ATF 14C, Repsol Matic Sintetico, Shell Spirax S6 ATF ZM. UTTO clase 17E: Fuchs Titan UTTO ZF 20W-40, Fuchs Titan Agrifarm UTTO MP, Repsol Orion UTTO, Shell Spirax S4/S6 TXME. Febi y TC Matic NO figuran en listas ZF TE-ML 16/17."
+  },
+  {
+    "id": "ZF_TEML_23_ESTACIONARIA",
+    "marca": "zf",
+    "triggerQuery": "ZF TE-ML 23 transmisión estacionaria aplicación estacionaria motor diésel Shell Rimula lubricante aprobado",
+    "text": "ZF TE-ML 23 — Transmisiones estacionarias ZF (grupos 8TX10500/01/02). Clase 23A (10W-40, cada 1500h): Shell Rimula R6 M 10W-40 (ZF001796/001799). Clase 23B (15W-40, cada 1000h): Chevron Delo 400 LE 15W-40 (ZF001847). Temperatura mínima de uso: 23A -10°C, 23B 0°C. Solo usar filtros originales ZF ref. 0501 219 453. No se admiten aditivos adicionales."
+  },
+  {
+    "id": "REPSOL_RACING_2T",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto 2T Repsol Racing 2T 100% éster competición Honda Repsol Team",
+    "text": "Repsol Racing 2T. Aceite 100% ester para motores 2T de competición. Aceite oficial del equipo Repsol Honda. Para motos 2T de competición."
+  },
+  {
+    "id": "REPSOL_SMARTER_COMMUTER_0W30",
+    "marca": "repsol",
+    "triggerQuery": "aceite moto scooter Repsol Smarter Commuter 0W-30 sintético commutig urbano bajo consumo",
+    "text": "Repsol Smarter Commuter 0W-30. Aceite sintético de baja viscosidad para motos y scooters urbanos. Uso diario, ahorro de combustible, motores modernos de cilindrada media-baja."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_FORK_OIL",
+    "marca": "repsol",
+    "triggerQuery": "aceite horquilla moto Repsol Qualifier Fork Oil 5W 10W 15W sintético suspensión",
+    "text": "Repsol Qualifier Fork Oil 5W / 10W / 15W. Aceite sintético para horquillas de motocicletas. DIN 51524 Parte 3 HVLP. Para horquillas telescópicas. Viscosidades 5W (suave), 10W (estándar), 15W (pesada). Para ajuste de la suspensión delantera."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_TRANSMISSION",
+    "marca": "repsol",
+    "triggerQuery": "aceite transmisión caja cambios moto Repsol Qualifier Transmission 75W 10W-40 80W-90 API GL-4 sintético",
+    "text": "Repsol Qualifier Transmission. Gama de aceites para cajas de cambio de motocicletas. SAE 75W sintético GL-4/GL-5, 10W-40 sintético JASO MA2, 80W-90 mineral GL-4. Para transmisiones y cajas de cambio de motos y scooters."
+  },
+  {
+    "id": "REPSOL_QUALIFIER_BRAKE_FLUID",
+    "marca": "repsol",
+    "triggerQuery": "líquido frenos moto Repsol Qualifier Brake Fluid DOT 4 DOT 5.1 moto ABS",
+    "text": "Repsol Qualifier Brake Fluid. Líquido de frenos para motocicletas. DOT 4: FMVSS 116 DOT 4, SAE J1703/J1704, ISO 4925. DOT 5.1: FMVSS 116 DOT 5.1. Para frenos de disco y sistemas ABS de motocicletas."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TRANSAXLE_75W80",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 75W-80 Repsol Navigator Transaxle GL-4 BMW MTF LT-2 VW G 009 317 PSA B71 Honda FIAT turismo",
+    "text": "Repsol Navigator Transaxle 75W-80. Aceite sintético GL-4 para cajas de cambio manuales y diferencial integrado de turismos. Homologaciones: BMW MTF LT-2, FIAT MZ6, GM 1940764/1940768, HONDA MTF/MTF-II/MTF-III, NISSAN MT-XZ, PSA B71 2330, VOLVO 97308/97309, VW G 009 317, TRANSELF TRJ/TRT/TRZ/NFJ/NFP."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_HQ_GL4_80W",
+    "marca": "repsol",
+    "triggerQuery": "aceite caja cambios 80W Repsol Navigator HQ GL-4 MB 235.1 ZF TE-ML 08 17A DAF IVECO monogrado",
+    "text": "Repsol Navigator HQ GL-4 SAE 80W. Aceite mineral monogrado GL-4 para cajas de cambio. Homologaciones: MB 235.1, ZF TE-ML 08/17A, DAF, IVECO 18-1807 MGS2, RENAULT Transmissions, VW 726."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TO4_10W",
+    "marca": "repsol",
+    "triggerQuery": "aceite maquinaria obra pública Repsol Navigator TO-4 SAE 10W Allison C-4 Caterpillar TO-4 ZF TE-ML 03C hidráulico transmisión",
+    "text": "Repsol Navigator TO-4 SAE 10W. Aceite multifunción para maquinaria de obra pública: servotransmisiones, frenos en baño de aceite, circuitos hidráulicos y mandos finales. ALLISON C-4, CATERPILLAR TO-4, KOMATSU KES 07.868.1, ZF TE-ML 03C."
+  },
+  {
+    "id": "REPSOL_NAVIGATOR_TO4_30",
+    "marca": "repsol",
+    "triggerQuery": "aceite maquinaria obra pública Repsol Navigator TO-4 SAE 30 API CF GL-4 Allison C-4 Caterpillar ZF TE-ML 03C",
+    "text": "Repsol Navigator TO-4 SAE 30. Aceite para maquinaria de obra pública. API CF/GL-4, ALLISON C-4, CATERPILLAR TO-4, KOMATSU KES 07.868.1, ZF TE-ML 03C/07F."
+  },
+  {
+    "id": "REPSOL_ORION_UTTO",
+    "marca": "repsol",
+    "triggerQuery": "aceite UTTO tractor agrícola Repsol Farmer Orion UTTO SAE 80W GL-4 John Deere J-20C Massey Ferguson Ford New Holland ZF TE-ML 17E",
+    "text": "Repsol Farmer Orion UTTO SAE 80W. Aceite universal transmisión-hidráulico-frenos para tractores agrícolas. API GL-4. Homologaciones: ALLISON C-4, CATERPILLAR TO-2, FNHA 201.00, FORD M2C 134D, JOHN DEERE J-20C, KUBOTA UDT, MASSEY FERGUSON M-1145/M-1143, NEW HOLLAND CNH MAT 3525, PARKER DENISON UTTO-THF, ZF TE-ML 03E/05F/17E/21F."
+  },
+  {
+    "id": "REPSOL_DRIVE_ATF_EV",
+    "marca": "repsol",
+    "triggerQuery": "ATF vehículo eléctrico híbrido Repsol Drive ATF GM Dexron VI Ford eCVT Toyota THSII Jatco",
+    "text": "Repsol Drive ATF (EV). Fluido para transmisiones automáticas de vehículos eléctricos e híbridos. GM DEXRON VI. Homologaciones: Ford Escape hybrid eCVT, Jatco JR712E, Toyota THS II (sistema de tracción híbrida). Para vehículos híbridos con transmisión automática o CVT."
+  },
+  {
+    "id": "REPSOL_EV_COOLANT_ANTIFREEZE",
+    "marca": "repsol",
+    "triggerQuery": "refrigerante anticongelante vehículo eléctrico híbrido Repsol EV Coolant 50% Si-OAT VW G12++ MB 326.5 MAN 324",
+    "text": "Repsol EV Coolant Antifreeze 50%. Refrigerante Si-OAT para vehículos eléctricos e híbridos. ASTM D 3306, BS 6580, VW TL 774 G (G12++), MB 326.5, MAN 324 Si-OAT, CUMMINS CES 14603, SAE J1034/J814. Para sistemas de refrigeración de baterías y motores eléctricos."
+  },
+  {
+    "id": "REPSOL_BATTERY_THERMAL_FLUID",
+    "marca": "repsol",
+    "triggerQuery": "fluido térmico batería vehículo eléctrico Repsol Battery Thermal Fluid dieléctrico refrigeración directa",
+    "text": "Repsol Battery Thermal Fluid. Fluido dieléctrico para refrigeración directa de baterías en vehículos eléctricos. IEC 61100 tipo K3, IEC 61099 (ésteres orgánicos sintéticos). Para sistemas de gestión térmica de baterías de alta tensión (EV de última generación)."
+  },
+  {
+    "id": "REPSOL_EV_BRAKE_FLUID_DOT51",
+    "marca": "repsol",
+    "triggerQuery": "líquido frenos DOT 5.1 vehículo eléctrico híbrido Repsol Brake Fluid baja viscosidad ABS regenerativo",
+    "text": "Repsol Brake Fluid DOT 5.1 (EV). Líquido de frenos para vehículos eléctricos e híbridos con frenado regenerativo. ISO 4925 clases 3/4/5.1/6, SAE J-1703/J-1704, FMVSS 116 DOT 5.1/4LV/4/3. Baja viscosidad para sistemas ABS y control dinámico en VE."
+  },
+  {
+    "id": "REPSOL_COMPLEX_SYNTH_GREASE_EV",
+    "marca": "repsol",
+    "triggerQuery": "grasa sintética rodamientos motor eléctrico vehículo eléctrico Repsol Complex Synth Grease DIN 51825 KPEHC",
+    "text": "Repsol Complex Synth Grease (EV). Grasa sintética para rodamientos de motores eléctricos de tracción en vehículos eléctricos e híbridos. DIN 51825 KPEHC 2/3N-40. Base PAO, litio complejo. Alta velocidad, amplio rango de temperatura (-40°C a 150°C). Para rodamientos de motores eléctricos de alto rendimiento."
   }
 ]
