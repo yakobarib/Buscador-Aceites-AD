@@ -7978,7 +7978,7 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v28</span>
+        <span class="about-version">v29</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Crafted by</strong> Yakoba Moreno</p>
@@ -7987,13 +7987,15 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         <hr class="about-divider">
         <div class="help-section">
           <h3>Tecnología</h3>
-          <p>Aplicación web de archivo único (HTML + CSS + JS). Sin dependencias externas ni servidor. Datos de homologaciones, equivalencias y referencias integrados directamente en el archivo.</p>
+          <p>Aplicación web de archivo único (HTML + CSS + JS). Sin dependencias externas ni servidor. Modelo semántico multilingual (Transformers.js) con caché IndexedDB. 1.402 productos en corpus.</p>
         </div>
         <div class="help-section">
           <h3>Fuentes de datos</h3>
           <ul>
-            <li>Tarifas Castrol, Repsol, Shell, Eni — Abril 2026</li>
-            <li>Catálogos de homologaciones por fabricante</li>
+            <li>Tarifas y catálogos Castrol, Repsol, Shell, Eni, Fuchs — 2024–2026</li>
+            <li>Catálogos ZF EcoFluids y listas aprobados ZF TE-ML</li>
+            <li>Catálogos Repsol Moto, Transmisión, EV/Híbrido — 2025–2026</li>
+            <li>Normativas internacionales ACEA, API, ILSAC, JASO, ZF TE-ML</li>
             <li>Equivalencias AD Parts / AD Standard — mantenidas por Yakoba Moreno</li>
           </ul>
         </div>
@@ -8001,6 +8003,20 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
+        <div class="changelog-entry">
+          <div class="changelog-version">v29 <span class="changelog-date">Junio 2026</span></div>
+          <ul class="changelog-list">
+            <li>Corpus ampliado a 1.402 productos (+24 desde v28)</li>
+            <li>ZF EcoFluids: EcoFluid HV/M/X/XL, Life Plus, PowerFluid Plus con specs TE-ML</li>
+            <li>ZF TE-ML listas aprobados: TE-ML 01/02/16/17/23 — qué marcas están homologadas por ZF para cada tipo de caja</li>
+            <li>Repsol Moto: gamas Racing 4T/2T, Smarter, Rider, Qualifier (aceite horquilla, transmisión, frenos)</li>
+            <li>Repsol Transmisión: Navigator FE LL/MBT/Transaxle/GL-5/LSD/TO-4, Automator ATF VI/DCT/CVT/14C/III</li>
+            <li>Repsol EV/Híbrido: Drive ATF EV, EV Coolant Antifreeze, Battery Thermal Fluid, Farmer Ceres STOU</li>
+            <li>Eni: i-Sint BIO tech 0W-20, Rotra ATF VI, i-Base Professional 10W-40/20W-50, Anticongelante 12++, DOT 4/4+/5.1</li>
+            <li>Castrol: EDGE 5W-40 C3, Magnatec 5W-30 S1</li>
+            <li>Shell: Helix Ultra Professional AM-L 5W-30, AF-L 0W-30, HX8 AV 5W-40, Spirax S6 ATF A295</li>
+          </ul>
+        </div>
         <div class="changelog-entry">
           <div class="changelog-version">v28 <span class="changelog-date">Junio 2026</span></div>
           <ul class="changelog-list">
