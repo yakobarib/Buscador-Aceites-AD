@@ -8170,5 +8170,101 @@
     "marca": "adparts",
     "triggerQuery": "AD STL 5W-30 ACEA C3 Stellantis FPW9.55535 PSA B71 2297 Peugeot Citroën Fiat",
     "text": "AD Parts STL 5W-30 (ref. 92). Aceite sintético Long Life para vehículos gasolina, híbridos y diésel del grupo Stellantis (PSA y FCA) con sistemas postratamiento. ACEA C3, API SP. Homologaciones: PSA B71 2297, STELLANTIS FPW9.55535/03. Mejora protección correas distribución. Intervalos 30.000 km."
+  },
+  {
+    "id": "ENI_ENI_I_SINT_BIO_TECH_0W20",
+    "marca": "eni",
+    "triggerQuery": "aceite motor 0W-20 Eni i-Sint BIO tech bio-ester anti-LSPI ILSAC GF-5 API SN PLUS RC",
+    "text": "Eni i-Sint BIO tech 0W-20. Aceite sintético con ésteres bio para motores gasolina modernos. API SN PLUS RC, ILSAC GF-5, ACEA A1/B1. Anti-LSPI (pre-ignición en motores turbo sobrealimentados). Bajo HTHS, fuel economy máximo. Para motores de última generación con exigencias de lubricante de baja viscosidad y respeto medioambiental."
+  },
+  {
+    "id": "ENI_ENI_ROTRA_ATF_VI",
+    "marca": "eni",
+    "triggerQuery": "ATF Eni Rotra ATF VI Dexron VI transmisión automática Ford Mercon LV GM",
+    "text": "Eni Rotra ATF VI. Fluido sintético para transmisiones automáticas de última generación. GM DEXRON VI, Ford MERCON LV. Compatible con la mayoría de transmisiones automáticas modernas. Alta estabilidad oxidativa, excelente comportamiento en frío. Sustituto de ATF Dexron III/VI en vehículos que requieran fluido de última generación."
+  },
+  {
+    "id": "ENI_ENI_I_BASE_20W50",
+    "marca": "eni",
+    "triggerQuery": "aceite motor 20W-50 Eni i-Base mineral API SM CF MB 229.1 motor antiguo gasolina diésel",
+    "text": "Eni i-Base 20W-50. Aceite mineral monogrado para motores gasolina y diésel. API SM/CF, MB 229.1. Para vehículos de alta cilindrada y motores antiguos que requieran alta viscosidad. Buena protección en condiciones de trabajo severas y temperaturas elevadas."
+  },
+  {
+    "id": "ENI_ENI_I_BASE_PROFESSIONAL_10W40",
+    "marca": "eni",
+    "triggerQuery": "aceite motor 10W-40 Eni i-Base Professional mineral API SL CF ACEA A3 B3",
+    "text": "Eni i-Base Professional 10W-40. Aceite mineral multigrado para motores gasolina y diésel. API SL/CF, ACEA A3/B3. Para vehículos sin filtro DPF ni catalizador de última generación. Buena protección anti-desgaste y resistencia a la oxidación."
+  },
+  {
+    "id": "ENI_ENI_I_BASE_PROFESSIONAL_20W50",
+    "marca": "eni",
+    "triggerQuery": "aceite motor 20W-50 Eni i-Base Professional mineral API SL CF alta viscosidad clima cálido",
+    "text": "Eni i-Base Professional 20W-50. Aceite mineral para motores gasolina y diésel en climas cálidos o motores con desgaste elevado. API SL/CF. Protección robusta para motor a alta temperatura. Recomendado para vehículos con elevado kilometraje o que requieran alta viscosidad SAE 20W-50."
+  },
+  {
+    "id": "ENI_ENI_I_SINT_PROFESSIONAL_5W40",
+    "marca": "eni",
+    "triggerQuery": "aceite motor 5W-40 Eni i-Sint professional sintético API SN CF ACEA A3 B4 MB 229.1 VW 501 505",
+    "text": "Eni i-Sint professional 5W-40. Aceite sintético para motores gasolina y diésel ligeros. API SN/CF, ACEA A3/B4, MB 229.1, VW 501.01/505.00. Formulación de alta resistencia para intervalos extendidos. Compatible con motores sin sistemas de postratamiento."
+  },
+  {
+    "id": "ENI_ENI_ANTICONGELANTE_SPEZIAL_12_PLUS_PLUS",
+    "marca": "eni",
+    "triggerQuery": "refrigerante anticongelante Eni Spezial 12++ Si-OAT VW TL774-G G12++ MB 325.5 325.6",
+    "text": "Eni Anticongelante Spezial 12++. Refrigerante Si-OAT (Silicato Orgánico Ácido Technology) rosa/violeta. Aprobaciones: VW TL 774-G (G12++), MB 325.5/325.6. Intervalo de cambio hasta 5 años. Compatible con Audi, VW, Seat, Skoda, Mercedes-Benz y otros vehículos que requieran G12++ o Si-OAT."
+  },
+  {
+    "id": "ENI_ENI_BRAKE_FLUID_DOT4",
+    "marca": "eni",
+    "triggerQuery": "líquido frenos DOT 4 Eni freno hidráulico embrague FMVSS 116 SAE J1703",
+    "text": "Eni Brake Fluid DOT 4. Líquido de frenos hidráulico. Normativa FMVSS 116 DOT 4, SAE J1703. Punto de ebullición en seco ≥ 230°C, húmedo ≥ 155°C. Para frenos y embragues hidráulicos de vehículos que requieran DOT 4. Compatible con cauchos EPDM y SBR."
+  },
+  {
+    "id": "ENI_ENI_BRAKE_FLUID_DOT4_PLUS",
+    "marca": "eni",
+    "triggerQuery": "líquido frenos DOT 4 Plus Eni alto rendimiento freno ABS ESP punto ebullición elevado",
+    "text": "Eni Brake Fluid DOT 4 Plus. Líquido de frenos de alto rendimiento. DOT 4 Plus (super DOT 4). Punto de ebullición seco ≥ 265°C, húmedo ≥ 175°C. Para sistemas ABS, ESP y vehículos de altas prestaciones. Mayor margen de seguridad frente al vapor-lock. Compatible con DOT 3 y DOT 4 convencionales."
+  },
+  {
+    "id": "ENI_ENI_BRAKE_FLUID_DOT51",
+    "marca": "eni",
+    "triggerQuery": "líquido frenos DOT 5.1 Eni bajo viscosidad ABS sistema freno hidráulico alto rendimiento",
+    "text": "Eni Brake Fluid DOT 5.1. Líquido de frenos baja viscosidad para sistemas con ABS y control de tracción. DOT 5.1, FMVSS 116. Punto de ebullición seco ≥ 260°C, húmedo ≥ 180°C. Baja viscosidad para respuesta rápida en sistemas ABS. NO mezclar con DOT 5 (base silicona)."
+  },
+  {
+    "id": "CASTROL_EDGE_5W40_C3",
+    "marca": "castrol",
+    "triggerQuery": "aceite motor 5W-40 Castrol EDGE C3 Mid SAPS DPF BMW LL-04 VW 505 MB 229.51 turismo",
+    "text": "Castrol EDGE 5W-40 C3. Aceite sintético Mid SAPS para motores gasolina y diésel con DPF y catalizador TWC. ACEA C3, API SN/CF. Homologaciones: BMW Longlife-04, MB 229.31/229.51, VW 502.00/505.01, Porsche A40. Para vehículos del grupo BMW, Mercedes, VW con filtro de partículas diésel. Distinto del EDGE 5W-40 A3/B4."
+  },
+  {
+    "id": "CASTROL_MAGNATEC_5W30_S1",
+    "marca": "castrol",
+    "triggerQuery": "aceite motor 5W-30 Castrol Magnatec S1 Honda Suzuki ILSAC GF-5 API SN",
+    "text": "Castrol Magnatec 5W-30 S1. Aceite sintético para motores gasolina. API SN, ILSAC GF-5. Diseñado para Honda y Suzuki con especificación ILSAC GF-5. Tecnología de moléculas inteligentes que se adhieren al motor. Fuel economy, protección superior durante el arranque en frío."
+  },
+  {
+    "id": "SHELL_HELIX_ULTRA_PROFESSIONAL_AM_L_5W30",
+    "marca": "shell",
+    "triggerQuery": "aceite motor 5W-30 Shell Helix Ultra Professional AM-L BMW Longlife-04 MB 229.51 DPF C3",
+    "text": "Shell Helix Ultra Professional AM-L 5W-30. Aceite sintético Mid SAPS para motores con DPF. ACEA C3. Homologaciones: BMW Longlife-04, MB 229.51, VW 505.01. Diseñado específicamente para vehículos del grupo BMW y Mercedes con filtro de partículas. Intervalos extendidos, bajo SAPS para proteger el DPF."
+  },
+  {
+    "id": "SHELL_HELIX_ULTRA_PROFESSIONAL_AF_L_0W30",
+    "marca": "shell",
+    "triggerQuery": "aceite motor 0W-30 Shell Helix Ultra Professional AF-L Ford WSS-M2C950-A Jaguar Land Rover STJLR C2",
+    "text": "Shell Helix Ultra Professional AF-L 0W-30. Aceite sintético para vehículos Ford, Jaguar y Land Rover. ACEA C2. Homologaciones: Ford WSS-M2C950-A, Jaguar-Land Rover STJLR.03.5007. Fuel economy máximo, protección DPF. Para motores Ford EcoBoost, Jaguar/Land Rover gasolina y diésel."
+  },
+  {
+    "id": "SHELL_HELIX_HX8_PROFESSIONAL_AV_5W40",
+    "marca": "shell",
+    "triggerQuery": "aceite motor 5W-40 Shell Helix HX8 Professional AV VW 508.88 509.99 508 509 Audi Porsche",
+    "text": "Shell Helix HX8 Professional AV 5W-40. Aceite sintético específico para motores del grupo VW (Audi, VW, Seat, Skoda, Porsche). Homologaciones: VW 508.88/509.99 (compatible VW 508.00/509.00). ACEA C5. Fuel economy, intervalos extendidos. Para gasolina y diésel del grupo VAG desde 2015."
+  },
+  {
+    "id": "SHELL_SPIRAX_S6_ATF_A295",
+    "marca": "shell",
+    "triggerQuery": "ATF Shell Spirax S6 ATF A295 transmisión automática BMW ZF 8HP Mercedes 7G",
+    "text": "Shell Spirax S6 ATF A295. Fluido sintético de alta gama para transmisiones automáticas ZF y BMW. Aprobaciones: BMW AG (7G Steptronic, 8HP), ZF TE-ML 09/14/16/17. Excelente estabilidad oxidativa, bajo coeficiente de fricción para cambios suaves. Para vehículos BMW, Rolls-Royce, Bentley con transmisión ZF."
   }
 ]
