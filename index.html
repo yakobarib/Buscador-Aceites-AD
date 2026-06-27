@@ -5071,6 +5071,10 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '101171', volume: '1 L',     desc: 'Haldex Gen 3/4', oem: 'VW/Audi/Seat/Škoda G 055 175 A2 / G 055 175 A1 · Volvo 31367941 / 31325136 / 30759648 · Opel/Saab 93 165 387', approvals: 'VW TL 52175-X' },
       { ref: '101172', volume: '0,85 L',  desc: 'Haldex Gen 5',   oem: 'VW/Audi/Seat/Škoda/CUPRA G 065 175 A2 / G 065 165 A2 / G 060 175 A2 · BMW/MINI 83 22 2 413 513', approvals: 'BMW HOC · BMW HOK OIL · VW TL 52175-Y' },
     ],
+    tcmaticProducts: [
+      { ref: '121.000.0006', desc: 'TCF ITC', homol: 'BMW ITC · Magna ITC · Haldex ITC (Gen 5)', febiRef: '101172' },
+      { ref: '121.000.0008', desc: 'TCF 0AQ', homol: 'VW 0AQ · BorgWarner · Haldex Gen 4/5',    febiRef: '101171' },
+    ],
   },
   'TRANSFER_CASE': {
     aliases: ['caja de transferencia', 'caja transferencia', 'transfer case', 'transfer fluid', 'aceite transferencia', 'dtf transferencia', 'aceite caja 4x4', 'transfer', 'aceite transfer', 'aceite de transfer', 'fluido transfer', 'transfercase'],
@@ -5082,9 +5086,9 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '170367', volume: '1 L', desc: 'Transfer Case Fluid BMW/MB', oem: '83 22 2 409 710', approvals: 'BMW DTF-1 · MB 239.41 · TF 0870 · TF 0870 B' },
     ],
     tcmaticProducts: [
-      { ref: '121.000.0006', desc: 'TCF ITC', homol: 'BMW ITC · Magna ITC · Haldex ITC transfer',         febiRef: null },
-      { ref: '121.000.0007', desc: 'TCF ATC', homol: 'ATC (Active Torque Control) · BorgWarner 4WD',      febiRef: null },
-      { ref: '121.000.0008', desc: 'TCF 0AQ', homol: 'VW 0AQ · BorgWarner rear axle · Haldex Gen 4/5',   febiRef: null },
+      { ref: '121.000.0006', desc: 'TCF ITC', homol: 'BMW ITC · Magna ITC · Haldex ITC transfer',         febiRef: '101172' },
+      { ref: '121.000.0007', desc: 'TCF ATC', homol: 'ATC (Active Torque Control) · BorgWarner 4WD',      febiRef: null    },
+      { ref: '121.000.0008', desc: 'TCF 0AQ', homol: 'VW 0AQ · BorgWarner rear axle · Haldex Gen 4/5',   febiRef: '101171' },
     ],
   },
   'DSG': {
