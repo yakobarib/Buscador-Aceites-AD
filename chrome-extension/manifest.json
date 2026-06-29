@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Docnet Matriculas RIB",
+  "version": "1.0",
+  "description": "Captura automática de matrículas buscadas en Docnet",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://ventas.docnet.es/*",
+    "https://matriculas-rib.yakoribiza.workers.dev/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ventas.docnet.es/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
