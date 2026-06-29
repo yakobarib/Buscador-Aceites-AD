@@ -7445,6 +7445,43 @@ function searchByFree() {
 
 
 
+// Busca aceite usando datos de un vehículo encontrado en la BD Neon
+function searchByNeonVehicle(v, tipo, identificador) {
+  // Construir query de búsqueda con los datos del vehículo
+  const partes = [v.marca, v.modelo, v.carburante, v.cc ? v.cc + 'cc' : '', v.motor].filter(Boolean);
+  const query = partes.join(' ');
+
+  currentVehicle = { _neon: true, query, vehicleData: v };
+  setSearchButtonsResetMode(true);
+
+  const result = freeSearch(query);
+  renderFreeResult(result);
+
+  // Insertar banner del vehículo identificado encima del resultado
+  const section = document.getElementById('results-section');
+  const tipoLabel = tipo === 'plate' ? 'Matrícula' : 'VIN';
+  const banner = document.createElement('div');
+  banner.className = 'vehicle-hero';
+  banner.innerHTML = `
+    <div class="vehicle-hero-inner">
+      <div class="vehicle-info-block">
+        <div class="vehicle-eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          ${tipoLabel} identificada · <strong>${identificador}</strong>
+        </div>
+        <h2 class="vehicle-name">${v.marca || ''} ${v.modelo || ''}</h2>
+        <div class="vehicle-meta">
+          ${v.fecha_matriculacion ? `<span class="vehicle-meta-item">${v.fecha_matriculacion}</span>` : ''}
+          ${v.carburante ? `<span class="vehicle-meta-item">${v.carburante}</span>` : ''}
+          ${v.cc ? `<span class="vehicle-meta-item">${v.cc} cc</span>` : ''}
+          ${v.kw ? `<span class="vehicle-meta-item">${v.kw} kW</span>` : ''}
+          ${v.motor ? `<span class="vehicle-meta-item">${v.motor}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+  section.insertBefore(banner, section.firstChild);
+}
+
 function normalizePlate(p) { return (p || '').replace(/[\s\-\.]/g, '').toUpperCase(); }
 
 function fillPlate(p) { document.getElementById('input-plate').value = p; searchByPlate(); }
@@ -7502,38 +7539,38 @@ function resetSearch() {
   document.querySelector('.search-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-function searchByPlate() {
-  // Si estamos en modo reset, hacer reset en lugar de buscar
+async function searchByPlate() {
   if (currentVehicle) { resetSearch(); return; }
-  
+
   const raw = document.getElementById('input-plate').value;
   const plate = normalizePlate(raw);
   if (!plate) return;
 
-  // Validar formato
   if (!/^[0-9]{4}[BCDFGHJKLMNPRSTVWXYZ]{3}$/.test(plate) && !/^[A-Z]{1,2}[0-9]{4}[A-Z]{1,2}$/.test(plate)) {
     showState('error', 'Formato de matrícula incorrecto',
               'La matrícula debe seguir el formato español: 4 dígitos + 3 letras (sin vocales, Ñ ni Q). Ejemplo: 0000BBB.');
     return;
   }
 
-  showLoading('Consultando proveedor DGT…');
-  setTimeout(() => {
-    // Buscar el vehículo
-    let found = null;
-    for (const key in VEHICLES_DB) {
-      if (VEHICLES_DB[key].plate === plate) { found = VEHICLES_DB[key]; break; }
-    }
-    if (found) {
-      renderResult(found);
-    } else {
-      showState('empty', 'Matrícula no encontrada',
-                'No tenemos esa matrícula en nuestra base de datos. En producción se consultará automáticamente al proveedor DGT (Fase 2). Mientras tanto, prueba la búsqueda por VIN o por marca y modelo.');
-    }
-  }, 800);
+  showLoading('Consultando base de datos…');
+
+  try {
+    const res = await fetch(`https://matriculas-rib.yakoribiza.workers.dev/lookup?matricula=${plate}`);
+    const data = await res.json();
+    if (data.found) { searchByNeonVehicle(data.data, 'plate', plate); return; }
+  } catch(e) {}
+
+  // Fallback: VEHICLES_DB local
+  let found = null;
+  for (const key in VEHICLES_DB) {
+    if (VEHICLES_DB[key].plate === plate) { found = VEHICLES_DB[key]; break; }
+  }
+  if (found) { renderResult(found); return; }
+  showState('empty', 'Matrícula no encontrada',
+            'Esta matrícula no está en la base de datos todavía. Se irá completando automáticamente con cada búsqueda en Docnet.');
 }
 
-function searchByVin() {
+async function searchByVin() {
   if (currentVehicle) { resetSearch(); return; }
   const vin = (document.getElementById('input-vin').value || '').toUpperCase().trim();
   if (!vin) return;
@@ -7542,16 +7579,22 @@ function searchByVin() {
               'El VIN debe tener exactamente 17 caracteres alfanuméricos. No se permiten las letras I, O ni Q.');
     return;
   }
-  showLoading('Consultando vehículo…');
-  setTimeout(() => {
-    let found = null;
-    for (const key in VEHICLES_DB) {
-      if (VEHICLES_DB[key].vin === vin) { found = VEHICLES_DB[key]; break; }
-    }
-    if (found) renderResult(found);
-    else showState('empty', 'Vehículo no encontrado',
-                   'Este VIN no figura en nuestra base de datos. En producción se consultará a TecDoc automáticamente. Pruebas válidas: WVWZZZ1KZAW123456 o WVWZZZ6RZHY654321.');
-  }, 700);
+  showLoading('Consultando base de datos…');
+
+  try {
+    const res = await fetch(`https://matriculas-rib.yakoribiza.workers.dev/lookup?vin=${vin}`);
+    const data = await res.json();
+    if (data.found) { searchByNeonVehicle(data.data, 'vin', vin); return; }
+  } catch(e) {}
+
+  // Fallback: VEHICLES_DB local
+  let found = null;
+  for (const key in VEHICLES_DB) {
+    if (VEHICLES_DB[key].vin === vin) { found = VEHICLES_DB[key]; break; }
+  }
+  if (found) renderResult(found);
+  else showState('empty', 'Vehículo no encontrado',
+                 'Este VIN no figura en la base de datos todavía. Se irá completando automáticamente con cada búsqueda en Docnet.');
 }
 
 function searchByManual() {
