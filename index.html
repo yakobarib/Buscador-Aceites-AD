@@ -4339,6 +4339,7 @@ const SPECS_DB = {
 
   // Porsche
   'PORSCHE A40':    { description: 'Aceite motor Porsche refrigerado por agua (911, Boxster, Cayman)', segment: 'ligero', tipo: 'motor' },
+  'Porsche M-1375.4': { description: 'ATF Porsche/BMW/VW — Mercon SP, ATF SP-IV, BMW ATF 2, ZF S671 090 255. Para cajas automáticas ZF 6HP (Porsche, Audi, BMW, VW, Jaguar, Aston Martin, Rolls-Royce)', segment: 'ligero', tipo: 'atf' },
   'PORSCHE C20':    { description: 'Aceite motor Porsche 0W-20 C5 = VW 508/509, no retrocompatible (solo motores seleccionados)', segment: 'ligero', tipo: 'motor' },
   'PORSCHE C30':    { description: 'Aceite motor Porsche C3 = VW 504.00/507.00 para Macan/Cayenne diésel', segment: 'ligero', tipo: 'motor' },
   'PORSCHE C40':    { description: 'Aceite motor Porsche C3 = VW 511 00 para motores gasolina con GPF (desde año modelo 2019)', segment: 'ligero', tipo: 'motor' },
@@ -4741,6 +4742,12 @@ const SPEC_ALIASES = {
   'ISOVG46': 'ISO VG 46', 'ISO46': 'ISO VG 46', 'VG46': 'ISO VG 46',
   'ISOVG68': 'ISO VG 68', 'ISO68': 'ISO VG 68', 'VG68': 'ISO VG 68',
   'ISOVG100': 'ISO VG 100', 'ISO100': 'ISO VG 100', 'VG100': 'ISO VG 100',
+
+  // ATF Porsche / BMW / VW (M-1375.4 / ATF SP-IV / Mercon SP)
+  'M1375': 'Porsche M-1375.4', 'M13754': 'Porsche M-1375.4',
+  'ATFSPIV': 'Porsche M-1375.4', 'SPIV': 'Porsche M-1375.4',
+  'MERCONSP': 'Porsche M-1375.4', 'BMWATF2': 'Porsche M-1375.4',
+  'ZFS671090255': 'Porsche M-1375.4', 'JAGUAR8432': 'Porsche M-1375.4',
 
   // Frenos
   'DOT3': 'DOT 3', 'DOT4': 'DOT 4', 'DOT51': 'DOT 5.1', 'DOT5.1': 'DOT 5.1',
@@ -5225,10 +5232,14 @@ const COMPONENT_KNOWLEDGE = {
   'CAJA_AUTOMATICA': {
     aliases: ['caja automatica', 'transmision automatica', 'automatica', 'atf'],
     fluidType: 'ATF (Automatic Transmission Fluid)',
-    canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14', 'MB 236.15', 'MB 236.16', 'MB 236.17'],
+    canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14', 'MB 236.15', 'MB 236.16', 'MB 236.17', 'Porsche M-1375.4'],
     interpretation: 'ATF varía mucho según fabricante de la caja (ZF, Aisin, Jatco, Mercedes 7G/9G).',
     advice: 'NUNCA uses ATF universal en cajas modernas. Cada caja tiene su norma específica.',
     febiProducts: [
+      { ref: '34608',  volume: '1 L',    desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2 · 83 22 0 144 137', approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV · ZF S671 090 255 · Ford WSS-M2C938-A' },
+      { ref: '38935',  volume: '5 L',    desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV · ZF S671 090 255' },
+      { ref: '38936',  volume: '20 L',   desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV' },
+      { ref: '38937',  volume: '60 L',   desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV' },
       { ref: '47716',  volume: '1 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '100708', volume: '5 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '194473', volume: '20 L',   desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
@@ -5244,7 +5255,7 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '109.000.0006', desc: 'ATF DEX 6', homol: 'Dexron VI · MB 236.41/51 · Mercon LV',                     febiRef: '29934'  },
       { ref: '109.000.0007', desc: 'ATF AW6',   homol: 'Dexron III · AISIN WARNER AW-1',                           febiRef: '29934'  },
       { ref: '109.000.0011', desc: 'ATF ZF5',   homol: 'ZF Lifeguard 5 · BMW ATF 4 · MB 236.11 · Toyota PSF EH',  febiRef: '14738'  },
-      { ref: '109.000.0012', desc: 'ATF ZF6',   homol: 'ZF Lifeguard 6 · Mercon SP · BMW ATF 2 · Ford/VW/MB/Porsche/PSA/Renault', febiRef: '34608' },
+      { ref: '109.000.0012', desc: 'ATF ZF6',   homol: 'ZF Lifeguard 6 · Mercon SP · BMW ATF 2 · Porsche M-1375.4 · ATF SP-IV · Ford WSS-M2C938-A · ZF S671 090 255', febiRef: '34608' },
       { ref: '109.000.0013', desc: 'ATF ZF8',   homol: 'ZF Lifeguard 8 · ATF 3+ · Jeep ATF LGF8',                 febiRef: '39095'  },
       { ref: '109.000.0019', desc: 'ATF ZF9',   homol: 'ZF Lifeguard 8/9',                                         febiRef: '39095'  },
       { ref: '109.000.0014', desc: 'ATF DSI',   homol: 'DSI (Aisin Seiki)',                                         febiRef: null     },
@@ -5436,7 +5447,7 @@ const EMBEDDINGS_CORPUS = [
   { id: 'FEBI_ATF_04', triggerQuery: 'ATF CVT', text: 'aceite ATF caja automática transmisión Blue Print BMW - CVT Fluid EZL799; Daihatsu - AMIX CVTF-DC; Dodge - CVTF+4; NS-2; Fiat - CVT 75W80; Ford - CVT 23/30; WSS -M2C928-A; WSS-M2C933-A; GM - DEX-CVT; Honda - HCF-2; Hyundai - CVTF; MB - 236.20; MERCON - C; Mitsubishi - CVTF-J4; Nissan - NS-1; NS-2; NS-3; Renault - NS-2; Subaru - Lineartronic ECVT; Lineartronic iCVT; NS-II; Suzuki - CVT Green1; NS-2; TC; Toyota - CVT Fluid FE; CVT Fluid Fc; VAG - TL521 16; TL521 80. for CVT gearbox referencias febi ADG05529 27975 193916 195989' },
   { id: 'FEBI_ATF_05', triggerQuery: 'ATF Dexron VI', text: 'aceite ATF caja automática transmisión Blue Print DEXRON VI; MB - 236.41; MERCON LV; VOITH - H55.6335.XX. referencias febi ADG05531 32600 32605 194470' },
   { id: 'FEBI_ATF_06', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi ATF 134; DSIH 6P805; MB - 236.14. referencias febi 29449 36449 194428 38901 38902' },
-  { id: 'FEBI_ATF_07', triggerQuery: 'ATF SP-IV', text: 'aceite ATF caja automática transmisión Blue Print ATF - M-1375.4; BMW - ATF2; Ford - WSS-M2C938-A; Hyundai - ATF SP-IV; Jaguar - Fluid 8432; Kia - ATF SP-IV; Mercon - SP; ZF - S671 090 255. referencias febi ADG05530 34608 38935 38936 38937' },
+  { id: 'FEBI_ATF_07', triggerQuery: 'ATF SP-IV M-1375.4 Porsche BMW ATF2 Mercon SP ZF 6HP Jaguar Fluid 8432', text: 'aceite ATF caja automática transmisión Blue Print ATF - M-1375.4; BMW - ATF2; Ford - WSS-M2C938-A; Hyundai - ATF SP-IV; Jaguar - Fluid 8432; Kia - ATF SP-IV; Mercon - SP; ZF - S671 090 255. referencias febi ADG05530 34608 38935 38936 38937' },
   { id: 'FEBI_ATF_08', triggerQuery: 'ATF Dexron III', text: 'aceite ATF caja automática transmisión Blue Print Aisin Warner - AW-1; ATF -AW-1; SP-II; SP-IIM; SP-III; T-IV; BMW - ATF-6; Chrysler - ATF +4; Daihatsu - Alumix ATF; DEXRON III; ELFMATIC J^; Fiat - 9.55550-AV1; 9.55550-AV2; Typo T-IV; Ford - WSS-M2C922-A1; WSS-M2C924-A; Honda - ATF Z-I; DW1; Isuzu - Besco ATFII; Besco ATFIII; JASO - M135 Typ 1A; JWS 3309; JWS 3324; Kia - ATF Red 1K; SP-II; SP-III; SP-IVRR; Mazda - ATF M-III; ATF M-V; Mitsubishi - SPII; SPIII; Nissan - ATF-Matic D; ATF-Matic J; C/D/J; Matic S; Peugeot - ATF AW-1; SAAB - ATF 3309; Subaru - ATF Special; Suzuki - 3309; 3317; AW1; ' },
   { id: 'FEBI_ATF_09', triggerQuery: 'ATF ZF Lifeguard 8', text: 'aceite ATF caja automática transmisión febi ATF3+; Fiat - 9.55550-AV5; Jeep - ATF LGF8; Tutela - AS8; ZF - Lifeguardfluid d8; Lifeguardfluid d9. referencias febi 39095 39096 39097 39098 107393' },
   { id: 'FEBI_ATF_10', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi ATF 134FE; MB - 236.15. referencias febi 33889 100706 194429 100707 108991' },
