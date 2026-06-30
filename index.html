@@ -5201,9 +5201,16 @@ const COMPONENT_KNOWLEDGE = {
   'CAJA_AUTOMATICA': {
     aliases: ['caja automatica', 'transmision automatica', 'automatica', 'atf'],
     fluidType: 'ATF (Automatic Transmission Fluid)',
-    canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14'],
+    canonicalSpecs: ['Dexron VI', 'ZF Lifeguard', 'Mercon LV', 'JWS 3309', 'MB 236.14', 'MB 236.15', 'MB 236.16', 'MB 236.17'],
     interpretation: 'ATF varía mucho según fabricante de la caja (ZF, Aisin, Jatco, Mercedes 7G/9G).',
     advice: 'NUNCA uses ATF universal en cajas modernas. Cada caja tiene su norma específica.',
+    febiProducts: [
+      { ref: '47716',  volume: '1 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
+      { ref: '100708', volume: '5 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
+      { ref: '194473', volume: '20 L',   desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
+      { ref: '100709', volume: '60 L',   desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
+      { ref: '107394', volume: '1000 L', desc: 'ATF MB17 — 7G-Tronic Plus (bidón)', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
+    ],
     tcmaticProducts: [
       { ref: '109.000.0001', desc: 'ATF MB14',  homol: 'MB 236.14 · ATF 134 · DSIH 6P805',                          febiRef: '29449'  },
       { ref: '109.000.0002', desc: 'ATF MB15',  homol: 'MB 236.15 · ATF 134 FE',                                    febiRef: '33889'  },
@@ -5409,7 +5416,7 @@ const EMBEDDINGS_CORPUS = [
   { id: 'FEBI_ATF_08', triggerQuery: 'ATF Dexron III', text: 'aceite ATF caja automática transmisión Blue Print Aisin Warner - AW-1; ATF -AW-1; SP-II; SP-IIM; SP-III; T-IV; BMW - ATF-6; Chrysler - ATF +4; Daihatsu - Alumix ATF; DEXRON III; ELFMATIC J^; Fiat - 9.55550-AV1; 9.55550-AV2; Typo T-IV; Ford - WSS-M2C922-A1; WSS-M2C924-A; Honda - ATF Z-I; DW1; Isuzu - Besco ATFII; Besco ATFIII; JASO - M135 Typ 1A; JWS 3309; JWS 3324; Kia - ATF Red 1K; SP-II; SP-III; SP-IVRR; Mazda - ATF M-III; ATF M-V; Mitsubishi - SPII; SPIII; Nissan - ATF-Matic D; ATF-Matic J; C/D/J; Matic S; Peugeot - ATF AW-1; SAAB - ATF 3309; Subaru - ATF Special; Suzuki - 3309; 3317; AW1; ' },
   { id: 'FEBI_ATF_09', triggerQuery: 'ATF ZF Lifeguard 8', text: 'aceite ATF caja automática transmisión febi ATF3+; Fiat - 9.55550-AV5; Jeep - ATF LGF8; Tutela - AS8; ZF - Lifeguardfluid d8; Lifeguardfluid d9. referencias febi 39095 39096 39097 39098 107393' },
   { id: 'FEBI_ATF_10', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi ATF 134FE; MB - 236.15. referencias febi 33889 100706 194429 100707 108991' },
-  { id: 'FEBI_ATF_11', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi MB - 236.16; 236.17. referencias febi 47716 100708 194473 100709 107394' },
+  { id: 'FEBI_ATF_11', triggerQuery: 'ATF Mercedes MB 236.16 MB 236.17 7G-Tronic Plus MB17', text: 'aceite ATF caja automática transmisión febi MB - 236.16; 236.17. ATF MB17 7G-Tronic Plus Mercedes-Benz. referencias febi 47716 100708 194473 100709 107394' },
   { id: 'FEBI_ATF_12', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi Mazda - ATF FZ. referencias febi 177652 197758 194427' },
   { id: 'FEBI_ATF_13', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión febi AISIN WARNER AW-2; AW2; FORD MERCON ULV; DEXRON ULV; BMW ATF 7 referencias febi 183413 197771 194445' },
   { id: 'FEBI_FRENOS_01', triggerQuery: 'líquido frenos DOT 4', text: 'líquido de frenos DOT febi DOT DOT 4 FMVSS 116 DOT3/4; FORD - SAM-6C9103-A; GM - GME L5104; Jaguar - MNA2829AA; XR83M6C25 A; MB - 331.0; Renault - 41-02-001; SAE J 1703; Super DOT 4; VAG - TL 766X/Y. DOT4 Plus referencias febi 26748 180589 23930 23932' },
@@ -7498,15 +7505,23 @@ async function searchByNeonVehicle(v, tipo, identificador) {
       const r = await fetch(`https://matriculas-rib.yakoribiza.workers.dev/oilspecs?vehicleId=${v.id_tecdoc}`);
       const data = await r.json();
       if (data.found && data.specs && data.specs.length > 0) {
-        // Preferir spec OEM de fabricante sobre ACEA/API genérica
-        const oemSpec = data.specs.find(s => /MB.?Approval|MB\s*2[0-9]{2}|VW\s*5[0-9]{2}|VW\s*50[0-9]|BMW.*Longlife|Porsche\s*[A-Z]|Ford\s*WSS|GM\s*dexos|Renault\s*RN/i.test(s));
-        const chosen = oemSpec || data.specs[0];
-        // Normalizar: "MB-Approval 229.31/ 229.51" → "MB 229.51"
-        searchQuery = chosen
-          .replace(/MB-Approval\s*/i, 'MB ')
-          .replace(/\s*\/\s*[0-9.]+\s*$/, '')
-          .replace(/\s+/g, ' ').trim();
-        specDisplay = data.specs.slice(0, 3).join(' · ');
+        // Validar que los specs de Castrol son coherentes con el tipo de vehículo.
+        // Si el coche es gasolina/híbrido y Castrol devuelve solo ACEA E (camiones), ignorar.
+        const isGasoline = /gasolin|petrol|gasoline|híbrido|hybrid|GNL|GNC/i.test(v.carburante || '');
+        const onlyTruckSpecs = data.specs.every(s => /^ACEA\s+E/i.test(s));
+        if (isGasoline && onlyTruckSpecs) {
+          // id_tecdoc de Docnet no coincide con Castrol → usar fallback
+        } else {
+          // Preferir spec OEM de fabricante sobre ACEA/API genérica
+          const oemSpec = data.specs.find(s => /MB.?Approval|MB\s*2[0-9]{2}|VW\s*5[0-9]{2}|VW\s*50[0-9]|BMW.*Longlife|Porsche\s*[A-Z]|Ford\s*WSS|GM\s*dexos|Renault\s*RN/i.test(s));
+          const chosen = oemSpec || data.specs[0];
+          // Normalizar: "MB-Approval 229.31/ 229.51" → "MB 229.51"
+          searchQuery = chosen
+            .replace(/MB-Approval\s*/i, 'MB ')
+            .replace(/\s*\/\s*[0-9.]+\s*$/, '')
+            .replace(/\s+/g, ' ').trim();
+          specDisplay = data.specs.slice(0, 3).join(' · ');
+        }
       }
     } catch(e) { /* si falla Castrol, usamos fallback */ }
   }
