@@ -4543,6 +4543,12 @@ const SPECS_DB = {
   'ZF TE-ML 19B':   { description: 'Aceite diferencial ZF MTN pesado', segment: 'pesado', tipo: 'transmision' },
   'ZF TE-ML 21A':   { description: 'Aceite ejes ZF WG pesados', segment: 'pesado', tipo: 'transmision' },
   'ZF TE-ML 21F':   { description: 'Aceite transmisión agrícola ZF UTTO avanzado', segment: 'ligero', tipo: 'transmision' },
+
+  // ATF adicionales
+  'ZF Lifeguard 8': { description: 'ATF ZF 8HP/9HP — ZF Lifeguardfluid 8/9, ATF 3+, Jeep ATF LGF8. Para cajas ZF 8HP y 9HP (BMW 8 velocidades, Alfa Romeo, Aston Martin, Land Rover, Jeep)', segment: 'ligero', tipo: 'transmision' },
+  'Dexron ULV':     { description: 'ATF 9HP Dexron ULV — BMW ATF 7, Ford WSS-M2C949-A. Para transmisiones ZF 9HP (Fiat/Honda/Land Rover con 9HP48) y BMW moderno', segment: 'ligero', tipo: 'transmision' },
+  'MB 236.20':      { description: 'ATF CVT Mercedes-Benz (cajas CVT 7G-DCT y Multitronic)', segment: 'ligero', tipo: 'transmision' },
+  'VW G 052 529':   { description: 'Fluido DCTF-2 VW/Audi — VW TL 52529-C, G 055 529 A2. Para cajas DQ381 y variantes', segment: 'ligero', tipo: 'transmision' },
 };
 
 // ─── DICCIONARIO DE ALIAS (claves ya normalizadas: sin espacios, mayúsculas, sin separadores) ───
@@ -4748,6 +4754,39 @@ const SPEC_ALIASES = {
   'ATFSPIV': 'Porsche M-1375.4', 'SPIV': 'Porsche M-1375.4',
   'MERCONSP': 'Porsche M-1375.4', 'BMWATF2': 'Porsche M-1375.4',
   'ZFS671090255': 'Porsche M-1375.4', 'JAGUAR8432': 'Porsche M-1375.4',
+  'WSSM2C938A': 'Porsche M-1375.4', 'FORDWSSM2C938A': 'Porsche M-1375.4',
+
+  // ATF ZF Lifeguard 5 / BMW ATF 4 / MB 236.11 (= febi 14738)
+  'BMWATF4': 'MB 236.11', 'BMW ATF4': 'MB 236.11',
+  'ZFLIFEGUARD5': 'MB 236.11', 'ZFLIFEGUARDFLUID5': 'MB 236.11', 'LIFEGUARD5': 'MB 236.11',
+  'ZFL5': 'MB 236.11', 'ZFTEML11B': 'MB 236.11', 'TEML11B': 'MB 236.11',
+  'VWTL52162': 'MB 236.11', 'TL52162': 'MB 236.11',
+  'BMWLA2634': 'MB 236.11',
+  // PSF-S / PSF-EH / PSF-3 / PSF-III — fluidos de dirección/ATF que son el mismo producto febi 14738
+  'PSFS': 'MB 236.11',    // Honda PSF-S
+  'PSFEH': 'MB 236.11',   // Toyota PSF EH
+  'PSF3': 'MB 236.11',    // Hyundai PSF-3
+  'PSFIII': 'MB 236.11',  // KIA PSF-III
+
+  // ATF 134 → MB 236.14 | ATF 134 FE → MB 236.15
+  'ATF134': 'MB 236.14', 'DSIH6P805': 'MB 236.14',
+  'ATF134FE': 'MB 236.15',
+
+  // ZF Lifeguard 8/9 / ATF 3+ (= febi 39095)
+  'ZFLIFEGUARD8': 'ZF Lifeguard 8', 'ZFLIFEGUARDFLUID8': 'ZF Lifeguard 8', 'LIFEGUARD8': 'ZF Lifeguard 8',
+  'ZFL8': 'ZF Lifeguard 8', 'ZFTEML14A': 'ZF Lifeguard 8',
+  'ZFLIFEGUARD9': 'ZF Lifeguard 8', 'ZFLIFEGUARDFLUID9': 'ZF Lifeguard 8', 'LIFEGUARD9': 'ZF Lifeguard 8',
+  'ZFL9': 'ZF Lifeguard 8', 'ATF3PLUS': 'ZF Lifeguard 8', 'ATFLGF8': 'ZF Lifeguard 8',
+  'JEEPATFLGF8': 'ZF Lifeguard 8', 'CHRYSLER68157995AA': 'ZF Lifeguard 8',
+
+  // BMW ATF 7 / Dexron ULV (= febi 183413)
+  'BMWATF7': 'Dexron ULV', 'DEXRONULV': 'Dexron ULV',
+  'WSSM2C949A': 'Dexron ULV', 'FORDWSSM2C949A': 'Dexron ULV',
+
+  // DCT fluidos adicionales
+  'DCTF1': 'MB 236.21', 'DCTFPLUS': 'MB 236.21',
+  'VWTL52182': 'MB 236.21', 'TL52182': 'MB 236.21', 'MB23620': 'MB 236.20',
+  'DCTF2': 'VW G 052 529', 'VWTL52529C': 'VW G 052 529', 'TL52529C': 'VW G 052 529',
 
   // Frenos
   'DOT3': 'DOT 3', 'DOT4': 'DOT 4', 'DOT51': 'DOT 5.1', 'DOT5.1': 'DOT 5.1',
@@ -5240,6 +5279,11 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '38935',  volume: '5 L',    desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV · ZF S671 090 255' },
       { ref: '38936',  volume: '20 L',   desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV' },
       { ref: '38937',  volume: '60 L',   desc: 'ATF SP-IV / M-1375.4 — ZF 6HP Porsche/BMW/VW', oem: 'G 055 005 A2',               approvals: 'Porsche M-1375.4 · BMW ATF 2 · Mercon SP · ATF SP-IV' },
+      { ref: '14738',  volume: '1 L',    desc: 'ATF ZF5 — ZF Lifeguard 5 / BMW ATF 4 / MB 236.11', oem: '83 22 0 136 376 · 83 22 2 220 445', approvals: 'ZF Lifeguard 5 · BMW ATF 4 · MB 236.11 · Toyota PSF EH · Honda PSF-S · Hyundai PSF-3 · KIA PSF-III · ZF TE-ML 11B · ZF TE-ML 14B · VW TL 521 62' },
+      { ref: '29449',  volume: '1 L',    desc: 'ATF MB14 — MB 236.14 / ATF 134', oem: '001 989 21 03 10 · A001989210310', approvals: 'MB 236.14 · ATF 134 · DSIH 6P805 · Dexron III H' },
+      { ref: '33889',  volume: '1 L',    desc: 'ATF MB15 — MB 236.15 / ATF 134 FE', oem: '002 989 35 03 · A002989350310', approvals: 'MB 236.15 · ATF 134 FE · Dexron III H' },
+      { ref: '39095',  volume: '1 L',    desc: 'ATF ZF8 — ZF Lifeguard 8/9 / ATF 3+', oem: 'A000989030711 · A000 989 03 07 11', approvals: 'ZF Lifeguard 8 · ATF 3+ · Jeep ATF LGF8 · Chrysler 68157995AA · MB 236.12' },
+      { ref: '183413', volume: '1 L',    desc: 'ATF AW8 — Dexron ULV / BMW ATF 7', oem: '83 22 2 413 514', approvals: 'Dexron ULV · BMW ATF 7 · Ford WSS-M2C949-A · ZF 9HP' },
       { ref: '47716',  volume: '1 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '100708', volume: '5 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '194473', volume: '20 L',   desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
