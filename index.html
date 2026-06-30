@@ -4873,17 +4873,37 @@ function febiTCForSpec(canonical) {
   const normCanon = normalizeDesc(canonical);
   const febi = [];
   const tcmatic = [];
+
   for (const comp of Object.values(COMPONENT_KNOWLEDGE)) {
-    if (!comp.canonicalSpecs || !comp.canonicalSpecs.some(s => normalizeDesc(s) === normCanon)) continue;
+    // ¿Este componente lista este spec como canónico?
+    const inCanonical = comp.canonicalSpecs &&
+      comp.canonicalSpecs.some(s => normalizeDesc(s) === normCanon);
+
     if (comp.febiProducts && comp.febiProducts.length > 0) {
-      const filtered = comp.febiProducts.filter(p => normalizeDesc(p.approvals || '').includes(normCanon));
-      febi.push(...(filtered.length > 0 ? filtered : comp.febiProducts));
+      const filtered = comp.febiProducts.filter(
+        p => normalizeDesc(p.approvals || '').includes(normCanon)
+      );
+      if (inCanonical) {
+        // Componente canónico: mostrar todos sus productos, o los filtrados si hay
+        febi.push(...(filtered.length > 0 ? filtered : comp.febiProducts));
+      } else if (filtered.length > 0) {
+        // Spec encontrado directamente en los approvals del producto (sin necesitar canonicalSpecs)
+        febi.push(...filtered);
+      }
     }
+
     if (comp.tcmaticProducts && comp.tcmaticProducts.length > 0) {
-      const filtered = comp.tcmaticProducts.filter(p => normalizeDesc(p.homol || '').includes(normCanon));
-      tcmatic.push(...(filtered.length > 0 ? filtered : comp.tcmaticProducts));
+      const filtered = comp.tcmaticProducts.filter(
+        p => normalizeDesc(p.homol || '').includes(normCanon)
+      );
+      if (inCanonical) {
+        tcmatic.push(...(filtered.length > 0 ? filtered : comp.tcmaticProducts));
+      } else if (filtered.length > 0) {
+        tcmatic.push(...filtered);
+      }
     }
   }
+
   return { febi, tcmatic };
 }
 
