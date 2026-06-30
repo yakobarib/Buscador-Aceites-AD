@@ -5077,10 +5077,14 @@ function searchByDesc() {
   const q = (input.value || '').trim();
   if (!q) return;
   const result = intelligentSearch(q);
-  renderDescResult(result);
-  // Marcamos un "vehículo virtual" para activar modo reset
   currentVehicle = { _desc: true, query: q };
   setSearchButtonsResetMode(true);
+  if (result.match === 'none') {
+    // Spec no reconocida en SPECS_DB → buscar en corpus semántico
+    renderFreeResult(result);
+  } else {
+    renderDescResult(result);
+  }
 }
 
 
