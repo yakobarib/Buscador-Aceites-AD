@@ -4776,7 +4776,7 @@ const SPEC_ALIASES = {
   'ZFLIFEGUARD8': 'ZF Lifeguard 8', 'ZFLIFEGUARDFLUID8': 'ZF Lifeguard 8', 'LIFEGUARD8': 'ZF Lifeguard 8',
   'ZFL8': 'ZF Lifeguard 8', 'ZFTEML14A': 'ZF Lifeguard 8',
   'ZFLIFEGUARD9': 'ZF Lifeguard 8', 'ZFLIFEGUARDFLUID9': 'ZF Lifeguard 8', 'LIFEGUARD9': 'ZF Lifeguard 8',
-  'ZFL9': 'ZF Lifeguard 8', 'ATF3PLUS': 'ZF Lifeguard 8', 'ATF3+': 'ZF Lifeguard 8',
+  'ZFL9': 'ZF Lifeguard 8', 'ATF3PLUS': 'ZF Lifeguard 8',
   'ATFLGF8': 'ZF Lifeguard 8', 'JEEPATFLGF8': 'ZF Lifeguard 8', 'CHRYSLER68157995AA': 'ZF Lifeguard 8',
 
   // BMW ATF 7 / Dexron ULV (= febi 183413)
@@ -4791,15 +4791,17 @@ const SPEC_ALIASES = {
   // Frenos
   'DOT3': 'DOT 3', 'DOT4': 'DOT 4', 'DOT51': 'DOT 5.1', 'DOT5.1': 'DOT 5.1',
 
-  // Refrigerantes
-  'G12+': 'G12+', 'G12++': 'G12++', 'G11': 'G11', 'G12': 'G12', 'G13': 'G13',
+  // Refrigerantes (claves ya normalizadas: + → PLUS)
+  'G12PLUS': 'G12+', 'G12PLUSPLUS': 'G12++', 'G11': 'G11', 'G12': 'G12', 'G13': 'G13',
 };
 
 // ─── NORMALIZACIÓN AGRESIVA (Fase 1) ───
 function normalizeDesc(s) {
   return (s || '')
     .toUpperCase()
-    .replace(/[\s\-\.\_\/\\,;:]/g, '')
+    .replace(/[\s\-\.\_\/\\,;:]/g, '')   // elimina separadores
+    .replace(/\+/g, 'PLUS')              // + → PLUS (para comparar sin importar dónde va el +)
+    .replace(/PLUS(\d+)/g, '$1PLUS')     // reordena: PLUS3 → 3PLUS (ATF+3 = ATF3+)
     .replace(/[ÁÀÄÂÃ]/g, 'A').replace(/[ÉÈËÊ]/g, 'E').replace(/[ÍÌÏÎ]/g, 'I')
     .replace(/[ÓÒÖÔÕ]/g, 'O').replace(/[ÚÙÜÛ]/g, 'U').replace(/Ñ/g, 'N')
     .trim();
