@@ -4551,6 +4551,115 @@ const SPECS_DB = {
   'VW G 052 529':   { description: 'Fluido DCTF-2 VW/Audi — VW TL 52529-C, G 055 529 A2. Para cajas DQ381 y variantes', segment: 'ligero', tipo: 'transmision' },
 };
 
+// ─── ÍNDICE DE REFERENCIAS OEM (números de pieza de fabricante → norma canónica) ───
+// Generado de Productos Febi Abril 2026.xlsx — claves normalizadas con normalizeDesc()
+const OEM_INDEX = {
+  '0000FZ113E01': { canonical: 'ATF (genérico)', febi: '194427', liters: 20, oem: '0000-FZ-113E01' },
+  '0009890825': { canonical: 'G12++', febi: '88541', liters: 5, oem: '000 989 08 25' },
+  '0009890825S2': { canonical: 'G12++', febi: '24196', liters: 1.5, oem: '000 989 08 25 S2' },
+  '0009890825S3': { canonical: 'G11', febi: '172003', liters: 10, oem: '000 989 08 25 S3' },
+  '000989910310': { canonical: 'MB 343.0', febi: '02615', liters: 1, oem: '000 989 91 03 10' },
+  '0009899203': { canonical: 'ATF (genérico)', febi: '194478', liters: 20, oem: '000 989 92 03' },
+  '0009899203S1': { canonical: 'ATF (genérico)', febi: '30017', liters: 5, oem: '000 989 92 03 S1' },
+  '001989170310': { canonical: 'API GL-5', febi: '48785', liters: 1, oem: '001 989 17 03 10' },
+  '0019892103': { canonical: 'MB 236.9', febi: '194477', liters: 20, oem: '001 989 21 03' },
+  '0019892103S1': { canonical: 'MB 236.9', febi: '26680', liters: 60, oem: '001 989 21 03 S1' },
+  '0019892103S2': { canonical: 'MB 236.9', febi: '26681', liters: 200, oem: '001 989 21 03 S2' },
+  '0019892103S3': { canonical: 'MB 236.9', febi: '30018', liters: 5, oem: '001 989 21 03 S3' },
+  '0019892403': { canonical: 'MB 345.0', febi: '21647', liters: 1, oem: '001 989 24 03' },
+  '0019896803': { canonical: 'MB 236.14', febi: '194428', liters: 20, oem: '001 989 68 03' },
+  '0019896803S1': { canonical: 'MB 236.14', febi: '36449', liters: 5, oem: '001 989 68 03 S1' },
+  '0019896803S2': { canonical: 'MB 236.14', febi: '38901', liters: 60, oem: '001 989 68 03 S2' },
+  '0019896803S3': { canonical: 'MB 236.14', febi: '38902', liters: 200, oem: '001 989 68 03 S3' },
+  '0019897703': { canonical: 'MB 236.15', febi: '108991', liters: 1000, oem: '001 989 77 03' },
+  '0019897803': { canonical: 'MB 236.15', febi: '100707', liters: 60, oem: '001 989 78 03' },
+  '0029890603': { canonical: 'MB 236.16', febi: '107394', liters: 1000, oem: '002 989 06 03' },
+  '0049890420': { canonical: 'AdBlue', febi: '171338', liters: 1000, oem: '004 989 04 20' },
+  '0220000110': { canonical: 'API GL-4', febi: '170166', liters: 20, oem: '02200-00110' },
+  '1847947': { canonical: 'DOT 4', febi: '171875', liters: 5, oem: '1 847 947' },
+  '7711428133S1': { canonical: 'G12++', febi: '26580', liters: 1.5, oem: '77 11 428 133 S1' },
+  '7711428133S2': { canonical: 'G12++', febi: '26581', liters: 5, oem: '77 11 428 133 S2' },
+  '7711428133S3': { canonical: 'G12++', febi: '26582', liters: 25, oem: '77 11 428 133 S3' },
+  '81229407454S1': { canonical: 'G12++', febi: '22268', liters: 5, oem: '81 22 9 407 454 S1' },
+  '81229407454S2': { canonical: 'G12++', febi: '05011', liters: 60, oem: '81 22 9 407 454 S2' },
+  '81229407454S3': { canonical: 'G12++', febi: '31276', liters: 210, oem: '81 22 9 407 454 S3' },
+  '81229407454S4': { canonical: 'G12++', febi: '22270', liters: 20, oem: '81 22 9 407 454 S4' },
+  '83192211191': { canonical: 'G12++', febi: '01089', liters: 1.5, oem: '83 19 2 211 191' },
+  '83192466484': { canonical: 'G11', febi: '183411', liters: 20, oem: '83 19 2 466 484' },
+  '83220309031': { canonical: 'API GL-4', febi: '180073', liters: 1, oem: '83 22 0 309 031' },
+  '83220397114S1': { canonical: 'MB 236.41', febi: '32605', liters: 5, oem: '83 22 0 397 114 S1' },
+  '83222167720': { canonical: 'MB 236.41', febi: '194470', liters: 20, oem: '83 22 2 167 720' },
+  '83222365987': { canonical: 'API GL-4', febi: '194014', liters: 5, oem: '83 22 2 365 987' },
+  '83222409710': { canonical: 'MB 239.41', febi: '170367', liters: 1, oem: '83 22 2 409 710' },
+  '83222413477': { canonical: 'Dexron ULV', febi: '194445', liters: 20, oem: '83 22 2 413 477' },
+  '83222413512': { canonical: 'API GL-5', febi: '184247', liters: 1, oem: '83 22 2 413 512' },
+  '83222433157': { canonical: 'VW G 052 529', febi: '194483', liters: 20, oem: '83 22 2 433 157' },
+  '83290429576': { canonical: 'CHF 11-S', febi: '06161', liters: 1, oem: '83 29 0 429 576' },
+  '9979A1': { canonical: 'LHM Plus', febi: '24704', liters: 1, oem: '9979.A1' },
+  'AGRAR': { canonical: 'API GL-4', febi: '196599', liters: 1, oem: 'AGRAR' },
+  'APIGL4': { canonical: 'API GL-4', febi: '170168', liters: 200, oem: 'API GL-4' },
+  'APIGL4GL5': { canonical: 'API GL-4', febi: '170142', liters: 200, oem: 'API GL-4/GL-5' },
+  'ATF6': { canonical: 'MB 236.9', febi: '101162', liters: 60, oem: 'ATF 6' },
+  'ATFFZ': { canonical: 'ATF (genérico)', febi: '177652', liters: 1, oem: 'ATF FZ' },
+  'B000700A1': { canonical: 'DOT 4', febi: '26461', liters: 1, oem: 'B 000 700 A1' },
+  'DOT4025LITER': { canonical: 'DOT 4', febi: '26746', liters: 0.25, oem: 'DOT 4 0,25 LITER' },
+  'DOT4025PLUSLTR': { canonical: 'DOT 4', febi: '26748', liters: 0.25, oem: 'DOT 4PLUS 0,25 LTR' },
+  'DOT405L': { canonical: 'DOT 4', febi: '180588', liters: 0.5, oem: 'DOT4 0,5L' },
+  'DOT405PLUSL': { canonical: 'DOT 4', febi: '180589', liters: 0.5, oem: 'DOT4 PLUS 0,5L' },
+  'DOT45LITER': { canonical: 'DOT 4', febi: '21754', liters: 5, oem: 'DOT 4 5 LITER' },
+  'DOT45PLUSLTR': { canonical: 'DOT 4', febi: '23932', liters: 5, oem: 'DOT 4 PLUS 5 LTR' },
+  'DOT4PLUS': { canonical: 'DOT 4', febi: '23930', liters: 1, oem: 'DOT 4 PLUS' },
+  'DOT51': { canonical: 'DOT 5.1', febi: '180591', liters: 5, oem: 'DOT 5.1' },
+  'DOT5105L': { canonical: 'DOT 5.1', febi: '180583', liters: 0.5, oem: 'DOT 5.1 0,5L' },
+  'DOT511L': { canonical: 'DOT 5.1', febi: '180584', liters: 1, oem: 'DOT 5.1 1L' },
+  'DOT51EHV': { canonical: 'DOT 5.1', febi: '180592', liters: 5, oem: 'DOT 5.1 EHV' },
+  'DOT51EHV025L': { canonical: 'DOT 5.1', febi: '180585', liters: 0.25, oem: 'DOT 5.1 EHV 0,25L' },
+  'DOT51EHV05L': { canonical: 'DOT 5.1', febi: '180586', liters: 0.5, oem: 'DOT 5.1 EHV 0,5L' },
+  'DOT51EHV1L': { canonical: 'DOT 5.1', febi: '180587', liters: 1, oem: 'DOT 5.1 EHV 1L' },
+  'G012A8DA1': { canonical: 'G12++', febi: '01381', liters: 1.5, oem: 'G 012 A8D A1' },
+  'G012A8DA1S1': { canonical: 'G12++', febi: '22272', liters: 5, oem: 'G 012 A8D A1 S1' },
+  'G012A8DA1S2': { canonical: 'G12++', febi: '22274', liters: 20, oem: 'G 012 A8D A1 S2' },
+  'G012A8DA1S3': { canonical: 'G12', febi: '172007', liters: 10, oem: 'G 012 A8D A1 S3' },
+  'G012A8DA1S4': { canonical: 'G12++', febi: '33830', liters: 210, oem: 'G 012 A8D A1 S4' },
+  'G012A8FA1': { canonical: 'G12', febi: '19400', liters: 1.5, oem: 'G 012 A8F A1' },
+  'G012A8FA1S1': { canonical: 'G12', febi: '19402', liters: 5, oem: 'G 012 A8F A1 S1' },
+  'G012A8FA1S2': { canonical: 'G12', febi: '172011', liters: 10, oem: 'G 012 A8F A1 S2' },
+  'G012A8FA1S3': { canonical: 'G12', febi: '22278', liters: 60, oem: 'G 012 A8F A1 S3' },
+  'G012A8FA1S4': { canonical: 'G12', febi: '33831', liters: 210, oem: 'G 012 A8F A1 S4' },
+  'G012A8GM1': { canonical: 'G12', febi: '37400', liters: 1.5, oem: 'G 012 A8G M1' },
+  'G012A8GM1S1': { canonical: 'G12', febi: '172018', liters: 1, oem: 'G 012 A8G M1 S1' },
+  'G012A8GM1S2': { canonical: 'G12', febi: '172020', liters: 10, oem: 'G 012 A8G M1 S2' },
+  'G012A8GM8': { canonical: 'G12', febi: '37402', liters: 60, oem: 'G 012A8GM8' },
+  'G013A8JM1': { canonical: 'G13', febi: '38200', liters: 1.5, oem: 'G 013 A8J M1' },
+  'G013A8JM1S1': { canonical: 'G13', febi: '38201', liters: 5, oem: 'G 013 A8J M1 S1' },
+  'G013A8JM8': { canonical: 'G13', febi: '38202', liters: 60, oem: 'G 013 A8J M8' },
+  'G052162A2': { canonical: 'MB 236.11', febi: '194472', liters: 20, oem: 'G 052 162 A2' },
+  'G052162A2S1': { canonical: 'MB 236.11', febi: '29738', liters: 5, oem: 'G 052 162 A2 S1' },
+  'G052171A2': { canonical: 'API GL-4', febi: '21829', liters: 1, oem: 'G 052 171 A2' },
+  'G052175A1': { canonical: 'VW TL 52175', febi: '101170', liters: 0.275, oem: 'G 052 175 A1' },
+  'G052180A2': { canonical: 'HONDA HCF-2', febi: '195989', liters: 20, oem: 'G 052 180 A2' },
+  'G052182': { canonical: 'MB 236.21', febi: '39071', liters: 5, oem: 'G 052 182' },
+  'G052529A2': { canonical: 'MB 236.21', febi: '109672', liters: 60, oem: 'G 052 529 A2' },
+  'G052911': { canonical: 'API GL-4', febi: '40580', liters: 1, oem: 'G 052 911' },
+  'G052990': { canonical: 'MB 236.9', febi: '194411', liters: 20, oem: 'G 052 990' },
+  'G055005': { canonical: 'Porsche M-1375.4', febi: '38935', liters: 5, oem: 'G 055 005' },
+  'G055005A2': { canonical: 'Porsche M-1375.4', febi: '34608', liters: 1, oem: 'G 055 005 A2' },
+  'G055005A2S2': { canonical: 'Porsche M-1375.4', febi: '38936', liters: 20, oem: 'G 055 005 A2 S2' },
+  'G055005S3': { canonical: 'Porsche M-1375.4', febi: '38937', liters: 60, oem: 'G 055 005 S3' },
+  'G055175A2': { canonical: 'VW TL 52175-X', febi: '101171', liters: 1, oem: 'G 055 175 A2' },
+  'G055529A2': { canonical: 'VW G 052 529', febi: '194479', liters: 20, oem: 'G 055 529 A2' },
+  'G055532': { canonical: 'API GL-4', febi: '197766', liters: 1, oem: 'G 055 532' },
+  'G060162A2': { canonical: 'ZF Lifeguard 8', febi: '107393', liters: 1000, oem: 'G 060 162 A2' },
+  'G060162A2S1': { canonical: 'ZF Lifeguard 8', febi: '39096', liters: 5, oem: 'G 060 162 A2 S1' },
+  'G060162A2S2': { canonical: 'ZF Lifeguard 8', febi: '39097', liters: 20, oem: 'G 060 162 A2 S2' },
+  'G060162S3': { canonical: 'ZF Lifeguard 8', febi: '39098', liters: 60, oem: 'G 060 162 S3' },
+  'G060175A2': { canonical: 'BMW HOK OIL', febi: '101172', liters: 0.85, oem: 'G 060 175 A2' },
+  'G13A8JM1S1': { canonical: 'G13', febi: '172017', liters: 10, oem: 'G 13 A8J M1 S1' },
+  'MAN341TYPEZ4': { canonical: 'API GL-4', febi: '170134', liters: 200, oem: 'MAN 341 TYPE Z4' },
+  'SAE75W90GL5': { canonical: 'API GL-4', febi: '32590', liters: 1, oem: 'SAE 75W-90 (GL-5)' },
+  'VWTL774LG12EVO': { canonical: 'G11', febi: '183366', liters: 1.5, oem: 'VW TL 774-L (G12EVO)' },
+};
+
 // ─── DICCIONARIO DE ALIAS (claves ya normalizadas: sin espacios, mayúsculas, sin separadores) ───
 // Mapea variantes → norma canónica
 const SPEC_ALIASES = {
@@ -4828,6 +4937,13 @@ function intelligentSearch(query) {
     return { match: 'alias', canonical, info: SPECS_DB[canonical] || null, original: raw, phase: 3 };
   }
 
+  // Fase 3.5: ¿Es una referencia OEM de recambio? (p.ej. "G 060 162 A2 S1")
+  if (OEM_INDEX[normalized]) {
+    const oemEntry = OEM_INDEX[normalized];
+    const canonical = oemEntry.canonical;
+    return { match: 'oem', canonical, info: SPECS_DB[canonical] || null, original: raw, oem_ref: oemEntry.oem, febi_ref: oemEntry.febi, phase: 3.5 };
+  }
+
   // Fase 4: Patrones (SAE viscosity, ACEA, API, etc.) - búsqueda múltiple
   const matches = [];
 
@@ -5024,6 +5140,7 @@ function renderDescResult(result) {
   let phaseLabel = '';
   if (result.match === 'exact') phaseLabel = 'Identificación directa';
   else if (result.match === 'alias') phaseLabel = `Normalizado a partir de "${result.original}"`;
+  else if (result.match === 'oem') phaseLabel = `Referencia OEM: ${result.oem_ref}${result.febi_ref ? ` · febi ${result.febi_ref}` : ''}`;
   else if (result.match === 'partial') phaseLabel = 'Coincidencia parcial';
   else if (result.match === 'category') phaseLabel = 'Categoría ACEA';
 
