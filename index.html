@@ -4576,6 +4576,10 @@ const SPECS_DB = {
   'VW TL 52175-Y': { description: 'Aceite para embrague Haldex (tracción integral), especificación VW TL 52175-Y, versión más reciente de la familia TL 52175. Referenciado también como BMW HOC.', segment: 'ligero', tipo: 'transmision' },
   'Dexron II': { description: 'Aceite ATF/hidráulico Dexron II para dirección asistida. Multi-homologado: MB 236.3, Voith 55.6335, ZF TE-ML 03D/04D/09/11/14A/17C.', segment: 'ligero', tipo: 'hidraulico' },
   'ATF (genérico)': { description: 'ATF universal multi-homologado para transmisiones automáticas y direcciones asistidas de múltiples marcas cuando no se exige una norma moderna específica (Dexron II/III, Toyota WS, Honda DW-1, Nissan Matic, MB 236.1-236.7, Allison C3/C4, JASO M315, etc.)', segment: 'ligero', tipo: 'transmision' },
+
+  // Normas detectadas al cruzar TC-Matic con Febi (Productos TC-Matic Abril 2026.xlsx)
+  'MB 236.22': { description: 'Fluido DCT Mercedes-Benz para caja de doble embrague de 8 velocidades (variante más reciente de la familia 236.2X, sucesora de MB 236.21)', segment: 'ligero', tipo: 'transmision' },
+  'VW MKF': { description: 'Fluido para la unidad mecatrónica (mechatronic) de cajas DSG VW/Audi DQ200/DQ250 — lubrica el módulo electrohidráulico de control, distinto del fluido de la propia caja/embrague (no confundir con VW G 052 182)', segment: 'ligero', tipo: 'transmision' },
 };
 
 // ─── ÍNDICE DE REFERENCIAS OEM (números de pieza de fabricante → norma canónica) ───
@@ -4923,6 +4927,16 @@ const SPEC_ALIASES = {
 
   // Refrigerantes (claves ya normalizadas: + → PLUS)
   'G12PLUS': 'G12+', 'G12PLUSPLUS': 'G12++', 'G11': 'G11', 'G12': 'G12', 'G13': 'G13',
+
+  // Códigos comerciales cortos TC-Matic (homologación abreviada de su propio catálogo)
+  'AW4': 'ATF (genérico)', 'AW6': 'ATF (genérico)', 'AW8': 'Dexron ULV',
+  'DEXIII': 'MB 236.9', 'DEX3': 'MB 236.9', 'DEXVI': 'MB 236.41', 'DEX6': 'MB 236.41',
+  'ZF5': 'MB 236.11', 'ZF6': 'Porsche M-1375.4', 'ZF8': 'ZF Lifeguard 8', 'ZF9': 'ZF Lifeguard 8',
+  'MB12': 'MB 236.12', 'MB14': 'MB 236.14', 'MB15': 'MB 236.15', 'MB17': 'MB 236.17',
+  'MB20': 'MB 236.20', 'MB21': 'MB 236.21', 'MB22': 'MB 236.22',
+  '0AQ': 'VW TL 52175-X', 'ITC': 'VW TL 52175-Y',
+  'GETRAG': 'MB 236.21', 'GETRAG3G': 'MB 236.21', 'VAG182': 'MB 236.21', 'VAG529': 'VW G 052 529',
+  'VW512': 'MB 235.17', 'VAG512': 'MB 235.17', 'MKF': 'VW MKF',
 };
 
 // ─── NORMALIZACIÓN AGRESIVA (Fase 1) ───
@@ -5328,12 +5342,13 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '109.000.0009', desc: 'DCTF VAG 182', homol: 'DCTF-1 · VW G 052 182 · MB 236.21/24 · BMW Drivelogic · Ford WSS-M2C936-A · PDK · PSA · Renault EDC', febiRef: '39070'  },
       { ref: '109.000.0010', desc: 'DCTF VAG 529', homol: 'DCTF-2 · VW G 055 529 · VW TL 52529-C',                                                               febiRef: '49700'  },
       { ref: '109.000.0016', desc: 'DCTF PDK8',    homol: 'Porsche PDK 8-velocidades',                                                                            febiRef: null     },
-      { ref: '109.000.0017', desc: 'DCTF MB22',    homol: 'MB 239.21 · MB 239.22',                                                                               febiRef: null     },
+      { ref: '109.000.0017', desc: 'DCTF MB22',    homol: 'MB 236.22 (caja doble embrague 8 velocidades Mercedes-Benz, sin equivalente febi documentado)',        febiRef: null     },
       { ref: '109.000.0020', desc: 'DCTF MB21',    homol: 'DCTF-1/+ · MB 236.21',                                                                                febiRef: '39070'  },
       { ref: '109.000.0021', desc: 'DCTF PDK7',    homol: 'Porsche PDK 7-spd · BMW DCTF 2 · Ford F-DC · MB 239.21 · Renault DW5',                               febiRef: '171871' },
       { ref: '109.000.0022', desc: 'DCTF GETRAG',  homol: 'DCTF-1 · Getrag · BMW Drivelogic · Ford · MB 236.21/24',                                              febiRef: '39070'  },
       { ref: '109.000.0031', desc: 'DCTF GETRAG 3G', homol: 'DCTF-1/+ · Getrag 3G hybrid',                                                                       febiRef: '39070'  },
-      { ref: '109.000.0023', desc: 'DSG MKF Mechatronic', homol: 'VW MKF · mecatrónica DSG (DQ200/DQ250 unidad electrónica)',                                    febiRef: null     },
+      { ref: '109.000.0023', desc: 'DSG MKF Mechatronic', homol: 'VW MKF · mecatrónica DSG (unidad electrohidráulica DQ200/DQ250, distinto del fluido de caja/embrague)', febiRef: null },
+      { ref: '109.000.2532', desc: 'DCTF AW8',            homol: 'Aisin-Warner DCT doble embrague (no confundir con ATF AW8 / Dexron ULV, que es fluido de convertidor de par)', febiRef: null },
     ],
   },
   'CVT': {
@@ -5344,7 +5359,7 @@ const COMPONENT_KNOWLEDGE = {
     advice: 'Honda, Nissan, Toyota, Subaru y Mitsubishi tienen sus propios fluidos CVT. Comprueba el manual del vehículo.',
     tcmaticProducts: [
       { ref: '109.000.0008', desc: 'CVTF FLUID',  homol: 'Universal CVT · VW G 052 180 · Aisin Warner CVT', febiRef: '27975' },
-      { ref: '109.000.0018', desc: 'CVTF MB20',   homol: 'CVT Mercedes-Benz · G 052 180 A2',                febiRef: '27975' },
+      { ref: '109.000.0018', desc: 'CVTF MB20',   homol: 'MB 236.20 · CVT Mercedes-Benz · VW G 052 180 A2', febiRef: '27975' },
     ],
   },
   'EMBRAGUE_HIDRAULICO': {
@@ -5403,8 +5418,8 @@ const COMPONENT_KNOWLEDGE = {
     tcmaticProducts: [
       { ref: '121.000.0001', desc: 'MTF VAG 512',   homol: 'VW TL 521 12 · MB 235.17 · DSG DQ200 seco (clutch fluid)', febiRef: null    },
       { ref: '121.000.0002', desc: 'MTF 75W-80',    homol: 'GL-4 75W-80 · BMW MTF-LT-3 · Ford M2C200 · PSA B71 2330 · VW 501 50', febiRef: '180073' },
-      { ref: '121.000.0003', desc: 'MTF 75W-85',    homol: 'GL-4 75W-85 · MB 235.10 · VW TL 521 71/78',                febiRef: '48785'  },
-      { ref: '121.000.0004', desc: 'MTF 75W-90',    homol: 'GL-5 75W-90 · API GL-5',                                   febiRef: '32590'  },
+      { ref: '121.000.0003', desc: 'MTF 75W-85',    homol: 'GL-4 75W-85 · MB 235.7 · VW TL 521 71/78',                 febiRef: '48785'  },
+      { ref: '121.000.0004', desc: 'MTF 75W-90',    homol: 'GL-5 75W-90 · API GL-4/GL-5',                              febiRef: '32590'  },
       { ref: '121.000.0005', desc: 'MTF 75W-140',   homol: 'GL-5 75W-140 · alta carga diferencial',                    febiRef: null     },
     ],
   },
@@ -5424,6 +5439,8 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '33889',  volume: '1 L',    desc: 'ATF MB15 — MB 236.15 / ATF 134 FE', oem: '002 989 35 03 · A002989350310', approvals: 'MB 236.15 · ATF 134 FE · Dexron III H' },
       { ref: '39095',  volume: '1 L',    desc: 'ATF ZF8 — ZF Lifeguard 8/9 / ATF 3+', oem: 'A000989030711 · A000 989 03 07 11', approvals: 'ZF Lifeguard 8 · ATF 3+ · Jeep ATF LGF8 · Chrysler 68157995AA · MB 236.12' },
       { ref: '183413', volume: '1 L',    desc: 'ATF AW8 — Dexron ULV / BMW ATF 7', oem: '83 22 2 413 514', approvals: 'Dexron ULV · BMW ATF 7 · Ford WSS-M2C949-A · ZF 9HP' },
+      { ref: '32600',  volume: '1 L',    desc: 'ATF Dexron VI — MB 236.41/236.51', oem: '83 22 2 167 720', approvals: 'MB 236.41 · MB 236.51 · Dexron VI · Mercon LV · Voith H55.6335.XX · DTFR 10B100' },
+      { ref: '32605',  volume: '5 L',    desc: 'ATF Dexron VI — MB 236.41/236.51', oem: '83 22 0 397 114 S1', approvals: 'MB 236.41 · MB 236.51 · Dexron VI · Mercon LV · Voith H55.6335.XX · DTFR 10B100' },
       { ref: '47716',  volume: '1 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '100708', volume: '5 L',    desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
       { ref: '194473', volume: '20 L',   desc: 'ATF MB17 — 7G-Tronic Plus', oem: '002 989 06 03', approvals: 'MB 236.16 · MB 236.17' },
@@ -5435,8 +5452,8 @@ const COMPONENT_KNOWLEDGE = {
       { ref: '109.000.0002', desc: 'ATF MB15',  homol: 'MB 236.15 · ATF 134 FE',                                    febiRef: '33889'  },
       { ref: '109.000.0003', desc: 'ATF MB17',  homol: 'MB 236.16 · MB 236.17',                                     febiRef: '47716'  },
       { ref: '109.000.0004', desc: 'ATF AW4',   homol: 'Dexron III · BMW ATF 6 · Toyota T-IV · ZF 4HP 14/18',      febiRef: '29934'  },
-      { ref: '109.000.0005', desc: 'ATF DEX 3', homol: 'Dexron III H · Mercon V · MB 236.6/9/10',                  febiRef: '22806'  },
-      { ref: '109.000.0006', desc: 'ATF DEX 6', homol: 'Dexron VI · MB 236.41/51 · Mercon LV',                     febiRef: '29934'  },
+      { ref: '109.000.0005', desc: 'ATF DEX 3', homol: 'Dexron III H · Mercon V · MB 236.9',                       febiRef: '22806'  },
+      { ref: '109.000.0006', desc: 'ATF DEX 6', homol: 'Dexron VI · MB 236.41/51 · Mercon LV',                     febiRef: '32600'  },
       { ref: '109.000.0007', desc: 'ATF AW6',   homol: 'Dexron III · AISIN WARNER AW-1',                           febiRef: '29934'  },
       { ref: '109.000.0011', desc: 'ATF ZF5',   homol: 'ZF Lifeguard 5 · BMW ATF 4 · MB 236.11 · Toyota PSF EH',  febiRef: '14738'  },
       { ref: '109.000.0012', desc: 'ATF ZF6',   homol: 'ZF Lifeguard 6 · Mercon SP · BMW ATF 2 · Porsche M-1375.4 · ATF SP-IV · Ford WSS-M2C938-A · ZF S671 090 255', febiRef: '34608' },
@@ -5711,7 +5728,7 @@ const EMBEDDINGS_CORPUS = [
   { id: 'TCMATIC_ATF_03', triggerQuery: 'ATF Mercedes MB 17', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF MB17 homologación MB 17 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0003 109.000.2003 109.000.2503 47716 Amarillo MB' },
   { id: 'TCMATIC_ATF_04', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW4 homologación AW 4 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0004 109.000.2004 109.000.2504 29934 Rojo Dexron III' },
   { id: 'TCMATIC_ATF_05', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 3 homologación DEX III CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0005 109.000.2005 109.000.2505 22806 Rojo Dexron III (H) Mercon V' },
-  { id: 'TCMATIC_ATF_06', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 6 homologación DEX VI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0006 109.000.2006 109.000.2506 29934 Rojo Dexron III' },
+  { id: 'TCMATIC_ATF_06', triggerQuery: 'ATF Dexron VI', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF DEX 6 homologación DEX VI CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0006 109.000.2006 109.000.2506 equivale febi 32600 32605 MB 236.41 236.51 Mercon LV Dexron VI' },
   { id: 'TCMATIC_ATF_07', triggerQuery: 'ATF', text: 'aceite ATF caja automática transmisión automática TC-Matic TCMATIC ATF AW6 homologación AW 6 CAJA DE CAMBIOS AUTOMATICO referencias 109.000.0007 109.000.2007 109.000.2507 29934 Rojo Dexron III' },
   { id: 'TCMATIC_CVT_01', triggerQuery: 'ATF CVT', text: 'aceite CVT transmisión continua variador TC-Matic TCMATIC CVTF FLUID homologación  CAJA DE CAMBIOS VARIABLE CONTINUO referencias 109.000.0008 27975 Amarillo ATF CVT VW' },
   { id: 'TCMATIC_DCT_01', triggerQuery: 'aceite transmision DSG VW', text: 'aceite DCT caja doble embrague DSG transmisión dual TC-Matic TCMATIC DCTF VAG 182 homologación VW 182 CAJA DE CAMBIOS DOBLE EMBRAGUE referencias 109.000.0009 109.000.2009 109.000.2509 39070 Amarillo DCTF-1/+ TL 52 182 236,21/24 Drivelogic 7-spd WSS-M2C936-A PDK DCS 6-speed EDC 6-speed' },
@@ -5779,7 +5796,8 @@ const EMBEDDINGS_CORPUS = [
   { id: 'TCMATIC_TCF_06', triggerQuery: 'ATF', text: 'aceite convertidor de par TCF ITC ATC torque converter TC-Matic TCMATIC TCF 0AQ (12 x 1L) homologación 0AQ CAJA DE TRANSFERENCIA referencias 121.000.7008' },
   { id: 'TCMATIC__01', triggerQuery: '', text: ' TC-Matic CASCO CONVERTIDOR DE PAR homologación   referencias 903.118.2008 903.118.2009 903.118.2010' },
   { id: 'EQUIV_ATF_01', triggerQuery: 'ATF ZF Lifeguard 8/9', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0013 109.000.0019 equivale febi 39095 especificaciones ATF 3+ ZF Lifeguard 8/9 ATF LGF8 transmisión automática caja cambios' },
-  { id: 'EQUIV_ATF_02', triggerQuery: 'ATF Dexron III', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0006 109.000.0007 109.000.0004 equivale febi 29934 especificaciones Dexron III transmisión automática caja cambios' },
+  { id: 'EQUIV_ATF_02', triggerQuery: 'ATF Dexron III', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0007 109.000.0004 equivale febi 29934 especificaciones Dexron III transmisión automática caja cambios' },
+  { id: 'EQUIV_ATF_02B', triggerQuery: 'ATF Dexron VI', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0006 equivale febi 32600 32605 especificaciones Dexron VI MB 236.41 236.51 Mercon LV transmisión automática caja cambios' },
   { id: 'EQUIV_ATF_03', triggerQuery: 'ATF Mercedes 236,21/24', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0009 109.000.0022 109.000.0020 109.000.0031 equivale febi 39070 especificaciones 236,21/24 TL 52 182 Drivelogic 7-spd WSS-M2C936-A EDC 6-speed DCS 6-speed PDK transmisión automática caja cambios' },
   { id: 'EQUIV_ATF_04', triggerQuery: 'ATF ATF 134', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0001 equivale febi 29449 especificaciones ATF 134 transmisión automática caja cambios' },
   { id: 'EQUIV_ATF_05', triggerQuery: 'ATF VW ', text: 'equivalencia aceite ATF caja automática TC-Matic 109.000.0010 equivale febi 49700 especificaciones VW transmisión automática caja cambios' },
@@ -6799,7 +6817,7 @@ const EMBEDDINGS_CORPUS = [
   { id: 'EQUIV_TRANS_DEXIII_001', triggerQuery: 'equivalente aceite transmisi�n manual DEX III EP', text: 'Equivalencias transmisi�n manual DEX III EP: Repsol: AUTOMATOR ATF III = AD Parts: ATF DEXRON III = Castrol: Transmax ATF DX III MV = Eni: ROTRA ATF III' },
   { id: 'EQUIV_FEBI_TCMATIC_001', triggerQuery: 'equivalente TC-Matic 109.000.0013 Febi 39095', text: 'Equivalencia TC-Matic 109.000.0013 = Febi 39095. Especificaciones: Dexron: ATF 3+, ZF: ZF Lifeguard 8/9, Jeep: ATF LGF8' },
   { id: 'EQUIV_FEBI_TCMATIC_002', triggerQuery: 'equivalente TC-Matic 109.000.0019 Febi 39095', text: 'Equivalencia TC-Matic 109.000.0019 = Febi 39095. Especificaciones: Dexron: ATF 3+, ZF: ZF Lifeguard 8/9, Jeep: ATF LGF8' },
-  { id: 'EQUIV_FEBI_TCMATIC_003', triggerQuery: 'equivalente TC-Matic 109.000.0006 Febi 29934', text: 'Equivalencia TC-Matic 109.000.0006 = Febi 29934. Especificaciones: Dexron: Dexron III' },
+  { id: 'EQUIV_FEBI_TCMATIC_003', triggerQuery: 'equivalente TC-Matic 109.000.0006 Febi 32600', text: 'Equivalencia TC-Matic 109.000.0006 = Febi 32600 (también 32605). Especificaciones: Dexron: Dexron VI, MB: 236.41/236.51, Mercon LV' },
   { id: 'EQUIV_FEBI_TCMATIC_004', triggerQuery: 'equivalente TC-Matic 109.000.0007 Febi 29934', text: 'Equivalencia TC-Matic 109.000.0007 = Febi 29934. Especificaciones: Dexron: Dexron III' },
   { id: 'EQUIV_FEBI_TCMATIC_005', triggerQuery: 'equivalente TC-Matic 109.000.0004 Febi 29934', text: 'Equivalencia TC-Matic 109.000.0004 = Febi 29934. Especificaciones: Dexron: Dexron III' },
   { id: 'EQUIV_FEBI_TCMATIC_006', triggerQuery: 'equivalente TC-Matic 109.000.0009 Febi 39070', text: 'Equivalencia TC-Matic 109.000.0009 = Febi 39070. Especificaciones: Cambio: DCTF-1/+, VW: TL 52 182, MB: 236,21/24, BMW: Drivelogic 7-spd, Ford: WSS-M2C936-A, Porsche: PDK, PSA: DCS 6-speed, Renault: EDC 6-speed' },
