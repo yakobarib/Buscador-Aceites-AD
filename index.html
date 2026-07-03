@@ -3467,7 +3467,7 @@ const AD_PARTS_CATALOG = [
   { ref: 'AD SPA 0W20',            sku: 'ADP78005', viscosity: '0W20',  type: 'motor', segment: 'ligero', formats: [5, 208],
     specs: ['PSA B71 2010', 'ACEA C5', 'ACEA C6', 'API SP'] },
   // ── MOTOR LIGERO · 0W30 ──
-  { ref: 'AD SCD 0W30',            sku: 'ADP71005', viscosity: '0W30',  type: 'motor', segment: 'ligero', formats: [5, 208],
+  { ref: 'AD SCD 0W30',            sku: 'ADP71005', viscosity: '0W30',  type: 'motor', segment: 'ligero', formats: [5, 208, 1000],
     specs: ['BMW LL-04', 'MB 229.52', 'PORSCHE C30', 'VW 504.00', 'VW 507.00', 'ACEA C3'] },
   { ref: 'AD SPC 0W30',            sku: 'ADP66005', viscosity: '0W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 208, 1000],
     specs: ['PSA B71 2312', 'PSA B71 2302', 'ACEA C2', 'API SP', 'FIAT 9.55535-GS1', 'FIAT 9.55535-DS1'] },
@@ -3489,7 +3489,7 @@ const AD_PARTS_CATALOG = [
     specs: ['PSA B71 2297', 'STELLANTIS FPW9.55535/03', 'ACEA C3', 'API SP'] },
   { ref: 'AD SCC 5W30',            sku: 'ADP46005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
     specs: ['BMW LL-04', 'MB 229.51', 'PORSCHE C30', 'VW 504.00', 'VW 507.00', 'VW 501.01', 'VW 502.00', 'VW 503.01', 'VW 505.00', 'VW 505.01', 'VW 506.00', 'VW 506.01', 'ACEA C2', 'ACEA C3', 'ACEA A3/B4', 'VW 503.00'] },
-  { ref: 'AD SFE Plus 5W30',       sku: 'ADP34005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 208, 500, 600, 1000],
+  { ref: 'AD SFE Plus 5W30',       sku: 'ADP34005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 500, 600, 1000],
     specs: ['FORD WSS-M2C913-D', 'RENAULT RN0700', 'JAGUAR STJLR.03.5003', 'ACEA A5/B5', 'API SL', 'API CF'] },
   { ref: 'AD SCB 5W30',            sku: 'ADP60005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 208, 1000],
     specs: ['BMW LL-04', 'MB 229.51', 'PORSCHE C30', 'VW 504.00', 'VW 507.00', 'ACEA C3', 'API SN'] },
@@ -3502,7 +3502,7 @@ const AD_PARTS_CATALOG = [
   // ── MOTOR LIGERO · 5W40 ──
   { ref: 'AD MDXs Mega Plus 5W40', sku: 'ADP35005', viscosity: '5W40',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
     specs: ['BMW LL-04', 'GM DEXOS2', 'MB 229.51', 'MB 229.31', 'PORSCHE A40', 'VW 505.00', 'VW 505.01', 'FORD WSS-M2C917-A', 'FIAT 9.55535-S2', 'ACEA C3', 'API SN', 'API CF'] },
-  { ref: 'AD SDI 5W40',            sku: 'ADP22005', viscosity: '5W40',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 1000],
+  { ref: 'AD SDI 5W40',            sku: 'ADP22005', viscosity: '5W40',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
     specs: ['MB 229.3', 'MB 226.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00', 'BMW LL-01', 'GM LL-B-025', 'PSA B71 2296', 'ACEA A3/B4', 'API SN', 'API CF'] },
   // ── MOTOR LIGERO · 10W40 ──
   { ref: 'AD MDXs Plus 10W40',     sku: 'ADP57005', viscosity: '10W40', type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
@@ -3512,7 +3512,7 @@ const AD_PARTS_CATALOG = [
   // ── MOTOR LIGERO · 15W50 / 20W50 ──
   { ref: 'AD MDX 15W50',           sku: 'ADP12005', viscosity: '15W50', type: 'motor', segment: 'ligero', formats: [2, 5, 20, 50, 208, 600, 1000],
     specs: ['MB 229.1', 'VW 501.01', 'VW 505.00', 'ACEA A3/B4', 'API SM', 'API CF'] },
-  { ref: 'AD LDX 20W50',           sku: 'ADP21005', viscosity: '20W50', type: 'motor', segment: 'ligero', formats: [5, 50, 208, 1000],
+  { ref: 'AD LDX 20W50',           sku: 'ADP21005', viscosity: '20W50', type: 'motor', segment: 'ligero', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['MB 229.1', 'VW 501.01', 'VW 505.00', 'ACEA A3/B4', 'API SM', 'API CF'] },
 
   // ── MOTOR PESADO ──
@@ -3530,29 +3530,29 @@ const AD_PARTS_CATALOG = [
     specs: ['MB 228.3', 'VOLVO VDS-3', 'RENAULT RLD-2', 'MACK EO-N', 'CUMMINS CES 20076', 'CATERPILLAR ECF-2', 'MTU Type 2', 'ACEA E5', 'ACEA E7', 'ACEA E7/E5', 'API CI-4', 'API CH-4', 'API SL', 'CATERPILLAR ECF-1a', 'CUMMINS CES 20077', 'CUMMINS CES 20078', 'DETROIT DIESEL 93K215', 'DEUTZ DQC III-18', 'MAN 3275-1', 'JASO GLOBAL DHD-1'] },
   { ref: 'AD ZTD 15W40',           sku: 'ADP59005', viscosity: '15W40', type: 'motor', segment: 'pesado', formats: [5, 20, 208, 1000],
     specs: ['MB 228.31', 'VOLVO VDS-4', 'VOLVO VDS-4.5', 'MAN M3575', 'MAN M3775', 'RENAULT RLD-3', 'CATERPILLAR ECF-3', 'CUMMINS CES 20086', 'MTU Type 2.1', 'ACEA E7', 'ACEA E9', 'ACEA E11', 'API CJ-4', 'API CK-4', 'ACEA E7/E9', 'API CI-4', 'API CI-4 Plus', 'API SN', 'DETROIT DIESEL 93K222', 'DEUTZ DQC III-10 LA', 'MACK EOS-4.5', 'DTFR 15C100', 'FORD WSS-M2C171-F1'] },
-  { ref: 'AD DS3 SAE 30',          sku: 'ADP10005', viscosity: 'SAE 30', type: 'motor', segment: 'pesado', formats: [5, 20, 50, 208, 1000],
+  { ref: 'AD DS3 SAE 30',          sku: 'ADP10005', viscosity: 'SAE 30', type: 'motor', segment: 'pesado', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['MB 228.0', 'ACEA E2', 'API CF', 'API SF', 'MIL-L-2104-D', 'MIL-L-46152-C', 'ALLISON C-3', 'MAN 270', 'MTU Type 1', 'CATERPILLAR TO-2'] },
-  { ref: 'AD DS3 SAE 40',          sku: 'ADP11005', viscosity: 'SAE 40', type: 'motor', segment: 'pesado', formats: [5, 20, 50, 208, 1000],
+  { ref: 'AD DS3 SAE 40',          sku: 'ADP11005', viscosity: 'SAE 40', type: 'motor', segment: 'pesado', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['MB 228.0', 'ACEA E2', 'API CF', 'API SF', 'MIL-L-2104-D', 'MIL-L-46152-C', 'ALLISON C-3', 'MAN 270', 'MTU Type 1', 'CATERPILLAR TO-2'] },
 
   // ── TRANSMISIÓN ──
   { ref: 'AD ATF DEX III',         sku: 'ADP40005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
     specs: ['DEXRON III H', 'MERCON V', 'MB 236.9', 'ZF TE-ML 03D', 'ZF TE-ML 04D', 'ZF TE-ML 14B', 'ZF TE-ML 16L', 'ZF TE-ML 17C', 'ZF TE-ML 20B', 'ZF TE-ML 25B', 'ALLISON C-4', 'ALLISON TES 389', 'ALLISON TES 295', 'FORD MERCON V', 'GM DEXRON III H', 'MAN 339 V-2', 'MAN 339 Z-2', 'MAN Z-11', 'MAN 339 L-1', 'DTFR 13C170', 'VOLVO 97341', 'VOLVO AT101'] },
-  { ref: 'AD ATF DEX',             sku: 'ADP20005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero', formats: [1, 5, 20, 50, 208, 1000],
+  { ref: 'AD ATF DEX',             sku: 'ADP20005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
     specs: ['DEXRON II D', 'MERCON', 'MB 236.9', 'ZF TE-ML 03D', 'ZF TE-ML 04D', 'ZF TE-ML 11A', 'ZF TE-ML 14A', 'ZF TE-ML 17C', 'ALLISON C-4', 'FORD MERCON', 'GM DEXRON II D', 'MAN 339 V-1', 'MAN 339 Z-1', 'MAN 339 L-2', 'DTFR 13C170', 'VOLVO 97341'] },
-  { ref: 'AD ATF Plus',            sku: 'ADP51005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero',
+  { ref: 'AD ATF Plus',            sku: 'ADP51005', viscosity: 'ATF',   type: 'transmision', segment: 'ligero', formats: [5, 20],
     specs: [] },
-  { ref: 'AD SHP Plus 75W80',      sku: 'ADP54005', viscosity: '75W80', type: 'transmision', segment: 'ligero', formats: [5, 20, 208],
+  { ref: 'AD SHP Plus 75W80',      sku: 'ADP54005', viscosity: '75W80', type: 'transmision', segment: 'ligero', formats: [5, 20, 50, 208, 600],
     specs: ['API GL-5', 'API GL-4', 'BMW MTF LT-2', 'GM 1940764', 'GM 1940768', 'PSA B71 2330', 'FIAT MZ6'] },
   { ref: 'AD SLD 75W80',           sku: 'ADP63005', viscosity: '75W80', type: 'transmision', segment: 'ligero', formats: [5, 20, 208, 1000],
     specs: ['API GL-4', 'ZF TE-ML 02L', 'MAN 341 Z-4', 'VOLVO 97307', 'ZF TE-ML 01L', 'ZF TE-ML 08', 'ZF TE-ML 16K', 'RENAULT B0032'] },
-  { ref: 'AD SHP 75W90',           sku: 'ADP17005', viscosity: '75W90', type: 'transmision', segment: 'pesado', formats: [5, 20, 50, 208, 1000],
+  { ref: 'AD SHP 75W90',           sku: 'ADP17005', viscosity: '75W90', type: 'transmision', segment: 'pesado', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['API GL-4', 'API GL-5', 'MB 235.0', 'MB 235.8', 'ZF TE-ML 02B', 'ZF TE-ML 05A', 'ZF TE-ML 07A', 'ZF TE-ML 08', 'ZF TE-ML 12N', 'ZF TE-ML 16K', 'API MT-1', 'ARVIN MERITOR 0-76-N', 'MACK GO-J', 'MAN 341 Type Z2', 'MAN 342 Type S1', 'MIL-PRF-2105E', 'DTFR 12B140', 'SCANIA STO 2:0 AFS', 'SCANIA STO 1:0', 'SCANIA STO 1:1 G', 'VOLVO 97312', 'ZF TE-ML 12L', 'ZF TE-ML 16F', 'ZF TE-ML 17B', 'ZF TE-ML 19C', 'ZF TE-ML 21A'] },
   { ref: 'AD MMP 80W',             sku: 'ADP37005', viscosity: '80W',   type: 'transmision', segment: 'pesado', formats: [5, 50, 500],
     specs: ['API GL-4', 'MB 235.1', 'ZF TE-ML 02B', 'ZF TE-ML 17A'] },
-  { ref: 'AD MHP 80W90',           sku: 'ADP13005', viscosity: '80W90', type: 'transmision', segment: 'pesado', formats: [5, 20, 50, 208, 1000],
+  { ref: 'AD MHP 80W90',           sku: 'ADP13005', viscosity: '80W90', type: 'transmision', segment: 'pesado', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['API GL-5', 'MB 235.0', 'ZF TE-ML 07A', 'ZF TE-ML 08', 'ZF TE-ML 16B', 'ZF TE-ML 17B', 'ZF TE-ML 19B', 'ZF TE-ML 21A', 'DTFR 12B100', 'MAN 342 Type M1', 'FORD WSS-M2C913-C', 'FORD WSS-M2C913-D', 'RENAULT B0032'] },
-  { ref: 'AD MHP Special 85W140',  sku: 'ADP36005', viscosity: '85W140', type: 'transmision', segment: 'pesado', formats: [5, 50, 208, 500, 1000],
+  { ref: 'AD MHP Special 85W140',  sku: 'ADP36005', viscosity: '85W140', type: 'transmision', segment: 'pesado', formats: [5, 50, 208, 500, 600, 1000],
     specs: ['API GL-5', 'ZF TE-ML 05A', 'ZF TE-ML 07A', 'ZF TE-ML 08', 'ZF TE-ML 12E', 'ZF TE-ML 16C', 'ZF TE-ML 16D', 'ZF TE-ML 21A', 'MAN 342 Type M1', 'MIL-L-2105-D', 'VOLVO 1273.10', 'VOLVO 97310', 'VOLVO 97313', 'VOLVO 97314'] },
   { ref: 'AD MLS 85W90',           sku: 'ADP38005', viscosity: '85W90', type: 'transmision', segment: 'pesado', formats: [5, 208, 1000],
     specs: ['API GL-5', 'MIL-L-2105-D'] },
@@ -3564,7 +3564,7 @@ const AD_PARTS_CATALOG = [
     specs: ['ACEA E2', 'API GL-4', 'API CF', 'CATERPILLAR TO-2', 'ZF TE-ML 06B', 'ZF TE-ML 06C', 'ZF TE-ML 07B', 'MB 228.1', 'ALLISON C-4', 'API CG-4', 'API SF', 'MB 227.1', 'FORD M2C-159B', 'JOHN DEERE J-27', 'MASSEY FERGUSON M1145'] },
 
   // ── HIDRÁULICO ──
-  { ref: 'AD HHM 32',              sku: 'ADP26005', viscosity: 'HM32',  type: 'hidraulico', segment: 'industrial', formats: [5, 20, 50, 208, 1000],
+  { ref: 'AD HHM 32',              sku: 'ADP26005', viscosity: 'HM32',  type: 'hidraulico', segment: 'industrial', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['DIN 51524-2', 'ISO VG 32'] },
   { ref: 'AD HHM 46',              sku: 'ADP23005', viscosity: 'HM46',  type: 'hidraulico', segment: 'industrial', formats: [5, 20, 50, 208, 600, 1000],
     specs: ['DIN 51524-2', 'ISO VG 46'] },
@@ -3610,8 +3610,14 @@ const AD_PARTS_CATALOG = [
     specs: ['ISO 22241', 'AdBlue', 'DEF'] },
 
   // ── NUEVO (ficha técnica AD Parts) ──
-  { ref: 'AD SHT 0W40 PLUS',       sku: 'ADP18001', viscosity: '0W40',  type: 'motor', segment: 'ligero', formats: [1, 208],
+  { ref: 'AD SHT 0W40 PLUS',       sku: 'ADP18001', viscosity: '0W40',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600],
     specs: ['ACEA A3/B4', 'API SN', 'MB 229.5', 'PORSCHE A40', 'RENAULT RN0700', 'RENAULT RN0710', 'VW 502.00', 'VW 505.00'] },
+
+  // ── NUEVO (Productos AD Parts Abril 2026.xlsx, sin ficha técnica en carpeta) ──
+  { ref: 'AD SHT 0W30 High Tech',  sku: 'ADP33005', viscosity: '0W30',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
+    specs: [] },
+  { ref: 'AD SHT 5W50',            sku: 'ADP14005', viscosity: '5W50',  type: 'motor', segment: 'ligero', formats: [5, 20, 50, 208, 600, 1000],
+    specs: [] },
 ];
 
 // ─── EQUIVALENCIAS REVISADAS POR HUMANO (fuente: Excel Yakoba Moreno) ───
