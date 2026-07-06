@@ -11167,6 +11167,16 @@ function skuForProductFormat(adName, suffix) {
   return entry ? 'ADP' + entry[0] : null;
 }
 
+// ─── DESAMBIGUACIÓN GENÉRICA PARA BÚSQUEDA LIBRE ───
+// Helper reutilizable: cuando una entrada de texto libre podría referirse a más de un
+// producto real (p.ej. "hidráulico 46" sin decir HM o HV) y no hay forma fiable de
+// adivinar cuál quiere el usuario, se devuelve este match en vez de asumir un valor
+// por defecto en silencio. `options` es [{ label, refineQuery }] — cada botón vuelve a
+// lanzar la búsqueda con una consulta más específica (ver fillFree en renderFreeResult).
+function ambiguousProductMatch(query, options) {
+  return { match: 'ambiguous_product', query, options };
+}
+
 function freeSearch(query) {
   if (!query || !query.trim()) return null;
   const raw = query.trim();
@@ -11217,11 +11227,11 @@ function freeSearch(query) {
     if (detectedComponents.some(c => c.key === 'HIDRAULICO')) {
       const gradeMatch = qNorm.match(/\b(32|46|68)\b/);
       const isHV  = /\bhvlp\b|\bhlp3\b|\bhlp\s+3\b|\biso.*hv\b/.test(qNorm);
-      const isHM  = /\bhlp2\b|\bhlp\s+2\b|\bhlp2\b|\bhm\b/.test(qNorm);
+      const isHM  = /\bhlp\b|\bhlp2\b|\bhlp\s+2\b|\bhm\b/.test(qNorm);
       let fmt = null;
       for (const fd of FORMAT_DETECT) { if (fd.re.test(raw)) { fmt = fd; break; } }
 
-      if (gradeMatch) {
+      if (gradeMatch && (isHV || isHM)) {
         // Tipo Y grado conocidos → producto exacto
         const grade = gradeMatch[1];
         const type = isHV ? 'HV' : 'HM';
@@ -11230,6 +11240,24 @@ function freeSearch(query) {
         );
         if (products.length > 0) {
           return { match: 'direct_product', query: raw, products, format: fmt };
+        }
+      } else if (gradeMatch) {
+        // Grado conocido pero tipo NO especificado → si hay más de un tipo real para
+        // ese grado, no adivinar: preguntar. Si solo existe un tipo, usarlo directo.
+        const grade = gradeMatch[1];
+        const byType = { HM: [], HV: [] };
+        for (const t of ['HM', 'HV']) {
+          byType[t] = AD_PARTS_CATALOG.filter(p => p.type === 'hidraulico' && p.viscosity === `${t}${grade}`);
+        }
+        const realTypes = ['HM', 'HV'].filter(t => byType[t].length > 0);
+        if (realTypes.length > 1) {
+          return ambiguousProductMatch(raw, realTypes.map(t => ({
+            label: `${t === 'HV' ? 'HVLP' : 'HLP'} ${grade} (${t === 'HV' ? 'alto índice de viscosidad' : 'mineral estándar'})`,
+            refineQuery: `hidraulico ${t === 'HV' ? 'HVLP' : 'HLP'} ${grade}`,
+          })));
+        }
+        if (realTypes.length === 1) {
+          return { match: 'direct_product', query: raw, products: byType[realTypes[0]], format: fmt };
         }
       } else if (isHV || isHM) {
         // Solo tipo conocido, sin grado → filtrar por tipo y pedir grado
@@ -11626,6 +11654,29 @@ function renderFreeResult(result) {
           <div>Grados disponibles: ${grades.map(g => `<button class="desc-clarify-btn" onclick="fillFree('${result.query} ${g}')">${result.typePrefix === 'HV' ? 'HVLP' : 'HLP'} ${g}</button>`).join(' ')}</div>
         </div>
         ${renderProductsBlock(result.products, allEquivs)}
+      </div>`;
+    return;
+  }
+
+  // Desambiguación genérica: la búsqueda libre encontró más de una interpretación
+  // real y no adivina — deja elegir (mismo patrón visual que "Varias coincidencias"
+  // de homologaciones, ver ambiguousProductMatch()).
+  if (result.match === 'ambiguous_product') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow warn">Necesito una aclaración</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${result.query}"</div>
+            <div class="desc-result-desc">Hay más de un producto posible para esta búsqueda. Elige el que corresponda:</div>
+          </div>
+        </div>
+        <div class="desc-clarify-options">
+          ${result.options.map(o => `<button class="desc-clarify-btn" onclick="fillFree('${o.refineQuery}')">${o.label}</button>`).join('')}
+        </div>
       </div>`;
     return;
   }
