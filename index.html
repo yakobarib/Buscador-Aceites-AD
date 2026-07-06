@@ -1502,6 +1502,53 @@ body::after {
   font-size: 13px;
 }
 
+/* Cuando una norma coincide con varios productos AD a la vez, cada uno agrupa
+   sus propias equivalencias debajo para no mezclarlas con las de los demás. */
+.desc-products-grid-grouped {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--s-4);
+  align-items: start;
+}
+
+.desc-product-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+
+.desc-product-group-equivs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--s-2) 0 0 var(--s-3);
+  border-left: 2px solid var(--border-subtle);
+  margin-left: 4px;
+}
+
+.desc-product-group-equivs-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: 2px;
+}
+
+.desc-product-group-equivs-empty {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  padding: 0 0 0 var(--s-3);
+  margin-left: 4px;
+  font-style: italic;
+}
+
+.desc-product-card.small {
+  padding: 6px var(--s-3);
+}
+.desc-product-card.small .desc-product-ref { font-size: 12px; margin-bottom: 1px; }
+.desc-product-card.small .desc-product-name { font-size: 10.5px; margin-bottom: 0; }
+
 .desc-clarify-options {
   display: flex;
   gap: var(--s-3);
@@ -9165,22 +9212,23 @@ function productsForSpec(canonicalSpec) {
     p.specs.some(s => s.toUpperCase() === target)
   );
 
-  // Equivalencias: primero usar el Excel revisado por humano (prioridad)
+  // Equivalencias: primero usar el Excel revisado por humano (prioridad).
+  // Se calculan POR PRODUCTO AD (adProd.equivs) para poder mostrarlas agrupadas
+  // cuando la norma coincide con más de un producto AD válido a la vez —
+  // si no, quedaban todas mezcladas sin saber a qué referencia pertenecía cada una.
   let equivs = [];
   const seenRefs = new Set();
 
-  if (adProducts.length > 0) {
-    // Para cada producto AD encontrado, buscar sus equivalencias en el Excel
-    for (const adProd of adProducts) {
-      const humanEquivs = humanEquivsForAdSku(adProd.sku);
-      for (const eq of humanEquivs) {
-        if (!seenRefs.has(eq.sku)) {
-          seenRefs.add(eq.sku);
-          equivs.push(eq);
-        }
+  const adProductsWithEquivs = adProducts.map(adProd => {
+    const humanEquivs = humanEquivsForAdSku(adProd.sku);
+    for (const eq of humanEquivs) {
+      if (!seenRefs.has(eq.sku)) {
+        seenRefs.add(eq.sku);
+        equivs.push(eq);
       }
     }
-  }
+    return { ...adProd, equivs: humanEquivs };
+  });
 
   // Fallback al EQUIV_CATALOG solo para productos sin entrada en el Excel
   // (fluidos especiales: ATF CVT, DOT4, G12++, etc.)
@@ -9191,7 +9239,7 @@ function productsForSpec(canonicalSpec) {
     equivs = fallback.map(p => ({ brand: p.brand, sku: p.sku || '', ref: p.ref }));
   }
 
-  return { adProducts, equivs };
+  return { adProducts: adProductsWithEquivs, equivs };
 }
 
 // Busca un producto concreto por referencia (febi o TC-Matic) recorriendo COMPONENT_KNOWLEDGE.
@@ -9381,7 +9429,53 @@ function renderDescResult(result) {
 
 function renderProductsBlock(adProducts, equivs) {
   let html = '';
-  
+
+  // Si la norma buscada coincide con MÁS DE UN producto AD a la vez (ej. "GF-6A" →
+  // ADP61005, ADP67005, ADP73005, todos correctos), no mezclar las equivalencias de
+  // todos en una sola lista — se agrupan debajo de la referencia AD a la que
+  // pertenecen (adProd.equivs, ver productsForSpec). Si solo hay 0 o 1 producto AD,
+  // no hay ambigüedad posible y se usa el listado plano de siempre.
+  if (adProducts.length > 1 && adProducts.every(p => Array.isArray(p.equivs))) {
+    html += `
+      <div class="desc-result-section">
+        <div class="desc-result-section-title">
+          AD Parts recomendado <span class="count">${adProducts.length}</span>
+        </div>
+        <div class="desc-products-grid-grouped">
+          ${adProducts.map(p => `
+            <div class="desc-product-group">
+              <div class="desc-product-card ad">
+                <div class="desc-product-card-header">
+                  <span class="desc-product-brand">AD Parts</span>
+                </div>
+                <div class="desc-product-ref">${p.sku}</div>
+                <div class="desc-product-name">${p.ref}</div>
+                <div class="desc-product-specs">${p.specs.slice(0, 4).join(' · ')}${p.specs.length > 4 ? ` +${p.specs.length - 4}` : ''}</div>
+              </div>
+              ${p.equivs.length ? `
+                <div class="desc-product-group-equivs">
+                  <div class="desc-product-group-equivs-title">Equivalencias de ${p.ref}</div>
+                  ${p.equivs.map(e => e.otrosFormatos ? `
+                    <div class="desc-product-card small otros-formatos">
+                      <div class="desc-product-card-header"><span class="desc-product-brand">${e.brand}</span></div>
+                      <div class="otros-formatos-badge">Disponible en otros formatos</div>
+                    </div>
+                  ` : `
+                    <div class="desc-product-card small">
+                      <div class="desc-product-card-header"><span class="desc-product-brand">${e.brand}</span></div>
+                      ${e.sku ? `<div class="desc-product-ref">${e.sku}</div>` : ''}
+                      <div class="desc-product-name">${e.ref}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              ` : `<div class="desc-product-group-equivs-empty">Sin equivalencia registrada todavía</div>`}
+            </div>
+          `).join('')}
+        </div>
+      </div>`;
+    return html;
+  }
+
   if (adProducts.length > 0) {
     html += `
       <div class="desc-result-section">
