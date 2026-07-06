@@ -4801,6 +4801,7 @@ const SPECS_DB = {
   'G12+':           { description: 'Refrigerante violeta mejorado (compatible G11/G12)', segment: 'ligero', tipo: 'refrigerante' },
   'G12++':          { description: 'Refrigerante violeta lobrid (VW TL-774-G)', segment: 'ligero', tipo: 'refrigerante' },
   'G13':            { description: 'Refrigerante violeta con glicerina (VW última gen.)', segment: 'ligero', tipo: 'refrigerante' },
+  'G12evo':         { description: 'Refrigerante violeta lobrid de nueva generación (VW TL 774-L)', segment: 'ligero', tipo: 'refrigerante' },
 
   // MB monograde diesel
   'MB 228.0':       { description: 'Aceite motor diésel pesado MB monogrado (motores antiguos MAN/MB)', segment: 'pesado', tipo: 'motor' },
@@ -5191,12 +5192,11 @@ const OEM_INDEX = {
   'G052171A2': { canonical: 'VW G 052 171', febi: '21829', liters: 1, oem: 'G 052 171 A2' },
   'G052175A1': { canonical: 'VW TL 52175', febi: '101170', liters: 0.275, oem: 'G 052 175 A1' },
   'G052180A2': { canonical: 'VW G 052 180', febi: '27975', liters: 1, oem: 'G 052 180 A2' },
-  'G052182': { canonical: 'MB 236.21', febi: '39071', liters: 5, oem: 'G 052 182' },
   'G052195M2': { canonical: 'VW 507.00', febi: '32945', liters: 1, oem: 'G 052 195 M2' },
   'G052196': { canonical: 'VW G 052 196', febi: '194490', liters: 1, oem: 'G 052 196' },
   'G052502M2': { canonical: 'VW 502.00', febi: '32936', liters: 1, oem: 'G 052 502 M2' },
   'G052529A2': { canonical: 'MB 236.21', febi: '39070', liters: 1, oem: 'G 052 529 A2' },
-  'G052577M2': { canonical: 'VW 508.00', febi: '177649', liters: 1, oem: 'G  052 577 M2' },
+  'G052577': { canonical: 'VW 508.00', febi: '177649', liters: 1, oem: 'G  052 577' },
   'G052911': { canonical: 'VW G 052 911', febi: '40580', liters: 1, oem: 'G 052 911' },
   'G052990': { canonical: 'ATF (genérico)', febi: '29934', liters: 1, oem: 'G 052 990' },
   'G055005': { canonical: 'Porsche M-1375.4', febi: '38935', liters: 5, oem: 'G 055 005' },
@@ -5215,6 +5215,31 @@ const OEM_INDEX = {
   'GS55505M2': { canonical: 'MB 229.51', febi: '195457', liters: 1, oem: 'G S55 505 M2' },
   'GS55545': { canonical: 'VW 507.00', febi: '194614', liters: 1, oem: 'G S55 545' },
   'MAN341TYPEZ4': { canonical: 'MAN 341 Type Z4', febi: '170127', liters: 60, oem: 'MAN 341 TYPE Z4' },
+
+  // Formas "sin sufijo" tal cual aparecen literalmente en la columna OEM del Excel
+  // Febi (antes solo se indexaba la forma con sufijo A1/A2/M1/M2/S1-S4, y una
+  // búsqueda con el código exacto impreso en el bote no encontraba nada).
+  'G052162': { canonical: 'MB 236.11', febi: '14738', liters: 1, oem: 'G 052 162' },
+  'G052180': { canonical: 'VW G 052 180', febi: '27975', liters: 1, oem: 'G 052 180' },
+  '83220397114': { canonical: 'MB 236.41', febi: '32605', liters: 5, oem: '83 22 0 397 114' },
+  'G060162': { canonical: 'ZF Lifeguard 8', febi: '39095', liters: 1, oem: 'G 060 162' },
+  'B000700': { canonical: 'DOT 4', febi: '26461', liters: 1, oem: 'B 000 700' },
+  '81229407454': { canonical: 'G11', febi: '22268', liters: 5, oem: '81 22 9 407 454' },
+  'G012A8D': { canonical: 'G12', febi: '01381', liters: 1.5, oem: 'G 012 A8D' },
+  'G012A8F': { canonical: 'G12+', febi: '19400', liters: 1.5, oem: 'G 012 A8F' },
+  '7711428133': { canonical: 'RENAULT Type D', febi: '26580', liters: 1.5, oem: '77 11 428 133' },
+  'G012A8G': { canonical: 'G12++', febi: '37400', liters: 1.5, oem: 'G 012 A8G' },
+  'G013A8J': { canonical: 'G13', febi: '38200', liters: 1.5, oem: 'G 013 A8J' },
+  'G052502': { canonical: 'VW 502.00', febi: '32936', liters: 1, oem: 'G 052 502' },
+  'G052195': { canonical: 'VW 507.00', febi: '32945', liters: 1, oem: 'G 052 195' },
+  'GS55505': { canonical: 'MB 229.51', febi: '195457', liters: 1, oem: 'G S55 505' },
+  'G052171': { canonical: 'VW G 052 171', febi: '21829', liters: 1, oem: 'G 052 171' },
+  'G052529': { canonical: 'MB 236.21', febi: '39070', liters: 1, oem: 'G 052 529' },
+  'G055529': { canonical: 'VW G 052 529', febi: '194479', liters: 20, oem: 'G 055 529' },
+  'G004000': { canonical: 'CHF-202', febi: '46161', liters: 1, oem: 'G 004 000' },
+  'G052175': { canonical: 'VW TL 52175', febi: '101170', liters: 0.275, oem: 'G 052 175' },
+  'G055175': { canonical: 'VW TL 52175-X', febi: '101171', liters: 1, oem: 'G 055 175' },
+  'G060175': { canonical: 'VW TL 52175-Y', febi: '101172', liters: 0.85, oem: 'G 060 175' },
 };
 
 // ─── DICCIONARIO DE ALIAS (claves ya normalizadas: sin espacios, mayúsculas, sin separadores) ───
@@ -5459,6 +5484,7 @@ const SPEC_ALIASES = {
 
   // Refrigerantes (claves ya normalizadas: + → PLUS)
   'G12PLUS': 'G12+', 'G12PLUSPLUS': 'G12++', 'G11': 'G11', 'G12': 'G12', 'G13': 'G13',
+  'G12EVO': 'G12evo', 'VWTL774L': 'G12evo', 'TL774L': 'G12evo',
   'PSAB715110': 'G12+', 'B715110': 'G12+',
 
   // Códigos comerciales cortos TC-Matic (homologación abreviada de su propio catálogo)
@@ -6102,12 +6128,11 @@ const RAW_TEXT_INDEX = {
 'G052171A2':{raw:'G 052 171 A2',products:[{b:'febi',r:'21829'}]},
 'G052175A1':{raw:'G 052 175 A1',products:[{b:'febi',r:'101170'}]},
 'G052180A2':{raw:'G 052 180 A2',products:[{b:'febi',r:'ADG05529'},{b:'febi',r:'27975'},{b:'febi',r:'193916'},{b:'febi',r:'195989'}]},
-'G052182':{raw:'G 052 182',products:[{b:'febi',r:'39071'}]},
 'G052195M2':{raw:'G 052 195 M2',products:[{b:'febi',r:'32945'}]},
 'G052196':{raw:'G 052 196',products:[{b:'febi',r:'194490'}]},
 'G052502M2':{raw:'G 052 502 M2',products:[{b:'febi',r:'32936'}]},
 'G052529A2':{raw:'G 052 529 A2',products:[{b:'febi',r:'39070'},{b:'febi',r:'194480'},{b:'febi',r:'109672'}]},
-'G052577M2':{raw:'G  052 577 M2',products:[{b:'febi',r:'177649'},{b:'febi',r:'177650'},{b:'febi',r:'177651'}]},
+'G052577':{raw:'G  052 577',products:[{b:'febi',r:'177649'},{b:'febi',r:'177650'},{b:'febi',r:'177651'}]},
 'G052911':{raw:'G 052 911',products:[{b:'febi',r:'40580'}]},
 'G052990':{raw:'G 052 990',products:[{b:'febi',r:'ADG05532'},{b:'febi',r:'29934'},{b:'febi',r:'194411'}]},
 'G055005':{raw:'G 055 005',products:[{b:'febi',r:'38935'}]},
