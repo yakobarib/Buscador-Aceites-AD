@@ -9231,16 +9231,28 @@ function productsForSpec(canonicalSpec) {
     return { ...adProd, equivs: humanEquivs };
   });
 
-  // Fallback al EQUIV_CATALOG solo para productos sin entrada en el Excel
-  // (fluidos especiales: ATF CVT, DOT4, G12++, etc.)
+  // AD Standard es una gama propia de AD Parts (más económica), pero por cómo se
+  // incorporó vive en EQUIV_CATALOG junto a Castrol/Repsol/etc. en vez de en
+  // AD_PARTS_CATALOG. Si cumple la norma buscada, debe contar como resultado AD
+  // válido (no quedar oculta ni mezclada como "otra marca") — se añade a la misma
+  // lista para que se muestre igual que cualquier otro AD Parts, agrupada si hay
+  // más de un resultado en total. No tiene equivalencias propias calculadas.
+  const standardMatches = EQUIV_CATALOG
+    .filter(p => p.brand === 'AD Standard' && p.specs.some(s => s.toUpperCase() === target))
+    .map(p => ({ ref: p.ref, sku: p.sku, viscosity: p.viscosity, formats: p.formats, specs: p.specs, isStandard: true, equivs: [] }));
+
+  const allAdProducts = [...adProductsWithEquivs, ...standardMatches];
+
+  // Fallback al EQUIV_CATALOG (otras marcas, excluyendo AD Standard que ya se trató
+  // arriba como resultado propio) solo para normas sin ninguna equivalencia humana.
   if (equivs.length === 0) {
     const fallback = EQUIV_CATALOG.filter(p =>
-      p.specs.some(s => s.toUpperCase() === target)
+      p.brand !== 'AD Standard' && p.specs.some(s => s.toUpperCase() === target)
     );
     equivs = fallback.map(p => ({ brand: p.brand, sku: p.sku || '', ref: p.ref }));
   }
 
-  return { adProducts: adProductsWithEquivs, equivs };
+  return { adProducts: allAdProducts, equivs };
 }
 
 // Busca un producto concreto por referencia (febi o TC-Matic) recorriendo COMPONENT_KNOWLEDGE.
@@ -9447,7 +9459,7 @@ function renderProductsBlock(adProducts, equivs) {
             <div class="desc-product-group">
               <div class="desc-product-card ad">
                 <div class="desc-product-card-header">
-                  <span class="desc-product-brand">AD Parts</span>
+                  <span class="desc-product-brand">${p.isStandard ? 'AD Standard' : 'AD Parts'}</span>
                 </div>
                 <div class="desc-product-ref">${p.sku}</div>
                 <div class="desc-product-name">${p.ref}</div>
@@ -9487,7 +9499,7 @@ function renderProductsBlock(adProducts, equivs) {
           ${adProducts.map(p => `
             <div class="desc-product-card ad">
               <div class="desc-product-card-header">
-                <span class="desc-product-brand">AD Parts</span>
+                <span class="desc-product-brand">${p.isStandard ? 'AD Standard' : 'AD Parts'}</span>
               </div>
               <div class="desc-product-ref">${p.sku}</div>
               <div class="desc-product-name">${p.ref}</div>
