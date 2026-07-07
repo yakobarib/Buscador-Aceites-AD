@@ -9438,6 +9438,15 @@ function renderDescResult(result) {
   const { adProducts, equivs } = productsForSpec(canonical);
   const { febi: febiProds, tcmatic: tcmaticProds } = febiTCForSpec(canonical);
 
+  // En coincidencias por OEM el ref de febi viene confirmado directamente por el índice OEM
+  // (columna G del Excel de Febi). Puede no aparecer en el barrido por canonical si ese
+  // producto todavía no tiene ficha estructurada en COMPONENT_KNOWLEDGE — se añade igualmente
+  // para no ocultar una equivalencia que el propio buscador ya ha identificado con certeza.
+  if (result.match === 'oem' && result.febi_ref && !febiProds.some(p => p.ref === result.febi_ref)) {
+    const hydrated = productInfoByRef('febi', result.febi_ref);
+    febiProds.unshift(hydrated || { ref: result.febi_ref, desc: 'Ficha completa pendiente en catálogo', volume: '—', approvals: canonical });
+  }
+
   let phaseLabel = '';
   if (result.match === 'exact') phaseLabel = 'Identificación directa';
   else if (result.match === 'alias') phaseLabel = `Normalizado a partir de "${result.original}"`;
@@ -9727,6 +9736,15 @@ const COMPONENT_KNOWLEDGE = {
     canonicalSpecs: ['API GL-4', 'API GL-5', 'SAE 75W90', 'SAE 80W90'],
     interpretation: 'Aceite para engranajes manuales. API GL-4 para cajas estándar, GL-5 para diferenciales y cajas con alta carga.',
     advice: 'Cuidado: GL-5 puede dañar sincronizadores de latón en cajas que pidan GL-4.',
+    febiProducts: [
+      { ref: '196599', volume: '1 L',   desc: 'ACEITE DE ENGRANAJE SAE 80W-90 (GL-4/5)', oem: '02200-00110', approvals: 'API GL-4/GL-5 · SAE 80W-90/90 · MB 235.0 · Scania STO 1:0 · Volvo 97310 · Case MS 1316 · Ford WSP-M2C197-A · John Deere JDM J11E · MAN 341 Type E2/Z2 · MAN 342 Type M1/M2 · MAN M3343 Type M · NH 520A · SDFG OP 1705 · Steyr B-101 · Tranself Universal FE 80W90 · Castrol EPX (cruzada) · DTFR 12B100 · ZF TE-ML 01H/02B/05A/07/08/12L/12M/16B/17H/19B/21A' },
+      { ref: '170166', volume: '20 L',  desc: 'ACEITE DE ENGRANAJE SAE 80W-90 (GL-4/5)', oem: '02200-00110', approvals: 'API GL-4/GL-5 · SAE 80W-90/90 · MB 235.0 · Scania STO 1:0 · Volvo 97310 · Case MS 1316 · Ford WSP-M2C197-A · John Deere JDM J11E · MAN 341 Type E2/Z2 · MAN 342 Type M1/M2 · MAN M3343 Type M · NH 520A · SDFG OP 1705 · Steyr B-101 · Tranself Universal FE 80W90 · Castrol EPX (cruzada) · DTFR 12B100 · ZF TE-ML 01H/02B/05A/07/08/12L/12M/16B/17H/19B/21A' },
+      { ref: '170167', volume: '60 L',  desc: 'ACEITE DE ENGRANAJE SAE 80W-90 (GL-4/5)', oem: '02200-00110', approvals: 'API GL-4/GL-5 · SAE 80W-90/90 · MB 235.0 · Scania STO 1:0 · Volvo 97310 · Case MS 1316 · Ford WSP-M2C197-A · John Deere JDM J11E · MAN 341 Type E2/Z2 · MAN 342 Type M1/M2 · MAN M3343 Type M · NH 520A · SDFG OP 1705 · Steyr B-101 · Tranself Universal FE 80W90 · Castrol EPX (cruzada) · DTFR 12B100 · ZF TE-ML 01H/02B/05A/07/08/12L/12M/16B/17H/19B/21A' },
+      { ref: '170168', volume: '200 L', desc: 'ACEITE DE ENGRANAJE SAE 80W-90 (GL-4/5)', oem: '02200-00110', approvals: 'API GL-4/GL-5 · SAE 80W-90/90 · MB 235.0 · Scania STO 1:0 · Volvo 97310 · Case MS 1316 · Ford WSP-M2C197-A · John Deere JDM J11E · MAN 341 Type E2/Z2 · MAN 342 Type M1/M2 · MAN M3343 Type M · NH 520A · SDFG OP 1705 · Steyr B-101 · Tranself Universal FE 80W90 · Castrol EPX (cruzada) · DTFR 12B100 · ZF TE-ML 01H/02B/05A/07/08/12L/12M/16B/17H/19B/21A' },
+      { ref: '170140', volume: '20 L',  desc: 'ACEITE DE ENGRANAJE SAE 75W-90 (GL-4/5) MT-1', oem: '', approvals: 'API GL-4/GL-5 · MT-1 · SAE 75W-90 · SAE J2360 · MAN 341 Type E3/Z2 · MAN 342 Type M2/M3 · MAN M3343 Type S · MB 235.0/235.8 · Scania STO 1:0 · Volvo 97312 · Detroit Diesel 93K219.01 · John Deere JDM J11E/J11G · Arvin Meritor 0-76-N · Total Transmission Dual 9 FE 75W90 · MIL-PRF-2105E · ZF TE-ML 02B/05A/05B/07A/08/12B/12E/12L/12N/16B/16F/17B/19B/19C/21A/21B' },
+      { ref: '170141', volume: '60 L',  desc: 'ACEITE DE ENGRANAJE SAE 75W-90 (GL-4/5) MT-1', oem: '', approvals: 'API GL-4/GL-5 · MT-1 · SAE 75W-90 · SAE J2360 · MAN 341 Type E3/Z2 · MAN 342 Type M2/M3 · MAN M3343 Type S · MB 235.0/235.8 · Scania STO 1:0 · Volvo 97312 · Detroit Diesel 93K219.01 · John Deere JDM J11E/J11G · Arvin Meritor 0-76-N · Total Transmission Dual 9 FE 75W90 · MIL-PRF-2105E · ZF TE-ML 02B/05A/05B/07A/08/12B/12E/12L/12N/16B/16F/17B/19B/19C/21A/21B' },
+      { ref: '170142', volume: '200 L', desc: 'ACEITE DE ENGRANAJE SAE 75W-90 (GL-4/5) MT-1', oem: '', approvals: 'API GL-4/GL-5 · MT-1 · SAE 75W-90 · SAE J2360 · MAN 341 Type E3/Z2 · MAN 342 Type M2/M3 · MAN M3343 Type S · MB 235.0/235.8 · Scania STO 1:0 · Volvo 97312 · Detroit Diesel 93K219.01 · John Deere JDM J11E/J11G · Arvin Meritor 0-76-N · Total Transmission Dual 9 FE 75W90 · MIL-PRF-2105E · ZF TE-ML 02B/05A/05B/07A/08/12B/12E/12L/12N/16B/16F/17B/19B/19C/21A/21B' },
+    ],
     tcmaticProducts: [
       { ref: '121.000.0001', desc: 'MTF VAG 512',   homol: 'VW TL 521 12 · MB 235.17 · DSG DQ200 seco (clutch fluid)', febiRef: null, altRefs: ["121.000.7001", "121.000.2001", "121.000.2501"] },
       { ref: '121.000.0002', desc: 'MTF 75W-80',    homol: 'GL-4 75W-80 · BMW MTF-LT-3 · Ford M2C200 · PSA B71 2330 · VW 501 50', febiRef: '180073', altRefs: ["121.000.7002", "121.000.2002", "121.000.2502"] },
