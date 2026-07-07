@@ -3366,7 +3366,7 @@ const VEHICLES_DB = {
         reason: 'Dirección asistida eléctrica (EPS). Este sistema no utiliza fluido hidráulico.' },
       { type: 'brake_fluid', label: 'Líquido de frenos', icon: 'brake', featured: false,
         req: { oem: ['DOT 4', 'ISO 4925'], capacity: '1.0 L', interval: 'Cada 24 meses' },
-        rec: { brand: 'AD Parts', sku: 'ADP70401', name: 'AD BRK DOT 4', line: 'Frenos' },
+        rec: { brand: 'AD Parts', sku: 'ADP37500', name: 'AD DOT 4 MEGA+.6', line: 'Frenos' },
         match: 'perfect',
         equivs: [
           { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB26749',    name: 'Febi Bilstein 26749 DOT 4',  score: 1.00 },
@@ -3376,7 +3376,7 @@ const VEHICLES_DB = {
         ]},
       { type: 'coolant', label: 'Refrigerante', icon: 'coolant', featured: false,
         req: { oem: ['VW TL 774-G'], type_lbl: 'G12++', capacity: '7.5 L', interval: 'Long Life' },
-        rec: { brand: 'AD Parts', sku: 'ADP60125', name: 'AD COOL G12++', line: 'Refrigerantes' },
+        rec: { brand: 'AD Parts', sku: 'ADP55502', name: 'AD40 (G12++)', line: 'Refrigerantes' },
         match: 'perfect',
         equivs: [
           { brand: 'Febi',    tag: 'b-febi',    sku: 'FEB172000',  name: 'Febi Bilstein 172000 G12++',                  score: 1.00 },
@@ -3545,7 +3545,7 @@ const AD_PARTS_CATALOG = [
     specs: ['RENAULT RN0720', 'MB 226.51', 'ACEA C3', 'ACEA C4'] },
   { ref: 'AD SRC3 5W30',           sku: 'ADP72005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [5, 208],
     specs: ['RENAULT RN17', 'ACEA C3'] },
-  { ref: 'AD SFG 5W30',            sku: 'ADP70005', viscosity: '5W30',  type: 'motor', segment: 'ligero',
+  { ref: 'AD SFG 5W30',            sku: 'ADP70005', viscosity: '5W30',  type: 'motor', segment: 'ligero', formats: [5, 208],
     specs: ['GM DEXOS1 GEN3', 'GM DEXOS1 GEN2', 'FORD WSS-M2C961-A1', 'OPEL OV 040 1547-G30', 'API SP', 'ILSAC GF-6A'] },
   // ── MOTOR LIGERO · 5W40 ──
   { ref: 'AD MDXs Mega Plus 5W40', sku: 'ADP35005', viscosity: '5W40',  type: 'motor', segment: 'ligero', formats: [1, 5, 20, 50, 208, 600, 1000],
@@ -3646,15 +3646,15 @@ const AD_PARTS_CATALOG = [
     specs: ['DIN 51825 KP2N-20', 'IVECO/PEGASO E-24511/1'] },
 
   // ── REFRIGERANTE ──
-  { ref: 'AD COOL G12++',          sku: 'ADP60125', viscosity: '-',     type: 'refrigerante', segment: 'ligero',
-    specs: ['G12++', 'VW TL-774-G', 'MB 325.5', 'MAN 324 Si-OAT', 'ASTM D 3306'] },
+  { ref: 'AD40 (G12++)',           sku: 'ADP55502', viscosity: '-',     type: 'refrigerante', segment: 'ligero', formats: [5, 1000],
+    specs: ['G12++', 'VW TL 774-G', 'MB 326.5', 'MB 326.6', 'MAN 324 Si-OAT', 'PORSCHE', 'SCANIA TB 1451', 'ASTM D3306'] },
 
   // ── FRENOS ──
-  { ref: 'AD BRK DOT 4',           sku: 'ADP70401', viscosity: 'DOT4',  type: 'frenos', segment: 'ligero',
-    specs: ['DOT 4', 'FMVSS 116', 'ISO 4925', 'SAE J1704'] },
+  { ref: 'AD DOT 4 MEGA+.6',       sku: 'ADP37500', viscosity: 'DOT4',  type: 'frenos', segment: 'ligero', formats: [0.5],
+    specs: ['DOT 4', 'FMVSS 116', 'ISO 4925', 'SAE J1703', 'SAE J1704', 'VW 501 14', 'BMW QV 34 001', 'GMW 3356', 'STL S71 2114', 'WSS-M6C65-A2'] },
 
   // ── AdBlue ──
-  { ref: 'AD AdBlue',              sku: 'ADP50010', viscosity: '-',     type: 'adblue', segment: 'ligero',
+  { ref: 'AdBlue GreenChem',       sku: 'ADPADBLUE10', viscosity: '-',  type: 'adblue', segment: 'ligero', formats: [10, 1000],
     specs: ['ISO 22241', 'AdBlue', 'DEF'] },
 
   // ── NUEVO (ficha técnica AD Parts) ──
