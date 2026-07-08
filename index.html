@@ -4327,7 +4327,7 @@ const EQUIV_CATALOG = [
   { brand: 'Eni', ref: 'eni i-Sint tech VK 0W20', sku: '105810', viscosity: '0W20', specs: ['VW 508.00','VW 509.00','PORSCHE C20','ACEA C5','ACEA C6','API SP','ILSAC GF-6A'] },
   { brand: 'Repsol', ref: 'MASTER ECO V 0W20 208L', sku: 'RPP0004DBA', viscosity: '0W20', specs: ['VW 508.00','VW 509.00','PORSCHE C20','ACEA C5','ACEA C6','API SP','ILSAC GF-6A'] },
   { brand: 'Shell', ref: 'Helix Ultra Professional AVL 0W20 5L', sku: '550068492', viscosity: '0W20', specs: ['VW 508.00','VW 509.00','PORSCHE C20','ACEA C5','ACEA C6','API SP','ILSAC GF-6A'] },
-  { brand: 'Castrol', ref: 'EDGE 0W20 LL IV 1L', sku: '15F610', viscosity: '0W20', specs: ['VW 508.00','VW 509.00','PORSCHE C20','ACEA C5','ACEA C6','API SP','ILSAC GF-6A'] },
+  { brand: 'Castrol', ref: 'EDGE 0W20 LL IV 1L', sku: '15F610', viscosity: '0W20', specs: ['VW 508.00','VW 509.00','PORSCHE C20','MB 229.71','MB 229.72','BMW LL-17 FE+','FORD WSS-M2C956-A1','ACEA C5','ACEA C6','API SP','ILSAC GF-6A'] },
   { brand: 'Eni', ref: 'Eni NO EN AD 0W20', sku: '101983', viscosity: '0W20', specs: ['ACEA C5','ILSAC GF-5'] },
   { brand: 'Shell', ref: 'Helix Ultra Professional ASL 0W20 VCC 5L', sku: '550055736', viscosity: '0W20', specs: ['ACEA C5','ILSAC GF-5'] },
   { brand: 'Castrol', ref: 'EDGE 0W20 V 4L', sku: '15F708', viscosity: '0W20', specs: ['ACEA C5','ILSAC GF-5'] },
@@ -4806,6 +4806,7 @@ const SPECS_DB = {
   // MB monograde diesel
   'MB 228.0':       { description: 'Aceite motor diésel pesado MB monogrado (motores antiguos MAN/MB)', segment: 'pesado', tipo: 'motor' },
   'MB 229.71':      { description: 'Aceite motor MB 0W20 C5/C6 para OM654 Euro6d y modernos (229.71)', segment: 'ligero', tipo: 'motor' },
+  'MB 229.72':      { description: 'Aceite motor MB 0W20 baja viscosidad, evolución de 229.71 (Low SAPS, base ACEA C5, solo motores expresamente aprobados)', segment: 'ligero', tipo: 'motor' },
 
   // Ford
   'FORD WSS-M2C917-A':  { description: 'Aceite motor Ford 5W-40 C3 para diésel con DPF', segment: 'ligero', tipo: 'motor' },
@@ -5360,6 +5361,7 @@ const SPEC_ALIASES = {
 
   // New OEM specs
   'MB22971': 'MB 229.71', '22971': 'MB 229.71', 'MB22971APPROVAL': 'MB 229.71',
+  'MB22972': 'MB 229.72', '22972': 'MB 229.72',
   'FORDWSSM2C952A1': 'FORD WSS-M2C952-A1', 'M2C952A1': 'FORD WSS-M2C952-A1',
   'FORDWSSM2C917A': 'FORD WSS-M2C917-A', 'M2C917A': 'FORD WSS-M2C917-A',
   'VCC95200377': 'VOLVO VCC 95200377', 'VOLVO95200377': 'VOLVO VCC 95200377',
