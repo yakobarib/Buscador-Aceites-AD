@@ -629,7 +629,7 @@ body::after {
 
 /* ──── SEARCH BOX ──── */
 .search-container {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto var(--s-10);
   animation: searchIn 900ms cubic-bezier(0.16, 1, 0.3, 1) 100ms backwards;
 }
@@ -838,9 +838,9 @@ body::after {
 .vin-row { display: flex; gap: var(--s-3); align-items: center; justify-content: center; }
 
 .vin-input {
-  width: 320px;
+  flex: 1 1 auto;
+  min-width: 220px;
   max-width: 100%;
-  flex-shrink: 1;
   height: 60px;
   padding: 0 var(--s-5);
   border: 1.5px solid var(--border-subtle);
@@ -1062,9 +1062,9 @@ body::after {
 
 .desc-input-container {
   position: relative;
-  width: 480px;
+  flex: 1 1 auto;
+  min-width: 220px;
   max-width: 100%;
-  flex-shrink: 1;
 }
 
 .desc-input-icon {
@@ -2313,8 +2313,34 @@ body::after {
 
 /* CrossReference */
 .xref-result { display: flex; flex-direction: column; gap: 14px; }
-.xref-specs-row { display: flex; flex-wrap: wrap; gap: 8px; }
-.xref-spec-chip { font-family: var(--font-mono); font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: var(--r-sm); background: var(--bg-soft); color: var(--text-2); border: 1px solid var(--border); }
+.xref-specs-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.xref-spec-chip {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  padding: 9px 18px;
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+}
+.xref-spec-chip.xref-spec-sae    { background: #E8F0FE; color: #1D4ED8; border-color: rgba(29, 78, 216, 0.18); }
+.xref-spec-chip.xref-spec-acea   { background: #E6F7EE; color: #047857; border-color: rgba(4, 120, 87, 0.18); }
+.xref-spec-chip.xref-spec-api    { background: #FEF1E6; color: #C2410C; border-color: rgba(194, 65, 12, 0.18); }
+.xref-spec-chip.xref-spec-ilsac  { background: #F1EBFC; color: #6D28D9; border-color: rgba(109, 40, 217, 0.18); }
+.xref-spec-chip.xref-spec-din    { background: #E5F8FA; color: #0E7490; border-color: rgba(14, 116, 144, 0.18); }
+.xref-spec-chip.xref-spec-comp   { background: #FCE9F1; color: #BE185D; border-color: rgba(190, 24, 93, 0.18); }
+.xref-spec-chip.xref-spec-nlgi   { background: #EBEFF5; color: #334155; border-color: rgba(51, 65, 85, 0.18); }
+.xref-spec-chip.xref-spec-adcode { background: #FDEBEC; color: #E20613; border-color: rgba(226, 6, 19, 0.18); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-sae    { background: rgba(29, 78, 216, 0.22); color: #A9C6FF; border-color: rgba(29, 78, 216, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-acea   { background: rgba(4, 120, 87, 0.22); color: #7FE3B4; border-color: rgba(4, 120, 87, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-api    { background: rgba(194, 65, 12, 0.22); color: #FFB37A; border-color: rgba(194, 65, 12, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-ilsac  { background: rgba(109, 40, 217, 0.24); color: #C9B3F7; border-color: rgba(109, 40, 217, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-din    { background: rgba(14, 116, 144, 0.24); color: #7FE0EE; border-color: rgba(14, 116, 144, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-comp   { background: rgba(190, 24, 93, 0.22); color: #F5A0C4; border-color: rgba(190, 24, 93, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-nlgi   { background: rgba(148, 163, 184, 0.22); color: #CBD5E1; border-color: rgba(148, 163, 184, 0.35); }
+[data-theme="dark"] .xref-spec-chip.xref-spec-adcode { background: rgba(226, 6, 19, 0.20); color: #FF8B92; border-color: rgba(226, 6, 19, 0.35); }
 .xref-table { width: 100%; border-collapse: collapse; }
 .xref-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-3); padding: 8px 10px; border-bottom: 2px solid var(--border); }
 .xref-table td { padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
@@ -2890,10 +2916,17 @@ body::after {
   .vehicle-hero-inner { gap: var(--s-4); }
   .vehicle-actions { width: 100%; }
   .vehicle-actions .btn-ghost { flex: 1; justify-content: center; }
-  .method-tab { font-size: 11px; padding: 8px 10px; }
+  .method-tab {
+    flex: 0 0 auto;
+    font-size: 11px;
+    padding: 8px 12px;
+  }
   .method-tab .badge-fase { display: none; }
   .plate-row { flex-direction: column; align-items: stretch; }
   .vin-row { flex-direction: column; align-items: stretch; }
+  .desc-search-row { flex-direction: column; align-items: stretch; }
+  .desc-input-container { width: 100%; }
+  .btn-primary.btn-desc-buscar, .btn-primary.btn-free-buscar { width: 100%; }
   .manual-grid { grid-template-columns: 1fr; }
   .plate-input { font-size: 26px; }
   .hero-title { font-size: 26px; white-space: normal; }
@@ -3147,6 +3180,13 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
           Homologaciones
           
         </button>
+        <button class="method-tab" onclick="setMethod('xref')" data-method="xref">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 7h13M7 7l4-4M7 7l4 4"/>
+            <path d="M17 17H4M17 17l-4 4M17 17l-4-4"/>
+          </svg>
+          Referencia cruzada
+        </button>
         <button class="method-tab" onclick="setMethod('free')" data-method="free">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m12 3-1.9 5.8a2 2 0 0 1-1.287 1.288L3 12l5.8 1.9a2 2 0 0 1 1.288 1.287L12 21l1.9-5.8a2 2 0 0 1 1.287-1.288L21 12l-5.8-1.9a2 2 0 0 1-1.288-1.287Z"/>
@@ -3155,13 +3195,6 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
           </svg>
           Búsqueda libre
 
-        </button>
-        <button class="method-tab" onclick="setMethod('xref')" data-method="xref">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M7 7h13M7 7l4-4M7 7l4 4"/>
-            <path d="M17 17H4M17 17l-4 4M17 17l-4-4"/>
-          </svg>
-          Referencia cruzada
         </button>
       </div>
 
@@ -3292,6 +3325,39 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
         </div>
       </div>
 
+      <!-- Panel: Referencia cruzada -->
+      <div class="method-panel" id="panel-xref">
+        <div class="search-tip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <span><strong>Introduce una referencia de cualquier marca</strong> (con o sin prefijo: <code>32005</code> o <code>ADP32005</code>) y te doy sus referencias gemelas en el resto de marcas, con la viscosidad y normas que comparten.</span>
+        </div>
+        <div class="desc-search-wrap">
+          <div class="desc-search-row">
+            <div class="desc-input-container">
+              <svg class="desc-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              <input type="text" class="desc-input" id="input-xref" placeholder="Ej: 32005, ADP61005, CAT15F6EB, FEB177640..." autocomplete="off">
+            </div>
+            <button class="btn-primary btn-desc-buscar" onclick="searchByXref()">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+              </svg>
+              Buscar
+            </button>
+          </div>
+
+          <div class="desc-chips-row">
+            <span class="desc-chips-label">Prueba con:</span>
+            <span class="desc-chip" onclick="fillXref('32005')">32005 (motor industrial)</span>
+            <span class="desc-chip" onclick="fillXref('ADP61005')">ADP61005 (motor ligero)</span>
+            <span class="desc-chip" onclick="fillXref('CAT15F6EB')">CAT15F6EB</span>
+            <span class="desc-chip" onclick="fillXref('FEB177640')">FEB177640</span>
+            <span class="desc-chip" onclick="fillXref('64550')">64550 (grasa)</span>
+          </div>
+        </div>
+      </div>
+
       <!-- Panel: Búsqueda libre (lenguaje natural, casos difíciles) -->
       <div class="method-panel" id="panel-free">
         <div class="search-tip free">
@@ -3322,39 +3388,6 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <span class="desc-chip" onclick="fillFree('Líquido de frenos para mi coche')">Líquido frenos</span>
             <span class="desc-chip" onclick="fillFree('Aceite para DSG VW Golf')">DSG VW Golf</span>
             <span class="desc-chip" onclick="fillFree('Aceite caja manual Renault Clio')">Caja manual Renault</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Panel: Referencia cruzada -->
-      <div class="method-panel" id="panel-xref">
-        <div class="search-tip">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-          <span><strong>Introduce una referencia de cualquier marca</strong> (con o sin prefijo: <code>32005</code> o <code>ADP32005</code>) y te doy sus referencias gemelas en el resto de marcas, con la viscosidad y normas que comparten.</span>
-        </div>
-        <div class="desc-search-wrap">
-          <div class="desc-search-row">
-            <div class="desc-input-container">
-              <svg class="desc-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
-              </svg>
-              <input type="text" class="desc-input" id="input-xref" placeholder="Ej: 32005, ADP61005, CAT15F6EB, FEB177640..." autocomplete="off">
-            </div>
-            <button class="btn-primary btn-desc-buscar" onclick="searchByXref()">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
-              </svg>
-              Buscar
-            </button>
-          </div>
-
-          <div class="desc-chips-row">
-            <span class="desc-chips-label">Prueba con:</span>
-            <span class="desc-chip" onclick="fillXref('32005')">32005 (motor industrial)</span>
-            <span class="desc-chip" onclick="fillXref('ADP61005')">ADP61005 (motor ligero)</span>
-            <span class="desc-chip" onclick="fillXref('CAT15F6EB')">CAT15F6EB</span>
-            <span class="desc-chip" onclick="fillXref('FEB177640')">FEB177640</span>
-            <span class="desc-chip" onclick="fillXref('64550')">64550 (grasa)</span>
           </div>
         </div>
       </div>
@@ -4942,15 +4975,15 @@ function renderXrefResult(result, query) {
 
   const p = result.props || {};
   const specChips = [];
-  if (p.visco) specChips.push('SAE ' + p.visco);
-  if (p.sae) specChips.push('SAE ' + p.sae);
-  if (p.acea && p.acea.toUpperCase() !== 'SIN ACEA') specChips.push('ACEA ' + p.acea);
-  if (p.ilsac) specChips.push('ILSAC ' + p.ilsac);
-  if (p.api) specChips.push('API ' + p.api);
-  if (p.din) specChips.push(p.din);
-  if (p.comp) specChips.push(p.comp.trim());
-  if (p.nlgi != null) specChips.push('NLGI ' + p.nlgi);
-  if (p.adcode) specChips.push(p.adcode);
+  if (p.visco) specChips.push({ kind: 'sae', label: 'SAE ' + p.visco });
+  if (p.sae) specChips.push({ kind: 'sae', label: 'SAE ' + p.sae });
+  if (p.acea && p.acea.toUpperCase() !== 'SIN ACEA') specChips.push({ kind: 'acea', label: 'ACEA ' + p.acea });
+  if (p.ilsac) specChips.push({ kind: 'ilsac', label: 'ILSAC ' + p.ilsac });
+  if (p.api) specChips.push({ kind: 'api', label: 'API ' + p.api });
+  if (p.din) specChips.push({ kind: 'din', label: p.din });
+  if (p.comp) specChips.push({ kind: 'comp', label: p.comp.trim() });
+  if (p.nlgi != null) specChips.push({ kind: 'nlgi', label: 'NLGI ' + p.nlgi });
+  if (p.adcode) specChips.push({ kind: 'adcode', label: p.adcode });
 
   let rows = '';
   result.matches.forEach(m => {
@@ -4986,7 +5019,7 @@ function renderXrefResult(result, query) {
           <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${result.queryBare || query}"</div>
         </div>
       </div>
-      <div class="xref-specs-row">${specChips.map(c => `<span class="xref-spec-chip">${c}</span>`).join('')}</div>
+      <div class="xref-specs-row">${specChips.map(c => `<span class="xref-spec-chip xref-spec-${c.kind}">${c.label}</span>`).join('')}</div>
       <table class="xref-table">
         <thead><tr><th>Marca</th><th>Referencia</th><th>Producto</th><th>Formato</th></tr></thead>
         <tbody>${rows}</tbody>
