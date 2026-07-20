@@ -4850,7 +4850,7 @@ function xrefBuildRowResult(cat, row, queryBare) {
   const visco = row.p.visco || null;
   const aceaRaw = row.p.acea || '';
   const aceaTokens = aceaRaw.split(/[|,]/).map(s => s.trim()).filter(t => t && t.toUpperCase() !== 'SIN ACEA');
-  xrefDeriveFebiTcm(visco, aceaTokens).forEach(m => matches.push(m));
+  xrefDeriveFebiTcm(visco, aceaTokens, xrefVol(row.p.litros)).forEach(m => matches.push(m));
 
   return {
     category: cat,
@@ -4860,28 +4860,49 @@ function xrefBuildRowResult(cat, row, queryBare) {
   };
 }
 
-function xrefDeriveFebiTcm(visco, aceaTokens) {
+// extrae el numero de litros de un texto tipo "1 L" / "0,275 L" / "200 L"
+function xrefParseVolumeNum(volStr) {
+  if (!volStr) return null;
+  const m = String(volStr).match(/([\d.,]+)/);
+  if (!m) return null;
+  const n = parseFloat(m[1].replace(',', '.'));
+  return isNaN(n) ? null : xrefVol(n);
+}
+
+function xrefDeriveFebiTcm(visco, aceaTokens, targetLitros) {
   if (!visco) return [];
   const normVisco = normalizeDesc(visco);
-  const out = [];
+  const pairs = [];
+  const seen = new Set();
   for (const comp of Object.values(COMPONENT_KNOWLEDGE)) {
     if (!comp.febiProducts) continue;
     for (const p of comp.febiProducts) {
       const nd = normalizeDesc((p.desc || '') + ' ' + (p.approvals || ''));
       if (!nd.includes(normVisco)) continue;
       if (aceaTokens.length && !aceaTokens.some(t => nd.includes(normalizeDesc(t)))) continue;
-      out.push({ brand: 'FEB', ref: p.ref, desc: p.desc, sizeTxt: p.volume || '—', derived: true });
+      if (seen.has(p.ref)) continue;
+      seen.add(p.ref);
       const tcm = xrefFindTcmForFebi(p.ref);
-      if (tcm) out.push({ brand: 'TCM', ref: tcm.ref, desc: tcm.desc || null, sizeTxt: '—', derived: true });
+      pairs.push({
+        vol: xrefParseVolumeNum(p.volume),
+        feb: { brand: 'FEB', ref: p.ref, desc: p.desc, sizeTxt: p.volume || '—', derived: true },
+        tcm: tcm ? { brand: 'TCM', ref: tcm.ref, desc: tcm.desc || null, sizeTxt: '—', derived: true } : null,
+      });
     }
   }
-  const seen = new Set();
-  return out.filter(m => {
-    const k = m.brand + m.ref;
-    if (seen.has(k)) return false;
-    seen.add(k);
-    return true;
-  }).slice(0, 6); // evitar listas gigantes si muchos formatos comparten la misma norma
+  // si la referencia consultada tiene un formato conocido, intentar ofrecer solo el
+  // Febi/TC-Matic que coincide en ese mismo formato, en vez de los 6 tamaños a la vez
+  let chosen = pairs;
+  if (targetLitros != null) {
+    const exact = pairs.filter(pr => pr.vol != null && pr.vol === targetLitros);
+    if (exact.length) chosen = exact;
+  }
+  const out = [];
+  chosen.slice(0, 6).forEach(pr => { // evitar listas gigantes si muchos formatos comparten la misma norma
+    out.push(pr.feb);
+    if (pr.tcm) out.push(pr.tcm);
+  });
+  return out;
 }
 
 function xrefFindTcmForFebi(febiRef) {
@@ -13539,6 +13560,20 @@ window.addEventListener('load', () => SemanticSearch.preload());
 
 document.getElementById('input-free').addEventListener('keydown', e => { if (e.key === 'Enter') searchByFree(); });
 document.getElementById('input-xref').addEventListener('keydown', e => { if (e.key === 'Enter') searchByXref(); });
+
+// Al enfocar cualquier campo de búsqueda tras haber obtenido un resultado, salir del
+// modo "Nueva búsqueda" (que solo resetea) para que el botón vuelva a buscar de
+// inmediato con lo que se escriba, sin tener que pulsar antes el botón de reset.
+// No se tocan el texto del input ni los resultados ya mostrados, solo el estado del botón.
+function exitResetModeOnFocus() {
+  if (currentVehicle) {
+    currentVehicle = null;
+    setSearchButtonsResetMode(false);
+  }
+}
+['input-plate', 'input-vin', 'input-desc', 'input-free', 'input-xref'].forEach(id => {
+  document.getElementById(id).addEventListener('focus', exitResetModeOnFocus);
+});
 
 // ── THEME TOGGLE ──────────────────────────────────────────────
 function toggleTheme() {
