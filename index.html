@@ -13561,14 +13561,16 @@ window.addEventListener('load', () => SemanticSearch.preload());
 document.getElementById('input-free').addEventListener('keydown', e => { if (e.key === 'Enter') searchByFree(); });
 document.getElementById('input-xref').addEventListener('keydown', e => { if (e.key === 'Enter') searchByXref(); });
 
-// Al enfocar cualquier campo de búsqueda tras haber obtenido un resultado, salir del
-// modo "Nueva búsqueda" (que solo resetea) para que el botón vuelva a buscar de
-// inmediato con lo que se escriba, sin tener que pulsar antes el botón de reset.
-// No se tocan el texto del input ni los resultados ya mostrados, solo el estado del botón.
-function exitResetModeOnFocus() {
+// Al enfocar cualquier campo de búsqueda tras haber obtenido un resultado, se limpia
+// el campo y sale del modo "Nueva búsqueda" (que solo resetea) para que el botón
+// vuelva a buscar de inmediato con lo que se escriba a continuación, sin tener que
+// pulsar antes el botón de reset. Solo se dispara una vez por búsqueda (currentVehicle
+// vuelve a null), así que no borra nada mientras el usuario ya está escribiendo.
+function exitResetModeOnFocus(e) {
   if (currentVehicle) {
     currentVehicle = null;
     setSearchButtonsResetMode(false);
+    if (e && e.target) e.target.value = '';
   }
 }
 ['input-plate', 'input-vin', 'input-desc', 'input-free', 'input-xref'].forEach(id => {
