@@ -2916,11 +2916,16 @@ body::after {
   .vehicle-hero-inner { gap: var(--s-4); }
   .vehicle-actions { width: 100%; }
   .vehicle-actions .btn-ghost { flex: 1; justify-content: center; }
+  /* Solo iconos en móvil: 6 pestañas con texto no caben sin atropellarse.
+     font-size:0 colapsa el nodo de texto suelto (el icono SVG mide en px fijos y
+     no le afecta) -- el texto sigue en el DOM para lectores de pantalla. */
   .method-tab {
-    flex: 0 0 auto;
-    font-size: 11px;
-    padding: 8px 12px;
+    flex: 1 1 0;
+    font-size: 0;
+    padding: 12px 6px;
+    gap: 0;
   }
+  .method-tab svg { width: 20px; height: 20px; }
   .method-tab .badge-fase { display: none; }
   .plate-row { flex-direction: column; align-items: stretch; }
   .vin-row { flex-direction: column; align-items: stretch; }
