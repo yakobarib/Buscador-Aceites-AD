@@ -510,42 +510,6 @@ body::after {
   margin-bottom: 3px;
 }
 
-/* View switcher */
-.view-switcher {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  padding: 3px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--r-full);
-}
-
-.view-btn {
-  padding: 7px 14px;
-  border: none;
-  background: transparent;
-  color: var(--text-secondary);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: var(--r-full);
-  transition: all var(--t-base);
-  letter-spacing: -0.005em;
-}
-
-.view-btn.active {
-  background: var(--ad-blue);
-  color: white;
-  box-shadow: 0 2px 8px rgba(0, 45, 90, 0.25);
-}
-
-[data-theme="dark"] .view-btn.active {
-  background: white;
-  color: var(--ad-blue);
-}
-
 /* ──── MAIN ──── */
 .main-content {
   flex: 1;
@@ -2908,7 +2872,6 @@ body::after {
   }
   .ri-mark { width: 78px; height: 24px; }
   .ad-mark { width: 48px; height: 26px; }
-  .view-btn { padding: 6px 10px; font-size: 11px; }
   .theme-btn { width: 28px; height: 28px; }
   
   /* Resto de la app */
@@ -2943,7 +2906,6 @@ body::after {
 /* Pantallas muy estrechas: ocultar el toggle de tema si no entra todo */
 @media (max-width: 380px) {
   .header-actions { gap: var(--s-1); }
-  .view-btn { padding: 5px 8px; font-size: 10px; }
   .ri-mark { width: 70px; }
   .ad-mark { width: 42px; }
 }
@@ -3110,16 +3072,6 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
           <circle cx="8" cy="12.5" r="1" fill="currentColor"/>
         </svg>
       </button>
-
-      <!-- View toggle (pública / interna) -->
-      <div class="view-switcher">
-        <button class="view-btn active" data-view="public" onclick="setView('public')">
-          Cliente
-        </button>
-        <button class="view-btn" data-view="internal" onclick="setView('internal')">
-          Call Center
-        </button>
-      </div>
 
       <!-- Theme toggle (single button) -->
       <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Cambiar tema">
@@ -3543,7 +3495,6 @@ const FLUID_ICONS = {
 // THEME & VIEW
 // ═══════════════════════════════════════════════════════════════════════
 
-let currentView = 'public';
 let currentTheme = 'light';
 let currentVehicle = null;
 
@@ -3555,14 +3506,6 @@ function setTheme(theme) {
   const iconLight = document.getElementById('theme-icon-light');
   if (iconDark)  iconDark.style.display  = theme === 'light' ? 'block' : 'none';
   if (iconLight) iconLight.style.display = theme === 'dark'  ? 'block' : 'none';
-}
-
-function setView(view) {
-  currentView = view;
-  document.querySelectorAll('.view-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.view === view);
-  });
-  if (currentVehicle) renderResult(currentVehicle);
 }
 
 // Qué mensaje mostrar por pestaña (solo las que están en fases de prueba)
@@ -12535,6 +12478,12 @@ const SemanticSearch = (() => {
       if (i % 30 === 0)
         setStatus('Indexando (' + i + '/' + EMBEDDINGS_CORPUS.length + ')…',
                   80 + Math.round((i / EMBEDDINGS_CORPUS.length) * 18));
+      // Con miles de entradas este bucle puede tardar minutos, sobre todo en móvil
+      // (WASM corre síncrono en el hilo principal). Sin ceder el hilo aquí, la
+      // página deja de responder a toques/clicks durante todo el proceso -- el
+      // usuario la percibe como "atascada". Un yield real (macrotask, no basta con
+      // el await de arriba) cada pocos elementos deja procesar la cola de eventos.
+      if (i % 5 === 0) await new Promise(r => setTimeout(r, 0));
     }
     await CorpusCache.save(CORPUS_VERSION, _corpusVectors);
     setStatus('Motor IA listo ✓', 100);
@@ -13231,11 +13180,9 @@ function showState(kind, title, msg) {
 function renderResult(vehicle) {
   currentVehicle = vehicle;
   const target = document.getElementById('results-section');
-  // NOTA: las funciones renderPublicView/renderInternalView se mantienen con sus
-  // nombres originales por simplicidad, pero el mapeo está intercambiado:
-  //   - Vista CLIENTE   → renderInternalView (rejilla de tarjetas, más visual)
-  //   - Vista INTERNO   → renderPublicView   (acordeón limpio, más profesional)
-  target.innerHTML = renderVehicleHero(vehicle) + (currentView === 'public' ? renderInternalView(vehicle) : renderPublicView(vehicle));
+  // Se quitó el selector Cliente/Call Center: se deja fija la vista de Call Center
+  // (renderPublicView pese al nombre -- acordeón con acciones comerciales/stock/PVP).
+  target.innerHTML = renderVehicleHero(vehicle) + renderPublicView(vehicle);
   // Activar modo "Nueva búsqueda" en los botones
   setSearchButtonsResetMode(true);
 }
@@ -13369,96 +13316,6 @@ function toggleFluid(el, event) {
   if (event.target.closest('.equiv-row, button')) return;
   if (!event.target.closest('.fluid-header')) return;
   el.classList.toggle('open');
-}
-
-// ═══════════════════════════════════════════════════════════════════════
-// INTERNAL VIEW
-// ═══════════════════════════════════════════════════════════════════════
-
-function renderInternalView(v) {
-  let html = `<div class="result-section">
-    <div class="section-title">
-      <h3>Fluidos recomendados · ${v.fluids.length} categorías</h3>
-      <span class="section-title-count">Tu vehículo, tus fluidos</span>
-    </div>
-    <div class="fluids-grid-internal">`;
-  v.fluids.forEach((f, idx) => html += renderFluidCard(f, idx));
-  html += `</div>`;
-  html += `<div class="cta-row">
-    <button class="btn-secondary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Descargar ficha completa</button>
-    <button class="btn-primary full-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17"/><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/></svg>Solicitar presupuesto</button>
-  </div>`;
-  html += `</div>`;
-  return html;
-}
-
-function renderFluidCard(f, idx) {
-  const classes = ['fluid-card'];
-  if (f.featured) classes.push('featured');
-  if (f.applies === false) classes.push('disabled-card');
-
-  if (f.applies === false) {
-    return `<div class="${classes.join(' ')}">
-      <div class="fluid-card-head">
-        <div class="fluid-card-icon">${FLUID_ICONS[f.icon]}</div>
-        <div class="fluid-card-title-block">
-          <div class="fluid-card-title">${f.label}</div>
-        </div>
-      </div>
-      <div class="disabled-content">${f.reason}</div>
-    </div>`;
-  }
-
-  const chips = [];
-  if (f.req.sae) chips.push(`<span class="card-spec">${f.req.sae}</span>`);
-  if (f.req.acea) chips.push(`<span class="card-spec">ACEA ${f.req.acea}</span>`);
-  if (f.req.api) chips.push(`<span class="card-spec">API ${f.req.api}</span>`);
-  if (f.req.oem) f.req.oem.forEach(o => chips.push(`<span class="card-spec oem-spec">${o}</span>`));
-  if (f.req.type_lbl) chips.push(`<span class="card-spec">${f.req.type_lbl}</span>`);
-
-  const stats = [];
-  if (f.req.capacity) stats.push(['Cap.', f.req.capacity]);
-  if (f.req.interval) stats.push(['Int.', f.req.interval.split(' ')[0] + ' km']);
-  stats.push(['Match', '100%']);
-
-  let equivsHtml = '';
-  if (f.equivs && f.equivs.length) {
-    equivsHtml = `<button class="equivs-toggle-btn" onclick="toggleEquivsCard(this)">
-      Ver ${f.equivs.length} equivalencias
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
-    </button>
-    <div class="equivs-list-card">`;
-    f.equivs.forEach(e => {
-      equivsHtml += `<div class="equiv-row-card">
-        <span class="brand-chip ${e.tag}">${e.brand}</span>
-        <span class="equiv-text-card">${e.name}</span>
-        <span class="equiv-ref-card">${e.sku}</span>
-      </div>`;
-    });
-    equivsHtml += `</div>`;
-  }
-
-  return `<div class="${classes.join(' ')}">
-    <div class="fluid-card-head">
-      <div class="fluid-card-icon">${FLUID_ICONS[f.icon]}</div>
-      <div class="fluid-card-title-block">
-        <div class="fluid-card-title">${f.label}</div>
-        <div class="fluid-card-match">Match perfecto</div>
-      </div>
-    </div>
-    <div class="card-prod-name">${f.rec.name}</div>
-    <span class="card-prod-ref">${f.rec.sku}</span>
-    <div class="card-specs-row">${chips.join('')}</div>
-    <div class="card-stats">
-      ${stats.map(s => `<div class="card-stat"><div class="card-stat-label">${s[0]}</div><div class="card-stat-value">${s[1]}</div></div>`).join('')}
-    </div>
-    ${equivsHtml}
-  </div>`;
-}
-
-function toggleEquivsCard(btn) {
-  btn.classList.toggle('open');
-  btn.nextElementSibling.classList.toggle('open');
 }
 
 // ═══════════════════════════════════════════════════════════════════════
@@ -13665,10 +13522,6 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             <li>Viscosidad + categoría: <code>5W30 C3</code>, <code>0W20 C5</code></li>
             <li>Código AD Parts: <code>HSD</code>, <code>SPA</code>, <code>SC3</code></li>
           </ul>
-        </div>
-        <div class="help-section">
-          <h3>Vista Cliente / Call Center</h3>
-          <p>Usa el selector del encabezado para cambiar entre la vista simplificada para el cliente y la vista con información técnica completa para el agente de Call Center.</p>
         </div>
       </div>
 
