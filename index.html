@@ -3343,6 +3343,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
             <span class="desc-chip" onclick="fillFree('Líquido de frenos para mi coche')">Líquido frenos</span>
             <span class="desc-chip" onclick="fillFree('Aceite para DSG VW Golf')">DSG VW Golf</span>
             <span class="desc-chip" onclick="fillFree('Aceite caja manual Renault Clio')">Caja manual Renault</span>
+            <span class="desc-chip" onclick="fillFree('Aceite para mi coche hibrido')">Coche híbrido</span>
           </div>
         </div>
       </div>
@@ -4972,7 +4973,7 @@ function crossReferenceSearch(rawQuery) {
   return xrefSearchByFebiOrTcm(bare, hinted);
 }
 
-function fillXref(s) { document.getElementById('input-xref').value = s; searchByXref(); }
+function fillXref(s) { clearResetMode(); document.getElementById('input-xref').value = s; searchByXref(); }
 
 function searchByXref() {
   if (currentVehicle) { resetSearch(); return; }
@@ -10209,7 +10210,7 @@ function searchByDescResolved(canonical) {
 }
 
 // ─── ENTRADA PRINCIPAL ───
-function fillDesc(s) { document.getElementById('input-desc').value = s; searchByDesc(); }
+function fillDesc(s) { clearResetMode(); document.getElementById('input-desc').value = s; searchByDesc(); }
 
 function searchByDesc() {
   if (currentVehicle) { resetSearch(); return; }
@@ -12348,6 +12349,60 @@ function freeSearch(query) {
     }
   }
 
+  // Vehículos híbridos: no suelen exigir una norma de fabricante concreta, sino una
+  // viscosidad determinada (según el modelo) + un nivel de calidad ILSAC. Viscosidades
+  // habituales: 5W-30, 0W-20, 0W-16 (y 0W-8, emergente, aún sin producto en ningún
+  // catálogo). Niveles ILSAC habituales: GF-5, GF-6A, GF-6B (y GF-7, emergente, aún sin
+  // producto en ningún catálogo). Investigado a fondo (julio 2026): AD Parts solo tiene
+  // ILSAC explícito en 0W-20 (ADP61005, ADP67005) y 5W-30 (ADP70005), los tres GF-6A —
+  // no hay ambigüedad de ILSAC que preguntar dentro del propio catálogo AD. En 0W-16 AD
+  // no tiene referencia propia todavía (hueco real de portfolio, no de datos) — solo
+  // Castrol/Shell/Eni, y ninguna ficha de esas 3 marcas declara su nivel ILSAC exacto
+  // en este dataset (aunque GF-6B es por definición de la norma la única pensada para
+  // 0W-16, no se afirma como spec confirmado sin fuente).
+  const isHybridQuery = /\bh[ií]brid|hybrid|\bhev\b|\bphev\b/.test(qNorm);
+  if (isHybridQuery) {
+    const hybViscMatch = raw.match(/\b(\d)\s*W[-]?\s*(\d{1,2})\b/i);
+    const hybVisc = hybViscMatch ? (hybViscMatch[1] + 'W' + hybViscMatch[2]).toUpperCase() : null;
+
+    if (!hybVisc) {
+      return ambiguousProductMatch(raw, [
+        { label: '0W-20 (la más habitual)', refineQuery: 'aceite hibrido 0W20' },
+        { label: '5W-30', refineQuery: 'aceite hibrido 5W30' },
+        { label: '0W-16 (Toyota/Lexus recientes)', refineQuery: 'aceite hibrido 0W16' },
+      ]);
+    }
+
+    if (hybVisc === '0W16') {
+      return {
+        match: 'hybrid_oil', query: raw, viscosity: '0W-16', ilsac: null,
+        adProducts: [], gap: true, equivs: HYBRID_0W16_EQUIVS,
+      };
+    }
+
+    if (hybVisc === '0W8') {
+      return { match: 'hybrid_oil', query: raw, viscosity: '0W-8', noData: true };
+    }
+
+    if (hybVisc === '0W20' || hybVisc === '5W30') {
+      const { adProducts } = productsForSpec('ILSAC GF-6A');
+      const filtered = adProducts.filter(p => p.viscosity === hybVisc);
+      if (filtered.length > 0) {
+        const seenSku = new Set();
+        const equivs = [];
+        filtered.forEach(p => p.equivs.forEach(e => { if (!seenSku.has(e.sku)) { seenSku.add(e.sku); equivs.push(e); } }));
+        return {
+          match: 'hybrid_oil', query: raw,
+          viscosity: hybVisc === '0W20' ? '0W-20' : '5W-30', ilsac: 'ILSAC GF-6A',
+          adProducts: filtered, gap: false, equivs,
+        };
+      }
+    }
+    // Viscosidad reconocida pero sin producto AD para híbridos (u otra viscosidad no
+    // contemplada) -- dejar caer al resto del flujo (norma formal / IA) en vez de
+    // devolver un hueco sin explicación.
+  }
+
   // Nada reconocible — intentar pasar a Homologaciones por si es una norma
   const formalResult = intelligentSearch(raw);
   if (formalResult && formalResult.match !== 'none') {
@@ -12360,6 +12415,14 @@ function freeSearch(query) {
 
   return { match: 'none', query: raw };
 }
+
+// 0W-16 para híbridos: Castrol/Shell tienen producto real pero ninguna ficha de este
+// dataset declara su nivel ILSAC exacto (ver investigación arriba) -- se muestran como
+// equivalencias de "otras marcas" sin ficha AD propia, no como specs confirmados.
+const HYBRID_0W16_EQUIVS = [
+  { brand: 'Castrol', sku: '15F6FA', ref: 'MAGNATEC HYBRID 0W16 5L' },
+  { brand: 'Shell', sku: '550075283', ref: 'Helix Ultra Profesional ARL 0W16 5L' },
+];
 
 // ─── MOTOR DE BÚSQUEDA SEMÁNTICA (Transformers.js) ───
 
@@ -12690,6 +12753,50 @@ function renderFreeResult(result) {
     return;
   }
 
+  // Vehículo híbrido: viscosidad reconocida, aún sin ningún producto en catálogo
+  // (0W-8 hoy por hoy) -- explicarlo en vez de dejar un hueco sin motivo.
+  if (result.match === 'hybrid_oil' && result.noData) {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow warn">Viscosidad ${result.viscosity} aún sin catálogo</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">"${result.query}"</div>
+            <div class="desc-result-desc">${result.viscosity} es una viscosidad muy reciente en híbridos y todavía no hay ningún producto registrado con ella en AD Parts ni en el resto de marcas de esta base de datos. Si tu vehículo la requiere expresamente, consulta directamente con el fabricante.</div>
+          </div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  if (result.match === 'hybrid_oil') {
+    const gapNote = result.gap
+      ? `<div class="free-advice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+          <div>AD Parts todavía no tiene una referencia propia en ${result.viscosity}. Estas son las opciones disponibles en otras marcas.</div>
+        </div>`
+      : '';
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow">Vehículo híbrido detectado</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">${result.viscosity}${result.ilsac ? ' · ' + result.ilsac : ''}</div>
+            <div class="desc-result-desc">Los híbridos no suelen exigir una norma de fabricante concreta, sino una viscosidad determinada según el modelo y un nivel de calidad ILSAC.</div>
+          </div>
+        </div>
+        ${gapNote}
+        ${renderProductsBlock(result.adProducts, result.equivs)}
+      </div>`;
+    return;
+  }
+
   if (result.match === 'multi_param') {
     let allEquivs = [];
     const seenRefs = new Set();
@@ -12896,7 +13003,7 @@ function renderFreeResult(result) {
     </div>`;
 }
 
-function fillFree(s) { document.getElementById('input-free').value = s; searchByFree(); }
+function fillFree(s) { clearResetMode(); document.getElementById('input-free').value = s; searchByFree(); }
 
 function searchByFree() {
   if (currentVehicle) { resetSearch(); return; }
@@ -12908,7 +13015,7 @@ function searchByFree() {
   setSearchButtonsResetMode(true);
 
   // Matches that don't need semantic help
-  const STRONG_MATCHES = ['direct_product','found','redirect_formal','multi_param'];
+  const STRONG_MATCHES = ['direct_product','found','redirect_formal','multi_param','hybrid_oil'];
   if (STRONG_MATCHES.includes(result && result.match)) {
     renderFreeResult(result);
     // Still run semantic silently; if very confident (>0.82) AND different trigger, show IA banner
@@ -13016,11 +13123,23 @@ async function searchByNeonVehicle(v, tipo, identificador) {
 
 function normalizePlate(p) { return (p || '').replace(/[\s\-\.]/g, '').toUpperCase(); }
 
-function fillPlate(p) { document.getElementById('input-plate').value = p; searchByPlate(); }
-function fillVin(v) { document.getElementById('input-vin').value = v; searchByVin(); }
+function fillPlate(p) { clearResetMode(); document.getElementById('input-plate').value = p; searchByPlate(); }
+function fillVin(v) { clearResetMode(); document.getElementById('input-vin').value = v; searchByVin(); }
 function loadDemo(key) { renderResult(VEHICLES_DB[key]); }
 
 // Cambia los botones de búsqueda al estado "Nueva búsqueda" (verde) o "Buscar" (rojo)
+// Saca al buscador del modo "Nueva búsqueda" (currentVehicle + botones) sin tocar
+// resultados/inputs ya visibles. Usado tanto al enfocar un campo (exitResetModeOnFocus)
+// como al rellenar uno mediante un chip de ejemplo (fillXxx) -- estos últimos SIEMPRE
+// quieren buscar el nuevo valor, nunca resetear, pero antes de este fix
+// searchByXxx()'s "if (currentVehicle) resetSearch()" interceptaba cualquier fillXxx
+// posterior a una primera búsqueda y la convertía en un reset silencioso en vez de
+// una búsqueda real (bug real: pulsar un segundo chip de ejemplo no hacía nada).
+function clearResetMode() {
+  currentVehicle = null;
+  setSearchButtonsResetMode(false);
+}
+
 function setSearchButtonsResetMode(enabled) {
   const searchIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>`;
   const resetIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>`;
@@ -13439,8 +13558,7 @@ document.getElementById('input-xref').addEventListener('keydown', e => { if (e.k
 // vuelve a null), así que no borra nada mientras el usuario ya está escribiendo.
 function exitResetModeOnFocus(e) {
   if (currentVehicle) {
-    currentVehicle = null;
-    setSearchButtonsResetMode(false);
+    clearResetMode();
     if (e && e.target) e.target.value = '';
   }
 }
