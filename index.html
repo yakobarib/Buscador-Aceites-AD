@@ -3688,8 +3688,24 @@ const AD_PARTS_CATALOG = [
     specs: ['DIN 51825 KP2N-20', 'IVECO/PEGASO E-24511/1'] },
 
   // ── REFRIGERANTE ──
-  { ref: 'AD40 (G12++)',           sku: 'ADP55502', viscosity: '-',     type: 'refrigerante', segment: 'ligero', formats: [5, 1000],
+  // altSkus: mismo producto, otro tamaño de bidón con SU PROPIA referencia (mismo patrón
+  // ya usado en TC-Matic vía altRefs) -- para que buscar el número tal cual impreso en
+  // CUALQUIER envase (no solo el de 5L elegido como sku principal) encuentre el producto.
+  { ref: 'AD40 (G12++)',           sku: 'ADP55502', altSkus: ['ADP55602'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 1000],
     specs: ['G12++', 'VW TL 774-G', 'MB 326.5', 'MB 326.6', 'MAN 324 Si-OAT', 'PORSCHE', 'SCANIA TB 1451', 'ASTM D3306'] },
+  // AD NEW PLUS (G12/G12+) -- ficha técnica confirma "VW 774D (G-12) y 774F (G-12+)" en
+  // los 3 colores/concentraciones. Nivel de calidad claramente distinto de G12++/AD40 de
+  // arriba -- Yakoba señaló que una búsqueda de "G12" no debe devolver resultados de G12++.
+  { ref: 'AD NEW PLUS 50% Rosa',   sku: 'ADP15502', altSkus: ['ADP12502', 'ADP10502'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 200, 1000],
+    specs: ['G12', 'G12+', 'VW TL 774-D', 'VW TL 774-F', 'MB 326.3', 'MAN 324 Type SNF', 'Ford WSS-M97B44-D', 'ASTM D3306'] },
+  { ref: 'AD NEW PLUS 50% Ocre',   sku: 'ADP15503', altSkus: ['ADP12503', 'ADP10503'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 200, 1000],
+    specs: ['G12', 'G12+', 'VW TL 774-D', 'VW TL 774-F', 'MB 326.3', 'MAN 324 Type SNF', 'Ford WSS-M97B44-D', 'ASTM D3306'] },
+  { ref: 'AD NEW PLUS 50% Azul',   sku: 'ADP15508', altSkus: ['ADP12508', 'ADP10508'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 200, 1000],
+    specs: ['G12', 'G12+', 'VW TL 774-D', 'VW TL 774-F', 'MB 326.3', 'MAN 324 Type SNF', 'Ford WSS-M97B44-D', 'ASTM D3306'] },
+  { ref: 'AD NEW PLUS 35%',        sku: 'ADP10353', viscosity: '-',     type: 'refrigerante', segment: 'ligero', formats: [1000],
+    specs: ['G12', 'G12+', 'VW TL 774-D', 'VW TL 774-F', 'MB 326.3', 'MAN 324 Type SNF', 'Ford WSS-M97B44-D', 'ASTM D3306'] },
+  { ref: 'AD NEW PLUS 40%',        sku: 'ADP10403', viscosity: '-',     type: 'refrigerante', segment: 'ligero', formats: [1000],
+    specs: ['G12', 'G12+', 'VW TL 774-D', 'VW TL 774-F', 'MB 326.3', 'MAN 324 Type SNF', 'Ford WSS-M97B44-D', 'ASTM D3306', 'VOLVO VCS 418-0001'] },
 
   // ── FRENOS ──
   { ref: 'AD DOT 4 MEGA+.6',       sku: 'ADP37500', viscosity: 'DOT4',  type: 'frenos', segment: 'ligero', formats: [0.5],
@@ -9916,6 +9932,26 @@ function productInfoByRef(brand, ref) {
   return null;
 }
 
+// Busca normCanon como subcadena de normText, pero exige límite de token: lo que venga
+// justo antes/después no puede ser otro carácter alfanumérico. Sin esto, buscar "G12"
+// (o "DCTF1", "GF6"...) hace match por accidente dentro de una variante más larga que lo
+// extiende ("G12+"/"G12++", "DCTF1PLUS", "GF6A"/"GF6B") -- bug real reportado por Yakoba:
+// al añadir el primer producto AD Parts en G12 puro, buscar "G12" mezclaba resultados
+// del G12++ (AD40) ya existente.
+function textHasSpecToken(normText, normCanon) {
+  let from = 0;
+  while (true) {
+    const idx = normText.indexOf(normCanon, from);
+    if (idx === -1) return false;
+    const before = normText[idx - 1];
+    const after = normText[idx + normCanon.length];
+    const beforeOk = !before || !/[A-Z0-9]/.test(before);
+    const afterOk = !after || !/[A-Z0-9]/.test(after);
+    if (beforeOk && afterOk) return true;
+    from = idx + 1;
+  }
+}
+
 // ─── RENDERIZADO DE RESULTADO ───
 function febiTCForSpec(canonical) {
   const normCanon = normalizeDesc(canonical);
@@ -9929,7 +9965,7 @@ function febiTCForSpec(canonical) {
 
     if (comp.febiProducts && comp.febiProducts.length > 0) {
       const filtered = comp.febiProducts.filter(
-        p => normalizeDesc(p.approvals || '').includes(normCanon)
+        p => textHasSpecToken(normalizeDesc(p.approvals || ''), normCanon)
       );
       if (inCanonical) {
         // Componente canónico: mostrar todos sus productos, o los filtrados si hay
@@ -9942,7 +9978,7 @@ function febiTCForSpec(canonical) {
 
     if (comp.tcmaticProducts && comp.tcmaticProducts.length > 0) {
       const filtered = comp.tcmaticProducts.filter(
-        p => normalizeDesc(p.homol || '').includes(normCanon)
+        p => textHasSpecToken(normalizeDesc(p.homol || ''), normCanon)
       );
       if (inCanonical) {
         tcmatic.push(...(filtered.length > 0 ? filtered : comp.tcmaticProducts));
@@ -11055,8 +11091,13 @@ const EMBEDDINGS_CORPUS = [
   { id: 'ADPARTS_AD_STANDARD_80W90', triggerQuery: 'aceite motor 80W90', text: 'aceite motor adparts AD STANDARD 80W90 80W90 referencias 7611000 761208 761050 761020 761005' },
   { id: 'ADPARTS_REFRIGERANTE_STANDARD_30__VERDE', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGERANTE STANDARD 30% VERDE referencias ADP10301 ADP15301' },
   { id: 'ADPARTS_REFRIGERANTE_STANDARD_30__ROSA', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGERANTE STANDARD 30% ROSA referencias ADP10302 ADP15302' },
-  { id: 'ADPARTS_REFRIGEANTE_ORG_NICO_50__ROSA', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGEANTE ORGÁNICO 50% ROSA referencias ADP10502 ADP15502' },
-  { id: 'ADPARTS_REFRIGEANTE_ORG_NICO_50__OCRE', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGEANTE ORGÁNICO 50% OCRE referencias ADP10503 ADP10508' },
+  { id: 'ADPARTS_AD_NEW_PLUS_50_ROSA', triggerQuery: 'refrigerante G12 rosa', text: 'refrigerante adparts AD NEW PLUS 50% color rosa. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, Ford WSS-M97B44-D/E. Referencias ADP15502 (5L) ADP12502 (200L) ADP10502 (1000L)' },
+  // Corregido (julio 2026): la entrada original agrupaba por error el ref ADP10508 (color
+  // AZUL según ficha técnica 10502.pdf) bajo "OCRE" -- separados correctamente.
+  { id: 'ADPARTS_AD_NEW_PLUS_50_OCRE', triggerQuery: 'refrigerante G12 ocre', text: 'refrigerante adparts AD NEW PLUS 50% color ocre. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, Ford WSS-M97B44-D/E. Referencias ADP15503 (5L) ADP12503 (200L) ADP10503 (1000L)' },
+  { id: 'ADPARTS_AD_NEW_PLUS_50_AZUL', triggerQuery: 'refrigerante G12 azul', text: 'refrigerante adparts AD NEW PLUS 50% color azul. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, Ford WSS-M97B44-D/E. Referencias ADP15508 (5L) ADP12508 (200L) ADP10508 (1000L)' },
+  { id: 'ADPARTS_AD_NEW_PLUS_35', triggerQuery: 'refrigerante G12 35%', text: 'refrigerante adparts AD NEW PLUS 35% color ocre, concentración reducida para climas templados. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF. Referencia ADP10353 (1000L)' },
+  { id: 'ADPARTS_AD_NEW_PLUS_40', triggerQuery: 'refrigerante G12 40%', text: 'refrigerante adparts AD NEW PLUS 40% color ocre. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, VOLVO VCS 418-0001. Referencia ADP10403 (1000L)' },
   { id: 'ADPARTS_AD48__G11__HOAT_HYBRID_ORGANICO_50__AZUL', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD48 (G11) HOAT HYBRID ORGANICO 50% AZUL referencias ADP55601 ADP55501' },
   { id: 'ADPARTS_AD40__G12____SI_OAT_ORGANICO_50__MAGENTA', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD40 (G12++) SI-OAT ORGANICO 50% MAGENTA referencias ADP55602 ADP55502' },
   { id: 'ADPARTS_REFRIGERANTE__G13__SI_OAT_GLY_ORGANICO_5', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA referencias ADP55603 ADP55503' },
@@ -12336,13 +12377,31 @@ function freeSearch(query) {
     }
   }
 
+  // Si la consulta es EXACTAMENTE una norma/alias ya conocido (Fase 2/3 de
+  // intelligentSearch, las más fiables), esa resolución tiene prioridad sobre la
+  // búsqueda laxa por nombre de producto que viene justo debajo. Sin esto, una consulta
+  // como "G12" podía colar por subcadena dentro del NOMBRE de un producto de una norma
+  // distinta (ej. "AD40 (G12++)"), devolviendo siempre G12++ sin importar cuál de las
+  // variantes G12/G12+/G12++ se buscara -- bug real reportado por Yakoba.
+  const earlyFormal = intelligentSearch(raw);
+  if (earlyFormal && (earlyFormal.match === 'exact' || earlyFormal.match === 'alias')) {
+    return { match: 'redirect_formal', query: raw, formalResult: earlyFormal };
+  }
+
   // Búsqueda directa en catálogo por nombre/ref de producto
   const qAgg = normalizeDesc(queryForProduct);
   if (qAgg.length >= 2) {
     const directMatches = AD_PARTS_CATALOG.filter(p => {
       const refAgg = normalizeDesc(p.ref).replace(/^AD/, '');
       const viscAgg = normalizeDesc(p.viscosity);
-      return refAgg.includes(qAgg) || viscAgg === qAgg;
+      // También por el número de SKU sin prefijo (ej. "55502" para ADP55502) -- antes
+      // solo se comparaba contra el nombre comercial, así que buscar la referencia tal
+      // cual como aparece impresa en el bidón/factura no encontraba nada. altSkus cubre
+      // el mismo producto en otro tamaño de envase con su propia referencia (ver arriba).
+      const skuAgg = normalizeDesc(p.sku).replace(/^ADP/, '');
+      const altSkuMatch = Array.isArray(p.altSkus) &&
+        p.altSkus.some(s => normalizeDesc(s).replace(/^ADP/, '') === qAgg);
+      return refAgg.includes(qAgg) || viscAgg === qAgg || skuAgg === qAgg || altSkuMatch;
     });
     if (directMatches.length > 0 && directMatches.length <= 20) {
       return { match: 'direct_product', query: raw, products: directMatches, format: detectedFormat };
@@ -13584,16 +13643,24 @@ function switchHelpTab(tab) {
   document.querySelectorAll('.help-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
   document.querySelectorAll('.help-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
 }
-document.getElementById('help-overlay').addEventListener('click', function(e) {
-  if (e.target === this) closeHelp();
-});
+// El <div id="help-overlay"> está definido en el HTML DESPUÉS de este <script> (el modal
+// de ayuda va al final del body), así que en el momento en que este bloque se ejecuta
+// todavía no existe en el DOM -- buscar aquí y añadir el listener directamente lanzaba
+// una excepción sin capturar que abortaba el resto del script (aunque las funciones ya
+// declaradas seguían funcionando por hoisting). Se envuelve en DOMContentLoaded para que
+// se ejecute una vez esté todo el documento parseado, sin depender del orden.
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('help-overlay').addEventListener('click', function(e) {
+    if (e.target === this) closeHelp();
+  });
 
-// Detectar preferencia del sistema
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  setTheme('dark');
-} else {
-  setTheme('light');
-}
+  // Detectar preferencia del sistema
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  } else {
+    setTheme('light');
+  }
+});
 
 </script>
 
