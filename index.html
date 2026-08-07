@@ -3691,8 +3691,15 @@ const AD_PARTS_CATALOG = [
   // altSkus: mismo producto, otro tamaño de bidón con SU PROPIA referencia (mismo patrón
   // ya usado en TC-Matic vía altRefs) -- para que buscar el número tal cual impreso en
   // CUALQUIER envase (no solo el de 5L elegido como sku principal) encuentre el producto.
+  { ref: 'AD48 (G11)',             sku: 'ADP55501', altSkus: ['ADP55601'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 1000],
+    specs: ['G11', 'VW TL 774-C', 'BMW LC-87', 'MB 326.0', 'MAN 324-NF', 'VOLVO'] },
   { ref: 'AD40 (G12++)',           sku: 'ADP55502', altSkus: ['ADP55602'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 1000],
     specs: ['G12++', 'VW TL 774-G', 'MB 326.5', 'MB 326.6', 'MAN 324 Si-OAT', 'PORSCHE', 'SCANIA TB 1451', 'ASTM D3306'] },
+  // 'G12evo' (minúsculas en "evo") es el canonical exacto ya usado en SPECS_DB/SPEC_ALIASES
+  // -- así hereda automáticamente el cruce ya confirmado con febi 183366/183367/183368
+  // (VW TL 774-L) vía febiTCForSpec, sin tocar nada más.
+  { ref: 'AD65 (G12 Evo)',         sku: 'ADP55504', altSkus: ['ADP55704', 'ADP55604'], viscosity: '-', type: 'refrigerante', segment: 'ligero', formats: [5, 200, 1000],
+    specs: ['G12evo', 'VW TL 774-L', 'DEUTZ DQC CC-14'] },
   // AD NEW PLUS (G12/G12+) -- ficha técnica confirma "VW 774D (G-12) y 774F (G-12+)" en
   // los 3 colores/concentraciones. Nivel de calidad claramente distinto de G12++/AD40 de
   // arriba -- Yakoba señaló que una búsqueda de "G12" no debe devolver resultados de G12++.
@@ -11098,10 +11105,10 @@ const EMBEDDINGS_CORPUS = [
   { id: 'ADPARTS_AD_NEW_PLUS_50_AZUL', triggerQuery: 'refrigerante G12 azul', text: 'refrigerante adparts AD NEW PLUS 50% color azul. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, Ford WSS-M97B44-D/E. Referencias ADP15508 (5L) ADP12508 (200L) ADP10508 (1000L)' },
   { id: 'ADPARTS_AD_NEW_PLUS_35', triggerQuery: 'refrigerante G12 35%', text: 'refrigerante adparts AD NEW PLUS 35% color ocre, concentración reducida para climas templados. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF. Referencia ADP10353 (1000L)' },
   { id: 'ADPARTS_AD_NEW_PLUS_40', triggerQuery: 'refrigerante G12 40%', text: 'refrigerante adparts AD NEW PLUS 40% color ocre. VW TL774D (G-12) y TL774F (G-12+), MB 326.3, MAN 324 Type SNF, VOLVO VCS 418-0001. Referencia ADP10403 (1000L)' },
-  { id: 'ADPARTS_AD48__G11__HOAT_HYBRID_ORGANICO_50__AZUL', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD48 (G11) HOAT HYBRID ORGANICO 50% AZUL referencias ADP55601 ADP55501' },
+  { id: 'ADPARTS_AD48_G11', triggerQuery: 'refrigerante G11 azul', text: 'refrigerante adparts AD48 (G11) HOAT color azul. VW/Audi/Seat/Skoda TL774-C (G-11), BMW LC-87, MB 326.0, MAN 324-NF, Volvo. Referencias ADP55501 (5L) ADP55601 (1000L)' },
   { id: 'ADPARTS_AD40__G12____SI_OAT_ORGANICO_50__MAGENTA', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD40 (G12++) SI-OAT ORGANICO 50% MAGENTA referencias ADP55602 ADP55502' },
   { id: 'ADPARTS_REFRIGERANTE__G13__SI_OAT_GLY_ORGANICO_5', triggerQuery: 'refrigerante', text: 'refrigerante adparts REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA referencias ADP55603 ADP55503' },
-  { id: 'ADPARTS_AD65__G12_EVO__PSI_OAT_ORG_NICO_50__MAGE', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD65 (G12 EVO) PSI-OAT ORGÁNICO 50% MAGENTA referencias ADP55604 ADP55504' },
+  { id: 'ADPARTS_AD65_G12EVO', triggerQuery: 'refrigerante G12 evo magenta', text: 'refrigerante adparts AD65 (G12 Evo) PSi-OAT color magenta. VW/Audi/Seat/Skoda/Lamborghini/Bentley/Bugatti TL774-L (G12evo), Deutz DQC CC-14. Compatible con TL774-G (G12++) y TL774-J (G13). Referencias ADP55504 (5L) ADP55704 (200L) ADP55604 (1000L)' },
   { id: 'ADPARTS_AD_ORIGINAL____OAT_ORGANICO_50__MAGENTA', triggerQuery: 'aceite motor', text: 'aceite motor adparts AD ORIGINAL () OAT ORGANICO 50% MAGENTA referencias ADP55605 ADP55505' },
   { id: 'ADPARTS_ADBLUE_GREENCHEN', triggerQuery: 'AdBlue', text: 'AdBlue adparts ADBLUE GREENCHEN referencias ADPADBLUE1000 ADPADBLUE10' },
   { id: 'CASTROL_BREAK_FLUID_DOT4', triggerQuery: 'líquido frenos', text: 'frenos castrol BREAK FLUID DOT4 DOT4 referencias 15F2D0' },
