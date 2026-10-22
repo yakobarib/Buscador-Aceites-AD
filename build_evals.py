@@ -16,6 +16,7 @@ Categorias (todas con respuesta verificable en los datos de origen, nada deducid
 import json
 import re
 import sys
+import zlib
 from collections import defaultdict
 from pathlib import Path
 
@@ -36,7 +37,7 @@ def main():
         if not consulta.strip() or not esperado or clave in vistos:
             return
         vistos.add(clave)
-        casos.append(dict(id=f"{cat}-{len(casos) + 1:04d}", categoria=cat, consulta=consulta, esperado=esperado, modo=modo, origen=origen,
+        casos.append(dict(id=f"{cat}-{zlib.crc32((herramienta + consulta.lower()).encode('utf-8')):08x}", categoria=cat, consulta=consulta, esperado=esperado, modo=modo, origen=origen,
                            herramienta=herramienta))
 
     # el buscador muestra FAMILIAS ("AD HSD 0W20", sku ADP61005), no referencias sueltas: lo esperado es el nombre de la familia
@@ -85,6 +86,7 @@ def main():
         if len(lit) > 35 or "," in lit or lit.count("/") > 1:  # cadenas compuestas del catalogo: nadie las escribiria asi
             continue
         anadir("norma_ad", lit, sorted(refs), origen="AD PARTS - Catalogo Lubricantes 2025.xlsx")
+        anadir("norma_ad_hom", lit, sorted(refs), origen="AD PARTS - Catalogo Lubricantes 2025.xlsx (pestana Homologaciones)", herramienta="homologaciones")
     por_va = defaultdict(set)
     for fam in bw.FAMILIAS:
         visc = re.sub(r"[^0-9WwA-Za-z]", "", fam["visc"])

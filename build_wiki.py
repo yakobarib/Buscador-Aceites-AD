@@ -438,6 +438,50 @@ def cargar_febi_tcmatic():
                             libro=libro.name, nota=nombre_nota(libro, ws.title), hoja=ws.title))
 
 
+# ---------------------------------------------------------------- reglas de nombre (a nivel de modulo: las reutiliza build_bridge.py)
+# reglas de nombre confirmadas por el usuario (normas_alias.json)
+_sobrantes = [(re.compile(rf"^{re.escape(a)}\s+(?={re.escape(b)})", re.I)) for a, b in _alias_cfg.get("_prefijos_sobrantes", [])]
+_pref_eq = sorted(((re.compile(r"^(?:" + "|".join(re.escape(v) for v in sorted(g[1:], key=len, reverse=True)) + r")\s+", re.I), g[0])
+                   for g in _alias_cfg.get("_prefijos_equivalentes", [])),
+                  key=lambda x: -max(len(v) for g in _alias_cfg["_prefijos_equivalentes"] if g[0] == x[1] for v in g[1:]))
+_relleno = [(re.compile(rf"^{re.escape(m)}\s+{re.escape(w)}\s+", re.I), m) for m, w in _alias_cfg.get("_palabras_relleno", [])]
+_omitidas = [(re.compile(rf"^{re.escape(m)}\s+(?=\d)", re.I), f"{m} {w} ") for m, w in _alias_cfg.get("_palabras_omitidas", [])]
+_implica = {clave(k): v for k, v in _alias_cfg.get("_implica", {}).items()}
+log_reglas = Counter()
+
+def canon_lit(lit):
+    lit = " ".join(lit.split())
+    orig = lit
+    for rx in _sobrantes:  # "VOLVO Mack EOS-4.5" -> "Mack EOS-4.5"; "VW G12+" -> "G12+"
+        lit = rx.sub("", lit, count=1)
+    if lit.count(")") > lit.count("("):  # parentesis de cierre suelto: "G12evo)"
+        lit = lit.rstrip(")").rstrip()
+    for rx, m in _relleno:
+        lit = rx.sub(m + " ", lit)
+    for rx, canon in _pref_eq:
+        if lit.upper().startswith(canon.upper() + " "):
+            break  # ya lleva el nombre canonico (evita "ARVIN MERITOR MERITOR")
+        if rx.match(lit):
+            lit = rx.sub(canon + " ", lit, count=1)
+            break
+    lit = re.sub(r"(?i)\b(\w+)(?:\s+\1\b)+", r"\1", lit)  # errata: palabra repetida seguida ("VALTRA VALTRA G2-08")
+    for rx, nuevo in _omitidas:
+        lit = rx.sub(nuevo, lit, count=1)
+    if lit != orig:
+        log_reglas[(orig, lit)] += 1
+    return ALIAS_CLAVE.get(clave(lit), lit)
+
+def con_implicadas(pares):
+    """[(tipo, literal)] -> mismos pares canonicos + las normas que cada uno incluye (GL-5 LS incluye GL-5)."""
+    out = []
+    for tipo, lit in pares:
+        lit = canon_lit(lit)
+        out.append((tipo, lit))
+        out += [(tipo, canon_lit(x)) for x in _implica.get(clave(lit), [])]
+    return out
+
+
+
 # ---------------------------------------------------------------- construccion
 def main():
     for c in (cargar_listas_simples, cargar_febi, cargar_tcmatic, cargar_refrigerantes_ad, cargar_catalogo_ad,
@@ -795,47 +839,6 @@ def main():
             fb["tcmatic"] += tcs
 
     # ---------------- registro de normas
-    # reglas de nombre confirmadas por el usuario (normas_alias.json)
-    _sobrantes = [(re.compile(rf"^{re.escape(a)}\s+(?={re.escape(b)})", re.I)) for a, b in _alias_cfg.get("_prefijos_sobrantes", [])]
-    _pref_eq = sorted(((re.compile(r"^(?:" + "|".join(re.escape(v) for v in sorted(g[1:], key=len, reverse=True)) + r")\s+", re.I), g[0])
-                       for g in _alias_cfg.get("_prefijos_equivalentes", [])),
-                      key=lambda x: -max(len(v) for g in _alias_cfg["_prefijos_equivalentes"] if g[0] == x[1] for v in g[1:]))
-    _relleno = [(re.compile(rf"^{re.escape(m)}\s+{re.escape(w)}\s+", re.I), m) for m, w in _alias_cfg.get("_palabras_relleno", [])]
-    _omitidas = [(re.compile(rf"^{re.escape(m)}\s+(?=\d)", re.I), f"{m} {w} ") for m, w in _alias_cfg.get("_palabras_omitidas", [])]
-    _implica = {clave(k): v for k, v in _alias_cfg.get("_implica", {}).items()}
-    log_reglas = Counter()
-
-    def canon_lit(lit):
-        lit = " ".join(lit.split())
-        orig = lit
-        for rx in _sobrantes:  # "VOLVO Mack EOS-4.5" -> "Mack EOS-4.5"; "VW G12+" -> "G12+"
-            lit = rx.sub("", lit, count=1)
-        if lit.count(")") > lit.count("("):  # parentesis de cierre suelto: "G12evo)"
-            lit = lit.rstrip(")").rstrip()
-        for rx, m in _relleno:
-            lit = rx.sub(m + " ", lit)
-        for rx, canon in _pref_eq:
-            if lit.upper().startswith(canon.upper() + " "):
-                break  # ya lleva el nombre canonico (evita "ARVIN MERITOR MERITOR")
-            if rx.match(lit):
-                lit = rx.sub(canon + " ", lit, count=1)
-                break
-        lit = re.sub(r"(?i)\b(\w+)(?:\s+\1\b)+", r"\1", lit)  # errata: palabra repetida seguida ("VALTRA VALTRA G2-08")
-        for rx, nuevo in _omitidas:
-            lit = rx.sub(nuevo, lit, count=1)
-        if lit != orig:
-            log_reglas[(orig, lit)] += 1
-        return ALIAS_CLAVE.get(clave(lit), lit)
-
-    def con_implicadas(pares):
-        """[(tipo, literal)] -> mismos pares canonicos + las normas que cada uno incluye (GL-5 LS incluye GL-5)."""
-        out = []
-        for tipo, lit in pares:
-            lit = canon_lit(lit)
-            out.append((tipo, lit))
-            out += [(tipo, canon_lit(x)) for x in _implica.get(clave(lit), [])]
-        return out
-
     menciones = defaultdict(list)  # clave -> [(literal, tipo)]
     for origen in list(PRODUCTOS) + FAMILIAS:
         for destino, fuente_n in (("normas_n", "normas"), ("normas_f_n", "normas_f"), ("normas_t_n", "normas_t")):

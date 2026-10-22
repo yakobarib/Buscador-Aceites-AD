@@ -50,6 +50,14 @@ function cargar(rutaHtml = path.join(__dirname, '..', 'index.html')) {
     crossReferenceSearch: (q) => { sandbox.__q = q; return llamar('crossReferenceSearch(__q)'); },
     intelligentSearch: (q) => { sandbox.__q = q; return llamar('intelligentSearch(__q)'); },
     ctx, llamar,
+    // flujo COMPLETO de la pestaña "Homologaciones" (searchByDesc)
+    buscarHomologacion: (q) => {
+      els['results-section'] = elemento('results-section');
+      getEl('input-desc').value = q;
+      try { llamar('currentVehicle = null'); llamar('searchByDesc()'); } catch (e) { return { error: e.message, texto: '' }; }
+      const html = els['results-section'].innerHTML || '';
+      return { texto: html.replace(/<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]*>/g, ' ').replace(/&[a-z#0-9]+;/g, ' ').replace(/\s+/g, ' ').trim(), html };
+    },
     // flujo COMPLETO de la pestaña "Búsqueda libre" (searchByFree): escribe en el campo, busca y devuelve el texto que se pinta
     buscarLibre: (q) => {
       els['results-section'] = elemento('results-section');

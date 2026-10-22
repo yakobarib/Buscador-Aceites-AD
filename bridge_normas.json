@@ -1,0 +1,995 @@
+{
+"alias": {
+"ACEAA1": "ACEA A1",
+"ACEAA3": "ACEA A3",
+"ACEAA5": "ACEA A5",
+"ACEAB1": "ACEA B1",
+"ACEAB4": "ACEA B4",
+"ACEAB5": "ACEA B5",
+"ACEAE8": "ACEA E8",
+"AFNORNFE48603HL": "AFNOR NF-E 48-603 HL",
+"AFNORNFE48690": "AFNOR NF-E 48-690",
+"ALISONC4": "ALLISON C-4",
+"ALLISONC4": "ALLISON C-4",
+"APICF4": "API CF4",
+"APICJ": "API CJ",
+"APIGL5LS": "API GL-5 LS",
+"ARVIN076N": "ARVIN MERITOR 0-76-N",
+"ARVINMERITOR076N": "ARVIN MERITOR 0-76-N",
+"ATF3PLUS4PLUS": "ATF +3/+4",
+"ATFDIIIMULTI": "ATF D III Multi",
+"ATFDIIMULTI": "ATF D II Multi",
+"CES20072": "CUMMINS CES 20072",
+"CNHMAT3525": "CNH MAT 3525",
+"CUMMINSCES20072": "CUMMINS CES 20072",
+"DESXIIIH": "DESX III H",
+"DEUTZDQCIII10LA": "DEUTZ DQC III-10 LA",
+"DEUTZDQCIV10": "DEUTZ DQC IV-10",
+"DEXOSD": "DEXOS D",
+"DIN515242HLP": "DIN 51524-2 HLP",
+"DIN515243HVLP": "DIN 51524-3 HVLP",
+"DIN51825KP2N20": "DIN 51825 KP2N-20",
+"DQCIII10LA": "DEUTZ DQC III-10 LA",
+"DQCIV10": "DEUTZ DQC IV-10",
+"EOO": "EO-O",
+"FDA": "FDA",
+"FORDM2C159BC": "FORD M2C-159B/C",
+"FORDWSSM2C913CD": "Ford WSS-M2C-913-C/D",
+"HMNFE18691": "HM NF-E 18-691",
+"HMNFE48690": "HM NF-E 48-690",
+"ILSACGF5": "ILSAC GF-5",
+"ISO67434HM": "ISO 6743/4 HM",
+"JASO1A03": "JASO 1A-03",
+"JASODHD1": "JASO DHD-1",
+"JASOM3152004": "Jaso M315-2004",
+"JLRSTJLR035003": "JLR STJLR 03.5003",
+"JLRSTJLR035004": "JLR STJLR.03.5004",
+"JLRSTJLR035005": "JLR STJLR.03.5005",
+"JLRSTJLR035007": "JLR STJLR.03.5007",
+"MAGIASP69": "MAGIAS P-69",
+"MAGIASP70": "MAGIAS P-70",
+"MAN32711": "MAN 3271-1",
+"MAN3277": "MAN 3277",
+"MAN341Z2": "MAN 341 Z2",
+"MAN342M1": "MAN 342 M1",
+"MAN3477": "MAN 3477",
+"MAN3575": "MAN 3575",
+"MAN3677": "MAN 3677",
+"MAN3775": "MAN 3775",
+"MASSEYFERGUSONM1141": "Massey Ferguson M1141",
+"MERCON": "Mercon",
+"MITSUBISHISPIISPIII": "Mitsubishi SP-II/SP-III",
+"NSFH1": "NSF H1",
+"RENAULT0700": "Renault 0700",
+"RENAULT0710": "Renault 0710",
+"RENAULTAXLES": "Renault Axles",
+"RENAULTB00322ANNEX3": "RENAULT B0032/2 ANNEX 3",
+"RENAULTRLD": "Renault RLD",
+"SAEJ2360": "SAE J2360",
+"SHPD": "SHPD",
+"STELLANTISFPW03": "Stellantis FPW03",
+"STELLANTISFPW955535": "Stellantis FPW9.55535",
+"STO10": "STO 1:0",
+"SUZUKIATF3317": "Suzuki ATF 3317",
+"TES295": "TES 295",
+"TES389": "TES 389",
+"THPD": "THPD",
+"TOYOTATIITIV": "Toyota T-II/T-IV",
+"USP": "USP",
+"UTTOTHF": "UTTO THF",
+"VARIO": "VARIO",
+"VOITH13200374400": "VOITH 132.00374400",
+"VOITH556336": "VOITH 55.6336",
+"VOITHH556335": "VOITH H55.6335",
+"VOLVO97305": "VOLVO 97305",
+"VOLVOVDS4VDS45": "Volvo VDS-4/VDS-4.5",
+"ZF": "ZF"
+},
+"nuevas": {
+"ACEA A1": {
+"description": "Norma ACEA A1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA A3": {
+"description": "Norma ACEA A3 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA A5": {
+"description": "Norma ACEA A5 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA B1": {
+"description": "Norma ACEA B1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA B4": {
+"description": "Norma ACEA B4 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA B5": {
+"description": "Norma ACEA B5 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ACEA E8": {
+"description": "Norma ACEA E8 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"AFNOR NF-E 48-603 HL": {
+"description": "Norma AFNOR NF-E 48-603 HL (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"AFNOR NF-E 48-690": {
+"description": "Norma AFNOR NF-E 48-690 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"API CF4": {
+"description": "Norma API CF4 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"API CJ": {
+"description": "Norma API CJ (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"API GL-5 LS": {
+"description": "Norma API GL-5 LS (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ARVIN MERITOR 0-76-N": {
+"description": "Norma ARVIN MERITOR 0-76-N (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ATF +3/+4": {
+"description": "Norma ATF +3/+4 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"ATF D II Multi": {
+"description": "Norma ATF D II Multi (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"ATF D III Multi": {
+"description": "Norma ATF D III Multi (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"CNH MAT 3525": {
+"description": "Norma CNH MAT 3525 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"CUMMINS CES 20072": {
+"description": "Norma CUMMINS CES 20072 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"DESX III H": {
+"description": "Norma DESX III H (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"DEUTZ DQC III-10 LA": {
+"description": "Norma DEUTZ DQC III-10 LA (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"DEUTZ DQC IV-10": {
+"description": "Norma DEUTZ DQC IV-10 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"DEXOS D": {
+"description": "Norma DEXOS D (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"DIN 51524-2 HLP": {
+"description": "Norma DIN 51524-2 HLP (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"DIN 51524-3 HVLP": {
+"description": "Norma DIN 51524-3 HVLP (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"DIN 51825 KP2N-20": {
+"description": "Norma DIN 51825 KP2N-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
+"EO-O": {
+"description": "Norma EO-O (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"FDA": {
+"description": "Norma FDA (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "industrial"
+},
+"FORD M2C-159B/C": {
+"description": "Norma FORD M2C-159B/C (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"Ford WSS-M2C-913-C/D": {
+"description": "Norma Ford WSS-M2C-913-C/D (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"HM NF-E 18-691": {
+"description": "Norma HM NF-E 18-691 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"HM NF-E 48-690": {
+"description": "Norma HM NF-E 48-690 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"ILSAC GF-5": {
+"description": "Norma ILSAC GF-5 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"ISO 6743/4 HM": {
+"description": "Norma ISO 6743/4 HM (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"JASO 1A-03": {
+"description": "Norma JASO 1A-03 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"JASO DHD-1": {
+"description": "Norma JASO DHD-1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"JLR STJLR 03.5003": {
+"description": "Norma JLR STJLR 03.5003 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"JLR STJLR.03.5004": {
+"description": "Norma JLR STJLR.03.5004 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"JLR STJLR.03.5005": {
+"description": "Norma JLR STJLR.03.5005 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"JLR STJLR.03.5007": {
+"description": "Norma JLR STJLR.03.5007 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"Jaso M315-2004": {
+"description": "Norma Jaso M315-2004 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MAGIAS P-69": {
+"description": "Norma MAGIAS P-69 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"MAGIAS P-70": {
+"description": "Norma MAGIAS P-70 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "hidraulico"
+},
+"MAN 3271-1": {
+"description": "Norma MAN 3271-1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MAN 3277": {
+"description": "Norma MAN 3277 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MAN 341 Z2": {
+"description": "Norma MAN 341 Z2 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"MAN 342 M1": {
+"description": "Norma MAN 342 M1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"MAN 3477": {
+"description": "Norma MAN 3477 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MAN 3575": {
+"description": "Norma MAN 3575 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MAN 3677": {
+"description": "Norma MAN 3677 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MAN 3775": {
+"description": "Norma MAN 3775 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"Massey Ferguson M1141": {
+"description": "Norma Massey Ferguson M1141 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"Mercon": {
+"description": "Norma Mercon (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"Mitsubishi SP-II/SP-III": {
+"description": "Norma Mitsubishi SP-II/SP-III (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"NSF H1": {
+"description": "Norma NSF H1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "industrial"
+},
+"RENAULT B0032/2 ANNEX 3": {
+"description": "Norma RENAULT B0032/2 ANNEX 3 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"Renault 0700": {
+"description": "Norma Renault 0700 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"Renault 0710": {
+"description": "Norma Renault 0710 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"Renault Axles": {
+"description": "Norma Renault Axles (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"Renault RLD": {
+"description": "Norma Renault RLD (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"SAE J2360": {
+"description": "Norma SAE J2360 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"SHPD": {
+"description": "Norma SHPD (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"STO 1:0": {
+"description": "Norma STO 1:0 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"Stellantis FPW03": {
+"description": "Norma Stellantis FPW03 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"Stellantis FPW9.55535": {
+"description": "Norma Stellantis FPW9.55535 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "motor"
+},
+"Suzuki ATF 3317": {
+"description": "Norma Suzuki ATF 3317 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"TES 295": {
+"description": "Norma TES 295 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"TES 389": {
+"description": "Norma TES 389 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"THPD": {
+"description": "Norma THPD (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"Toyota T-II/T-IV": {
+"description": "Norma Toyota T-II/T-IV (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"USP": {
+"description": "Norma USP (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "industrial"
+},
+"UTTO THF": {
+"description": "Norma UTTO THF (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"VARIO": {
+"description": "Norma VARIO (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "multifuncion"
+},
+"VOITH 132.00374400": {
+"description": "Norma VOITH 132.00374400 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"VOITH 55.6336": {
+"description": "Norma VOITH 55.6336 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"VOITH H55.6335": {
+"description": "Norma VOITH H55.6335 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"VOLVO 97305": {
+"description": "Norma VOLVO 97305 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"Volvo VDS-4/VDS-4.5": {
+"description": "Norma Volvo VDS-4/VDS-4.5 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"ZF": {
+"description": "Norma ZF (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "transmision"
+}
+},
+"specs": {
+"ADP10005": [
+"ACEA E2",
+"API CF",
+"API SF",
+"MAN 270",
+"MB 228.0",
+"MTU Type 1"
+],
+"ADP11005": [
+"ACEA E2",
+"API CF",
+"API SF",
+"MAN 270",
+"MB 228.0",
+"MTU Type 1"
+],
+"ADP12005": [
+"ACEA A3",
+"ACEA B4",
+"API CF",
+"API SM",
+"MB 229.1",
+"VW 501.01",
+"VW 505.00"
+],
+"ADP13005": [
+"API GL-5",
+"MAN 342 M1",
+"MB 235.0",
+"MIL-L-2105-D",
+"Renault Axles",
+"VOITH 132.00374400"
+],
+"ADP16005": [
+"API CF",
+"API SL"
+],
+"ADP17005": [
+"API GL-4",
+"API GL-5",
+"API MT-1",
+"ARVIN MERITOR 0-76-N",
+"MACK GO-J",
+"MAN 341 Z2",
+"MB 235.0",
+"MB 235.8",
+"MIL-PRF-2105E",
+"SAE J2360",
+"SCANIA STO 2:0 AFS",
+"STO 1:0",
+"VOLVO 97312"
+],
+"ADP19005": [
+"ACEA E4",
+"ACEA E7",
+"API CF",
+"CUMMINS CES 20072",
+"MACK EO-N",
+"MAN 3277",
+"MB 228.5",
+"MTU Type 3",
+"RENAULT RLD-2",
+"RENAULT RXD",
+"SCANIA LDF-3",
+"VOLVO VDS-3"
+],
+"ADP20005": [
+"GM Dexron II D",
+"Mercon",
+"VOITH H55.6335"
+],
+"ADP21005": [
+"ACEA A3",
+"ACEA B4",
+"API CF",
+"API SM",
+"MB 229.1",
+"VW 501.01",
+"VW 505.00"
+],
+"ADP22005": [
+"ACEA A3",
+"ACEA B4",
+"API CF",
+"API SN",
+"BMW LL-01",
+"GM LL-B-025",
+"MB 226.5",
+"MB 229.3",
+"PORSCHE A40",
+"Renault 0700",
+"Renault 0710",
+"VW 502.00",
+"VW 505.00"
+],
+"ADP23005": [
+"AFNOR NF-E 48-603 HL",
+"DIN 51524-2 HLP",
+"HM NF-E 18-691",
+"HM NF-E 48-690",
+"ISO 6743/4 HM"
+],
+"ADP24005": [
+"AFNOR NF-E 48-603 HL",
+"DIN 51524-2 HLP",
+"HM NF-E 18-691",
+"HM NF-E 48-690",
+"ISO 6743/4 HM"
+],
+"ADP25005": [
+"AFNOR NF-E 48-690",
+"DIN 51524-3 HVLP",
+"MAGIAS P-70"
+],
+"ADP26005": [
+"AFNOR NF-E 48-603 HL",
+"DIN 51524-2 HLP",
+"HM NF-E 18-691",
+"HM NF-E 48-690",
+"ISO 6743/4 HM"
+],
+"ADP27005": [
+"ACEA E2",
+"API CF4",
+"API GL-4",
+"API SF",
+"CATERPILLAR TO-2",
+"FORD M2C-159B/C",
+"JOHN DEERE J-27",
+"KUBOTA UDT",
+"MB 228.1",
+"VARIO"
+],
+"ADP28005": [
+"ALLISON C-4",
+"API GL-4",
+"CATERPILLAR TO-2",
+"CNH MAT 3525",
+"FORD M2C-134D",
+"JOHN DEERE J-20C",
+"KUBOTA UDT",
+"MASSEY FERGUSON M1143",
+"MASSEY FERGUSON M1145",
+"Massey Ferguson M1141",
+"UTTO THF",
+"VOLVO WB 101"
+],
+"ADP30005": [
+"AFNOR NF-E 48-690",
+"DIN 51524-3 HVLP",
+"MAGIAS P-69"
+],
+"ADP32005": [
+"ACEA E5",
+"ACEA E7",
+"API CH-4",
+"API CI-4",
+"API SL",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"DEUTZ DQC III-10",
+"JASO DHD-1",
+"MACK EO-N",
+"MB 228.3",
+"MTU Type 2",
+"RENAULT RLD-2",
+"Renault RLD",
+"SHPD",
+"VOLVO VDS-3"
+],
+"ADP34005": [
+"ACEA A5",
+"ACEA B5",
+"API CF",
+"API SL",
+"Ford WSS-M2C-913-C/D",
+"JLR STJLR 03.5003",
+"RENAULT RN0700"
+],
+"ADP35005": [
+"ACEA C3",
+"API CF",
+"API SN",
+"BMW LL-04",
+"FIAT 9.55535-S2",
+"FORD WSS-M2C917-A",
+"GM DEXOS2",
+"MB 229.31",
+"MB 229.51",
+"PORSCHE A40",
+"VW 505.00",
+"VW 505.01"
+],
+"ADP36005": [
+"API GL-5",
+"MAN 342 Type M1",
+"MIL-L-2105-D",
+"VOLVO 1273.10",
+"VOLVO 97310",
+"VOLVO 97313",
+"VOLVO 97314"
+],
+"ADP37005": [
+"API GL-4",
+"MB 235.1",
+"ZF"
+],
+"ADP38005": [
+"API GL-5 LS",
+"MIL-L-2105-D"
+],
+"ADP39005": [
+"ALLISON C-4",
+"CATERPILLAR TO-4",
+"KOMATSU KES 07.868.1"
+],
+"ADP40005": [
+"ALLISON C-4",
+"FORD Mercon V",
+"GM Dexron II D",
+"GM Dexron III",
+"MB 236.9",
+"TES 295",
+"TES 389",
+"VOITH 55.6336",
+"VOLVO 97341"
+],
+"ADP41005": [
+"FDA",
+"NSF H1",
+"USP"
+],
+"ADP45005": [
+"ACEA E11",
+"ACEA E4",
+"ACEA E6",
+"ACEA E7",
+"ACEA E8",
+"ACEA E9",
+"API CI-4",
+"API CJ-4",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20081",
+"DEUTZ DQC IV-10 LA",
+"EO-O",
+"JASO DH-2",
+"MAN 3271-1",
+"MAN 3477",
+"MAN 3575",
+"MB 228.51",
+"MB 235.28",
+"MTU Type 3.1",
+"RENAULT RLD-3",
+"RENAULT RLD-4",
+"VOLVO VDS-4",
+"VOLVO VDS-4.5"
+],
+"ADP46005": [
+"ACEA A3",
+"ACEA B4",
+"ACEA C2",
+"ACEA C3",
+"BMW LL-04",
+"MB 229.51",
+"PORSCHE C30",
+"VW 501.01",
+"VW 502.00",
+"VW 503.00",
+"VW 503.01",
+"VW 504.00",
+"VW 505.00",
+"VW 505.01",
+"VW 506.00",
+"VW 506.01",
+"VW 507.00"
+],
+"ADP48005": [
+"ACEA C3",
+"ACEA C4",
+"MB 226.51",
+"RENAULT RN0720"
+],
+"ADP49005": [
+"ACEA E4",
+"ACEA E7",
+"API CF",
+"CUMMINS CES 20077",
+"DEUTZ DQC IV-10",
+"MACK EO-N",
+"MAN 3277",
+"MB 228.5",
+"MTU Type 3",
+"SCANIA LDF-3",
+"VOLVO VDS-3"
+],
+"ADP51005": [
+"ATF +3/+4",
+"ATF D II Multi",
+"ATF D III Multi",
+"DESX III H",
+"HONDA Z-1",
+"JASO 1A-03",
+"Jaso M315-2004",
+"Mitsubishi SP-II/SP-III",
+"Suzuki ATF 3317",
+"Toyota T-II/T-IV"
+],
+"ADP54005": [
+"API GL-5"
+],
+"ADP55005": [
+"ACEA C3",
+"API CF",
+"API SN",
+"BMW LL-04",
+"GM DEXOS2",
+"MB 229.51",
+"MB 229.52",
+"VW 505.00",
+"VW 505.01"
+],
+"ADP56005": [
+"ACEA C2",
+"API SN PLUS",
+"API SP",
+"PSA B71 2290"
+],
+"ADP57005": [
+"ACEA A3",
+"ACEA B4",
+"API SN",
+"MB 229.3",
+"Renault 0700",
+"Renault 0710",
+"VW 501.01",
+"VW 505.00"
+],
+"ADP58005": [
+"ACEA C1",
+"JLR STJLR.03.5005"
+],
+"ADP59005": [
+"ACEA E11",
+"ACEA E7",
+"ACEA E9",
+"API CI-4",
+"API CJ-4",
+"API CK-4",
+"API SN",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC III-10 LA",
+"MAN 3575",
+"MAN 3775",
+"MB 228.31",
+"MTU Type 2.1",
+"RENAULT RLD-3",
+"THPD",
+"Volvo VDS-4/VDS-4.5"
+],
+"ADP60005": [
+"ACEA C3",
+"API SN",
+"BMW LL-04",
+"MB 229.51",
+"PORSCHE C30",
+"VW 504.00",
+"VW 507.00"
+],
+"ADP60520": [
+"DIN 51825 KP2N-20"
+],
+"ADP61005": [
+"API SN RC",
+"ILSAC GF-5",
+"ILSAC GF-6A"
+],
+"ADP62005": [
+"ACEA A1",
+"ACEA B1",
+"ACEA C5",
+"API SN",
+"FORD WSS-M2C948-B",
+"JLR STJLR.03.5004"
+],
+"ADP63005": [
+"API GL-4",
+"MAN 341 Z-4",
+"RENAULT B0032/2 ANNEX 3",
+"VOLVO 97305"
+],
+"ADP64005": [
+"ACEA E11",
+"ACEA E7",
+"ACEA E9",
+"API CI-4 Plus",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC III-10 LA",
+"MACK EOS-4.5",
+"MAN 3575",
+"MB 228.31",
+"RENAULT RLD-3",
+"VOLVO VDS-4",
+"VOLVO VDS-4.5"
+],
+"ADP65005": [
+"ACEA E11",
+"ACEA E4",
+"ACEA E6",
+"ACEA E7",
+"ACEA E8",
+"ACEA E9",
+"API CJ",
+"API CK-4",
+"API SN",
+"CUMMINS CES 20081",
+"DEUTZ DQC IV-10 LA",
+"EO-O",
+"JASO DH-2",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3271-1",
+"MAN 3477",
+"MAN 3677",
+"MAN 3775",
+"MAN 3777",
+"MB 228.31",
+"MB 228.51",
+"RENAULT RGD",
+"RENAULT RLD-2",
+"RENAULT RLD-3",
+"RENAULT RXD",
+"SCANIA LDF-4",
+"VOLVO VDS-3",
+"VOLVO VDS-4",
+"VOLVO VDS-4.5"
+],
+"ADP66005": [
+"ACEA C2",
+"API SP",
+"PSA B71 2312"
+],
+"ADP67005": [
+"ACEA A1",
+"ACEA B1",
+"ILSAC GF-6A",
+"PORSCHE C20",
+"VW 508.00",
+"VW 509.00"
+],
+"ADP68005": [
+"ACEA C2",
+"FORD WSS-M2C950-A",
+"JLR STJLR.03.5007"
+],
+"ADP69005": [
+"ACEA A5",
+"ACEA B5",
+"API SL",
+"VOLVO VCC 95200377"
+],
+"ADP70005": [
+"API SP",
+"FORD WSS-M2C961-A1",
+"GM DEXOS1 GEN2",
+"GM DEXOS1 GEN3",
+"ILSAC GF-6A",
+"OPEL OV 040 1547-G30"
+],
+"ADP71005": [
+"ACEA C3",
+"BMW LL-04",
+"MB 229.52",
+"PORSCHE C30",
+"VW 504.00",
+"VW 507.00"
+],
+"ADP72005": [
+"ACEA C3",
+"API SN",
+"RENAULT RN17"
+],
+"ADP73005": [
+"ACEA C5",
+"API SN",
+"RENAULT RN17 FE"
+],
+"ADP78005": [
+"ACEA C5",
+"ACEA C6",
+"API SP",
+"PSA B71 2010"
+],
+"ADP79005": [
+"ACEA C5",
+"ACEA C6",
+"API SN PLUS",
+"API SP",
+"DEXOS D",
+"FORD WSS-M2C952-A1",
+"JAGUAR STJLR.03.5006",
+"MB 229.71"
+],
+"ADP92005": [
+"ACEA C3",
+"API SP",
+"PSA B71 2297",
+"Stellantis FPW03",
+"Stellantis FPW9.55535"
+]
+}
+}

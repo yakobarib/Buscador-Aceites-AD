@@ -133,5 +133,9 @@
   "DEX III H MULTI": "GM DEXRON III H",
   "DEXRON III H": "GM DEXRON III H",
   "DEX VI": "GM DEXRON VI",
-  "Dexron VI": "GM DEXRON VI"
+  "Dexron VI": "GM DEXRON VI",
+  "_excluir_del_puente": [
+    "MUY TYPE 3.1"
+  ],
+  "_comentario_excluir": "Normas del catalogo AD Parts que build_bridge.py NO incorpora al buscador hasta que se confirme que no son erratas (MUY TYPE 3.1 podria ser MTU Type 3.1)."
 }

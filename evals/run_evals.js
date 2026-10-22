@@ -44,7 +44,7 @@ const res = casos.map((c) => {
     halladas = c.esperado.filter((e) => refs.includes(normRef(e)));
     if (c.modo === 'propia') halladas = refs.includes(normRef(c.consulta)) ? [c.consulta] : [];
   } else if (!error && !xref) {
-    const v = b.buscarLibre(c.consulta);  // flujo completo de la pestaña (incluye, en la rama puente, el paso por referencias cruzadas)
+    const v = c.herramienta === 'homologaciones' ? b.buscarHomologacion(c.consulta) : b.buscarLibre(c.consulta);  // flujo completo de la pestaña (incluye, en la rama puente, el paso por referencias cruzadas)
     if (v.error) error = 'al pintar: ' + v.error;
     // lo que el usuario VE, sin el eco de su propia consulta (para que repetir lo escrito no cuente como acierto)
     texto = v.texto.replace(new RegExp('(?<![0-9A-Za-z])' + esc(c.consulta) + '(?![0-9A-Za-z])', 'ig'), ' ');
@@ -65,7 +65,7 @@ md += `Mide solo las búsquedas por reglas del buscador (la IA semántica del na
 md += `| Herramienta | Categoría | Casos | Aciertos | % | "none" | Errores |\n|---|---|---|---|---|---|\n`;
 for (const c of cats) {
   const rs = res.filter((r) => r.categoria === c);
-  md += `| ${rs[0].herramienta === 'xref' ? 'referencias cruzadas' : 'búsqueda libre'} | ${c} | ${rs.length} | ${rs.filter((r) => r.ok).length} | ${pct(rs.filter((r) => r.ok).length, rs.length)} | ${rs.filter((r) => r.tipo === 'none').length} | ${rs.filter((r) => r.error).length} |\n`;
+  md += `| ${({ xref: 'referencias cruzadas', homologaciones: 'homologaciones' })[rs[0].herramienta] || 'búsqueda libre'} | ${c} | ${rs.length} | ${rs.filter((r) => r.ok).length} | ${pct(rs.filter((r) => r.ok).length, rs.length)} | ${rs.filter((r) => r.tipo === 'none').length} | ${rs.filter((r) => r.error).length} |\n`;
 }
 if (previo) {
   const antes = new Map(previo.map((r) => [r.id, r.ok]));
