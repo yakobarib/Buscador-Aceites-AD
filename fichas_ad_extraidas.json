@@ -1,0 +1,7817 @@
+{
+ "Aceites AD Normal/10005": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/10050": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/10208": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/11005": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/11050": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/11208": {
+  "titulo": "AD DS3 30, DS3 40",
+  "tipo_producto": "ACEITE PARA MOTORES DIESEL",
+  "grado_sae": "30",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "CF",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2104-D",
+   "MIL L-46152-C",
+   "ALLISON C-3",
+   "MB 228.0",
+   "MAN 270",
+   "MTU Type 1",
+   "CATERPILLAR TO-2"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12002": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12005": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12020": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12050": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/121000": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12208": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/12600": {
+  "titulo": "AD MDX 15W50",
+  "tipo_producto": "ACEITE MULTIFUNCIONAL",
+  "grado_sae": "15W50",
+  "acea": [
+   "A3",
+   "B4-10"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "2",
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2019",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/13005": {
+  "titulo": "AD MHP 80W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.0",
+   "DTFR 12B100",
+   "MAN 342 Type M1",
+   "RENAULT Axles"
+  ],
+  "oem_ambiguo": [
+   "DAF: DAF API GL-5",
+   "VOITH: VOITH TURBO 132.00374400 (ex 3.325-339) (80W90)",
+   "MIL: MIL-L-2105 D (80W90 y 85W140)",
+   "ZF: ZF TE-ML 16B/17B/19B/21A (80W90)"
+  ]
+ },
+ "Aceites AD Normal/13020": {
+  "titulo": "AD MHP 80W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.0",
+   "DTFR 12B100",
+   "MAN 342 Type M1",
+   "RENAULT Axles"
+  ],
+  "oem_ambiguo": [
+   "DAF: DAF API GL-5",
+   "VOITH: VOITH TURBO 132.00374400 (ex 3.325-339) (80W90)",
+   "MIL: MIL-L-2105 D (80W90 y 85W140)",
+   "ZF: ZF TE-ML 16B/17B/19B/21A (80W90)"
+  ]
+ },
+ "Aceites AD Normal/13050": {
+  "titulo": "AD MHP 80W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.0",
+   "DTFR 12B100",
+   "MAN 342 Type M1",
+   "RENAULT Axles"
+  ],
+  "oem_ambiguo": [
+   "DAF: DAF API GL-5",
+   "VOITH: VOITH TURBO 132.00374400 (ex 3.325-339) (80W90)",
+   "MIL: MIL-L-2105 D (80W90 y 85W140)",
+   "ZF: ZF TE-ML 16B/17B/19B/21A (80W90)"
+  ]
+ },
+ "Aceites AD Normal/131000": {
+  "titulo": "AD MHP 80W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.0",
+   "DTFR 12B100",
+   "MAN 342 Type M1",
+   "RENAULT Axles"
+  ],
+  "oem_ambiguo": [
+   "DAF: DAF API GL-5",
+   "VOITH: VOITH TURBO 132.00374400 (ex 3.325-339) (80W90)",
+   "MIL: MIL-L-2105 D (80W90 y 85W140)",
+   "ZF: ZF TE-ML 16B/17B/19B/21A (80W90)"
+  ]
+ },
+ "Aceites AD Normal/13208": {
+  "titulo": "AD MHP 80W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.0",
+   "DTFR 12B100",
+   "MAN 342 Type M1",
+   "RENAULT Axles"
+  ],
+  "oem_ambiguo": [
+   "DAF: DAF API GL-5",
+   "VOITH: VOITH TURBO 132.00374400 (ex 3.325-339) (80W90)",
+   "MIL: MIL-L-2105 D (80W90 y 85W140)",
+   "ZF: ZF TE-ML 16B/17B/19B/21A (80W90)"
+  ]
+ },
+ "Aceites AD Normal/16001": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/16005": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/16020": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/16050": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/161000": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/16208": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/16600": {
+  "titulo": "AD MDX 10w40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/17005": {
+  "titulo": "AD SHP 75W90",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4",
+   "GL-5",
+   "MT-1"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ARVIN MERITOR 0-76-N",
+   "IVECO 18-1805 Class RAS 1",
+   "MACK GO-J",
+   "MIL PRF-2105E",
+   "MB 235.0",
+   "MB 235.8",
+   "DTFR 12B140",
+   "RENAULT Axles",
+   "SCANIA STO 2:0 AFS",
+   "SCANIA STO 1:0",
+   "SCANIA STO 1:1 G",
+   "SAE J2360",
+   "VOLVO 97312",
+   "ZF TE-ML 02B",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 12L",
+   "ZF TE-ML 12N",
+   "ZF TE-ML 16F",
+   "ZF TE-ML 17B",
+   "ZF TE-ML 19C",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "DAF API: GL-5 & TRANSMISSIONS",
+   "MAN: 341 Type Z2 / 342 Type S1 (Antigua MAN 3343)"
+  ]
+ },
+ "Aceites AD Normal/17020": {
+  "titulo": "AD SHP 75W90",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4",
+   "GL-5",
+   "MT-1"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ARVIN MERITOR 0-76-N",
+   "IVECO 18-1805 Class RAS 1",
+   "MACK GO-J",
+   "MIL PRF-2105E",
+   "MB 235.0",
+   "MB 235.8",
+   "DTFR 12B140",
+   "RENAULT Axles",
+   "SCANIA STO 2:0 AFS",
+   "SCANIA STO 1:0",
+   "SCANIA STO 1:1 G",
+   "SAE J2360",
+   "VOLVO 97312",
+   "ZF TE-ML 02B",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 12L",
+   "ZF TE-ML 12N",
+   "ZF TE-ML 16F",
+   "ZF TE-ML 17B",
+   "ZF TE-ML 19C",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "DAF API: GL-5 & TRANSMISSIONS",
+   "MAN: 341 Type Z2 / 342 Type S1 (Antigua MAN 3343)"
+  ]
+ },
+ "Aceites AD Normal/17050": {
+  "titulo": "AD SHP 75W90",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4",
+   "GL-5",
+   "MT-1"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ARVIN MERITOR 0-76-N",
+   "IVECO 18-1805 Class RAS 1",
+   "MACK GO-J",
+   "MIL PRF-2105E",
+   "MB 235.0",
+   "MB 235.8",
+   "DTFR 12B140",
+   "RENAULT Axles",
+   "SCANIA STO 2:0 AFS",
+   "SCANIA STO 1:0",
+   "SCANIA STO 1:1 G",
+   "SAE J2360",
+   "VOLVO 97312",
+   "ZF TE-ML 02B",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 12L",
+   "ZF TE-ML 12N",
+   "ZF TE-ML 16F",
+   "ZF TE-ML 17B",
+   "ZF TE-ML 19C",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "DAF API: GL-5 & TRANSMISSIONS",
+   "MAN: 341 Type Z2 / 342 Type S1 (Antigua MAN 3343)"
+  ]
+ },
+ "Aceites AD Normal/17208": {
+  "titulo": "AD SHP 75W90",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4",
+   "GL-5",
+   "MT-1"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ARVIN MERITOR 0-76-N",
+   "IVECO 18-1805 Class RAS 1",
+   "MACK GO-J",
+   "MIL PRF-2105E",
+   "MB 235.0",
+   "MB 235.8",
+   "DTFR 12B140",
+   "RENAULT Axles",
+   "SCANIA STO 2:0 AFS",
+   "SCANIA STO 1:0",
+   "SCANIA STO 1:1 G",
+   "SAE J2360",
+   "VOLVO 97312",
+   "ZF TE-ML 02B",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 12L",
+   "ZF TE-ML 12N",
+   "ZF TE-ML 16F",
+   "ZF TE-ML 17B",
+   "ZF TE-ML 19C",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "DAF API: GL-5 & TRANSMISSIONS",
+   "MAN: 341 Type Z2 / 342 Type S1 (Antigua MAN 3343)"
+  ]
+ },
+ "Aceites AD Normal/18001": {
+  "titulo": "AD SHT 0W40 PLUS",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/18208": {
+  "titulo": "AD SHT 0W40 PLUS",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/19005": {
+  "titulo": "AD SDX 10W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E7"
+  ],
+  "api": [
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CUMMINS CES 20072",
+   "DAF EXTENDED DRAIN",
+   "MAN 3277",
+   "MACK EO-N",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT Trucks RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/191000": {
+  "titulo": "AD SDX 10W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E7"
+  ],
+  "api": [
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CUMMINS CES 20072",
+   "DAF EXTENDED DRAIN",
+   "MAN 3277",
+   "MACK EO-N",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT Trucks RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/19208": {
+  "titulo": "AD SDX 10W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E7"
+  ],
+  "api": [
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CUMMINS CES 20072",
+   "DAF EXTENDED DRAIN",
+   "MAN 3277",
+   "MACK EO-N",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT Trucks RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/19600": {
+  "titulo": "AD SDX 10W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E7"
+  ],
+  "api": [
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CUMMINS CES 20072",
+   "DAF EXTENDED DRAIN",
+   "MAN 3277",
+   "MACK EO-N",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT Trucks RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/20001": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/20005": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/20020": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/20050": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/201000": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/20208": {
+  "titulo": "AD ATF DEX II",
+  "tipo_producto": "FLUIDO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "FORD MERCON",
+   "GM DEXRON II D",
+   "MAN 339 V-1",
+   "MAN 339 Z-1",
+   "MAN 339 L-2",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOLVO 97341",
+   "VOITH H55.6335",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/21005": {
+  "titulo": "AD LDX 20W50",
+  "tipo_producto": "ACEITE PARA MOTOR",
+  "grado_sae": "20W50",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "05/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: - 10"
+  ]
+ },
+ "Aceites AD Normal/21050": {
+  "titulo": "AD LDX 20W50",
+  "tipo_producto": "ACEITE PARA MOTOR",
+  "grado_sae": "20W50",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "05/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: - 10"
+  ]
+ },
+ "Aceites AD Normal/211000": {
+  "titulo": "AD LDX 20W50",
+  "tipo_producto": "ACEITE PARA MOTOR",
+  "grado_sae": "20W50",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "05/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: - 10"
+  ]
+ },
+ "Aceites AD Normal/21208": {
+  "titulo": "AD LDX 20W50",
+  "tipo_producto": "ACEITE PARA MOTOR",
+  "grado_sae": "20W50",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SM",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "05/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.1",
+   "VW 501.01",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: - 10"
+  ]
+ },
+ "Aceites AD Normal/22001": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/22005": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/22020": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/22050": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/221000": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/22208": {
+  "titulo": "AD SDI 5W40",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "GM LL-B-025",
+   "MB 229.3",
+   "MB 226.5",
+   "PORSCHE A40",
+   "RENAULT RN0700",
+   "RENAULT RN0710",
+   "VW 502.00",
+   "VW 505.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/23005": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/23020": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/23050": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/231000": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/23208": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/23600": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/24005": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/24020": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/24050": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/241000": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/24208": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/24600": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/25005": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/25020": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/25050": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/251000": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/25208": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/25600": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/26005": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/26020": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/26050": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/261000": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/26208": {
+  "titulo": "AD HHM 32, 46, 68",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "32",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "AFNOR NF-E 48-603 HL, HM / FILTRABILIDAD AFNOR (NF-E 48-690, 48-691) DIN 51524, parte 2 HLP ISO 6743/4 HM, 11158",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/27005": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/27020": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/27050": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/271000": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/27208": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/27600": {
+  "titulo": "AD AGR STOU 15W40",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E2"
+  ],
+  "api": [
+   "GL-4",
+   "CG-4",
+   "SF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-2",
+   "MB 228.1",
+   "MB 227.1",
+   "FORD M2C-159B",
+   "FORD C",
+   "JOHN DEERE J-27",
+   "MB 228.1",
+   "MASSEY FERGUSSON M 1145",
+   "ZF TE-ML 06B",
+   "ZF TE-ML 07B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/28005": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/28020": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/28050": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/281000": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/28208": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/28600": {
+  "titulo": "AD AGR FLUID 10W30",
+  "tipo_producto": "AGRICULTURA Y MAQ. EXCAVACIÓN",
+  "grado_sae": "",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "Hidráulico de viscosidad 10W-30 No utilizar como aceite de motor",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "FORD M2C-134D",
+   "JOHN DEERE J-20C",
+   "MASSEY FERGUSSON M1143",
+   "MASSEY FERGUSSON M1145",
+   "VOLVO WB 101",
+   "PARKER DENISON UTTO",
+   "PARKER DENISON THF",
+   "KUBOTA UDT",
+   "MANULI HYDRAULICS",
+   "FNHA 201.00",
+   "VALTRA G2-08",
+   "VALTRA G2-B10",
+   "CATERPILLAR TO-2",
+   "ZF TE-ML 03E",
+   "ZF TE-ML 05F",
+   "ZF TE-ML 17E",
+   "ZF TE-ML 21F"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: SAE 80W"
+  ]
+ },
+ "Aceites AD Normal/30005": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/30020": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/30050": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/301000": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/30208": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/30600": {
+  "titulo": "AD HHV 46, 68",
+  "tipo_producto": "HIDRAULICO",
+  "grado_sae": "46",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "11/2020",
+  "avisos": [],
+  "oem_ok": [
+   "DIN 51524",
+   "DIN parte 3 HVLP",
+   "ISO 6743",
+   "ISO 4-HV",
+   "ISO 11158",
+   "VICKERS M-2950-S",
+   "VICKERS I-286-S"
+  ],
+  "oem_ambiguo": [
+   "AFNOR: NF E 48-603 HV / FILTRABILIDAD AFNOR (NF E 48-690, 48-691)",
+   "MAG IAS: P-69 (ISO 68); P-70 (ISO 46)"
+  ]
+ },
+ "Aceites AD Normal/32005": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/32020": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/32050": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/321000": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/32208": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/32600": {
+  "titulo": "AD XTD ECO PLUS 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E5"
+  ],
+  "api": [
+   "CI-4",
+   "CH-4",
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-1-a",
+   "CATERPILLAR ECF-2",
+   "CUMMINS 20076",
+   "CUMMINS 20077",
+   "CUMMINS 20078",
+   "DETROIT DIESEL 93K215",
+   "DEUTZ DQC III-18",
+   "MACK EO-N",
+   "MAN 3275-1",
+   "MTU Type 2",
+   "MB 228.3",
+   "RENAULT RLD",
+   "RENAULT RLD-2",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: GLOBAL DHD-1"
+  ]
+ },
+ "Aceites AD Normal/34001": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/34005": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/34020": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/341000": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/34208": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/34500": {
+  "titulo": "Revisión: 02/10/2014 LÍQUIDO DE FRENOS AD DOT 4 ABS ASC",
+  "tipo_producto": "",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/34600": {
+  "titulo": "AD SFE PLUS + 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "01/2021",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C-913-C",
+   "FORD D",
+   "RENAULT RN0700",
+   "STJLR 03.5003"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35001": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35005": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35020": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35050": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/351000": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35208": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/35600": {
+  "titulo": "AD MDXS Mega Plus 5W40",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W40",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life 04",
+   "GM Dexos 2",
+   "FORD WSS-M2C917-A",
+   "MB 229.51",
+   "PORSCHE A40",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/36005": {
+  "titulo": "AD MHP SPECIAL 85W140",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "85W140",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 342 Type M-1",
+   "VOLVO 1273.10",
+   "VOLVO 97310",
+   "VOLVO 97313",
+   "VOLVO 97314",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 07A",
+   "ZF TE-ML 08",
+   "ZF TE-ML 12E",
+   "ZF TE-ML 16C",
+   "ZF TE-ML 16D",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105-D"
+  ]
+ },
+ "Aceites AD Normal/36050": {
+  "titulo": "AD MHP SPECIAL 85W140",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "85W140",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 342 Type M-1",
+   "VOLVO 1273.10",
+   "VOLVO 97310",
+   "VOLVO 97313",
+   "VOLVO 97314",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 07A",
+   "ZF TE-ML 08",
+   "ZF TE-ML 12E",
+   "ZF TE-ML 16C",
+   "ZF TE-ML 16D",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105-D"
+  ]
+ },
+ "Aceites AD Normal/361000": {
+  "titulo": "AD MHP SPECIAL 85W140",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "85W140",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 342 Type M-1",
+   "VOLVO 1273.10",
+   "VOLVO 97310",
+   "VOLVO 97313",
+   "VOLVO 97314",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 07A",
+   "ZF TE-ML 08",
+   "ZF TE-ML 12E",
+   "ZF TE-ML 16C",
+   "ZF TE-ML 16D",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105-D"
+  ]
+ },
+ "Aceites AD Normal/36208": {
+  "titulo": "AD MHP SPECIAL 85W140",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "85W140",
+  "acea": [],
+  "api": [
+   "GL-5"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 342 Type M-1",
+   "VOLVO 1273.10",
+   "VOLVO 97310",
+   "VOLVO 97313",
+   "VOLVO 97314",
+   "ZF TE-ML 05A",
+   "ZF TE-ML 07A",
+   "ZF TE-ML 08",
+   "ZF TE-ML 12E",
+   "ZF TE-ML 16C",
+   "ZF TE-ML 16D",
+   "ZF TE-ML 21A"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105-D"
+  ]
+ },
+ "Aceites AD Normal/36500": {
+  "titulo": "Revisión: 02/10/2014 LÍQUIDO DE FRENOS AD DOT 4 PLUS.6",
+  "tipo_producto": "",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/37005": {
+  "titulo": "AD MMP 80W",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "306",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "API GL-4 MB 235.1 ZF TE-ML 02B / 17A",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.1 ZF TE-ML 02B",
+   "MB 17A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/37050": {
+  "titulo": "AD MMP 80W",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "306",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "API GL-4 MB 235.1 ZF TE-ML 02B / 17A",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [
+   "MB 235.1 ZF TE-ML 02B",
+   "MB 17A"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/37500": {
+  "titulo": "Revisión: 13/09/2019 LÍQUIDO DE FRENOS",
+  "tipo_producto": "",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/38005": {
+  "titulo": "AD MLS 85W90",
+  "tipo_producto": "ACEITE PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "85W90",
+  "acea": [],
+  "api": [
+   "GL-5 (LS)"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "API GL-5 (LS) MIL L-2105-D",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "MIL L-2105-D"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/39005": {
+  "titulo": "AD HTO 10W",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "37",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-4",
+   "KOMATSU KES 07.868.1",
+   "ZF TE-ML 03C"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/39050": {
+  "titulo": "AD HTO 10W",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "37",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-4",
+   "KOMATSU KES 07.868.1",
+   "ZF TE-ML 03C"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/391000": {
+  "titulo": "AD HTO 10W",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "37",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-4",
+   "KOMATSU KES 07.868.1",
+   "ZF TE-ML 03C"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/39208": {
+  "titulo": "AD HTO 10W",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "37",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-4",
+   "KOMATSU KES 07.868.1",
+   "ZF TE-ML 03C"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/39600": {
+  "titulo": "AD HTO 10W",
+  "tipo_producto": "HIDRÁULICO",
+  "grado_sae": "37",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2020",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C-4",
+   "CATERPILLAR TO-4",
+   "KOMATSU KES 07.868.1",
+   "ZF TE-ML 03C"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/40001": {
+  "titulo": "AD ATF DEX III",
+  "tipo_producto": "FLUIDO SINTÉTICO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1",
+   "5",
+   "185"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "ALLISON TES 389",
+   "ALLISON TES 295",
+   "FORD MERCON V",
+   "GM DEXRON III H",
+   "MAN 339 V-2",
+   "MAN 339 Z-2",
+   "MAN Z-11",
+   "MAN 339 L-1",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOITH 55.6336",
+   "VOLVO TRANSMISSION OIL 97341",
+   "VOLVO AT101",
+   "ZF TE-ML 03D",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14B",
+   "ZF TE-ML 17C",
+   "ZF TE-ML 20B",
+   "ZF TE-ML 25B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/40005": {
+  "titulo": "AD ATF DEX III",
+  "tipo_producto": "FLUIDO SINTÉTICO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1",
+   "5",
+   "185"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "ALLISON TES 389",
+   "ALLISON TES 295",
+   "FORD MERCON V",
+   "GM DEXRON III H",
+   "MAN 339 V-2",
+   "MAN 339 Z-2",
+   "MAN Z-11",
+   "MAN 339 L-1",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOITH 55.6336",
+   "VOLVO TRANSMISSION OIL 97341",
+   "VOLVO AT101",
+   "ZF TE-ML 03D",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14B",
+   "ZF TE-ML 17C",
+   "ZF TE-ML 20B",
+   "ZF TE-ML 25B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/40050": {
+  "titulo": "AD ATF DEX III",
+  "tipo_producto": "FLUIDO SINTÉTICO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1",
+   "5",
+   "185"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "ALLISON TES 389",
+   "ALLISON TES 295",
+   "FORD MERCON V",
+   "GM DEXRON III H",
+   "MAN 339 V-2",
+   "MAN 339 Z-2",
+   "MAN Z-11",
+   "MAN 339 L-1",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOITH 55.6336",
+   "VOLVO TRANSMISSION OIL 97341",
+   "VOLVO AT101",
+   "ZF TE-ML 03D",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14B",
+   "ZF TE-ML 17C",
+   "ZF TE-ML 20B",
+   "ZF TE-ML 25B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/40208": {
+  "titulo": "AD ATF DEX III",
+  "tipo_producto": "FLUIDO SINTÉTICO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1",
+   "5",
+   "185"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "ALLISON TES 389",
+   "ALLISON TES 295",
+   "FORD MERCON V",
+   "GM DEXRON III H",
+   "MAN 339 V-2",
+   "MAN 339 Z-2",
+   "MAN Z-11",
+   "MAN 339 L-1",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOITH 55.6336",
+   "VOLVO TRANSMISSION OIL 97341",
+   "VOLVO AT101",
+   "ZF TE-ML 03D",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14B",
+   "ZF TE-ML 17C",
+   "ZF TE-ML 20B",
+   "ZF TE-ML 25B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/40600": {
+  "titulo": "AD ATF DEX III",
+  "tipo_producto": "FLUIDO SINTÉTICO PARA TRANSMISSIONES AUTOMÁTICAS",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1",
+   "5",
+   "185"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "ALLISON C4",
+   "ALLISON TES 389",
+   "ALLISON TES 295",
+   "FORD MERCON V",
+   "GM DEXRON III H",
+   "MAN 339 V-2",
+   "MAN 339 Z-2",
+   "MAN Z-11",
+   "MAN 339 L-1",
+   "MB 236.9",
+   "DTFR 13C170",
+   "VOITH 55.6336",
+   "VOLVO TRANSMISSION OIL 97341",
+   "VOLVO AT101",
+   "ZF TE-ML 03D",
+   "ZF TE-ML 04D",
+   "ZF TE-ML 14B",
+   "ZF TE-ML 17C",
+   "ZF TE-ML 20B",
+   "ZF TE-ML 25B"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/41001": {
+  "titulo": "AD PNEU AIR",
+  "tipo_producto": "",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/41005": {
+  "titulo": "AD PNEU AIR",
+  "tipo_producto": "",
+  "grado_sae": "",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5"
+  ],
+  "fecha": "02/2021",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/45005": {
+  "titulo": "AD SDX PLUS+ 10W40",
+  "tipo_producto": "ACEITE 100% SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9",
+   "E11"
+  ],
+  "api": [
+   "CK-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA E4/E6/E7/E8/E9/E11 API CK-4 CATERPILLAR CAT ECF-3 CUMMINS CES 20081/20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA JASO DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR CAT ECF-3 CUMMINS CES 20081",
+   "CATERPILLAR 20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN"
+  ]
+ },
+ "Aceites AD Normal/451000": {
+  "titulo": "AD SDX PLUS+ 10W40",
+  "tipo_producto": "ACEITE 100% SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9",
+   "E11"
+  ],
+  "api": [
+   "CK-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA E4/E6/E7/E8/E9/E11 API CK-4 CATERPILLAR CAT ECF-3 CUMMINS CES 20081/20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA JASO DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR CAT ECF-3 CUMMINS CES 20081",
+   "CATERPILLAR 20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN"
+  ]
+ },
+ "Aceites AD Normal/45208": {
+  "titulo": "AD SDX PLUS+ 10W40",
+  "tipo_producto": "ACEITE 100% SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9",
+   "E11"
+  ],
+  "api": [
+   "CK-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA E4/E6/E7/E8/E9/E11 API CK-4 CATERPILLAR CAT ECF-3 CUMMINS CES 20081/20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA JASO DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR CAT ECF-3 CUMMINS CES 20081",
+   "CATERPILLAR 20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN"
+  ]
+ },
+ "Aceites AD Normal/45600": {
+  "titulo": "AD SDX PLUS+ 10W40",
+  "tipo_producto": "ACEITE 100% SINTÉTICO",
+  "grado_sae": "10W40",
+  "acea": [
+   "E4",
+   "E6",
+   "E7",
+   "E8",
+   "E9",
+   "E11"
+  ],
+  "api": [
+   "CK-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA E4/E6/E7/E8/E9/E11 API CK-4 CATERPILLAR CAT ECF-3 CUMMINS CES 20081/20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA JASO DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR CAT ECF-3 CUMMINS CES 20081",
+   "CATERPILLAR 20086 DETROIT DIESEL 93K222 DEUTZ DQC-IV-18 LA"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: DH-2 MACK EOS-4.5 MAN 3477 / 3775 / 3271-1 MB-Approval 228.51/235.31/228.52 DTFR 15C110/15C120 MTU Type 3.1 RENAULT RLD-4 SCANIA LOW ASH VOLVO VDS-4/4.5 DAF EXTENDED DRAIN"
+  ]
+ },
+ "Aceites AD Normal/46001": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/46005": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/46020": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/46050": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/461000": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/46208": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/46600": {
+  "titulo": "AD SCC 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A3",
+   "B4-08"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "03/2022",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 501.01",
+   "VW 502.00",
+   "VW 503.00",
+   "VW 503.01",
+   "VW 504.00",
+   "VW 505.00",
+   "VW 505.01",
+   "VW 506.00 y diesel 506.01*",
+   "VW 507.00 (*) son excepción los motores V10 y R5 TDI anteriores a mayo 2007."
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/48005": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/48020": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/48050": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/481000": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/48208": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/48600": {
+  "titulo": "AD SRC4 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C4 MB-Approval 226.51 RENAULT RN0720",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 226.51 RENAULT RN0720"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/49005": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/49020": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/49050": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/491000": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/49208": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/49600": {
+  "titulo": "AD STFE 5W30",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "5W30",
+  "acea": [
+   "E7",
+   "E4"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "DAF Extended Drain",
+   "DEUTZ DQC IV-10",
+   "MACK EO-N",
+   "MAN 3277",
+   "MB 228.5",
+   "DTFR 15B120",
+   "MTU Type 3",
+   "RENAULT VI RXD",
+   "RENAULT RLD-2",
+   "SCANIA LDF-3",
+   "VOLVO VDS-3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/54005": {
+  "titulo": "AD SHP PLUS 75W80",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "VW G 009 317",
+   "BMW MTF LT-2",
+   "GM 1940764",
+   "GM 1940768",
+   "PSA B71 2330",
+   "FIAT MZ6"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/54020": {
+  "titulo": "AD SHP PLUS 75W80",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "VW G 009 317",
+   "BMW MTF LT-2",
+   "GM 1940764",
+   "GM 1940768",
+   "PSA B71 2330",
+   "FIAT MZ6"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/55001": {
+  "titulo": "AD SC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life-04",
+   "GM DEXOS 2",
+   "MB 229.51",
+   "MB 229.52",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/55005": {
+  "titulo": "AD SC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life-04",
+   "GM DEXOS 2",
+   "MB 229.51",
+   "MB 229.52",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/551000": {
+  "titulo": "AD SC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life-04",
+   "GM DEXOS 2",
+   "MB 229.51",
+   "MB 229.52",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/55208": {
+  "titulo": "AD SC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Long Life-04",
+   "GM DEXOS 2",
+   "MB 229.51",
+   "MB 229.52",
+   "VW 505.00",
+   "VW 505.01"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/56001": {
+  "titulo": "AD SC2 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B 71 2290"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/56005": {
+  "titulo": "AD SC2 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B 71 2290"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/561000": {
+  "titulo": "AD SC2 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B 71 2290"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/56208": {
+  "titulo": "AD SC2 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B 71 2290"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57001": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57005": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57020": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57050": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/571000": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57208": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/57600": {
+  "titulo": "AD MDXS 10W40 Plus +",
+  "tipo_producto": "ACEITE DE MOTOR",
+  "grado_sae": "10W40",
+  "acea": [
+   "A3",
+   "B4"
+  ],
+  "api": [
+   "SN",
+   "CF"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "600",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.3",
+   "VW 501.01",
+   "VW 505.00",
+   "RENAULT RN0700",
+   "RENAULT RN0710"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/58001": {
+  "titulo": "AD SC1 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C1"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C1 JAGUAR/LAND ROVER STJLR.03.5005",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: JAGUAR/LAND ROVER STJLR.03.5005"
+  ]
+ },
+ "Aceites AD Normal/58005": {
+  "titulo": "AD SC1 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C1"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C1 JAGUAR/LAND ROVER STJLR.03.5005",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: JAGUAR/LAND ROVER STJLR.03.5005"
+  ]
+ },
+ "Aceites AD Normal/581000": {
+  "titulo": "AD SC1 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C1"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C1 JAGUAR/LAND ROVER STJLR.03.5005",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: JAGUAR/LAND ROVER STJLR.03.5005"
+  ]
+ },
+ "Aceites AD Normal/58208": {
+  "titulo": "AD SC1 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C1"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C1 JAGUAR/LAND ROVER STJLR.03.5005",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: JAGUAR/LAND ROVER STJLR.03.5005"
+  ]
+ },
+ "Aceites AD Normal/59005": {
+  "titulo": "AD ZTD 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E9"
+  ],
+  "api": [
+   "CK-4",
+   "CJ-4",
+   "CI-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-3",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL DFS93K222",
+   "DEUTZ DQC III-10 LA",
+   "MAN 3775",
+   "MACK EO-S-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "MTU Type 2.1",
+   "RENAULT RLD-3",
+   "VOLVO VDS-4.5",
+   "FORD WSS-M2C171-F1"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: CI4-Plus"
+  ]
+ },
+ "Aceites AD Normal/591000": {
+  "titulo": "AD ZTD 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E9"
+  ],
+  "api": [
+   "CK-4",
+   "CJ-4",
+   "CI-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-3",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL DFS93K222",
+   "DEUTZ DQC III-10 LA",
+   "MAN 3775",
+   "MACK EO-S-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "MTU Type 2.1",
+   "RENAULT RLD-3",
+   "VOLVO VDS-4.5",
+   "FORD WSS-M2C171-F1"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: CI4-Plus"
+  ]
+ },
+ "Aceites AD Normal/59208": {
+  "titulo": "AD ZTD 15W40",
+  "tipo_producto": "ACEITE DE LARGA DURACIÓN",
+  "grado_sae": "15W40",
+  "acea": [
+   "E7",
+   "E9"
+  ],
+  "api": [
+   "CK-4",
+   "CJ-4",
+   "CI-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "CATERPILLAR ECF-3",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL DFS93K222",
+   "DEUTZ DQC III-10 LA",
+   "MAN 3775",
+   "MACK EO-S-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "MTU Type 2.1",
+   "RENAULT RLD-3",
+   "VOLVO VDS-4.5",
+   "FORD WSS-M2C171-F1"
+  ],
+  "oem_ambiguo": [
+   "TEXTO LIBRE: CI4-Plus"
+  ]
+ },
+ "Aceites AD Normal/60001": {
+  "titulo": "AD SCB 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/60005": {
+  "titulo": "AD SCB 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/60020": {
+  "titulo": "AD SCB 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/601000": {
+  "titulo": "AD SCB 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/60208": {
+  "titulo": "AD SCB 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04",
+   "MB 229.51",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/61001": {
+  "titulo": "AD HSD 0W20",
+  "tipo_producto": "ACEITE DE MOTOR PARA VEHÍCULOS HÍBRIDOS",
+  "grado_sae": "0W20",
+  "acea": [],
+  "api": [
+   "SN RC"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "API SN RC ILSAC GF-6A",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/61005": {
+  "titulo": "AD HSD 0W20",
+  "tipo_producto": "ACEITE DE MOTOR PARA VEHÍCULOS HÍBRIDOS",
+  "grado_sae": "0W20",
+  "acea": [],
+  "api": [
+   "SN RC"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "API SN RC ILSAC GF-6A",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/61208": {
+  "titulo": "AD HSD 0W20",
+  "tipo_producto": "ACEITE DE MOTOR PARA VEHÍCULOS HÍBRIDOS",
+  "grado_sae": "0W20",
+  "acea": [],
+  "api": [
+   "SN RC"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "API SN RC ILSAC GF-6A",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/62001": {
+  "titulo": "AD SFA 5W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W20",
+  "acea": [
+   "A1",
+   "B1",
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A1/B1, C5 API SN FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/62005": {
+  "titulo": "AD SFA 5W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W20",
+  "acea": [
+   "A1",
+   "B1",
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A1/B1, C5 API SN FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/621000": {
+  "titulo": "AD SFA 5W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W20",
+  "acea": [
+   "A1",
+   "B1",
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A1/B1, C5 API SN FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/62208": {
+  "titulo": "AD SFA 5W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W20",
+  "acea": [
+   "A1",
+   "B1",
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A1/B1, C5 API SN FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C 948-B JAGUAR-LAND ROVER STJLR.03.5004"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/63005": {
+  "titulo": "AD SLD 75W80",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 341 Z-4",
+   "VOLVO 97307",
+   "ZF TE-ML 01L",
+   "ZF TE-ML 02L",
+   "ZF TE-ML 08",
+   "ZF TE-ML 16K",
+   "DAF TRANSMISSIONS",
+   "IVECO 18-1807 MGS",
+   "RENAULT B0032",
+   "RENAULT 2 Annex 3",
+   "Eaton Europe Extended Drain"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/63208": {
+  "titulo": "AD SLD 75W80",
+  "tipo_producto": "ACEITE SINTÉTICO PARA CAJAS DE CAMBIO Y DIFERENCIALES",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "MAN 341 Z-4",
+   "VOLVO 97307",
+   "ZF TE-ML 01L",
+   "ZF TE-ML 02L",
+   "ZF TE-ML 08",
+   "ZF TE-ML 16K",
+   "DAF TRANSMISSIONS",
+   "IVECO 18-1807 MGS",
+   "RENAULT B0032",
+   "RENAULT 2 Annex 3",
+   "Eaton Europe Extended Drain"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/64005": {
+  "titulo": "AD STB 10W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "10W30",
+  "acea": [
+   "E9",
+   "E7"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "VOLVO VDS-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "RENAULT RLD-3",
+   "MTU Type 2.1",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL 93K222",
+   "DEUTZ DQC-III-18 LA",
+   "MAN 3775",
+   "CATERPILLAR ECF-3"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: CI-4/CI-4 Plus CJ-4/CK-4 E9/E7",
+   "MACK MB-Approval: EO-S-4.5 228.31",
+   "TEXTO LIBRE: DH-2"
+  ]
+ },
+ "Aceites AD Normal/641000": {
+  "titulo": "AD STB 10W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "10W30",
+  "acea": [
+   "E9",
+   "E7"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "VOLVO VDS-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "RENAULT RLD-3",
+   "MTU Type 2.1",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL 93K222",
+   "DEUTZ DQC-III-18 LA",
+   "MAN 3775",
+   "CATERPILLAR ECF-3"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: CI-4/CI-4 Plus CJ-4/CK-4 E9/E7",
+   "MACK MB-Approval: EO-S-4.5 228.31",
+   "TEXTO LIBRE: DH-2"
+  ]
+ },
+ "Aceites AD Normal/64208": {
+  "titulo": "AD STB 10W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "10W30",
+  "acea": [
+   "E9",
+   "E7"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "VOLVO VDS-4.5",
+   "MB 228.31",
+   "DTFR 15C100",
+   "RENAULT RLD-3",
+   "MTU Type 2.1",
+   "CUMMINS CES 20086",
+   "DETROIT DIESEL 93K222",
+   "DEUTZ DQC-III-18 LA",
+   "MAN 3775",
+   "CATERPILLAR ECF-3"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: CI-4/CI-4 Plus CJ-4/CK-4 E9/E7",
+   "MACK MB-Approval: EO-S-4.5 228.31",
+   "TEXTO LIBRE: DH-2"
+  ]
+ },
+ "Aceites AD Normal/65005": {
+  "titulo": "AD SDV 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [
+   "CK-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "API ACEA: CK-4/SN E4/E6/E7/E9/E8/E11 MTU MACK Type 3.1 EOS-4.5",
+   "ACEA VOLVO: E4/E6/E7/E9/E8/E11 VDS-4.5/VDS-3/CNG MACK MAN EOS-4.5 M3677/3777/3477/3271-",
+   "VOLVO CUMMINS: VDS-4.5/VDS-3/CNG CES 20081/20086 MAN M3677/3777/3477/3271- 1/3775",
+   "MB-Approval: 228.51/228.52 DEUTZ 1/3775 DQC-IV-18 LA",
+   "DTFR: 15C120/15C110 DEUTZ CAT DQC-IV-18 LA ECF-3/ECF-2/ECF-1-a",
+   "RENAULT: RXD/RLD-3/RLD-2/RGD CAT DAF ECF-3/ECF-2/ECF-1-a Extended Drain",
+   "DETROIT: 93K222 DAF Extended Drain",
+   "DETROIT JASO: 93K222 DH-2"
+  ]
+ },
+ "Aceites AD Normal/651000": {
+  "titulo": "AD SDV 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [
+   "CK-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "API ACEA: CK-4/SN E4/E6/E7/E9/E8/E11 MTU MACK Type 3.1 EOS-4.5",
+   "ACEA VOLVO: E4/E6/E7/E9/E8/E11 VDS-4.5/VDS-3/CNG MACK MAN EOS-4.5 M3677/3777/3477/3271-",
+   "VOLVO CUMMINS: VDS-4.5/VDS-3/CNG CES 20081/20086 MAN M3677/3777/3477/3271- 1/3775",
+   "MB-Approval: 228.51/228.52 DEUTZ 1/3775 DQC-IV-18 LA",
+   "DTFR: 15C120/15C110 DEUTZ CAT DQC-IV-18 LA ECF-3/ECF-2/ECF-1-a",
+   "RENAULT: RXD/RLD-3/RLD-2/RGD CAT DAF ECF-3/ECF-2/ECF-1-a Extended Drain",
+   "DETROIT: 93K222 DAF Extended Drain",
+   "DETROIT JASO: 93K222 DH-2"
+  ]
+ },
+ "Aceites AD Normal/65208": {
+  "titulo": "AD SDV 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [
+   "CK-4",
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "API ACEA: CK-4/SN E4/E6/E7/E9/E8/E11 MTU MACK Type 3.1 EOS-4.5",
+   "ACEA VOLVO: E4/E6/E7/E9/E8/E11 VDS-4.5/VDS-3/CNG MACK MAN EOS-4.5 M3677/3777/3477/3271-",
+   "VOLVO CUMMINS: VDS-4.5/VDS-3/CNG CES 20081/20086 MAN M3677/3777/3477/3271- 1/3775",
+   "MB-Approval: 228.51/228.52 DEUTZ 1/3775 DQC-IV-18 LA",
+   "DTFR: 15C120/15C110 DEUTZ CAT DQC-IV-18 LA ECF-3/ECF-2/ECF-1-a",
+   "RENAULT: RXD/RLD-3/RLD-2/RGD CAT DAF ECF-3/ECF-2/ECF-1-a Extended Drain",
+   "DETROIT: 93K222 DAF Extended Drain",
+   "DETROIT JASO: 93K222 DH-2"
+  ]
+ },
+ "Aceites AD Normal/66001": {
+  "titulo": "AD SPC 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2312",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/66005": {
+  "titulo": "AD SPC 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2312",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/661000": {
+  "titulo": "AD SPC 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2312",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/66208": {
+  "titulo": "AD SPC 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2312",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/67001": {
+  "titulo": "AD SCA 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "GF-6A",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "VW 508.00",
+   "VW 509.00",
+   "PORSCHE C20"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/67005": {
+  "titulo": "AD SCA 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "GF-6A",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "VW 508.00",
+   "VW 509.00",
+   "PORSCHE C20"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/67208": {
+  "titulo": "AD SCA 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [
+   "GF-6A"
+  ],
+  "jaso": [],
+  "spec_texto": "GF-6A",
+  "formatos": [],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "VW 508.00",
+   "VW 509.00",
+   "PORSCHE C20"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/68001": {
+  "titulo": "AD SFC 0W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C950-A",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": [
+   "JAGUAR-LAND ROVER: STJLR.03.5007"
+  ]
+ },
+ "Aceites AD Normal/68005": {
+  "titulo": "AD SFC 0W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C950-A",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": [
+   "JAGUAR-LAND ROVER: STJLR.03.5007"
+  ]
+ },
+ "Aceites AD Normal/68208": {
+  "titulo": "AD SFC 0W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C2"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "02/2024",
+  "avisos": [],
+  "oem_ok": [
+   "FORD WSS-M2C950-A",
+   "FIAT 9.55535-GS1",
+   "FIAT 9.55535-DS1"
+  ],
+  "oem_ambiguo": [
+   "JAGUAR-LAND ROVER: STJLR.03.5007"
+  ]
+ },
+ "Aceites AD Normal/69005": {
+  "titulo": "AD SCV 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A5/B5 API SL RENAULT RN0700 VOLVO VCC 95200377",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN0700 VOLVO VCC 95200377"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/69208": {
+  "titulo": "AD SCV 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SL"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA A5/B5 API SL RENAULT RN0700 VOLVO VCC 95200377",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN0700 VOLVO VCC 95200377"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/71005": {
+  "titulo": "AD SCD 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Longlife-04",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/71208": {
+  "titulo": "AD SCD 0W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "07/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW Longlife-04",
+   "PORSCHE C30",
+   "VW 504.00",
+   "VW 507.00"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/72005": {
+  "titulo": "AD SRC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C3 RENAULT RN17",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "05/2021",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/72208": {
+  "titulo": "AD SRC3 5W30",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C3 RENAULT RN17",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "05/2021",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/73005": {
+  "titulo": "AD SRC5 0W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C5 API SN RENAULT RN17 FE",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17 FE"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/73208": {
+  "titulo": "AD SRC5 0W20",
+  "tipo_producto": "ACEITE DE MOTOR SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5"
+  ],
+  "api": [
+   "SN"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C5 API SN RENAULT RN17 FE",
+  "formatos": [
+   "5",
+   "208"
+  ],
+  "fecha": "02/2022",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17 FE"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/78005": {
+  "titulo": "AD SPA 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C5, C6 API SP PSA B71 2010",
+  "formatos": [],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2010"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/78208": {
+  "titulo": "AD SPA 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "ACEA C5, C6 API SP PSA B71 2010",
+  "formatos": [],
+  "fecha": "04/2024",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2010"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/79005": {
+  "titulo": "AD SMC 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "05/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.71",
+   "GM DexosD",
+   "FORD WSS-M2C952-A1",
+   "OPEL OV401547"
+  ],
+  "oem_ambiguo": [
+   "JAGUAR: STJLR.03.5006"
+  ]
+ },
+ "Aceites AD Normal/79208": {
+  "titulo": "AD SMC 0W20",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "0W20",
+  "acea": [
+   "C5",
+   "C6"
+  ],
+  "api": [
+   "SP",
+   "SN PLUS"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "05/2024",
+  "avisos": [],
+  "oem_ok": [
+   "MB 229.71",
+   "GM DexosD",
+   "FORD WSS-M2C952-A1",
+   "OPEL OV401547"
+  ],
+  "oem_ambiguo": [
+   "JAGUAR: STJLR.03.5006"
+  ]
+ },
+ "Aceites AD Normal/90208": {
+  "titulo": "AD EGP 100",
+  "tipo_producto": "",
+  "grado_sae": "100",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "208"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/91005": {
+  "titulo": "AD EGP 100",
+  "tipo_producto": "ACEITE PARA MOTOSIERRA",
+  "grado_sae": "100",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "DIN 51501 L – AN ISO 6743/1 – AN",
+  "formatos": [
+   "208"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/91020": {
+  "titulo": "AD EGP 100",
+  "tipo_producto": "ACEITE PARA MOTOSIERRA",
+  "grado_sae": "100",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "DIN 51501 L – AN ISO 6743/1 – AN",
+  "formatos": [
+   "208"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/91208": {
+  "titulo": "AD EGP 100",
+  "tipo_producto": "ACEITE PARA MOTOSIERRA",
+  "grado_sae": "100",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "DIN 51501 L – AN ISO 6743/1 – AN",
+  "formatos": [
+   "208"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/91600": {
+  "titulo": "AD EGP 100",
+  "tipo_producto": "ACEITE PARA MOTOSIERRA",
+  "grado_sae": "100",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "DIN 51501 L – AN ISO 6743/1 – AN",
+  "formatos": [
+   "208"
+  ],
+  "fecha": "10/2018",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/92001": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/92005": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/92020": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/92050": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/921000": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/92208": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/926000": {
+  "titulo": "AD STL 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C3"
+  ],
+  "api": [
+   "SP"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2025",
+  "avisos": [],
+  "oem_ok": [
+   "PSA B71 2297",
+   "STELLANTIS FPW9.55535",
+   "STELLANTIS FPW03"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/SRN 5W30": {
+  "titulo": "AD SRN 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SQ"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2026",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17",
+   "RENAULT RN 0700",
+   "RENAULT RN0710",
+   "MB 229.51",
+   "MB 229.52",
+   "MB 226.52",
+   "PSA B71 2290",
+   "FIAT 9.55535 S3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/741005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04<19"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: SN/CF C2, C3 RENAULT MB RN710, RN700 229.51",
+   "ACEA GM: C2, C3 LL-B-025 MB VW 229.51 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW 505.00/505.01"
+  ]
+ },
+ "Aceites AD Standard/741020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04<19"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: SN/CF C2, C3 RENAULT MB RN710, RN700 229.51",
+   "ACEA GM: C2, C3 LL-B-025 MB VW 229.51 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW 505.00/505.01"
+  ]
+ },
+ "Aceites AD Standard/741050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04<19"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: SN/CF C2, C3 RENAULT MB RN710, RN700 229.51",
+   "ACEA GM: C2, C3 LL-B-025 MB VW 229.51 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW 505.00/505.01"
+  ]
+ },
+ "Aceites AD Standard/7411000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04<19"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: SN/CF C2, C3 RENAULT MB RN710, RN700 229.51",
+   "ACEA GM: C2, C3 LL-B-025 MB VW 229.51 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW 505.00/505.01"
+  ]
+ },
+ "Aceites AD Standard/741208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "BMW LL-04<19"
+  ],
+  "oem_ambiguo": [
+   "API ACEA: SN/CF C2, C3 RENAULT MB RN710, RN700 229.51",
+   "ACEA GM: C2, C3 LL-B-025 MB VW 229.51 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW 505.00/505.01"
+  ]
+ },
+ "Aceites AD Standard/751005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/751020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/751050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/7511000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/751208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W80",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/761005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/761020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/761050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/7611000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/761208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "80W90",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/781005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "DAF TRANSMISSIONS",
+   "IVECO TRANSMISSIONS",
+   "ZF TE-ML 08"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105"
+  ]
+ },
+ "Aceites AD Standard/781020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "DAF TRANSMISSIONS",
+   "IVECO TRANSMISSIONS",
+   "ZF TE-ML 08"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105"
+  ]
+ },
+ "Aceites AD Standard/781050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "DAF TRANSMISSIONS",
+   "IVECO TRANSMISSIONS",
+   "ZF TE-ML 08"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105"
+  ]
+ },
+ "Aceites AD Standard/7811000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "DAF TRANSMISSIONS",
+   "IVECO TRANSMISSIONS",
+   "ZF TE-ML 08"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105"
+  ]
+ },
+ "Aceites AD Standard/781208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "75W90",
+  "acea": [],
+  "api": [
+   "GL-4"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [
+   "DAF TRANSMISSIONS",
+   "IVECO TRANSMISSIONS",
+   "ZF TE-ML 08"
+  ],
+  "oem_ambiguo": [
+   "MIL: MIL-L-2105"
+  ]
+ },
+ "Aceites AD Standard/791005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/791020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/791050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/7911000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/791208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W30",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Standard/801005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E4, E7 CI-4 MACK MTU EO-N Type 3",
+   "API MAN: CI-4 M3277 MTU RENAULT Type 3 VI RLD-2",
+   "MAN: M3277 RENAULT VI RLD-2",
+   "VOLVO: VDS-3 CUMMINS CES 20078",
+   "MB: 228.5 DEUTZ DQC III-18"
+  ]
+ },
+ "Aceites AD Standard/801020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E4, E7 CI-4 MACK MTU EO-N Type 3",
+   "API MAN: CI-4 M3277 MTU RENAULT Type 3 VI RLD-2",
+   "MAN: M3277 RENAULT VI RLD-2",
+   "VOLVO: VDS-3 CUMMINS CES 20078",
+   "MB: 228.5 DEUTZ DQC III-18"
+  ]
+ },
+ "Aceites AD Standard/801050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E4, E7 CI-4 MACK MTU EO-N Type 3",
+   "API MAN: CI-4 M3277 MTU RENAULT Type 3 VI RLD-2",
+   "MAN: M3277 RENAULT VI RLD-2",
+   "VOLVO: VDS-3 CUMMINS CES 20078",
+   "MB: 228.5 DEUTZ DQC III-18"
+  ]
+ },
+ "Aceites AD Standard/8011000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E4, E7 CI-4 MACK MTU EO-N Type 3",
+   "API MAN: CI-4 M3277 MTU RENAULT Type 3 VI RLD-2",
+   "MAN: M3277 RENAULT VI RLD-2",
+   "VOLVO: VDS-3 CUMMINS CES 20078",
+   "MB: 228.5 DEUTZ DQC III-18"
+  ]
+ },
+ "Aceites AD Standard/801208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E4, E7 CI-4 MACK MTU EO-N Type 3",
+   "API MAN: CI-4 M3277 MTU RENAULT Type 3 VI RLD-2",
+   "MAN: M3277 RENAULT VI RLD-2",
+   "VOLVO: VDS-3 CUMMINS CES 20078",
+   "MB: 228.5 DEUTZ DQC III-18"
+  ]
+ },
+ "Aceites AD Standard/811005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E6, E7, E9 CI-4 MACK MTU EO-N Type 3.1",
+   "API MAN: CI-4 M3477/M3271-1 MTU RENAULT Type 3.1 VI RLD-2",
+   "MAN VOLVO: M3477/M3271-1 VDS-3 RENAULT CUMMINS VI RLD-2 CES 20076/20077",
+   "VOLVO MB: VDS-3 228.51 CUMMINS DEUTZ CES 20076/20077 DQC IV-10 LA",
+   "MB: 228.51 DEUTZ DQC IV-10 LA"
+  ]
+ },
+ "Aceites AD Standard/811020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E6, E7, E9 CI-4 MACK MTU EO-N Type 3.1",
+   "API MAN: CI-4 M3477/M3271-1 MTU RENAULT Type 3.1 VI RLD-2",
+   "MAN VOLVO: M3477/M3271-1 VDS-3 RENAULT CUMMINS VI RLD-2 CES 20076/20077",
+   "VOLVO MB: VDS-3 228.51 CUMMINS DEUTZ CES 20076/20077 DQC IV-10 LA",
+   "MB: 228.51 DEUTZ DQC IV-10 LA"
+  ]
+ },
+ "Aceites AD Standard/811050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E6, E7, E9 CI-4 MACK MTU EO-N Type 3.1",
+   "API MAN: CI-4 M3477/M3271-1 MTU RENAULT Type 3.1 VI RLD-2",
+   "MAN VOLVO: M3477/M3271-1 VDS-3 RENAULT CUMMINS VI RLD-2 CES 20076/20077",
+   "VOLVO MB: VDS-3 228.51 CUMMINS DEUTZ CES 20076/20077 DQC IV-10 LA",
+   "MB: 228.51 DEUTZ DQC IV-10 LA"
+  ]
+ },
+ "Aceites AD Standard/8111000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E6, E7, E9 CI-4 MACK MTU EO-N Type 3.1",
+   "API MAN: CI-4 M3477/M3271-1 MTU RENAULT Type 3.1 VI RLD-2",
+   "MAN VOLVO: M3477/M3271-1 VDS-3 RENAULT CUMMINS VI RLD-2 CES 20076/20077",
+   "VOLVO MB: VDS-3 228.51 CUMMINS DEUTZ CES 20076/20077 DQC IV-10 LA",
+   "MB: 228.51 DEUTZ DQC IV-10 LA"
+  ]
+ },
+ "Aceites AD Standard/811208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "10W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: E6, E7, E9 CI-4 MACK MTU EO-N Type 3.1",
+   "API MAN: CI-4 M3477/M3271-1 MTU RENAULT Type 3.1 VI RLD-2",
+   "MAN VOLVO: M3477/M3271-1 VDS-3 RENAULT CUMMINS VI RLD-2 CES 20076/20077",
+   "VOLVO MB: VDS-3 228.51 CUMMINS DEUTZ CES 20076/20077 DQC IV-10 LA",
+   "MB: 228.51 DEUTZ DQC IV-10 LA"
+  ]
+ },
+ "Aceites AD Standard/821005": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: C3 SN/CF RENAULT MB RN710, RN700 229.51, 226.5",
+   "API GM: SN/CF LL-B-025 MB VW 229.51, 226.5 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW FORD 505.00/505.01 M2C-917A",
+   "BMW: LL-04<19 FORD M2C-917A"
+  ]
+ },
+ "Aceites AD Standard/821020": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: C3 SN/CF RENAULT MB RN710, RN700 229.51, 226.5",
+   "API GM: SN/CF LL-B-025 MB VW 229.51, 226.5 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW FORD 505.00/505.01 M2C-917A",
+   "BMW: LL-04<19 FORD M2C-917A"
+  ]
+ },
+ "Aceites AD Standard/821050": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: C3 SN/CF RENAULT MB RN710, RN700 229.51, 226.5",
+   "API GM: SN/CF LL-B-025 MB VW 229.51, 226.5 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW FORD 505.00/505.01 M2C-917A",
+   "BMW: LL-04<19 FORD M2C-917A"
+  ]
+ },
+ "Aceites AD Standard/8211000": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: C3 SN/CF RENAULT MB RN710, RN700 229.51, 226.5",
+   "API GM: SN/CF LL-B-025 MB VW 229.51, 226.5 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW FORD 505.00/505.01 M2C-917A",
+   "BMW: LL-04<19 FORD M2C-917A"
+  ]
+ },
+ "Aceites AD Standard/821208": {
+  "titulo": "FICHA TÉCNICA",
+  "tipo_producto": "",
+  "grado_sae": "5W40",
+  "acea": [],
+  "api": [],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [
+   "5",
+   "20",
+   "50",
+   "208",
+   "1000"
+  ],
+  "fecha": "02/2023",
+  "avisos": [],
+  "oem_ok": [],
+  "oem_ambiguo": [
+   "ACEA API: C3 SN/CF RENAULT MB RN710, RN700 229.51, 226.5",
+   "API GM: SN/CF LL-B-025 MB VW 229.51, 226.5 505.00/505.01",
+   "GM BMW: LL-B-025 LL-04<19 VW FORD 505.00/505.01 M2C-917A",
+   "BMW: LL-04<19 FORD M2C-917A"
+  ]
+ }
+}
