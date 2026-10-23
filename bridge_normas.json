@@ -288,7 +288,7 @@
 "tipo": "grasa"
 },
 "EO-O": {
-"description": "Aceite motor diésel pesado Mack EO-O Premium Plus, para motores modernos con filtro de partículas",
+"description": "Aceite motor diésel pesado Mack EO-O Premium Plus (equivalente a Volvo VDS-4), basado en API CJ-4 con exigencias mayores",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -368,7 +368,7 @@
 "tipo": "motor"
 },
 "JLR STJLR.03.5007": {
-"description": "Aceite motor 0W-30 de bajas cenizas Jaguar Land Rover (nivel ACEA C2)",
+"description": "Aceite motor 0W-30 de cenizas medias (nivel ACEA C2) para motores recientes de Jaguar y Land Rover",
 "segment": "ligero",
 "tipo": "motor"
 },
@@ -378,12 +378,12 @@
 "tipo": "transmision"
 },
 "MAGIAS P-69": {
-"description": "Aceite hidráulico para máquinas-herramienta MAG IAS (antes Cincinnati), especificación P-69",
+"description": "Norma MAGIAS P-69 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
 "MAGIAS P-70": {
-"description": "Aceite hidráulico para máquinas-herramienta MAG IAS (antes Cincinnati), especificación P-70",
+"description": "Norma MAGIAS P-70 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
@@ -393,32 +393,32 @@
 "tipo": "refrigerante"
 },
 "MAN 3271-1": {
-"description": "Aceite motor diésel pesado para camión y autobús MAN, especificación M 3271-1",
+"description": "Aceite motor para camión y autobús MAN, especificación M 3271-1",
 "segment": "pesado",
 "tipo": "motor"
 },
 "MAN 3277": {
-"description": "Aceite motor diésel pesado para camión y autobús MAN, especificación M 3277",
+"description": "Aceite UHPD (Ultra High Performance Diesel) para motores diésel MAN de alto rendimiento y cambios largos, normalmente de nivel ACEA E4 o E7",
 "segment": "pesado",
 "tipo": "motor"
 },
 "MAN 341 Z2": {
-"description": "Aceite de engranajes MAN para cajas de cambio manuales de camión, especificación 341 Z2",
+"description": "Aceite de engranajes MAN tipo API GL-4 para cajas de cambio manuales de camión, especificación 341 Z2",
 "segment": "pesado",
 "tipo": "transmision"
 },
 "MAN 342 M1": {
-"description": "Aceite de engranajes MAN para ejes y diferenciales de camión, especificación 342 M1",
+"description": "Aceite de engranajes MAN tipo API GL-5 para ejes y diferenciales de camión, especificación 342 M1",
 "segment": "pesado",
 "tipo": "transmision"
 },
 "MAN 3477": {
-"description": "Aceite motor diésel pesado para camión y autobús MAN, especificación M 3477",
+"description": "Aceite motor diésel pesado MAN para motores Euro III a V (diésel de bajo azufre), especificación M 3477",
 "segment": "pesado",
 "tipo": "motor"
 },
 "MAN 3575": {
-"description": "Aceite motor diésel pesado para camión y autobús MAN, especificación M 3575",
+"description": "Aceite de alto rendimiento de cenizas medias o bajas (Mid/Low SAPS) para motores diésel MAN Euro VI con filtro de partículas y SCR",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -428,7 +428,7 @@
 "tipo": "motor"
 },
 "MAN 3775": {
-"description": "Aceite motor diésel pesado para camión y autobús MAN, especificación M 3775",
+"description": "Aceite diésel pesado de bajo rozamiento y bajas cenizas (Low-SAPS), nivel API CK-4 y ACEA E8/E11, para motores MAN Euro V y VI",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -438,7 +438,7 @@
 "tipo": "motor"
 },
 "Massey Ferguson M1141": {
-"description": "Aceite para tractores Massey Ferguson, especificación CMS M1141",
+"description": "Aceite UTTO para tractores Massey Ferguson (transmisión, hidráulico y frenos), especificación CMS M1141",
 "segment": "ligero",
 "tipo": "multifuncion"
 },
@@ -478,7 +478,7 @@
 "tipo": "transmision"
 },
 "Renault RLD": {
-"description": "Aceite motor diésel pesado para camiones Renault Trucks, especificaciones RLD-2, RLD-3 y RLD-4",
+"description": "Aceite motor diésel pesado para camiones Renault Trucks, especificaciones RLD-2, RLD-3, RLD-4 y RLD-5",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -568,7 +568,7 @@
 "tipo": "transmision"
 },
 "VOITH 55.6336": {
-"description": "Aceite ATF para retarder y cajas Voith (DIWA), equivalente a MAN 339 V2 de larga duración",
+"description": "Aceite ATF para retarder y cajas Voith (DIWA), especificación H55.6336; cubre también la H55.6335 y se asocia a MAN 339 V2",
 "segment": "ligero",
 "tipo": "transmision"
 },
@@ -578,7 +578,7 @@
 "tipo": "transmision"
 },
 "VOLVO 97305": {
-"description": "Aceite de engranajes Volvo 97305 para cajas de cambio manuales de camión",
+"description": "Aceite de engranajes para cajas de cambio manuales y automatizadas de camión Volvo (equivale a API GL-4 75W-80); norma antigua, sustituida por la 97307 y la 97318",
 "segment": "ligero",
 "tipo": "transmision"
 },
