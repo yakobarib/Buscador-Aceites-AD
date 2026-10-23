@@ -119,6 +119,21 @@ def main():
         anadir("xref_tcm_a_febi", r["tc"], [r["febi"]], origen="Equivalencias entre Febi y TC-Matic.xlsx", herramienta="xref")
         anadir("xref_febi_a_tcm", r["febi"], [r["tc"]], origen="Equivalencias entre Febi y TC-Matic.xlsx", herramienta="xref")
 
+    # ---- refrigerantes de la tarifa (sin limpiaparabrisas, agua destilada ni AdBlue, que de momento no importan): su referencia debe llevar a su familia
+    import subprocess
+    bw.cargar_refrigerantes_ad()
+    mapa_ad = json.loads((RAIZ / "bridge_ad_ref_familia.json").read_text(encoding="utf-8"))
+    js = ("const {cargar}=require('./evals/buscador_headless');const b=cargar();"
+          "process.stdout.write(JSON.stringify(b.llamar('AD_PARTS_CATALOG.map(p=>({sku:p.sku,ref:p.ref}))')))")
+    nombre_de = {x["sku"]: x["ref"] for x in json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout)}
+    for p in bw.PRODUCTOS:
+        if p["marca"] != "AD Refrigerantes" or re.search(r"LIMPIAPARABRISAS|ADBLUE|DESTILADA", p["desc"], re.I):
+            continue
+        clave_app = p["ref"][3:] if p["ref"].startswith("ADP") else p["ref"]
+        if clave_app in mapa_ad and mapa_ad[clave_app][0] in nombre_de:
+            anadir("ref_refrigerante", p["ref"], ["nombre:" + nombre_de[mapa_ad[clave_app][0]]], origen="Productos AD Parts Refrigerantes Abril 2026.xlsx")
+            anadir("ref_refrigerante", clave_app, ["nombre:" + nombre_de[mapa_ad[clave_app][0]]], origen="Productos AD Parts Refrigerantes Abril 2026.xlsx")
+
     out = RAIZ / "evals" / "casos.json"
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(casos, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -42113,5 +42113,401 @@
   "modo": "alguno",
   "origen": "Equivalencias entre Febi y TC-Matic.xlsx",
   "herramienta": "xref"
+ },
+ {
+  "id": "ref_refrigerante-6e730c8c",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP10301",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Verde"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-ad4e47cd",
+  "categoria": "ref_refrigerante",
+  "consulta": "10301",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Verde"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-59adfcbe",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP15301",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Verde"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-9a90b7ff",
+  "categoria": "ref_refrigerante",
+  "consulta": "15301",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Verde"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-f77a5d36",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP10302",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-34471677",
+  "categoria": "ref_refrigerante",
+  "consulta": "10302",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-c0a4ad04",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP15302",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-0399e645",
+  "categoria": "ref_refrigerante",
+  "consulta": "15302",
+  "esperado": [
+   "nombre:AD ESTÁNDAR 30% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-f3f72184",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP10502",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-30ca6ac5",
+  "categoria": "ref_refrigerante",
+  "consulta": "10502",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-c429d1b6",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP15502",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-07149af7",
+  "categoria": "ref_refrigerante",
+  "consulta": "15502",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Rosa"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-84f01112",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP10503",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Ocre"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-47cd5a53",
+  "categoria": "ref_refrigerante",
+  "consulta": "10503",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Ocre"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-1322c89a",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP10508",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Azul"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-d01f83db",
+  "categoria": "ref_refrigerante",
+  "consulta": "10508",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Azul"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-aae69895",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55601",
+  "esperado": [
+   "nombre:AD48 (G11)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-69dbd3d4",
+  "categoria": "ref_refrigerante",
+  "consulta": "55601",
+  "esperado": [
+   "nombre:AD48 (G11)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-a8a026cc",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55501",
+  "esperado": [
+   "nombre:AD48 (G11)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-6b9d6d8d",
+  "categoria": "ref_refrigerante",
+  "consulta": "55501",
+  "esperado": [
+   "nombre:AD48 (G11)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-33efc92f",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55602",
+  "esperado": [
+   "nombre:AD40 (G12++)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-f0d2826e",
+  "categoria": "ref_refrigerante",
+  "consulta": "55602",
+  "esperado": [
+   "nombre:AD40 (G12++)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-31a97776",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55502",
+  "esperado": [
+   "nombre:AD40 (G12++)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-f2943c37",
+  "categoria": "ref_refrigerante",
+  "consulta": "55502",
+  "esperado": [
+   "nombre:AD40 (G12++)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-44e8f9b9",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55603",
+  "esperado": [
+   "nombre:AD40 + GLYCEROL (G13)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-87d5b2f8",
+  "categoria": "ref_refrigerante",
+  "consulta": "55603",
+  "esperado": [
+   "nombre:AD40 + GLYCEROL (G13)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-46ae47e0",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55503",
+  "esperado": [
+   "nombre:AD40 + GLYCEROL (G13)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-85930ca1",
+  "categoria": "ref_refrigerante",
+  "consulta": "55503",
+  "esperado": [
+   "nombre:AD40 + GLYCEROL (G13)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-da8c6c1a",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55604",
+  "esperado": [
+   "nombre:AD65 (G12 Evo)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-19b1275b",
+  "categoria": "ref_refrigerante",
+  "consulta": "55604",
+  "esperado": [
+   "nombre:AD65 (G12 Evo)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-d8cad243",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55504",
+  "esperado": [
+   "nombre:AD65 (G12 Evo)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-1bf79902",
+  "categoria": "ref_refrigerante",
+  "consulta": "55504",
+  "esperado": [
+   "nombre:AD65 (G12 Evo)"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-ad8b5c8c",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55605",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Magenta"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-6eb617cd",
+  "categoria": "ref_refrigerante",
+  "consulta": "55605",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Magenta"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-afcde2d5",
+  "categoria": "ref_refrigerante",
+  "consulta": "ADP55505",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Magenta"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
+ },
+ {
+  "id": "ref_refrigerante-6cf0a994",
+  "categoria": "ref_refrigerante",
+  "consulta": "55505",
+  "esperado": [
+   "nombre:AD NEW PLUS 50% Magenta"
+  ],
+  "modo": "alguno",
+  "origen": "Productos AD Parts Refrigerantes Abril 2026.xlsx",
+  "herramienta": "libre"
  }
 ]

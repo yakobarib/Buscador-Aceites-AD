@@ -38,7 +38,7 @@ def preparar_html_limpio():
 
 def skus_de_la_app():
     js = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('"+HTML_LIMPIO.as_posix()+"');"
-          "process.stdout.write(JSON.stringify(b.llamar('AD_PARTS_CATALOG.map(p=>({sku:p.sku,ref:p.ref,formats:p.formats,visc:p.viscosity,segment:p.segment,tipo:p.type}))')))")
+          "process.stdout.write(JSON.stringify(b.llamar('AD_PARTS_CATALOG.map(p=>({sku:p.sku,ref:p.ref,formats:p.formats,visc:p.viscosity,segment:p.segment,tipo:p.type,alt:p.altSkus||[]}))')))")
     r = subprocess.run(["node", "-e", js], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ)
     return json.loads(r.stdout)
 
@@ -63,7 +63,7 @@ def claves_specs_db():
 def es_fiable(lit):
     """Una norma NUEVA solo entra si parece una norma entera: sin comas ni cadenas compuestas y empezando por el nombre de quien la emite."""
     t = lit.split()
-    return bool(t) and "," not in lit and lit.count("/") <= 1 and len(lit) <= 35 and re.fullmatch(r"[A-Za-zÁÉÍÓÚÑáéíóúñ][A-Za-zÁÉÍÓÚÑáéíóúñ\-]+", t[0]) is not None
+    return bool(t) and "," not in lit and lit.count("/") <= 1 and len(lit) <= 35 and len(t[0]) >= 2 and t[0].replace("-", "").isalpha()
 
 
 def errata_de(lit, conocidas):
@@ -269,13 +269,26 @@ def main():
             informe.append(f'ref de la lista de precios ambigua ({p["ref"]}): ' + ", ".join(c[1] for c in cands))
         else:
             informe.append(f'ref de la lista de precios sin familia en el catálogo: {p["ref"]} «{p["desc"]}»')
-    # refrigerantes, AdBlue y DOT 4: la referencia de la tarifa (ADP15502...) es el sku de la familia en la app
+    # familias de refrigerante de la tarifa que el buscador no tenia (datos de sus fichas, en refrigerantes_nuevos.json)
+    nuevas_fam = json.loads((RAIZ / "refrigerantes_nuevos.json").read_text(encoding="utf-8"))["familias"]
+    por_alt = {}
+    for a in app.values():
+        for alt in a.get("alt", []):
+            por_alt[alt] = a["sku"]
+    for f in nuevas_fam:
+        app[f["sku"][3:]] = {"sku": f["sku"], "ref": f["ref"], "formats": f["formats"], "segment": "ligero", "tipo": "refrigerante", "alt": f["altSkus"]}
+        for alt in f["altSkus"]:
+            por_alt[alt] = f["sku"]
+        fam_sku.append(({"producto": f["ref"], "visc": "", "normas": [("homologacion", n) for n in f["normas"]], "refs": []}, f["sku"]))
+    # refrigerantes, AdBlue y DOT 4: la referencia de la tarifa es el sku de la familia en la app o una de sus referencias alternativas (altSkus)
     for p in bw.PRODUCTOS:
         if p["marca"] == "AD Refrigerantes":
             clave_app = p["ref"][3:] if p["ref"].startswith("ADP") else p["ref"]
             if clave_app in app and clave_app not in mapa:
                 mapa[clave_app] = [app[clave_app]["sku"], ""]
-            elif clave_app not in app:
+            elif "ADP" + clave_app in por_alt and clave_app not in mapa:
+                mapa[clave_app] = [por_alt["ADP" + clave_app], ""]
+            elif clave_app not in app and "ADP" + clave_app not in por_alt:
                 informe.append(f'refrigerante de la tarifa sin familia en el buscador: {p["ref"]} «{p["desc"]}»')
     # formatos (litros) que la tarifa o el catalogo dan para cada familia: se SUMAN a los que ya tenia la app (no se quita ninguno)
     por_sku_app = {a["sku"]: a for a in app.values()}
@@ -285,6 +298,8 @@ def main():
             formatos[sku].add(int(suf))
             if int(suf) not in por_sku_app[sku]["formats"]:
                 informe.append(f'formato añadido: {por_sku_app[sku]["ref"]} {int(suf)} L (ref {r}, ' + ("tarifa de abril" if r in {q["ref"] for q in bw.PRODUCTOS if q["marca"] == "AD Parts"} else "solo en el catálogo") + ")")
+    for f in nuevas_fam:  # sus normas se ponen al cargar via AD_NORMAS_PUENTE (con nombres que el buscador reconozca)
+        informe.append(f'familia de refrigerante AÑADIDA al buscador: {f["ref"]} ({f["sku"]}, alt. {", ".join(f["altSkus"])}) · fuente: {f["fuente"][:90]}')
     normas, informe_n, usado_en = puente_normas(app, fam_sku)
     informe += informe_n
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
@@ -306,8 +321,12 @@ def main():
   });
 })();"""
     fmts = json.dumps({k: sorted(v) for k, v in formatos.items()}, sort_keys=True, separators=(",", ":"))
+    fam_nuevas_js = json.dumps([{"ref": f["ref"], "sku": f["sku"], "altSkus": f["altSkus"], "viscosity": "-", "type": "refrigerante", "segment": "ligero",
+                                 "formats": f["formats"], "specs": []} for f in nuevas_fam], ensure_ascii=False, separators=(",", ":"))
     bloque = (INI + chr(10) + "const AD_REF_FAMILIA = " + json.dumps(mapa, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + ";" + chr(10)
-              + "const AD_FORMATOS = " + fmts + ";" + chr(10) + cod_f + chr(10) + FIN)
+              + "const AD_FORMATOS = " + fmts + ";" + chr(10) + cod_f + chr(10)
+              + "// familias de refrigerante de la tarifa que el buscador no tenia (datos: refrigerantes_nuevos.json)" + chr(10)
+              + "(" + fam_nuevas_js + ").forEach(f => { if (!AD_PARTS_CATALOG.some(p => p.sku === f.sku)) AD_PARTS_CATALOG.push(f); });" + chr(10) + FIN)
     if INI in html:
         html = re.sub(re.escape(INI) + r".*?" + re.escape(FIN), lambda m: bloque, html, count=1, flags=re.S)
     else:

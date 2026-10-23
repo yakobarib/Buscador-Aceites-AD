@@ -3,20 +3,6 @@ familia sin código de formato (GLIT NLGI2 ): enlazadas sus 4 referencias sin fo
 familia sin código de formato (GLMO NLGI2 ): enlazadas sus 5 referencias sin formato
 familia sin código de formato (GRL-00 NLGI00 ): enlazadas sus 3 referencias sin formato
 familia sin código de formato (GLAT NLGI2 ): enlazadas sus 5 referencias sin formato
-refrigerante de la tarifa sin familia en el buscador: ADP10301 «REFRIGERANTE STANDARD 30% VERDE 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP15301 «REFRIGERANTE STANDARD 30% VERDE 5L PALET»
-refrigerante de la tarifa sin familia en el buscador: ADP10302 «REFRIGERANTE STANDARD 30% ROSA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP15302 «REFRIGERANTE STANDARD 30% ROSA 5L PALET»
-refrigerante de la tarifa sin familia en el buscador: ADP10502 «REFRIGEANTE ORGÁNICO 50% ROSA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP10503 «REFRIGEANTE ORGÁNICO 50% OCRE 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP10508 «REFRIGEANTE ORGÁNICO 50% OCRE 5L PALET»
-refrigerante de la tarifa sin familia en el buscador: ADP55601 «AD48 (G11) HOAT HYBRID ORGANICO 50% AZUL 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP55602 «AD40 (G12++) SI-OAT ORGANICO 50% MAGENTA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP55603 «REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP55503 «REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA 5L PALET»
-refrigerante de la tarifa sin familia en el buscador: ADP55604 «AD65 (G12 EVO) PSI-OAT ORGÁNICO 50% MAGENTA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP55605 «AD ORIGINAL () OAT ORGANICO 50% MAGENTA 1000L»
-refrigerante de la tarifa sin familia en el buscador: ADP55505 «AD ORIGINAL () OAT ORGANICO 50% MAGENTA 5L PALET»
 refrigerante de la tarifa sin familia en el buscador: ADP40601 «LIMPIAPARABRISAS 1000L»
 refrigerante de la tarifa sin familia en el buscador: ADP45603 «LIMPIAPARABRISAS 5L PALET»
 refrigerante de la tarifa sin familia en el buscador: ADPADBLUE1000 «ADBLUE GREENCHEN 1000L»
@@ -28,6 +14,10 @@ formato añadido: AD SMC 0W20 1000 L (ref 791000, solo en el catálogo)
 formato añadido: AD SPA 0W20 1 L (ref 78001, solo en el catálogo)
 formato añadido: AD SPA 0W20 1000 L (ref 781000, solo en el catálogo)
 formato añadido: AD SRC4 5W30 1 L (ref 48001, solo en el catálogo)
+familia de refrigerante AÑADIDA al buscador: AD ESTÁNDAR 30% Verde (ADP15301, alt. ADP10301) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15301 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361; 
+familia de refrigerante AÑADIDA al buscador: AD ESTÁNDAR 30% Rosa (ADP15302, alt. ADP10302) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15302 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361) 
+familia de refrigerante AÑADIDA al buscador: AD40 + GLYCEROL (G13) (ADP55503, alt. ADP55603) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55503 ('ORIGINAL AD 40 + GLYCEROL 50%': ASTM D3306,
+familia de refrigerante AÑADIDA al buscador: AD NEW PLUS 50% Magenta (ADP55505, alt. ADP55605) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55505 ('ORIGINAL AD NEW PLUS 50%': homologaciones V
 norma nueva para el buscador: «ILSAC GF-5» (leída como «ILSAC GF-5»)
 norma nueva para el buscador: «ACEA A1» (leída como «ACEA A1»)
 norma nueva para el buscador: «ACEA B1» (leída como «ACEA B1»)
@@ -147,4 +137,16 @@ norma nueva para el buscador: «DIN 51825 KPF2K-20» (leída como «DIN 51825 KP
 norma nueva para el buscador: «DIN 51825 KP00K-20» (leída como «DIN 51825 KP00K-20»)
 norma nueva para el buscador: «DIN 51825 KP2N-20» (leída como «DIN 51825 KP2N-20»)
 norma nueva para el buscador: «DIN 51825 KP2K-20» (leída como «DIN 51825 KP2K-20»)
-descripciones de normas: 0 de 85 escritas por Yakoba en «Descripciones de normas para curar.xlsx»
+norma nueva para el buscador: «UNE 26-361» (leída como «UNE 26-361»)
+norma nueva para el buscador: «ASTM D3306» (leída como «ASTM D3306»)
+norma nueva para el buscador: «CUNA NC 956-16» (leída como «CUNA NC 956-16»)
+norma nueva para el buscador: «BS 6580:2010» (leída como «BS 6580:2010»)
+norma nueva para el buscador: «MAN 324 Type SNF» (leída como «MAN 324 Type SNF»)
+norma nueva para el buscador: «DAIMLER TRUCK DTFR 29C110» (leída como «DTFR 29C110»)
+norma nueva para el buscador: «ASTM D4985» (leída como «ASTM D4985»)
+norma nueva para el buscador: «SAE J1034» (leída como «SAE J1034»)
+norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-601»)
+norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
+norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
+norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
+descripciones de normas: 3 de 97 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

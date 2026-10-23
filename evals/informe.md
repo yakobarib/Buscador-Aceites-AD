@@ -1,6 +1,6 @@
 # Informe de pruebas del buscador (2026-10-23)
 
-Casos: 3049 · acierto global: **97.2 %** · tiempo: 10.2 s
+Casos: 3085 · acierto global: **97.3 %** · tiempo: 10.5 s
 
 Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador no se ejecuta aquí). Un caso es acierto si la respuesta menciona alguna de las referencias esperadas.
 
@@ -20,10 +20,11 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 | referencias cruzadas | xref_febi_conocida | 253 | 249 | 98.4 % | 4 | 0 |
 | referencias cruzadas | xref_tcm_a_febi | 19 | 18 | 94.7 % | 0 | 0 |
 | referencias cruzadas | xref_febi_a_tcm | 12 | 11 | 91.7 % | 0 | 0 |
+| búsqueda libre | ref_refrigerante | 36 | 36 | 100.0 % | 18 | 0 |
 
 ## Cambios respecto a la ejecución anterior
 
-- Casos que mejoran: 138
+- Casos que mejoran: 0
 - Casos que EMPEORAN: 0
 
 ## Fallos por categoría (hasta 15 por categoría)

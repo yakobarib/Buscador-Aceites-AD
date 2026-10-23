@@ -9,6 +9,7 @@
 "ACEAE8": "ACEA E8",
 "AFNORNFE48603HL": "AFNOR NF-E 48-603 HL",
 "AFNORNFE48690": "AFNOR NF-E 48-690",
+"AFNORNFR15601": "AFNOR NFR 15-601",
 "ALISONC4": "ALLISON C-4",
 "ALLISONC4": "ALLISON C-4",
 "APICF4": "API CF4",
@@ -16,12 +17,17 @@
 "APIGL5LS": "API GL-5 LS",
 "ARVIN076N": "ARVIN MERITOR 0-76-N",
 "ARVINMERITOR076N": "ARVIN MERITOR 0-76-N",
+"ASTMD3306": "ASTM D3306",
+"ASTMD4985": "ASTM D4985",
 "ATF3PLUS4PLUS": "ATF +3/+4",
 "ATFDIIIMULTI": "ATF D III Multi",
 "ATFDIIMULTI": "ATF D II Multi",
+"BS65802010": "BS 6580:2010",
 "CES20072": "CUMMINS CES 20072",
 "CNHMAT3525": "CNH MAT 3525",
 "CUMMINSCES20072": "CUMMINS CES 20072",
+"CUNANC95616": "CUNA NC 956-16",
+"DAIMLERTRUCKDTFR29C110": "DAIMLER TRUCK DTFR 29C110",
 "DESXIIIH": "DESX III H",
 "DEUTZDQCIII10LA": "DEUTZ DQC III-10 LA",
 "DEUTZDQCIV10": "DEUTZ DQC IV-10",
@@ -36,10 +42,12 @@
 "DIN51825KPF2K20": "DIN 51825 KPF2K-20",
 "DQCIII10LA": "DEUTZ DQC III-10 LA",
 "DQCIV10": "DEUTZ DQC IV-10",
+"DTFR29C110": "DAIMLER TRUCK DTFR 29C110",
 "EOO": "EO-O",
 "FDA": "FDA",
 "FORDM2C159BC": "FORD M2C-159B/C",
 "FORDWSSM2C913CD": "Ford WSS-M2C-913-C/D",
+"GB297432013": "GB 29743-2013",
 "HMNFE18691": "HM NF-E 18-691",
 "HMNFE48690": "HM NF-E 48-690",
 "ILSACGF5": "ILSAC GF-5",
@@ -47,12 +55,14 @@
 "JASO1A03": "JASO 1A-03",
 "JASODHD1": "JASO DHD-1",
 "JASOM3152004": "Jaso M315-2004",
+"JISK22342006": "JIS K 2234:2006",
 "JLRSTJLR035003": "JLR STJLR 03.5003",
 "JLRSTJLR035004": "JLR STJLR.03.5004",
 "JLRSTJLR035005": "JLR STJLR.03.5005",
 "JLRSTJLR035007": "JLR STJLR.03.5007",
 "MAGIASP69": "MAGIAS P-69",
 "MAGIASP70": "MAGIAS P-70",
+"MAN324TYPESNF": "MAN 324 Type SNF",
 "MAN32711": "MAN 3271-1",
 "MAN3277": "MAN 3277",
 "MAN341Z2": "MAN 341 Z2",
@@ -72,7 +82,9 @@
 "RENAULTAXLES": "Renault Axles",
 "RENAULTB00322ANNEX3": "RENAULT B0032/2 ANNEX 3",
 "RENAULTRLD": "Renault RLD",
+"SAEJ1034": "SAE J1034",
 "SAEJ2360": "SAE J2360",
+"SANS12512005": "SANS 1251:2005",
 "SHPD": "SHPD",
 "STELLANTISFPW03": "Stellantis FPW03",
 "STELLANTISFPW955535": "Stellantis FPW9.55535",
@@ -82,6 +94,7 @@
 "TES389": "TES 389",
 "THPD": "THPD",
 "TOYOTATIITIV": "Toyota T-II/T-IV",
+"UNE26361": "UNE 26-361",
 "USP": "USP",
 "UTTOTHF": "UTTO THF",
 "VARIO": "VARIO",
@@ -94,17 +107,17 @@
 },
 "nuevas": {
 "ACEA A1": {
-"description": "Norma ACEA A1 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "define un aceite de motor de bajo contenido en cenizas sulfatadas, fósforo y azufre (Low-SAPS) y baja viscosidad, diseñado para proteger los filtros de partículas (DPF/FAP) y catalizadores en motores de gasolina y diésel modernos. Normalmente para constructores Ford, Mazda y Jaguar Land Rover",
 "segment": "ligero",
 "tipo": "motor"
 },
 "ACEA A3": {
-"description": "Norma ACEA A3 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Aceites de motor de alto rendimiento diseñados para vehículos de gasolina y diésel ligeros pensada para motores exigentes, atmosféricos o turboalimentados, que requieren una película lubricante muy resistente bajo altas temperaturas y esfuerzos mecánicos.",
 "segment": "ligero",
 "tipo": "motor"
 },
 "ACEA A5": {
-"description": "Norma ACEA A5 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "aceites de motor sintéticos de bajo HTHS (baja viscosidad a alta temperatura y alta cizalladura) diseñados para ofrecer un elevado rendimiento y ahorro de combustible",
 "segment": "ligero",
 "tipo": "motor"
 },
@@ -138,6 +151,11 @@
 "segment": "industrial",
 "tipo": "hidraulico"
 },
+"AFNOR NFR 15-601": {
+"description": "Norma AFNOR NFR 15-601 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "ALLISON C-4": {
 "description": "Norma ALLISON C-4 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "ligero",
@@ -163,6 +181,16 @@
 "segment": "pesado",
 "tipo": "transmision"
 },
+"ASTM D3306": {
+"description": "Norma ASTM D3306 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
+"ASTM D4985": {
+"description": "Norma ASTM D4985 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "ATF +3/+4": {
 "description": "Norma ATF +3/+4 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "ligero",
@@ -178,6 +206,11 @@
 "segment": "ligero",
 "tipo": "transmision"
 },
+"BS 6580:2010": {
+"description": "Norma BS 6580:2010 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "CNH MAT 3525": {
 "description": "Norma CNH MAT 3525 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "ligero",
@@ -187,6 +220,16 @@
 "description": "Norma CUMMINS CES 20072 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "pesado",
 "tipo": "motor"
+},
+"CUNA NC 956-16": {
+"description": "Norma CUNA NC 956-16 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
+"DAIMLER TRUCK DTFR 29C110": {
+"description": "Norma DAIMLER TRUCK DTFR 29C110 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
 },
 "DESX III H": {
 "description": "Norma DESX III H (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -268,6 +311,11 @@
 "segment": "ligero",
 "tipo": "motor"
 },
+"GB 29743-2013": {
+"description": "Norma GB 29743-2013 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "HM NF-E 18-691": {
 "description": "Norma HM NF-E 18-691 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
@@ -297,6 +345,11 @@
 "description": "Norma JASO DHD-1 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "pesado",
 "tipo": "motor"
+},
+"JIS K 2234:2006": {
+"description": "Norma JIS K 2234:2006 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
 },
 "JLR STJLR 03.5003": {
 "description": "Norma JLR STJLR 03.5003 (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -332,6 +385,11 @@
 "description": "Norma MAGIAS P-70 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
 "tipo": "hidraulico"
+},
+"MAN 324 Type SNF": {
+"description": "Norma MAN 324 Type SNF (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
 },
 "MAN 3271-1": {
 "description": "Norma MAN 3271-1 (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -423,10 +481,20 @@
 "segment": "pesado",
 "tipo": "motor"
 },
+"SAE J1034": {
+"description": "Norma SAE J1034 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "SAE J2360": {
 "description": "Norma SAE J2360 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "pesado",
 "tipo": "transmision"
+},
+"SANS 1251:2005": {
+"description": "Norma SANS 1251:2005 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
 },
 "SHPD": {
 "description": "Norma SHPD (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -472,6 +540,11 @@
 "description": "Norma Toyota T-II/T-IV (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "ligero",
 "tipo": "transmision"
+},
+"UNE 26-361": {
+"description": "Norma UNE 26-361 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "refrigerante"
 },
 "USP": {
 "description": "Norma USP (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -552,6 +625,12 @@
 "MIL-L-2105-D",
 "Renault Axles",
 "VOITH 132.00374400"
+],
+"ADP15301": [
+"UNE 26-361"
+],
+"ADP15302": [
+"UNE 26-361"
 ],
 "ADP16005": [
 "API CF",
@@ -841,6 +920,27 @@
 "MB 229.52",
 "VW 505.00",
 "VW 505.01"
+],
+"ADP55503": [
+"ASTM D3306",
+"BS 6580:2010",
+"CUNA NC 956-16",
+"G13"
+],
+"ADP55505": [
+"AFNOR NFR 15-601",
+"ASTM D3306",
+"ASTM D4985",
+"BS 6580:2010",
+"CUNA NC 956-16",
+"DAIMLER TRUCK DTFR 29C110",
+"G12",
+"G12+",
+"GB 29743-2013",
+"JIS K 2234:2006",
+"MAN 324 Type SNF",
+"SAE J1034",
+"SANS 1251:2005"
 ],
 "ADP56005": [
 "ACEA C2",
