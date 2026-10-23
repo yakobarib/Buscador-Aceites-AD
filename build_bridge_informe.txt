@@ -19,13 +19,14 @@ familia de refrigerante AÑADIDA al buscador: AD ESTÁNDAR 30% Rosa (ADP15302, a
 familia de refrigerante AÑADIDA al buscador: AD40 + GLYCEROL (G13) (ADP55503, alt. ADP55603) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55503 ('ORIGINAL AD 40 + GLYCEROL 50%': ASTM D3306,
 familia de refrigerante AÑADIDA al buscador: AD NEW PLUS 50% Magenta (ADP55505, alt. ADP55605) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55505 ('ORIGINAL AD NEW PLUS 50%': homologaciones V
 norma nueva para el buscador: «ILSAC GF-5» (leída como «ILSAC GF-5»)
-norma nueva para el buscador: «ACEA A1» (leída como «ACEA A1»)
-norma nueva para el buscador: «ACEA B1» (leída como «ACEA B1»)
+decisión AD-67xxx-ACEA aplicada a la familia AD SCA 0W20
 norma nueva para el buscador: «DEXOS D» (leída como «DEXOS D»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «OV401547»
 norma nueva para el buscador: «JLR STJLR.03.5007» (leída como «JLR STJLR.03.5007»)
 norma nueva para el buscador: «ACEA A5» (leída como «ACEA A5»)
 norma nueva para el buscador: «ACEA B5» (leída como «ACEA B5»)
+norma nueva para el buscador: «ACEA A1» (leída como «ACEA A1»)
+norma nueva para el buscador: «ACEA B1» (leída como «ACEA B1»)
 norma nueva para el buscador: «JLR STJLR.03.5004» (leída como «JLR STJLR.03.5004»)
 norma nueva para el buscador: «JLR STJLR.03.5005» (leída como «JLR STJLR.03.5005»)
 norma nueva para el buscador: «Stellantis FPW9.55535» (leída como «Stellantis FPW9.55535»)
@@ -85,6 +86,7 @@ norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la f
 norma nueva para el buscador: «Mitsubishi SP-II/SP-III» (leída como «Mitsubishi SP-II/SP-III»)
 norma nueva para el buscador: «Suzuki ATF 3317» (leída como «Suzuki ATF 3317»)
 norma nueva para el buscador: «Jaso M315-2004» (leída como «Jaso M315-2004»)
+decisión AD-54xxx-API aplicada a la familia AD SHP Plus 75W80
 norma nueva para el buscador: «VOLVO 97305» (leída como «VOLVO 97305»)
 norma nueva para el buscador: «RENAULT B0032/2 ANNEX 3» (leída como «RENAULT B0032/2 ANNEX 3»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «341 E-3»

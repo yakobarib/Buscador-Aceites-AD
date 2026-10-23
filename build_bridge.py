@@ -83,7 +83,8 @@ def puente_normas(app, fam_sku):
     """Normas individuales de cada familia (catalogo xlsx) traducidas al nombre que usa el buscador.
     Devuelve {specs: {sku: [canonicas]}, nuevas: {canonica: {...}}, alias: {normalizado: canonica}} y un informe."""
     por_sku = {a["sku"]: a for a in app.values()}
-    lits = sorted({lit for fam, _ in fam_sku for t, lit in fam["normas"] if t in ("acea", "api", "ilsac", "jaso", "homologacion")})
+    lits = sorted({lit for fam, _ in fam_sku for t, lit in fam["normas"] if t in ("acea", "api", "ilsac", "jaso", "homologacion")}
+                  | {f"API {x}" for d in bw.DECISIONES for x in d.get("api_union", [])})
     res = resolver_en_app(lits)
     conocidas = claves_specs_db()
     specs, nuevas, alias, informe = defaultdict(set), {}, {}, []
@@ -91,7 +92,14 @@ def puente_normas(app, fam_sku):
     excluidas = set()
     for fam, sku in fam_sku:
         a = por_sku[sku]
-        for t, lit in fam["normas"]:
+        nombre_fam = f'{fam["producto"]} {fam["visc"]}'.strip()
+        decs = [d for d in bw.DECISIONES if nombre_fam in d.get("familias", [])]  # decisiones confirmadas por Yakoba sobre esta familia
+        normas_fam = [(t, l) for t, l in fam["normas"] if not (t == "acea" and any(d.get("prevalece_ficha_acea") for d in decs))]
+        for d in decs:
+            normas_fam += [("api", f"API {x}") for x in d.get("api_union", [])]
+        for d in decs:
+            informe.append(f'decisión {d["id"]} aplicada a la familia {nombre_fam}')
+        for t, lit in normas_fam:
             if t not in ("acea", "api", "ilsac", "jaso", "homologacion"):
                 continue
             r = res[lit]
@@ -303,6 +311,7 @@ def main():
     normas, informe_n, usado_en = puente_normas(app, fam_sku)
     informe += informe_n
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
+    normas["retoques"] = {k: v["description"] for k, v in json.loads((RAIZ / "retoques_descripciones.json").read_text(encoding="utf-8"))["retoques"].items()}
     (RAIZ / "bridge_normas.json").write_text(json.dumps(normas, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     (RAIZ / "bridge_ad_ref_familia.json").write_text(json.dumps(mapa, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     (RAIZ / "build_bridge_informe.txt").write_text("\n".join(informe) + "\n", encoding="utf-8")
@@ -338,6 +347,7 @@ def main():
   // las normas nuevas y sus alias se anaden SOLO si el buscador no las conocia; las normas de cada familia se SUMAN a las que ya tenia
   Object.entries(AD_NORMAS_PUENTE.nuevas).forEach(([k, v]) => { if (!SPECS_DB[k]) SPECS_DB[k] = v; });
   Object.entries(AD_NORMAS_PUENTE.alias).forEach(([k, v]) => { if (!SPEC_ALIASES[k]) SPEC_ALIASES[k] = v; });
+  Object.entries(AD_NORMAS_PUENTE.retoques || {}).forEach(([k, v]) => { if (SPECS_DB[k]) SPECS_DB[k].description = v; });
   AD_PARTS_CATALOG.forEach(p => (AD_NORMAS_PUENTE.specs[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);
   }));

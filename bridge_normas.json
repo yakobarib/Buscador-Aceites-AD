@@ -108,7 +108,7 @@
 },
 "nuevas": {
 "ACEA A1": {
-"description": "define un aceite de motor de bajo contenido en cenizas sulfatadas, fósforo y azufre (Low-SAPS) y baja viscosidad, diseñado para proteger los filtros de partículas (DPF/FAP) y catalizadores en motores de gasolina y diésel modernos. Normalmente para constructores Ford, Mazda y Jaguar Land Rover",
+"description": "Aceite motor de baja viscosidad y bajo rozamiento para ahorro de combustible, en motores de gasolina y diésel ligero",
 "segment": "ligero",
 "tipo": "motor"
 },
@@ -593,6 +593,9 @@
 "tipo": "transmision"
 }
 },
+"retoques": {
+"ACEA C1": "Aceite motor Low-SAPS de baja viscosidad (HTHS bajo), diseñado para proteger los filtros de partículas (DPF/FAP) y catalizadores en motores de gasolina y diésel modernos. Normalmente para Ford, Mazda y Jaguar Land Rover"
+},
 "specs": {
 "ADP10005": [
 "ACEA E2",
@@ -909,6 +912,7 @@
 "Toyota T-II/T-IV"
 ],
 "ADP54005": [
+"API GL-4",
 "API GL-5"
 ],
 "ADP55005": [
@@ -1083,8 +1087,6 @@
 "DIN 51825 KP0K-20"
 ],
 "ADP67005": [
-"ACEA A1",
-"ACEA B1",
 "ILSAC GF-6A",
 "PORSCHE C20",
 "VW 508.00",

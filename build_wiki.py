@@ -813,6 +813,9 @@ def main():
             if dec.get("api_union"):
                 p["normas"] += [("api", f"API {x}") for x in dec["api_union"]]
                 SUP_API_PROD.add(p["pagina"])
+            if dec.get("desc"):  # errata de la tarifa confirmada por el usuario: se corrige la descripcion/formato en la wiki
+                p["desc"] = dec["desc"]
+                p["litros"] = dec.get("litros", p["litros"])
             if dec.get("visc"):
                 p["normas"] = [(t, l) for t, l in p["normas"] if t != "sae"] + [("sae", f'SAE {dec["visc"]}')]
                 p["visc_desc"] = dec["visc"]

@@ -1,0 +1,11 @@
+{
+  "_comentario": "Descripciones que SUSTITUYEN a las que el buscador ya traia para normas que conocia de antes (las normas nuevas se editan en 'Descripciones de normas para curar.xlsx'). build_bridge.py las aplica al cargar. Cada cambio queda anotado con su fecha y el texto anterior.",
+  "retoques": {
+    "ACEA C1": {
+      "description": "Aceite motor Low-SAPS de baja viscosidad (HTHS bajo), diseñado para proteger los filtros de partículas (DPF/FAP) y catalizadores en motores de gasolina y diésel modernos. Normalmente para Ford, Mazda y Jaguar Land Rover",
+      "fecha": "2026-10-23",
+      "anterior": "Aceites motor Low SAPS de baja viscosidad HTHS (Ford EcoBoost)",
+      "motivo": "Yakoba: ese texto, que había escrito por error en ACEA A1, es el que corresponde a C1"
+    }
+  }
+}

@@ -76,6 +76,17 @@
           "excel": "SNPLUS"
         }
       ]
+    },
+    {
+      "id": "TARIFA-ADP10508",
+      "fecha": "2026-10-23",
+      "texto": "En la tarifa de AD Parts, ADP10508 dice «OCRE 5L PALET»; en realidad es AD NEW PLUS 50% AZUL de 1000 L (confirmado por Yakoba). Errata de la tarifa; el buscador ya lo tenía bien.",
+      "filtro": {
+        "marca": "AD Refrigerantes",
+        "ref_regex": "^ADP10508$"
+      },
+      "desc": "REFRIGERANTE ORGÁNICO 50% AZUL 1000L",
+      "litros": "1000"
     }
   ],
   "correcciones_excel": [
