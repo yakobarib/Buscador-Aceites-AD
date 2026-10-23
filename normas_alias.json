@@ -137,5 +137,6 @@
   "_excluir_del_puente": [],
   "_comentario_excluir": "Normas del catalogo AD Parts que build_bridge.py NO incorpora al buscador (vacio: MUY TYPE 3.1 era MTU Type 3.1, confirmado por Yakoba el 2026-10-23).",
   "MUY TYPE 3.1": "MTU Type 3.1",
-  "ALISON C4": "ALLISON C-4"
+  "ALISON C4": "ALLISON C-4",
+  "DESX III H": "GM DEXRON III H"
 }
