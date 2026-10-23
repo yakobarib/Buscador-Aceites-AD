@@ -1,8 +1,33 @@
-código de familia ambiguo: Grasa Spray  []
-código de familia ambiguo: GLIT NLGI2  []
-código de familia ambiguo: GLMO NLGI2  []
-código de familia ambiguo: GRL-00 NLGI00  []
-código de familia ambiguo: GLAT NLGI2  []
+familia sin código de formato (Grasa Spray ): enlazadas sus 1 referencias sin formato
+familia sin código de formato (GLIT NLGI2 ): enlazadas sus 4 referencias sin formato
+familia sin código de formato (GLMO NLGI2 ): enlazadas sus 5 referencias sin formato
+familia sin código de formato (GRL-00 NLGI00 ): enlazadas sus 3 referencias sin formato
+familia sin código de formato (GLAT NLGI2 ): enlazadas sus 5 referencias sin formato
+refrigerante de la tarifa sin familia en el buscador: ADP10301 «REFRIGERANTE STANDARD 30% VERDE 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP15301 «REFRIGERANTE STANDARD 30% VERDE 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADP10302 «REFRIGERANTE STANDARD 30% ROSA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP15302 «REFRIGERANTE STANDARD 30% ROSA 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADP10502 «REFRIGEANTE ORGÁNICO 50% ROSA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP10503 «REFRIGEANTE ORGÁNICO 50% OCRE 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP10508 «REFRIGEANTE ORGÁNICO 50% OCRE 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADP55601 «AD48 (G11) HOAT HYBRID ORGANICO 50% AZUL 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP55602 «AD40 (G12++) SI-OAT ORGANICO 50% MAGENTA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP55603 «REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP55503 «REFRIGERANTE (G13) SI-OAT GLY ORGANICO 50% MAGENTA 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADP55604 «AD65 (G12 EVO) PSI-OAT ORGÁNICO 50% MAGENTA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP55605 «AD ORIGINAL () OAT ORGANICO 50% MAGENTA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP55505 «AD ORIGINAL () OAT ORGANICO 50% MAGENTA 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADP40601 «LIMPIAPARABRISAS 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP45603 «LIMPIAPARABRISAS 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADPADBLUE1000 «ADBLUE GREENCHEN 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST1000 «AGUA DESTILADA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST5 «AGUA DESTILADA 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST1 «AGUA DESTILADA 1L PALET»
+formato añadido: AD SMC 0W20 1 L (ref 79001, solo en el catálogo)
+formato añadido: AD SMC 0W20 1000 L (ref 791000, solo en el catálogo)
+formato añadido: AD SPA 0W20 1 L (ref 78001, solo en el catálogo)
+formato añadido: AD SPA 0W20 1000 L (ref 781000, solo en el catálogo)
+formato añadido: AD SRC4 5W30 1 L (ref 48001, solo en el catálogo)
 norma nueva para el buscador: «ILSAC GF-5» (leída como «ILSAC GF-5»)
 norma nueva para el buscador: «ACEA A1» (leída como «ACEA A1»)
 norma nueva para el buscador: «ACEA B1» (leída como «ACEA B1»)
@@ -32,7 +57,7 @@ norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la f
 norma nueva para el buscador: «EO-O» (leída como «EO-O»)
 norma nueva para el buscador: «MAN 3477» (leída como «MAN 3477»)
 norma nueva para el buscador: «MAN 3271-1» (leída como «MAN 3271-1»)
-norma NO incorporada (excluida a mano en normas_alias.json): «MUY TYPE 3.1»
+norma nueva para el buscador: «MTU Type 3.1» (leída como «MUY TYPE 3.1»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «93K222»
 norma nueva para el buscador: «DEUTZ DQC III-10 LA» (leída como «DQC III-10 LA»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «DH-2»
@@ -49,7 +74,7 @@ norma nueva para el buscador: «THPD» (leída como «THPD»)
 norma nueva para el buscador: «Volvo VDS-4/VDS-4.5» (leída como «Volvo VDS-4/VDS-4.5»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «TO-2»
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «MAN 339 V-1/339 Z-1/339 Z-2/339 Z-11/339 L-1»
-errata corregida: «ALISON C4» se trata como «ALLISON C-4»
+norma nueva para el buscador: «ALLISON C-4» (leída como «ALISON C4»)
 norma nueva para el buscador: «TES 295» (leída como «TES 295»)
 norma nueva para el buscador: «TES 389» (leída como «TES 389»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «AT101»
@@ -90,7 +115,6 @@ norma nueva para el buscador: «API GL-5 LS» (leída como «API GL-5 LS»)
 norma nueva para el buscador: «UTTO THF» (leída como «UTTO THF»)
 norma nueva para el buscador: «CNH MAT 3525» (leída como «CNH MAT 3525»)
 norma nueva para el buscador: «Massey Ferguson M1141» (leída como «Massey Ferguson M1141»)
-errata corregida: «ALISON C4» se trata como «ALLISON C-4»
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 03E/05F/17E/21F»
 norma nueva para el buscador: «API CF4» (leída como «API CF4»)
 norma nueva para el buscador: «FORD M2C-159B/C» (leída como «FORD M2C-159B/C»)
@@ -117,4 +141,10 @@ norma nueva para el buscador: «FDA» (leída como «FDA»)
 norma nueva para el buscador: «USP» (leída como «USP»)
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ISO6743/1-AN»
 norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «DIN51501L-AN»
+norma nueva para el buscador: «DIN 51825 KP0K-20» (leída como «DIN 51825 KP0K-20»)
+norma nueva para el buscador: «DIN 51825 K2K-20» (leída como «DIN 51825 K2K-20»)
+norma nueva para el buscador: «DIN 51825 KPF2K-20» (leída como «DIN 51825 KPF2K-20»)
+norma nueva para el buscador: «DIN 51825 KP00K-20» (leída como «DIN 51825 KP00K-20»)
 norma nueva para el buscador: «DIN 51825 KP2N-20» (leída como «DIN 51825 KP2N-20»)
+norma nueva para el buscador: «DIN 51825 KP2K-20» (leída como «DIN 51825 KP2K-20»)
+descripciones de normas: 0 de 85 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

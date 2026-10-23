@@ -28,7 +28,12 @@
 "DEXOSD": "DEXOS D",
 "DIN515242HLP": "DIN 51524-2 HLP",
 "DIN515243HVLP": "DIN 51524-3 HVLP",
+"DIN51825K2K20": "DIN 51825 K2K-20",
+"DIN51825KP00K20": "DIN 51825 KP00K-20",
+"DIN51825KP0K20": "DIN 51825 KP0K-20",
+"DIN51825KP2K20": "DIN 51825 KP2K-20",
 "DIN51825KP2N20": "DIN 51825 KP2N-20",
+"DIN51825KPF2K20": "DIN 51825 KPF2K-20",
 "DQCIII10LA": "DEUTZ DQC III-10 LA",
 "DQCIV10": "DEUTZ DQC IV-10",
 "EOO": "EO-O",
@@ -59,6 +64,8 @@
 "MASSEYFERGUSONM1141": "Massey Ferguson M1141",
 "MERCON": "Mercon",
 "MITSUBISHISPIISPIII": "Mitsubishi SP-II/SP-III",
+"MTUTYPE31": "MTU Type 3.1",
+"MUYTYPE31": "MTU Type 3.1",
 "NSFH1": "NSF H1",
 "RENAULT0700": "Renault 0700",
 "RENAULT0710": "Renault 0710",
@@ -130,6 +137,11 @@
 "description": "Norma AFNOR NF-E 48-690 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
 "tipo": "hidraulico"
+},
+"ALLISON C-4": {
+"description": "Norma ALLISON C-4 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
+"tipo": "transmision"
 },
 "API CF4": {
 "description": "Norma API CF4 (dato del catálogo AD Parts; sin descripción curada todavía)",
@@ -206,8 +218,33 @@
 "segment": "industrial",
 "tipo": "hidraulico"
 },
+"DIN 51825 K2K-20": {
+"description": "Norma DIN 51825 K2K-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
+"DIN 51825 KP00K-20": {
+"description": "Norma DIN 51825 KP00K-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
+"DIN 51825 KP0K-20": {
+"description": "Norma DIN 51825 KP0K-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
+"DIN 51825 KP2K-20": {
+"description": "Norma DIN 51825 KP2K-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
 "DIN 51825 KP2N-20": {
 "description": "Norma DIN 51825 KP2N-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "industrial",
+"tipo": "grasa"
+},
+"DIN 51825 KPF2K-20": {
+"description": "Norma DIN 51825 KPF2K-20 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "industrial",
 "tipo": "grasa"
 },
@@ -333,6 +370,11 @@
 },
 "MAN 3775": {
 "description": "Norma MAN 3775 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "pesado",
+"tipo": "motor"
+},
+"MTU Type 3.1": {
+"description": "Norma MTU Type 3.1 (dato del catálogo AD Parts; sin descripción curada todavía)",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -848,8 +890,20 @@
 "VW 504.00",
 "VW 507.00"
 ],
+"ADP60510": [
+"DIN 51825 KP2K-20"
+],
 "ADP60520": [
 "DIN 51825 KP2N-20"
+],
+"ADP60530": [
+"DIN 51825 K2K-20"
+],
+"ADP60540": [
+"DIN 51825 KPF2K-20"
+],
+"ADP60550": [
+"DIN 51825 KP00K-20"
 ],
 "ADP61005": [
 "API SN RC",
@@ -909,6 +963,7 @@
 "MAN 3777",
 "MB 228.31",
 "MB 228.51",
+"MTU Type 3.1",
 "RENAULT RGD",
 "RENAULT RLD-2",
 "RENAULT RLD-3",
@@ -922,6 +977,9 @@
 "ACEA C2",
 "API SP",
 "PSA B71 2312"
+],
+"ADP66501": [
+"DIN 51825 KP0K-20"
 ],
 "ADP67005": [
 "ACEA A1",
