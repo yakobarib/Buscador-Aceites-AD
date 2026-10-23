@@ -1,0 +1,142 @@
+{
+  "_comentario": "Equivalencias de normas CONFIRMADAS por Yakoba (oct 2026). Formato: grafia_variante -> grafia_canonica. Las diferencias solo de espacios, guiones, puntos o mayusculas se unifican solas y no hace falta listarlas aqui. Anadir solo cuando el usuario confirme que dos nombres distintos son lo mismo.",
+  "ASTM 6210": "ASTM D6210",
+  "LHM Plus": "LHM+",
+  "BMW LL-04": "BMW Longlife-04",
+  "_prefijos_equivalentes": [
+    [
+      "DAIMLER TRUCK DTFR",
+      "DTFR"
+    ],
+    [
+      "CUMMINS CES",
+      "CES"
+    ],
+    [
+      "DEUTZ DQC",
+      "DQC"
+    ],
+    [
+      "ARVIN MERITOR",
+      "ARVIN"
+    ],
+    [
+      "MB",
+      "MB-Approval"
+    ],
+    [
+      "NEW HOLLAND-FNHA",
+      "NEW HOLLAND-FNHA FNHA",
+      "FNHA"
+    ],
+    [
+      "DETROIT DIESEL DFS",
+      "DTNA DFS"
+    ],
+    [
+      "JLR",
+      "JAGUAR LAND ROVER",
+      "JAGUAR-LAND ROVER",
+      "Jaguar"
+    ],
+    [
+      "CATERPILLAR",
+      "CAT"
+    ]
+  ],
+  "_palabras_relleno": [
+    [
+      "CATERPILLAR",
+      "CAT"
+    ],
+    [
+      "FIAT",
+      "Meets FIAT"
+    ],
+    [
+      "FORD",
+      "Spec"
+    ],
+    [
+      "BERGEN-ROLLS",
+      "Engines"
+    ],
+    [
+      "MAN",
+      "M"
+    ],
+    [
+      "RENAULT",
+      "VI"
+    ],
+    [
+      "RENAULT",
+      "Trucks"
+    ]
+  ],
+  "_palabras_omitidas": [
+    [
+      "CUMMINS",
+      "CES"
+    ],
+    [
+      "DETROIT DIESEL",
+      "DFS"
+    ]
+  ],
+  "_prefijos_decorativos": [
+    "API",
+    "VW",
+    "AUDI",
+    "SEAT",
+    "ŠKODA",
+    "SKODA",
+    "TESLA",
+    "DAEWOO",
+    "ESSO"
+  ],
+  "_implica": {
+    "API GL-5 LS": [
+      "API GL-5"
+    ]
+  },
+  "_comentario_reglas": "Confirmadas por Yakoba 2026-10-22. _prefijos_equivalentes: [canonico, variantes...]. _palabras_relleno: [marca, palabra que sobra]. _palabras_omitidas: [marca, palabra que a veces falta antes de un numero]. _prefijos_decorativos: si el mismo codigo con letras aparece con varios de estos fabricantes delante (API DCTF-2, VW DCTF-2) la norma es el codigo suelto. _implica: una norma que incluye a otra (GL-5 LS es GL-5 + autoblocante). 2026-10-22: MAN M x = MAN x (la M es MAN abreviado); VI = vehiculo industrial, no es de la norma (RENAULT VI RLD-2 = RENAULT RLD-2); VOLVO sobra delante de Mack y Renault; G12/G12+/G12++ son normas, VW y 'Refrigerante' delante sobran; CAT = Caterpillar. 2026-10-22: HLP2/HVLP3 = DIN 51524 partes 2 y 3; DEX = GM DEXRON (ATF de General Motors); DSG/DCT/CVT son tipo de cambio, no normas.",
+  "_prefijos_sobrantes": [
+    [
+      "VOLVO",
+      "Mack"
+    ],
+    [
+      "VOLVO",
+      "Renault"
+    ],
+    [
+      "Refrigerante",
+      "G1"
+    ],
+    [
+      "VW",
+      "G1"
+    ]
+  ],
+  "HLP2": "DIN 51524-2 HLP",
+  "HLP 2": "DIN 51524-2 HLP",
+  "DIN 51524-HLP": "DIN 51524-2 HLP",
+  "HVLP3": "DIN 51524-3 HVLP",
+  "HVLP 3": "DIN 51524-3 HVLP",
+  "HLP3": "DIN 51524-3 HVLP",
+  "DIN 51524-HVLP": "DIN 51524-3 HVLP",
+  "DIN parte 3 HVLP": "DIN 51524-3 HVLP",
+  "DEX II D": "GM DEXRON II D",
+  "DEXRON II D": "GM DEXRON II D",
+  "DEX III H": "GM DEXRON III H",
+  "DEX III H MULTI": "GM DEXRON III H",
+  "DEXRON III H": "GM DEXRON III H",
+  "DEX VI": "GM DEXRON VI",
+  "Dexron VI": "GM DEXRON VI",
+  "_excluir_del_puente": [],
+  "_comentario_excluir": "Normas del catalogo AD Parts que build_bridge.py NO incorpora al buscador (vacio: MUY TYPE 3.1 era MTU Type 3.1, confirmado por Yakoba el 2026-10-23).",
+  "MUY TYPE 3.1": "MTU Type 3.1",
+  "ALISON C4": "ALLISON C-4",
+  "DESX III H": "GM DEXRON III H"
+}

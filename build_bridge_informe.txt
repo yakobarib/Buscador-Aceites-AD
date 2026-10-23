@@ -1,0 +1,152 @@
+familia sin código de formato (Grasa Spray ): enlazadas sus 1 referencias sin formato
+familia sin código de formato (GLIT NLGI2 ): enlazadas sus 4 referencias sin formato
+familia sin código de formato (GLMO NLGI2 ): enlazadas sus 5 referencias sin formato
+familia sin código de formato (GRL-00 NLGI00 ): enlazadas sus 3 referencias sin formato
+familia sin código de formato (GLAT NLGI2 ): enlazadas sus 5 referencias sin formato
+refrigerante de la tarifa sin familia en el buscador: ADP40601 «LIMPIAPARABRISAS 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADP45603 «LIMPIAPARABRISAS 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADPADBLUE1000 «ADBLUE GREENCHEN 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST1000 «AGUA DESTILADA 1000L»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST5 «AGUA DESTILADA 5L PALET»
+refrigerante de la tarifa sin familia en el buscador: ADPADADEST1 «AGUA DESTILADA 1L PALET»
+formato añadido: AD SMC 0W20 1 L (ref 79001, solo en el catálogo)
+formato añadido: AD SMC 0W20 1000 L (ref 791000, solo en el catálogo)
+formato añadido: AD SPA 0W20 1 L (ref 78001, solo en el catálogo)
+formato añadido: AD SPA 0W20 1000 L (ref 781000, solo en el catálogo)
+formato añadido: AD SRC4 5W30 1 L (ref 48001, solo en el catálogo)
+familia de refrigerante AÑADIDA al buscador: AD ESTÁNDAR 30% Verde (ADP15301, alt. ADP10301) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15301 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361; 
+familia de refrigerante AÑADIDA al buscador: AD ESTÁNDAR 30% Rosa (ADP15302, alt. ADP10302) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15302 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361) 
+familia de refrigerante AÑADIDA al buscador: AD40 + GLYCEROL (G13) (ADP55503, alt. ADP55603) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55503 ('ORIGINAL AD 40 + GLYCEROL 50%': ASTM D3306,
+familia de refrigerante AÑADIDA al buscador: AD NEW PLUS 50% Magenta (ADP55505, alt. ADP55605) · fuente: FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55505 ('ORIGINAL AD NEW PLUS 50%': homologaciones V
+norma nueva para el buscador: «ILSAC GF-5» (leída como «ILSAC GF-5»)
+norma nueva para el buscador: «ACEA A1» (leída como «ACEA A1»)
+norma nueva para el buscador: «ACEA B1» (leída como «ACEA B1»)
+norma nueva para el buscador: «DEXOS D» (leída como «DEXOS D»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «OV401547»
+norma nueva para el buscador: «JLR STJLR.03.5007» (leída como «JLR STJLR.03.5007»)
+norma nueva para el buscador: «ACEA A5» (leída como «ACEA A5»)
+norma nueva para el buscador: «ACEA B5» (leída como «ACEA B5»)
+norma nueva para el buscador: «JLR STJLR.03.5004» (leída como «JLR STJLR.03.5004»)
+norma nueva para el buscador: «JLR STJLR.03.5005» (leída como «JLR STJLR.03.5005»)
+norma nueva para el buscador: «Stellantis FPW9.55535» (leída como «Stellantis FPW9.55535»)
+norma nueva para el buscador: «Stellantis FPW03» (leída como «Stellantis FPW03»)
+norma nueva para el buscador: «ACEA A3» (leída como «ACEA A3»)
+norma nueva para el buscador: «ACEA B4» (leída como «ACEA B4»)
+norma nueva para el buscador: «Ford WSS-M2C-913-C/D» (leída como «Ford WSS-M2C-913-C/D»)
+norma nueva para el buscador: «JLR STJLR 03.5003» (leída como «JLR STJLR 03.5003»)
+norma nueva para el buscador: «Renault 0700» (leída como «Renault 0700»)
+norma nueva para el buscador: «Renault 0710» (leída como «Renault 0710»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «B712296-18»
+norma nueva para el buscador: «MAN 3277» (leída como «MAN 3277»)
+norma nueva para el buscador: «DEUTZ DQC IV-10» (leída como «DQC IV-10»)
+norma nueva para el buscador: «ACEA E8» (leída como «ACEA E8»)
+norma nueva para el buscador: «API CJ» (leída como «API CJ»)
+norma nueva para el buscador: «MAN 3677» (leída como «MAN 3677»)
+norma nueva para el buscador: «MAN 3775» (leída como «MAN 3775»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «CATERPILLAR ECF-3/ECF-2/ECF-1-A»
+norma nueva para el buscador: «EO-O» (leída como «EO-O»)
+norma nueva para el buscador: «MAN 3477» (leída como «MAN 3477»)
+norma nueva para el buscador: «MAN 3271-1» (leída como «MAN 3271-1»)
+norma nueva para el buscador: «MTU Type 3.1» (leída como «MUY TYPE 3.1»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «93K222»
+norma nueva para el buscador: «DEUTZ DQC III-10 LA» (leída como «DQC III-10 LA»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «DH-2»
+norma nueva para el buscador: «MAN 3575» (leída como «MAN 3575»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «93K218»
+norma nueva para el buscador: «CUMMINS CES 20072» (leída como «CES 20072»)
+norma nueva para el buscador: «JASO DHD-1» (leída como «JASO DHD-1»)
+norma nueva para el buscador: «SHPD» (leída como «SHPD»)
+norma nueva para el buscador: «Renault RLD» (leída como «Renault RLD»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «20076/20077/20078»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «93K2115»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «3275-1»
+norma nueva para el buscador: «THPD» (leída como «THPD»)
+norma nueva para el buscador: «Volvo VDS-4/VDS-4.5» (leída como «Volvo VDS-4/VDS-4.5»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «TO-2»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «MAN 339 V-1/339 Z-1/339 Z-2/339 Z-11/339 L-1»
+norma nueva para el buscador: «ALLISON C-4» (leída como «ALISON C4»)
+norma nueva para el buscador: «TES 295» (leída como «TES 295»)
+norma nueva para el buscador: «TES 389» (leída como «TES 389»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «AT101»
+norma nueva para el buscador: «VOITH 55.6336» (leída como «VOITH 55.6336»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 03D/04D/14B/16L/17C/20B/25B»
+norma nueva para el buscador: «Mercon» (leída como «Mercon»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «Allison C4, MB 236.9»
+norma nueva para el buscador: «VOITH H55.6335» (leída como «VOITH H55.6335»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «MAN 339 V-1/339 Z1/339 L-2»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 03D/04D/11A/14A/17C»
+norma nueva para el buscador: «JASO 1A-03» (leída como «JASO 1A-03»)
+norma nueva para el buscador: «ATF +3/+4» (leída como «ATF +3/+4»)
+norma nueva para el buscador: «ATF D II Multi» (leída como «ATF D II Multi»)
+norma nueva para el buscador: «ATF D III Multi» (leída como «ATF D III Multi»)
+norma nueva para el buscador: «GM DEXRON III H» (leída como «DESX III H»)
+norma nueva para el buscador: «Toyota T-II/T-IV» (leída como «Toyota T-II/T-IV»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «Nissan Mactic-D/J/K»
+norma nueva para el buscador: «Mitsubishi SP-II/SP-III» (leída como «Mitsubishi SP-II/SP-III»)
+norma nueva para el buscador: «Suzuki ATF 3317» (leída como «Suzuki ATF 3317»)
+norma nueva para el buscador: «Jaso M315-2004» (leída como «Jaso M315-2004»)
+norma nueva para el buscador: «VOLVO 97305» (leída como «VOLVO 97305»)
+norma nueva para el buscador: «RENAULT B0032/2 ANNEX 3» (leída como «RENAULT B0032/2 ANNEX 3»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «341 E-3»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 01L/02L/08/16K»
+norma nueva para el buscador: «SAE J2360» (leída como «SAE J2360»)
+norma nueva para el buscador: «STO 1:0» (leída como «STO 1:0»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 02B/B05A/07A/08/12L/12N»
+norma nueva para el buscador: «MAN 341 Z2» (leída como «MAN 341 Z2»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «342 S1»
+norma nueva para el buscador: «ARVIN MERITOR 0-76-N» (leída como «ARVIN 0-76-N»)
+norma nueva para el buscador: «ZF» (leída como «ZF»)
+norma nueva para el buscador: «MAN 342 M1» (leída como «MAN 342 M1»)
+norma nueva para el buscador: «Renault Axles» (leída como «Renault Axles»)
+norma nueva para el buscador: «VOITH 132.00374400» (leída como «VOITH 132.00374400»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 07A/08/16B/16C/17B/19B/21A»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 05A/07A/08/12E/16C/16D/21A»
+norma nueva para el buscador: «API GL-5 LS» (leída como «API GL-5 LS»)
+norma nueva para el buscador: «UTTO THF» (leída como «UTTO THF»)
+norma nueva para el buscador: «CNH MAT 3525» (leída como «CNH MAT 3525»)
+norma nueva para el buscador: «Massey Ferguson M1141» (leída como «Massey Ferguson M1141»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 03E/05F/17E/21F»
+norma nueva para el buscador: «API CF4» (leída como «API CF4»)
+norma nueva para el buscador: «FORD M2C-159B/C» (leída como «FORD M2C-159B/C»)
+norma nueva para el buscador: «VARIO» (leída como «VARIO»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «M1144»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «M1145»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ZF TE-ML 06B/06C/07B»
+norma nueva para el buscador: «ISO 6743/4 HM» (leída como «ISO 6743/4 HM»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «11158 HM»
+norma nueva para el buscador: «DIN 51524-2 HLP» (leída como «DIN 51524-2 HLP»)
+norma nueva para el buscador: «AFNOR NF-E 48-603 HL» (leída como «AFNOR NF-E 48-603 HL»)
+norma nueva para el buscador: «HM NF-E 48-690» (leída como «HM NF-E 48-690»)
+norma nueva para el buscador: «HM NF-E 18-691» (leída como «HM NF-E 18-691»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ISO6743/4-HV»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «11158 HV»
+norma nueva para el buscador: «DIN 51524-3 HVLP» (leída como «DIN 51524-3 HVLP»)
+norma nueva para el buscador: «AFNOR NF-E 48-690» (leída como «AFNOR NF-E 48-690»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «48-691»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «48-603 HV»
+norma nueva para el buscador: «MAGIAS P-70» (leída como «MAGIAS P-70»)
+norma nueva para el buscador: «MAGIAS P-69» (leída como «MAGIAS P-69»)
+norma nueva para el buscador: «NSF H1» (leída como «NSF H1»)
+norma nueva para el buscador: «FDA» (leída como «FDA»)
+norma nueva para el buscador: «USP» (leída como «USP»)
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «ISO6743/1-AN»
+norma NO incorporada (fragmento, cadena compuesta o posible errata; revisar la fuente): «DIN51501L-AN»
+norma nueva para el buscador: «DIN 51825 KP0K-20» (leída como «DIN 51825 KP0K-20»)
+norma nueva para el buscador: «DIN 51825 K2K-20» (leída como «DIN 51825 K2K-20»)
+norma nueva para el buscador: «DIN 51825 KPF2K-20» (leída como «DIN 51825 KPF2K-20»)
+norma nueva para el buscador: «DIN 51825 KP00K-20» (leída como «DIN 51825 KP00K-20»)
+norma nueva para el buscador: «DIN 51825 KP2N-20» (leída como «DIN 51825 KP2N-20»)
+norma nueva para el buscador: «DIN 51825 KP2K-20» (leída como «DIN 51825 KP2K-20»)
+norma nueva para el buscador: «UNE 26-361» (leída como «UNE 26-361»)
+norma nueva para el buscador: «ASTM D3306» (leída como «ASTM D3306»)
+norma nueva para el buscador: «CUNA NC 956-16» (leída como «CUNA NC 956-16»)
+norma nueva para el buscador: «BS 6580:2010» (leída como «BS 6580:2010»)
+norma nueva para el buscador: «MAN 324 Type SNF» (leída como «MAN 324 Type SNF»)
+norma nueva para el buscador: «DAIMLER TRUCK DTFR 29C110» (leída como «DTFR 29C110»)
+norma nueva para el buscador: «ASTM D4985» (leída como «ASTM D4985»)
+norma nueva para el buscador: «SAE J1034» (leída como «SAE J1034»)
+norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-601»)
+norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
+norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
+norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
+descripciones de normas: 86 de 97 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

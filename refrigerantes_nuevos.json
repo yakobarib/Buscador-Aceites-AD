@@ -1,0 +1,38 @@
+{
+  "_comentario": "Familias de refrigerante que figuran en la tarifa AD Parts de abril de 2026 y NO estaban en el buscador (2026-10-23). Cada dato sale de la ficha tecnica citada en 'fuente'; las referencias ADP salen de 'Productos AD Parts Refrigerantes Abril 2026.xlsx'. build_bridge.py las incorpora a AD_PARTS_CATALOG.",
+  "familias": [
+    {
+      "ref": "AD ESTÁNDAR 30% Verde",
+      "sku": "ADP15301",
+      "altSkus": ["ADP10301"],
+      "formats": [5, 1000],
+      "normas": ["UNE 26-361"],
+      "fuente": "FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15301 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361; color verde o rosa fluorescente) · tarifa ADP15301 (5 L) y ADP10301 (1000 L)"
+    },
+    {
+      "ref": "AD ESTÁNDAR 30% Rosa",
+      "sku": "ADP15302",
+      "altSkus": ["ADP10302"],
+      "formats": [5, 1000],
+      "normas": ["UNE 26-361"],
+      "fuente": "FICHAS TÉCNICAS/AD PARTS/Refrigerantes/15302 (ficha 'AD ESTÁNDAR 30%': cumple UNE 26-361) · tarifa ADP15302 (5 L) y ADP10302 (1000 L)"
+    },
+    {
+      "ref": "AD40 + GLYCEROL (G13)",
+      "sku": "ADP55503",
+      "altSkus": ["ADP55603"],
+      "formats": [5, 1000],
+      "normas": ["G13", "VW TL 774-J", "ASTM D3306", "CUNA NC 956-16", "BS 6580:2010"],
+      "fuente": "FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55503 ('ORIGINAL AD 40 + GLYCEROL 50%': ASTM D3306, CUNA NC 956-16, BS 6580:2010, VW TL-774-J (G13); color magenta) · tarifa ADP55503 (5 L) y ADP55603 (1000 L)"
+    },
+    {
+      "ref": "AD NEW PLUS 50% Magenta",
+      "sku": "ADP55505",
+      "altSkus": ["ADP55605"],
+      "formats": [5, 1000],
+      "normas": ["VW TL 774-D", "VW TL 774-F", "DEUTZ DQC CB-14", "MAN 324 Type SNF", "DTFR 29C110", "ASTM D3306", "ASTM D4985", "SAE J1034",
+                 "CUNA NC 956-16", "AFNOR NFR 15-601", "JIS K 2234:2006", "SANS 1251:2005", "GB 29743-2013", "BS 6580:2010"],
+      "fuente": "FICHAS TÉCNICAS/AD PARTS/Refrigerantes/55505 ('ORIGINAL AD NEW PLUS 50%': homologaciones VW TL-774-D/F, DEUTZ DQC CB-14, MAN 324 Typ SNF, DTFR 29C110; color magenta) · tarifa lo llama 'AD ORIGINAL () OAT' ADP55505 (5 L) y ADP55605 (1000 L)"
+    }
+  ]
+}

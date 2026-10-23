@@ -1,0 +1,92 @@
+{
+  "_comentario": "Decisiones CONFIRMADAS por Yakoba sobre datos en conflicto entre fuentes. build_wiki.py las aplica en la wiki (los Excel/PDF originales NO se tocan) y las deja listadas en lint.md. Campos: filtro (marca, ref_regex, desc_regex, familia = nombre de pagina de la familia AD), y efecto: visc | api_sustituir | prevalece_ficha_acea.",
+  "decisiones": [
+    {
+      "id": "AD-67xxx-ACEA",
+      "fecha": "2026-10-21",
+      "texto": "Los AD Parts 67xxx (AD SCA 0W20) son ACEA C5/C6 según su ficha técnica, que manda. El catálogo AD Parts y la matriz de equivalencias dicen A1/B1: ese dato está mal en esos Excel.",
+      "filtro": {
+        "marca": "AD Parts",
+        "ref_regex": "^67"
+      },
+      "familias": [
+        "AD SCA 0W20"
+      ],
+      "prevalece_ficha_acea": true
+    },
+    {
+      "id": "AD-AGR-STOU-API",
+      "fecha": "2026-10-21",
+      "texto": "En la ficha de AD AGR STOU 15W40 aparece API CG-4; es un error de la ficha: se trata como CF-4 (como dice el catálogo).",
+      "filtro": {
+        "familia": "AD AGR STOU 15W40"
+      },
+      "api_sustituir": {
+        "CG-4": "CF-4"
+      }
+    },
+    {
+      "id": "AD-69xxx-SAE",
+      "fecha": "2026-10-21",
+      "texto": "El grado SAE correcto de AD SCV (69xxx) es 0W30, como dicen la ficha, el registro general y la matriz. La descripción «SCV 5W30» de la lista de precios de AD Parts es errónea.",
+      "filtro": {
+        "marca": "AD Parts",
+        "ref_regex": "^69",
+        "desc_regex": "^SCV"
+      },
+      "visc": "0W30"
+    },
+    {
+      "id": "AD-54xxx-API",
+      "fecha": "2026-10-21",
+      "texto": "Los AD Parts 54xxx (AD SHP Plus 75W80) cumplen API GL-4 y GL-5: la ficha dice GL-4 y el catálogo GL-5, y se fusionan ambos valores.",
+      "filtro": {
+        "marca": "AD Parts",
+        "ref_regex": "^54"
+      },
+      "familias": [
+        "AD SHP Plus 75W80"
+      ],
+      "api_union": [
+        "GL-4",
+        "GL-5"
+      ]
+    },
+    {
+      "id": "REPSOL-MOTO4T-API",
+      "fecha": "2026-10-21",
+      "texto": "Las fichas de varios aceites de moto 4T (gama Extreme) dicen API SL pero son anteriores a una actualización del producto: la categoría vigente es API SP, como dice Repsol Homologaciones.xlsx y confirma la web de Repsol.",
+      "filtro": {
+        "marca": "Repsol"
+      },
+      "api_ficha_a_excel": {
+        "SL": "SP"
+      }
+    },
+    {
+      "id": "REPSOL-API-SP-FICHA",
+      "fecha": "2026-10-21",
+      "texto": "Cuando la ficha dice API SP y Repsol Homologaciones.xlsx dice API SN PLUS, se mantiene la ficha: API SP.",
+      "filtro": {
+        "marca": "Repsol"
+      },
+      "api_ficha_manda": [
+        {
+          "ficha": "SP",
+          "excel": "SNPLUS"
+        }
+      ]
+    }
+  ],
+  "correcciones_excel": [
+    {
+      "id": "REPSOL-HOM-CL4",
+      "fecha": "2026-10-21",
+      "libro": "Repsol Homologaciones.xlsx",
+      "campo": "api",
+      "de": "Cl-4",
+      "a": "CI-4",
+      "texto": "En Repsol Homologaciones.xlsx aparece «Cl-4» (con ele minúscula); es un error de escritura y es CI-4."
+    }
+  ]
+}
