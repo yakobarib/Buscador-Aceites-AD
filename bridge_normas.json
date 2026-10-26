@@ -393,7 +393,7 @@
 "tipo": "refrigerante"
 },
 "MAN 3271-1": {
-"description": "Lubricante sintético de muy alto rendimiento y bajas cenizas (Low SAPS) para diésel pesado y vehículos comerciales Euro VI y anteriores, compatible con filtros de partículas y apto para intervalos largos de cambio",
+"description": "Especificación MAN para aceites de motor diésel pesado de camión y autobús: bajas cenizas (Low SAPS), compatibles con filtros de partículas, para motores Euro VI y anteriores",
 "segment": "pesado",
 "tipo": "motor"
 },
