@@ -151,4 +151,4 @@ norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-6
 norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
 norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
 norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
-descripciones de normas: 84 de 97 escritas por Yakoba en «Descripciones de normas para curar.xlsx»
+descripciones de normas: 86 de 97 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

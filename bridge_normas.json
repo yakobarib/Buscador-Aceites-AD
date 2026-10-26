@@ -378,12 +378,12 @@
 "tipo": "transmision"
 },
 "MAGIAS P-69": {
-"description": "Norma MAGIAS P-69 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Serie de aceites hidráulicos de alta presión tipo HLP, altamente refinados, con aditivos antidesgaste, antioxidantes, antiespumantes y anticorrosivos",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
 "MAGIAS P-70": {
-"description": "Norma MAGIAS P-70 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Serie de aceites hidráulicos de alta presión tipo HLP, altamente refinados, con aditivos antidesgaste, antioxidantes, antiespumantes y anticorrosivos",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
@@ -393,7 +393,7 @@
 "tipo": "refrigerante"
 },
 "MAN 3271-1": {
-"description": "Aceite motor para camión y autobús MAN, especificación M 3271-1",
+"description": "Lubricante sintético de muy alto rendimiento y bajas cenizas (Low SAPS) para diésel pesado y vehículos comerciales Euro VI y anteriores, compatible con filtros de partículas y apto para intervalos largos de cambio",
 "segment": "pesado",
 "tipo": "motor"
 },
