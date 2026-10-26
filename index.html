@@ -3365,7 +3365,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
 </main>
 
 <footer class="demo-footer">
-  <code>DEMO</code> &nbsp;·&nbsp; <span class="app-ver">v33 · 26 oct 2026</span> &nbsp;·&nbsp; Diseñado por <strong>Yakoba Moreno</strong> &nbsp;·&nbsp; Desarrollado en <strong>Claude Code</strong>
+  <code>DEMO</code> &nbsp;·&nbsp; <span class="app-ver">v34 · 26 oct 2026</span> &nbsp;·&nbsp; Diseñado por <strong>Yakoba Moreno</strong> &nbsp;·&nbsp; Desarrollado en <strong>Claude Code</strong>
 </footer>
 
 <!-- Toast de fase -->
@@ -12283,7 +12283,10 @@ function freeSearch(query) {
   const detectedComponents = [];
   for (const [key, comp] of Object.entries(COMPONENT_KNOWLEDGE)) {
     for (const alias of comp.aliases) {
-      if (qNorm.includes(alias.toLowerCase())) {
+      // palabra completa (con plural): evita que 'moto' se detecte dentro de 'motor'
+      const qPal = ' ' + qNorm.replace(/[^a-z0-9]+/g, ' ') + ' ';
+      const aliasPal = alias.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+      if (qPal.includes(' ' + aliasPal + ' ') || qPal.includes(' ' + aliasPal + 's ') || qPal.includes(' ' + aliasPal + 'es ')) {
         detectedComponents.push({ key, comp });
         break;
       }
@@ -12382,7 +12385,7 @@ function freeSearch(query) {
       match: 'needs_clarification',
       query: raw,
       brand: detectedBrand,
-      reason: 'brand_only',
+      reason: /(^|[^a-z0-9])aceites?( de)? motor/.test(qNorm) ? 'engine_oil_brand' : 'brand_only',
     };
   }
 
@@ -13011,6 +13014,23 @@ function renderFreeResult(result) {
       hint.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Tu consulta parecía una norma formal. Lo he procesado como tal.`;
       cont.insertBefore(hint, cont.firstChild);
     }
+    return;
+  }
+
+  if (result.match === 'needs_clarification' && result.reason === 'engine_oil_brand') {
+    target.innerHTML = `
+      <div class="desc-result-container">
+        <div class="desc-result-header">
+          <div class="desc-result-icon warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="desc-result-headinfo">
+            <div class="desc-result-eyebrow warn">Aceite de motor ${result.brand}</div>
+            <div class="desc-result-norm" style="font-family:var(--font-sans);font-size:18px">Falta el modelo y el motor</div>
+            <div class="desc-result-desc">El aceite de motor depende del modelo, el año y el motor. Escribe el vehículo completo (por ejemplo «${result.brand} + modelo + año») o la viscosidad o norma que indica el manual (por ejemplo 0W-20, ACEA C5 o la norma del fabricante).</div>
+          </div>
+        </div>
+      </div>`;
     return;
   }
 
@@ -13829,7 +13849,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v33</span>
+        <span class="about-version">v34</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Diseñado por</strong> Yakoba Moreno</p>
@@ -13854,6 +13874,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
+        <div class="changelog-entry">
+          <div class="changelog-version">v34 <span class="changelog-date">Octubre 2026</span></div>
+          <ul class="changelog-list">
+            <li>Busqueda libre: 'moto' ya no se detecta dentro de 'motor' (palabras clave por palabra completa)</li>
+            <li>Aceite de motor + marca: mensaje que pide modelo y motor en vez de repetir la pregunta</li>
+          </ul>
+        </div>
         <div class="changelog-entry">
           <div class="changelog-version">v33 <span class="changelog-date">Octubre 2026</span></div>
           <ul class="changelog-list">
