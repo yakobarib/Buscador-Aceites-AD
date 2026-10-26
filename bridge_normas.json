@@ -148,7 +148,7 @@
 "tipo": "hidraulico"
 },
 "AFNOR NF-E 48-690": {
-"description": "Norma AFNOR NF-E 48-690 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Norma francesa AFNOR NF E 48-690: método de ensayo de filtrabilidad de aceites hidráulicos minerales, citada por los aceites hidráulicos como prueba superada",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
@@ -323,7 +323,7 @@
 "tipo": "hidraulico"
 },
 "HM NF-E 48-690": {
-"description": "Norma HM NF-E 48-690 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Aceite hidráulico mineral categoría HM (con aditivos antidesgaste) que supera el ensayo de filtrabilidad AFNOR NF E 48-690",
 "segment": "industrial",
 "tipo": "hidraulico"
 },
@@ -533,7 +533,7 @@
 "tipo": "transmision"
 },
 "THPD": {
-"description": "Norma THPD (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Categoría de prestaciones THPD (Top High Performance Diesel): aceites de motor diésel pesado de máxima calidad, por encima de SHPD, para motores Euro VI y EPA 2007",
 "segment": "pesado",
 "tipo": "motor"
 },
@@ -588,7 +588,7 @@
 "tipo": "motor"
 },
 "ZF": {
-"description": "Norma ZF (dato del catálogo AD Parts; sin descripción curada todavía)",
+"description": "Listas ZF de lubricantes aprobados (clasificación TE-ML) para cajas de cambio, ejes y diferenciales de ZF",
 "segment": "pesado",
 "tipo": "transmision"
 }
