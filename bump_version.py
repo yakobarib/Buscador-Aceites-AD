@@ -3,6 +3,7 @@
 Uso:  python bump_version.py "Novedad 1" "Novedad 2" ...      -> v30 pasa a v31 (la siguiente), con la fecha de hoy
       python bump_version.py --version v35 "Novedad"          -> fija un numero concreto
       python bump_version.py --ver                            -> solo dice la version actual
+      python bump_version.py --refrescar-fecha                -> misma version, fecha de hoy
 
 Ejecutalo UNA vez por cada subida a la web, antes del commit. La version actual se lee del panel "Acerca de".
 """
@@ -22,6 +23,15 @@ def main():
     actual = re.search(r'<span class="about-version">(v\d+)</span>', html).group(1)
     if "--ver" in args:
         print(actual)
+        return
+    if "--refrescar-fecha" in args:  # misma version, fecha de hoy (por si la subida se hace otro dia que el bump)
+        hoy = date.today()
+        pie = f"{actual} · {hoy.day} {MESES_CORTOS[hoy.month - 1]} {hoy.year}"
+        html = re.sub(r'<span class="app-ver">.*?</span>', f'<span class="app-ver">{pie}</span>', html, count=1)
+        html = re.sub(r'(<div class="changelog-version">' + actual + r' <span class="changelog-date">)[^<]*(</span>)',
+                      lambda m: m.group(1) + f"{MESES[hoy.month - 1]} {hoy.year}" + m.group(2), html, count=1)
+        RUTA.write_text(html, encoding="utf-8")
+        print(f"fecha refrescada: {pie}")
         return
     nueva = None
     if "--version" in args:
