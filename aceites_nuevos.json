@@ -1,0 +1,19 @@
+{
+  "_comentario": "Familias de aceite AD Parts que todavia NO figuran en el catalogo Excel ni en las tarifas (alta 2026-10-27, confirmada por Yakoba: referencias, formatos y prefijo ADP). Todos los datos salen de la ficha tecnica citada en 'fuente'. build_wiki.py las anade como familias AD y build_bridge.py las incorpora al buscador (AD_PARTS_CATALOG). Cuando salga en tarifa, contrastar y, si coincide, retirar la entrada de aqui.",
+  "familias": [
+    {
+      "tipo": "Motor",
+      "categoria": "Ligero",
+      "producto": "AD SRN",
+      "visc": "5W30",
+      "acea": "C2; C3; A5/B5",
+      "api": "SQ",
+      "homolog": "Renault RN17; Renault RN 0700; Renault RN 0710; MB 229.51; MB 229.52; MB 226.52; PSA B71 2290; FIAT 9.55535 S3",
+      "refs": ["84005", "84208", "841000"],
+      "sku": "ADP84005",
+      "formats": [5, 208, 1000],
+      "fichas": ["84001", "84005", "84208", "841000"],
+      "fuente": "FICHAS TÉCNICAS/AD PARTS/Aceites AD Normal/84005 (las 4 fichas 84001, 84005, 84208 y 841000 son idénticas: 'AD SRN 5W30', ficha 06/2026; aceite sintético Mid SAPS). Formatos y referencias confirmados por Yakoba el 2026-10-27; el formato de 1 L no existe aunque haya ficha 84001."
+    }
+  ]
+}

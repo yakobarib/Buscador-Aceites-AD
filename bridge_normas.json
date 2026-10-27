@@ -73,6 +73,7 @@
 "MAN3677": "MAN 3677",
 "MAN3775": "MAN 3775",
 "MASSEYFERGUSONM1141": "Massey Ferguson M1141",
+"MB22652": "MB 226.52",
 "MERCON": "Mercon",
 "MITSUBISHISPIISPIII": "Mitsubishi SP-II/SP-III",
 "MTUTYPE31": "MTU Type 3.1",
@@ -430,6 +431,11 @@
 "MAN 3775": {
 "description": "Aceite diésel pesado de bajo rozamiento y bajas cenizas (Low-SAPS), nivel API CK-4 y ACEA E8/E11, para motores MAN Euro V y VI",
 "segment": "pesado",
+"tipo": "motor"
+},
+"MB 226.52": {
+"description": "Norma MB 226.52 (dato del catálogo AD Parts; sin descripción curada todavía)",
+"segment": "ligero",
 "tipo": "motor"
 },
 "MTU Type 3.1": {
@@ -1144,6 +1150,21 @@
 "FORD WSS-M2C952-A1",
 "JAGUAR STJLR.03.5006",
 "MB 229.71"
+],
+"ADP84005": [
+"ACEA A5",
+"ACEA B5",
+"ACEA C2",
+"ACEA C3",
+"API SQ",
+"FIAT 9.55535-S3",
+"MB 226.52",
+"MB 229.51",
+"MB 229.52",
+"PSA B71 2290",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"RENAULT RN17"
 ],
 "ADP92005": [
 "ACEA C3",

@@ -227,6 +227,7 @@ def main():
     bw.cargar_listas_simples()
     bw.cargar_refrigerantes_ad()
     bw.cargar_catalogo_ad()
+    bw.cargar_aceites_nuevos()
     app = {a["sku"][3:]: a for a in skus_de_la_app()}  # "61005" -> {sku:"ADP61005", ...}
     informe, mapa, codigo_de_sku, fam_sku = [], {}, {}, []
     for fam in bw.FAMILIAS:

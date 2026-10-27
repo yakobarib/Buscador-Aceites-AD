@@ -361,16 +361,35 @@ def cargar_catalogo_ad():
         fam = dict(tipo=g(0), categoria=g(1), producto=g(2), visc=g(3), acea=g(4), api=g(5), ilsac=g(6),
                    jaso=g(7), homolog=g(8), refs=[r.strip() for r in g(9).split(";") if r.strip()],
                    fila=n, libro=libro.name, nota=nombre_nota(libro, ws.title), hoja=ws.title)
-        fam["normas"] = []
-        for campo, pref, tipo in (("acea", "ACEA", "acea"), ("api", "API", "api"), ("ilsac", "ILSAC", "ilsac"),
-                                  ("jaso", "JASO", "jaso")):
-            for t in lista_plana(fam[campo]):
-                fam["normas"].append((tipo, f"{pref} {t}"))
-        v = visc_de(fam["visc"])
-        if v:
-            fam["normas"].append(("sae", f"SAE {v}"))
-        for t in lista_homologaciones(fam["homolog"]):
-            fam["normas"].append(("homologacion", t))
+        completar_familia(fam)
+        FAMILIAS.append(fam)
+
+
+def completar_familia(fam):
+    fam["normas"] = []
+    for campo, pref, tipo in (("acea", "ACEA", "acea"), ("api", "API", "api"), ("ilsac", "ILSAC", "ilsac"),
+                              ("jaso", "JASO", "jaso")):
+        for t in lista_plana(fam[campo]):
+            fam["normas"].append((tipo, f"{pref} {t}"))
+    v = visc_de(fam["visc"])
+    if v:
+        fam["normas"].append(("sae", f"SAE {v}"))
+    for t in lista_homologaciones(fam["homolog"]):
+        fam["normas"].append(("homologacion", t))
+
+
+def cargar_aceites_nuevos():
+    """Familias AD de aceite que aun no estan en el catalogo Excel ni en tarifa (aceites_nuevos.json)."""
+    ruta = RAIZ / "aceites_nuevos.json"
+    if not ruta.exists():
+        return
+    for d in json.loads(ruta.read_text(encoding="utf-8"))["familias"]:
+        fam = dict(tipo=d["tipo"], categoria=d["categoria"], producto=d["producto"], visc=d["visc"],
+                   acea=d.get("acea", ""), api=d.get("api", ""), ilsac=d.get("ilsac", ""), jaso=d.get("jaso", ""),
+                   homolog=d.get("homolog", ""), refs=list(d["refs"]), fila=0, libro="aceites_nuevos.json",
+                   nota="FUENTES_MD/FICHAS TÉCNICAS/AD PARTS/Aceites AD Normal/84005", hoja="familias", fuente_nueva=d["fuente"],
+                   fichas_extra=[x for x in d.get("fichas", []) if x not in d["refs"]])
+        completar_familia(fam)
         FAMILIAS.append(fam)
 
 
@@ -484,7 +503,7 @@ def con_implicadas(pares):
 
 # ---------------------------------------------------------------- construccion
 def main():
-    for c in (cargar_listas_simples, cargar_febi, cargar_tcmatic, cargar_refrigerantes_ad, cargar_catalogo_ad,
+    for c in (cargar_listas_simples, cargar_febi, cargar_tcmatic, cargar_refrigerantes_ad, cargar_catalogo_ad, cargar_aceites_nuevos,
               cargar_homologaciones_repsol,
               cargar_equivalencias, cargar_equiv_bloques, cargar_febi_tcmatic):
         c()
@@ -606,7 +625,7 @@ def main():
     bajo = {(m, r.lower()): ps for (m, r), ps in POR_REF.items()}
     fam_por_ref = defaultdict(list)
     for fam in FAMILIAS:
-        for r in fam["refs"]:
+        for r in fam["refs"] + fam.get("fichas_extra", []):
             fam_por_ref[r.lower()].append(fam)
     REGLAS = {"AD PARTS/Aceites AD Normal": ("AD Parts", ""), "AD PARTS/Aceites AD Standard": ("AD Standard", ""),
               "AD PARTS/Refrigerantes": ("AD Refrigerantes", "ADP"), "REPSOL/Aceites Ligero": ("Repsol", ""),
@@ -925,6 +944,8 @@ def main():
         return f"[[{n}]]" if not lit or fichero(lit) == n else f"[[{n}|{lit}]]"
 
     def fuente(o):
+        if o.get("fuente_nueva"):
+            return f'Alta manual confirmada (aceites_nuevos.json, 2026-10-27): {o["fuente_nueva"]} → [[{o["nota"]}]]'
         return f'Excel «{o["libro"]}», hoja «{o["hoja"]}», fila {o["fila"]} → [[{o["nota"]}]]'
 
     por_norma = defaultdict(lambda: defaultdict(list))
@@ -1065,6 +1086,8 @@ def main():
         cu += bullets_normas(fam)
         if fam["prods"]:
             cu += ["", "## Referencias", ""] + [f'- [[{q["pagina"]}]] · {q["litros"]} L' for q in fam["prods"]]
+        elif fam.get("fuente_nueva"):
+            cu += ["", "## Referencias (aún no figuran en tarifa)", ""] + [f"- {r}" for r in fam["refs"]]
         if fam.get("fichas"):
             cu += ["", "## Fichas técnicas (PDF convertidos)", ""] + [f"- [[{fi}|{fi.rsplit('/', 1)[-1]}]]" for fi in fam["fichas"]]
         eqs = [e for e in EQUIV if fam in e["ad_fam"]]
