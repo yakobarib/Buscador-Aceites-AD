@@ -860,6 +860,21 @@ def main():
         for fb in fbs:
             fb["tcmatic"] += tcs
 
+    # homologaciones de las tablas de gama de Castrol (extract_homologaciones_castrol.py, reglas sin IA): se enlazan por NOMBRE de producto
+    ruta_c = RAIZ / "homologaciones_castrol_extraidas.json"
+    datos_castrol = json.loads(ruta_c.read_text(encoding="utf-8")) if ruta_c.exists() else {}
+    for p in PRODUCTOS:
+        if p["marca"] != "Castrol" or not datos_castrol:
+            continue
+        nombre = re.sub(r"\s+\d+(?:[.,]\d+)?\s*L\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
+        d = next(iter(datos_castrol.get(clave(nombre), [])), None)
+        if not d:
+            continue
+        p["hom_castrol"] = d
+        nf = p.setdefault("normas_f", [])
+        nf += [("acea", x) for x in d["acea"]] + [("api", x) for x in d["api"]] + [("ilsac", x) for x in d["ilsac"]]
+        nf += [("homologacion", x) for x in d["formal"]]
+
     # ---------------- registro de normas
     menciones = defaultdict(list)  # clave -> [(literal, tipo)]
     for origen in list(PRODUCTOS) + FAMILIAS:
@@ -1069,6 +1084,17 @@ def main():
                     filas_t.append(f'| {col} | {" / ".join(sg["valores"])} | {estado} | {comp} |')
             if filas_t:
                 cu += ["", "| Fabricante | Valor | Estado | Comprobación con la ficha |", "|---|---|---|---|"] + filas_t
+        if p.get("hom_castrol"):
+            d = p["hom_castrol"]
+            cu += ["", "## Homologaciones según los catálogos de Castrol", "",
+                   f'*Fila «{d["producto"]}» de [[HOMOLOGACIONES/Castrol/{d["archivo"][:-3]}|{d["archivo"][:-3]}]] (tabla del PDF leída por reglas, sin IA; octubre 2026). '
+                   "Las normas sin calificativo se tratan como homologaciones declaradas por Castrol; las marcadas «Meets», «Warranted by Castrol», "
+                   "«Recommended for use» o «SFU» solo se citan aparte porque Castrol no las da como homologación formal.*", ""]
+            cu += bullets_normas(p, "normas_f_n")
+            if d["cumple"]:
+                cu.append("- **Cumple o recomendado por Castrol (no es homologación formal):** " + " · ".join(d["cumple"]))
+            if d["sin_enlazar"]:
+                cu.append("- **Texto de la tabla no enlazado a ninguna norma (revisar en el PDF):** " + " | ".join(d["sin_enlazar"]))
         cu += ["", "## Fuente", "", p.get("fuente_texto") or fuente(p), ""]
         (carpeta / f'{p["pagina"]}.md').write_text("\n".join(fm + cu), encoding="utf-8")
         for k in dict.fromkeys(k for _, k in p["normas_n"] + p["normas_f_n"]):

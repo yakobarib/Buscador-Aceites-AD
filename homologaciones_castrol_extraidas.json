@@ -1,0 +1,1503 @@
+{
+ "EDGE0W20C5": [
+  {
+   "producto": "EDGE 0W-20 C5",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C5",
+    "ACEA C6"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "MB 229.71",
+    "GM DEXOS1 GEN3",
+    "OPEL OV 040 1547-A20",
+    "FORD WSS-M2C947-A",
+    "FORD WSS-M2C947-B1",
+    "FORD WSS-M2C962-A1",
+    "FIAT 9.55535-CR1",
+    "FIAT 9.55535-GSX",
+    "JLR STJLR.03.5006",
+    "CHRYSLER MS-6395"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5, C6",
+    "API ILSAC": "SQ GF-7",
+    "MERCEDES BENZ": "229.71",
+    "OPEL": "dexos1 Gen 3 Opel OV 040 1547 - A20",
+    "FORD": "WSS-M2C947-A WSS-M2C947-B1 WSS-M2C962-A1",
+    "FIAT": "9.55535-CR1 9.55535-GSX",
+    "JAGUAR-LR": "STJLR.03.5006",
+    "CHRYSLER": "MS 6395"
+   }
+  }
+ ],
+ "EDGE0W20LLIV": [
+  {
+   "producto": "EDGE 0W-20 LL IV",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C5",
+    "ACEA C6"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "VW 508.00",
+    "VW 509.00",
+    "MB 229.71",
+    "MB 229.72",
+    "BMW LL-17FE+",
+    "PORSCHE C20",
+    "FORD WSS-M2C956-A1",
+    "VOLVO VCC C6SP"
+   ],
+   "cumple": [
+    "BMW LL-14FE+"
+   ],
+   "sin_enlazar": [
+    "JAGUAR-LR: JLR 5006"
+   ],
+   "celdas": {
+    "ACEA": "C5, C6",
+    "API ILSAC": "SQ GF-7",
+    "VAG": "508 00 / 509 00",
+    "MERCEDES BENZ": "229.71 / 229.72",
+    "BMW": "LL-17 FE+ SFU LL-14FE+",
+    "PORSCHE": "C20",
+    "FORD": "WSS-M2C956-A1",
+    "JAGUAR-LR": "JLR 5006",
+    "VOLVO": "VOLVO VCC C6SP"
+   }
+  }
+ ],
+ "EDGE0W20V": [
+  {
+   "producto": "EDGE 0W-20 V",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C5"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "VOLVO VCC RBS0-2AE"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5",
+    "VOLVO": "VCC RBS0-2AE"
+   }
+  }
+ ],
+ "EDGE0W30LL": [
+  {
+   "producto": "EDGE 0W-30 LL",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "VW 504.00",
+    "VW 507.00",
+    "MB 229.31",
+    "MB 229.51",
+    "BMW LL-04",
+    "PORSCHE C30"
+   ],
+   "cumple": [
+    "MB 229.52"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "VAG": "504 00 / 507 00",
+    "MERCEDES BENZ": "229.31 / 229.51 Warranted by Castrol: 229.52",
+    "BMW": "LL-04",
+    "PORSCHE": "C30"
+   }
+  }
+ ],
+ "EDGE0W30": [
+  {
+   "producto": "EDGE 0W-30",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C2",
+    "ACEA C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "MB 229.31",
+    "MB 229.51",
+    "MB 226.5",
+    "BMW LL-04",
+    "BMW LL-19FE",
+    "OPEL OV 040 1547-D30",
+    "OPEL OV 040 1547-G30",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2, C3",
+    "API ILSAC": "SQ GF-7",
+    "MERCEDES BENZ": "229.31 / 229.51 / 226.5",
+    "BMW": "LL-04 LL-19FE",
+    "OPEL": "Opel OV 040 1547 - D30 Opel OV 040 1547 - G30",
+    "RENAULT": "RN 0700 RN 0710"
+   }
+  }
+ ],
+ "EDGE0W30A5B5": [
+  {
+   "producto": "EDGE 0W-30 A5/B5",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA A1/B1",
+    "ACEA A5/B5"
+   ],
+   "api": [
+    "API SL",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VOLVO 95200377"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A1/B1 A5/B5",
+    "API ILSAC": "SL/CF",
+    "VOLVO": "95200377"
+   }
+  }
+ ],
+ "EDGE0W40": [
+  {
+   "producto": "EDGE 0W-40",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "MB 229.31",
+    "MB 229.51",
+    "MB 226.5",
+    "BMW LL-04",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [
+    "MB 229.52"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SQ GF-7",
+    "MERCEDES BENZ": "MB- 229.31/229.51/ 226.5; SFU 229.52",
+    "BMW": "LL-04",
+    "RENAULT": "RN 0700 RN 0710",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "EDGE0W40A3B4": [
+  {
+   "producto": "EDGE 0W-40 A3/B4",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "VW 502.00",
+    "VW 505.00",
+    "MB 229.5",
+    "BMW LL-01",
+    "PORSCHE A40",
+    "FORD WSS-M2C937-A",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "MB 229.3"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SQ GF-7",
+    "VAG": "502 00 / 505 00",
+    "MERCEDES BENZ": "229.5 Warranted by Castrol: 229.3",
+    "BMW": "LL-01",
+    "PORSCHE": "A40",
+    "FORD": "WSS-M2C937-A",
+    "RENAULT": "RN 0700 RN 0710"
+   }
+  }
+ ],
+ "EDGE0W40LL": [
+  {
+   "producto": "EDGE 0W-40 LL",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "VW 511.00"
+   ],
+   "cumple": [],
+   "sin_enlazar": [
+    "VAG: – (Only product in the Castrol range with – )"
+   ],
+   "celdas": {
+    "ACEA": "C3",
+    "VAG": "VW – 511 00 (Only product in the Castrol range with VW – 511 00)"
+   }
+  }
+ ],
+ "EDGE0W40R": [
+  {
+   "producto": "EDGE 0W-40 R",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "RENAULT RN17RSA"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "RENAULT": "RN 17RSA"
+   }
+  }
+ ],
+ "EDGE5W30C1": [
+  {
+   "producto": "EDGE 5W-30 C1",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C1"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "JLR STJLR.03.5005"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C1",
+    "JAGUAR-LR": "STJLR.03.5005"
+   }
+  }
+ ],
+ "EDGE5W30C3": [
+  {
+   "producto": "EDGE 5W-30 C3",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SN",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "MB 229.31",
+    "MB 229.51",
+    "OPEL OV 040 1547-D30",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "VW 505.00",
+    "VW 505.01"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SN/CF",
+    "VAG": "Warranted by Castrol: 505 00 / 505 01",
+    "MERCEDES BENZ": "229.31 / 229.51",
+    "OPEL": "Opel OV 040 1547 - D30",
+    "RENAULT": "RN 0700 RN 0710"
+   }
+  }
+ ],
+ "EDGE5W30LL": [
+  {
+   "producto": "EDGE 5W-30 LL",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 504.00",
+    "VW 507.00",
+    "MB 229.51",
+    "BMW LL-04",
+    "PORSCHE C30",
+    "OPEL OV 040 1547-D30",
+    "OPEL OV 040 1547-G30",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "VW 505.00",
+    "VW 501.00",
+    "MB 229.31",
+    "MB 229.52"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SQ",
+    "VAG": "VW 504 00 / 507 00 Warranted by Castrol: 505 00 / 501 00",
+    "MERCEDES BENZ": "MB-Approval 229.51, Meets MB 229.31 / 229.52",
+    "BMW": "LL-04",
+    "PORSCHE": "C30",
+    "OPEL": "Opel OV 040 1547 - D30; Opel OV 040 1547 - G30",
+    "RENAULT": "RN 0700 RN 0710"
+   }
+  }
+ ],
+ "EDGE5W30M": [
+  {
+   "producto": "EDGE 5W-30 M",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [],
+   "formal": [
+    "MB 229.51",
+    "MB 229.52",
+    "BMW LL-04"
+   ],
+   "cumple": [
+    "MB 229.31"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SQ",
+    "MERCEDES BENZ": "229.51 / 229.52 Meets MB 229.31",
+    "BMW": "LL-04"
+   }
+  }
+ ],
+ "EDGE5W40A3B4": [
+  {
+   "producto": "EDGE 5W-40 A3/B4",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 502.00",
+    "VW 505.00",
+    "MB 229.5",
+    "BMW LL-01",
+    "PORSCHE A40",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "MB 226.5",
+    "MB 229.3"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "502 00 / 505 00",
+    "MERCEDES BENZ": "229.5 Warranted by Castrol: 226.5 / 229.3",
+    "BMW": "LL-01",
+    "PORSCHE": "A40",
+    "RENAULT": "RN 0700 RN 0710"
+   }
+  }
+ ],
+ "EDGE5W40M": [
+  {
+   "producto": "EDGE 5W-40 M",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SN"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 511.00",
+    "BMW LL-04",
+    "PORSCHE C40",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SN",
+    "VAG": "511 00",
+    "BMW": "LL-04",
+    "PORSCHE": "C40",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "EDGE5W40": [
+  {
+   "producto": "EDGE 5W-40",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SN",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 505.00",
+    "VW 505.01",
+    "MB 229.31",
+    "MB 229.51",
+    "MB 226.5",
+    "PORSCHE A40",
+    "OPEL OV 040 1547-D40",
+    "FORD WSS-M2C917-A",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SN/CF",
+    "VAG": "505 00 / 505 01",
+    "MERCEDES BENZ": "229.31 / 229.51 / 226.5",
+    "PORSCHE": "A40",
+    "OPEL": "Opel OV 040 1547 - D40",
+    "FORD": "WSS-M2C917-A",
+    "RENAULT": "RN 0700 RN 0710",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "EDGETURBODIESEL5W40": [
+  {
+   "producto": "EDGE TURBO DIESEL 5W-40",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SN",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 505.00",
+    "VW 505.01",
+    "MB 229.31",
+    "MB 229.51",
+    "MB 226.5",
+    "PORSCHE A40",
+    "OPEL OV 040 1547-D40",
+    "FORD WSS-M2C917-A",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SN/CF",
+    "VAG": "505 00 / 505 01",
+    "MERCEDES BENZ": "229.31 / 229.51 / 226.5",
+    "PORSCHE": "A40",
+    "OPEL": "Opel OV 040 1547 - D40",
+    "FORD": "WSS-M2C917-A",
+    "RENAULT": "RN 0700 RN 0710",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "EDGE5W50S": [
+  {
+   "producto": "EDGE 5W-50 S",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "FORD WSS-M2C931-E1",
+    "FORD WSS-M2C931-C"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "API ILSAC": "SP",
+    "FORD": "WSS-M2C931-E1/C"
+   }
+  }
+ ],
+ "EDGE10W60": [
+  {
+   "producto": "EDGE 10W-60",
+   "archivo": "Castrol Homologaciones Gama Edge.md",
+   "acea": [
+    "ACEA A3/B3",
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SN",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 501.01",
+    "VW 505.00"
+   ],
+   "cumple": [],
+   "sin_enlazar": [
+    "BMW: for M"
+   ],
+   "celdas": {
+    "ACEA": "A3/B3 A3/B4",
+    "API ILSAC": "SN/CF",
+    "VAG": "501 01 / 505 00",
+    "BMW": "Approval for BMW M"
+   }
+  }
+ ],
+ "GTX0W16AN2022": [
+  {
+   "producto": "GTX 0W-16 AN2022",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "RENAULT: AN2022"
+   ],
+   "celdas": {
+    "API ILSAC": "SP",
+    "RENAULT": "AN2022"
+   }
+  }
+ ],
+ "GTX0W20RN17FE": [
+  {
+   "producto": "GTX 0W-20 RN17 FE",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C5"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "RENAULT RN17FE",
+    "PSA B71 2290"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5",
+    "RENAULT": "RN17FE",
+    "PSA PEUGEOT CITROËN": "B71 2290"
+   }
+  }
+ ],
+ "GTX5W30C2": [
+  {
+   "producto": "GTX 5W-30 C2",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2"
+   }
+  }
+ ],
+ "GTX5W30C3": [
+  {
+   "producto": "GTX 5W-30 C3",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "VW 504.00",
+    "VW 507.00",
+    "MB 229.51",
+    "BMW LL-04",
+    "PORSCHE C30",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "MB 229.31"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "VAG": "504 00 / 507 00",
+    "MERCEDES BENZ": "MB-Approval 229.51 Meets MB 229.31",
+    "BMW": "LL-04",
+    "PORSCHE": "C30",
+    "RENAULT": "RN0700 RN0710"
+   }
+  }
+ ],
+ "GTX5W30RN17": [
+  {
+   "producto": "GTX 5W-30 RN17",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "MB 226.52",
+    "RENAULT RN17"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "MERCEDES BENZ": "226.52",
+    "RENAULT": "RN17"
+   }
+  }
+ ],
+ "GTX5W30A5B5": [
+  {
+   "producto": "GTX 5W-30 A5/B5",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA A5/B5"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-5"
+   ],
+   "formal": [
+    "FORD WSS-M2C913-A",
+    "FORD WSS-M2C913-B",
+    "FORD WSS-M2C913-C",
+    "FORD WSS-M2C913-D"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A5/B5",
+    "API ILSAC": "SP GF-5",
+    "FORD": "WSS-M2C913-A WSS-M2C913-B WSS-M2C913-C WSS-M2C913-D"
+   }
+  }
+ ],
+ "GTX5W30C4": [
+  {
+   "producto": "GTX 5W-30 C4",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C4"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "MB 226.51",
+    "MB 229.51",
+    "RENAULT RN0720",
+    "FIAT 9.55535-S4"
+   ],
+   "cumple": [
+    "MB 229.31"
+   ],
+   "sin_enlazar": [
+    "MERCEDES: to be completely suitable for use in vehicles where the following specifications apply:"
+   ],
+   "celdas": {
+    "ACEA": "C4",
+    "MERCEDES BENZ": "MB-Approval 226.51/229.51 Warran- ted by Castrol to be completely suitable for use in vehicles where the following specifica- tions apply: MB-229.31",
+    "RENAULT": "RN0720",
+    "FIAT": "9.55535-S4"
+   }
+  }
+ ],
+ "GTX5W40A3B4": [
+  {
+   "producto": "GTX 5W-40 A3/B4",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 502.00",
+    "VW 505.00",
+    "MB 229.3",
+    "MB 226.5",
+    "BMW LL-01",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "502 00 / 505 00",
+    "MERCEDES BENZ": "229.3 226.5",
+    "BMW": "LL-01",
+    "RENAULT": "RN0700 RN0710"
+   }
+  }
+ ],
+ "GTX5W40MV": [
+  {
+   "producto": "GTX 5W-40 MV",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API SN",
+    "API CF"
+   ],
+   "ilsac": [],
+   "formal": [
+    "MB 229.31",
+    "MB 229.51",
+    "MB 226.5",
+    "OPEL OV 040 1547-D40",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [
+    "OPEL: dexos2"
+   ],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "SN/CF",
+    "MERCEDES BENZ": "229.31 / 229.51 / 226.5",
+    "OPEL": "dexos2 Opel OV 040 1547 - D40",
+    "RENAULT": "RN0700 RN0710",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "GTX10W40A3B4": [
+  {
+   "producto": "GTX 10W-40 A3/B4",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 501.01",
+    "VW 505.00",
+    "MB 229.3",
+    "MB 226.5",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-G2",
+    "FIAT 9.55535-D2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "501 01 / 505 00",
+    "MERCEDES BENZ": "229.3 226.5",
+    "RENAULT": "RN0700 RN0710",
+    "FIAT": "9.55535-G2 9.55535-D2"
+   }
+  }
+ ],
+ "GTX15W40A3B3": [
+  {
+   "producto": "GTX 15W-40 A3/B3",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 501.01",
+    "VW 505.00",
+    "FIAT 9.55535-D2"
+   ],
+   "cumple": [
+    "MB 229.1"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "501 01 / 505 00",
+    "MERCEDES BENZ": "Warranted by Castrol: 229.1",
+    "FIAT": "9.55535-D2"
+   }
+  }
+ ],
+ "GTX20W50": [
+  {
+   "producto": "GTX 20W-50",
+   "archivo": "Castrol Homologaciones Gama GTX.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP"
+   }
+  }
+ ],
+ "MAGNATECHYBRID0W16": [
+  {
+   "producto": "Magnatec Hybrid 0W-16",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-6B"
+   ],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "API ILSAC": "SP GF-6B"
+   }
+  }
+ ],
+ "MAGNATECHYBRID0W20": [
+  {
+   "producto": "Magnatec Hybrid 0W-20",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-6"
+   ],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "API ILSAC": "SP GF-6"
+   }
+  }
+ ],
+ "MAGNATECHYBRID5W30": [
+  {
+   "producto": "Magnatec Hybrid 5W-30",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-6"
+   ],
+   "formal": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "API ILSAC": "SP GF-6"
+   }
+  }
+ ],
+ "MAGNATEC0W20GSXDSX": [
+  {
+   "producto": "Magnatec 0W-20 GSX/DSX",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C5",
+    "ACEA C6"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FIAT 9.55535-GSX",
+    "FIAT 9.55535-DSX"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5, C6",
+    "FIAT": "9.55535-GSX 9.55535-DSX"
+   }
+  }
+ ],
+ "MAGNATEC0W20FE": [
+  {
+   "producto": "Magnatec 0W-20 FE",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C5"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FORD WSS-M2C954-A1",
+    "FIAT 9.55535-DM1",
+    "PSA B71 2010"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5",
+    "FORD": "WSS-M2C954-A1",
+    "FIAT": "9.55535-DM1",
+    "PSA PEUGEOT CITROËN": "B71 2010"
+   }
+  }
+ ],
+ "MAGNATEC0W20E": [
+  {
+   "producto": "Magnatec 0W-20 E",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "VW C 53057",
+    "FORD WSS-M2C954-A1"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "VAG": "VWC 53057",
+    "FORD": "WSS-M2C954-A1"
+   }
+  }
+ ],
+ "MAGNATEC0W20D": [
+  {
+   "producto": "Magnatec 0W-20 D",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FORD WSS-M2C952-A1"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "FORD": "WSS-M2C952-A1"
+   }
+  }
+ ],
+ "MAGNATEC0W30": [
+  {
+   "producto": "Magnatec 0W-30",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-6"
+   ],
+   "formal": [
+    "FORD WSS-M2C957-A1",
+    "FORD WSS-M2C950-A"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2",
+    "API ILSAC": "SP GF-6",
+    "FORD": "WSS-M2C957-A1 WSS-M2C950-A"
+   }
+  }
+ ],
+ "MAGNATEC0W30D": [
+  {
+   "producto": "Magnatec 0W-30 D",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FORD WSS-M2C950-A"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2",
+    "FORD": "WSS-M2C950-A"
+   }
+  }
+ ],
+ "MAGNATEC0W30C2": [
+  {
+   "producto": "Magnatec 0W-30 C2",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FIAT 9.55535-DS1",
+    "FIAT 9.55535-GS1",
+    "PSA B71 2312",
+    "PSA B71 2302"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2",
+    "FIAT": "9.55535-DS1 9.55535-GS1",
+    "PSA PEUGEOT CITROËN": "B71 2312 B71 2302"
+   }
+  }
+ ],
+ "MAGNATEC5W20E": [
+  {
+   "producto": "Magnatec 5W-20 E",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C5"
+   ],
+   "api": [
+    "API SN"
+   ],
+   "ilsac": [
+    "ILSAC GF-5"
+   ],
+   "formal": [
+    "FORD WSS-M2C948-B"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C5",
+    "API ILSAC": "SN GF-5",
+    "FORD": "WSS-M2C948-B"
+   }
+  }
+ ],
+ "MAGNATEC5W30A3B4": [
+  {
+   "producto": "Magnatec 5W-30 A3/B4",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SL"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 502.00",
+    "VW 505.00",
+    "MB 229.5",
+    "MB 226.5",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "MB 229.3"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SL",
+    "VAG": "502 00 / 505 00",
+    "MERCEDES BENZ": "229.5 / 226.5 Warranted by Castrol: 229.3",
+    "RENAULT": "RN0700 RN0710"
+   }
+  }
+ ],
+ "MAGNATEC5W30A5": [
+  {
+   "producto": "Magnatec 5W-30 A5",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA A5/B5"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [
+    "ILSAC GF-6"
+   ],
+   "formal": [
+    "FORD WSS-M2C913-A",
+    "FORD WSS-M2C913-B"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A5/B5",
+    "API ILSAC": "SP GF-6",
+    "FORD": "WSS-M2C913-A WSS-M2C913-B"
+   }
+  }
+ ],
+ "MAGNATEC5W30C2": [
+  {
+   "producto": "Magnatec 5W-30 C2",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "FIAT 9.55535-S1",
+    "PSA B71 2290"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2",
+    "FIAT": "9.55535-S1",
+    "PSA PEUGEOT CITROËN": "B71 2290"
+   }
+  }
+ ],
+ "MAGNATEC5W30C3": [
+  {
+   "producto": "Magnatec 5W-30 C3",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2",
+    "ACEA C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [],
+   "formal": [
+    "MB 229.31",
+    "MB 229.51",
+    "MB 229.52",
+    "BMW LL-04",
+    "OPEL OV 040 1547-D30",
+    "OPEL OV 040 1547-G30",
+    "FIAT 9.55535-S3"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2, C3",
+    "API ILSAC": "SQ",
+    "MERCEDES BENZ": "MB 229.31 /229.51 / 229.52",
+    "BMW": "LL-04",
+    "OPEL": "Opel OV 040 1547 - D30 Opel OV 040 1547 - G30",
+    "FIAT": "9.55535-S3"
+   }
+  }
+ ],
+ "MAGNATEC5W30S1": [
+  {
+   "producto": "Magnatec 5W-30 S1",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2"
+   ],
+   "api": [
+    "API SN"
+   ],
+   "ilsac": [],
+   "formal": [
+    "FIAT 9.55535-S1"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2",
+    "API ILSAC": "SN",
+    "FIAT": "9.55535-S1"
+   }
+  }
+ ],
+ "MAGNATEC5W30DX": [
+  {
+   "producto": "Magnatec 5W-30 DX",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [
+    "ILSAC GF-7"
+   ],
+   "formal": [
+    "VW C 53034",
+    "GM DEXOS1 GEN3",
+    "OPEL OV 040 1547-G30",
+    "FORD WSS-M2C946-A",
+    "FORD WSS-M2C946-B1",
+    "FORD WSS-M2C961-A1"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "API ILSAC": "SQ GF-7",
+    "VAG": "VWC 53034",
+    "OPEL": "dexos1 Gen3 Opel OV 040 1547 - G30*",
+    "FORD": "WSS-M2C946-A WSS-M2C946-B1 WSS-M2C961-A1"
+   }
+  }
+ ],
+ "MAGNATEC5W30P": [
+  {
+   "producto": "Magnatec 5W-30 P",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [],
+   "api": [],
+   "ilsac": [],
+   "formal": [
+    "PSA B71 2290",
+    "PSA B71 2297",
+    "STELLANTIS FPW9.55535/03"
+   ],
+   "cumple": [],
+   "sin_enlazar": [
+    "FIAT: S"
+   ],
+   "celdas": {
+    "FIAT": "S",
+    "PSA PEUGEOT CITROËN": "B71 2290 B71 2297 STELLANTIS FPW9.55535/03"
+   }
+  }
+ ],
+ "MAGNATEC5W40C3": [
+  {
+   "producto": "Magnatec 5W-40 C3",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C2/C3"
+   ],
+   "api": [
+    "API SQ"
+   ],
+   "ilsac": [],
+   "formal": [
+    "BMW LL-04",
+    "OPEL OV 040 1547-D30",
+    "OPEL OV 040 1547-G30",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-S3"
+   ],
+   "cumple": [
+    "MB 229.31",
+    "MB 229.51",
+    "MB 229.52"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C2/C3",
+    "API ILSAC": "SQ",
+    "MERCEDES BENZ": "Warranted by Castrol: 229.31 / 229.51 / 229.52",
+    "BMW": "LL-04",
+    "OPEL": "OPEL OV 040 1547-D30/G30",
+    "RENAULT": "RN0700 RN0710",
+    "FIAT": "9.55535-S3"
+   }
+  }
+ ],
+ "MAGNATEC5W40DPF": [
+  {
+   "producto": "Magnatec 5W-40 DPF",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA C3"
+   ],
+   "api": [
+    "API CF",
+    "API SN"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 505.00",
+    "VW 505.01",
+    "OPEL OV 040 1547-D40",
+    "FORD WSS-M2C917-A",
+    "FIAT 9.55535-S2"
+   ],
+   "cumple": [
+    "MB 229.31"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "C3",
+    "API ILSAC": "CF/SN",
+    "VAG": "505 00 / 505 01",
+    "MERCEDES BENZ": "Meets MB 229.31",
+    "OPEL": "Opel OV 040 1547 - D40",
+    "FORD": "WSS-M2C917-A",
+    "FIAT": "9.55535-S2"
+   }
+  }
+ ],
+ "MAGNATEC5W40A3B4": [
+  {
+   "producto": "Magnatec 5W-40 A3/B4",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 502.00",
+    "VW 505.00",
+    "MB 226.5",
+    "MB 229.5",
+    "RENAULT RN0700",
+    "RENAULT RN0710"
+   ],
+   "cumple": [
+    "MB 229.3"
+   ],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "502 00 / 505 00",
+    "MERCEDES BENZ": "MB- Approval 226.5/229.5 Warranted by Castrol: 229.3",
+    "RENAULT": "RN0700 RN0710"
+   }
+  }
+ ],
+ "MAGNATEC10W40AB": [
+  {
+   "producto": "Magnatec 10W-40 A/B",
+   "archivo": "Castrol Homologaciones Gama Magnatec.md",
+   "acea": [
+    "ACEA A3/B4"
+   ],
+   "api": [
+    "API SP"
+   ],
+   "ilsac": [],
+   "formal": [
+    "VW 501.01",
+    "VW 505.00",
+    "MB 226.5",
+    "MB 229.3",
+    "RENAULT RN0700",
+    "RENAULT RN0710",
+    "FIAT 9.55535-D2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas": {
+    "ACEA": "A3/B4",
+    "API ILSAC": "SP",
+    "VAG": "501 01 / 505 00",
+    "MERCEDES BENZ": "226.5 / 229.3",
+    "RENAULT": "RN0700 RN0710",
+    "FIAT": "9.55535-D2"
+   }
+  }
+ ]
+}
