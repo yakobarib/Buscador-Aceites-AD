@@ -875,6 +875,34 @@ def main():
         nf += [("acea", x) for x in d["acea"]] + [("api", x) for x in d["api"]] + [("ilsac", x) for x in d["ilsac"]]
         nf += [("homologacion", x) for x in d["formal"]]
 
+    # homologaciones de Castrol VEHICULO PESADO (extract_homologaciones_castrol_pesado.py): la matriz del Wallchart CVO distingue
+    # homologacion actual (negro) y retrocompatible (verde); el producto se enlaza por su CODIGO de material (Codigos CVO)
+    ruta_p = RAIZ / "homologaciones_castrol_pesado_extraidas.json"
+    datos_pesado = json.loads(ruta_p.read_text(encoding="utf-8")) if ruta_p.exists() else {}
+
+    def clave_col(nombre):
+        n = re.sub(r"\s*,?\s*(\d+X)?\d+(?:[.,]\d+)?\s*(L|KG|G)\s*,?\s*$", "", nombre, flags=re.I)
+        k = clave(re.sub(r"\s*-\s*", "-", n))
+        k = re.sub(r"^(VECTON|CRBMONOGRADE|CRB)", "", k)
+        return re.sub(r"^LD", "LONGDRAIN", k)
+
+    for p in PRODUCTOS:
+        if p["marca"] != "Castrol" or not datos_pesado:
+            continue
+        cod = datos_pesado["codigos"].get(p["ref"])
+        if not cod:
+            continue
+        p["ean_castrol"] = (cod["ean"], cod["ean_caja"])
+        col = datos_pesado["productos"].get(clave_col(cod["nombre"]))
+        if not col:
+            continue
+        p["hom_pesado"] = col
+        nf = p.setdefault("normas_f", [])
+        for lit in col["actual"]:
+            m = re.match(r"(ACEA|API|JASO|GLOBAL)\s+(.*)", lit)
+            tipo = m.group(1).lower() if m and m.group(1) != "GLOBAL" else "homologacion"
+            nf.append((tipo, lit))
+
     # ---------------- registro de normas
     menciones = defaultdict(list)  # clave -> [(literal, tipo)]
     for origen in list(PRODUCTOS) + FAMILIAS:
@@ -1084,6 +1112,22 @@ def main():
                     filas_t.append(f'| {col} | {" / ".join(sg["valores"])} | {estado} | {comp} |')
             if filas_t:
                 cu += ["", "| Fabricante | Valor | Estado | Comprobación con la ficha |", "|---|---|---|---|"] + filas_t
+        if p.get("hom_pesado"):
+            d = p["hom_pesado"]
+            cu += ["", "## Homologaciones según el Wallchart CVO de Castrol (octubre 2026)", "",
+                   f'*Columna «{d["columna"]}» de [[HOMOLOGACIONES/Castrol/Castrol - CVO Wallchart - Oct 2026]], leída del PDF por posición y color (reglas, sin IA). '
+                   "En el PDF el negro indica homologación actual y el verde retrocompatible; «Meets», «Warranted by Castrol» o «Recommended» se citan aparte "
+                   "porque Castrol no las da como homologación formal.*", ""]
+            cu += bullets_normas(p, "normas_f_n")
+            if d["retro"]:
+                cu.append("- **Retrocompatible (verde en el PDF):** " + " · ".join(d["retro"]))
+            if d["cumple"]:
+                cu.append("- **Cumple, garantizado o recomendado por Castrol (no es homologación formal):** " + " · ".join(d["cumple"]))
+            if d["sin_enlazar"]:
+                cu.append("- **Texto de la tabla no enlazado a ninguna norma (revisar en el PDF):** " + " | ".join(d["sin_enlazar"]))
+        if p.get("ean_castrol"):
+            e, ec = p["ean_castrol"]
+            cu += ["", f"**EAN** (según [[HOMOLOGACIONES/Castrol/Castrol - Codigos CVO - Oct 2026]]): {e}" + (f" · EAN caja: {ec}" if ec else "")]
         if p.get("hom_castrol"):
             d = p["hom_castrol"]
             cu += ["", "## Homologaciones según los catálogos de Castrol", "",

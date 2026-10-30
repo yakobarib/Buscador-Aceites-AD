@@ -1,0 +1,2178 @@
+{
+ "productos": {
+  "LONGDRAIN0W20": {
+   "columna": "Long Drain 0W-20",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "0W-20",
+   "sub": "",
+   "actual": [
+    "DAIMLER TRUCK DTFR 15C140"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "daimler": [
+     "DTFR 15C140"
+    ]
+   }
+  },
+  "LONGDRAIN5W20SLD5": {
+   "columna": "Long Drain 5W-20 SLD5",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "5W-20",
+   "sub": "SLD5",
+   "actual": [
+    "MAN 3977",
+    "SCANIA LDF-5"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "man": [
+     "M3977"
+    ],
+    "scania": [
+     "LDF-5"
+    ]
+   }
+  },
+  "LONGDRAIN5W30FA4F01": {
+   "columna": "Long Drain 5W-30 FA-4/F01",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "5W-30",
+   "sub": "FA-4/F01",
+   "actual": [
+    "ACEA F01",
+    "API FA-4",
+    "CUMMINS CES 20087",
+    "DAIMLER TRUCK DTFR 15C130",
+    "MACK EOS-5",
+    "RENAULT RLD-5",
+    "VOLVO VDS-5",
+    "DETROIT DIESEL DFS 93K223"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "acea": [
+     "F01"
+    ],
+    "api": [
+     "FA-4"
+    ],
+    "cummins": [
+     "CES 20087"
+    ],
+    "daimler": [
+     "DTFR 15C130"
+    ],
+    "mack": [
+     "EOS-5"
+    ],
+    "renault": [
+     "RLD-5"
+    ],
+    "volvo": [
+     "VDS-5"
+    ],
+    "otros": [
+     "DDC DFS 93K223"
+    ]
+   }
+  },
+  "LONGDRAIN5W30E8E11": {
+   "columna": "Long Drain 5W-30 E8/E11",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "5W-30",
+   "sub": "E8/E11",
+   "actual": [
+    "ACEA E6",
+    "ACEA E7",
+    "ACEA E8",
+    "ACEA E9",
+    "ACEA E11",
+    "API CK-4",
+    "JASO DH-2",
+    "CATERPILLAR ECF-3",
+    "CUMMINS CES 20086",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DAIMLER TRUCK DTFR 15C110",
+    "DEUTZ DQC IV-18 LA",
+    "MACK EOS-4.5",
+    "DETROIT DIESEL DFS 93K222"
+   ],
+   "retro": [
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CG-4",
+    "API CF-4",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "DEUTZ DQC IV-10 LA",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "MACK EO-O PREMIUM PLUS",
+    "MACK EO-N PREMIUM PLUS"
+   ],
+   "cumple": [
+    "FORD WSS-M2C213-A1",
+    "MAN 3271-1",
+    "MAN 3477"
+   ],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "acea": [
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E11"
+    ],
+    "api": [
+     "CK-4",
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "jaso": [
+     "DH-2"
+    ],
+    "cat": [
+     "ECF-3",
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20086"
+    ],
+    "daf": [
+     "Meets DAF extended drain"
+    ],
+    "daimler": [
+     "DTFR 15C100",
+     "DTFR 15C110"
+    ],
+    "deutz": [
+     "DQC IV-18 LA",
+     "DQC IV-10 LA",
+     "DQC III-18 LA",
+     "DQC III-10 LA"
+    ],
+    "ford": [
+     "Cumple los requisitos de WSS-M2C213-A1"
+    ],
+    "mack": [
+     "EOS-4.5",
+     "EO-O Premium Plus",
+     "EO-N Premium Plus"
+    ],
+    "otros": [
+     "DDC DFS 93K222 Meets requirements of MAN M3271-1 M3477 For Iveco Trucks requiring ACEA E6, E7, E9, E11"
+    ]
+   }
+  },
+  "LONGDRAIN10W30E8E11": {
+   "columna": "Long Drain 10W-30 E8/E11",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "10W-30",
+   "sub": "E8/E11",
+   "actual": [
+    "ACEA E6",
+    "ACEA E7",
+    "ACEA E8",
+    "ACEA E9",
+    "ACEA E11",
+    "API CK-4",
+    "JASO DH-2",
+    "CATERPILLAR ECF-3",
+    "CUMMINS CES 20086",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DAIMLER TRUCK DTFR 15C110",
+    "DEUTZ DQC IV-18 LA",
+    "MACK EOS-4.5",
+    "MTU TYPE 3.1",
+    "RENAULT RLD-3",
+    "VOLVO CNG",
+    "VOLVO VDS-4.5",
+    "DETROIT DIESEL DFS 93K222"
+   ],
+   "retro": [
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CG-4",
+    "API CF-4",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "DEUTZ DQC IV-10 LA",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "MACK EO-O PREMIUM PLUS",
+    "MACK EO-N PREMIUM PLUS",
+    "VOLVO VDS-4",
+    "VOLVO VDS-3"
+   ],
+   "cumple": [
+    "MAN 3271-1",
+    "MAN 3477"
+   ],
+   "sin_enlazar": [
+    "man: M32775"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E11"
+    ],
+    "api": [
+     "CK-4",
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "jaso": [
+     "DH-2"
+    ],
+    "cat": [
+     "ECF-3",
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20086"
+    ],
+    "daf": [
+     "PSQL 2.4 Meets DAF PX Euro VI requirements"
+    ],
+    "daimler": [
+     "DTFR 15C100",
+     "DTFR 15C110"
+    ],
+    "deutz": [
+     "DQC IV-18 LA",
+     "DQC IV-10 LA",
+     "DQC III-18 LA",
+     "DQC III-10 LA"
+    ],
+    "mack": [
+     "EOS-4.5",
+     "EO-O Premium Plus",
+     "EO-N Premium Plus"
+    ],
+    "man": [
+     "M32775"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 3.1"
+    ],
+    "renault": [
+     "RLD-3"
+    ],
+    "volvo": [
+     "CNG",
+     "VDS 4.5",
+     "VDS-4",
+     "VDS-3"
+    ],
+    "otros": [
+     "DDC DFS 93K222 Warranted by Castrol to be completely suitable for use in vehicles where the following specifications apply: MAN M3271-1, M3477"
+    ]
+   }
+  },
+  "LONGDRAIN10W40E8E11": {
+   "columna": "Long Drain 10W-40 E8/E11",
+   "pagina": 2,
+   "grupo": "Long Drain",
+   "visc": "10W-40",
+   "sub": "E8/E11",
+   "actual": [
+    "ACEA E6",
+    "ACEA E7",
+    "ACEA E8",
+    "ACEA E9",
+    "ACEA E11",
+    "API CK-4",
+    "JASO DH-2",
+    "CATERPILLAR ECF-3",
+    "CUMMINS CES 20086",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DAIMLER TRUCK DTFR 15C110",
+    "DEUTZ DQC IV-18 LA",
+    "MACK EOS-4.5",
+    "MTU TYPE 3.1",
+    "RENAULT RLD-3",
+    "VOLVO CNG",
+    "VOLVO VDS-4.5",
+    "DETROIT DIESEL DFS 93K222"
+   ],
+   "retro": [
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CG-4",
+    "API CF-4",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "DEUTZ DQC IV-10 LA",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "MACK EO-O PREMIUM PLUS",
+    "MACK EO-N PREMIUM PLUS",
+    "VOLVO VDS-4",
+    "VOLVO VDS-3"
+   ],
+   "cumple": [
+    "MAN 3271-1",
+    "MAN 3271-3",
+    "MAN 3477"
+   ],
+   "sin_enlazar": [
+    "man: M32775"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E11"
+    ],
+    "api": [
+     "CK-4",
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "jaso": [
+     "DH-2"
+    ],
+    "cat": [
+     "ECF-3",
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20086"
+    ],
+    "daf": [
+     "DAF Meets Euro VI requeriments"
+    ],
+    "daimler": [
+     "DTFR 15C100",
+     "DTFR 15C110"
+    ],
+    "deutz": [
+     "DQC IV-18 LA",
+     "DQC IV-10 LA",
+     "DQC III-18 LA",
+     "DQC III-10 LA"
+    ],
+    "mack": [
+     "EOS-4.5",
+     "EO-O Premium Plus",
+     "EO-N Premium Plus"
+    ],
+    "man": [
+     "M32775"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 3.1"
+    ],
+    "renault": [
+     "RLD-3"
+    ],
+    "volvo": [
+     "CNG",
+     "VDS 4.5",
+     "VDS-4",
+     "VDS-3"
+    ],
+    "otros": [
+     "DDC DFS 93K222 Warranted by Castrol to be completely suitable for use in vehicles where the following specifications apply: MAN M3271-1, M3271-3, M3477 IVECO ACEA E6, E7 and E9"
+    ]
+   }
+  },
+  "5W30FTRUCKSCK4": {
+   "columna": "5W-30 F-Trucks CK-4",
+   "pagina": 2,
+   "grupo": "",
+   "visc": "5W-30",
+   "sub": "F-Trucks CK-4",
+   "actual": [
+    "API CK-4"
+   ],
+   "retro": [
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CG-4",
+    "API CF-4"
+   ],
+   "cumple": [
+    "FORD WSS-M2C213-A1"
+   ],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "api": [
+     "CK-4",
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "ford": [
+     "Cumple los requisitos de WSS-M2C213-A1"
+    ]
+   }
+  },
+  "PLUS10W40E4E7": {
+   "columna": "Plus 10W-40 E4/E7",
+   "pagina": 2,
+   "grupo": "Plus",
+   "visc": "10W-40",
+   "sub": "E4/E7",
+   "actual": [
+    "ACEA E4",
+    "ACEA E7",
+    "API CI-4",
+    "JASO DH-1",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "DAIMLER TRUCK DTFR 15B120",
+    "DEUTZ DQC III-18",
+    "MACK EO-N",
+    "MAN 3277",
+    "MTU TYPE 3",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "DETROIT DIESEL DFS 93K215"
+   ],
+   "retro": [
+    "API CH-4",
+    "API CG-4",
+    "API CF-4",
+    "DEUTZ DQC III-10",
+    "MTU TYPE 2",
+    "VOLVO VDS-2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "acea": [
+     "E4",
+     "E7"
+    ],
+    "api": [
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "cummins": [
+     "CES 20078",
+     "CES 20077"
+    ],
+    "daimler": [
+     "DTFR 15B120"
+    ],
+    "deutz": [
+     "DQC III-18",
+     "DQC III-10"
+    ],
+    "mack": [
+     "EO-N"
+    ],
+    "man": [
+     "M3277"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 3",
+     "Categoría de lubricantes MTU 2"
+    ],
+    "renault": [
+     "RLD-2"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2"
+    ],
+    "otros": [
+     "DDC Powerguard 93K215"
+    ]
+   }
+  },
+  "PLUS10W40E7": {
+   "columna": "Plus 10W-40 E7",
+   "pagina": 2,
+   "grupo": "Plus",
+   "visc": "10W-40",
+   "sub": "E7",
+   "actual": [
+    "ACEA E4",
+    "ACEA E7",
+    "API CF-4",
+    "DAIMLER TRUCK DTFR 15B120",
+    "DEUTZ DQC III-18",
+    "MACK EO-N",
+    "MAN 3277",
+    "MTU TYPE 3",
+    "RENAULT RLD-2",
+    "SCANIA LDF-3",
+    "VOLVO VDS-3"
+   ],
+   "retro": [
+    "DEUTZ DQC III-10",
+    "MTU TYPE 2",
+    "VOLVO VDS-2"
+   ],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "acea": [
+     "E4",
+     "E7"
+    ],
+    "api": [
+     "CF-4"
+    ],
+    "daf": [
+     "Meets DAF requeriments"
+    ],
+    "daimler": [
+     "DTFR 15B120"
+    ],
+    "deutz": [
+     "DQC III-18",
+     "DQC III-10"
+    ],
+    "mack": [
+     "EO-N"
+    ],
+    "man": [
+     "M3277"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 3",
+     "Categoría de lubricantes MTU 2"
+    ],
+    "renault": [
+     "RLD-2"
+    ],
+    "scania": [
+     "LDF-3"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2"
+    ]
+   }
+  },
+  "PLUS15W40CK4E11": {
+   "columna": "Plus 15W-40 CK-4/E11",
+   "pagina": 2,
+   "grupo": "Plus",
+   "visc": "15W-40",
+   "sub": "CK-4/E11",
+   "actual": [
+    "ACEA E9",
+    "ACEA E11",
+    "API CK-4",
+    "JASO DH-2",
+    "CATERPILLAR ECF-3",
+    "CUMMINS CES 20086",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DEUTZ DQC III-18 LA",
+    "MACK EOS-4.5",
+    "MAN 3775",
+    "MTU TYPE 2.1",
+    "RENAULT RLD-3",
+    "VOLVO VDS-4.5",
+    "DETROIT DIESEL DFS 93K222"
+   ],
+   "retro": [
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CG-4",
+    "API CF-4",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "DEUTZ DQC III-10 LA",
+    "MACK EO-O PREMIUM PLUS",
+    "MACK EO-N PREMIUM PLUS",
+    "RENAULT RLD-2",
+    "VOLVO VDS-4",
+    "VOLVO VDS-3"
+   ],
+   "cumple": [
+    "FORD WSS-M2C171-F1"
+   ],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "acea": [
+     "E9",
+     "E11"
+    ],
+    "api": [
+     "CK-4",
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CG-4",
+     "CF-4"
+    ],
+    "jaso": [
+     "DH-2"
+    ],
+    "cat": [
+     "ECF-3",
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20086"
+    ],
+    "daimler": [
+     "DTFR 15C100"
+    ],
+    "deutz": [
+     "DQC III-18 LA",
+     "DQC III-10 LA"
+    ],
+    "ford": [
+     "Cumple los requisitos de WSS-M2C171-F1"
+    ],
+    "mack": [
+     "EOS-4.5",
+     "EO-O Premium Plus",
+     "EO-N Premium Plus"
+    ],
+    "man": [
+     "M3775"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2.1"
+    ],
+    "renault": [
+     "RLD-3",
+     "RLD-2"
+    ],
+    "volvo": [
+     "VDS-4.5",
+     "VDS-4",
+     "VDS-3"
+    ],
+    "otros": [
+     "DDC DFS 93K222"
+    ]
+   }
+  },
+  "MULTI10W30CV1": {
+   "columna": "Multi 10W-30 CV1",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "10W-30 CV1",
+   "sub": "",
+   "actual": [
+    "ACEA E7",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15B110",
+    "DEUTZ DQC III-18",
+    "DEUTZ DQC III-10",
+    "DEUTZ DQC II-18",
+    "DEUTZ DQC II-10",
+    "DEUTZ DQC I-02",
+    "FORD WSS-M2C171-D",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3275-1",
+    "MAN 271",
+    "MTU TYPE 2",
+    "MTU TYPE 1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K215",
+    "MB 228.1"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Recommended for DAF Trucks requiring ACEA E7  Recommended for IVECO Trucks requiring ACEA E7"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E7",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15B110"
+    ],
+    "deutz": [
+     "DQC III-18",
+     "DQC III-10",
+     "DQC II-18",
+     "DQC II-10",
+     "DQC I-02"
+    ],
+    "ford": [
+     "WSS-M2C171-D"
+    ],
+    "mack": [
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M 3275-1",
+     "M 271"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2",
+     "Categoría de lubricantes MTU 1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K215, MB228.1, Recommended for DAF Trucks requiring ACEA E7, Recommended for IVECO Trucks requiring ACEA E7"
+    ]
+   }
+  },
+  "MULTI10W40CV1": {
+   "columna": "Multi 10W-40 CV1",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "10W-40 CV1",
+   "sub": "",
+   "actual": [
+    "ACEA E7",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15B110",
+    "DEUTZ DQC III-18",
+    "DEUTZ DQC III-10",
+    "DEUTZ DQC II-18",
+    "DEUTZ DQC II-10",
+    "DEUTZ DQC I-02",
+    "FORD WSS-M2C171-D",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3275-1",
+    "MAN 271",
+    "MTU TYPE 2",
+    "MTU TYPE 1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K215",
+    "MB 228.1",
+    "MB 235.28"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Voith retarder B  Allison TES-439",
+    "otros: Recommended for DAF Trucks requiring ACEA E  Recommended for IVECO Trucks requiring ACEA E7"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E7",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15B110"
+    ],
+    "deutz": [
+     "DQC III-18",
+     "DQC III-10",
+     "DQC II-18",
+     "DQC II-10",
+     "DQC I-02"
+    ],
+    "ford": [
+     "WSS-M2C171-D"
+    ],
+    "mack": [
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M 3275-1",
+     "M 271"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2",
+     "Categoría de lubricantes MTU 1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K215, MB 228.1, MB 235.28, Voith retarder B, Allison TES-439, Recommended for DAF Trucks requiring ACEA E, Recommended for IVECO Trucks requiring ACEA E7"
+    ]
+   }
+  },
+  "MULTI15W40CV1": {
+   "columna": "Multi 15W-40 CV1",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "15W-40 CV1",
+   "sub": "",
+   "actual": [
+    "ACEA E7",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15B110",
+    "DEUTZ DQC III-18",
+    "DEUTZ DQC III-10",
+    "DEUTZ DQC II-18",
+    "DEUTZ DQC II-10",
+    "DEUTZ DQC I-02",
+    "FORD WSS-M2C171-D",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3275-1",
+    "MAN 271",
+    "MTU TYPE 2",
+    "MTU TYPE 1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K215",
+    "MB 228.1"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Recommended for DAF Trucks requiring ACEA E7  Recommended for IVECO Trucks r equiring ACEA E7"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E7",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15B110"
+    ],
+    "deutz": [
+     "DQC III-18",
+     "DQC III-10",
+     "DQC II-18",
+     "DQC II-10",
+     "DQC I-02"
+    ],
+    "ford": [
+     "WSS-M2C171-D"
+    ],
+    "mack": [
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M3275-1",
+     "M271"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2",
+     "Categoría de lubricantes MTU 1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K215, MB 228.1, Recommended for DAF Trucks requiring ACEA E7, Recommended for IVECO Trucks r equiring ACEA E7"
+    ]
+   }
+  },
+  "MULTI10W30CV2": {
+   "columna": "Multi 10W-30 CV2",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "10W-30 CV2",
+   "sub": "",
+   "actual": [
+    "ACEA E9",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20081",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "DEUTZ DQC II-18 LA",
+    "DEUTZ DQC II-10 LA",
+    "FORD WSS-M2C171-E",
+    "MACK EO-N PREMIUM PLUS",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3275-1",
+    "MTU TYPE 2.1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K218",
+    "DETROIT DIESEL DFS 93K215",
+    "DETROIT DIESEL DFS 93K214"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Recommended for DAF Trucks requiring ACEA E9  Recommended for IVECO Trucks requiring ACEA E9"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E9",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20081",
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15C100"
+    ],
+    "deutz": [
+     "DQC III-18 LA",
+     "DQC III-10 LA",
+     "DQC II-18 LA",
+     "DQC II-10 LA"
+    ],
+    "ford": [
+     "WSS-M2C171-E"
+    ],
+    "mack": [
+     "EO-N Premium Plus",
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M3275-1"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2.1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K218, DFS 93K215, DDC Powerguard 93K214, Recommended for DAF Trucks requiring ACEA E9, Recommended for IVECO Trucks requiring ACEA E9"
+    ]
+   }
+  },
+  "MULTI10W40CV2": {
+   "columna": "Multi 10W-40 CV2",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "10W-40 CV2",
+   "sub": "",
+   "actual": [
+    "ACEA E9",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20081",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "DEUTZ DQC II-18 LA",
+    "DEUTZ DQC II-10 LA",
+    "FORD WSS-M2C171-E",
+    "MACK EO-N PREMIUM PLUS",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3477",
+    "MAN 271-1",
+    "MTU TYPE 2.1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K218",
+    "DETROIT DIESEL DFS 93K215",
+    "DETROIT DIESEL DFS 93K214"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Recommended for DAF Trucks requiring ACEA E9  Recommended for IVECO Trucks requiring ACEA E9"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E9",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20081",
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15C100"
+    ],
+    "deutz": [
+     "DQC III-18 LA",
+     "DQC III-10 LA",
+     "DQC II-18 LA",
+     "DQC II-10 LA"
+    ],
+    "ford": [
+     "WSS-M2C171-E"
+    ],
+    "mack": [
+     "EO-N Premium Plus",
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M 3477",
+     "M 271-1"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2.1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K218, DFS 93K215, DDC Powerguard 93K214, Recommended for DAF Trucks requiring ACEA E9, Recommended for IVECO Trucks requiring ACEA E9"
+    ]
+   }
+  },
+  "MULTI15W40CV2": {
+   "columna": "Multi 15W-40 CV2",
+   "pagina": 3,
+   "grupo": "Multi",
+   "visc": "15W-40 CV2",
+   "sub": "",
+   "actual": [
+    "ACEA E9",
+    "ACEA E5",
+    "ACEA E3",
+    "ACEA E2",
+    "API CJ-4",
+    "API CI-4",
+    "API CH-4",
+    "API CF-4",
+    "API CG-4",
+    "API CE",
+    "API CD",
+    "API CC",
+    "JASO DH-1",
+    "GLOBAL DHD-1",
+    "CATERPILLAR ECF-2",
+    "CATERPILLAR ECF-1a",
+    "CUMMINS CES 20081",
+    "CUMMINS CES 20078",
+    "CUMMINS CES 20077",
+    "CUMMINS CES 20076",
+    "CUMMINS CES 20075",
+    "CUMMINS CES 20072",
+    "CUMMINS CES 20071",
+    "DAIMLER TRUCK DTFR 15C100",
+    "DEUTZ DQC III-18 LA",
+    "DEUTZ DQC III-10 LA",
+    "DEUTZ DQC II-18 LA",
+    "DEUTZ DQC II-10 LA",
+    "FORD WSS-M2C171-E",
+    "MACK EO-N PREMIUM PLUS",
+    "MACK EO-N",
+    "MACK EO-M PLUS",
+    "MACK EO-L",
+    "MACK EO-K",
+    "MAN 3275-1",
+    "MTU TYPE 2.1",
+    "RENAULT RLD-2",
+    "VOLVO VDS-3",
+    "VOLVO VDS-2",
+    "DETROIT DIESEL DFS 93K218",
+    "DETROIT DIESEL DFS 93K215",
+    "DETROIT DIESEL DFS 93K214"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [
+    "renault: RLD",
+    "volvo: VDS",
+    "otros: Recommended for DAF Trucks requiring ACEA E9  Recommended for IVECO Trucks requiring ACEA E9"
+   ],
+   "celdas_brutas": {
+    "acea": [
+     "E9",
+     "E5",
+     "E3",
+     "E2"
+    ],
+    "api": [
+     "CJ-4",
+     "CI-4",
+     "CH-4",
+     "CF-4",
+     "CG-4",
+     "CE",
+     "CD",
+     "CC"
+    ],
+    "jaso": [
+     "DH-1"
+    ],
+    "global": [
+     "DHD-1"
+    ],
+    "cat": [
+     "ECF-2",
+     "ECF-1a"
+    ],
+    "cummins": [
+     "CES 20081",
+     "CES 20078",
+     "CES 20077",
+     "CES 20076",
+     "CES 20075",
+     "CES 20072",
+     "CES 20071"
+    ],
+    "daimler": [
+     "DTFR 15C100"
+    ],
+    "deutz": [
+     "DQC III-18 LA",
+     "DQC III-10 LA",
+     "DQC II-18 LA",
+     "DQC II-10 LA"
+    ],
+    "ford": [
+     "WSS-M2C171-E"
+    ],
+    "mack": [
+     "EO-N Premium Plus",
+     "EO-N",
+     "EO-M Plus",
+     "EO-L",
+     "EO-K"
+    ],
+    "man": [
+     "M3275-1"
+    ],
+    "mtu": [
+     "Categoría de lubricantes MTU 2.1"
+    ],
+    "renault": [
+     "RLD-2",
+     "RLD"
+    ],
+    "volvo": [
+     "VDS-3",
+     "VDS-2",
+     "VDS"
+    ],
+    "otros": [
+     "DFS 93K218, DFS 93K215, DDC Powerguard 93K214, Recommended for DAF Trucks requiring ACEA E9, Recommended for IVECO Trucks requiring ACEA E9"
+    ]
+   }
+  },
+  "10WCF": {
+   "columna": "10W CF",
+   "pagina": 3,
+   "grupo": "",
+   "visc": "10W CF",
+   "sub": "",
+   "actual": [
+    "API CF"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "api": [
+     "CF"
+    ]
+   }
+  },
+  "30CF": {
+   "columna": "30 CF",
+   "pagina": 3,
+   "grupo": "",
+   "visc": "30 CF",
+   "sub": "",
+   "actual": [
+    "API CF"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "api": [
+     "CF"
+    ]
+   }
+  },
+  "40CFCF2": {
+   "columna": "40 CF/CF-2",
+   "pagina": 3,
+   "grupo": "",
+   "visc": "40 CF/CF-2",
+   "sub": "",
+   "actual": [
+    "API CF/CF-2"
+   ],
+   "retro": [],
+   "cumple": [],
+   "sin_enlazar": [],
+   "celdas_brutas": {
+    "api": [
+     "CF/CF-2"
+    ]
+   }
+  }
+ },
+ "codigos": {
+  "1619A1": {
+   "nombre": "Vecton Long Drain 0W -20 4X5L ,",
+   "ean": "4008177200748",
+   "ean_caja": "14008177200745"
+  },
+  "1619A9": {
+   "nombre": "Vecton Long Drain 0W -20 20L ,",
+   "ean": "4008177200939",
+   "ean_caja": ""
+  },
+  "1619A4": {
+   "nombre": "Vecton Long Drain 0W -20 60L ,",
+   "ean": "4008177174094",
+   "ean_caja": ""
+  },
+  "1619A5": {
+   "nombre": "Vecton Long Drain 0W -20 208L ,",
+   "ean": "4008177174100",
+   "ean_caja": ""
+  },
+  "1619A8": {
+   "nombre": "Vecton Long Drain 0W -20 1000L ,",
+   "ean": "4008177174087",
+   "ean_caja": ""
+  },
+  "161A47": {
+   "nombre": "Vecton LD 5W -20 SLD5 1000L ,",
+   "ean": "4008177174148",
+   "ean_caja": ""
+  },
+  "161A46": {
+   "nombre": "Vecton LD 5W -20 SLD5 208L ,",
+   "ean": "4008177174155",
+   "ean_caja": ""
+  },
+  "161A44": {
+   "nombre": "Vecton LD 5W -20 SLD5 20L ,",
+   "ean": "4008177174179",
+   "ean_caja": ""
+  },
+  "16188A": {
+   "nombre": "Vecton LD 5W -30 FA -4/F01 4X5L ,",
+   "ean": "4008177200519",
+   "ean_caja": "14008177200516"
+  },
+  "16188F": {
+   "nombre": "Vecton LD 5W -30 FA -4/F01 20L ,",
+   "ean": "4008177173936",
+   "ean_caja": ""
+  },
+  "16188C": {
+   "nombre": "Vecton LD 5W -30 FA -4/F01 60L ,",
+   "ean": "4008177173905",
+   "ean_caja": ""
+  },
+  "16188D": {
+   "nombre": "Vecton LD 5W -30 FA -4/F01 208L ,",
+   "ean": "4008177173875",
+   "ean_caja": ""
+  },
+  "16188E": {
+   "nombre": "Vecton LD 5W -30 FA -4/F01 1000L ,",
+   "ean": "4008177173868",
+   "ean_caja": ""
+  },
+  "160A62": {
+   "nombre": "Vecton 5W30 F -Trucks CK -4 208L ,",
+   "ean": "4008177173035",
+   "ean_caja": ""
+  },
+  "16229F": {
+   "nombre": "Vecton LD 5W -30 E8/E11 4X5L ,",
+   "ean": "4008177206726",
+   "ean_caja": "14008177206723"
+  },
+  "16229D": {
+   "nombre": "Vecton LD 5W -30 E8/E11 20L ,",
+   "ean": "4008177207204",
+   "ean_caja": ""
+  },
+  "16229E": {
+   "nombre": "Vecton LD 5W -30 E8/E11 208L ,",
+   "ean": "4008177175039",
+   "ean_caja": ""
+  },
+  "16229C": {
+   "nombre": "Vecton LD 5W -30 E8/E11 1000L ,",
+   "ean": "4008177175022",
+   "ean_caja": ""
+  },
+  "1628CA": {
+   "nombre": "Vecton LD 10W -30 E8/E11 4X5L ,",
+   "ean": "4008177207396",
+   "ean_caja": "14008177207393"
+  },
+  "1628C8": {
+   "nombre": "Vecton LD 10W -30 E8/E11 20L ,",
+   "ean": "4008177207389",
+   "ean_caja": ""
+  },
+  "1628C9": {
+   "nombre": "Vecton LD 10W -30 E8/E11 208L ,",
+   "ean": "4008177207495",
+   "ean_caja": ""
+  },
+  "1628C7": {
+   "nombre": "Vecton LD 10W -30 E8/E11 1000L ,",
+   "ean": "4008177207488",
+   "ean_caja": ""
+  },
+  "1628C3": {
+   "nombre": "Vecton LD 10W -40 E8/E11 4X5L ,",
+   "ean": "4008177207426",
+   "ean_caja": "14008177207423"
+  },
+  "1629A7": {
+   "nombre": "Vecton LD 10W -40 E8/E11 20L ,",
+   "ean": "4008177207532",
+   "ean_caja": ""
+  },
+  "1628C2": {
+   "nombre": "Vecton LD 10W -40 E8/E11 208L ,",
+   "ean": "4008177175336",
+   "ean_caja": ""
+  },
+  "1628C0": {
+   "nombre": "Vecton LD 10W -40 E8/E11 1000L ,",
+   "ean": "4008177175329",
+   "ean_caja": ""
+  },
+  "16235C": {
+   "nombre": "VECTON Plus 10W -40 E4/E7 20L ,",
+   "ean": "4008177206825",
+   "ean_caja": ""
+  },
+  "16235D": {
+   "nombre": "VECTON Plus 10W -40 E4/E7 208L ,",
+   "ean": "4008177175121",
+   "ean_caja": ""
+  },
+  "16235B": {
+   "nombre": "VECTON Plus 10W -40 E4/E7 1000L ,",
+   "ean": "4008177175138",
+   "ean_caja": ""
+  },
+  "1620AB": {
+   "nombre": "VECTON Plus 10W -40 E7 4X5L ,",
+   "ean": "4008177206757",
+   "ean_caja": "14008177206754"
+  },
+  "1620AC": {
+   "nombre": "VECTON Plus 10W -40 E7 20L ,",
+   "ean": "4008177206788",
+   "ean_caja": ""
+  },
+  "1620AA": {
+   "nombre": "VECTON Plus 10W -40 E7 208L ,",
+   "ean": "4008177175046",
+   "ean_caja": ""
+  },
+  "1620A8": {
+   "nombre": "VECTON Plus 10W -40 E7 1000L ,",
+   "ean": "4008177175053",
+   "ean_caja": ""
+  },
+  "1620B4": {
+   "nombre": "VECTONPlus15W40CK4/E11 4X5L ,",
+   "ean": "4008177206696",
+   "ean_caja": "1400817720669"
+  },
+  "1620B2": {
+   "nombre": "VECTONPlus15W40CK4/E11 20L ,",
+   "ean": "4008177206672",
+   "ean_caja": ""
+  },
+  "1620B3": {
+   "nombre": "VECTONPlus15W40CK4/E11 208L ,",
+   "ean": "4008177175077",
+   "ean_caja": ""
+  },
+  "1620B1": {
+   "nombre": "VECTONPlus15W40CK4/E11 1000L ,",
+   "ean": "4008177175084",
+   "ean_caja": ""
+  },
+  "161DA6": {
+   "nombre": "VECTON Multi 10W -30 CV1 20L ,",
+   "ean": "4008177174681",
+   "ean_caja": ""
+  },
+  "161DA7": {
+   "nombre": "VECTON Multi 10W -30 CV1 208L ,",
+   "ean": "4008177174650",
+   "ean_caja": ""
+  },
+  "161DA5": {
+   "nombre": "VECTON Multi 10W -30 CV1 1000L ,",
+   "ean": "4008177174674",
+   "ean_caja": ""
+  },
+  "161DA2": {
+   "nombre": "VECTON Multi 10W -40 CV1 20L ,",
+   "ean": "4008177174643",
+   "ean_caja": ""
+  },
+  "161DA3": {
+   "nombre": "VECTON Multi 10W -40 CV1 208L ,",
+   "ean": "4008177174612",
+   "ean_caja": ""
+  },
+  "161DA1": {
+   "nombre": "VECTON Multi 10W -40 CV1 1000L ,",
+   "ean": "4008177174636",
+   "ean_caja": ""
+  },
+  "161D4D": {
+   "nombre": "VECTON Multi 15W -40 CV1 4X5L ,",
+   "ean": "4008177201790",
+   "ean_caja": "14008177201797"
+  },
+  "161D4E": {
+   "nombre": "VECTON Multi 15W -40 CV1 20L ,",
+   "ean": "4008177174506",
+   "ean_caja": ""
+  },
+  "161D4C": {
+   "nombre": "VECTON Multi 15W -40 CV1 208L ,",
+   "ean": "4008177174483",
+   "ean_caja": ""
+  },
+  "161D4A": {
+   "nombre": "VECTON Multi 15W -40 CV1 1000L ,",
+   "ean": "4008177174490",
+   "ean_caja": ""
+  },
+  "161E1B": {
+   "nombre": "VECTON Multi 10W -30 CV2 20L ,",
+   "ean": "4008177174797",
+   "ean_caja": ""
+  },
+  "161E1A": {
+   "nombre": "VECTON Multi 10W -30 CV2 208L ,",
+   "ean": "4008177174766",
+   "ean_caja": ""
+  },
+  "161E0E": {
+   "nombre": "VECTON Multi 10W -30 CV2 1000L ,",
+   "ean": "4008177174773",
+   "ean_caja": ""
+  },
+  "161D6A": {
+   "nombre": "VECTON Multi 10W -40 CV2 4X5L ,",
+   "ean": "4008177201783",
+   "ean_caja": "14008177201780"
+  },
+  "161D5E": {
+   "nombre": "VECTON Multi 10W -40 CV2 20L ,",
+   "ean": "4008177174551",
+   "ean_caja": ""
+  },
+  "161D5F": {
+   "nombre": "VECTON Multi 10W -40 CV2 208L ,",
+   "ean": "4008177174544",
+   "ean_caja": ""
+  },
+  "161D5D": {
+   "nombre": "VECTON Multi 10W -40 CV2 1000L ,",
+   "ean": "4008177174537",
+   "ean_caja": ""
+  },
+  "161E1F": {
+   "nombre": "VECTON Multi 15W -40 CV2 20L ,",
+   "ean": "4008177174735",
+   "ean_caja": ""
+  },
+  "161E1E": {
+   "nombre": "VECTON Multi 15W -40 CV2 208L ,",
+   "ean": "4008177174728",
+   "ean_caja": ""
+  },
+  "161E1C": {
+   "nombre": "VECTON Multi 15W -40 CV2 1000L ,",
+   "ean": "4008177174742",
+   "ean_caja": ""
+  },
+  "15BB34": {
+   "nombre": "CRBMonograde10WCF 20L ,",
+   "ean": "4008177146060",
+   "ean_caja": ""
+  },
+  "15BB35": {
+   "nombre": "CRBMonograde10WCF 208L ,",
+   "ean": "4008177146077",
+   "ean_caja": ""
+  },
+  "16167A": {
+   "nombre": "CRBMonograde10WCF 1000L ,",
+   "ean": "4008177173554",
+   "ean_caja": ""
+  },
+  "15B9F7": {
+   "nombre": "CRBMonograde30CF 20L ,",
+   "ean": "4008177145537",
+   "ean_caja": ""
+  },
+  "15B9F8": {
+   "nombre": "CRBMonograde30CF 208L ,",
+   "ean": "4008177145544",
+   "ean_caja": ""
+  },
+  "16161D": {
+   "nombre": "CRBMonograde30CF 1000L ,",
+   "ean": "4008177173561",
+   "ean_caja": ""
+  },
+  "15BB45": {
+   "nombre": "CRB Monograde 40 CF/CF -2 20L ,",
+   "ean": "4008177146442",
+   "ean_caja": ""
+  },
+  "1616DD": {
+   "nombre": "CRB Monograde 40 CF/CF -2 1000L ,",
+   "ean": "4008177173806",
+   "ean_caja": ""
+  },
+  "15D6C7": {
+   "nombre": "TransmaxATFZ 20L ,",
+   "ean": "4008177162213",
+   "ean_caja": ""
+  },
+  "15D6C8": {
+   "nombre": "TransmaxATFZ 208L ,",
+   "ean": "4008177162220",
+   "ean_caja": ""
+  },
+  "15F0B8": {
+   "nombre": "TransmaxATFZ 12X1L ,",
+   "ean": "4008177179730",
+   "ean_caja": "14008177179737"
+  },
+  "15D6CC": {
+   "nombre": "TransmaxATFZ 1000L ,",
+   "ean": "4008177162244",
+   "ean_caja": ""
+  },
+  "15F176": {
+   "nombre": "TransmaxATFDXIIIMV 12X1L ,",
+   "ean": "4008177179679",
+   "ean_caja": "14008177179676"
+  },
+  "15F177": {
+   "nombre": "TransmaxATFDXIIIMV 4X5L ,",
+   "ean": "4008177179686",
+   "ean_caja": "14008177179683"
+  },
+  "15D66F": {
+   "nombre": "TransmaxATFDXIIIMV 20L ,",
+   "ean": "4008177162183",
+   "ean_caja": ""
+  },
+  "15D671": {
+   "nombre": "TransmaxATFDXIIIMV 208L ,",
+   "ean": "4008177162190",
+   "ean_caja": ""
+  },
+  "15D8DF": {
+   "nombre": "Transmax Man Z LL 75W -80 208L ,",
+   "ean": "4008177162756",
+   "ean_caja": ""
+  },
+  "15D70A": {
+   "nombre": "Transmax Man Z LL 75W -80 20L ,",
+   "ean": "4008177162732",
+   "ean_caja": ""
+  },
+  "15D8AE": {
+   "nombre": "Transmax Manual LL 75W -85 208L ,",
+   "ean": "4008177161636",
+   "ean_caja": ""
+  },
+  "15D8AB": {
+   "nombre": "Transmax Manual LL 75W -85 20L ,",
+   "ean": "4008177161629",
+   "ean_caja": ""
+  },
+  "15D733": {
+   "nombre": "Transmax Manual AT 75W -90 208L ,",
+   "ean": "4008177161360",
+   "ean_caja": ""
+  },
+  "16096A": {
+   "nombre": "Transmax Manual AT 75W -90 20L ,",
+   "ean": "4008177172328",
+   "ean_caja": ""
+  },
+  "15EEDB": {
+   "nombre": "TransmaxManualEP80W 208L ,",
+   "ean": "4008177177415",
+   "ean_caja": ""
+  },
+  "15DDE7": {
+   "nombre": "TransmaxManualEP80W 20L ,",
+   "ean": "4008177163715",
+   "ean_caja": ""
+  },
+  "15D7DD": {
+   "nombre": "Transmax Manual EP 80W -90 208L ,",
+   "ean": "4008177177286",
+   "ean_caja": ""
+  },
+  "15D7DB": {
+   "nombre": "Transmax Manual EP 80W -90 20L ,",
+   "ean": "4008177162831",
+   "ean_caja": ""
+  },
+  "15F087": {
+   "nombre": "Transmax Axle LL 75W -90 12X1L ,",
+   "ean": "4008177180590",
+   "ean_caja": "14008177180597"
+  },
+  "15D8CE": {
+   "nombre": "Transmax Axle LL 75W -90 208L ,",
+   "ean": "4008177162534",
+   "ean_caja": ""
+  },
+  "15DB78": {
+   "nombre": "Transmax Axle LL 75W -90 20L ,",
+   "ean": "4008177162572",
+   "ean_caja": ""
+  },
+  "15DB83": {
+   "nombre": "Transmax Axle LL 75W -140 208L ,",
+   "ean": "4008177161100",
+   "ean_caja": ""
+  },
+  "15D7A1": {
+   "nombre": "Transmax Axle LL 75W -140 20L ,",
+   "ean": "4008177161216",
+   "ean_caja": ""
+  },
+  "15D968": {
+   "nombre": "Transmax Axle LL 75W -140 60L ,",
+   "ean": "4008177161124",
+   "ean_caja": ""
+  },
+  "15DDDA": {
+   "nombre": "Transmax Axle LD 80W -90 208L ,",
+   "ean": "4008177163432",
+   "ean_caja": ""
+  },
+  "15D94C": {
+   "nombre": "Transmax Axle EPX 80W -90 1000L ,",
+   "ean": "4008177162312",
+   "ean_caja": ""
+  },
+  "15F1BA": {
+   "nombre": "Transmax Axle EPX 80W -90 12X1L ,",
+   "ean": "4008177180224",
+   "ean_caja": "14008177180221"
+  },
+  "15EEDD": {
+   "nombre": "Transmax Axle EPX 80W -90 208L ,",
+   "ean": "4008177177316",
+   "ean_caja": ""
+  },
+  "15D761": {
+   "nombre": "Transmax Axle EPX 80W -90 20L ,",
+   "ean": "4008177162299",
+   "ean_caja": ""
+  },
+  "15F1B1": {
+   "nombre": "Transmax Axle EPX 80W -90 4X5L ,",
+   "ean": "4008177179792",
+   "ean_caja": "14008177179799"
+  },
+  "15D87A": {
+   "nombre": "Transmax Axle EPX 85W -90 1000L ,",
+   "ean": "4008177163623",
+   "ean_caja": ""
+  },
+  "15D6DA": {
+   "nombre": "Transmax Axle EPX 85W -90 208L ,",
+   "ean": "4008177177354",
+   "ean_caja": ""
+  },
+  "15DE6A": {
+   "nombre": "Transmax Axle EPX 85W -90 20L ,",
+   "ean": "4008177163944",
+   "ean_caja": ""
+  },
+  "15EEDC": {
+   "nombre": "Transmax Axle EPX 85W -140 208L ,",
+   "ean": "4008177177392",
+   "ean_caja": ""
+  },
+  "15F01D": {
+   "nombre": "Transmax Axle EPX 85W -140 20L ,",
+   "ean": "4008177178795",
+   "ean_caja": ""
+  },
+  "161CA6": {
+   "nombre": "Transmax LS 75W -90 12X1L ,",
+   "ean": "4008177201899",
+   "ean_caja": "14008177201896"
+  },
+  "1616DC": {
+   "nombre": "Transmax LS 75W -90 20L ,",
+   "ean": "4008177173622",
+   "ean_caja": ""
+  },
+  "15D8B2": {
+   "nombre": "Transmax LS 75W -90 208L ,",
+   "ean": "4008177161322",
+   "ean_caja": ""
+  },
+  "15D8B4": {
+   "nombre": "Transmax LS 75W -90 1000L ,",
+   "ean": "4008177161339",
+   "ean_caja": ""
+  },
+  "15F109": {
+   "nombre": "Transmax LS Z 85W -90 12X1L ,",
+   "ean": "4008177180620",
+   "ean_caja": "14008177180627"
+  },
+  "15DC44": {
+   "nombre": "Transmax LS Z 85W -90 60L ,",
+   "ean": "4008177162602",
+   "ean_caja": ""
+  },
+  "15D983": {
+   "nombre": "Transmax LS Z 85W -90 20L ,",
+   "ean": "4008177162596",
+   "ean_caja": ""
+  },
+  "15DB82": {
+   "nombre": "Transmax LS Z 85W -90 208L ,",
+   "ean": "4008177162633",
+   "ean_caja": ""
+  },
+  "15F1E7": {
+   "nombre": "Transmax LS LL 75W -140 12X1L ,",
+   "ean": "4008177180279",
+   "ean_caja": "14008177180276"
+  },
+  "15D98C": {
+   "nombre": "Transmax LS LL 75W -140 20L ,",
+   "ean": "4008177163135",
+   "ean_caja": ""
+  },
+  "15D98E": {
+   "nombre": "Transmax LS LL 75W -140 208L ,",
+   "ean": "4008177163142",
+   "ean_caja": ""
+  },
+  "16183C": {
+   "nombre": "Transmax Univer LL 75W -90 12X1L ,",
+   "ean": "4008177200380",
+   "ean_caja": "14008177200387"
+  },
+  "15DD11": {
+   "nombre": "Transmax Univer LL 75W -90 208L ,",
+   "ean": "4008177163500",
+   "ean_caja": ""
+  },
+  "15DD10": {
+   "nombre": "Transmax Univer LL 75W -90 20L ,",
+   "ean": "4008177163494",
+   "ean_caja": ""
+  },
+  "16171A": {
+   "nombre": "Transmax Univ LL 80W -90 208L ,",
+   "ean": "4008177173691",
+   "ean_caja": ""
+  },
+  "16170F": {
+   "nombre": "Transmax Univ LL 80W -90 20L ,",
+   "ean": "4008177173684",
+   "ean_caja": ""
+  },
+  "1616AA": {
+   "nombre": "Transmax Universal 75W -90 12X1L ,",
+   "ean": "4008177200144",
+   "ean_caja": "14008177200141"
+  },
+  "15D8B5": {
+   "nombre": "Transmax Universal 75W -90 208L ,",
+   "ean": "4008177161803",
+   "ean_caja": ""
+  },
+  "1616A8": {
+   "nombre": "Transmax Universal 75W -90 20L ,",
+   "ean": "4008177173578",
+   "ean_caja": ""
+  },
+  "16194E": {
+   "nombre": "TransmaxOffroad10W 1000L ,",
+   "ean": "4008177173998",
+   "ean_caja": ""
+  },
+  "15EAD8": {
+   "nombre": "TransmaxOffroad10W 208L ,",
+   "ean": "4008177176234",
+   "ean_caja": ""
+  },
+  "16192F": {
+   "nombre": "TransmaxOffroad30 1000L ,",
+   "ean": "4008177173950",
+   "ean_caja": ""
+  },
+  "15F00D": {
+   "nombre": "TransmaxOffroad30 208L ,",
+   "ean": "4008177178559",
+   "ean_caja": ""
+  },
+  "15EAD7": {
+   "nombre": "TransmaxOffroad30 20L ,",
+   "ean": "4008177176272",
+   "ean_caja": ""
+  },
+  "16192E": {
+   "nombre": "TransmaxOffroad50 1000L ,",
+   "ean": "4008177173981",
+   "ean_caja": ""
+  },
+  "15F00E": {
+   "nombre": "TransmaxOffroad50 208L ,",
+   "ean": "4008177178566",
+   "ean_caja": ""
+  },
+  "16080D": {
+   "nombre": "HighTemperatureGrease 180K ,",
+   "ean": "4008177127663",
+   "ean_caja": ""
+  }
+ },
+ "fuente": "Castrol - CVO Wallchart - Oct 2026.pdf"
+}
