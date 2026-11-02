@@ -103,6 +103,12 @@ def main():
     # ---- herramienta "referencias cruzadas" (pestana propia del buscador: crossReferenceSearch)
     bw.cargar_equiv_bloques()
     refs_real = lambda eq, ms: [eq["marcas"].get(m, "") for m in ms if eq["marcas"].get(m, "") and eq["marcas"][m].upper() not in bw.ESTADOS]
+    # correccion confirmada por el usuario (2026-11-02): en la matriz las referencias Repsol del 10W40 MDX+/MDXS+ estan desplazadas una fila;
+    # vale el "sistema actual" (Equivalencias Vehiculo Ligero.xlsx). 61005 se queda como en la matriz.
+    CORR_REPSOL = {"16001": "RPP0152MHA", "571000": "RPP0064MAB", "57208": "RPP0064MBA", "57005": "RPP0064MFB"}
+    for eq in bw.EQUIV:
+        if eq["marcas"].get("AD Parts") in CORR_REPSOL:
+            eq["marcas"]["Repsol"] = CORR_REPSOL[eq["marcas"]["AD Parts"]]
     for eq in bw.EQUIV:
         ads, comp = refs_real(eq, ("AD Parts", "AD Standard")), refs_real(eq, ("Castrol", "Repsol", "Shell", "Eni"))
         for r in ads:

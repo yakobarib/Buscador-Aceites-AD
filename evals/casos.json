@@ -28293,7 +28293,7 @@
   "consulta": "16001",
   "esperado": [
    "15F092",
-   "RPP0064MAB",
+   "RPP0152MHA",
    "550053775",
    "103881"
   ],
@@ -28313,9 +28313,9 @@
   "herramienta": "xref"
  },
  {
-  "id": "xref_otra_a_ad-169edf36",
+  "id": "xref_otra_a_ad-f7c2c36c",
   "categoria": "xref_otra_a_ad",
-  "consulta": "RPP0064MAB",
+  "consulta": "RPP0152MHA",
   "esperado": [
    "16001"
   ],
@@ -28350,7 +28350,7 @@
   "categoria": "xref_ad_a_otras",
   "consulta": "571000",
   "esperado": [
-   "RPP0064MBA",
+   "RPP0064MAB",
    "550053708",
    "102423"
   ],
@@ -28359,9 +28359,9 @@
   "herramienta": "xref"
  },
  {
-  "id": "xref_otra_a_ad-a4badd4f",
+  "id": "xref_otra_a_ad-169edf36",
   "categoria": "xref_otra_a_ad",
-  "consulta": "RPP0064MBA",
+  "consulta": "RPP0064MAB",
   "esperado": [
    "571000"
   ],
@@ -28397,7 +28397,7 @@
   "consulta": "57208",
   "esperado": [
    "15F09D",
-   "RPP0064MFB",
+   "RPP0064MBA",
    "550052508",
    "102410"
   ],
@@ -28417,9 +28417,9 @@
   "herramienta": "xref"
  },
  {
-  "id": "xref_otra_a_ad-59df49f1",
+  "id": "xref_otra_a_ad-a4badd4f",
   "categoria": "xref_otra_a_ad",
-  "consulta": "RPP0064MFB",
+  "consulta": "RPP0064MBA",
   "esperado": [
    "57208"
   ],
@@ -28455,7 +28455,7 @@
   "consulta": "57005",
   "esperado": [
    "15F7CE",
-   "RPP0152MHA",
+   "RPP0064MFB",
    "550070413",
    "102483"
   ],
@@ -28475,9 +28475,9 @@
   "herramienta": "xref"
  },
  {
-  "id": "xref_otra_a_ad-f7c2c36c",
+  "id": "xref_otra_a_ad-59df49f1",
   "categoria": "xref_otra_a_ad",
-  "consulta": "RPP0152MHA",
+  "consulta": "RPP0064MFB",
   "esperado": [
    "57005"
   ],
