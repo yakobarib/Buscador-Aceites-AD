@@ -1269,6 +1269,22 @@ def main():
         for tipo, k in eq["normas_n"]:
             por_norma[k]["eq"].append(eq)
 
+    # fichas OFICIALES (Mercedes-Benz: operatingfluids.mercedes-benz.com; ZF: listas TE-ML) para las paginas de norma
+    OFI = {}
+    for fn in ("descripciones_oficiales_mb.json", "descripciones_oficiales_zf.json"):
+        ro = RAIZ / fn
+        if ro.exists():
+            for kk, vv in json.loads(ro.read_text(encoding="utf-8")).items():
+                OFI[clave(kk)] = (kk, vv)
+    rmb = RAIZ / "BASE DE CONOCIMIENTO" / "CATALOGOS" / "Mercedes" / "mb_operating_fluids.json"
+    MB_HOJAS = {}
+    if rmb.exists():
+        for cat_mb, vmb in json.loads(rmb.read_text(encoding="utf-8"))["categorias"].items():
+            for h in vmb["hojas"]:
+                MB_HOJAS[clave("MB " + h["hoja"].rstrip("H"))] = h
+    MARCAS_MB = ("castrol", "repsol", "shell", "eni ", "eni,", "fuchs", "febi", "total", "motul", "liqui", "valvoline", "elf ")
+    zf_json = json.loads((RAIZ / "zf_teml_extraido.json").read_text(encoding="utf-8")) if (RAIZ / "zf_teml_extraido.json").exists() else {"clases": {}}
+
     for k, nombre in NOM.items():
         alias = [v for v in VARIANTES[k] if fichero(v) != nombre]
         fm = ["---", "tipo: norma", f"categoria: {CAT[k]}"]
@@ -1286,6 +1302,28 @@ def main():
                            ("Filas de la matriz de equivalencias", d["eq"], lambda x: f'- [[{x["pagina"]}]]')):
             if lst:
                 cu += [f"## {et} ({len(lst)})", ""] + [f(x) for x in lst] + [""]
+        of = OFI.get(k)
+        if of:
+            nm_of, ov = of
+            cu += ["## Ficha oficial", "", f'**{nm_of}** · {ov["description"]}', "", f'*Fuente: {ov["fuente"]}. Traducción/resumen sin deducir nada más de la ficha original.*', ""]
+            h = MB_HOJAS.get(k)
+            if h:
+                cu += [f'- **Título oficial (EN):** {h["titulo_en"]}', f'- **Título oficial (DE):** {h["titulo_de"]}']
+                if h["info_en"].strip():
+                    cu.append("- **Nota de la hoja:** " + re.sub(r"\s+", " ", h["info_en"]).strip())
+                cu += [f'- **Hoja publicada:** {h["publicada"]} · **Productos aprobados en la lista oficial:** {len(h["productos"])}']
+                if h["productos_marca_propia"]:
+                    cu.append("- **Productos de marca Mercedes-Benz:** " + " · ".join(h["productos_marca_propia"]))
+                mios = [x for x in h["productos"] if any(m in (x["fabricante"] + " ").lower() for m in MARCAS_MB)]
+                if mios:
+                    cu += ["", f"### Productos aprobados de marcas del buscador ({len(mios)})", ""]
+                    cu += [f'- {x["nombre"]} — {x["fabricante"]}' + (f' ({", ".join(x["viscosidades"])})' if x["viscosidades"] else "") for x in mios[:60]]
+                cu.append("")
+            zc = zf_json["clases"].get(nm_of.replace("ZF TE-ML ", "")) if nm_of.startswith("ZF TE-ML ") else None
+            if zc:
+                cu += [f'- **Lista ZF:** TE-ML {zc["lista"]} · **Texto de la clase:** {zc["cabecera"] or "(sin texto de cabecera en la lista)"}',
+                       f'- **Homologaciones ZF de productos comerciales en la lista:** {zc["n_homologaciones_zf"]}',
+                       f'- **Documento:** [[CATALOGOS/ZF/{zc["archivo"].replace(".md", "")}]]', ""]
         (WIKI / "normas" / f"{nombre}.md").write_text("\n".join(fm + cu), encoding="utf-8")
 
     oem_idx = defaultdict(list)

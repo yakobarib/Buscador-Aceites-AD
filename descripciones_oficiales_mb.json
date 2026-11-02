@@ -1,0 +1,1037 @@
+{
+ "MB 219.0": {
+  "description": "Aditivos especiales para lubricantes (vehículos y motores) (hoja MB 219.0 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2025-11-06",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Special additives for lubricants (vehicles and engines)"
+ },
+ "MB 223.2": {
+  "description": "Resumen de los aceites de motor prescritos en turismos y furgonetas (servicio) (hoja MB 223.2 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Engine Oil - Specified engine oils in cars & vans (service) - overview"
+ },
+ "MB 224.1": {
+  "description": "Clases de viscosidad de los aceites de motor de turismos (hoja MB 224.1 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Engine Oil - Viscosity classes of engine oils (car engines)"
+ },
+ "MB 226.5": {
+  "description": "Aceites de motor multigrado de servicio (hoja MB 226.5 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 52 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 52,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Multigrade Service Engine Oils"
+ },
+ "MB 226.51": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 226.51 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 33 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 33,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 226.52": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 226.52 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 38 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 38,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 228.51": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 228.51 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2026-07-09",
+  "segment": "pesado",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.1": {
+  "description": "Aceites de motor multigrado de servicio (hoja histórica) (hoja MB 229.1H de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Multigrade Service Engine Oils - Historical"
+ },
+ "MB 229.3": {
+  "description": "Aceites de motor multigrado de servicio (hoja MB 229.3 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 197 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 197,
+  "publicada": "2026-09-21",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Multigrade Service Engine Oils"
+ },
+ "MB 229.31": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.31 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 163 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 163,
+  "publicada": "2026-07-06",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.5": {
+  "description": "Aceites de motor multigrado de servicio (hoja MB 229.5 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 280 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 280,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Multigrade Service Engine Oils"
+ },
+ "MB 229.51": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.51 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 584 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 584,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.52": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.52 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 438 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 438,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.6": {
+  "description": "Aceites de motor multigrado de servicio (hoja MB 229.6 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 13 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 13,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Multigrade Service Engine Oils"
+ },
+ "MB 229.61": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.61 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 29 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 29,
+  "publicada": "2026-07-06",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.71": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.71 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 193 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 193,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.72": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.72 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 66 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 66,
+  "publicada": "2026-10-23",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 229.81": {
+  "description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.81 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "motor",
+  "titulo_en": "Low SPAsh Multigrade Service Engine Oils"
+ },
+ "MB 231.0": {
+  "description": "Información general sobre aceites de engranajes (hoja MB 231.0 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "General information on gear oils"
+ },
+ "MB 231.1": {
+  "description": "Resumen de los aceites de engranajes prescritos (turismos, todoterreno y furgonetas) (hoja MB 231.1 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Specified gear oils (cars, cross-country vehichles, vans) - overview"
+ },
+ "MB 235.0": {
+  "description": "Aceites de engranajes hipoides (hoja histórica) (hoja MB 235.0H de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 42 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 42,
+  "publicada": "2026-07-06",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear) - Historical"
+ },
+ "MB 235.1": {
+  "description": "Aceites de engranajes para dirección y caja de cambios manual (hoja MB 235.1 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Steering / Manual Transmission)"
+ },
+ "MB 235.10": {
+  "description": "Aceites de engranajes para caja de cambios manual (hoja MB 235.10 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Manual Transmission)"
+ },
+ "MB 235.11": {
+  "description": "Aceites de engranajes para caja de transferencia (hoja MB 235.11 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Transfer Case)"
+ },
+ "MB 235.14": {
+  "description": "Aceites de engranajes para dirección y caja de cambios manual (hoja MB 235.14 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 7 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 7,
+  "publicada": "2025-05-23",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Steering / Manual Transmission)"
+ },
+ "MB 235.15": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.15 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 235.17": {
+  "description": "Aceites de engranajes para caja de cambios manual (hoja MB 235.17 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Manual Transmission)"
+ },
+ "MB 235.20": {
+  "description": "Aceites de engranajes hipoides (aceite mineral) (hoja MB 235.20 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gearboxes Mineral Oil)"
+ },
+ "MB 235.21": {
+  "description": "Aceites de engranajes para caja de transferencia (hoja MB 235.21 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 5 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 5,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Transfer Case)"
+ },
+ "MB 235.23": {
+  "description": "Aceites de engranajes hipoides (aceite mineral) (hoja MB 235.23 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-05-15",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gearboxes Mineral Oil)"
+ },
+ "MB 235.3": {
+  "description": "Aceites de engranajes de ahorro de combustible (FE) (hoja MB 235.3 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (FE Gear Oils)"
+ },
+ "MB 235.31": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.31 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 235.33": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.33 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 6 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 6,
+  "publicada": "2026-07-23",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 235.4": {
+  "description": "Aceites de engranajes para cajas de cambio (hoja MB 235.4 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Gear)"
+ },
+ "MB 235.5": {
+  "description": "Aceites de engranajes para caja de transferencia (hoja MB 235.5 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Transfer Box)"
+ },
+ "MB 235.61": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.61 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 235.62": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 235.62 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axle Gear)"
+ },
+ "MB 235.63": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 235.63 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axle Gear)"
+ },
+ "MB 235.64": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 235.64 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axle Gear)"
+ },
+ "MB 235.65": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 235.65 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axle Gear)"
+ },
+ "MB 235.66": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 235.66 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axle Gear)"
+ },
+ "MB 235.7": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.7 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-10-30",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 235.71": {
+  "description": "Aceites de engranajes para caja de cambios automatizada (hoja MB 235.71 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Automatic Shift Gear)"
+ },
+ "MB 235.72": {
+  "description": "Aceites de engranajes para caja de cambios automatizada (hoja MB 235.72 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Automatic Shift Gear)"
+ },
+ "MB 235.73": {
+  "description": "Aceites de engranajes para caja de doble embrague (DCT) (hoja MB 235.73 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (DCT Gear)"
+ },
+ "MB 235.74": {
+  "description": "Aceites de engranajes para eje delantero (hoja MB 235.74 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Front Axle)"
+ },
+ "MB 235.75": {
+  "description": "Aceites de engranajes para eje delantero (hoja MB 235.75 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2025-05-05",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Front Axle)"
+ },
+ "MB 235.9": {
+  "description": "Aceites de engranajes hipoides (hoja MB 235.9 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 10 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 10,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Hypoid Gear)"
+ },
+ "MB 236.1": {
+  "description": "Fluidos ATF para cajas automáticas de 4 y 5 velocidades (hoja MB 236.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 27 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 27,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 4/5 -Speed Automatic)"
+ },
+ "MB 236.10": {
+  "description": "Fluidos ATF para cajas automáticas de 5 velocidades (hoja MB 236.10 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 5 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 5,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 5-Speed Automatic)"
+ },
+ "MB 236.11": {
+  "description": "Fluidos ATF para cajas automáticas ZF / AG4 (hoja MB 236.11 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, ZF/ AG4 Automatic)"
+ },
+ "MB 236.12": {
+  "description": "Fluidos ATF para caja de transferencia (hoja MB 236.12 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Transfer Box)"
+ },
+ "MB 236.13": {
+  "description": "Fluidos ATF para caja de transferencia (hoja MB 236.13 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic transmission fluids (ATF, Transfer box)"
+ },
+ "MB 236.14": {
+  "description": "Fluidos ATF para transmisiones de variación continua (CVT) (hoja MB 236.14 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 23 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 23,
+  "publicada": "2025-05-27",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, CVT)"
+ },
+ "MB 236.15": {
+  "description": "Fluidos ATF para caja de transferencia y caja automática (hoja MB 236.15 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 24 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 24,
+  "publicada": "2026-07-01",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Transfer/Automatic)"
+ },
+ "MB 236.17": {
+  "description": "Fluidos ATF para caja de transferencia y caja automática de 9 velocidades (hoja MB 236.17 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 13 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 13,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Transfer / 9-Speed Automatic)"
+ },
+ "MB 236.18": {
+  "description": "Fluidos ATF para cajas automáticas (hoja MB 236.18 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2026-08-19",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, -speed Automatic)"
+ },
+ "MB 236.2": {
+  "description": "Fluidos ATF Tipo A Suffix A (hoja MB 236.2 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 5 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 5,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Type A Suffix A)"
+ },
+ "MB 236.20": {
+  "description": "Fluidos ATF para transmisiones de variación continua (CVT) (hoja MB 236.20 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, CVT)"
+ },
+ "MB 236.21": {
+  "description": "Fluidos ATF para cajas de doble embrague (DCT) de 7 velocidades (hoja MB 236.21 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-01-08",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 7-Speed DCT)"
+ },
+ "MB 236.22": {
+  "description": "Fluidos ATF para cajas de doble embrague (DCT) 8F (hoja MB 236.22 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-11-18",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic transmission fluids (ATF, 8F DCT transmission)"
+ },
+ "MB 236.23": {
+  "description": "Aceite de engranajes para el eje delantero del sistema de accionamiento eléctrico (hoja MB 236.23 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear oil for electric drive system front axle"
+ },
+ "MB 236.24": {
+  "description": "Aceite de transmisión para caja manual y sistema de accionamiento eléctrico (hoja MB 236.24 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Transmission Oil (Manual Transmission, E-Drive System)"
+ },
+ "MB 236.25": {
+  "description": "Fluidos ATF para sistema hidráulico (hoja MB 236.25 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Hydraulic System)"
+ },
+ "MB 236.26": {
+  "description": "Fluidos ATF GL-5 para sistema hidráulico (hoja MB 236.26 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, GL-5 Hydraulic System)"
+ },
+ "MB 236.27": {
+  "description": "Fluidos ATF para cajas de doble embrague eléctricas (eDCT) 8F (hoja MB 236.27 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2025-11-18",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic transmission fluids (ATF, 8F-eDCT transmission)"
+ },
+ "MB 236.41": {
+  "description": "Fluidos ATF para transmisiones híbridas (hoja MB 236.41 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Hybride)"
+ },
+ "MB 236.5": {
+  "description": "Fluidos ATF Allison (hoja histórica) (hoja MB 236.5H de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Allison) - Historical"
+ },
+ "MB 236.6": {
+  "description": "Fluidos ATF (hoja histórica) (hoja MB 236.6H de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF) - Historical"
+ },
+ "MB 236.7": {
+  "description": "Fluidos ATF para dirección y caja automática (hoja MB 236.7 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 9 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 9,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Steering/Automatic)"
+ },
+ "MB 236.8": {
+  "description": "Fluidos ATF para cajas automáticas (hoja MB 236.8 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 7 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 7,
+  "publicada": "2025-04-16",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Automatic)"
+ },
+ "MB 236.81": {
+  "description": "Fluidos ATF para cajas automáticas (hoja MB 236.81 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Automatic)"
+ },
+ "MB 236.82": {
+  "description": "Fluidos ATF para cajas ZF (hoja MB 236.82 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, ZF Gear)"
+ },
+ "MB 236.9": {
+  "description": "Fluidos ATF para cajas Allison y automáticas (hoja MB 236.9 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Allison/Automatic)"
+ },
+ "MB 236.93": {
+  "description": "Fluidos ATF para cajas Allison y automáticas (hoja MB 236.93 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 6 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 6,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, Allison/Automatic)"
+ },
+ "MB 237.11": {
+  "description": "Aceite de engranajes para accionamiento eléctrico (e-Drive) (hoja MB 237.11 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gears Oil (e-Drive)"
+ },
+ "MB 237.12": {
+  "description": "Aceites de transmisión para módulos de accionamiento eléctrico (hoja MB 237.12 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Transmission Oils Electric Drive Modules"
+ },
+ "MB 237.20": {
+  "description": "Aceites de transmisión para módulos de accionamiento eléctrico (hoja MB 237.20 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Transmission oils for electric drive modules"
+ },
+ "MB 239.21": {
+  "description": "Fluidos ATF para cajas de doble embrague (DCT) Getrag 700.422 de 7 velocidades (hoja MB 239.21 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 7-Speed DCT Getrag 700.422)"
+ },
+ "MB 239.22": {
+  "description": "Fluidos ATF para cajas de doble embrague (DCT) Getrag 700.423 de 7 velocidades (hoja MB 239.22 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 7-Speed DCT Getrag 700.423)"
+ },
+ "MB 239.31": {
+  "description": "Aceites de engranajes para caja de cambios manual (hoja MB 239.31 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Manual Transmission)"
+ },
+ "MB 239.41": {
+  "description": "Fluidos ATF para cajas de doble embrague (DCT) de 7 velocidades (hoja MB 239.41 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Automatic Transmission Fluids (ATF, 7-Speed DCT)"
+ },
+ "MB 239.71": {
+  "description": "Aceites de engranajes para eje trasero (hoja MB 239.71 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 3 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 3,
+  "publicada": "2025-10-30",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Rear Axel)"
+ },
+ "MB 239.72": {
+  "description": "Aceites de engranajes para eje delantero (hoja MB 239.72 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-10-30",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Gear Oils (Front Axel)"
+ },
+ "MB 239.73": {
+  "description": "Aceite para eje trasero de metal ligero (localización China) (hoja MB 239.73 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Axle Oil Light Metal Rear Axle (China Localization)"
+ },
+ "MB 239.74": {
+  "description": "Aceite para eje trasero (hoja MB 239.74 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2025-05-09",
+  "segment": "ligero",
+  "tipo": "transmision",
+  "titulo_en": "Axle Oil Rear Axle"
+ },
+ "MB 261.0": {
+  "description": "Información general sobre grasas (hoja MB 261.0 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "General information on Grease"
+ },
+ "MB 264.0": {
+  "description": "Grasa (NLGI 00/000, grasa líquida) (hoja MB 264.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 21 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 21,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI Class 00/000, Liquid Grease)"
+ },
+ "MB 265.1": {
+  "description": "Grasa (NLGI 2, para rodamientos antifricción de alta temperatura) (hoja MB 265.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 17 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 17,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI class 2, High Temperature Antifriction Bearing Grease)"
+ },
+ "MB 266.0": {
+  "description": "Grasa lubricante (NLGI 1) (hoja MB 266.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI Class 1, Lubricating Grease)"
+ },
+ "MB 266.2": {
+  "description": "Grasa de larga duración (NLGI 2) (hoja MB 266.2 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI class 2, Long-Life Grease)"
+ },
+ "MB 267.0": {
+  "description": "Grasa multiusos (NLGI 2) (hoja MB 267.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 23 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 23,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI Class 2, Multi Purpose Grease)"
+ },
+ "MB 267.1": {
+  "description": "Grasa para rodamientos de rueda (NLGI 2) (hoja MB 267.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI Class 2, Wheel Bearing Grease)"
+ },
+ "MB 269.2": {
+  "description": "Grasa compleja (NLGI 2) (hoja MB 269.2 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Grease (NLGI Class 2, Complex Grease)"
+ },
+ "MB 310.1": {
+  "description": "Información general y especificación de refrigerantes (hoja MB 310.1 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "General information and specification on coolants"
+ },
+ "MB 320.1": {
+  "description": "Resumen de los anticongelantes y anticorrosivos prescritos (turismos y furgonetas) (hoja MB 320.1 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Specified anticorrosion protection-antifreeze (Cars, VAN) - Overview -"
+ },
+ "MB 325.0": {
+  "description": "Concentrados anticorrosión y anticongelante (hoja MB 325.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 22 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 22,
+  "publicada": "2026-07-06",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Anticorrosion/Antifreeze Agents"
+ },
+ "MB 325.6": {
+  "description": "Concentrados anticorrosión y anticongelante (hoja MB 325.6 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 27 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 27,
+  "publicada": "2026-10-20",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Anticorrosion/Antifreeze Agents"
+ },
+ "MB 325.7": {
+  "description": "Concentrados anticorrosión y anticongelante (hoja MB 325.7 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 4 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 4,
+  "publicada": "2025-04-10",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Anticorrosion/Antifreeze Agents"
+ },
+ "MB 326.0": {
+  "description": "Anticongelantes anticorrosión premezclados (hoja MB 326.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 12 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 12,
+  "publicada": "2025-05-15",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Premixed Anticorrosion/Antifreeze Agents"
+ },
+ "MB 326.6": {
+  "description": "Anticongelantes anticorrosión premezclados (hoja MB 326.6 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 15 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 15,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Premixed Anticorrosion/Antifreeze Agents"
+ },
+ "MB 326.64": {
+  "description": "Anticongelantes anticorrosión premezclados (hoja MB 326.64 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Premixed Anticorrosion/Antifreeze Agents"
+ },
+ "MB 326.7": {
+  "description": "Anticongelantes anticorrosión premezclados (hoja MB 326.7 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "refrigerante",
+  "titulo_en": "Premixed Anticorrosion/Antifreeze Agents"
+ },
+ "MB 332.0": {
+  "description": "Pasta para pastillas de freno (hoja MB 332.0 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Brake Pad Paste"
+ },
+ "MB 340.1": {
+  "description": "Resumen de los fluidos hidráulicos prescritos (hoja MB 340.1 de Mercedes-Benz)",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Specified hydraulic fluids) - overview"
+ },
+ "MB 341.0": {
+  "description": "Fluidos hidráulicos (volquetes) (hoja MB 341.0 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids (Tipper)"
+ },
+ "MB 341.1": {
+  "description": "Fluidos hidráulicos (hoja MB 341.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2025-01-16",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 342.0": {
+  "description": "Fluidos hidráulicos (hoja MB 342.0 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2024-12-10",
+  "segment": "pesado",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 342.1": {
+  "description": "Fluidos hidráulicos (hoja MB 342.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 343.0": {
+  "description": "Fluidos hidráulicos (hoja MB 343.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 344.0": {
+  "description": "Fluidos hidráulicos (hoja MB 344.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2025-02-20",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 345.0": {
+  "description": "Fluidos hidráulicos (hoja MB 345.0 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 0,
+  "publicada": "2025-10-24",
+  "segment": "pesado",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 345.1": {
+  "description": "Fluidos hidráulicos (hoja MB 345.1 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2026-06-25",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 346.0": {
+  "description": "Fluidos hidráulicos (hoja MB 346.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 1,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "hidraulico",
+  "titulo_en": "Hydraulic Fluids"
+ },
+ "MB 350.0": {
+  "description": "Lubricantes para equipos eléctricos (hoja MB 350.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+  "fuente": "operatingfluids.mercedes-benz.com",
+  "productos_aprobados": 2,
+  "publicada": "2024-12-10",
+  "segment": "ligero",
+  "tipo": "grasa",
+  "titulo_en": "Lubricants for Electrical Equipment"
+ }
+}

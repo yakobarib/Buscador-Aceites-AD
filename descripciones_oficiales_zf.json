@@ -1,0 +1,849 @@
+{
+ "ZF TE-ML 01E": {
+  "description": "Clase 01E de la lista ZF TE-ML 01 (cajas de cambios manuales de ZF para camiones con la inscripción \"TE-ML 01\" en la placa de identificación). La lista de ZF recoge 10 homologaciones de productos comerciales",
+  "fuente": "TE-ML 01",
+  "productos_aprobados": 10,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 01L": {
+  "description": "Clase 01L de la lista ZF TE-ML 01 (cajas de cambios manuales de ZF para camiones con la inscripción \"TE-ML 01\" en la placa de identificación). La lista de ZF recoge 49 homologaciones de productos comerciales",
+  "fuente": "TE-ML 01",
+  "productos_aprobados": 49,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02A": {
+  "description": "Clase 02A de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación)",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02B": {
+  "description": "Clase 02B de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 130 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 130,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02E": {
+  "description": "Clase 02E de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 10 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 10,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02H": {
+  "description": "Clase 02H de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 13 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 13,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02K": {
+  "description": "Clase 02K de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02L": {
+  "description": "Clase 02L de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 65 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 65,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 02V": {
+  "description": "Clase 02V de la lista ZF TE-ML 02 (| Cajas de cambios automatizados y manuales de ZF para camiones, autobuses, vehículos industriales ligeros y vehículos especiales con la inscripción \"TE-ML 02\" en la placa de identificación). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 02",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03A": {
+  "description": "Clase 03A de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceites de motor (API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/SF/SG/SH/SJ/SL ó ACEA, categorías A, B, E) Clase de viscosidad: SAE 20W-20 / 30 / 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40 Aceite básico, API Group 1 / 2 / 3 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. En esta clase de lubricantes no se permiten los acei",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 03B": {
+  "description": "Clase 03B de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceites de motor (API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/SF/SG/SH/SJ/SL ó ACEA, categorías A, B, E) Clase de viscosidad: SAE 10W / 5W-30 / 5W-40 En esta clase de lubricantes no se permiten los aceites de la especificación API CI-4 Plus, CJ-4, CK-4, SM o ACEA, categoría E9 (también en combinación con las especificaciones indicadas más arriba). Los aceites de esta especificación se indican en la clase de . La lista de ZF recoge 8 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 8,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 03C": {
+  "description": "Clase 03C de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceites para maquinaria de obras Clase de viscosidad: SAE 5W-30 / 5W-40 / 10W / 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-20 / 20W-40 / 30. La lista de ZF recoge 71 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 71,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03D": {
+  "description": "Clase 03D de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Automatic Transmission Fluids (ATF). La lista de ZF recoge 36 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 36,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03E": {
+  "description": "Clase 03E de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceite universal para ejes y cajas de cambios. La lista de ZF recoge 82 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 82,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03F": {
+  "description": "Clase 03F de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceite universal para ejes y cajas de cambios según especificación John Deere JDM J20D Aplicación a temperaturas exteriores inferiores a -10 °C | Denominación del producto (03F) JOHN DEERE LOW VISCOSITY HY-GARD | Número de homologación de ZF ZF001498 | |---|---| | JOHN DEERE LOW VISCOSITY HY-GARD | ZF001498 | | SHELL SPIRAX S3 TLV | ZF000364 | | SHELL SPIRAX S3 TLV | ZF000365 | | SHELL SPIRAX S3 T. La lista de ZF recoge 5 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 5,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03G": {
+  "description": "Clase 03G de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceite superior universal para ejes y cajas de cambios. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03H": {
+  "description": "Clase 03H de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Lubricantes biodegradables rápidamente Identificación medioambiental RAL-UZ 79 (ÿngel azul), VAMIL-regeling Clase de viscosidad: SAE 75W-80, 10W-30 Indicación sobre la utilización de lubricantes biodegradables rápidamente: En caso de cambio a un lubricante de rápida biodegradación hay que respetar las directrices de sustitución indicadas en la descripción del producto del fabricante del aceite.. La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03K": {
+  "description": "Clase 03K de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceites de motor (API CI-4 Plus/CJ-4/CK-4/SM ó ACEA, categoría E9) Clase de viscosidad: SAE 0W-30 / 0W-40 / 5W-30 / 5W-40 / 10W / 20W-20 / 30 / 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40. La lista de ZF recoge 5 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 5,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 03L": {
+  "description": "Clase 03L de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Aceite universal para ejes y cajas de cambios. La lista de ZF recoge 9 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 9,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 03M": {
+  "description": "Clase 03M de la lista ZF TE-ML 03 (cajas de cambios para Maquinaria de trabajo, vehículos especiales, carretillas elevadoras). Automatic Transmission Fluids (ATF). La lista de ZF recoge 5 homologaciones de productos comerciales",
+  "fuente": "TE-ML 03",
+  "productos_aprobados": 5,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04A": {
+  "description": "Clase 04A de la lista ZF TE-ML 04 (reductores marinos). Aceites de motor según especificación - API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 - API SF/SG/SH/SJ/SL/SM - ACEA categorías A/B/E Clase de viscosidad: SAE 30, en países con climas calurosos ó en caso de temperaturas en el cárter de aceite superiores a +80 °C también SAE 40 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: 1. Pueden emplearse todos los productos comerciales que cumplan las especif",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04B": {
+  "description": "Clase 04B de la lista ZF TE-ML 04 (reductores marinos). Aceites de motor Clase de viscosidad: SAE 30, en países de climas calurosos ó en caso de temperaturas en el cárter de aceite superiores a +80 °C también SAE 40. La lista de ZF recoge 27 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 27,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04C": {
+  "description": "Clase 04C de la lista ZF TE-ML 04 (reductores marinos). Aceites de motor Clases de viscosidad: SAE 5W-40 / 10W-40 / 15W-40 | Denominación del producto (04C) DELO 400 LE SAE 15W-40 | Número de homologación de ZF ZF001847 | |---|---| | DELO 400 LE SAE 15W-40 | ZF001847 | | DELO 400 XLE SYNBLEND SAE 15W-40 | ZF002023 | | DELO 400 MGX SAE 15W-40 | ZF002252 | | DELO 400 MGX SAE 15W-40 | ZF002253 | | URSA ULTRA LE SAE 15W-40 | ZF003349 | | DELO 400 MGX SAE 1. La lista de ZF recoge 25 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 25,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04D": {
+  "description": "Clase 04D de la lista ZF TE-ML 04 (reductores marinos). Automatic Transmission Fluid (ATF). La lista de ZF recoge 212 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 212,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04E": {
+  "description": "Clase 04E de la lista ZF TE-ML 04 (reductores marinos). Aceites de motor según especificación - API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 - API SF/SG/SH/SJ/SL/SM - ACEA categorías A/B/E Clase de viscosidad: SAE 50 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 9 de 17 Continuación ZF Friedrichshafen AG / Lista de",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04F": {
+  "description": "Clase 04F de la lista ZF TE-ML 04 (reductores marinos). Aceite lubricante CLP Clase de viscosidad: ISO VG 220. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04G": {
+  "description": "Clase 04G de la lista ZF TE-ML 04 (reductores marinos). Aceite para cajas de cambios según especificación - API GL-5 / MIL-L-2105D - MIL-PRF-2105E - SAE J2360 Clase de viscosidad: SAE 80W-90 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 11 de 17 Continuación ZF Friedrichshafen AG / Lista de lubricantes TE-ML 04, edici",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04H": {
+  "description": "Clase 04H de la lista ZF TE-ML 04 (reductores marinos). Aceite lubricante CLP Clase de viscosidad (Grupos de productos según página 1): - ZF AT, TT, SDT Variantes de accionamiento en L - Gearbox: ISO VG 100 - ZF AT, TT, SDT Variantes de accionamiento en Z - Gearbox: ISO VG 150 - ZF AT, TT, SDT - Planetary gearset: ISO VG 100 / 150 - ZF TT 4000 CP, 5000 CP - Gearbox und Power pack: ISO VG 100. La lista de ZF recoge 26 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 26,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04K": {
+  "description": "Clase 04K de la lista ZF TE-ML 04 (reductores marinos). Aceite hidráulico HLP Clase de viscosidad (Grupos de productos según página 1): - SeaRex: ISO VG 32 / 46 - ZF AT, TT, SDT - Power pack: ISO VG 46. La lista de ZF recoge 16 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 16,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04M": {
+  "description": "Clase 04M de la lista ZF TE-ML 04 (reductores marinos). Lubricantes biodegradables rápidamente Clase de viscosidad (Grupos de productos según página 1): - ZF AT, TT, SDT Variantes de accionamiento en L - Gearbox: ISO VG 100 - ZF AT, TT, SDT Variantes de accionamiento en Z - Gearbox: ISO VG 150 Nota: Para el uso de aceites biodegradables, véanse las notas a pie de página y otras observaciones 3 y 4 de la página 2. La lista de ZF recoge 12 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 12,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04P": {
+  "description": "Clase 04P de la lista ZF TE-ML 04 (reductores marinos). Aceites de motor según especificación - API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 - API SF/SG/SH/SJ/SL/SM - ACEA categorías A/B/E Clase de viscosidad: SAE 15W-40 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 15 de 17 Continuación ZF Friedrichshafen AG / Lis",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04Q": {
+  "description": "Clase 04Q de la lista ZF TE-ML 04 (reductores marinos). Aceite lubricante Clase de viscosidad (Grupos de productos según página 1): - ZF AT, TT, SDT - Wet operating clutch: ISO VG 150. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 04R": {
+  "description": "Clase 04R de la lista ZF TE-ML 04 (reductores marinos). Aceite hidráulico HVLP Clase de viscosidad (Grupos de productos según página 1): - SeaRex: ISO VG 32 / 46 - ZF AT, TT, SDT - Power pack: ISO VG 46. La lista de ZF recoge 14 homologaciones de productos comerciales",
+  "fuente": "TE-ML 04",
+  "productos_aprobados": 14,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05A": {
+  "description": "Clase 05A de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 226 homologaciones de productos comerciales",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 226,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05C": {
+  "description": "Clase 05C de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 86 homologaciones de productos comerciales",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 86,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05F": {
+  "description": "Clase 05F de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite universal para ejes y cajas de cambios. La lista de ZF recoge 100 homologaciones de productos comerciales",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 100,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05G": {
+  "description": "Clase 05G de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite superior universal para ejes y cajas de cambios. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05H": {
+  "description": "Clase 05H de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Lubricantes biodegradables rápidamente Clase de viscosidad: SAE 75W-80 Indicación sobre la utilización de lubricantes biodegradables rápidamente: En caso de cambio a un lubricante de rápida biodegradación hay que respetar las directrices de sustitución indicadas en la descripción del producto del fabricante del aceite.. La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05K": {
+  "description": "Clase 05K de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceites de motor Clase de viscosidad: SAE 10W, 10W-30, 10W-40 según especificación API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 o SF/SG/SH/SJ/SL/SM o ACEA, categorías A, B, E Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos.",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 05L": {
+  "description": "Clase 05L de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Automatic Transmission Fluid (ATF) de base aceites minerales básicos según la especificación antigua de Dexron IID, IIIF, IIIG ó IIIH de General Motors. Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos.",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 05M": {
+  "description": "Clase 05M de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite hidráulico básico de aceite mineral HLP según DIN 51524-2 o aceite hidráulico básico de aceite mineral HVLP, según DIN 51524-3. Clases de viscosidad: ISO VG 32 / 46 / 68 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 14 de 14",
+  "fuente": "TE-ML 05",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06A": {
+  "description": "Clase 06A de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceites de motor (API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/SF/SG/SH/SJ/SL ó ACEA categorías A/B/E) Clase de viscosidad: SAE 20W Nota: Pueden emplearse todos los productos comerciales de base mineral que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 4 de 20 Continuación ZF Friedrichshafen AG / Lista de lubricantes TE-ML 06, edición 01.07.2018",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 06B": {
+  "description": "Clase 06B de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para supertractores (STOU) Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40 (*) Tenga en cuenta la nota 3 a pie de la página 3.. La lista de ZF recoge 79 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 79,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06C": {
+  "description": "Clase 06C de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para supertractores (STOU) Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40. La lista de ZF recoge 2 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 2,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06D": {
+  "description": "Clase 06D de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Clase de viscosidad: SAE 10W-30 / 10W-40 | Denominación del producto (06D) ARAL TRAKTORAL 10W-40 | Número de homologación de ZF ZF000152 | |---|---| | ARAL TRAKTORAL 10W-40 | ZF000152 | | TRACTAVIA SPEZIAL FE 10W-40 | ZF001810 | | AVIA HYDROFLUID TD | ZF001811 | | FUCHS AGRIFARM UTTO VT | ZF002035 | | JOHN DEERE HY-GARD | ZF001223 | | Q8 T 1000 D SAE 10W-30 | ZF000107 | | MOTUL DS SUPER AGRI 10W-3. La lista de ZF recoge 20 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 20,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06E": {
+  "description": "Clase 06E de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite universal para tractores (UTTO). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06F": {
+  "description": "Clase 06F de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para supertractores (STOU) y aceite universal para tractores (UTTO) Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40. La lista de ZF recoge 13 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 13,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06G": {
+  "description": "Clase 06G de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Lubricantes biodegradables rápidamente Identificación medioambiental RAL-UZ 79 (ángel azul), VAMIL-regeling Clase de viscosidad: SAE 75W-80 Indicación sobre la utilización de lubricantes biodegradables rápidamente: En caso de cambio a un lubricante de rápida biodegradación hay que respetar las directrices de sustitución indicadas en la descripción del producto del fabricante del aceite. Debido a l. La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06H": {
+  "description": "Clase 06H de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para tractor Clases de viscosidad: SAE 10W-30 / 10W-40. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06K": {
+  "description": "Clase 06K de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite universal para tractores (UTTO). La lista de ZF recoge 43 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 43,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06L": {
+  "description": "Clase 06L de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para cajas de cambios API GL-4 y MIL-2105 Clases de viscosidad: SAE 75W-80 / 75W-85 / 80W / 80W-85 Nota: Pueden emplearse todos los productos comerciales de base mineral que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 13 de 20 Continuación ZF Friedrichshafen AG / Lista de lubricantes TE-ML 06, edición 01.07.2018",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06M": {
+  "description": "Clase 06M de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para tractor Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40. La lista de ZF recoge 11 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 11,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06N": {
+  "description": "Clase 06N de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Clases de viscosidad: SAE 10W-30 / 10W-40 | Denominación del producto (06N) TRACTAVIA SPEZIAL FE 10W-40 | Número de homologación de ZF ZF001810 | |---|---| | TRACTAVIA SPEZIAL FE 10W-40 | ZF001810 | | AVIA HYDROFLUID TD | ZF001811 | | FUCHS AGRIFARM UTTO VT | ZF002035 | | Q8 T 1000 D SAE 10W-30 | ZF000107 | | MOTUL DS SUPER AGRI 10W-30 | ZF001103 | | AKROS MULTI VT (SAE 10W-30) | ZF000628 | | SDF . La lista de ZF recoge 18 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 18,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06P": {
+  "description": "Clase 06P de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para tractor Clases de viscosidad: SAE 10W-30 / 10W-40 / 80W-85. La lista de ZF recoge 6 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 6,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06Q": {
+  "description": "Clase 06Q de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Clase de viscosidad: SAE 20W. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06R": {
+  "description": "Clase 06R de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para tractor Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40 | Denominación del producto (06R) AVIA HYDROFLUID TD | Número de homologación de ZF ZF001811 | |---|---| | AVIA HYDROFLUID TD | ZF001811 | | SDF UTTO | ZF002229 | | DF UTTO | ZF002230 | | SASOL UNIVERSAL TRANSMISSION OIL RS 68 | ZF001828 | | SHELL SPIRAX S4 TXM | ZF000357 | | SHELL SPIRAX S4 TXM | ZF000358 | |. La lista de ZF recoge 11 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 11,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06S": {
+  "description": "Clase 06S de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). Aceite para tractor Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40. La lista de ZF recoge 2 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 2,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 06T": {
+  "description": "Clase 06T de la lista ZF TE-ML 06 (transmisiones para tractores agrícolas y equipos hidráulicos de elevación). La lista de ZF recoge 2 homologaciones de productos comerciales",
+  "fuente": "TE-ML 06",
+  "productos_aprobados": 2,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07A": {
+  "description": "Clase 07A de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceite para cajas de cambios según especificación - API GL-5 / MIL-L-2105D - MIL-PRF-2105E - SAE J2360 Clase de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-85 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de producto",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07B": {
+  "description": "Clase 07B de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). STOU (Aceite para supertractores) Clases de viscosidad: SAE 10W-30 / 10W-40 / 15W-30 / 15W-40 / 20W-40. La lista de ZF recoge 84 homologaciones de productos comerciales",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 84,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07C": {
+  "description": "Clase 07C de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceites de motor Clases de viscosidad: SAE 5W-40 / 10W-40 / 15W-40. La lista de ZF recoge 4 homologaciones de productos comerciales",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 4,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 07D": {
+  "description": "Clase 07D de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceites de motor según especificación - API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 - API SF/SG/SH/SJ/SL/SM - ACEA categorías A/B/E Clases de viscosidad: | Grupos de productos según página 1 | Clases de viscosidad: | |---|---| | - Cajas de cambios conectables bajo carga HL, AVG - Accionamientos hidrostáticos sin escalonamientos HC - Reductores para accionamiento de hormigoneras móviles CML - p",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 07E": {
+  "description": "Clase 07E de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Lubricante biodegradable rápidamente (Serie especial) Clase de viscosidad: SAE 75W-80 Indicación sobre la utilización de lubricantes biodegradables rápidamente: En caso de cambio a un lubricante de rápida biodegradación hay que respetar las directrices de sustitución indicadas en la descripción del producto del fabricante del aceite.. La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07F": {
+  "description": "Clase 07F de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceites para maquinaria de obras Clase de viscosidad: SAE 30. La lista de ZF recoge 34 homologaciones de productos comerciales",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 34,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07G": {
+  "description": "Clase 07G de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Lubricante biodegradable rápidamente (Serie especial) Clase de viscosidad: ISO VG 46 / 68 Indicación sobre la utilización de lubricantes biodegradables rápidamente: En caso de cambio a un lubricante de rápida biodegradación hay que respetar las directrices de sustitución indicadas en la descripción del producto del fabricante del aceite.. La lista de ZF recoge 2 homologaciones de productos comerciales",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 2,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 07H": {
+  "description": "Clase 07H de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceite hidráulico HLP / HVLP según DIN 51524-2/-3 Clases de viscosidad: ISO VG 46 / 68 / 100 Aceite básico, API Group 1 / 2 / 3 / 4 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 11 de 11",
+  "fuente": "TE-ML 07",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 11A": {
+  "description": "Clase 11A de la lista ZF TE-ML 11 (transmisiones manuales, transmisiones de embrague doble y transmisiones automáticas para turismos). Automatic Transmission Fluid (ATF). La lista de ZF recoge 24 homologaciones de productos comerciales",
+  "fuente": "TE-ML 11",
+  "productos_aprobados": 24,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 11B": {
+  "description": "Clase 11B de la lista ZF TE-ML 11 (transmisiones manuales, transmisiones de embrague doble y transmisiones automáticas para turismos). Automatic Transmission Fluid (ATF). La lista de ZF recoge 11 homologaciones de productos comerciales",
+  "fuente": "TE-ML 11",
+  "productos_aprobados": 11,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12B": {
+  "description": "Clase 12B de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140. La lista de ZF recoge 8 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 8,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12C": {
+  "description": "Clase 12C de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 82 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 82,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12D": {
+  "description": "Clase 12D de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140. La lista de ZF recoge 4 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 4,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12E": {
+  "description": "Clase 12E de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 57 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 57,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12F": {
+  "description": "Clase 12F de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-85. La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12G": {
+  "description": "Clase 12G de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Grasa multiuso según especificación - identificación según DIN 51825 al menos KP2K-20 - identificación según ISO 6743-9 al menos ISO-L-XBCEB2 (Aceite básico, Grupo 1 / 2 / 3 / 4, aditivos EP, saponificada de litio, límites de aplicación de temperatura mín. -20°C a +120°C, NLGI clase 2). Las grasas recomendadas figuran en las informaciones de servicio de ZF 54/01d y 54/01e. Nota: Pueden emplearse t",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12H": {
+  "description": "Clase 12H de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Grasa lubricante para la lubricación a larga duración de rodamientos compactos (Hub Unit)",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12L": {
+  "description": "Clase 12L de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 80W-90. La lista de ZF recoge 121 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 121,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12M": {
+  "description": "Clase 12M de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 82 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 82,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12N": {
+  "description": "Clase 12N de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140. La lista de ZF recoge 81 homologaciones de productos comerciales",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 81,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 12P": {
+  "description": "Clase 12P de la lista ZF TE-ML 12 (ejes y cabezas de rueda para autobuses y camiones). Grasa lubricante según especificación / requisito: - DIN 51502 marcación al menos GP 0/00/000 G -30 - ISO 6743-9 marcación al menos ISO-L-X C C E/F/H/I B 0/00/000 - Clase de consistencia: NLGI 0 / 00 / 000 - Aceite básico: API grupo 1 / 2 / 3 / 4 - Tipo de espesante: Li / Ca - Aditivos EP - Debe disponerse de autorización del fabricante del sistema de lubricación centralizada para el sistema emple",
+  "fuente": "TE-ML 12",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 14A": {
+  "description": "Clase 14A de la lista ZF TE-ML 14 (cajas de cambios automáticas bajo carga, tipo Ecomat, para autobuses / autocares, camión y vehículos especiales). La lista de ZF recoge 110 homologaciones de productos comerciales",
+  "fuente": "TE-ML 14",
+  "productos_aprobados": 110,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 14B": {
+  "description": "Clase 14B de la lista ZF TE-ML 14 (cajas de cambios automáticas bajo carga, tipo Ecomat, para autobuses / autocares, camión y vehículos especiales). La lista de ZF recoge 65 homologaciones de productos comerciales",
+  "fuente": "TE-ML 14",
+  "productos_aprobados": 65,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 14C": {
+  "description": "Clase 14C de la lista ZF TE-ML 14 (cajas de cambios automáticas bajo carga, tipo Ecomat, para autobuses / autocares, camión y vehículos especiales). La lista de ZF recoge 32 homologaciones de productos comerciales",
+  "fuente": "TE-ML 14",
+  "productos_aprobados": 32,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 14E": {
+  "description": "Clase 14E de la lista ZF TE-ML 14 (cajas de cambios automáticas bajo carga, tipo Ecomat, para autobuses / autocares, camión y vehículos especiales). La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 14",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16A": {
+  "description": "Clase 16A de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios Clases de viscosidad: SAE 80W-90 / 85W-90 / 90. La lista de ZF recoge 39 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 39,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16B": {
+  "description": "Clase 16B de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 80W-90 / 85W-90 / 90. La lista de ZF recoge 130 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 130,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16C": {
+  "description": "Clase 16C de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios Clases de viscosidad: 80W-90 / 85W-90 / 80W-110 / 85W-110 / 80W-140 / 85W-140 / 90. La lista de ZF recoge 55 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 55,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16D": {
+  "description": "Clase 16D de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios Clases de viscosidad: 80W-140 / 85W-140 / 140. La lista de ZF recoge 44 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 44,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16E": {
+  "description": "Clase 16E de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios con aditivos tipo \"LS\" Clases de viscosidad: 80W-90 / 85W-90 / 80W-110 / 85W-110 / 80W-140 / 85W-140 / 90. La lista de ZF recoge 39 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 39,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16F": {
+  "description": "Clase 16F de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios (aceite básico sintético) Clases de viscosidad: 75W-90 / 75W-110 / 75W-140 / 80W-110 / 80W-140. La lista de ZF recoge 84 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 84,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16G": {
+  "description": "Clase 16G de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios con aditivos tipo \"LS\" (aceite básico sintético) Clases de viscosidad: 75W-90 / 75W-110 / 75W-140. La lista de ZF recoge 4 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 4,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16K": {
+  "description": "Clase 16K de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios de clases de viscosidad: SAE 75W-80. La lista de ZF recoge 65 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 65,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16L": {
+  "description": "Clase 16L de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceites ATF. La lista de ZF recoge 65 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 65,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16M": {
+  "description": "Clase 16M de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceites ATF. La lista de ZF recoge 32 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 32,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16N": {
+  "description": "Clase 16N de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceites ATF. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16P": {
+  "description": "Clase 16P de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios de clases de viscosidad: SAE 75W-80. La lista de ZF recoge 10 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 10,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16Q": {
+  "description": "Clase 16Q de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16R": {
+  "description": "Clase 16R de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Denominación del producto (16R) ASTRIS ATF GLOBAL | Número de homologación de ZF ZF002187 | |---|---| | ASTRIS ATF GLOBAL | ZF002187 | | SYNMAXTRAN-HD | ZF002246 | | LUBEX ATF-III KYS | ZF002255 | | LUBEX ATF-III KYS | ZF002293 | | CEPSA ATF 3000 S | ZF000386 | | HAVOLINE ATF MERCON V | ZF000101 | | SYNTHETIC AUTOMATIC TRANSMISSION FLUID HEAVY DUTY | ZF001219 | | DELO SYN ATF HD | ZF001664 | | ATF. La lista de ZF recoge 32 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 32,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 16S": {
+  "description": "Clase 16S de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). La lista de ZF recoge 35 homologaciones de productos comerciales",
+  "fuente": "TE-ML 16",
+  "productos_aprobados": 35,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17A": {
+  "description": "Clase 17A de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). La lista de ZF recoge 113 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 113,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17B": {
+  "description": "Clase 17B de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). La lista de ZF recoge 223 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 223,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17C": {
+  "description": "Clase 17C de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). La lista de ZF recoge 54 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 54,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17E": {
+  "description": "Clase 17E de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). Aceite universal para ejes y cajas de cambios. La lista de ZF recoge 93 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 93,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17F": {
+  "description": "Clase 17F de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17G": {
+  "description": "Clase 17G de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). Aceite superior universal para ejes y cajas de cambios. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 17H": {
+  "description": "Clase 17H de la lista ZF TE-ML 17 (transmisiones y ejes para carretillas elevadoras). La lista de ZF recoge 34 homologaciones de productos comerciales",
+  "fuente": "TE-ML 17",
+  "productos_aprobados": 34,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 19A": {
+  "description": "Clase 19A de la lista ZF TE-ML 19 (cajas de cambios de distribución y asimetría para vehículos industriales). Aceite para cajas de cambios Clases de viscosidad: SAE 80W-90 / 85W-90 / 90. La lista de ZF recoge 39 homologaciones de productos comerciales",
+  "fuente": "TE-ML 19",
+  "productos_aprobados": 39,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 19B": {
+  "description": "Clase 19B de la lista ZF TE-ML 19 (cajas de cambios de distribución y asimetría para vehículos industriales). Aceite para cajas de cambios Clases de viscosidad: SAE 80W-90 / 85W-90 / 90. La lista de ZF recoge 178 homologaciones de productos comerciales",
+  "fuente": "TE-ML 19",
+  "productos_aprobados": 178,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 19C": {
+  "description": "Clase 19C de la lista ZF TE-ML 19 (cajas de cambios de distribución y asimetría para vehículos industriales). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140. La lista de ZF recoge 84 homologaciones de productos comerciales",
+  "fuente": "TE-ML 19",
+  "productos_aprobados": 84,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 20B": {
+  "description": "Clase 20B de la lista ZF TE-ML 20 (cajas de cambios automáticas bajo carga, tipo EcoLife, para autobuses / autocares, camiones, vehículos especiales y aplicaciones estacionarias). La lista de ZF recoge 32 homologaciones de productos comerciales",
+  "fuente": "TE-ML 20",
+  "productos_aprobados": 32,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 20C": {
+  "description": "Clase 20C de la lista ZF TE-ML 20 (cajas de cambios automáticas bajo carga, tipo EcoLife, para autobuses / autocares, camiones, vehículos especiales y aplicaciones estacionarias). La lista de ZF recoge 35 homologaciones de productos comerciales",
+  "fuente": "TE-ML 20",
+  "productos_aprobados": 35,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 20F": {
+  "description": "Clase 20F de la lista ZF TE-ML 20 (cajas de cambios automáticas bajo carga, tipo EcoLife, para autobuses / autocares, camiones, vehículos especiales y aplicaciones estacionarias). La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 20",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 20G": {
+  "description": "Clase 20G de la lista ZF TE-ML 20 (cajas de cambios automáticas bajo carga, tipo EcoLife, para autobuses / autocares, camiones, vehículos especiales y aplicaciones estacionarias). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 20",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21A": {
+  "description": "Clase 21A de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite para cajas de cambios Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 310 homologaciones de productos comerciales",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 310,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21C": {
+  "description": "Clase 21C de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 89 homologaciones de productos comerciales",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 89,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21F": {
+  "description": "Clase 21F de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite universal para ejes y cajas de cambios. La lista de ZF recoge 100 homologaciones de productos comerciales",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 100,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21G": {
+  "description": "Clase 21G de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite superior universal para ejes y cajas de cambios. La lista de ZF recoge 3 homologaciones de productos comerciales",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 3,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21K": {
+  "description": "Clase 21K de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceites de motor Clase de viscosidad: SAE 10W, 10W-30, 10W-40 según especificación API CD/CE/CF-4/CF/CG-4/CH-4/CI-4/CI-4 Plus/CJ-4 o SF/SG/SH/SJ/SL/SM o ACEA, categorías A, B, E Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos.",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "motor"
+ },
+ "ZF TE-ML 21L": {
+  "description": "Clase 21L de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Automatic Transmission Fluid (ATF) de base aceites minerales básicos según la especificación antigua de Dexron IID, IIIF, IIIG ó IIIH de General Motors. Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos.",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 21M": {
+  "description": "Clase 21M de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite hidráulico básico de aceite mineral HLP según DIN 51524-2 o aceite hidráulico básico de aceite mineral HVLP, según DIN 51524-3. Clases de viscosidad: ISO VG 32 / 46 / 68 Nota: Pueden emplearse todos los productos comerciales que cumplan las especificaciones arriba indicadas. No hay una lista de productos. Página 13 de 13",
+  "fuente": "TE-ML 21",
+  "productos_aprobados": 0,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 23A": {
+  "description": "Clase 23A de la lista ZF TE-ML 23 (aplicación estacionaria). La lista de ZF recoge 2 homologaciones de productos comerciales",
+  "fuente": "TE-ML 23",
+  "productos_aprobados": 2,
+  "segment": "pesado",
+  "tipo": "transmision"
+ },
+ "ZF TE-ML 23B": {
+  "description": "Clase 23B de la lista ZF TE-ML 23 (aplicación estacionaria). La lista de ZF recoge 1 homologaciones de productos comerciales",
+  "fuente": "TE-ML 23",
+  "productos_aprobados": 1,
+  "segment": "pesado",
+  "tipo": "transmision"
+ }
+}

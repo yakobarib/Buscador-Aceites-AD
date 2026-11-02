@@ -124,6 +124,8 @@ def puente_normas(app, fam_sku):
                 elif destino not in nuevas:
                     nuevas[destino] = {"description": f"Norma {destino} (dato del catálogo AD Parts; sin descripción curada todavía)",
                                        "segment": a.get("segment") or "ligero", "tipo": a.get("tipo") or "motor"}
+                    if bw.clave(destino) in OFICIALES:
+                        nuevas[destino].update(OFICIALES[bw.clave(destino)][1])
                     informe.append(f"norma nueva para el buscador: «{destino}» (leída como «{lit}»)")
                 for variante in {lit, destino}:
                     k = res[lit]["norm"] if variante == lit else resolver_en_app([variante])[variante]["norm"]
@@ -256,9 +258,9 @@ def castrol_nuevos(skus_existentes, existentes_ref):
                 sp = set()
                 for r, _ in refs:
                     for t, l in wiki.get(r, []):
-                        x = res.get(l)
-                        if x and x["canonical"] and x["match"] in ("exact", "alias", "category"):
-                            sp.add(x["canonical"])
+                        cn = canon_castrol(l, res, NUEVAS_CASTROL, ALIAS_CASTROL)
+                        if cn:
+                            sp.add(cn)
                 for sku, n in viejas:
                     sust_app[sku] = {"specs": sorted(sp), "alt": sorted(r for r, _ in refs)}
                 informe.append(f"Castrol: «{nombre}» sustituye a {', '.join(n for _, n in viejas)} (se mantiene la entrada antigua y se enriquece)")
@@ -273,9 +275,9 @@ def castrol_nuevos(skus_existentes, existentes_ref):
         specs = set()
         for r, _ in refs:
             for t, l in wiki.get(r, []):
-                x = res.get(l)
-                if x and x["canonical"] and x["match"] in ("exact", "alias", "category"):
-                    specs.add(x["canonical"])
+                cn = canon_castrol(l, res, NUEVAS_CASTROL, ALIAS_CASTROL)
+                if cn:
+                    specs.add(cn)
         visc = (d.get("visc") or "").replace("-", "").upper()
         if not specs and not visc:
             continue  # sin norma conocida ni viscosidad (liquido de frenos, grasa...): no aporta a las busquedas por norma
@@ -284,6 +286,38 @@ def castrol_nuevos(skus_existentes, existentes_ref):
     informe.append(f"Castrol: {len(nuevos)} familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); "
                    f"{sum(1 for x in nuevos if not x['specs'])} sin normas conocidas (solo viscosidad)")
     return nuevos, informe, sust_app
+
+
+NUEVAS_CASTROL, ALIAS_CASTROL = {}, {}
+
+
+def cargar_oficiales():
+    """Normas con descripcion OFICIAL (hojas de Mercedes-Benz y clases ZF TE-ML): clave -> (nombre, {description, segment, tipo})."""
+    out = {}
+    for fn in ("descripciones_oficiales_mb.json", "descripciones_oficiales_zf.json"):
+        r = RAIZ / fn
+        if r.exists():
+            for k, v in json.loads(r.read_text(encoding="utf-8")).items():
+                out[bw.clave(k)] = (k, {x: v[x] for x in ("description", "segment", "tipo")})
+    return out
+
+
+OFICIALES = cargar_oficiales()
+
+
+def canon_castrol(l, res, nuevas, alias):
+    """Norma ya conocida por el buscador; si no, solo si hay descripcion OFICIAL (se da de alta como norma nueva); si no, None."""
+    r = res.get(l)
+    if r and r["canonical"] and r["match"] in ("exact", "alias", "category"):
+        return r["canonical"]
+    of = OFICIALES.get(bw.clave(bw.canon_lit(l)))
+    if of:
+        nombre, v = of
+        nuevas.setdefault(nombre, dict(v))
+        if r and r["norm"] != bw.clave(nombre):
+            alias.setdefault(r["norm"], nombre)
+        return nombre
+    return None
 
 
 def puente_castrol():
@@ -302,9 +336,9 @@ def puente_castrol():
     for c in cat:
         nuevos = set()
         for t, l in wiki.get(c["sku"], []):
-            r = res.get(l)
-            if r and r["canonical"] and r["match"] in ("exact", "alias", "category"):
-                nuevos.add(r["canonical"])
+            cn = canon_castrol(l, res, NUEVAS_CASTROL, ALIAS_CASTROL)
+            if cn:
+                nuevos.add(cn)
             else:
                 saltadas.add(l)
         nuevos = sorted(x for x in nuevos if x.upper() not in {y.upper() for y in c["specs"]})
@@ -413,6 +447,12 @@ def main():
              "process.stdout.write(JSON.stringify(Object.fromEntries(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').map(p=>[p.sku,p.ref])\"))))")
     existentes_ref = json.loads(subprocess.run(["node", "-e", js_nm], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout)
     normas["castrol_nuevos"], informe_cn, normas["castrol_sust"] = castrol_nuevos(existentes, existentes_ref)
+    for k, v in NUEVAS_CASTROL.items():
+        if k not in normas["nuevas"]:
+            normas["nuevas"][k] = v
+            informe.append(f"norma nueva (descripción oficial) a partir de los catálogos de Castrol: «{k}»")
+    for k, v in ALIAS_CASTROL.items():
+        normas["alias"].setdefault(k, v)
     informe += informe_cn
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
     normas["retoques"] = {k: v["description"] for k, v in json.loads((RAIZ / "retoques_descripciones.json").read_text(encoding="utf-8"))["retoques"].items()}

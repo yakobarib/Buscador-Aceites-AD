@@ -636,7 +636,8 @@
 "ref": "Radicool NF Premix",
 "sku": "15FDD0",
 "specs": [
-"G11"
+"G11",
+"MB 326.0"
 ],
 "viscosity": ""
 },
@@ -677,6 +678,18 @@
 },
 {
 "altSkus": [
+"161A3B"
+],
+"brand": "Castrol",
+"ref": "Radicool Si-OAT Premix",
+"sku": "15EED6",
+"specs": [
+"MB 326.6"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
 "15D73D",
 "161AC4"
 ],
@@ -704,6 +717,7 @@
 "ZF TE-ML 04D",
 "ZF TE-ML 14C",
 "ZF TE-ML 16M",
+"ZF TE-ML 16S",
 "ZF TE-ML 20C"
 ],
 "viscosity": ""
@@ -842,7 +856,9 @@
 "sku": "15F109",
 "specs": [
 "API GL-5",
-"ZF TE-ML 16E"
+"ZF TE-ML 05C",
+"ZF TE-ML 16E",
+"ZF TE-ML 21C"
 ],
 "viscosity": "85W90"
 },
@@ -869,7 +885,8 @@
 "API GL-4",
 "MB 235.41",
 "ZF TE-ML 01E",
-"ZF TE-ML 02E"
+"ZF TE-ML 02E",
+"ZF TE-ML 16P"
 ],
 "viscosity": "75W80"
 },
@@ -881,7 +898,8 @@
 "ref": "Transmax Manual AT 75W-90",
 "sku": "16096A",
 "specs": [
-"API GL-4"
+"API GL-4",
+"MB 235.11"
 ],
 "viscosity": "75W90"
 },
@@ -919,7 +937,8 @@
 "ref": "Transmax Manual FE 75W",
 "sku": "15F1DB",
 "specs": [
-"API GL-4"
+"API GL-4",
+"MB 235.73"
 ],
 "viscosity": ""
 },
@@ -931,7 +950,8 @@
 "ref": "Transmax Manual LL 75W-85",
 "sku": "15D8AB",
 "specs": [
-"API GL-4"
+"API GL-4",
+"MB 235.4"
 ],
 "viscosity": "75W85"
 },
@@ -967,7 +987,8 @@
 "ref": "Transmax Offroad 30",
 "sku": "15EAD7",
 "specs": [
-"ZF TE-ML 03C"
+"ZF TE-ML 03C",
+"ZF TE-ML 07F"
 ],
 "viscosity": ""
 },
@@ -1815,6 +1836,36 @@
 "segment": "ligero",
 "tipo": "motor"
 },
+"MB 235.11": {
+"description": "Aceites de engranajes para caja de transferencia (hoja MB 235.11 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"MB 235.4": {
+"description": "Aceites de engranajes para cajas de cambio (hoja MB 235.4 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"MB 235.72": {
+"description": "Aceites de engranajes para caja de cambios automatizada (hoja MB 235.72 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MB 235.73": {
+"description": "Aceites de engranajes para caja de doble embrague (DCT) (hoja MB 235.73 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MB 326.0": {
+"description": "Anticongelantes anticorrosión premezclados (hoja MB 326.0 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 12 productos aprobados",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
+"MB 326.6": {
+"description": "Anticongelantes anticorrosión premezclados (hoja MB 326.6 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 15 productos aprobados",
+"segment": "ligero",
+"tipo": "refrigerante"
+},
 "MTU Type 3.1": {
 "description": "Aceite motor diésel para motores MTU (categoría 3.1), de uso industrial y marino",
 "segment": "pesado",
@@ -1972,6 +2023,31 @@
 },
 "ZF": {
 "description": "Listas ZF de lubricantes aprobados (clasificación TE-ML) para cajas de cambio, ejes y diferenciales de ZF",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ZF TE-ML 05C": {
+"description": "Clase 05C de la lista ZF TE-ML 05 (ejes para Equipo de trabajo). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 86 homologaciones de productos comerciales",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ZF TE-ML 07F": {
+"description": "Clase 07F de la lista ZF TE-ML 07 (transmisiones hidrostáticas mecánicas y accionamientos eléctricos). Aceites para maquinaria de obras Clase de viscosidad: SAE 30. La lista de ZF recoge 34 homologaciones de productos comerciales",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ZF TE-ML 16P": {
+"description": "Clase 16P de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). Aceite para cajas de cambios de clases de viscosidad: SAE 75W-80. La lista de ZF recoge 10 homologaciones de productos comerciales",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ZF TE-ML 16S": {
+"description": "Clase 16S de la lista ZF TE-ML 16 (transmisiones para vehículos sobre railes). La lista de ZF recoge 35 homologaciones de productos comerciales",
+"segment": "pesado",
+"tipo": "transmision"
+},
+"ZF TE-ML 21C": {
+"description": "Clase 21C de la lista ZF TE-ML 21 (ejes de tractores, transmisiones para cosechadoras y salidas finales). Aceite para cajas de cambios con aditivos tipo \"Limited-Slip\" Clases de viscosidad: SAE 75W-90 / 75W-110 / 75W-140 / 80W-90 / 80W-110 / 80W-140 / 85W-90 / 85W-110 / 85W-140 / 90. La lista de ZF recoge 89 homologaciones de productos comerciales",
 "segment": "pesado",
 "tipo": "transmision"
 }
@@ -2587,7 +2663,8 @@
 "ZF TE-ML 12E"
 ],
 "15E97B": [
-"API GL-4"
+"API GL-4",
+"MB 235.72"
 ],
 "15F43B": [
 "API CI-4",
@@ -2674,6 +2751,9 @@
 ],
 "15F6C5": [
 "FIAT 9.55535-S1"
+],
+"15F6E5": [
+"MB 226.52"
 ],
 "15F6EB": [
 "API SQ",
