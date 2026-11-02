@@ -1,0 +1,848 @@
+{
+ "fuente": "Castrol Homologaciones Vehiculo Pesado.pdf",
+ "productos": [
+  {
+   "nombre": "Castrol TRANSMAX ATF Z",
+   "familia": "Fluidos de transmisión automática",
+   "viscosidad": "",
+   "pagina": 12,
+   "descripcion": "Fluido totalmente sintético para transmisiones automáticas formulado con Smooth Drive Technology; especialmente recomendado para transmisiones automáticas y semiautomáticas de autobuses y autocares.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "60 l",
+    "20 l",
+    "5 l",
+    "1 l"
+   ],
+   "niveles": [],
+   "homologaciones": [
+    "MAN 339 V2",
+    "MAN 339 Z3",
+    "MAN 339 Z12",
+    "MB 236.81",
+    "Voith H55.6336.xx",
+    "VW/Audi 501 60",
+    "ZF TE-ML 04D",
+    "ZF TE-ML 11B",
+    "ZF TE-ML 14C",
+    "ZF TE-ML 16M",
+    "ZF TE-ML 16S",
+    "ZF TE-ML 20C",
+    "ZF TE-ML 25C"
+   ],
+   "cumple": [
+    "cumple con los requisitos de JASO 1A (03)",
+    "adecuado para su uso cuando se requiera: JASO 1A LV(13); Toyota T, T II, T III, T IV, WS; Nissan Matic D, J, S; Mitsubishi SP II, IIM, III, PA, J3, SP IV; Mazda ATF M-III, M-V, JWS 3317, FZ; Subaru F6, Red 1; Daihatsu AMMIX ATF D-III Multi, D3-SP; Suzuki AT Oil 5D06, 2384K; JWS 3314, 3317; Hyundai/Kia SP III, SP IV; transmisiones Aisin que requieren JWS 3309; Honda/Acura DW 1/Z1; Isuzu (cuando se requiere Toyota T-IV); BMW, VW, transmisiones automáticas Audi y Jaguar de 5 velocidades y transmisiones automáticas MB de 4 y 5 velocidades",
+    "N.º de lubricante BMW 8322.9407807",
+    "N.º de lubricante Citroen Z 000169756",
+    "N.º de lubricante Jaguar JLM 20238, LA 2634, LT 71141",
+    "N.º de lubricante Mercedes Benz 0019892203, MB 236.1, 236.6, 236.7, 236.9, 236.10",
+    "N.º de lubricante Peugeot Z 000169756",
+    "N.º de lubricante Porsche 999.917.547.00",
+    "VW/Audi TL 52162 (G 052 162)",
+    "ZF Lifeguardfluid 5",
+    "aconsejado para flotas con transmisiones Voith, Renk, ZF, Allison y MB y unidades Leyland neumocíclicas e hidracíclicas",
+    "intervalos de 120 000 km con unidades ZF Ecomat y EcoLife, MB AT y Voith AT"
+   ],
+   "dudas": [
+    "El bloque de Especificaciones no separa con claridad homologación de 'adecuado para'; solo 'homologación' precede a MB 236.81. Se han puesto en homologaciones las referencias MAN/Voith/VW/ZF de la primera parte de la lista (hasta 'cumple con los requisitos de JASO 1A (03)') y el resto en cumple (pág. 12)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX ATF DX III Multivehicle",
+   "familia": "Fluidos de transmisión automática",
+   "viscosidad": "",
+   "pagina": 12,
+   "descripcion": "Diseñado para transmisiones automáticas GM anteriores a 2005 y Ford fabricadas entre 1983 y 1996 que requieran DEXRON (II o III) o MERCON; aprobado para transmisiones Allison de vehículos pesados que requieran TES 389 y para un amplio abanico de transmisiones automáticas europeas de vehículos pesados.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [],
+   "homologaciones": [
+    "Allison TES-389",
+    "MAN 339 L1",
+    "MAN 339 V1",
+    "MAN 339 Z1",
+    "MB 236.9",
+    "Voith H55.6335.xx",
+    "Volvo 97341:071 (lubricante de transmisión)",
+    "ZF TE-ML 04D",
+    "ZF TE-ML 14A"
+   ],
+   "cumple": [
+    "cumple los requisitos de Allison C4",
+    "cumple los requisitos de Ford Mercon",
+    "GM Dexron IIIH (*GM Dexron III(H) sustituye a GM Dexron II(D))",
+    "cumple los requisitos de lubricante de transmisión Volvo 97340"
+   ],
+   "dudas": [
+    "Texto original: 'ZF TE-ML 04D,14A' (pág. 12)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX Manual Z Long Life 75W-80",
+   "familia": "Fluidos de Transmisión Manual",
+   "viscosidad": "SAE 75W-80",
+   "pagina": 13,
+   "descripcion": "Fluido totalmente sintético con Smooth Drive Technology desarrollado para cumplir los requisitos de intervalos prolongados (500.000 km) de ZF; aprobado para todas las transmisiones manuales y automáticas de ZF para vehículos comerciales; recomendable en otras transmisiones manuales que requieran API GL-4.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [
+    "MAN 341 Z5",
+    "MB 235.41",
+    "ZF TE-ML 01E",
+    "ZF TE-ML 02E",
+    "ZF TE-ML 16P"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Manual Long Life 75W-85",
+   "familia": "Fluidos de Transmisión Manual",
+   "viscosidad": "SAE 75W-85",
+   "pagina": 13,
+   "descripcion": "Fluido de transmisión totalmente sintético con Smooth Drive Technology recomendado para la mayoría de transmisiones manuales de vehículos comerciales que requieren API GL-4.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [
+    "MB 235.4",
+    "Volvo 97307:045 (lubricante de transmisión)"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Manual AT 75W-90",
+   "familia": "Fluidos de Transmisión Manual",
+   "viscosidad": "SAE 75W-90",
+   "pagina": 13,
+   "descripcion": "Fluido sintético aprobado para su uso en las transmisiones manuales de vehículos Mercedes-Benz Actros.",
+   "formatos": [
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [
+    "MB 235.11"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Manual EP 80W",
+   "familia": "Fluidos de Transmisión Manual",
+   "viscosidad": "SAE 80W",
+   "pagina": 13,
+   "descripcion": "Fluido de base mineral para aplicaciones que requieren API GL-4; aprobado para transmisiones MB de vehículos comerciales ligeros y camiones y para transmisiones manuales ZF.",
+   "formatos": [
+    "208 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [
+    "MB 235.1",
+    "ZF TE-ML 17A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Manual EP 80W-90",
+   "familia": "Fluidos de Transmisión Manual",
+   "viscosidad": "SAE 80W-90",
+   "pagina": 13,
+   "descripcion": "Fluido mineral para aplicaciones que requieren API GL-4; aprobado para su uso en transmisiones manuales ZF.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [
+    "MAN 341 Z2",
+    "ZF TE-ML 02B",
+    "ZF TE-ML 17A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle EPX 80W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 80W-90",
+   "pagina": 14,
+   "descripcion": "Lubricante multiusos para ejes apto para diferenciales, grupos finales y otras aplicaciones de vehículos comerciales que requieren API GL-5; aprobado por MAN y ZF.",
+   "formatos": [
+    "1000 l",
+    "20 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MAN 342 M2",
+    "ZF TE-ML 05A",
+    "ZF TE-ML 12E",
+    "ZF TE-ML 16B",
+    "ZF TE-ML 17B",
+    "ZF TE-ML 19B",
+    "ZF TE-ML 21A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle EPX 85W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 85W-90",
+   "pagina": 14,
+   "descripcion": "Lubricante multiusos para ejes apto para diferenciales, grupos finales y otras aplicaciones de vehículos comerciales que requieren API GL-5; aprobado por MAN y ZF.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MB 235.0",
+    "ZF TE-ML 16C",
+    "ZF TE-ML 17B",
+    "ZF TE-ML 19B",
+    "ZF TE-ML 21A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle EPX 85W-140",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 85W-140",
+   "pagina": 14,
+   "descripcion": "Lubricante multiusos para ejes apto para diferenciales, grupos finales y otras aplicaciones de vehículos comerciales que requieren API GL-5; aprobado por MAN y ZF.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "5 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "ZF TE-ML 05A",
+    "ZF TE-ML 12E",
+    "ZF TE-ML 16D",
+    "ZF TE-ML 21A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle Long Life 75W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 75W-90",
+   "pagina": 14,
+   "descripcion": "Formulado con Smooth Drive Technology, lubricante totalmente sintético para el eje trasero; primera recomendación de Castrol para transmisiones finales de vehículos comerciales pesados, aprobada por MAN y ZF.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MAN 342 S1",
+    "ZF TE-ML 05A",
+    "ZF TE-ML 12B",
+    "ZF TE-ML 17B",
+    "ZF TE-ML 19C",
+    "ZF TE-ML 21A"
+   ],
+   "cumple": [
+    "BMW (ejes traseros deslizantes no limitados) según las instrucciones de mantenimiento 33 01 96 (149)"
+   ],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle Long Life 75W-140",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 75W-140",
+   "pagina": 14,
+   "descripcion": "Formulado con Smooth Drive Technology, lubricante totalmente sintético para grupos finales y ejes de vehículos comerciales que requieren API GL-5; incluido en la lista de productos de alto rendimiento de Scania y aprobado según STO 2:0A de Scania.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "Scania STO 2:0A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Axle Long Drain 80W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 80W-90",
+   "pagina": 14,
+   "descripcion": "Desarrollado para ejes y grupos finales que funcionan en condiciones duras y con un rango amplio de temperaturas; aprobado para ejes MB Actros, MAN, Scania y ZF; recomendado para otras aplicaciones API GL-5.",
+   "formatos": [
+    "208 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MAN 341 GA1",
+    "MAN 342 M3",
+    "MB 235.20",
+    "Scania STO 1:0",
+    "ZF TE-ML 05A",
+    "ZF TE-ML 12L",
+    "ZF TE-ML 12M",
+    "ZF TE-ML 16B",
+    "ZF TE-ML 17B",
+    "ZF TE-ML 19B",
+    "ZF TE-ML 21A"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Limited Slip 75W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 75W-90",
+   "pagina": 15,
+   "descripcion": "Lubricante de engranajes sintético de alto rendimiento para ejes de deslizamiento limitado de vehículos comerciales modernos; también adecuado para otros ejes y determinados cambios de marchas manuales cuando los fabricantes recomiendan nivel API GL-5.",
+   "formatos": [
+    "1000 l",
+    "208 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "aprobado para su uso en unidades de transmisión final Voith"
+   ],
+   "cumple": [
+    "incluido en las listas de recomendaciones de Voith 132.00374402 y 132.00374401"
+   ],
+   "dudas": [
+    "El bloque dice 'Rendimiento de deslizamiento limitado que requiere API GL-5'; se interpreta API GL-5 como nivel requerido (pág. 15)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX Limited Slip Z 85W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 85W-90",
+   "pagina": 15,
+   "descripcion": "Lubricante de engranajes de base mineral para diferenciales de deslizamiento limitado de vehículos comerciales que requieren API GL-5 con características de fricción específicas; aprobado por ZF para sus frenos húmedos multidisco y diferenciales autobloqueantes.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "ZF TE-ML 05C",
+    "ZF TE-ML 12C",
+    "ZF TE-ML 16E",
+    "ZF TE-ML 21C"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol TRANSMAX Universal LL 75W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 75W-90",
+   "pagina": 15,
+   "descripcion": "Lubricante multiusos totalmente sintético con Smooth Drive Technology para transmisiones manuales y grupos finales de una amplia variedad de vehículos que requieren API GL-4 o API GL-5.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-4/5",
+    "API MT-1",
+    "SAE J2360"
+   ],
+   "homologaciones": [
+    "MB 235.9",
+    "MAN 341 GA1 / Z2",
+    "MAN 342 S1",
+    "Scania STO 1:1 G",
+    "Scania STO 2:0 A FS",
+    "Volvo 97312",
+    "ZF TE-ML 02B",
+    "ZF TE-ML 05A",
+    "ZF TE-ML 12L",
+    "ZF TE-ML 12N",
+    "ZF TE-ML 16F",
+    "ZF TE-ML 17B",
+    "ZF TE-ML 19C",
+    "ZF TE-ML 21A (ZF002144)"
+   ],
+   "cumple": [
+    "DTFR 12B140 (MB 235.8)"
+   ],
+   "dudas": [
+    "Solo MB 235.9 va precedido de 'homologación'; el resto está listado sin verbo. En el original 'ZF TE-ML 17B 19C' no lleva separador entre ambos (pág. 15)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX Universal LL 80W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 80W-90",
+   "pagina": 15,
+   "descripcion": "Lubricante semisintético multiusos para transmisiones manuales y grupos finales, especialmente para grupos finales y diferenciales con cargas elevadas de vehículos comerciales API GL-5; utilizable en transmisiones manuales sincronizadas que requieran API GL-4 o GL-5.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-4/5"
+   ],
+   "homologaciones": [
+    "DTFR 12B100 (MB 235.0)",
+    "MAN 341 GA1 / Z2",
+    "MAN 342 M2",
+    "Scania STO 1:0",
+    "Scania STO 1:1 G",
+    "ZF -TE ML 02B",
+    "ZF -TE ML 05A",
+    "ZF -TE ML 12L",
+    "ZF -TE ML 12M",
+    "ZF -TE ML 16C",
+    "ZF -TE ML 17H",
+    "ZF -TE ML 19B",
+    "ZF -TE ML 21A (ZF002143)"
+   ],
+   "cumple": [
+    "recomendado para su uso en transmisiones manuales y diferenciales Hino"
+   ],
+   "dudas": [
+    "Aparece ZF '-TE ML' con ese guion en el original; se transcribe tal cual (pág. 15)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX Universal 75W-90",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 75W-90*",
+   "pagina": 15,
+   "descripcion": "Lubricante multiusos para engranajes, tanto para transmisiones manuales sincronizadas como para grupos finales y diferenciales que requieren API GL-4 o API GL-5.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l",
+    "1 l"
+   ],
+   "niveles": [
+    "API GL-4/GL-5"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "*Clase SAE de acuerdo con J306 anterior a 1998"
+   ],
+   "dudas": [
+    "Sin homologaciones de fabricante; solo API GL-4/GL-5. El asterisco de la viscosidad remite a la nota sobre SAE J306 anterior a 1998 (pág. 15)."
+   ]
+  },
+  {
+   "nombre": "Castrol TRANSMAX Offroad 10W, 30, 50",
+   "familia": "Ejes y Fluidos Universales",
+   "viscosidad": "SAE 10W, 30, 50",
+   "pagina": 15,
+   "descripcion": "Lubricantes para transmisiones con cambios de marchas operables bajo carga, transmisiones de impulsión directa, frenos de discos húmedos, grupos finales y diferenciales de maquinaria todoterreno que requieren una especificación Caterpillar TO-4.",
+   "formatos": [
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "CAT TO-4"
+   ],
+   "homologaciones": [
+    "SAE 10W: ZF TE-ML 03C",
+    "SAE 30: ZF TE-ML 03C",
+    "SAE 30: ZF TE-ML 07F"
+   ],
+   "cumple": [
+    "SAE 10W: cumple la especificación CAT TO-4; recomendado para su uso en equipos Komatsu",
+    "SAE 30: cumple la especificación CAT TO-4; recomendado para su uso en equipos Komatsu",
+    "SAE 50: cumple la especificación CAT TO-4; recomendado para su uso en equipos Komatsu"
+   ],
+   "dudas": [
+    "Un solo producto con tres grados; las homologaciones se indican por grado (pág. 15)."
+   ]
+  },
+  {
+   "nombre": "Castrol HYSPIN AWH-M 32, 46, 68",
+   "familia": "Fluidos Hidráulicos",
+   "viscosidad": "32, 46, 68",
+   "pagina": 16,
+   "descripcion": "Gama de lubricantes hidráulicos de alto índice de viscosidad estables al cizallamiento para la mayoría de sistemas hidráulicos que requieren protección frente al desgaste, con clasificación HLP según DIN; ideales para equipos sometidos a arranque en frío y funcionamiento continuo a altas temperaturas.",
+   "formatos": [
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "DIN 51502: aceites hidráulicos de tipo HV - HVLP",
+    "ISO 6743/4"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Los grados 32, 46, 68 se leen en el título; el PDF no indica 'ISO VG' (pág. 16)."
+   ]
+  },
+  {
+   "nombre": "Castrol HYSPIN AWS 32, 46, 68",
+   "familia": "Fluidos Hidráulicos",
+   "viscosidad": "32, 46, 68",
+   "pagina": 16,
+   "descripcion": "Lubricantes hidráulicos para la mayoría de los sistemas hidráulicos industriales que requieren protección frente al desgaste, con clasificación HLP según la norma DIN.",
+   "formatos": [
+    "1000 l",
+    "208 l",
+    "60 l",
+    "20 l"
+   ],
+   "niveles": [
+    "DIN 51502: aceites hidráulicos de tipo HM - HLP",
+    "ISO 6743/4"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "El PDF no indica 'ISO VG' (pág. 16)."
+   ]
+  },
+  {
+   "nombre": "Castrol CLS Grease",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 00/000",
+   "pagina": 16,
+   "descripcion": "Grasa semifluida (NLGI 00) para aplicaciones de presión extrema en sistemas centrales de lubricación de vehículos comerciales; también grasa semifluida multiusos para aplicaciones automotrices.",
+   "formatos": [
+    "50 kg",
+    "25 kg",
+    "18 kg"
+   ],
+   "niveles": [
+    "NLGI 00/000"
+   ],
+   "homologaciones": [
+    "MAN 283 Li-P 00/000",
+    "MB 264.0"
+   ],
+   "cumple": [
+    "Volvo Truck Corporation: Boletín de mantenimiento, página 28"
+   ],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol High Temperature Grease",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 2",
+   "pagina": 16,
+   "descripcion": "Compleja grasa de litio multiusos de alto rendimiento para un amplio abanico de temperaturas, cargas y velocidades; especialmente adecuada para rodamientos de automoción, por ejemplo en camiones y autobuses.",
+   "formatos": [
+    "180 kg",
+    "50 kg",
+    "18 kg",
+    "400 g"
+   ],
+   "niveles": [
+    "NLGI 2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol LMX Li-Komplexfett",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 2",
+   "pagina": 16,
+   "descripcion": "Grasa de alto rendimiento para una amplia variedad de aplicaciones; especialmente adecuada para rodamientos de ruedas de vehículos que circulan a altas velocidades, largas distancias o con frenados fuertes prolongados.",
+   "formatos": [
+    "180 kg",
+    "25 kg",
+    "400 g"
+   ],
+   "niveles": [
+    "NLGI 2"
+   ],
+   "homologaciones": [
+    "MAN 284 Li-H 2",
+    "MB 265.1"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Moly Grease",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 2",
+   "pagina": 17,
+   "descripcion": "Grasa multiusos para diversas aplicaciones en las que predomina el movimiento deslizante o alternativo; fortificada con disulfuro de molibdeno para cargas de choque o vibración excesiva.",
+   "formatos": [
+    "18 kg",
+    "400 g"
+   ],
+   "niveles": [
+    "NLGI 2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol SPHEEROL EPL 00",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 00",
+   "pagina": 17,
+   "descripcion": "Grasa semifluida de litio NLGI 00 indicada para sistemas de lubricación centralizada y cajas de cambios en baño de grasa; contiene potentes inhibidores del óxido.",
+   "formatos": [
+    "180 kg",
+    "50 kg",
+    "18 kg"
+   ],
+   "niveles": [
+    "NLGI 00"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol SPHEEROL EPL 0/1/2",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 0/1/2",
+   "pagina": 17,
+   "descripcion": "Grasas de litio con buena resistencia de la película bajo cargas medias a altas; especificaciones especialmente indicadas para vehículos en condiciones de humedad.",
+   "formatos": [
+    "180 kg",
+    "50 kg",
+    "18 kg",
+    "15 kg",
+    "12,5 kg"
+   ],
+   "niveles": [
+    "NLGI 0/1/2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol RADICOOL SF",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 17,
+   "descripcion": "Refrigerante de larga duración (concentrado) basado en monoetilenglicol con tecnología avanzada de inhibidores de ácidos orgánicos; sin aminas, nitritos, fosfatos, silicatos ni otros inhibidores inorgánicos; adecuado para una amplia gama de vehículos, incluidos automóviles, camiones y autobuses.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l"
+   ],
+   "niveles": [
+    "ASTM D3306",
+    "ASTM D4985",
+    "ASTM D6210",
+    "BS 6580:2010",
+    "JASO JIS K2234"
+   ],
+   "homologaciones": [
+    "Deutz DQC CB-14",
+    "DAF 74002",
+    "MAN 324 Typ SNF",
+    "DTFR 29C110 (MB 325.3)",
+    "VW TL-774F (G12+)"
+   ],
+   "cumple": [
+    "cumple con Ford WSS-M97B44-D"
+   ],
+   "dudas": [
+    "El PDF no usa la palabra 'homologación' en este bloque; las referencias de fabricante figuran como especificaciones (pág. 17)."
+   ]
+  },
+  {
+   "nombre": "Castrol RADICOOL SF Premix",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 17,
+   "descripcion": "Refrigerante de larga duración listo para usar basado en monoetilenglicol con tecnología avanzada de inhibidores de ácidos orgánicos; protección contra la congelación hasta -37 °C; compatible con todas las mangueras, juntas y sellos de goma estándar.",
+   "formatos": [
+    "208 l",
+    "60 l"
+   ],
+   "niveles": [
+    "ASTM D3306(III)",
+    "ASTM D4985",
+    "ASTM D6210"
+   ],
+   "homologaciones": [
+    "MAN 324 Typ SNF",
+    "MB 326.3",
+    "VW TL 774F (G12+)",
+    "Deutz DQC CB-14",
+    "DAF 74002"
+   ],
+   "cumple": [
+    "Basado en un concentrado de refrigerante conforme a: BS 6580:2010"
+   ],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol RADICOOL NF",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 18,
+   "descripcion": "Concentrado anticongelante formulado con monoetilenglicol y aditivos seleccionados, sin nitritos, aminas ni inhibidores de fosfato; tecnología híbrida para los motores modernos de alto rendimiento de automóviles y camiones; protege hasta 3 años.",
+   "formatos": [
+    "208 l",
+    "60 l",
+    "20 l"
+   ],
+   "niveles": [
+    "ASTM D3306",
+    "ASTM D4985",
+    "BS 6580:2010",
+    "JASO JIS K2234"
+   ],
+   "homologaciones": [
+    "Deutz DQC CA-14",
+    "MAN 324 Typ NF",
+    "DTFR 29C100 (MB 325.0)",
+    "MB 325.0",
+    "MTU MTL 5048",
+    "VW TL-774C (G11)"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol RADICOOL NF Premix",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 18,
+   "descripcion": "Refrigerante y anticongelante de motor listo para usar formulado con monoetilenglicol y aditivos seleccionados, sin nitritos, aminas ni inhibidores de fosfato; tecnología híbrida; protección contra la congelación hasta -37 °C; protege hasta 3 años.",
+   "formatos": [
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "ASTM D3306(III)",
+    "ASTM D4985",
+    "JASO JIS K 2234:2006"
+   ],
+   "homologaciones": [
+    "MAN 324 Typ NF",
+    "MTU MTL 5048",
+    "MB 326.0"
+   ],
+   "cumple": [
+    "Basado en un concentrado de refrigerante conforme a: BS 6580:2010"
+   ],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol RADICOOL Si-OAT",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 18,
+   "descripcion": "Refrigerante anticongelante sin nitritos, aminas ni fosfatos y con silicato añadido para los vehículos más modernos que requieren tecnología OAT con silicatos; protege hasta 3 años; aprobado para su uso en camiones Euro 6.",
+   "formatos": [
+    "208 l",
+    "20 l"
+   ],
+   "niveles": [
+    "ASTM D3306",
+    "ASTM D4985",
+    "BS 6580:2010",
+    "JASO JIS K2234"
+   ],
+   "homologaciones": [
+    "MAN 324 Tipo Si-OAT",
+    "DTFR 29D120 (MB 325.5)",
+    "VW TL-774G (G12++)"
+   ],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol RADICOOL Si-OAT Premix",
+   "familia": "Refrigerantes",
+   "viscosidad": "",
+   "pagina": 18,
+   "descripcion": "Refrigerante y anticongelante de motor listo para usar, sin nitritos, aminas ni fosfatos y con silicato añadido, para vehículos que requieren tecnología OAT con silicatos; protección contra la congelación hasta -37 °C.",
+   "formatos": [
+    "208 l"
+   ],
+   "niveles": [
+    "ASTM D3306 (III)",
+    "ASTM D4985",
+    "JASO JIS K2234"
+   ],
+   "homologaciones": [
+    "MAN 324 Tipo Si-OAT",
+    "MB 326.6",
+    "VW-TL 774-G (G12++)"
+   ],
+   "cumple": [
+    "Basado en un concentrado de refrigerante conforme a: BS 6580:2010"
+   ],
+   "dudas": []
+  }
+ ],
+ "dudas_generales": [
+  "Pagina referida al indice del PDF (1-19); las paginas impresas del catalogo son pares (p. ej. PDF 12 = pags. 21-22).",
+  "Los bloques Especificaciones del PDF no siempre separan homologacion de recomendacion; se ha tratado como homologacion lo listado como especificacion de fabricante y como cumple lo precedido de cumple, adecuado, recomendado o listas de recomendaciones.",
+  "Las paginas 1-10 y 19 (Vecton/CRB, portada, contacto) no se han transcrito; la pag. 11 es una portada de seccion sin productos."
+ ]
+}

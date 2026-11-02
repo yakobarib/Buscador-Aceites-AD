@@ -201,6 +201,7 @@
     "DAIMLER TRUCK DTFR 15C110",
     "DEUTZ DQC IV-18 LA",
     "MACK EOS-4.5",
+    "MAN 3277",
     "MTU TYPE 3.1",
     "RENAULT RLD-3",
     "VOLVO CNG",
@@ -227,9 +228,7 @@
     "MAN 3271-1",
     "MAN 3477"
    ],
-   "sin_enlazar": [
-    "man: M32775"
-   ],
+   "sin_enlazar": [],
    "celdas_brutas": {
     "acea": [
      "E6",
@@ -315,6 +314,7 @@
     "DAIMLER TRUCK DTFR 15C110",
     "DEUTZ DQC IV-18 LA",
     "MACK EOS-4.5",
+    "MAN 3277",
     "MTU TYPE 3.1",
     "RENAULT RLD-3",
     "VOLVO CNG",
@@ -342,9 +342,7 @@
     "MAN 3271-3",
     "MAN 3477"
    ],
-   "sin_enlazar": [
-    "man: M32775"
-   ],
+   "sin_enlazar": [],
    "celdas_brutas": {
     "acea": [
      "E6",

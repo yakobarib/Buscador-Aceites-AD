@@ -1,0 +1,222 @@
+{
+ "fuente": "Castrol Homologaciones Moto y Nautica.pdf (págs. 34-35) y Castrol Homologaciones Moto.pdf (págs. 26-27)",
+ "productos": [
+  {
+   "nombre": "CASTROL A747",
+   "familia": "Competición",
+   "viscosidad": "SAE 50",
+   "pagina": 34,
+   "descripcion": "Especialmente formulado para motores de 2T multicilíndricos refrigerados por agua e instalados en máquinas de competición de carretera. Puede ser utilizado en ratios combustible/lubricante de hasta 40:1.",
+   "formatos": [],
+   "niveles": [
+    "API TC"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Envases: el PDF indica '/' (sin formato)."
+   ],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL XR77",
+   "familia": "Competición",
+   "viscosidad": "SAE 40",
+   "pagina": 34,
+   "descripcion": "Para los últimos motores de competición de 2T empleando lo último en combustibles. Puede ser empleado en ratios combustible/lubricante de hasta 40:1.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [
+    "Fully certified for use in Moto GP racing, EMPA test report number 417478/01"
+   ],
+   "dudas": [
+    "La frase 'Fully certified for use in Moto GP racing / EMPA test report 417478/01' es una certificación de uso en competición, no una norma de fabricante; se coloca en 'cumple'.",
+    "Envases: el PDF indica '/' (sin formato)."
+   ],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL XR44",
+   "familia": "Competición",
+   "viscosidad": "SAE 0W-30",
+   "pagina": 34,
+   "descripcion": "Castrol XR44 es lo último en productos de competición diseñado para la última generación de motores de 4T propulsando motocicletas Supersport.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Envases: el PDF indica '/' (sin formato). Sin norma indicada."
+   ],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL INBOARD 4T",
+   "familia": "Náutica",
+   "viscosidad": "SAE 15W-40",
+   "pagina": 35,
+   "descripcion": "Lubricante mineral de alta calidad para motores náuticos pesados de 4T, para su utilización en motores gasolina o diesel. Especial motores interiores y de cola. Diseñado para largos periodos de funcionamiento a máxima potencia, excelente protección. No apto para motores 2T.",
+   "formatos": [
+    "Caja 4 x 4 L"
+   ],
+   "niveles": [
+    "API CF-4 / SG"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL OUTBOARD 2T",
+   "familia": "Náutica",
+   "viscosidad": "",
+   "pagina": 35,
+   "descripcion": "Lubricante mineral de alto rendimiento para motores de 2T de fuera-bordas refrigerados por agua. Cumple la especificación NMMA TC-W 3. Totalmente miscible con el combustible y excepcional capacidad de limpieza. Apto para utilización tanto en pre-mezcla como en sistemas de inyección.",
+   "formatos": [
+    "Caja 12 x 1 L"
+   ],
+   "niveles": [
+    "NMMA TC-W3"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "No consta viscosidad SAE en el PDF."
+   ],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL BIOLUBE 2T",
+   "familia": "Náutica",
+   "viscosidad": "SAE 50",
+   "pagina": 35,
+   "descripcion": "Lubricante 100% sintético y biodegradable para motores de 2T utilizados en fuera-bordas, refrigerados por agua y motores marinos ligeros. Cumple la especificación NMMA TC-W 3. Totalmente miscible con el combustible, bajo contenido en cenizas que proporciona excelente limpieza de los motores y gran estabilidad térmica. Apto para utilización tanto en pre-mezcla como en sistemas de inyección.",
+   "formatos": [
+    "Caja 12 x 1 L"
+   ],
+   "niveles": [
+    "NMMA TC-W3"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Densidad: el PDF indica '/ g / cm3'."
+   ],
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf"
+  },
+  {
+   "nombre": "CASTROL A747",
+   "familia": "Competición",
+   "viscosidad": "SAE 50",
+   "pagina": 26,
+   "descripcion": "Especialmente formulado para motores de 2T multicilíndricos refrigerados por agua e instalados en máquinas de competición de carretera. Puede ser utilizado en ratios combustible/lubricante de hasta 40:1.",
+   "formatos": [],
+   "niveles": [
+    "API TC"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Envases: el PDF indica '/' (sin formato)."
+   ],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  },
+  {
+   "nombre": "CASTROL XR77",
+   "familia": "Competición",
+   "viscosidad": "SAE 40",
+   "pagina": 26,
+   "descripcion": "Para los últimos motores de competición de 2T empleando lo último en combustibles. Puede ser empleado en ratios combustible/lubricante de hasta 40:1.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [
+    "Fully certified for use in Moto GP racing, EMPA test report number 417478/01"
+   ],
+   "dudas": [
+    "La frase 'Fully certified for use in Moto GP racing / EMPA test report 417478/01' es una certificación de uso en competición, no una norma de fabricante; se coloca en 'cumple'.",
+    "Envases: el PDF indica '/' (sin formato)."
+   ],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  },
+  {
+   "nombre": "CASTROL XR44",
+   "familia": "Competición",
+   "viscosidad": "SAE 0W-30",
+   "pagina": 26,
+   "descripcion": "Castrol XR44 es lo último en productos de competición diseñado para la última generación de motores de 4T propulsando motocicletas Supersport.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Envases: el PDF indica '/' (sin formato). Sin norma indicada."
+   ],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  },
+  {
+   "nombre": "CASTROL INBOARD 4T",
+   "familia": "Náutica",
+   "viscosidad": "SAE 15W-40",
+   "pagina": 27,
+   "descripcion": "Lubricante mineral de alta calidad para motores náuticos pesados de 4T, para su utilización en motores gasolina o diesel. Especial motores interiores y de cola. Diseñado para largos periodos de funcionamiento a máxima potencia, excelente protección. No apto para motores 2T.",
+   "formatos": [
+    "Caja 4 x 4 L"
+   ],
+   "niveles": [
+    "API CF-4 / SG"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  },
+  {
+   "nombre": "CASTROL OUTBOARD 2T",
+   "familia": "Náutica",
+   "viscosidad": "",
+   "pagina": 27,
+   "descripcion": "Lubricante mineral de alto rendimiento para motores de 2T de fuera-bordas refrigerados por agua. Cumple la especificación NMMA TC-W 3. Totalmente miscible con el combustible y excepcional capacidad de limpieza. Apto para utilización tanto en pre-mezcla como en sistemas de inyección.",
+   "formatos": [
+    "Caja 12 x 1 L",
+    "Caja 4 x 4 L"
+   ],
+   "niveles": [
+    "NMMA TC-W3"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "No consta viscosidad SAE en el PDF.",
+    "Solo la versión 'Moto' (pág. 27) añade Caja 4 x 4 L; la versión 'Moto y Náutica' solo indica Caja 12 x 1 L."
+   ],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  },
+  {
+   "nombre": "CASTROL BIOLUBE 2T",
+   "familia": "Náutica",
+   "viscosidad": "SAE 50",
+   "pagina": 27,
+   "descripcion": "Lubricante 100% sintético y biodegradable para motores de 2T utilizados en fuera-bordas, refrigerados por agua y motores marinos ligeros. Cumple la especificación NMMA TC-W 3. Totalmente miscible con el combustible, bajo contenido en cenizas que proporciona excelente limpieza de los motores y gran estabilidad térmica. Apto para utilización tanto en pre-mezcla como en sistemas de inyección.",
+   "formatos": [
+    "Caja 12 x 1 L"
+   ],
+   "niveles": [
+    "NMMA TC-W3"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Densidad: el PDF indica '/ g / cm3'."
+   ],
+   "pdf": "Castrol Homologaciones Moto.pdf"
+  }
+ ],
+ "dudas_generales": [
+  "Las secciones Competición y Náutica aparecen idénticas en ambos PDFs salvo Outboard 2T (formatos); se transcriben por separado con el campo 'pdf'.",
+  "Catálogo antiguo (V022019 / V02 Abril 2014): puede no estar vigente.",
+  "Ningún producto de estas secciones lista homologaciones de fabricantes; solo niveles API/NMMA."
+ ]
+}

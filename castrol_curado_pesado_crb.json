@@ -1,0 +1,42 @@
+{
+  "fuente": "Castrol Homologaciones Vehiculo Pesado.pdf",
+  "nota": "Transcrito a mano de la página 10 del PDF, leída como imagen (bloques «Especificaciones» de cada recuadro). 2026-11-02.",
+  "productos": [
+    {
+      "nombre": "Castrol CRB Turbomax 10W-40 E4/E7",
+      "familia": "Lubricantes de motor",
+      "viscosidad": "SAE 10W-40",
+      "pagina": 10,
+      "descripcion": "Lubricante avanzado para motores diésel de vehículos pesados de alta especificación que cumplan los requisitos de emisiones de Euro I a Euro V (sin filtros de partículas, algunos con EGR).",
+      "formatos": ["1000 l", "208 l", "20 l"],
+      "niveles": ["ACEA E4", "ACEA E7", "API CI-4", "JASO DH-1"],
+      "homologaciones": ["CUMMINS CES 20077", "CUMMINS CES 20078", "DEUTZ DQC III-18", "DAIMLER TRUCK DTFR 15B120", "MB 228.5", "MACK EO-N", "MAN 3277", "MTU TYPE 3", "RENAULT RLD-2", "VOLVO VDS-3"],
+      "cumple": [],
+      "dudas": []
+    },
+    {
+      "nombre": "Castrol CRB Multi 15W-40 CI-4/E7",
+      "familia": "Lubricantes de motor",
+      "viscosidad": "SAE 15W-40",
+      "pagina": 10,
+      "descripcion": "Lubricante de motor multiusos para motores diésel de vehículos pesados de 4 tiempos y alta velocidad, compatible con motores con EGR.",
+      "formatos": ["1000 l", "208 l", "20 l", "5 l"],
+      "niveles": ["ACEA E7", "API CI-4", "API SL"],
+      "homologaciones": ["CATERPILLAR ECF-2", "CUMMINS CES 20077", "DEUTZ DQC III-18", "DETROIT DIESEL DFS 93K215", "DAIMLER TRUCK DTFR 15B110", "MB 228.3", "MACK EO-M PLUS", "MACK EO-N", "MTU TYPE 2", "RENAULT RLD-2", "VOLVO VDS-3"],
+      "cumple": ["MAN 3275-1"],
+      "dudas": []
+    },
+    {
+      "nombre": "Castrol CRB Multi 20W-50 CH-4",
+      "familia": "Lubricantes de motor",
+      "viscosidad": "SAE 20W-50",
+      "pagina": 10,
+      "descripcion": "Lubricante de motor multiusos para motores diésel de vehículos pesados de 4 tiempos y alta velocidad.",
+      "formatos": ["208 l", "20 l"],
+      "niveles": ["API CH-4"],
+      "homologaciones": [],
+      "cumple": [],
+      "dudas": []
+    }
+  ]
+}

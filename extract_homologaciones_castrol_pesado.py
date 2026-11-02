@@ -55,6 +55,8 @@ RE_NIVEL = re.compile(r"(?<![A-Za-z0-9-])(CF/CF-2|DHD-\d|DH-\d|F\d{2}|FA-4|C[A-K
 def literales(fila, texto):
     """Convierte un trozo de celda en ([literales con marca], resto sin reconocer)."""
     t = " " + re.sub(r"(?i)cumple los requisitos de|categor[ií]a de lubricantes", " ", texto) + " "
+    # errata confirmada por Yakoba el 2026-10-30 (decisiones.json, CASTROL-CVO-M32775): el PDF dice M32775 y es MAN M 3277
+    t = t.replace("M32775", "M3277")
     out = []
 
     def toma(patron, fabrica):

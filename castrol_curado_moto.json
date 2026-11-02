@@ -1,0 +1,1066 @@
+{
+ "fuente": "Castrol Homologaciones Moto.pdf ; Castrol Homologaciones Moto y Nautica.pdf",
+ "productos": [
+  {
+   "nombre": "Castrol Power 1 Racing 4T 5W-40",
+   "familia": "Power 1 4T",
+   "viscosidad": "5W-40",
+   "pagina": 8,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante completamente sintetico de 4 tiempos con tecnologia derivada de la competicion, para motoristas a los que les apasiona pilotar al limite; excelente aceleracion y potencia; Trizone Technology.",
+   "formatos": [
+    "C.12x1 L",
+    "C. 4x4 L"
+   ],
+   "niveles": [
+    "API SL",
+    "JASO MA2"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "Modelos citados sin verbo de aprobación en el PDF: BMW S1000RR, BMW K1200, BMW K1300, BMW K1600, BMW R1200 (K50), BMW HP4, BMW G450, BMW C1, Kawasaki KX250/450F"
+   ],
+   "dudas": [
+    "En la pagina 8 la viscosidad aparece como '5W-40 *' con la nota '* PROXIMO LANZAMIENTO'.",
+    "La lista 'BMW S1000RR, K1200, K1300, K1600,R1200 (K50), HP4, G450 and C1, Kawasaki KX250/450F' va tras API/JASO en el PDF sin verbo de aprobacion ni recomendacion; no se puede saber si es aprobacion o recomendacion. La asignacion de la marca BMW a cada modelo es lectura de la linea."
+   ]
+  },
+  {
+   "nombre": "Castrol Power 1 Racing 4T 10W-40",
+   "familia": "Power 1 4T",
+   "viscosidad": "10W-40",
+   "pagina": 8,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante completamente sintetico de 4 tiempos con tecnologia derivada de la competicion, para motoristas a los que les apasiona pilotar al limite; excelente aceleracion y potencia; Trizone Technology.",
+   "formatos": [
+    "C.12x1 L",
+    "C. 4x4 L"
+   ],
+   "niveles": [
+    "API SL",
+    "JASO MA2"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "Recommended by Triumph for all four stroke models"
+   ],
+   "dudas": [
+    "En la pagina 8 la viscosidad aparece como '10W-40*' con la nota '* PROXIMO LANZAMIENTO'."
+   ]
+  },
+  {
+   "nombre": "Castrol Power 1 Racing 4T 10W-50",
+   "familia": "Power 1 4T",
+   "viscosidad": "10W-50",
+   "pagina": 8,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante completamente sintetico de 4 tiempos con tecnologia derivada de la competicion, para motoristas a los que les apasiona pilotar al limite; excelente aceleracion y potencia; Trizone Technology.",
+   "formatos": [
+    "Caja 12x1 L",
+    "Caja 4x4 L",
+    "Cuñete 60 L"
+   ],
+   "niveles": [
+    "API SL",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "El PDF escribe 'JASO MA-2' aqui y 'JASO MA2' en 5W-40 y 10W-40."
+   ]
+  },
+  {
+   "nombre": "Castrol Power 1 Racing 4T (resumen de gama)",
+   "familia": "Power 1 4T",
+   "viscosidad": "5W-40, 10W-30, 10W-40, 10W-50",
+   "pagina": 13,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite totalmente sintetico de 4 tiempos con tecnologia derivada de la competicion para motoristas que buscan lo ultimo en rendimiento para conduccion extrema; Trizone Technology.",
+   "formatos": [],
+   "niveles": [
+    "API SL",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "API SL y JASO MA-2 proceden de la tabla 'Resumen de la gama' (pag. 22), iguales para las 4 viscosidades; base 'Sintetico'.",
+    "En la tabla de la pag. 22 estan resaltadas como 'Nuevo' las viscosidades 10W-30 y 10W-40.",
+    "Diferencia con el otro PDF: Moto.pdf pag. 8 solo detalla 5W-40, 10W-40 y 10W-50 (el 10W-30 solo aparece en la grafica de aceleracion) y marca 5W-40 y 10W-40 como proximo lanzamiento."
+   ],
+   "pagina_pdf2": 22
+  },
+  {
+   "nombre": "Castrol Power 1 4T 10W-30",
+   "familia": "Power 1 4T",
+   "viscosidad": "10W-30",
+   "pagina": 9,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante de 4 tiempos de calidad premium con Power Release Formula y Trizone Technology; parcialmente sintetico; reduce perdidas por friccion y mejora la aceleracion; para motos Sport de alto rendimiento.",
+   "formatos": [
+    "C.12x1 L",
+    "C. 4x4 L",
+    "60 L",
+    "208 L",
+    "1000 L"
+   ],
+   "niveles": [
+    "API SJ",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Power 1 4T 10W-40",
+   "familia": "Power 1 4T",
+   "viscosidad": "10W-40",
+   "pagina": 9,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante de 4 tiempos de calidad premium con Power Release Formula y Trizone Technology; parcialmente sintetico; reduce perdidas por friccion y mejora la aceleracion; para motos Sport de alto rendimiento.",
+   "formatos": [
+    "C.12x1 L",
+    "C. 4x4 L",
+    "60 L",
+    "208 L",
+    "1000 L"
+   ],
+   "niveles": [
+    "API SJ",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Power 1 4T 15W-50",
+   "familia": "Power 1 4T",
+   "viscosidad": "15W-50",
+   "pagina": 9,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante de 4 tiempos de calidad premium con Power Release Formula y Trizone Technology; parcialmente sintetico; reduce perdidas por friccion y mejora la aceleracion; para motos Sport de alto rendimiento.",
+   "formatos": [
+    "Caja 12x1 L",
+    "Caja 4x4 L",
+    "60 L",
+    "208 L"
+   ],
+   "niveles": [
+    "API SJ",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Power 1 4T (resumen de gama)",
+   "familia": "Power 1 4T",
+   "viscosidad": "10W-30, 10W-40, 15W-50, 20W-50",
+   "pagina": 12,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite avanzado de 4 tiempos de calidad premium con Power Release Formula y Trizone Technology; semisintetico; aceleracion mejorada.",
+   "formatos": [],
+   "niveles": [
+    "API SJ",
+    "JASO MA-2",
+    "JASO T903:2011 MA2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "API SJ / JASO MA-2 segun la tabla 'Resumen de la gama' (pag. 22); 'JASO T903:2011 MA2' segun pag. 11.",
+    "La viscosidad 20W-50 (base 'Mineral') figura como 'Nuevo' en la pag. 22 y solo aparece en este PDF (Moto.pdf no incluye Power 1 4T 20W-50).",
+    "La pag. 22 indica base Semisintetico para 10W-30, 10W-40 y 15W-50."
+   ],
+   "pagina_pdf2": 22
+  },
+  {
+   "nombre": "Castrol Act>evo 4T 20W-50",
+   "familia": "Act>evo 4T",
+   "viscosidad": "20W-50",
+   "pagina": 10,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Proteccion 70% superior frente al desgaste del motor (comparado con un aceite JASO MA2 en prueba ASTM); Active Protection Molecules y Trizone Technology; para motos de 4 tiempos donde se recomienden API SJ y JASO MA2.",
+   "formatos": [
+    "C.12x1 L",
+    "C. 4x4 L",
+    "60 L",
+    "208 L",
+    "1000 L"
+   ],
+   "niveles": [
+    "API SJ",
+    "JASO MA-2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "La pagina indica '20W-50 (mineral)'."
+   ]
+  },
+  {
+   "nombre": "Castrol Act>evo Scooter 4T 5W-40",
+   "familia": "Act>evo 4T",
+   "viscosidad": "5W-40",
+   "pagina": 11,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante de 4 tiempos para motores modernos de scooters automaticos; Scootek Technology y Active Protection Molecules; completamente sintetico.",
+   "formatos": [
+    "Caja 12x1 L",
+    "Cuñete 60 L"
+   ],
+   "niveles": [
+    "API SJ",
+    "JASO MB"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Power 1 Scooter 4T 5W-40",
+   "familia": "Power 1 4T",
+   "viscosidad": "5W-40",
+   "pagina": 14,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite avanzado de 4 tiempos de calidad premium para scooters modernos, con Power Release Formula y Scootek Technology; totalmente sintetico.",
+   "formatos": [],
+   "niveles": [
+    "API SJ",
+    "JASO MB"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Este producto (Power 1 Scooter 4T) solo figura en Moto y Nautica.pdf; Moto.pdf trae en su lugar 'Castrol Act>evo Scooter 4T 5W-40' con los mismos API SJ / JASO MB. No se afirma que sean el mismo producto.",
+    "API SJ y JASO MB proceden de la tabla de la pag. 22 (la pag. 14 solo cita JASO-MB)."
+   ],
+   "pagina_pdf2": 22
+  },
+  {
+   "nombre": "Castrol Power 1 Racing 2T",
+   "familia": "Power 1 2T",
+   "viscosidad": "2T",
+   "pagina": 12,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante completamente sintetico para motores de 2 tiempos de alto rendimiento y alta velocidad; formula de rapida combustion y elevada proteccion; inyeccion o pre-mezcla hasta 50:1.",
+   "formatos": [
+    "Caja 12x1 L",
+    "Caja 96x125 ml"
+   ],
+   "niveles": [
+    "API TC+",
+    "ISO-L-EGD",
+    "JASO FD"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "En Moto y Nautica.pdf (pags. 19 y 22) figura con JASO FD y, en la tabla, 'TC+, FD, L-EGD' (sin prefijos API/ISO/JASO); base Sintetico."
+   ],
+   "pagina_pdf2": 19
+  },
+  {
+   "nombre": "Castrol Power 1 Scooter 2T (version Moto.pdf)",
+   "familia": "Power 1 2T",
+   "viscosidad": "2T",
+   "pagina": 13,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante de 2 tiempos de alto rendimiento, parcialmente sintetico, de bajo nivel de humos, para scooters modernos; Power Protection Formula; baja en cenizas; compatible con convertidores cataliticos.",
+   "formatos": [
+    "Caja 12x1 L"
+   ],
+   "niveles": [
+    "API TC+",
+    "ISO-L-EGD",
+    "JASO FD"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Moto.pdf lo describe como 'semi-sintetico' / 'parcialmente sintetico'; Moto y Nautica.pdf (pags. 20 y 22) lo describe como 'totalmente sintetico' / 'Sintetico'. Discrepancia entre versiones."
+   ]
+  },
+  {
+   "nombre": "Castrol Power 1 Scooter 2T (version Moto y Nautica.pdf)",
+   "familia": "Power 1 2T",
+   "viscosidad": "2T",
+   "pagina": 20,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite de 2 tiempos de alto rendimiento, totalmente sintetico, de bajo nivel de humos, para scooters modernos; protege el escape de depositos de carbonilla.",
+   "formatos": [],
+   "niveles": [
+    "JASO FD",
+    "TC+",
+    "L-EGD"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "La pag. 20 solo da 'JASO FD'; la tabla de la pag. 22 da 'TC+, FD, L-EGD' sin prefijos; en este PDF no se escribe 'API' ni 'ISO' (en Moto.pdf si: API TC+, ISO-L-EGD).",
+    "En la pag. 20 el texto cita 'Power Sustain Formula' y a la vez la vineta 'Power Protection Formula'.",
+    "Discrepancia de base con Moto.pdf (alli semi-sintetico)."
+   ],
+   "pagina_pdf2": 22
+  },
+  {
+   "nombre": "Castrol Power 1 2T",
+   "familia": "Power 1 2T",
+   "viscosidad": "2T",
+   "pagina": 18,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite semisintetico para motocicletas de 2 tiempos con Clean Burn Formula; mantiene limpio el motor y emite bajo nivel de humo.",
+   "formatos": [],
+   "niveles": [
+    "JASO FD"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Solo figura en Moto y Nautica.pdf (marcado 'Nuevo' en la tabla pag. 22); base Semisintetico, especificacion FD."
+   ],
+   "pagina_pdf2": 22
+  },
+  {
+   "nombre": "Castrol Act>Evo 2T",
+   "familia": "Act>evo 2T",
+   "viscosidad": "2T",
+   "pagina": 14,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Lubricante moderno de elevada calidad para motores de 2 tiempos actuales; Deposit Protection Formula; baja en cenizas; inyeccion y pre-mezcla hasta 50:1.",
+   "formatos": [
+    "Caja 12x1 L"
+   ],
+   "niveles": [
+    "API TC",
+    "JASO FC"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol 2T",
+   "familia": "Castrol 2T",
+   "viscosidad": "2T",
+   "pagina": 14,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de base mineral para motores de 2 tiempos de motocicletas y scooters; inyeccion o pre-mezcla hasta 50:1.",
+   "formatos": [
+    "Tubo 125 ml",
+    "Caja 12x1 L"
+   ],
+   "niveles": [
+    "JASO FB"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Datos identicos en ambos PDFs (Moto.pdf pag. 14; Moto y Nautica.pdf pag. 21)."
+   ],
+   "pagina_pdf2": 21
+  },
+  {
+   "nombre": "Castrol Motorcycle Coolant",
+   "familia": "Anticongelante / refrigerante",
+   "viscosidad": "",
+   "pagina": 16,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Anticongelante pre-diluido a base de etilenglicol para motos y scooters refrigerados por agua; proteccion contra corrosion hasta -25 C; NO usar en motores de aleacion de magnesio.",
+   "formatos": [
+    "Caja 12x1 L"
+   ],
+   "niveles": [
+    "ASTM D3306(111)",
+    "BS6580:2010",
+    "JIS K2234"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "El PDF escribe 'ASTM D3306(111)' (probable '(III)'); transcrito tal cual.",
+    "Datos del PDF: gravedad espec. 15 C 1,03; color azul/verde; reserva alcalina 11,5. Mismos datos en Moto y Nautica.pdf pag. 24."
+   ],
+   "pagina_pdf2": 24
+  },
+  {
+   "nombre": "Castrol Radicool NF",
+   "familia": "Anticongelante / refrigerante",
+   "viscosidad": "",
+   "pagina": 16,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Anticongelante concentrado con monoetilenglicol, libre de nitritos, aminas y fosfatos; tecnologia hibrida.",
+   "formatos": [
+    "Cuñete 20 L",
+    "Bidon 208 L"
+   ],
+   "niveles": [
+    "D3306",
+    "D4985",
+    "BS6580:2010",
+    "JIS K2234"
+   ],
+   "homologaciones": [
+    "Deutz TR 0119-99-1115",
+    "MAN 324 Typ NF",
+    "MB-Approval 325.0",
+    "MTU MTL 5048",
+    "VW TL-774C (G11)",
+    "BMW aprobacion para todos los modelos"
+   ],
+   "cumple": [],
+   "dudas": [
+    "El PDF escribe 'D3306, D4985, BS - BS6580:2010, JASO JIS K2234'; transcrito tal cual.",
+    "Color azul/verde, reserva alcalina 15. Mismos datos en Moto y Nautica.pdf pag. 24."
+   ],
+   "pagina_pdf2": 24
+  },
+  {
+   "nombre": "Castrol Radicool NF Premix",
+   "familia": "Anticongelante / refrigerante",
+   "viscosidad": "",
+   "pagina": 16,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Anticongelante refrigerante listo para su uso, con monoetilenglicol, libre de nitritos, aminas y fosfatos; tecnologia hibrida.",
+   "formatos": [
+    "Cuñete 20 L"
+   ],
+   "niveles": [
+    "D3306 (III)",
+    "BS6580:2010"
+   ],
+   "homologaciones": [
+    "MAN 324 Typ NF",
+    "MB-Approval 326.0",
+    "MTU MTL 5048"
+   ],
+   "cumple": [],
+   "dudas": [
+    "Color azul/verde, reserva alcalina 7. Mismos datos en pag. 24 del otro PDF."
+   ],
+   "pagina_pdf2": 24
+  },
+  {
+   "nombre": "Castrol Radicool SF",
+   "familia": "Anticongelante / refrigerante",
+   "viscosidad": "",
+   "pagina": 16,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Refrigerante long-life concentrado con monoetilenglicol y tecnologia de inhibidores de acidos organicos (OAT).",
+   "formatos": [
+    "12 x 1 L",
+    "Cuñete 20 L"
+   ],
+   "niveles": [
+    "ASTM D3306(I)",
+    "ASTM D4985",
+    "BS6580:2010",
+    "JIS K2234"
+   ],
+   "homologaciones": [
+    "MAN 324 Typ SNF",
+    "VW-TL-774F",
+    "FORD -WS-M97B44-D",
+    "MB-Approval 325.3"
+   ],
+   "cumple": [],
+   "dudas": [
+    "Color rosa, reserva alcalina 5,6. Mismos datos en pag. 24 del otro PDF."
+   ],
+   "pagina_pdf2": 24
+  },
+  {
+   "nombre": "Castrol Radicool SF Premix",
+   "familia": "Anticongelante / refrigerante",
+   "viscosidad": "",
+   "pagina": 16,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Refrigerante long-life listo para su uso con monoetilenglicol y tecnologia OAT.",
+   "formatos": [
+    "12 x 1 L",
+    "Cuñete 20 L"
+   ],
+   "niveles": [
+    "ASTM D3306(III)",
+    "ASTM D4985",
+    "BS6580:2010"
+   ],
+   "homologaciones": [
+    "MAN 324 TYP SNF",
+    "MB Approval 326.3"
+   ],
+   "cumple": [],
+   "dudas": [
+    "Color rosa, reserva alcalina 3. Mismos datos en pag. 24 del otro PDF."
+   ],
+   "pagina_pdf2": 24
+  },
+  {
+   "nombre": "Castrol Brake Fluid DOT 4",
+   "familia": "Liquido de frenos",
+   "viscosidad": "",
+   "pagina": 17,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Liquido de frenos para todos los sistemas de frenos, en particular los expuestos a condiciones extremas; no usar en sistemas que requieran fluido de base mineral.",
+   "formatos": [
+    "15 x 0,5 L",
+    "Cuñete 60 L"
+   ],
+   "niveles": [
+    "JIS K2233",
+    "SAE J1703",
+    "SAE J1704",
+    "ISO 4925 Class 4",
+    "FMVSS DOT 4"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "Cumple con la norma UNE 26 109 88 (Certificado nº 15-1028)"
+   ],
+   "dudas": [
+    "P.E.R.E. 250 C; P.E.H.R.E. 156 C; densidad 1,07 gr/ml. Mismos datos en Moto y Nautica.pdf pag. 25."
+   ],
+   "pagina_pdf2": 25
+  },
+  {
+   "nombre": "Castrol React Performance DOT 4",
+   "familia": "Liquido de frenos",
+   "viscosidad": "",
+   "pagina": 17,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Liquido de frenos disenado como alternativa de alta temperatura a los fluidos DOT 5.1; no usar en sistemas que requieran fluido de base mineral.",
+   "formatos": [
+    "15 x 0,5 L"
+   ],
+   "niveles": [
+    "FMVSS 116 DOT 4",
+    "ISO 4925 Class 4",
+    "JIS K2233",
+    "SAE J1703",
+    "SAE J1704"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "Cumple con la norma UNE 26 109 88 (Certificado nº 15)"
+   ],
+   "dudas": [
+    "P.E.R.E. 320 C; P.E.H.R.E. 180 C. Mismos datos en pag. 25 del otro PDF."
+   ],
+   "pagina_pdf2": 25
+  },
+  {
+   "nombre": "Castrol React SRF Racing",
+   "familia": "Liquido de frenos",
+   "viscosidad": "",
+   "pagina": 17,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Liquido de frenos de alto rendimiento para competicion, producto patentado en exclusiva por Castrol.",
+   "formatos": [
+    "12 x 1 L"
+   ],
+   "niveles": [
+    "FMVSS 116 DOT 3",
+    "FMVSS 116 DOT 4",
+    "ISO 4925 (Class 4)",
+    "SAE J1703",
+    "JIS K2233"
+   ],
+   "homologaciones": [],
+   "cumple": [
+    "Cumple con la norma UNE 26 109 88 (Certificado nº 15-1029)"
+   ],
+   "dudas": [
+    "P.E.R.E. 260 C; P.E.H.R.E. 270 C tal como figura (el valor humedo supera al seco); transcrito tal cual. Mismos datos en pag. 25 del otro PDF."
+   ],
+   "pagina_pdf2": 25
+  },
+  {
+   "nombre": "Castrol MTX Full Synthetic SAE 75W-140",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 75W-140",
+   "pagina": 18,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante sintetico para transmisiones de motos de carretera y off-road de 2T y 4T, con embrague en seco o banado en aceite, y mandos finales.",
+   "formatos": [
+    "12 x 1 L"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Moto.pdf dice 'sintetico'; Moto y Nautica.pdf (pag. 26) dice 'totalmente sintetico'."
+   ],
+   "pagina_pdf2": 26
+  },
+  {
+   "nombre": "Castrol MTX Synthetic SAE 80W",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 80W",
+   "pagina": 18,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante sintetico para engranajes de motos de carretera y off-road de 2T, tambien para embragues banados en aceite.",
+   "formatos": [
+    "12 x 1 L"
+   ],
+   "niveles": [
+    "API GL-4"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Indice de viscosidad 141; punto de congelacion -30 C. Mismos datos en pag. 26 del otro PDF."
+   ],
+   "pagina_pdf2": 26
+  },
+  {
+   "nombre": "Castrol MTX SAE 10W-40",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 10W-40",
+   "pagina": 18,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aceite mineral multigrado para transmision de motos de carretera y off-road de 2T y 4T con caja de cambios separada.",
+   "formatos": [
+    "12 x 1 L"
+   ],
+   "niveles": [
+    "API SG"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Mismos datos en pag. 26 del otro PDF."
+   ],
+   "pagina_pdf2": 26
+  },
+  {
+   "nombre": "Castrol Scooting Gear Oil SAE 90",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 90",
+   "pagina": 19,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante mineral de alto rendimiento para engranajes de scooters de 2T y 4T.",
+   "formatos": [
+    "12 x 0,5 L"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Mismos datos en pag. 27 del otro PDF."
+   ],
+   "pagina_pdf2": 27
+  },
+  {
+   "nombre": "Castrol Syntrax Limited Slip SAE 75W-140",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 75W-140",
+   "pagina": 19,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Fluido totalmente sintetico para engranajes hipoides en diferenciales convencionales y de deslizamiento limitado; aprobado por BMW para vehiculos con diferencial autoblocante.",
+   "formatos": [
+    "Cuñete 20 L"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MB-Approval 235.61",
+    "ZF TE-ML 05D, 12D, 16G, 18, 21D",
+    "BMW LS Rear Axles"
+   ],
+   "cumple": [
+    "Recommended for Nissan GTR limited slip axles"
+   ],
+   "dudas": [
+    "Mismos datos en pag. 27 del otro PDF."
+   ],
+   "pagina_pdf2": 27
+  },
+  {
+   "nombre": "Castrol Syntrax Longlife SAE 75W-90",
+   "familia": "Fluidos de transmision",
+   "viscosidad": "SAE 75W-90",
+   "pagina": 19,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante multigrado totalmente sintetico para mandos finales; disenado y aprobado por BMW para mandos finales con diferenciales convencionales (sin deslizamiento limitado).",
+   "formatos": [
+    "Cuñete 20 L"
+   ],
+   "niveles": [
+    "API GL-5"
+   ],
+   "homologaciones": [
+    "MAN 342 Typ S1",
+    "Scania STO 1:0",
+    "ZF TE-ML 05B, 12B, 17B, 19C, 21B",
+    "BMW (Non LS Rear Axles)"
+   ],
+   "cumple": [],
+   "dudas": [
+    "Mismos datos en pag. 27 del otro PDF."
+   ],
+   "pagina_pdf2": 27
+  },
+  {
+   "nombre": "Castrol High Temperature Grease",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 2",
+   "pagina": 20,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Grasa multiproposito de extrema presion (EP) para rodamientos y cojinetes en condiciones de alta temperatura continuas o intermitentes.",
+   "formatos": [
+    "1 x 12,5 kg"
+   ],
+   "niveles": [
+    "NLGI 2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Espesante complejo de litio; punto de gota 260 C; temperatura de operacion entre -30 C y +140 C. Mismos datos en Moto y Nautica.pdf pag. 28."
+   ],
+   "pagina_pdf2": 28
+  },
+  {
+   "nombre": "Castrol Multipurpose Grease",
+   "familia": "Grasas",
+   "viscosidad": "NLGI 2",
+   "pagina": 20,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Grasa de extrema presion (EP) para rodamientos y cojinetes de la industria del automovil; rodamientos de rueda de automoviles, autobuses y camiones.",
+   "formatos": [
+    "1 x 18 kg"
+   ],
+   "niveles": [
+    "NLGI 2"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Espesante litio; punto de gota 190 C; temperatura de operacion entre -30 C y +120 C. Mismos datos en pag. 28 del otro PDF."
+   ],
+   "pagina_pdf2": 28
+  },
+  {
+   "nombre": "Castrol Fork Oil SAE 10W, 15W, 20W",
+   "familia": "Fluidos para suspensiones",
+   "viscosidad": "SAE 10W, 15W, 20W",
+   "pagina": 21,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Fluido mineral avanzado para suspensiones de motos de carretera y off-road.",
+   "formatos": [
+    "12 x 0,5 L"
+   ],
+   "niveles": [
+    "SAE 10W",
+    "SAE 15W",
+    "SAE 20W"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Mismos datos en Moto y Nautica.pdf pag. 29."
+   ],
+   "pagina_pdf2": 29
+  },
+  {
+   "nombre": "Castrol Fork Oil Synthetic SAE 2.5W, 5W",
+   "familia": "Fluidos para suspensiones",
+   "viscosidad": "SAE 2.5W, 5W",
+   "pagina": 21,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Fluido totalmente sintetico para suspensiones de motos de carretera y off-road en condiciones extremas / competicion.",
+   "formatos": [
+    "12 x 0,5 L"
+   ],
+   "niveles": [
+    "SAE 2.5W",
+    "SAE 5W"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": []
+  },
+  {
+   "nombre": "Castrol Fork Oil Synthetic SAE 5W",
+   "familia": "Fluidos para suspensiones",
+   "viscosidad": "SAE 5W",
+   "pagina": 29,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Fluido totalmente sintetico para suspensiones de motos de carretera y off-road en condiciones extremas / competicion.",
+   "formatos": [
+    "12 x 0,5 L"
+   ],
+   "niveles": [
+    "SAE 5W"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Diferencia entre versiones: Moto y Nautica.pdf solo lista SAE 5W; Moto.pdf lista SAE 2.5W y 5W."
+   ]
+  },
+  {
+   "nombre": "Castrol Chain Lube Racing",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 22,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de cadenas completamente sintetico para motos de carretera y off-road; recomendado para cadenas standard, O-ring y X-ring.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "DIN 50021 aparece solo como metodo del test de corrosion salina citado en el texto, no como especificacion del producto; no se incluye como nivel.",
+    "Mismos datos en Moto y Nautica.pdf pag. 30."
+   ],
+   "pagina_pdf2": 30
+  },
+  {
+   "nombre": "Castrol Chain Spray O-Ring",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 23,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante blanco completamente sintetico para cadenas de moto tipo O-ring y X-ring.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Mismos datos en Moto y Nautica.pdf pag. 31."
+   ],
+   "pagina_pdf2": 31
+  },
+  {
+   "nombre": "Castrol Chain Cleaner",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 31,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Limpiador de cadenas para motocicletas con o sin sistema O-Ring / X-Ring.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Solo figura en Moto y Nautica.pdf."
+   ]
+  },
+  {
+   "nombre": "Castrol DWF",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 23,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aerosol multiproposito penetrante y deshumidificante para motores, sistemas de encendido y contactos electricos de motos.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Punto de inflamacion 40 C. Mismos datos en pag. 31 del otro PDF."
+   ],
+   "pagina_pdf2": 31
+  },
+  {
+   "nombre": "Castrol Foam Air Filter Oil Aerosol",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 23,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante para filtros de aire de espuma de motos; ensayado conforme al protocolo BSI 1701 (ISO 5011).",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "BSI 1701 (ISO 5011) figura como protocolo de test, no como aprobacion; no se incluye como nivel. Pag. 33 del otro PDF."
+   ],
+   "pagina_pdf2": 33
+  },
+  {
+   "nombre": "Castrol Greentec Bike Cleaner",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 24,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Limpiador biodegradable para suciedad resistente en todo tipo de superficies de la moto.",
+   "formatos": [
+    "Caja 6 x 1 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Pag. 32 del otro PDF."
+   ],
+   "pagina_pdf2": 32
+  },
+  {
+   "nombre": "Castrol Metal Parts Cleaner",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 25,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Aerosol limpiador para eliminar aceite y grasa de motor, discos de freno, carburadores, bujias y superficies metalicas.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Pag. 33 del otro PDF."
+   ],
+   "pagina_pdf2": 33
+  },
+  {
+   "nombre": "Castrol Silicon Spray",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 25,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de silicona para proteger y renovar superficies de plastico y goma.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Pag. 32 del otro PDF."
+   ],
+   "pagina_pdf2": 32
+  },
+  {
+   "nombre": "Castrol Foam Air Filter Cleaner (version Moto.pdf)",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 25,
+   "pdf": "Castrol Homologaciones Moto.pdf",
+   "descripcion": "Limpiador para filtros de esponja o malla metalica de motos; no apto para filtros de papel; inflamable.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Formato discrepante con la otra version: Moto y Nautica.pdf pag. 33 indica 'Caja 6 x 1,5 L'."
+   ]
+  },
+  {
+   "nombre": "Castrol Foam Air Filter Cleaner (version Moto y Nautica.pdf)",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 33,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Limpiador para filtros de esponja o malla metalica de motos; no apto para filtros de papel; inflamable.",
+   "formatos": [
+    "Caja 6 x 1,5 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Formato discrepante con Moto.pdf pag. 25 ('Caja 12 x 0,4 L')."
+   ]
+  },
+  {
+   "nombre": "Castrol Bike Polish",
+   "familia": "Cuidado de la moto",
+   "viscosidad": "",
+   "pagina": 32,
+   "pdf": "Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Limpiador y abrillantador para superficies pintadas, cromadas y plasticas de motos.",
+   "formatos": [
+    "Caja 12 x 0,4 L"
+   ],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Solo figura en Moto y Nautica.pdf; pH 7,5."
+   ]
+  },
+  {
+   "nombre": "Castrol A747 SAE 50",
+   "familia": "Competicion",
+   "viscosidad": "SAE 50",
+   "pagina": 26,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de competicion de 2 tiempos para motores 2T multicilindricos refrigerados por agua en maquinas de competicion de carretera; ratios combustible/lubricante hasta 40:1.",
+   "formatos": [],
+   "niveles": [
+    "API TC"
+   ],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "Pag. 34 del otro PDF."
+   ],
+   "pagina_pdf2": 34
+  },
+  {
+   "nombre": "Castrol XR77 SAE 40",
+   "familia": "Competicion",
+   "viscosidad": "SAE 40",
+   "pagina": 26,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de competicion de 2 tiempos para los motores 2T de competicion mas modernos con los ultimos combustibles; hasta 40:1.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [
+    "Fully certified for use in Moto GP racing (EMPA test report number 417478/01)"
+   ],
+   "cumple": [],
+   "dudas": [
+    "La frase de certificacion se asigna a XR77 segun la maquetacion de la imagen (bajo los datos de XR77); pag. 34 del otro PDF."
+   ],
+   "pagina_pdf2": 34
+  },
+  {
+   "nombre": "Castrol XR44 SAE 0W-30",
+   "familia": "Competicion",
+   "viscosidad": "SAE 0W-30",
+   "pagina": 26,
+   "pdf": "Castrol Homologaciones Moto.pdf + Castrol Homologaciones Moto y Nautica.pdf",
+   "descripcion": "Lubricante de competicion para motores de 4T de motos Supersport.",
+   "formatos": [],
+   "niveles": [],
+   "homologaciones": [],
+   "cumple": [],
+   "dudas": [
+    "El PDF no indica niveles ni homologaciones para XR44. Pag. 34 del otro PDF."
+   ],
+   "pagina_pdf2": 34
+  }
+ ],
+ "dudas_generales": [
+  "Productos nauticos (Inboard 4T, Outboard 2T, Biolube 2T) ignorados segun instrucciones (Moto.pdf pag. 27; Moto y Nautica.pdf pag. 35).",
+  "Moto.pdf (V02 Abril 2014) y Moto y Nautica.pdf (V022019) son versiones distintas; las diferencias se anotan en 'dudas' de cada producto.",
+  "Moto y Nautica.pdf pag. 22 es la tabla resumen de gama (viscosidad/base/API/JASO); el resto de paginas de introduccion (2-9, 15-16) y Moto.pdf pags. 1-7 no contienen datos de producto.",
+  "Los textos de BMW/Kawasaki de Power 1 Racing 4T 5W-40 no indican si son aprobacion o recomendacion.",
+  "En 'pdf' el valor con ambos nombres de PDF unidos por ' + ' significa que el producto esta en ambos PDFs con datos coincidentes; 'pagina' es la de Moto.pdf y 'pagina_pdf2' la de Moto y Nautica.pdf."
+ ]
+}

@@ -99,5 +99,16 @@
       "a": "CI-4",
       "texto": "En Repsol Homologaciones.xlsx aparece «Cl-4» (con ele minúscula); es un error de escritura y es CI-4."
     }
+  ],
+  "correcciones_pdf": [
+    {
+      "id": "CASTROL-CVO-M32775",
+      "fecha": "2026-10-30",
+      "libro": "Castrol - CVO Wallchart - Oct 2026.pdf",
+      "campo": "MAN (Long Drain 10W-30 y 10W-40 E8/E11)",
+      "de": "M32775",
+      "a": "M 3277",
+      "texto": "En el Wallchart CVO de octubre 2026 la fila MAN de los Vecton Long Drain 10W-30 y 10W-40 E8/E11 dice «M32775»; Yakoba confirma que es MAN M 3277 (no conoce una extensión 5 de esa norma). Errata del PDF."
+    }
   ]
 }
