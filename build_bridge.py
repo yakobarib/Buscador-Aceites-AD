@@ -222,6 +222,35 @@ def codigo_y_sufijo(ref):
     return None, None
 
 
+def puente_castrol():
+    """Normas de los catalogos de Castrol para los productos Castrol que el buscador ya tiene (EQUIV_CATALOG).
+    Solo se incorporan normas que el buscador YA conoce (sin crear normas nuevas ni alias): conservador a proposito."""
+    ruta = RAIZ / "castrol_normas_wiki.json"
+    if not ruta.exists():
+        return {}, []
+    wiki = json.loads(ruta.read_text(encoding="utf-8"))
+    js = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('" + HTML_LIMPIO.as_posix() + "');"
+          "process.stdout.write(JSON.stringify(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').map(p=>({sku:p.sku,specs:p.specs||[]}))\")))")
+    cat = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout)
+    lits = sorted({l for c in cat for t, l in wiki.get(c["sku"], []) if t in ("acea", "api", "ilsac", "jaso", "homologacion")})
+    res = resolver_en_app(lits) if lits else {}
+    specs, informe, saltadas = {}, [], set()
+    for c in cat:
+        nuevos = set()
+        for t, l in wiki.get(c["sku"], []):
+            r = res.get(l)
+            if r and r["canonical"] and r["match"] in ("exact", "alias", "category"):
+                nuevos.add(r["canonical"])
+            else:
+                saltadas.add(l)
+        nuevos = sorted(x for x in nuevos if x.upper() not in {y.upper() for y in c["specs"]})
+        if nuevos:
+            specs[c["sku"]] = nuevos
+    informe.append(f"Castrol: {len(specs)} productos reciben {sum(len(v) for v in specs.values())} normas nuevas de sus catálogos; "
+                   f"{len(saltadas)} literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)")
+    return specs, informe
+
+
 def main():
     preparar_html_limpio()
     bw.cargar_listas_simples()
@@ -311,6 +340,8 @@ def main():
         informe.append(f'familia de refrigerante AÑADIDA al buscador: {f["ref"]} ({f["sku"]}, alt. {", ".join(f["altSkus"])}) · fuente: {f["fuente"][:90]}')
     normas, informe_n, usado_en = puente_normas(app, fam_sku)
     informe += informe_n
+    normas["specs_castrol"], informe_c = puente_castrol()
+    informe += informe_c
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
     normas["retoques"] = {k: v["description"] for k, v in json.loads((RAIZ / "retoques_descripciones.json").read_text(encoding="utf-8"))["retoques"].items()}
     (RAIZ / "bridge_normas.json").write_text(json.dumps(normas, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
@@ -352,6 +383,10 @@ def main():
   AD_PARTS_CATALOG.forEach(p => (AD_NORMAS_PUENTE.specs[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);
   }));
+  // normas de los catalogos de Castrol para los productos Castrol que el buscador ya tenia (solo normas ya conocidas)
+  EQUIV_CATALOG.forEach(p => { if (p.brand === 'Castrol') ((AD_NORMAS_PUENTE.specs_castrol || {})[p.sku] || []).forEach(s => {
+    if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);
+  }); });
 })();"""
     datos = json.dumps(normas, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     bloque2 = INI2 + chr(10) + "const AD_NORMAS_PUENTE = " + datos + ";" + chr(10) + cod + chr(10) + FIN2

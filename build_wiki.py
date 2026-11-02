@@ -1504,6 +1504,10 @@ def main():
         I += ["", f"## Equivalencias entre marcas, {tp}", ""] + [f'- [[{e["pagina"]}]]' for e in EQUIV_B if e["tipo"] == tp]
     (WIKI / "index.md").write_text("\n".join(I) + "\n", encoding="utf-8")
 
+    # normas por producto Castrol segun sus catalogos (las lee build_bridge.py)
+    (RAIZ / "castrol_normas_wiki.json").write_text(json.dumps(
+        {q["ref"]: [[t, l] for t, l in q.get("normas_f", [])] for q in PRODUCTOS if q["marca"] == "Castrol" and q.get("normas_f")},
+        ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     print(f"productos={len(PRODUCTOS)} familias={len(FAMILIAS)} equivalencias={len(EQUIV)} normas={len(NOM)} oem={len(oem_idx)}")
     for t in sorted(lint_eq):
         print(f"  lint: {t}: {len(set(lint_eq[t]))}")

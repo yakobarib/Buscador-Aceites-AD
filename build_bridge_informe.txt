@@ -152,4 +152,5 @@ norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-6
 norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
 norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
 norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
+Castrol: 26 productos reciben 116 normas nuevas de sus catálogos; 31 literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)
 descripciones de normas: 91 de 98 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

@@ -6542,6 +6542,130 @@
    "JAGUAR: STJLR.03.5006"
   ]
  },
+ "Aceites AD Normal/84001": {
+  "titulo": "AD SRN 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SQ"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2026",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17",
+   "RENAULT RN 0700",
+   "RENAULT RN0710",
+   "MB 229.51",
+   "MB 229.52",
+   "MB 226.52",
+   "PSA B71 2290",
+   "FIAT 9.55535 S3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/84005": {
+  "titulo": "AD SRN 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SQ"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2026",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17",
+   "RENAULT RN 0700",
+   "RENAULT RN0710",
+   "MB 229.51",
+   "MB 229.52",
+   "MB 226.52",
+   "PSA B71 2290",
+   "FIAT 9.55535 S3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/841000": {
+  "titulo": "AD SRN 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SQ"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2026",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17",
+   "RENAULT RN 0700",
+   "RENAULT RN0710",
+   "MB 229.51",
+   "MB 229.52",
+   "MB 226.52",
+   "PSA B71 2290",
+   "FIAT 9.55535 S3"
+  ],
+  "oem_ambiguo": []
+ },
+ "Aceites AD Normal/84208": {
+  "titulo": "AD SRN 5W30",
+  "tipo_producto": "ACEITE SINTÉTICO",
+  "grado_sae": "5W30",
+  "acea": [
+   "C2",
+   "C3",
+   "A5",
+   "B5"
+  ],
+  "api": [
+   "SQ"
+  ],
+  "ilsac": [],
+  "jaso": [],
+  "spec_texto": "",
+  "formatos": [],
+  "fecha": "06/2026",
+  "avisos": [],
+  "oem_ok": [
+   "RENAULT RN17",
+   "RENAULT RN 0700",
+   "RENAULT RN0710",
+   "MB 229.51",
+   "MB 229.52",
+   "MB 226.52",
+   "PSA B71 2290",
+   "FIAT 9.55535 S3"
+  ],
+  "oem_ambiguo": []
+ },
  "Aceites AD Normal/90208": {
   "titulo": "AD EGP 100",
   "tipo_producto": "",
@@ -6785,37 +6909,6 @@
    "PSA B71 2297",
    "STELLANTIS FPW9.55535",
    "STELLANTIS FPW03"
-  ],
-  "oem_ambiguo": []
- },
- "Aceites AD Normal/SRN 5W30": {
-  "titulo": "AD SRN 5W30",
-  "tipo_producto": "ACEITE SINTÉTICO",
-  "grado_sae": "5W30",
-  "acea": [
-   "C2",
-   "C3",
-   "A5",
-   "B5"
-  ],
-  "api": [
-   "SQ"
-  ],
-  "ilsac": [],
-  "jaso": [],
-  "spec_texto": "",
-  "formatos": [],
-  "fecha": "06/2026",
-  "avisos": [],
-  "oem_ok": [
-   "RENAULT RN17",
-   "RENAULT RN 0700",
-   "RENAULT RN0710",
-   "MB 229.51",
-   "MB 229.52",
-   "MB 226.52",
-   "PSA B71 2290",
-   "FIAT 9.55535 S3"
   ],
   "oem_ambiguo": []
  },
