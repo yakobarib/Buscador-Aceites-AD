@@ -853,7 +853,9 @@
 "brand": "Castrol",
 "ref": "Transmax Man Trans 75W-90",
 "sku": "15F137",
-"specs": [],
+"specs": [
+"VW 501 50"
+],
 "viscosity": "75W90"
 },
 {
@@ -2583,6 +2585,9 @@
 "15D761": [
 "ZF TE-ML 05A",
 "ZF TE-ML 12E"
+],
+"15E97B": [
+"API GL-4"
 ],
 "15F43B": [
 "API CI-4",

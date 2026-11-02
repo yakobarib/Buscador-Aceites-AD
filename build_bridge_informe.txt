@@ -152,7 +152,7 @@ norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-6
 norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
 norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
 norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
-Castrol: 29 productos reciben 125 normas nuevas de sus catálogos; 31 literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)
+Castrol: 30 productos reciben 126 normas nuevas de sus catálogos; 32 literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)
 Castrol: «Vecton LD 10W-40 E8/E11» sustituye a VECTON LONG DRAIN 10W40 E6/E9 5L (se mantiene la entrada antigua y se enriquece)
-Castrol: 77 familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); 12 sin normas conocidas (solo viscosidad)
+Castrol: 77 familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); 11 sin normas conocidas (solo viscosidad)
 descripciones de normas: 91 de 98 escritas por Yakoba en «Descripciones de normas para curar.xlsx»
