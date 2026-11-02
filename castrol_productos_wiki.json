@@ -1,0 +1,2132 @@
+{
+"14C196": {
+"desc": "GTX 15W-40 A3/B3 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"14C1CD": {
+"desc": "GTX 20W-50 208L",
+"litros": "208",
+"visc": "20W50"
+},
+"1503AD": {
+"desc": "High Temperature Grease 12X.4K",
+"litros": "4.8",
+"visc": ""
+},
+"15336B": {
+"desc": "EDGE 0W-40 A3/B4 208L",
+"litros": "208",
+"visc": "0W40"
+},
+"1533F4": {
+"desc": "EDGE 0W-30 60L",
+"litros": "60",
+"visc": "0W30"
+},
+"1533F5": {
+"desc": "EDGE 0W-30 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"1534A5": {
+"desc": "EDGE 0W-40 4X5L",
+"litros": "20",
+"visc": "0W40"
+},
+"1535AB": {
+"desc": "EDGE 5W-40 A3/B4 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"1535B0": {
+"desc": "EDGE Turbo Diesel 5W-40 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"1535FC": {
+"desc": "EDGE 5W-40 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"1537EB": {
+"desc": "EDGE Prof C1 5W-30 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"1537EC": {
+"desc": "EDGE Prof C1 5W-30 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15495C": {
+"desc": "HYSPIN AWS 10",
+"litros": "1000",
+"visc": ""
+},
+"15495F": {
+"desc": "HYSPIN AWS 10",
+"litros": "20",
+"visc": ""
+},
+"15496E": {
+"desc": "HYSPIN AWS 10",
+"litros": "208",
+"visc": ""
+},
+"15531A": {
+"desc": "EDGE 5W-30 C3 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"1560C4": {
+"desc": "Multipurpose Grease 12X.4K",
+"litros": "4.8",
+"visc": ""
+},
+"15664F": {
+"desc": "EDGE 5W-30 LL 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15665C": {
+"desc": "EDGE 5W-30 LL 60L",
+"litros": "60",
+"visc": "5W30"
+},
+"15900E": {
+"desc": "GTX 5W-30 C4 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"1595CF": {
+"desc": "EDGE 10W-60 60L",
+"litros": "60",
+"visc": "10W60"
+},
+"15A552": {
+"desc": "GTX 5W-40 A3/B4 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15A7C7": {
+"desc": "EDGE 5W-30 LL 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15B1B4": {
+"desc": "EDGE 0W-20 LL IV 20L",
+"litros": "20",
+"visc": "0W20"
+},
+"15B1B5": {
+"desc": "EDGE 0W-20 LL IV 60L",
+"litros": "60",
+"visc": "0W20"
+},
+"15B1B6": {
+"desc": "EDGE 0W-20 LL IV 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"15B346": {
+"desc": "Vecton Long Drain 10W40 E6/E9 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"15B349": {
+"desc": "Vecton Long Drain 10W40 E6/E9 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"15B34A": {
+"desc": "Vecton Long Drain 10W40 E6/E9 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"15B381": {
+"desc": "Vecton Long Drain 10W30 E6/E9 1000L",
+"litros": "1000",
+"visc": "10W30"
+},
+"15B382": {
+"desc": "Vecton Long Drain 10W30 E6/E9 20L",
+"litros": "20",
+"visc": "10W30"
+},
+"15B384": {
+"desc": "Vecton Long Drain 10W30 E6/E9 208L",
+"litros": "208",
+"visc": "10W30"
+},
+"15B676": {
+"desc": "EDGE 5W-30 M 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15B9F7": {
+"desc": "CRB Monograde 30 CF 20L",
+"litros": "20",
+"visc": ""
+},
+"15B9F8": {
+"desc": "CRB Monograde 30 CF 208L",
+"litros": "208",
+"visc": ""
+},
+"15BA19": {
+"desc": "CRB Multi 15W-40 CI-4/E7 1000L",
+"litros": "1000",
+"visc": "15W40"
+},
+"15BA1A": {
+"desc": "CRB Multi 15W-40 CI-4/E7 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"15BA24": {
+"desc": "CRB Turbomax 10W-40 E4/E7, 1000L E4",
+"litros": "1000",
+"visc": "10W40"
+},
+"15BA25": {
+"desc": "CRB Turbomax 10W-40 E4/E7, 20L ER",
+"litros": "20",
+"visc": "10W40"
+},
+"15BA27": {
+"desc": "CRB Turbomax 10W-40 E4/E7, 208L E4",
+"litros": "208",
+"visc": "10W40"
+},
+"15BB34": {
+"desc": "CRB Monograde 10W CF 20L",
+"litros": "20",
+"visc": ""
+},
+"15BB35": {
+"desc": "CRB Monograde 10W CF 208L",
+"litros": "208",
+"visc": ""
+},
+"15BB45": {
+"desc": "CRB Monograde 40 CF/CF-2 20L",
+"litros": "20",
+"visc": ""
+},
+"15BD85": {
+"desc": "Transmax Agri MP P 10W-40 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"15BD87": {
+"desc": "Transmax Agri MP P 10W-40 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"15BDF9": {
+"desc": "GTX 5W-30 C2 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15BDFA": {
+"desc": "GTX 5W-30 C2 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"15BE04": {
+"desc": "GTX 5W-30 A5/B5 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15BE05": {
+"desc": "GTX 5W-30 A5/B5 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"15BF79": {
+"desc": "Transmax Agri TransPl 80W 208L",
+"litros": "208",
+"visc": ""
+},
+"15BF7D": {
+"desc": "Transmax Agri TransPl 80W 20L",
+"litros": "20",
+"visc": ""
+},
+"15BF7F": {
+"desc": "Transmax Agri MP 15W-40 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"15BF80": {
+"desc": "Transmax Agri MP 15W-40 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"15C163": {
+"desc": "Transmax Agri TransAS 80W 20L",
+"litros": "20",
+"visc": ""
+},
+"15C301": {
+"desc": "Vecton 15W-40 CK-4/E9 1000L",
+"litros": "1000",
+"visc": "15W40"
+},
+"15C302": {
+"desc": "Vecton 15W-40 CK-4/E9 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"15C373": {
+"desc": "Vecton 15W-40 CK-4/E9 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"15C44E": {
+"desc": "EDGE 5W-30 M 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15C6FD": {
+"desc": "GTX 5W-30 C4 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15C9C5": {
+"desc": "Magnatec 5W-40 C3 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15C9CE": {
+"desc": "Magnatec 5W-40 A3/B4 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15CA9A": {
+"desc": "EDGE Professional E 0W-30 1000L",
+"litros": "1000",
+"visc": "0W30"
+},
+"15CA9B": {
+"desc": "EDGE Professional E 0W-30 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"15CA9D": {
+"desc": "EDGE Professional E 0W-30 60L",
+"litros": "60",
+"visc": "0W30"
+},
+"15CC32": {
+"desc": "GTX 5W-30 RN17 60L",
+"litros": "60",
+"visc": "5W30"
+},
+"15CC33": {
+"desc": "GTX 5W-30 RN17 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15CC97": {
+"desc": "EDGE 0W-20 C5 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"15CC98": {
+"desc": "EDGE 0W-20 C5 60L",
+"litros": "60",
+"visc": "0W20"
+},
+"15CD20": {
+"desc": "Brake Fluid DOT 4 (C) 208L",
+"litros": "208",
+"visc": ""
+},
+"15CE4B": {
+"desc": "GTX 5W-30 RN17 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15D0AA": {
+"desc": "Vecton L Drn 5W30 FA-4/F8 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15D0AB": {
+"desc": "Vecton L Drn 5W30 FA-4/F8 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15D3AC": {
+"desc": "EDGE 5W-40 M 20L",
+"litros": "20",
+"visc": "5W40"
+},
+"15D3AD": {
+"desc": "EDGE 5W-40 M 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15D575": {
+"desc": "HYSPIN AWH-M 32",
+"litros": "1000",
+"visc": ""
+},
+"15D66F": {
+"desc": "Transmax ATF DX III MV 20L",
+"litros": "20",
+"visc": ""
+},
+"15D671": {
+"desc": "Transmax ATF DX III MV 208L",
+"litros": "208",
+"visc": ""
+},
+"15D6C7": {
+"desc": "Transmax ATF Z 20L",
+"litros": "20",
+"visc": ""
+},
+"15D6C8": {
+"desc": "Transmax ATF Z 208L",
+"litros": "208",
+"visc": ""
+},
+"15D6DA": {
+"desc": "Transmax Axle EPX 85W-90 208L",
+"litros": "208",
+"visc": "85W90"
+},
+"15D6FA": {
+"desc": "Transmax Man Trans 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"15D70A": {
+"desc": "Transmax Man Z LL 75W-80 20L",
+"litros": "20",
+"visc": "75W80"
+},
+"15D733": {
+"desc": "Transmax Manual AT 75W-90 208L",
+"litros": "208",
+"visc": "75W90"
+},
+"15D73D": {
+"desc": "Transmax ATF DVIMLV Multi 208L",
+"litros": "208",
+"visc": ""
+},
+"15D761": {
+"desc": "Transmax Axle EPX 80W-90 20L",
+"litros": "20",
+"visc": "80W90"
+},
+"15D7A1": {
+"desc": "Transmax Axle LL 75W-140 20L",
+"litros": "20",
+"visc": "75W140"
+},
+"15D7DB": {
+"desc": "Transmax Manual EP 80W-90 20L",
+"litros": "20",
+"visc": "80W90"
+},
+"15D7DD": {
+"desc": "Transmax Manual EP 80W-90 208L",
+"litros": "208",
+"visc": "80W90"
+},
+"15D7F3": {
+"desc": "Transmax Manual V 75W-80 20L",
+"litros": "20",
+"visc": "75W80"
+},
+"15D810": {
+"desc": "Transmax Manual MV 75W-90",
+"litros": "208",
+"visc": "75W90"
+},
+"15D87A": {
+"desc": "Transmax Axle EPX 85W-90 1000L",
+"litros": "1000",
+"visc": "85W90"
+},
+"15D8AB": {
+"desc": "Transmax Manual LL 75W-85 20L",
+"litros": "20",
+"visc": "75W85"
+},
+"15D8AE": {
+"desc": "Transmax Manual LL 75W-85 208L",
+"litros": "208",
+"visc": "75W85"
+},
+"15D8B5": {
+"desc": "Transmax Universal 75W-90 208L",
+"litros": "208",
+"visc": "75W90"
+},
+"15D8CE": {
+"desc": "Transmax Axle LL 75W-90 208L",
+"litros": "208",
+"visc": "75W90"
+},
+"15D8DF": {
+"desc": "Transmax Man Z LL 75W-80 208L",
+"litros": "208",
+"visc": "75W80"
+},
+"15D911": {
+"desc": "Transmax DUAL 60L",
+"litros": "60",
+"visc": ""
+},
+"15D94C": {
+"desc": "Transmax Axle EPX 80W-90 1000L",
+"litros": "1000",
+"visc": "80W90"
+},
+"15D968": {
+"desc": "Transmax Axle LL 75W-140 60L",
+"litros": "60",
+"visc": "75W140"
+},
+"15D96F": {
+"desc": "Transmax Manual V 75W-80 60L",
+"litros": "60",
+"visc": "75W80"
+},
+"15D983": {
+"desc": "Transmax LS Z 85W-90 20L",
+"litros": "20",
+"visc": "85W90"
+},
+"15D98C": {
+"desc": "Transmax LS LL 75W-140 20L",
+"litros": "20",
+"visc": "75W140"
+},
+"15D98E": {
+"desc": "Transmax LS LL 75W-140 208L",
+"litros": "208",
+"visc": "75W140"
+},
+"15DA97": {
+"desc": "EDGE 0W-20 V 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"15DAFE": {
+"desc": "GTX 5W-30 C3 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"15DB78": {
+"desc": "Transmax Axle LL 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"15DB82": {
+"desc": "Transmax LS Z 85W-90 208L",
+"litros": "208",
+"visc": "85W90"
+},
+"15DB83": {
+"desc": "Transmax Axle LL 75W-140 208L",
+"litros": "208",
+"visc": "75W140"
+},
+"15DD10": {
+"desc": "Transmax Univer LL 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"15DD11": {
+"desc": "Transmax Univer LL 75W-90 208L",
+"litros": "208",
+"visc": "75W90"
+},
+"15DDDA": {
+"desc": "Transmax Axle LD 80W-90 208L",
+"litros": "208",
+"visc": "80W90"
+},
+"15DDE7": {
+"desc": "Transmax Manual EP 80W 20L",
+"litros": "20",
+"visc": ""
+},
+"15DE6A": {
+"desc": "Transmax Axle EPX 85W-90 20L",
+"litros": "20",
+"visc": "85W90"
+},
+"15DED5": {
+"desc": "GTX 5W-40 MV 20L",
+"litros": "20",
+"visc": "5W40"
+},
+"15DED6": {
+"desc": "GTX 5W-40 MV 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15E97B": {
+"desc": "Transmax Manual MV 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"15EA3A": {
+"desc": "CRB Multi 15W-40 CI-4/E7 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"15EAD7": {
+"desc": "Transmax Offroad 30 20L",
+"litros": "20",
+"visc": ""
+},
+"15EAD8": {
+"desc": "Transmax Offroad 10W 208L",
+"litros": "208",
+"visc": ""
+},
+"15ED2F": {
+"desc": "Radicool Premix 208L",
+"litros": "208",
+"visc": ""
+},
+"15ED78": {
+"desc": "Radicool Si-OAT 20L",
+"litros": "20",
+"visc": ""
+},
+"15ED7A": {
+"desc": "Radicool Si-OAT 208L",
+"litros": "208",
+"visc": ""
+},
+"15EED6": {
+"desc": "Radicool Si-OAT Premix 208L",
+"litros": "208",
+"visc": ""
+},
+"15EED7": {
+"desc": "Transmax Agri TransAS 80W 208L",
+"litros": "208",
+"visc": ""
+},
+"15EEDB": {
+"desc": "Transmax Manual EP 80W 208L",
+"litros": "208",
+"visc": ""
+},
+"15EEDC": {
+"desc": "Transmax Axle EPX 85W-140 208L",
+"litros": "208",
+"visc": "85W140"
+},
+"15EEDD": {
+"desc": "Transmax Axle EPX 80W-90 208L",
+"litros": "208",
+"visc": "80W90"
+},
+"15EEDE": {
+"desc": "Moly Grease 18K",
+"litros": "20",
+"visc": ""
+},
+"15EEF2": {
+"desc": "CLS Grease 18K",
+"litros": "18",
+"visc": ""
+},
+"15EEF3": {
+"desc": "CLS Grease 25K",
+"litros": "25",
+"visc": ""
+},
+"15EEFD": {
+"desc": "Transmax Dual Multivehic 20L",
+"litros": "20",
+"visc": ""
+},
+"15EFFA": {
+"desc": "HYSPIN AWH-M 46",
+"litros": "208",
+"visc": ""
+},
+"15EFFB": {
+"desc": "HYSPIN AWH-M 46",
+"litros": "20",
+"visc": ""
+},
+"15EFFD": {
+"desc": "HYSPIN AWH-M 32",
+"litros": "20",
+"visc": ""
+},
+"15F00D": {
+"desc": "Transmax Offroad 30 208L",
+"litros": "208",
+"visc": ""
+},
+"15F00E": {
+"desc": "Transmax Offroad 50 208L",
+"litros": "208",
+"visc": ""
+},
+"15F00F": {
+"desc": "HYSPIN AWH-M 68",
+"litros": "20",
+"visc": ""
+},
+"15F010": {
+"desc": "HYSPIN AWH-M 68",
+"litros": "208",
+"visc": ""
+},
+"15F01B": {
+"desc": "HYSPIN AWS 32",
+"litros": "20",
+"visc": ""
+},
+"15F01C": {
+"desc": "HYSPIN AWS 32",
+"litros": "208",
+"visc": ""
+},
+"15F01D": {
+"desc": "Transmax Axle EPX 85W-140 20L",
+"litros": "20",
+"visc": "85W140"
+},
+"15F020": {
+"desc": "HYSPIN AWS 68",
+"litros": "20",
+"visc": ""
+},
+"15F021": {
+"desc": "HYSPIN AWS 68",
+"litros": "208",
+"visc": ""
+},
+"15F03F": {
+"desc": "HYSPIN AWS 46",
+"litros": "20",
+"visc": ""
+},
+"15F040": {
+"desc": "HYSPIN AWS 46",
+"litros": "208",
+"visc": ""
+},
+"15F087": {
+"desc": "Transmax Axle LL 75W-90 12X1L",
+"litros": "12",
+"visc": "75W90"
+},
+"15F09D": {
+"desc": "Magnatec 10W-40 A/B 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"15F0B8": {
+"desc": "Transmax ATF Z 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F109": {
+"desc": "Transmax LS Z 85W-90 12X1L",
+"litros": "12",
+"visc": "85W90"
+},
+"15F137": {
+"desc": "Transmax Man Trans 75W-90 12X1L",
+"litros": "12",
+"visc": "75W90"
+},
+"15F139": {
+"desc": "Transmax ATF Dex/Merc MV 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F14B": {
+"desc": "Transmax CVT 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F16B": {
+"desc": "Transmax Manual MV 75W-90 12X1L",
+"litros": "12",
+"visc": "75W90"
+},
+"15F176": {
+"desc": "Transmax ATF DX III MV 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F177": {
+"desc": "Transmax ATF DX III MV 4X5L",
+"litros": "20",
+"visc": ""
+},
+"15F186": {
+"desc": "EDGE 0W-30 1000L",
+"litros": "1000",
+"visc": "0W30"
+},
+"15F1B1": {
+"desc": "Transmax Axle EPX 80W-90 4X5L",
+"litros": "20",
+"visc": "80W90"
+},
+"15F1BA": {
+"desc": "Transmax Axle EPX 80W-90 12X1L",
+"litros": "12",
+"visc": "80W90"
+},
+"15F1D0": {
+"desc": "React SRF Racing 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F1DB": {
+"desc": "Transmax Manual FE 75W 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F1E7": {
+"desc": "Transmax LS LL 75W-140 12X1L",
+"litros": "12",
+"visc": "75W140"
+},
+"15F201": {
+"desc": "Transmax DUAL 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F22A": {
+"desc": "Transmax Manual V 75W-80 12X1L",
+"litros": "12",
+"visc": "75W80"
+},
+"15F249": {
+"desc": "Magnatec Hybrid 0W-20 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"15F271": {
+"desc": "React Performance DOT 4 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F2C0": {
+"desc": "Magnatec Hybrid 5W-30 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15F2D0": {
+"desc": "Brake Fluid DOT 4 (C) 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15F3CF": {
+"desc": "Vecton 15W-40 CK-4/E9 5L",
+"litros": "5",
+"visc": "15W40"
+},
+"15F3D1": {
+"desc": "Vecton Long Drain 10W40 E6/E9 5L",
+"litros": "5",
+"visc": "10W40"
+},
+"15F43B": {
+"desc": "CRB Multi 15W-40 CI-4/E7 5L",
+"litros": "5",
+"visc": "15W40"
+},
+"15F499": {
+"desc": "GTX 5W-30 C3 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15F5E4": {
+"desc": "Magnatec 0W-20 D 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"15F610": {
+"desc": "EDGE 0W-20 LL IV 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"15F612": {
+"desc": "EDGE 0W-20 LL IV 4X4L",
+"litros": "16",
+"visc": "0W20"
+},
+"15F615": {
+"desc": "EDGE 0W-20 LL IV 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"15F621": {
+"desc": "Magnatec 5W-40 C3 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F624": {
+"desc": "Magnatec 5W-40 C3 4X4L",
+"litros": "16",
+"visc": "5W40"
+},
+"15F625": {
+"desc": "Magnatec 5W-40 C3 4X5L",
+"litros": "20",
+"visc": "5W40"
+},
+"15F627": {
+"desc": "GTX 15W-40 A3/B3 12X1L",
+"litros": "12",
+"visc": "15W40"
+},
+"15F628": {
+"desc": "GTX 15W-40 A3/B3 4X4L",
+"litros": "16",
+"visc": "15W40"
+},
+"15F629": {
+"desc": "GTX 15W-40 A3/B3 4X5L",
+"litros": "20",
+"visc": "15W40"
+},
+"15F62C": {
+"desc": "EDGE 10W-60 12X1L",
+"litros": "12",
+"visc": "10W60"
+},
+"15F632": {
+"desc": "EDGE 10W-60 4X4L",
+"litros": "16",
+"visc": "10W60"
+},
+"15F63B": {
+"desc": "EDGE 0W-30 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"15F640": {
+"desc": "EDGE 0W-30 4X4L",
+"litros": "16",
+"visc": "0W30"
+},
+"15F644": {
+"desc": "GTX 20W-50 12X1L",
+"litros": "12",
+"visc": "20W50"
+},
+"15F645": {
+"desc": "GTX 20W-50 4X4L",
+"litros": "16",
+"visc": "20W50"
+},
+"15F646": {
+"desc": "GTX 20W-50 4X5L",
+"litros": "20",
+"visc": "20W50"
+},
+"15F647": {
+"desc": "Magnatec 5W-40 A3/B4 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F64A": {
+"desc": "Magnatec 5W-40 A3/B4 4X4L",
+"litros": "16",
+"visc": "5W40"
+},
+"15F64C": {
+"desc": "GTX 5W-30 C4 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F64E": {
+"desc": "GTX 5W-30 C4 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F64F": {
+"desc": "GTX 5W-30 C4 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F677": {
+"desc": "Magnatec 0W-30 D 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"15F67B": {
+"desc": "Magnatec 0W-30 D 4X4L",
+"litros": "16",
+"visc": "0W30"
+},
+"15F67C": {
+"desc": "Magnatec 0W-30 D 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"15F67D": {
+"desc": "Magnatec 5W-30 A3/B4 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F67E": {
+"desc": "Magnatec 5W-30 A3/B4 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F67F": {
+"desc": "GTX 5W-30 C2 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F686": {
+"desc": "GTX 5W-40 A3/B4 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F694": {
+"desc": "HYSPIN AWS 46",
+"litros": "1000",
+"visc": ""
+},
+"15F6A0": {
+"desc": "HYSPIN AWS 68",
+"litros": "1000",
+"visc": ""
+},
+"15F6A4": {
+"desc": "EDGE 0W-30 A5/B5 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"15F6A5": {
+"desc": "EDGE 0W-30 A5/B5 4X4L",
+"litros": "16",
+"visc": "0W30"
+},
+"15F6A6": {
+"desc": "EDGE 0W-30 A5/B5 4X5L",
+"litros": "20",
+"visc": "0W30"
+},
+"15F6B4": {
+"desc": "EDGE 0W-40 A3/B4 12X1L",
+"litros": "12",
+"visc": "0W40"
+},
+"15F6B5": {
+"desc": "EDGE 0W-40 A3/B4 4X4L",
+"litros": "16",
+"visc": "0W40"
+},
+"15F6BA": {
+"desc": "Magnatec 0W-30 C2 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"15F6BB": {
+"desc": "Magnatec 0W-30 C2 60L",
+"litros": "60",
+"visc": "0W30"
+},
+"15F6BD": {
+"desc": "Magnatec 0W-30 C2 4X5L",
+"litros": "20",
+"visc": "0W30"
+},
+"15F6BE": {
+"desc": "Magnatec 0W-30 C2 4X4L",
+"litros": "16",
+"visc": "0W30"
+},
+"15F6BF": {
+"desc": "Magnatec 0W-30 C2 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"15F6C0": {
+"desc": "Magnatec 5W-30 C2 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15F6C1": {
+"desc": "Magnatec 5W-30 C2 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15F6C4": {
+"desc": "Magnatec 5W-30 C2 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F6C5": {
+"desc": "Magnatec 5W-30 C2 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F6C8": {
+"desc": "Magnatec 5W-30 C2 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F6DA": {
+"desc": "EDGE 5W-30 M 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F6DB": {
+"desc": "EDGE 5W-30 M 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F6DC": {
+"desc": "EDGE 5W-30 M 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F6E1": {
+"desc": "Magnatec 5W-30 DX 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F6E4": {
+"desc": "GTX 5W-30 RN17 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F6E5": {
+"desc": "GTX 5W-30 RN17 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F6E6": {
+"desc": "EDGE 0W-20 C5 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"15F6E9": {
+"desc": "EDGE 0W-20 C5 4X4L",
+"litros": "16",
+"visc": "0W20"
+},
+"15F6EB": {
+"desc": "EDGE 0W-20 C5 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"15F6F9": {
+"desc": "Magnatec Hybrid 0W-16 12X1L",
+"litros": "12",
+"visc": "0W16"
+},
+"15F6FA": {
+"desc": "Magnatec Hybrid 0W-16 4X5L",
+"litros": "20",
+"visc": "0W16"
+},
+"15F700": {
+"desc": "Magnatec Hybrid 5W-30 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F701": {
+"desc": "Magnatec Hybrid 5W-30 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F706": {
+"desc": "EDGE 0W-20 V 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"15F708": {
+"desc": "EDGE 0W-20 V 4X4L",
+"litros": "16",
+"visc": "0W20"
+},
+"15F70F": {
+"desc": "EDGE 5W-40 M 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F710": {
+"desc": "EDGE 5W-40 M 4X5L",
+"litros": "20",
+"visc": "5W40"
+},
+"15F712": {
+"desc": "EDGE 0W-40 12X1L",
+"litros": "12",
+"visc": "0W40"
+},
+"15F713": {
+"desc": "EDGE 0W-40 4X4L",
+"litros": "16",
+"visc": "0W40"
+},
+"15F718": {
+"desc": "EDGE 5W-40 A3/B4 4X4L",
+"litros": "16",
+"visc": "5W40"
+},
+"15F739": {
+"desc": "EDGE 0W-40 R 12X1L",
+"litros": "12",
+"visc": "0W40"
+},
+"15F73A": {
+"desc": "EDGE 0W-40 R 4X5L",
+"litros": "20",
+"visc": "0W40"
+},
+"15F7CA": {
+"desc": "Magnatec 10W-40 A/B 12X1L",
+"litros": "12",
+"visc": "10W40"
+},
+"15F7CE": {
+"desc": "Magnatec 10W-40 A/B 4X4L",
+"litros": "16",
+"visc": "10W40"
+},
+"15F7D2": {
+"desc": "Magnatec 10W-40 A/B 4X5L",
+"litros": "20",
+"visc": "10W40"
+},
+"15F7D5": {
+"desc": "EDGE 5W-40 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F7D7": {
+"desc": "EDGE 5W-40 4X5L",
+"litros": "20",
+"visc": "5W40"
+},
+"15F7DA": {
+"desc": "EDGE 5W-30 LL 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F7E5": {
+"desc": "EDGE 5W-30 LL 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F7E7": {
+"desc": "EDGE 5W-30 LL 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F7EC": {
+"desc": "EDGE 5W-30 C3 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F7ED": {
+"desc": "EDGE 5W-30 C3 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F7EF": {
+"desc": "EDGE 5W-30 C3 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F816": {
+"desc": "EDGE Turbo Diesel 5W-40 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F819": {
+"desc": "EDGE Turbo Diesel 5W-40 4X4L",
+"litros": "16",
+"visc": "5W40"
+},
+"15F81B": {
+"desc": "EDGE Turbo Diesel 5W-40 4X5L",
+"litros": "20",
+"visc": "5W40"
+},
+"15F826": {
+"desc": "EDGE 5W-30 C1 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F827": {
+"desc": "EDGE 5W-30 C1 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F872": {
+"desc": "Magnatec Hybrid 0W-20 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"15F873": {
+"desc": "Magnatec Hybrid 0W-20 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"15F8BA": {
+"desc": "Magnatec 5W-30 A3/B4 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15F8EB": {
+"desc": "HYSPIN AWS 32",
+"litros": "1000",
+"visc": ""
+},
+"15F8F8": {
+"desc": "GTX 10W-40 A3/B4 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"15F8F9": {
+"desc": "GTX 10W-40 A3/B4 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"15F8FC": {
+"desc": "GTX 10W-40 A3/B4 4X5L",
+"litros": "20",
+"visc": "10W40"
+},
+"15F8FD": {
+"desc": "GTX 10W-40 A3/B4 4X4L",
+"litros": "16",
+"visc": "10W40"
+},
+"15F8FE": {
+"desc": "GTX 10W-40 A3/B4 12X1L",
+"litros": "12",
+"visc": "10W40"
+},
+"15F903": {
+"desc": "Magnatec 5W-30 A5 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F906": {
+"desc": "Magnatec 5W-30 A5 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15F908": {
+"desc": "Magnatec 5W-30 A5 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F909": {
+"desc": "Magnatec 5W-30 A5 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F90C": {
+"desc": "Magnatec 5W-40 DPF 12X1L",
+"litros": "12",
+"visc": "5W40"
+},
+"15F90F": {
+"desc": "Magnatec 5W-40 DPF 208L",
+"litros": "208",
+"visc": "5W40"
+},
+"15F911": {
+"desc": "Magnatec 5W-40 DPF 4X4L",
+"litros": "16",
+"visc": "5W40"
+},
+"15F913": {
+"desc": "Magnatec 5W-40 DPF 4X5L",
+"litros": "20",
+"visc": "5W40"
+},
+"15F915": {
+"desc": "Magnatec 5W-40 DPF 60L",
+"litros": "60",
+"visc": "5W40"
+},
+"15F921": {
+"desc": "Magnatec 5W-30 C3 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"15F922": {
+"desc": "Magnatec 5W-30 C3 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15F927": {
+"desc": "Magnatec 5W-30 C3 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"15F928": {
+"desc": "Magnatec 5W-30 C3 4X4L",
+"litros": "16",
+"visc": "5W30"
+},
+"15F929": {
+"desc": "Magnatec 5W-30 C3 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"15F9BB": {
+"desc": "EDGE 0W-30 LL 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"15F9BC": {
+"desc": "EDGE 0W-30 LL 60L",
+"litros": "60",
+"visc": "0W30"
+},
+"15F9C9": {
+"desc": "Magnatec 5W-20 E 12X1L",
+"litros": "12",
+"visc": "5W20"
+},
+"15F9CE": {
+"desc": "Magnatec 5W-20 E 4X4L",
+"litros": "16",
+"visc": "5W20"
+},
+"15FC97": {
+"desc": "Transmax Dual Multivehic 12X1L",
+"litros": "12",
+"visc": ""
+},
+"15FD09": {
+"desc": "Magnatec 0W-20 E 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"15FD0E": {
+"desc": "Magnatec 0W-20 E 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"15FDCF": {
+"desc": "Radicool NF Premix 208L",
+"litros": "208",
+"visc": ""
+},
+"15FDD0": {
+"desc": "Radicool NF Premix 20L",
+"litros": "20",
+"visc": ""
+},
+"15FE40": {
+"desc": "Radicool SF 208L",
+"litros": "208",
+"visc": ""
+},
+"15FE6C": {
+"desc": "Radicool NF 208L",
+"litros": "208",
+"visc": ""
+},
+"15FE9E": {
+"desc": "Radicool SF Premix 208L",
+"litros": "208",
+"visc": ""
+},
+"15FEA0": {
+"desc": "Radicool SF Premix 60L",
+"litros": "60",
+"visc": ""
+},
+"15FEFB": {
+"desc": "EDGE 0W-30 LL 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"15FEFC": {
+"desc": "EDGE 0W-30 LL 4X5L",
+"litros": "20",
+"visc": "0W30"
+},
+"15FF4D": {
+"desc": "Magnatec 5W-30 DX 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"15FF87": {
+"desc": "ON EV Transmiss Fluid W5 4X5L",
+"litros": "20",
+"visc": ""
+},
+"15FFE7": {
+"desc": "Magnatec 5W-30 DX 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"16000E": {
+"desc": "Radicool 20L",
+"litros": "20",
+"visc": ""
+},
+"16000F": {
+"desc": "Radicool 208L",
+"litros": "208",
+"visc": ""
+},
+"1601EE": {
+"desc": "Radicool SF Premix GO 12X1L",
+"litros": "12",
+"visc": ""
+},
+"1602C4": {
+"desc": "Radicool Premix 12X1L",
+"litros": "12",
+"visc": ""
+},
+"1603C5": {
+"desc": "ON EV TransmissionFluidW2 4X5L",
+"litros": "20",
+"visc": ""
+},
+"16044F": {
+"desc": "HYSPIN AWH-M 32",
+"litros": "208",
+"visc": ""
+},
+"1604B2": {
+"desc": "HYSPIN AWH-M 46",
+"litros": "1000",
+"visc": ""
+},
+"16051B": {
+"desc": "Vecton LD 5W-30 E6/E9 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"16051C": {
+"desc": "Vecton LD 5W-30 E6/E9 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"16051D": {
+"desc": "Vecton LD 5W-30 E6/E9 5L",
+"litros": "5",
+"visc": "5W30"
+},
+"1605C8": {
+"desc": "Vecton LongDrain 5W30 E7 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"1605CA": {
+"desc": "Vecton LongDrain 5W30 E7 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"1605DD": {
+"desc": "Vecton LD 5W-30 E6/E9 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"16061C": {
+"desc": "EDGE 5W-50 S 4X4L",
+"litros": "16",
+"visc": "5W50"
+},
+"16063A": {
+"desc": "Multipurpose Grease 180K",
+"litros": "180",
+"visc": ""
+},
+"16080D": {
+"desc": "High Temperature Grease 180K",
+"litros": "180",
+"visc": ""
+},
+"16081A": {
+"desc": "High Temperature Grease 18K",
+"litros": "18",
+"visc": ""
+},
+"1608A4": {
+"desc": "Magnatec 0W-20 FE 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"1608A5": {
+"desc": "Magnatec 0W-20 FE 60L",
+"litros": "60",
+"visc": "0W20"
+},
+"1608A6": {
+"desc": "Magnatec 0W-20 FE 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"1608A7": {
+"desc": "Magnatec 0W-20 FE 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"16096A": {
+"desc": "Transmax Manual AT 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"1609DD": {
+"desc": "Magnatec 0W-20 GSX/DSX 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"1609DE": {
+"desc": "Magnatec 0W-20 GSX/DSX 60L",
+"litros": "60",
+"visc": "0W20"
+},
+"1609DF": {
+"desc": "Magnatec 0W-20 GSX/DSX 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"1609EA": {
+"desc": "Magnatec 0W-20 GSX/DSX 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"160A0E": {
+"desc": "GTX 0W-20 RN17 FE 12X1L",
+"litros": "12",
+"visc": "0W20"
+},
+"160A0F": {
+"desc": "GTX 0W-20 RN17 FE 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"160A10": {
+"desc": "GTX 0W-20 RN17 FE 4X5L",
+"litros": "20",
+"visc": "0W20"
+},
+"160A11": {
+"desc": "GTX 0W-20 RN17 FE 60L",
+"litros": "60",
+"visc": "0W20"
+},
+"160A25": {
+"desc": "GTX 0W-16 AN2022 12X1L",
+"litros": "12",
+"visc": "0W16"
+},
+"160A26": {
+"desc": "GTX 0W-16 AN2022 4X5L",
+"litros": "20",
+"visc": "0W16"
+},
+"160B09": {
+"desc": "ON EV TransmissionFluidD1 4X5L",
+"litros": "20",
+"visc": ""
+},
+"160B2D": {
+"desc": "ON EV Tran Fluid D2 4X5L",
+"litros": "20",
+"visc": ""
+},
+"160DFF": {
+"desc": "EDGE 0W-30 LL 20L",
+"litros": "20",
+"visc": "0W30"
+},
+"16128E": {
+"desc": "ON EVTransmissionFluidW1 12X1L",
+"litros": "12",
+"visc": ""
+},
+"1612A0": {
+"desc": "Moly Grease 12X.4K",
+"litros": "4.8",
+"visc": ""
+},
+"1612B1": {
+"desc": "Magnatec 5W-30 P 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"1612B2": {
+"desc": "Magnatec 5W-30 P 12X1L",
+"litros": "12",
+"visc": "5W30"
+},
+"1612B4": {
+"desc": "Magnatec 5W-30 P 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"1612B5": {
+"desc": "Magnatec 5W-30 P 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"1612B6": {
+"desc": "Magnatec 5W-30 P 60L",
+"litros": "60",
+"visc": "5W30"
+},
+"16157E": {
+"desc": "Vecton Long Drain 10W30 E6/E9 5L",
+"litros": "5",
+"visc": "10W30"
+},
+"16161D": {
+"desc": "CRB Monograde 30 CF 1000L",
+"litros": "1000",
+"visc": ""
+},
+"16167A": {
+"desc": "CRB Monograde 10W CF 1000L",
+"litros": "1000",
+"visc": ""
+},
+"1616A8": {
+"desc": "Transmax Universal 75W-90 20L",
+"litros": "20",
+"visc": "75W90"
+},
+"1616AA": {
+"desc": "Transmax Universal 75W-90 12X1L",
+"litros": "12",
+"visc": "75W90"
+},
+"1616DD": {
+"desc": "CRB Monograde 40 CF/CF-2 1000L",
+"litros": "1000",
+"visc": ""
+},
+"16170F": {
+"desc": "Transmax Univ LL 80W-90 20L",
+"litros": "20",
+"visc": "80W90"
+},
+"16171A": {
+"desc": "Transmax Univ LL 80W-90 208L",
+"litros": "208",
+"visc": "80W90"
+},
+"16183C": {
+"desc": "Transmax Univer LL 75W-90 12X1L",
+"litros": "12",
+"visc": "75W90"
+},
+"16188A": {
+"desc": "Vecton LD 5W-30 FA-4/F01 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"16188D": {
+"desc": "Vecton LD 5W-30 FA-4/F01 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"16188E": {
+"desc": "Vecton LD 5W-30 FA-4/F01 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"16188F": {
+"desc": "Vecton LD 5W-30 FA-4/F01 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"16189E": {
+"desc": "Engine Shampoo 6X.3L",
+"litros": "1.8",
+"visc": ""
+},
+"16192E": {
+"desc": "Transmax Offroad 50 1000L",
+"litros": "1000",
+"visc": ""
+},
+"16192F": {
+"desc": "Transmax Offroad 30 1000L",
+"litros": "1000",
+"visc": ""
+},
+"16194E": {
+"desc": "Transmax Offroad 10W 1000L",
+"litros": "1000",
+"visc": ""
+},
+"1619A5": {
+"desc": "Vecton Long Drain 0W-20 208L",
+"litros": "208",
+"visc": "0W20"
+},
+"1619A8": {
+"desc": "Vecton Long Drain 0W-20 1000L",
+"litros": "1000",
+"visc": "0W20"
+},
+"1619A9": {
+"desc": "Vecton Long Drain 0W-20 20L",
+"litros": "20",
+"visc": "0W20"
+},
+"161A3B": {
+"desc": "Radicool Si-OAT Premix 1000L",
+"litros": "1000",
+"visc": ""
+},
+"161A3E": {
+"desc": "Radicool SF Premix 1000L",
+"litros": "1000",
+"visc": ""
+},
+"161A44": {
+"desc": "Vecton LD 5W-20 SLD5 20L",
+"litros": "20",
+"visc": "5W20"
+},
+"161A46": {
+"desc": "Vecton LD 5W-20 SLD5 208L",
+"litros": "208",
+"visc": "5W20"
+},
+"161A47": {
+"desc": "Vecton LD 5W-20 SLD5 1000L",
+"litros": "1000",
+"visc": "5W20"
+},
+"161AA5": {
+"desc": "Radicool NF 20L",
+"litros": "20",
+"visc": ""
+},
+"161AC4": {
+"desc": "Transmax ATF DVIMLV Multi 20L",
+"litros": "20",
+"visc": ""
+},
+"161AD0": {
+"desc": "Transmax ATF DVIMLV Multi 12X1L",
+"litros": "12",
+"visc": ""
+},
+"161C89": {
+"desc": "Brake Fluid DOT 4 (C) 20L",
+"litros": "20",
+"visc": ""
+},
+"161D4A": {
+"desc": "VECTON Multi 15W-40 CV1 1000L",
+"litros": "1000",
+"visc": "15W40"
+},
+"161D4C": {
+"desc": "VECTON Multi 15W-40 CV1 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"161D4D": {
+"desc": "VECTON Multi 15W-40 CV1 4X5L",
+"litros": "20",
+"visc": "15W40"
+},
+"161D4E": {
+"desc": "VECTON Multi 15W-40 CV1 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"161D5D": {
+"desc": "VECTON Multi 10W-40 CV2 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"161D5E": {
+"desc": "VECTON Multi 10W-40 CV2 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"161D5F": {
+"desc": "VECTON Multi 10W-40 CV2 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"161D6A": {
+"desc": "VECTON Multi 10W-40 CV2 4X5L",
+"litros": "20",
+"visc": "10W40"
+},
+"161DA1": {
+"desc": "VECTON Multi 10W-40 CV1 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"161DA2": {
+"desc": "VECTON Multi 10W-40 CV1 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"161DA3": {
+"desc": "VECTON Multi 10W-40 CV1 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"161DA5": {
+"desc": "VECTON Multi 10W-30 CV1 1000L",
+"litros": "1000",
+"visc": "10W30"
+},
+"161DA6": {
+"desc": "VECTON Multi 10W-30 CV1 20L",
+"litros": "20",
+"visc": "10W30"
+},
+"161DA7": {
+"desc": "VECTON Multi 10W-30 CV1 208L",
+"litros": "208",
+"visc": "10W30"
+},
+"161DCE": {
+"desc": "EDGE 5W-50 S 4X5L",
+"litros": "20",
+"visc": "5W50"
+},
+"161E0E": {
+"desc": "VECTON Multi 10W-30 CV2 1000L",
+"litros": "1000",
+"visc": "10W30"
+},
+"161E1A": {
+"desc": "VECTON Multi 10W-30 CV2 208L",
+"litros": "208",
+"visc": "10W30"
+},
+"161E1B": {
+"desc": "VECTON Multi 10W-30 CV2 20L",
+"litros": "20",
+"visc": "10W30"
+},
+"161E1C": {
+"desc": "VECTON Multi 15W-40 CV2 1000L",
+"litros": "1000",
+"visc": "15W40"
+},
+"161E1E": {
+"desc": "VECTON Multi 15W-40 CV2 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"161E1F": {
+"desc": "VECTON Multi 15W-40 CV2 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"161E7F": {
+"desc": "EDGE 0W-40 LL 208L",
+"litros": "208",
+"visc": "0W40"
+},
+"161E8A": {
+"desc": "EDGE 0W-40 LL 60L",
+"litros": "60",
+"visc": "0W40"
+},
+"161E8B": {
+"desc": "EDGE 0W-40 LL 12X1L",
+"litros": "12",
+"visc": "0W40"
+},
+"161E8C": {
+"desc": "EDGE 0W-40 LL 4X5L",
+"litros": "20",
+"visc": "0W40"
+},
+"161E8D": {
+"desc": "EDGE 0W-40 LL 20L",
+"litros": "20",
+"visc": "0W40"
+},
+"16203F": {
+"desc": "GTX 5W-30 C3 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"1620A8": {
+"desc": "VECTON Plus 10W-40 E7 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"1620AA": {
+"desc": "VECTON Plus 10W-40 E7 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"1620AB": {
+"desc": "VECTON Plus 10W-40 E7 4X5L",
+"litros": "20",
+"visc": "10W40"
+},
+"1620AC": {
+"desc": "VECTON Plus 10W-40 E7 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"1620B1": {
+"desc": "VECTON Plus 15W40 CK4/E11 1000L",
+"litros": "1000",
+"visc": "15W40"
+},
+"1620B2": {
+"desc": "VECTON Plus 15W40 CK4/E11 20L",
+"litros": "20",
+"visc": "15W40"
+},
+"1620B3": {
+"desc": "VECTON Plus 15W40 CK4/E11 208L",
+"litros": "208",
+"visc": "15W40"
+},
+"1620B4": {
+"desc": "VECTON Plus 15W40 CK4/E11 4X5L",
+"litros": "20",
+"visc": "15W40"
+},
+"16219A": {
+"desc": "Magnatec 0W-30 12X1L",
+"litros": "12",
+"visc": "0W30"
+},
+"16219B": {
+"desc": "Magnatec 0W-30 208L",
+"litros": "208",
+"visc": "0W30"
+},
+"16219C": {
+"desc": "Magnatec 0W-30 4X5L",
+"litros": "20",
+"visc": "0W30"
+},
+"16219D": {
+"desc": "Magnatec 0W-30 60L",
+"litros": "60",
+"visc": "0W30"
+},
+"16229C": {
+"desc": "Vecton LD 5W-30 E8/E11 1000L",
+"litros": "1000",
+"visc": "5W30"
+},
+"16229D": {
+"desc": "Vecton LD 5W-30 E8/E11 20L",
+"litros": "20",
+"visc": "5W30"
+},
+"16229E": {
+"desc": "Vecton LD 5W-30 E8/E11 208L",
+"litros": "208",
+"visc": "5W30"
+},
+"16229F": {
+"desc": "Vecton LD 5W-30 E8/E11 4X5L",
+"litros": "20",
+"visc": "5W30"
+},
+"16235B": {
+"desc": "VECTON Plus 10W-40 E4/E7 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"16235C": {
+"desc": "VECTON Plus 10W-40 E4/E7 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"16235D": {
+"desc": "VECTON Plus 10W-40 E4/E7 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"16263D": {
+"desc": "ON EV Tran Fluid D2 12X1L",
+"litros": "12",
+"visc": ""
+},
+"16269C": {
+"desc": "ON EV TransmissionFluidD1 12X1L",
+"litros": "12",
+"visc": ""
+},
+"1628C0": {
+"desc": "Vecton LD 10W-40 E8/E11 1000L",
+"litros": "1000",
+"visc": "10W40"
+},
+"1628C2": {
+"desc": "Vecton LD 10W-40 E8/E11 208L",
+"litros": "208",
+"visc": "10W40"
+},
+"1628C3": {
+"desc": "Vecton LD 10W-40 E8/E11 4X5L",
+"litros": "20",
+"visc": "10W40"
+},
+"1628C7": {
+"desc": "Vecton LD 10W-30 E8/E11 1000L",
+"litros": "1000",
+"visc": "10W30"
+},
+"1628C8": {
+"desc": "Vecton LD 10W-30 E8/E11 20L",
+"litros": "20",
+"visc": "10W30"
+},
+"1628C9": {
+"desc": "Vecton LD 10W-30 E8/E11 208L",
+"litros": "208",
+"visc": "10W30"
+},
+"1628CA": {
+"desc": "Vecton LD 10W-30 E8/E11 4X5L",
+"litros": "20",
+"visc": "10W30"
+},
+"1629A7": {
+"desc": "Vecton LD 10W-40 E8/E11 20L",
+"litros": "20",
+"visc": "10W40"
+},
+"162A59": {
+"desc": "Magnatec 0W-30 4X4L",
+"litros": "16",
+"visc": "0W30"
+},
+"162AA4": {
+"desc": "EDGE 0W-40 MP 12X1L",
+"litros": "12",
+"visc": "0W40"
+},
+"162AA5": {
+"desc": "EDGE 0W-40 MP 4X4L",
+"litros": "16",
+"visc": "0W40"
+}
+}

@@ -139,7 +139,7 @@ def cargar_listas_simples():
     fuentes = [
         ("AD Parts", "Productos AD Parts Abril 2026.xlsx"),
         ("AD Standard", "Productos AD Parts Estandard Abril 2026.xlsx"),
-        ("Castrol", "Productos Castrol Abril 2026.xlsx"),
+        ("Castrol", "Productos Castrol Septiembre 2026.xlsx"),
         ("Eni", "Productos Eni Abril 2026.xlsx"),
         ("Repsol", "Productos Repsol Abril 2026.xlsx"),
         ("Shell", "Productos Shell Abril 2026.xlsx"),
@@ -866,7 +866,7 @@ def main():
     for p in PRODUCTOS:
         if p["marca"] != "Castrol" or not datos_castrol:
             continue
-        nombre = re.sub(r"\s+\d+(?:[.,]\d+)?\s*L\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
+        nombre = re.sub(r"\s+(?:\d+X)?\d+(?:[.,]\d+)?\s*(?:L|KG|K|GR|G|ML)\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
         d = next(iter(datos_castrol.get(clave(nombre), [])), None)
         if not d:
             continue
@@ -906,7 +906,7 @@ def main():
     # catalogos de Castrol transcritos leyendo el PDF como imagen (castrol_curado_*.json): Transmax, grasas, Radicool, CRB y gama agricola.
     # Se enlazan por NOMBRE de producto (tarifa de abril 2026); lo que no coincide queda sin enlazar (nunca se adivina).
     CURADOS = []
-    for nom_c in ("pesado_resto", "pesado_crb", "agricola"):
+    for nom_c in ("web", "pesado_resto", "pesado_crb", "agricola"):
         ruta_cur = RAIZ / f"castrol_curado_{nom_c}.json"
         if ruta_cur.exists():
             dc = json.loads(ruta_cur.read_text(encoding="utf-8"))
@@ -915,6 +915,14 @@ def main():
     def clave_cur(nombre):
         k = clave(re.sub(r"(?i)^castrol\s+", "", nombre))
         k = re.sub(r"^TRANSMAXAGRI", "AGRI", k)
+        # abreviaturas de las descripciones de la tarifa de Castrol (SAP)
+        k = re.sub(r"UNIVER(?!SAL)", "UNIVERSAL", k)
+        k = re.sub(r"UNIV(?!ER)", "UNIVERSAL", k)
+        k = k.replace("TRANSMAXMANZLL", "TRANSMAXMANUALZLL").replace("AXLELD", "AXLELONGDRAIN").replace("ATFDXIIIMV", "ATFDXIIIMULTIVEHICLE")
+        k = re.sub(r"^AGRIMPP(?=\d)", "AGRIMPPLUS", k)
+        k = re.sub(r"^AGRITRANSPL(?=\d)", "AGRITRANSPLUS", k)
+        k = re.sub(r"^AGRITRANSAS", "AGRITRANSPLUSAS", k)
+        k = re.sub(r"^(TRANSMAXOFFROAD)(30|50)W$", r"\1\2", k)
         for a, b in (("LONGLIFE", "LL"), ("LIMITEDSLIP", "LS"), ("DEXRON", "DX")):
             k = k.replace(a, b)
         return k
@@ -922,16 +930,13 @@ def main():
     idx_cur = defaultdict(list)
     for fuente_c, x in CURADOS:
         idx_cur[clave_cur(x["nombre"])].append((fuente_c, x))
-    for fuente_c, x in CURADOS:
-        if clave_cur(x["nombre"]).startswith("TRANSMAXOFFROAD"):
-            idx_cur["TRANSMAXOFFROAD"] = [(fuente_c, x)]
     for p in PRODUCTOS:
         if p["marca"] != "Castrol" or not CURADOS or p.get("hom_pesado") or p.get("hom_castrol"):
             continue
-        nombre = re.sub(r"\s+\d+(?:[.,]\d+)?\s*(L|KG|GR|G|ML)\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
+        nombre = re.sub(r"\s+(?:\d+X)?\d+(?:[.,]\d+)?\s*(?:L|KG|K|GR|G|ML)\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
         k = clave_cur(nombre)
-        if k.startswith("TRANSMAXOFFROAD"):
-            k = "TRANSMAXOFFROAD"
+        if k == "TRANSMAXOFFROAD10W3050":
+            continue
         hit = idx_cur.get(k)
         if not hit:
             continue
@@ -1155,8 +1160,9 @@ def main():
         if p.get("hom_curada"):
             d = p["hom_curada"]
             cu += ["", "## Homologaciones según el catálogo de Castrol", "",
-                   f'*Producto «{d["nombre"]}» (página {d["pagina"]} de [[HOMOLOGACIONES/Castrol/{d["fuente_pdf"][:-4]}]]). Transcrito leyendo el PDF como imagen, '
-                   "sin deducir nada; lo que el PDF presenta como «cumple», «recomendado» o «apto para» se cita aparte porque no es homologación formal.*", ""]
+                   (f'*Producto «{d["nombre"]}» ({d["fuente_pdf"]}). Transcrito de las capturas sin deducir nada; ' if d["fuente_pdf"].startswith("castrol.com")
+                    else f'*Producto «{d["nombre"]}» (página {d["pagina"]} de [[HOMOLOGACIONES/Castrol/{d["fuente_pdf"][:-4]}]]). Transcrito leyendo el PDF como imagen, sin deducir nada; ')
+                   + "lo que se presenta como «cumple», «recomendado» o «apto para» se cita aparte porque no es homologación formal.*", ""]
             cu += bullets_normas(p, "normas_f_n")
             if d.get("cumple"):
                 cu.append("- **Cumple, recomendado o apto para (no es homologación formal):** " + " · ".join(d["cumple"]))
@@ -1504,6 +1510,10 @@ def main():
         I += ["", f"## Equivalencias entre marcas, {tp}", ""] + [f'- [[{e["pagina"]}]]' for e in EQUIV_B if e["tipo"] == tp]
     (WIKI / "index.md").write_text("\n".join(I) + "\n", encoding="utf-8")
 
+    # productos Castrol de la tarifa (ref, descripcion, litros) para que build_bridge.py los pueda anadir al buscador
+    (RAIZ / "castrol_productos_wiki.json").write_text(json.dumps(
+        {q["ref"]: {"desc": q["desc"], "litros": q["litros"], "visc": q.get("visc_desc", "")} for q in PRODUCTOS if q["marca"] == "Castrol"},
+        ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     # normas por producto Castrol segun sus catalogos (las lee build_bridge.py)
     (RAIZ / "castrol_normas_wiki.json").write_text(json.dumps(
         {q["ref"]: [[t, l] for t, l in q.get("normas_f", [])] for q in PRODUCTOS if q["marca"] == "Castrol" and q.get("normas_f")},

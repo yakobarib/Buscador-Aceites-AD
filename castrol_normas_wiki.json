@@ -31,12 +31,6 @@
 "API SP"
 ]
 ],
-"1503AD": [
-[
-"homologacion",
-"NLGI 2"
-]
-],
 "15336B": [
 [
 "acea",
@@ -189,6 +183,48 @@
 [
 "homologacion",
 "RENAULT RN0710"
+]
+],
+"1534A5": [
+[
+"acea",
+"ACEA C3"
+],
+[
+"api",
+"API SQ"
+],
+[
+"ilsac",
+"ILSAC GF-7"
+],
+[
+"homologacion",
+"MB 229.31"
+],
+[
+"homologacion",
+"MB 229.51"
+],
+[
+"homologacion",
+"MB 226.5"
+],
+[
+"homologacion",
+"BMW LL-04"
+],
+[
+"homologacion",
+"RENAULT RN0700"
+],
+[
+"homologacion",
+"RENAULT RN0710"
+],
+[
+"homologacion",
+"FIAT 9.55535-S2"
 ]
 ],
 "1535AB": [
@@ -491,6 +527,32 @@
 [
 "homologacion",
 "FIAT 9.55535-S4"
+]
+],
+"1595CF": [
+[
+"acea",
+"ACEA A3/B3"
+],
+[
+"acea",
+"ACEA A3/B4"
+],
+[
+"api",
+"API SN"
+],
+[
+"api",
+"API CF"
+],
+[
+"homologacion",
+"VW 501.01"
+],
+[
+"homologacion",
+"VW 505.00"
 ]
 ],
 "15A552": [
@@ -993,64 +1055,6 @@
 "VOLVO VDS-3"
 ]
 ],
-"15BA26": [
-[
-"acea",
-"ACEA E4"
-],
-[
-"acea",
-"ACEA E7"
-],
-[
-"api",
-"API CI-4"
-],
-[
-"jaso",
-"JASO DH-1"
-],
-[
-"homologacion",
-"CUMMINS CES 20077"
-],
-[
-"homologacion",
-"CUMMINS CES 20078"
-],
-[
-"homologacion",
-"DEUTZ DQC III-18"
-],
-[
-"homologacion",
-"DAIMLER TRUCK DTFR 15B120"
-],
-[
-"homologacion",
-"MB 228.5"
-],
-[
-"homologacion",
-"MACK EO-N"
-],
-[
-"homologacion",
-"MAN 3277"
-],
-[
-"homologacion",
-"MTU TYPE 3"
-],
-[
-"homologacion",
-"RENAULT RLD-2"
-],
-[
-"homologacion",
-"VOLVO VDS-3"
-]
-],
 "15BA27": [
 [
 "acea",
@@ -1127,6 +1131,66 @@
 "API CF/CF-2"
 ]
 ],
+"15BD85": [
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API SF"
+],
+[
+"api",
+"API GL-4"
+],
+[
+"homologacion",
+"MASSEY FERGUSON M1145"
+],
+[
+"homologacion",
+"ZF TE-ML 06B"
+],
+[
+"homologacion",
+"ZF TE-ML 07B"
+]
+],
+"15BD87": [
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API SF"
+],
+[
+"api",
+"API GL-4"
+],
+[
+"homologacion",
+"MASSEY FERGUSON M1145"
+],
+[
+"homologacion",
+"ZF TE-ML 06B"
+],
+[
+"homologacion",
+"ZF TE-ML 07B"
+]
+],
 "15BDF9": [
 [
 "acea",
@@ -1199,48 +1263,114 @@
 "FORD WSS-M2C913-D"
 ]
 ],
+"15BF79": [
+[
+"api",
+"API GL-4"
+],
+[
+"homologacion",
+"MASSEY FERGUSON M1145"
+],
+[
+"homologacion",
+"VOLVO 97303:053 (WB 101)"
+],
+[
+"homologacion",
+"ZF TE-ML 03E"
+],
+[
+"homologacion",
+"ZF TE-ML 05F"
+],
+[
+"homologacion",
+"ZF TE-ML 17E"
+],
+[
+"homologacion",
+"ZF TE-ML 21F"
+]
+],
+"15BF7D": [
+[
+"api",
+"API GL-4"
+],
+[
+"homologacion",
+"MASSEY FERGUSON M1145"
+],
+[
+"homologacion",
+"VOLVO 97303:053 (WB 101)"
+],
+[
+"homologacion",
+"ZF TE-ML 03E"
+],
+[
+"homologacion",
+"ZF TE-ML 05F"
+],
+[
+"homologacion",
+"ZF TE-ML 17E"
+],
+[
+"homologacion",
+"ZF TE-ML 21F"
+]
+],
 "15BF7F": [
 [
-"acea",
-"ACEA E2"
+"api",
+"API CE"
 ],
 [
 "api",
-"API CF-4 / SF / GL-4"
+"API SF"
+],
+[
+"api",
+"API GL-4"
 ],
 [
 "homologacion",
-"JDM J-27"
+"ZF TE-ML 06B"
 ],
 [
 "homologacion",
-"MF M1139"
-],
-[
-"homologacion",
-"ZF TE-ML 06B, 07B"
+"ZF TE-ML 07B"
 ]
 ],
 "15BF80": [
 [
-"acea",
-"ACEA E2"
+"api",
+"API CE"
 ],
 [
 "api",
-"API CF-4 / SF / GL-4"
+"API SF"
+],
+[
+"api",
+"API GL-4"
 ],
 [
 "homologacion",
-"JDM J-27"
+"ZF TE-ML 06B"
 ],
 [
 "homologacion",
-"MF M1139"
+"ZF TE-ML 07B"
+]
 ],
+"15C163": [
 [
-"homologacion",
-"ZF TE-ML 06B, 07B"
+"api",
+"API GL-4"
 ]
 ],
 "15C44E": [
@@ -1568,7 +1698,7 @@
 "15D66F": [
 [
 "homologacion",
-"Allison TES-389"
+"ALLISON TES 389"
 ],
 [
 "homologacion",
@@ -1588,11 +1718,11 @@
 ],
 [
 "homologacion",
-"Voith H55.6335.xx"
+"VOITH H55.6335.xx"
 ],
 [
 "homologacion",
-"Volvo 97341:071 (lubricante de transmisión)"
+"VOLVO 97341"
 ],
 [
 "homologacion",
@@ -1606,7 +1736,7 @@
 "15D671": [
 [
 "homologacion",
-"Allison TES-389"
+"ALLISON TES 389"
 ],
 [
 "homologacion",
@@ -1626,11 +1756,11 @@
 ],
 [
 "homologacion",
-"Voith H55.6335.xx"
+"VOITH H55.6335.xx"
 ],
 [
 "homologacion",
-"Volvo 97341:071 (lubricante de transmisión)"
+"VOLVO 97341"
 ],
 [
 "homologacion",
@@ -1642,6 +1772,14 @@
 ]
 ],
 "15D6C7": [
+[
+"jaso",
+"JASO 1A (03)"
+],
+[
+"homologacion",
+"MB 236.81"
+],
 [
 "homologacion",
 "MAN 339 V2"
@@ -1656,15 +1794,11 @@
 ],
 [
 "homologacion",
-"MB 236.81"
+"VOITH H55.6336.xx"
 ],
 [
 "homologacion",
-"Voith H55.6336.xx"
-],
-[
-"homologacion",
-"VW/Audi 501 60"
+"VW/AUDI 501 60"
 ],
 [
 "homologacion",
@@ -1697,59 +1831,13 @@
 ],
 "15D6C8": [
 [
-"homologacion",
-"MAN 339 V2"
-],
-[
-"homologacion",
-"MAN 339 Z3"
-],
-[
-"homologacion",
-"MAN 339 Z12"
+"jaso",
+"JASO 1A (03)"
 ],
 [
 "homologacion",
 "MB 236.81"
 ],
-[
-"homologacion",
-"Voith H55.6336.xx"
-],
-[
-"homologacion",
-"VW/Audi 501 60"
-],
-[
-"homologacion",
-"ZF TE-ML 04D"
-],
-[
-"homologacion",
-"ZF TE-ML 11B"
-],
-[
-"homologacion",
-"ZF TE-ML 14C"
-],
-[
-"homologacion",
-"ZF TE-ML 16M"
-],
-[
-"homologacion",
-"ZF TE-ML 16S"
-],
-[
-"homologacion",
-"ZF TE-ML 20C"
-],
-[
-"homologacion",
-"ZF TE-ML 25C"
-]
-],
-"15D6CC": [
 [
 "homologacion",
 "MAN 339 V2"
@@ -1764,15 +1852,11 @@
 ],
 [
 "homologacion",
-"MB 236.81"
+"VOITH H55.6336.xx"
 ],
 [
 "homologacion",
-"Voith H55.6336.xx"
-],
-[
-"homologacion",
-"VW/Audi 501 60"
+"VW/AUDI 501 60"
 ],
 [
 "homologacion",
@@ -1982,7 +2066,11 @@
 ],
 [
 "homologacion",
-"Volvo 97307:045 (lubricante de transmisión)"
+"VOLVO 97307:045"
+],
+[
+"homologacion",
+"EATON 500000 km drain Europe (service bulletin 2273)"
 ]
 ],
 "15D8AE": [
@@ -1996,13 +2084,21 @@
 ],
 [
 "homologacion",
-"Volvo 97307:045 (lubricante de transmisión)"
+"VOLVO 97307:045"
+],
+[
+"homologacion",
+"EATON 500000 km drain Europe (service bulletin 2273)"
 ]
 ],
 "15D8B5": [
 [
 "api",
-"API GL-4/GL-5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ]
 ],
 "15D8CE": [
@@ -2033,6 +2129,10 @@
 [
 "homologacion",
 "ZF TE-ML 21A"
+],
+[
+"homologacion",
+"BMW (ejes traseros de deslizamiento no limitado) según instrucción de servicio 33 01 96 (149)"
 ]
 ],
 "15D8DF": [
@@ -2116,10 +2216,6 @@
 ],
 [
 "homologacion",
-"ZF TE-ML 12C"
-],
-[
-"homologacion",
 "ZF TE-ML 16E"
 ],
 [
@@ -2199,6 +2295,10 @@
 [
 "homologacion",
 "ZF TE-ML 21A"
+],
+[
+"homologacion",
+"BMW (ejes traseros de deslizamiento no limitado) según instrucción de servicio 33 01 96 (149)"
 ]
 ],
 "15DB82": [
@@ -2209,10 +2309,6 @@
 [
 "homologacion",
 "ZF TE-ML 05C"
-],
-[
-"homologacion",
-"ZF TE-ML 12C"
 ],
 [
 "homologacion",
@@ -2233,44 +2329,14 @@
 "Scania STO 2:0A"
 ]
 ],
-"15DC03": [
-[
-"acea",
-"ACEA C3"
-],
-[
-"homologacion",
-"VW 504.00"
-],
-[
-"homologacion",
-"VW 507.00"
-],
-[
-"homologacion",
-"MB 229.51"
-],
-[
-"homologacion",
-"BMW LL-04"
-],
-[
-"homologacion",
-"PORSCHE C30"
-],
-[
-"homologacion",
-"RENAULT RN0700"
-],
-[
-"homologacion",
-"RENAULT RN0710"
-]
-],
 "15DD10": [
 [
 "api",
-"API GL-4/5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ],
 [
 "api",
@@ -2282,11 +2348,7 @@
 ],
 [
 "homologacion",
-"MB 235.9"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
+"MAN 341 Z2"
 ],
 [
 "homologacion",
@@ -2294,15 +2356,19 @@
 ],
 [
 "homologacion",
-"Scania STO 1:1 G"
+"MB 235.8"
 ],
 [
 "homologacion",
-"Scania STO 2:0 A FS"
+"SCANIA STO 1:1G"
 ],
 [
 "homologacion",
-"Volvo 97312"
+"SCANIA STO 2:0A FS"
+],
+[
+"homologacion",
+"VOLVO 97312"
 ],
 [
 "homologacion",
@@ -2334,13 +2400,17 @@
 ],
 [
 "homologacion",
-"ZF TE-ML 21A (ZF002144)"
+"ZF TE-ML 21A"
 ]
 ],
 "15DD11": [
 [
 "api",
-"API GL-4/5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ],
 [
 "api",
@@ -2352,11 +2422,7 @@
 ],
 [
 "homologacion",
-"MB 235.9"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
+"MAN 341 Z2"
 ],
 [
 "homologacion",
@@ -2364,15 +2430,19 @@
 ],
 [
 "homologacion",
-"Scania STO 1:1 G"
+"MB 235.8"
 ],
 [
 "homologacion",
-"Scania STO 2:0 A FS"
+"SCANIA STO 1:1G"
 ],
 [
 "homologacion",
-"Volvo 97312"
+"SCANIA STO 2:0A FS"
+],
+[
+"homologacion",
+"VOLVO 97312"
 ],
 [
 "homologacion",
@@ -2404,17 +2474,13 @@
 ],
 [
 "homologacion",
-"ZF TE-ML 21A (ZF002144)"
+"ZF TE-ML 21A"
 ]
 ],
 "15DDDA": [
 [
 "api",
 "API GL-5"
-],
-[
-"homologacion",
-"MAN 341 GA1"
 ],
 [
 "homologacion",
@@ -2426,7 +2492,7 @@
 ],
 [
 "homologacion",
-"Scania STO 1:0"
+"SCANIA STO 1:0"
 ],
 [
 "homologacion",
@@ -2642,37 +2708,17 @@
 "15EAD7": [
 [
 "homologacion",
-"CAT TO-4"
+"ZF TE-ML 03C"
 ],
 [
 "homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
+"ZF TE-ML 07F"
 ]
 ],
 "15EAD8": [
 [
 "homologacion",
-"CAT TO-4"
-],
-[
-"homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
+"ZF TE-ML 03C"
 ]
 ],
 "15ED78": [
@@ -2759,6 +2805,12 @@
 [
 "homologacion",
 "VW-TL 774-G (G12++)"
+]
+],
+"15EED7": [
+[
+"api",
+"API GL-4"
 ]
 ],
 "15EEDB": [
@@ -2868,37 +2920,11 @@
 "15F00D": [
 [
 "homologacion",
-"CAT TO-4"
+"ZF TE-ML 03C"
 ],
 [
 "homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
-]
-],
-"15F00E": [
-[
-"homologacion",
-"CAT TO-4"
-],
-[
-"homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
+"ZF TE-ML 07F"
 ]
 ],
 "15F01D": [
@@ -2951,6 +2977,10 @@
 [
 "homologacion",
 "ZF TE-ML 21A"
+],
+[
+"homologacion",
+"BMW (ejes traseros de deslizamiento no limitado) según instrucción de servicio 33 01 96 (149)"
 ]
 ],
 "15F09D": [
@@ -2991,77 +3021,15 @@
 "FIAT 9.55535-D2"
 ]
 ],
-"15F0AB": [
-[
-"api",
-"API GL-4/5"
-],
-[
-"api",
-"API MT-1"
-],
-[
-"homologacion",
-"SAE J2360"
-],
-[
-"homologacion",
-"MB 235.9"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
-],
-[
-"homologacion",
-"MAN 342 S1"
-],
-[
-"homologacion",
-"Scania STO 1:1 G"
-],
-[
-"homologacion",
-"Scania STO 2:0 A FS"
-],
-[
-"homologacion",
-"Volvo 97312"
-],
-[
-"homologacion",
-"ZF TE-ML 02B"
-],
-[
-"homologacion",
-"ZF TE-ML 05A"
-],
-[
-"homologacion",
-"ZF TE-ML 12L"
-],
-[
-"homologacion",
-"ZF TE-ML 12N"
-],
-[
-"homologacion",
-"ZF TE-ML 16F"
-],
-[
-"homologacion",
-"ZF TE-ML 17B"
-],
-[
-"homologacion",
-"ZF TE-ML 19C"
-],
-[
-"homologacion",
-"ZF TE-ML 21A (ZF002144)"
-]
-],
 "15F0B8": [
+[
+"jaso",
+"JASO 1A (03)"
+],
+[
+"homologacion",
+"MB 236.81"
+],
 [
 "homologacion",
 "MAN 339 V2"
@@ -3076,15 +3044,11 @@
 ],
 [
 "homologacion",
-"MB 236.81"
+"VOITH H55.6336.xx"
 ],
 [
 "homologacion",
-"Voith H55.6336.xx"
-],
-[
-"homologacion",
-"VW/Audi 501 60"
+"VW/AUDI 501 60"
 ],
 [
 "homologacion",
@@ -3126,10 +3090,6 @@
 ],
 [
 "homologacion",
-"ZF TE-ML 12C"
-],
-[
-"homologacion",
 "ZF TE-ML 16E"
 ],
 [
@@ -3140,7 +3100,7 @@
 "15F176": [
 [
 "homologacion",
-"Allison TES-389"
+"ALLISON TES 389"
 ],
 [
 "homologacion",
@@ -3160,11 +3120,11 @@
 ],
 [
 "homologacion",
-"Voith H55.6335.xx"
+"VOITH H55.6335.xx"
 ],
 [
 "homologacion",
-"Volvo 97341:071 (lubricante de transmisión)"
+"VOLVO 97341"
 ],
 [
 "homologacion",
@@ -3178,7 +3138,7 @@
 "15F177": [
 [
 "homologacion",
-"Allison TES-389"
+"ALLISON TES 389"
 ],
 [
 "homologacion",
@@ -3198,11 +3158,11 @@
 ],
 [
 "homologacion",
-"Voith H55.6335.xx"
+"VOITH H55.6335.xx"
 ],
 [
 "homologacion",
-"Volvo 97341:071 (lubricante de transmisión)"
+"VOLVO 97341"
 ],
 [
 "homologacion",
@@ -3671,6 +3631,40 @@
 "FIAT 9.55535-S3"
 ]
 ],
+"15F625": [
+[
+"acea",
+"ACEA C2/C3"
+],
+[
+"api",
+"API SQ"
+],
+[
+"homologacion",
+"BMW LL-04"
+],
+[
+"homologacion",
+"OPEL OV 040 1547-D30"
+],
+[
+"homologacion",
+"OPEL OV 040 1547-G30"
+],
+[
+"homologacion",
+"RENAULT RN0700"
+],
+[
+"homologacion",
+"RENAULT RN0710"
+],
+[
+"homologacion",
+"FIAT 9.55535-S3"
+]
+],
 "15F627": [
 [
 "acea",
@@ -3735,6 +3729,58 @@
 [
 "homologacion",
 "FIAT 9.55535-D2"
+]
+],
+"15F62C": [
+[
+"acea",
+"ACEA A3/B3"
+],
+[
+"acea",
+"ACEA A3/B4"
+],
+[
+"api",
+"API SN"
+],
+[
+"api",
+"API CF"
+],
+[
+"homologacion",
+"VW 501.01"
+],
+[
+"homologacion",
+"VW 505.00"
+]
+],
+"15F632": [
+[
+"acea",
+"ACEA A3/B3"
+],
+[
+"acea",
+"ACEA A3/B4"
+],
+[
+"api",
+"API SN"
+],
+[
+"api",
+"API CF"
+],
+[
+"homologacion",
+"VW 501.01"
+],
+[
+"homologacion",
+"VW 505.00"
 ]
 ],
 "15F63B": [
@@ -5154,15 +5200,15 @@
 "15F7D5": [
 [
 "acea",
-"ACEA A3/B4"
+"ACEA C3"
 ],
 [
 "api",
-"API SP"
+"API SN"
 ],
 [
-"homologacion",
-"VW 502.00"
+"api",
+"API CF"
 ],
 [
 "homologacion",
@@ -5170,15 +5216,31 @@
 ],
 [
 "homologacion",
-"MB 229.5"
+"VW 505.01"
 ],
 [
 "homologacion",
-"BMW LL-01"
+"MB 229.31"
+],
+[
+"homologacion",
+"MB 229.51"
+],
+[
+"homologacion",
+"MB 226.5"
 ],
 [
 "homologacion",
 "PORSCHE A40"
+],
+[
+"homologacion",
+"OPEL OV 040 1547-D40"
+],
+[
+"homologacion",
+"FORD WSS-M2C917-A"
 ],
 [
 "homologacion",
@@ -5187,6 +5249,10 @@
 [
 "homologacion",
 "RENAULT RN0710"
+],
+[
+"homologacion",
+"FIAT 9.55535-S2"
 ]
 ],
 "15F7D7": [
@@ -7109,40 +7175,6 @@
 "API SP"
 ]
 ],
-"160DAF": [
-[
-"acea",
-"ACEA C3"
-],
-[
-"api",
-"API SN"
-],
-[
-"api",
-"API CF"
-],
-[
-"homologacion",
-"MB 229.31"
-],
-[
-"homologacion",
-"MB 229.51"
-],
-[
-"homologacion",
-"OPEL OV 040 1547-D30"
-],
-[
-"homologacion",
-"RENAULT RN0700"
-],
-[
-"homologacion",
-"RENAULT RN0710"
-]
-],
 "160DFF": [
 [
 "acea",
@@ -7171,12 +7203,6 @@
 [
 "homologacion",
 "PORSCHE C30"
-]
-],
-"1612A0": [
-[
-"homologacion",
-"NLGI 2"
 ]
 ],
 "1612B1": [
@@ -7264,13 +7290,21 @@
 "1616A8": [
 [
 "api",
-"API GL-4/GL-5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ]
 ],
 "1616AA": [
 [
 "api",
-"API GL-4/GL-5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ]
 ],
 "1616DD": [
@@ -7282,15 +7316,15 @@
 "16170F": [
 [
 "api",
-"API GL-4/5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ],
 [
 "homologacion",
-"DTFR 12B100 (MB 235.0)"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
+"MAN 341 Z2"
 ],
 [
 "homologacion",
@@ -7298,57 +7332,61 @@
 ],
 [
 "homologacion",
-"Scania STO 1:0"
+"MB 235.0"
 ],
 [
 "homologacion",
-"Scania STO 1:1 G"
+"SCANIA STO 1:0"
 ],
 [
 "homologacion",
-"ZF -TE ML 02B"
+"SCANIA STO 1:1G"
 ],
 [
 "homologacion",
-"ZF -TE ML 05A"
+"ZF TE-ML 02B"
 ],
 [
 "homologacion",
-"ZF -TE ML 12L"
+"ZF TE-ML 05A"
 ],
 [
 "homologacion",
-"ZF -TE ML 12M"
+"ZF TE-ML 12L"
 ],
 [
 "homologacion",
-"ZF -TE ML 16C"
+"ZF TE-ML 12M"
 ],
 [
 "homologacion",
-"ZF -TE ML 17H"
+"ZF TE-ML 16C"
 ],
 [
 "homologacion",
-"ZF -TE ML 19B"
+"ZF TE-ML 17H"
 ],
 [
 "homologacion",
-"ZF -TE ML 21A (ZF002143)"
+"ZF TE-ML 19B"
+],
+[
+"homologacion",
+"ZF TE-ML 21A"
 ]
 ],
 "16171A": [
 [
 "api",
-"API GL-4/5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ],
 [
 "homologacion",
-"DTFR 12B100 (MB 235.0)"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
+"MAN 341 Z2"
 ],
 [
 "homologacion",
@@ -7356,49 +7394,57 @@
 ],
 [
 "homologacion",
-"Scania STO 1:0"
+"MB 235.0"
 ],
 [
 "homologacion",
-"Scania STO 1:1 G"
+"SCANIA STO 1:0"
 ],
 [
 "homologacion",
-"ZF -TE ML 02B"
+"SCANIA STO 1:1G"
 ],
 [
 "homologacion",
-"ZF -TE ML 05A"
+"ZF TE-ML 02B"
 ],
 [
 "homologacion",
-"ZF -TE ML 12L"
+"ZF TE-ML 05A"
 ],
 [
 "homologacion",
-"ZF -TE ML 12M"
+"ZF TE-ML 12L"
 ],
 [
 "homologacion",
-"ZF -TE ML 16C"
+"ZF TE-ML 12M"
 ],
 [
 "homologacion",
-"ZF -TE ML 17H"
+"ZF TE-ML 16C"
 ],
 [
 "homologacion",
-"ZF -TE ML 19B"
+"ZF TE-ML 17H"
 ],
 [
 "homologacion",
-"ZF -TE ML 21A (ZF002143)"
+"ZF TE-ML 19B"
+],
+[
+"homologacion",
+"ZF TE-ML 21A"
 ]
 ],
 "16183C": [
 [
 "api",
-"API GL-4/5"
+"API GL-4"
+],
+[
+"api",
+"API GL-5"
 ],
 [
 "api",
@@ -7410,11 +7456,7 @@
 ],
 [
 "homologacion",
-"MB 235.9"
-],
-[
-"homologacion",
-"MAN 341 GA1 / Z2"
+"MAN 341 Z2"
 ],
 [
 "homologacion",
@@ -7422,15 +7464,19 @@
 ],
 [
 "homologacion",
-"Scania STO 1:1 G"
+"MB 235.8"
 ],
 [
 "homologacion",
-"Scania STO 2:0 A FS"
+"SCANIA STO 1:1G"
 ],
 [
 "homologacion",
-"Volvo 97312"
+"SCANIA STO 2:0A FS"
+],
+[
+"homologacion",
+"VOLVO 97312"
 ],
 [
 "homologacion",
@@ -7462,7 +7508,7 @@
 ],
 [
 "homologacion",
-"ZF TE-ML 21A (ZF002144)"
+"ZF TE-ML 21A"
 ]
 ],
 "16188A": [
@@ -7601,61 +7647,29 @@
 "DETROIT DIESEL DFS 93K223"
 ]
 ],
-"16192E": [
-[
-"homologacion",
-"CAT TO-4"
-],
-[
-"homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
-]
-],
 "16192F": [
 [
 "homologacion",
-"CAT TO-4"
+"ZF TE-ML 03C"
 ],
 [
 "homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
+"ZF TE-ML 07F"
 ]
 ],
 "16194E": [
 [
 "homologacion",
-"CAT TO-4"
-],
-[
-"homologacion",
-"SAE 10W: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 03C"
-],
-[
-"homologacion",
-"SAE 30: ZF TE-ML 07F"
+"ZF TE-ML 03C"
 ]
 ],
 "1619A5": [
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C140"
+]
+],
+"1619A8": [
 [
 "homologacion",
 "DAIMLER TRUCK DTFR 15C140"
@@ -8463,6 +8477,354 @@
 "MB 228.1"
 ]
 ],
+"161D5D": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3477"
+],
+[
+"homologacion",
+"MAN 271-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161D5E": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3477"
+],
+[
+"homologacion",
+"MAN 271-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
 "161D5F": [
 [
 "acea",
@@ -8637,6 +8999,2222 @@
 "DETROIT DIESEL DFS 93K214"
 ]
 ],
+"161D6A": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3477"
+],
+[
+"homologacion",
+"MAN 271-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161DA1": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+],
+[
+"homologacion",
+"MB 235.28"
+]
+],
+"161DA2": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+],
+[
+"homologacion",
+"MB 235.28"
+]
+],
+"161DA3": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+],
+[
+"homologacion",
+"MB 235.28"
+]
+],
+"161DA5": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+]
+],
+"161DA6": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+]
+],
+"161DA7": [
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15B110"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10"
+],
+[
+"homologacion",
+"DEUTZ DQC I-02"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-D"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MAN 271"
+],
+[
+"homologacion",
+"MTU TYPE 2"
+],
+[
+"homologacion",
+"MTU TYPE 1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"MB 228.1"
+]
+],
+"161DCE": [
+[
+"api",
+"API SP"
+],
+[
+"homologacion",
+"FORD WSS-M2C931-E1"
+],
+[
+"homologacion",
+"FORD WSS-M2C931-C"
+]
+],
+"161E0E": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161E1A": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161E1B": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161E1C": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161E1E": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
+"161E1F": [
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E5"
+],
+[
+"acea",
+"ACEA E3"
+],
+[
+"acea",
+"ACEA E2"
+],
+[
+"api",
+"API CJ-4"
+],
+[
+"api",
+"API CI-4"
+],
+[
+"api",
+"API CH-4"
+],
+[
+"api",
+"API CF-4"
+],
+[
+"api",
+"API CG-4"
+],
+[
+"api",
+"API CE"
+],
+[
+"api",
+"API CD"
+],
+[
+"api",
+"API CC"
+],
+[
+"jaso",
+"JASO DH-1"
+],
+[
+"homologacion",
+"GLOBAL DHD-1"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-1a"
+],
+[
+"homologacion",
+"CUMMINS CES 20081"
+],
+[
+"homologacion",
+"CUMMINS CES 20078"
+],
+[
+"homologacion",
+"CUMMINS CES 20077"
+],
+[
+"homologacion",
+"CUMMINS CES 20076"
+],
+[
+"homologacion",
+"CUMMINS CES 20075"
+],
+[
+"homologacion",
+"CUMMINS CES 20072"
+],
+[
+"homologacion",
+"CUMMINS CES 20071"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DEUTZ DQC III-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC III-10 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-18 LA"
+],
+[
+"homologacion",
+"DEUTZ DQC II-10 LA"
+],
+[
+"homologacion",
+"FORD WSS-M2C171-E"
+],
+[
+"homologacion",
+"MACK EO-N PREMIUM PLUS"
+],
+[
+"homologacion",
+"MACK EO-N"
+],
+[
+"homologacion",
+"MACK EO-M PLUS"
+],
+[
+"homologacion",
+"MACK EO-L"
+],
+[
+"homologacion",
+"MACK EO-K"
+],
+[
+"homologacion",
+"MAN 3275-1"
+],
+[
+"homologacion",
+"MTU TYPE 2.1"
+],
+[
+"homologacion",
+"RENAULT RLD-2"
+],
+[
+"homologacion",
+"VOLVO VDS-3"
+],
+[
+"homologacion",
+"VOLVO VDS-2"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K218"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K215"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K214"
+]
+],
 "161E7F": [
 [
 "acea",
@@ -8685,6 +11263,40 @@
 [
 "homologacion",
 "VW 511.00"
+]
+],
+"16203F": [
+[
+"acea",
+"ACEA C3"
+],
+[
+"homologacion",
+"VW 504.00"
+],
+[
+"homologacion",
+"VW 507.00"
+],
+[
+"homologacion",
+"MB 229.51"
+],
+[
+"homologacion",
+"BMW LL-04"
+],
+[
+"homologacion",
+"PORSCHE C30"
+],
+[
+"homologacion",
+"RENAULT RN0700"
+],
+[
+"homologacion",
+"RENAULT RN0710"
 ]
 ],
 "1620A8": [
@@ -9103,62 +11715,92 @@
 "DETROIT DIESEL DFS 93K222"
 ]
 ],
-"1620CB": [
+"16219A": [
 [
 "acea",
-"ACEA E4"
-],
-[
-"acea",
-"ACEA E7"
+"ACEA C2"
 ],
 [
 "api",
-"API CI-4"
+"API SP"
 ],
 [
-"jaso",
-"JASO DH-1"
-],
-[
-"homologacion",
-"CUMMINS CES 20077"
+"ilsac",
+"ILSAC GF-6"
 ],
 [
 "homologacion",
-"CUMMINS CES 20078"
+"FORD WSS-M2C957-A1"
 ],
 [
 "homologacion",
-"DEUTZ DQC III-18"
+"FORD WSS-M2C950-A"
+]
+],
+"16219B": [
+[
+"acea",
+"ACEA C2"
+],
+[
+"api",
+"API SP"
+],
+[
+"ilsac",
+"ILSAC GF-6"
 ],
 [
 "homologacion",
-"DAIMLER TRUCK DTFR 15B120"
+"FORD WSS-M2C957-A1"
 ],
 [
 "homologacion",
-"MB 228.5"
+"FORD WSS-M2C950-A"
+]
+],
+"16219C": [
+[
+"acea",
+"ACEA C2"
+],
+[
+"api",
+"API SP"
+],
+[
+"ilsac",
+"ILSAC GF-6"
 ],
 [
 "homologacion",
-"MACK EO-N"
+"FORD WSS-M2C957-A1"
 ],
 [
 "homologacion",
-"MAN 3277"
+"FORD WSS-M2C950-A"
+]
+],
+"16219D": [
+[
+"acea",
+"ACEA C2"
+],
+[
+"api",
+"API SP"
+],
+[
+"ilsac",
+"ILSAC GF-6"
 ],
 [
 "homologacion",
-"MTU TYPE 3"
+"FORD WSS-M2C957-A1"
 ],
 [
 "homologacion",
-"RENAULT RLD-2"
-],
-[
-"homologacion",
-"VOLVO VDS-3"
+"FORD WSS-M2C950-A"
 ]
 ],
 "16229C": [
@@ -9220,6 +11862,122 @@
 ]
 ],
 "16229D": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"16229E": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"16229F": [
 [
 "acea",
 "ACEA E6"
@@ -9449,6 +12207,652 @@
 [
 "homologacion",
 "DETROIT DIESEL DFS 93K215"
+]
+],
+"1628C0": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628C2": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628C3": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628C7": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628C8": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628C9": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1628CA": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"1629A7": [
+[
+"acea",
+"ACEA E6"
+],
+[
+"acea",
+"ACEA E7"
+],
+[
+"acea",
+"ACEA E8"
+],
+[
+"acea",
+"ACEA E9"
+],
+[
+"acea",
+"ACEA E11"
+],
+[
+"api",
+"API CK-4"
+],
+[
+"jaso",
+"JASO DH-2"
+],
+[
+"homologacion",
+"CATERPILLAR ECF-3"
+],
+[
+"homologacion",
+"CUMMINS CES 20086"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C100"
+],
+[
+"homologacion",
+"DAIMLER TRUCK DTFR 15C110"
+],
+[
+"homologacion",
+"DEUTZ DQC IV-18 LA"
+],
+[
+"homologacion",
+"MACK EOS-4.5"
+],
+[
+"homologacion",
+"MAN 3277"
+],
+[
+"homologacion",
+"MTU TYPE 3.1"
+],
+[
+"homologacion",
+"RENAULT RLD-3"
+],
+[
+"homologacion",
+"VOLVO CNG"
+],
+[
+"homologacion",
+"VOLVO VDS-4.5"
+],
+[
+"homologacion",
+"DETROIT DIESEL DFS 93K222"
+]
+],
+"162A59": [
+[
+"acea",
+"ACEA C2"
+],
+[
+"api",
+"API SP"
+],
+[
+"ilsac",
+"ILSAC GF-6"
+],
+[
+"homologacion",
+"FORD WSS-M2C957-A1"
+],
+[
+"homologacion",
+"FORD WSS-M2C950-A"
 ]
 ]
 }

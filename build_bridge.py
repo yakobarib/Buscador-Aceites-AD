@@ -222,6 +222,48 @@ def codigo_y_sufijo(ref):
     return None, None
 
 
+def castrol_nuevos(skus_existentes):
+    """Familias Castrol de la tarifa que el buscador no tiene en EQUIV_CATALOG: una entrada por familia (ref de menor formato).
+    Las normas son las de los catalogos de Castrol que el buscador YA conoce (sin crear normas nuevas)."""
+    rp, rn = RAIZ / "castrol_productos_wiki.json", RAIZ / "castrol_normas_wiki.json"
+    if not rp.exists():
+        return [], []
+    prods = json.loads(rp.read_text(encoding="utf-8"))
+    wiki = json.loads(rn.read_text(encoding="utf-8")) if rn.exists() else {}
+    quita_pack = re.compile(r"\s+(?:\d+X)?\d+(?:[.,]\d+)?\s*(?:L|KG|K|GR|G|ML)\b.*$", re.I)
+    fam = {}
+    for ref, d in prods.items():
+        nombre = quita_pack.sub("", d["desc"].replace("\xa0", " ").strip())
+        fam.setdefault(nombre, []).append((ref, d))
+    lits = sorted({l for refs in fam.values() for ref, _ in refs for t, l in wiki.get(ref, []) if t in ("acea", "api", "ilsac", "jaso", "homologacion")})
+    res = resolver_en_app(lits) if lits else {}
+    nuevos, informe = [], []
+    for nombre, refs in sorted(fam.items()):
+        if any(ref in skus_existentes for ref, _ in refs):
+            continue
+        def litros(x):
+            try:
+                return float(x[1]["litros"])
+            except (TypeError, ValueError):
+                return 1e9
+        # formato "de mostrador": el menor que no sea una caja de varias unidades
+        ref, d = sorted(refs, key=litros)[0]
+        specs = set()
+        for r, _ in refs:
+            for t, l in wiki.get(r, []):
+                x = res.get(l)
+                if x and x["canonical"] and x["match"] in ("exact", "alias", "category"):
+                    specs.add(x["canonical"])
+        visc = (d.get("visc") or "").replace("-", "").upper()
+        if not specs and not visc:
+            continue  # sin norma conocida ni viscosidad (liquido de frenos, grasa...): no aporta a las busquedas por norma
+        nuevos.append({"brand": "Castrol", "ref": nombre, "sku": ref, "viscosity": visc, "specs": sorted(specs),
+                       "altSkus": sorted(r for r, _ in refs if r != ref)})
+    informe.append(f"Castrol: {len(nuevos)} familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); "
+                   f"{sum(1 for x in nuevos if not x['specs'])} sin normas conocidas (solo viscosidad)")
+    return nuevos, informe
+
+
 def puente_castrol():
     """Normas de los catalogos de Castrol para los productos Castrol que el buscador ya tiene (EQUIV_CATALOG).
     Solo se incorporan normas que el buscador YA conoce (sin crear normas nuevas ni alias): conservador a proposito."""
@@ -342,6 +384,11 @@ def main():
     informe += informe_n
     normas["specs_castrol"], informe_c = puente_castrol()
     informe += informe_c
+    js_sk = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('" + HTML_LIMPIO.as_posix() + "');"
+             "process.stdout.write(JSON.stringify(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').flatMap(p=>[p.sku].concat(p.altSkus||[]))\")))")
+    existentes = set(json.loads(subprocess.run(["node", "-e", js_sk], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout))
+    normas["castrol_nuevos"], informe_cn = castrol_nuevos(existentes)
+    informe += informe_cn
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
     normas["retoques"] = {k: v["description"] for k, v in json.loads((RAIZ / "retoques_descripciones.json").read_text(encoding="utf-8"))["retoques"].items()}
     (RAIZ / "bridge_normas.json").write_text(json.dumps(normas, ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
@@ -383,6 +430,8 @@ def main():
   AD_PARTS_CATALOG.forEach(p => (AD_NORMAS_PUENTE.specs[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);
   }));
+  // familias Castrol de la tarifa de septiembre 2026 que el buscador no tenia (una entrada por familia)
+  (AD_NORMAS_PUENTE.castrol_nuevos || []).forEach(e => { if (!EQUIV_CATALOG.some(x => x.sku === e.sku)) EQUIV_CATALOG.push(e); });
   // normas de los catalogos de Castrol para los productos Castrol que el buscador ya tenia (solo normas ya conocidas)
   EQUIV_CATALOG.forEach(p => { if (p.brand === 'Castrol') ((AD_NORMAS_PUENTE.specs_castrol || {})[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);

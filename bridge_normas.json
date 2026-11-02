@@ -107,6 +107,1347 @@
 "VOLVOVDS4VDS45": "Volvo VDS-4/VDS-4.5",
 "ZF": "ZF"
 },
+"castrol_nuevos": [
+{
+"altSkus": [
+"15EEF3"
+],
+"brand": "Castrol",
+"ref": "CLS Grease",
+"sku": "15EEF2",
+"specs": [
+"MB 264.0"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15F9BB",
+"15F9BC",
+"15FEFC",
+"160DFF"
+],
+"brand": "Castrol",
+"ref": "EDGE 0W-30 LL",
+"sku": "15FEFB",
+"specs": [
+"ACEA C3",
+"BMW LL-04",
+"MB 229.31",
+"MB 229.51",
+"PORSCHE C30",
+"VW 504.00",
+"VW 507.00"
+],
+"viscosity": "0W30"
+},
+{
+"altSkus": [
+"161E7F",
+"161E8A",
+"161E8C",
+"161E8D"
+],
+"brand": "Castrol",
+"ref": "EDGE 0W-40 LL",
+"sku": "161E8B",
+"specs": [
+"ACEA C3",
+"VW 511 00"
+],
+"viscosity": "0W40"
+},
+{
+"altSkus": [
+"162AA5"
+],
+"brand": "Castrol",
+"ref": "EDGE 0W-40 MP",
+"sku": "162AA4",
+"specs": [],
+"viscosity": "0W40"
+},
+{
+"altSkus": [
+"15F73A"
+],
+"brand": "Castrol",
+"ref": "EDGE 0W-40 R",
+"sku": "15F739",
+"specs": [
+"RENAULT RN 17RSA"
+],
+"viscosity": "0W40"
+},
+{
+"altSkus": [
+"15531A",
+"15F7EC",
+"15F7ED"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-30 C3",
+"sku": "15F7EF",
+"specs": [
+"ACEA C3",
+"API CF",
+"API SN",
+"MB 229.31",
+"MB 229.51",
+"OPEL OV 040 1547-D30",
+"RENAULT RN0700",
+"RENAULT RN0710"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15B676",
+"15C44E",
+"15F6DB",
+"15F6DC"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-30 M",
+"sku": "15F6DA",
+"specs": [
+"ACEA C3",
+"API SQ",
+"BMW LL-04",
+"MB 229.51",
+"MB 229.52"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"1535FC",
+"15F7D7"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-40",
+"sku": "15F7D5",
+"specs": [
+"ACEA C3",
+"API CF",
+"API SN",
+"FIAT 9.55535-S2",
+"FORD WSS-M2C917-A",
+"MB 226.5",
+"MB 229.31",
+"MB 229.51",
+"OPEL OV 040 1547-D40",
+"PORSCHE A40",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 505.00",
+"VW 505.01"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"1535AB"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-40 A3/B4",
+"sku": "15F718",
+"specs": [
+"ACEA A3/B4",
+"API SP",
+"BMW LL-01",
+"MB 229.5",
+"PORSCHE A40",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 502.00",
+"VW 505.00"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"15D3AC",
+"15D3AD",
+"15F710"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-40 M",
+"sku": "15F70F",
+"specs": [
+"ACEA C3",
+"API SN",
+"BMW LL-04",
+"FIAT 9.55535-S2",
+"PORSCHE C40",
+"VW 511 00"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"161DCE"
+],
+"brand": "Castrol",
+"ref": "EDGE 5W-50 S",
+"sku": "16061C",
+"specs": [
+"API SP"
+],
+"viscosity": "5W50"
+},
+{
+"altSkus": [
+"1537EB"
+],
+"brand": "Castrol",
+"ref": "EDGE Prof C1 5W-30",
+"sku": "1537EC",
+"specs": [],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15CA9A",
+"15CA9B"
+],
+"brand": "Castrol",
+"ref": "EDGE Professional E 0W-30",
+"sku": "15CA9D",
+"specs": [],
+"viscosity": "0W30"
+},
+{
+"altSkus": [
+"1535B0",
+"15F819",
+"15F81B"
+],
+"brand": "Castrol",
+"ref": "EDGE Turbo Diesel 5W-40",
+"sku": "15F816",
+"specs": [
+"ACEA C3",
+"API CF",
+"API SN",
+"FIAT 9.55535-S2",
+"FORD WSS-M2C917-A",
+"MB 226.5",
+"MB 229.31",
+"MB 229.51",
+"OPEL OV 040 1547-D40",
+"PORSCHE A40",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 505.00",
+"VW 505.01"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"160A26"
+],
+"brand": "Castrol",
+"ref": "GTX 0W-16 AN2022",
+"sku": "160A25",
+"specs": [
+"API SP"
+],
+"viscosity": "0W16"
+},
+{
+"altSkus": [
+"160A0F",
+"160A10",
+"160A11"
+],
+"brand": "Castrol",
+"ref": "GTX 0W-20 RN17 FE",
+"sku": "160A0E",
+"specs": [
+"ACEA C5",
+"PSA B71 2290",
+"RENAULT RN17 FE"
+],
+"viscosity": "0W20"
+},
+{
+"altSkus": [
+"15BE04"
+],
+"brand": "Castrol",
+"ref": "GTX 5W-30 A5/B5",
+"sku": "15BE05",
+"specs": [
+"ACEA A5/B5",
+"API SP",
+"FORD WSS-M2C913-A",
+"FORD WSS-M2C913-B",
+"FORD WSS-M2C913-C",
+"FORD WSS-M2C913-D"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15BDF9",
+"15F67F"
+],
+"brand": "Castrol",
+"ref": "GTX 5W-30 C2",
+"sku": "15BDFA",
+"specs": [
+"ACEA C2"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15F499",
+"16203F"
+],
+"brand": "Castrol",
+"ref": "GTX 5W-30 C3",
+"sku": "15DAFE",
+"specs": [
+"ACEA C3",
+"BMW LL-04",
+"MB 229.51",
+"PORSCHE C30",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 504.00",
+"VW 507.00"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15A552"
+],
+"brand": "Castrol",
+"ref": "GTX 5W-40 A3/B4",
+"sku": "15F686",
+"specs": [
+"ACEA A3/B4",
+"API SP",
+"BMW LL-01",
+"MB 226.5",
+"MB 229.3",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 502.00",
+"VW 505.00"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"15DED6"
+],
+"brand": "Castrol",
+"ref": "GTX 5W-40 MV",
+"sku": "15DED5",
+"specs": [
+"ACEA C3",
+"API CF",
+"API SN",
+"FIAT 9.55535-S2",
+"MB 226.5",
+"MB 229.31",
+"MB 229.51",
+"OPEL OV 040 1547-D40",
+"RENAULT RN0700",
+"RENAULT RN0710"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [],
+"brand": "Castrol",
+"ref": "Magnatec 0W-20 D",
+"sku": "15F5E4",
+"specs": [
+"FORD WSS-M2C952-A1"
+],
+"viscosity": "0W20"
+},
+{
+"altSkus": [
+"15FD0E"
+],
+"brand": "Castrol",
+"ref": "Magnatec 0W-20 E",
+"sku": "15FD09",
+"specs": [],
+"viscosity": "0W20"
+},
+{
+"altSkus": [
+"1609DD",
+"1609DE",
+"1609EA"
+],
+"brand": "Castrol",
+"ref": "Magnatec 0W-20 GSX/DSX",
+"sku": "1609DF",
+"specs": [
+"ACEA C5",
+"ACEA C6"
+],
+"viscosity": "0W20"
+},
+{
+"altSkus": [
+"16219B",
+"16219C",
+"16219D",
+"162A59"
+],
+"brand": "Castrol",
+"ref": "Magnatec 0W-30",
+"sku": "16219A",
+"specs": [
+"ACEA C2",
+"API SP",
+"FORD WSS-M2C950-A",
+"FORD WSS-M2C957-A1"
+],
+"viscosity": "0W30"
+},
+{
+"altSkus": [
+"15F9CE"
+],
+"brand": "Castrol",
+"ref": "Magnatec 5W-20 E",
+"sku": "15F9C9",
+"specs": [
+"ACEA C5",
+"API SN",
+"FORD WSS-M2C948-B"
+],
+"viscosity": "5W20"
+},
+{
+"altSkus": [
+"15F67E",
+"15F8BA"
+],
+"brand": "Castrol",
+"ref": "Magnatec 5W-30 A3/B4",
+"sku": "15F67D",
+"specs": [
+"ACEA A3/B4",
+"API SL",
+"MB 226.5",
+"MB 229.5",
+"RENAULT RN0700",
+"RENAULT RN0710",
+"VW 502.00",
+"VW 505.00"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15F6E1",
+"15FF4D"
+],
+"brand": "Castrol",
+"ref": "Magnatec 5W-30 DX",
+"sku": "15FFE7",
+"specs": [
+"API SQ",
+"FORD WSS-M2C946-A",
+"FORD WSS-M2C961-A1",
+"GM DEXOS1 GEN3",
+"ILSAC GF-7",
+"OPEL OV 040 1547-G30"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15F90F",
+"15F911",
+"15F913",
+"15F915"
+],
+"brand": "Castrol",
+"ref": "Magnatec 5W-40 DPF",
+"sku": "15F90C",
+"specs": [
+"ACEA C3",
+"API CF",
+"API SN",
+"FIAT 9.55535-S2",
+"FORD WSS-M2C917-A",
+"OPEL OV 040 1547-D40",
+"VW 505.00",
+"VW 505.01"
+],
+"viscosity": "5W40"
+},
+{
+"altSkus": [
+"15F6FA"
+],
+"brand": "Castrol",
+"ref": "Magnatec Hybrid 0W-16",
+"sku": "15F6F9",
+"specs": [
+"API SP",
+"ILSAC GF-6B"
+],
+"viscosity": "0W16"
+},
+{
+"altSkus": [
+"15F2C0",
+"15F701"
+],
+"brand": "Castrol",
+"ref": "Magnatec Hybrid 5W-30",
+"sku": "15F700",
+"specs": [
+"API SP"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"15FE6C"
+],
+"brand": "Castrol",
+"ref": "Radicool NF",
+"sku": "161AA5",
+"specs": [
+"G11"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15FDCF"
+],
+"brand": "Castrol",
+"ref": "Radicool NF Premix",
+"sku": "15FDD0",
+"specs": [
+"G11"
+],
+"viscosity": ""
+},
+{
+"altSkus": [],
+"brand": "Castrol",
+"ref": "Radicool SF",
+"sku": "15FE40",
+"specs": [
+"G12+"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15FE9E",
+"161A3E"
+],
+"brand": "Castrol",
+"ref": "Radicool SF Premix",
+"sku": "15FEA0",
+"specs": [
+"G12+"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15D6C7",
+"15D6C8"
+],
+"brand": "Castrol",
+"ref": "Transmax ATF Z",
+"sku": "15F0B8",
+"specs": [
+"MAN 339 V-2",
+"MB 236.11",
+"MB 236.81",
+"VW/AUDI 501 60",
+"ZF TE-ML 04D",
+"ZF TE-ML 14C",
+"ZF TE-ML 16M",
+"ZF TE-ML 20C"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15BD87"
+],
+"brand": "Castrol",
+"ref": "Transmax Agri MP P 10W-40",
+"sku": "15BD85",
+"specs": [
+"ACEA E2",
+"API GL-4",
+"API SF",
+"MASSEY FERGUSON M1145",
+"ZF TE-ML 06B",
+"ZF TE-ML 07B"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"15EED7"
+],
+"brand": "Castrol",
+"ref": "Transmax Agri TransAS 80W",
+"sku": "15C163",
+"specs": [
+"API GL-4"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15EEDC"
+],
+"brand": "Castrol",
+"ref": "Transmax Axle EPX 85W-140",
+"sku": "15F01D",
+"specs": [
+"API GL-5",
+"ZF TE-ML 05A",
+"ZF TE-ML 12E",
+"ZF TE-ML 16D",
+"ZF TE-ML 21A"
+],
+"viscosity": "85W140"
+},
+{
+"altSkus": [
+"15D6DA",
+"15D87A"
+],
+"brand": "Castrol",
+"ref": "Transmax Axle EPX 85W-90",
+"sku": "15DE6A",
+"specs": [
+"API GL-5",
+"MB 235.0",
+"ZF TE-ML 16C",
+"ZF TE-ML 17B",
+"ZF TE-ML 19B",
+"ZF TE-ML 21A"
+],
+"viscosity": "85W90"
+},
+{
+"altSkus": [],
+"brand": "Castrol",
+"ref": "Transmax Axle LD 80W-90",
+"sku": "15DDDA",
+"specs": [
+"API GL-5",
+"MB 235.20",
+"SCANIA STO 1:0",
+"ZF TE-ML 05A",
+"ZF TE-ML 12L",
+"ZF TE-ML 12M",
+"ZF TE-ML 16B",
+"ZF TE-ML 17B",
+"ZF TE-ML 19B",
+"ZF TE-ML 21A"
+],
+"viscosity": "80W90"
+},
+{
+"altSkus": [
+"15D968",
+"15DB83"
+],
+"brand": "Castrol",
+"ref": "Transmax Axle LL 75W-140",
+"sku": "15D7A1",
+"specs": [
+"API GL-5"
+],
+"viscosity": "75W140"
+},
+{
+"altSkus": [
+"15D8CE",
+"15DB78"
+],
+"brand": "Castrol",
+"ref": "Transmax Axle LL 75W-90",
+"sku": "15F087",
+"specs": [
+"API GL-5",
+"ZF TE-ML 05A",
+"ZF TE-ML 12B",
+"ZF TE-ML 17B",
+"ZF TE-ML 19C",
+"ZF TE-ML 21A"
+],
+"viscosity": "75W90"
+},
+{
+"altSkus": [
+"15D98C",
+"15D98E"
+],
+"brand": "Castrol",
+"ref": "Transmax LS LL 75W-140",
+"sku": "15F1E7",
+"specs": [],
+"viscosity": "75W140"
+},
+{
+"altSkus": [
+"15D983",
+"15DB82"
+],
+"brand": "Castrol",
+"ref": "Transmax LS Z 85W-90",
+"sku": "15F109",
+"specs": [
+"API GL-5",
+"ZF TE-ML 16E"
+],
+"viscosity": "85W90"
+},
+{
+"altSkus": [
+"15D6FA"
+],
+"brand": "Castrol",
+"ref": "Transmax Man Trans 75W-90",
+"sku": "15F137",
+"specs": [],
+"viscosity": "75W90"
+},
+{
+"altSkus": [
+"15D8DF"
+],
+"brand": "Castrol",
+"ref": "Transmax Man Z LL 75W-80",
+"sku": "15D70A",
+"specs": [
+"API GL-4",
+"MB 235.41",
+"ZF TE-ML 01E",
+"ZF TE-ML 02E"
+],
+"viscosity": "75W80"
+},
+{
+"altSkus": [
+"15D733"
+],
+"brand": "Castrol",
+"ref": "Transmax Manual AT 75W-90",
+"sku": "16096A",
+"specs": [
+"API GL-4"
+],
+"viscosity": "75W90"
+},
+{
+"altSkus": [
+"15EEDB"
+],
+"brand": "Castrol",
+"ref": "Transmax Manual EP 80W",
+"sku": "15DDE7",
+"specs": [
+"API GL-4",
+"MB 235.1",
+"ZF TE-ML 17A"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15D7DD"
+],
+"brand": "Castrol",
+"ref": "Transmax Manual EP 80W-90",
+"sku": "15D7DB",
+"specs": [
+"API GL-4",
+"ZF TE-ML 02B",
+"ZF TE-ML 17A"
+],
+"viscosity": "80W90"
+},
+{
+"altSkus": [
+"15D8AE"
+],
+"brand": "Castrol",
+"ref": "Transmax Manual LL 75W-85",
+"sku": "15D8AB",
+"specs": [
+"API GL-4"
+],
+"viscosity": "75W85"
+},
+{
+"altSkus": [
+"15D7F3",
+"15D96F"
+],
+"brand": "Castrol",
+"ref": "Transmax Manual V 75W-80",
+"sku": "15F22A",
+"specs": [],
+"viscosity": "75W80"
+},
+{
+"altSkus": [
+"16194E"
+],
+"brand": "Castrol",
+"ref": "Transmax Offroad 10W",
+"sku": "15EAD8",
+"specs": [
+"ZF TE-ML 03C"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15F00D",
+"16192F"
+],
+"brand": "Castrol",
+"ref": "Transmax Offroad 30",
+"sku": "15EAD7",
+"specs": [
+"ZF TE-ML 03C"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"16171A"
+],
+"brand": "Castrol",
+"ref": "Transmax Univ LL 80W-90",
+"sku": "16170F",
+"specs": [
+"API GL-4",
+"API GL-5",
+"MB 235.0",
+"SCANIA STO 1:0",
+"SCANIA STO 1:1 G",
+"ZF TE-ML 02B",
+"ZF TE-ML 05A",
+"ZF TE-ML 12L",
+"ZF TE-ML 12M",
+"ZF TE-ML 16C",
+"ZF TE-ML 17H",
+"ZF TE-ML 19B",
+"ZF TE-ML 21A"
+],
+"viscosity": "80W90"
+},
+{
+"altSkus": [
+"15DD10",
+"15DD11"
+],
+"brand": "Castrol",
+"ref": "Transmax Univer LL 75W-90",
+"sku": "16183C",
+"specs": [
+"API GL-4",
+"API GL-5",
+"API MT-1",
+"MB 235.8",
+"SCANIA STO 1:1 G",
+"SCANIA STO 2:0 AFS",
+"VOLVO 97312",
+"ZF TE-ML 02B",
+"ZF TE-ML 05A",
+"ZF TE-ML 12L",
+"ZF TE-ML 12N",
+"ZF TE-ML 16F",
+"ZF TE-ML 17B",
+"ZF TE-ML 19C",
+"ZF TE-ML 21A"
+],
+"viscosity": "75W90"
+},
+{
+"altSkus": [
+"15D8B5",
+"1616A8"
+],
+"brand": "Castrol",
+"ref": "Transmax Universal 75W-90",
+"sku": "1616AA",
+"specs": [
+"API GL-4",
+"API GL-5"
+],
+"viscosity": "75W90"
+},
+{
+"altSkus": [
+"161DA5",
+"161DA7"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 10W-30 CV1",
+"sku": "161DA6",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E7",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"DEUTZ DQC I-02",
+"DEUTZ DQC II-10",
+"DEUTZ DQC II-18",
+"DEUTZ DQC III-10",
+"DEUTZ DQC III-18",
+"FORD WSS-M2C171-D",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3275-1",
+"MB 228.1",
+"MTU Type 1",
+"MTU Type 2",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "10W30"
+},
+{
+"altSkus": [
+"161E0E",
+"161E1A"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 10W-30 CV2",
+"sku": "161E1B",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E9",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"API CJ-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"CUMMINS CES 20081",
+"DEUTZ DQC II-10 LA",
+"DEUTZ DQC II-18 LA",
+"DEUTZ DQC III-10 LA",
+"FORD WSS-M2C171-E",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3275-1",
+"MTU Type 2.1",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "10W30"
+},
+{
+"altSkus": [
+"161DA1",
+"161DA3"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 10W-40 CV1",
+"sku": "161DA2",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E7",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"DEUTZ DQC I-02",
+"DEUTZ DQC II-10",
+"DEUTZ DQC II-18",
+"DEUTZ DQC III-10",
+"DEUTZ DQC III-18",
+"FORD WSS-M2C171-D",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3275-1",
+"MB 228.1",
+"MB 235.28",
+"MTU Type 1",
+"MTU Type 2",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"161D5D",
+"161D5F",
+"161D6A"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 10W-40 CV2",
+"sku": "161D5E",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E9",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"API CJ-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"CUMMINS CES 20081",
+"DEUTZ DQC II-10 LA",
+"DEUTZ DQC II-18 LA",
+"DEUTZ DQC III-10 LA",
+"FORD WSS-M2C171-E",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MTU Type 2.1",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"161D4A",
+"161D4C",
+"161D4E"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 15W-40 CV1",
+"sku": "161D4D",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E7",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"DEUTZ DQC I-02",
+"DEUTZ DQC II-10",
+"DEUTZ DQC II-18",
+"DEUTZ DQC III-10",
+"DEUTZ DQC III-18",
+"FORD WSS-M2C171-D",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3275-1",
+"MB 228.1",
+"MTU Type 1",
+"MTU Type 2",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "15W40"
+},
+{
+"altSkus": [
+"161E1C",
+"161E1E"
+],
+"brand": "Castrol",
+"ref": "VECTON Multi 15W-40 CV2",
+"sku": "161E1F",
+"specs": [
+"ACEA E2",
+"ACEA E5",
+"ACEA E9",
+"API CC",
+"API CG-4",
+"API CH-4",
+"API CI-4",
+"API CJ-4",
+"CATERPILLAR ECF-1a",
+"CATERPILLAR ECF-2",
+"CUMMINS CES 20072",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"CUMMINS CES 20081",
+"DEUTZ DQC II-10 LA",
+"DEUTZ DQC II-18 LA",
+"DEUTZ DQC III-10 LA",
+"FORD WSS-M2C171-E",
+"JASO DH-1",
+"MACK EO-M Plus",
+"MACK EO-N",
+"MAN 3275-1",
+"MTU Type 2.1",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "15W40"
+},
+{
+"altSkus": [
+"16235B",
+"16235D"
+],
+"brand": "Castrol",
+"ref": "VECTON Plus 10W-40 E4/E7",
+"sku": "16235C",
+"specs": [
+"ACEA E4",
+"ACEA E7",
+"API CI-4",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"DEUTZ DQC III-18",
+"JASO DH-1",
+"MACK EO-N",
+"MTU Type 3",
+"RENAULT RLD-2",
+"VOLVO VDS-3"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"1620A8",
+"1620AA",
+"1620AC"
+],
+"brand": "Castrol",
+"ref": "VECTON Plus 10W-40 E7",
+"sku": "1620AB",
+"specs": [
+"ACEA E4",
+"ACEA E7",
+"DEUTZ DQC III-18",
+"MACK EO-N",
+"MTU Type 3",
+"RENAULT RLD-2",
+"SCANIA LDF-3",
+"VOLVO VDS-3"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"1620B1",
+"1620B3",
+"1620B4"
+],
+"brand": "Castrol",
+"ref": "VECTON Plus 15W40 CK4/E11",
+"sku": "1620B2",
+"specs": [
+"ACEA E11",
+"ACEA E9",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"JASO DH-2",
+"MACK EOS-4.5",
+"MTU Type 2.1",
+"RENAULT RLD-3",
+"VOLVO VDS-4.5"
+],
+"viscosity": "15W40"
+},
+{
+"altSkus": [
+"15D0AB"
+],
+"brand": "Castrol",
+"ref": "Vecton L Drn 5W30 FA-4/F8",
+"sku": "15D0AA",
+"specs": [],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"1628C7",
+"1628C9",
+"1628CA"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 10W-30 E8/E11",
+"sku": "1628C8",
+"specs": [
+"ACEA E11",
+"ACEA E6",
+"ACEA E7",
+"ACEA E9",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC IV-18 LA",
+"JASO DH-2",
+"MACK EOS-4.5",
+"MTU Type 3.1",
+"RENAULT RLD-3",
+"VOLVO CNG",
+"VOLVO VDS-4.5"
+],
+"viscosity": "10W30"
+},
+{
+"altSkus": [
+"1628C0",
+"1628C2",
+"1629A7"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 10W-40 E8/E11",
+"sku": "1628C3",
+"specs": [
+"ACEA E11",
+"ACEA E6",
+"ACEA E7",
+"ACEA E9",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC IV-18 LA",
+"JASO DH-2",
+"MACK EOS-4.5",
+"MTU Type 3.1",
+"RENAULT RLD-3",
+"VOLVO CNG",
+"VOLVO VDS-4.5"
+],
+"viscosity": "10W40"
+},
+{
+"altSkus": [
+"161A46",
+"161A47"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 5W-20 SLD5",
+"sku": "161A44",
+"specs": [
+"SCANIA LDF-5"
+],
+"viscosity": "5W20"
+},
+{
+"altSkus": [
+"16051B",
+"16051C",
+"1605DD"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 5W-30 E6/E9",
+"sku": "16051D",
+"specs": [],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"16229C",
+"16229E",
+"16229F"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 5W-30 E8/E11",
+"sku": "16229D",
+"specs": [
+"ACEA E11",
+"ACEA E6",
+"ACEA E7",
+"ACEA E9",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC IV-18 LA",
+"JASO DH-2",
+"MACK EOS-4.5"
+],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"16188D",
+"16188E",
+"16188F"
+],
+"brand": "Castrol",
+"ref": "Vecton LD 5W-30 FA-4/F01",
+"sku": "16188A",
+"specs": [],
+"viscosity": "5W30"
+},
+{
+"altSkus": [
+"1619A5",
+"1619A8"
+],
+"brand": "Castrol",
+"ref": "Vecton Long Drain 0W-20",
+"sku": "1619A9",
+"specs": [],
+"viscosity": "0W20"
+},
+{
+"altSkus": [
+"1605C8"
+],
+"brand": "Castrol",
+"ref": "Vecton LongDrain 5W30 E7",
+"sku": "1605CA",
+"specs": [],
+"viscosity": "5W30"
+}
+],
 "nuevas": {
 "ACEA A1": {
 "description": "Aceite motor de baja viscosidad y bajo rozamiento para ahorro de combustible, en motores de gasolina y diésel ligero",
@@ -1188,6 +2529,12 @@
 "15BB34": [
 "API CF"
 ],
+"15BF79": [
+"MASSEY FERGUSON M1145"
+],
+"15BF7F": [
+"API SF"
+],
 "15D671": [
 "ALLISON TES 389",
 "MAN 339 L-1",
@@ -1195,6 +2542,7 @@
 "MAN 339 Z-1",
 "MB 236.9",
 "VOITH H55.6335.XX",
+"VOLVO 97341",
 "ZF TE-ML 04D",
 "ZF TE-ML 14A"
 ],
@@ -1231,6 +2579,14 @@
 "15F629": [
 "ACEA A3/B4",
 "API SP",
+"VW 501.01",
+"VW 505.00"
+],
+"15F632": [
+"ACEA A3/B3",
+"ACEA A3/B4",
+"API CF",
+"API SN",
 "VW 501.01",
 "VW 505.00"
 ],
