@@ -1,13 +1,13 @@
 # Informe de pruebas del buscador (2026-11-02)
 
-Casos: 3085 · acierto global: **97.3 %** · tiempo: 11.7 s
+Casos: 3085 · acierto global: **97.1 %** · tiempo: 12.4 s
 
 Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador no se ejecuta aquí). Un caso es acierto si la respuesta menciona alguna de las referencias esperadas.
 
 | Herramienta | Categoría | Casos | Aciertos | % | "none" | Errores |
 |---|---|---|---|---|---|
 | búsqueda libre | ad_ref | 289 | 281 | 97.2 % | 218 | 0 |
-| búsqueda libre | ref_competidor | 455 | 454 | 99.8 % | 448 | 0 |
+| búsqueda libre | ref_competidor | 455 | 453 | 99.6 % | 448 | 0 |
 | búsqueda libre | febi_ref | 253 | 249 | 98.4 % | 253 | 0 |
 | búsqueda libre | oem_febi | 71 | 69 | 97.2 % | 0 | 0 |
 | búsqueda libre | norma_ad | 258 | 242 | 93.8 % | 11 | 0 |
@@ -15,8 +15,8 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 | búsqueda libre | visc_acea | 48 | 48 | 100.0 % | 0 | 0 |
 | búsqueda libre | tcmatic_febi | 19 | 18 | 94.7 % | 19 | 0 |
 | referencias cruzadas | xref_ad_a_otras | 172 | 172 | 100.0 % | 0 | 0 |
-| referencias cruzadas | xref_otra_a_ad | 455 | 454 | 99.8 % | 0 | 0 |
-| referencias cruzadas | xref_bloques | 487 | 454 | 93.2 % | 18 | 0 |
+| referencias cruzadas | xref_otra_a_ad | 455 | 453 | 99.6 % | 1 | 0 |
+| referencias cruzadas | xref_bloques | 487 | 452 | 92.8 % | 20 | 0 |
 | referencias cruzadas | xref_febi_conocida | 253 | 249 | 98.4 % | 4 | 0 |
 | referencias cruzadas | xref_tcm_a_febi | 19 | 18 | 94.7 % | 0 | 0 |
 | referencias cruzadas | xref_febi_a_tcm | 12 | 11 | 91.7 % | 0 | 0 |
@@ -24,8 +24,12 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 
 ## Cambios respecto a la ejecución anterior
 
-- Casos que mejoran: 2
-- Casos que EMPEORAN: 0
+- Casos que mejoran: 0
+- Casos que EMPEORAN: 4
+  - ref_competidor-95caa50d «15F43B»
+  - xref_otra_a_ad-6433f260 «15F43B»
+  - xref_bloques-6433f260 «15F43B»
+  - xref_bloques-8fed475a «15C301»
 
 ## Fallos por categoría (hasta 15 por categoría)
 
@@ -40,9 +44,10 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 - ad_ref-c5a95a9c «811050» → none
 - ad_ref-c17f4e89 «751050» → none
 
-### ref_competidor — 1 fallos (none: 1)
+### ref_competidor — 2 fallos (none: 2)
 
 - ref_competidor-d6923c36 «1612B5» → none
+- ref_competidor-95caa50d «15F43B» → none
 
 ### febi_ref — 4 fallos (none: 4)
 
@@ -93,11 +98,12 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 
 - tcmatic_febi-d3e7b864 «109.000.0006» → none
 
-### xref_otra_a_ad — 1 fallos (cruce: 1)
+### xref_otra_a_ad — 2 fallos (cruce: 1, none: 1)
 
 - xref_otra_a_ad-276b6b5b «1612B5» → cruce
+- xref_otra_a_ad-6433f260 «15F43B» → none
 
-### xref_bloques — 33 fallos (none: 18, cruce: 15)
+### xref_bloques — 35 fallos (none: 20, cruce: 15)
 
 - xref_bloques-59306771 «6029984» → none
 - xref_bloques-f585287d «6029944» → none
