@@ -1,6 +1,6 @@
 # Informe de pruebas del buscador (2026-11-02)
 
-Casos: 3085 · acierto global: **97.3 %** · tiempo: 11.8 s
+Casos: 3085 · acierto global: **97.3 %** · tiempo: 11.7 s
 
 Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador no se ejecuta aquí). Un caso es acierto si la respuesta menciona alguna de las referencias esperadas.
 
@@ -24,7 +24,7 @@ Mide solo las búsquedas por reglas del buscador (la IA semántica del navegador
 
 ## Cambios respecto a la ejecución anterior
 
-- Casos que mejoran: 0
+- Casos que mejoran: 2
 - Casos que EMPEORAN: 0
 
 ## Fallos por categoría (hasta 15 por categoría)

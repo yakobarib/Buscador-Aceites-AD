@@ -6997,9 +6997,9 @@
   "herramienta": "libre"
  },
  {
-  "id": "ref_competidor-b9e550a3",
+  "id": "ref_competidor-58b94cf9",
   "categoria": "ref_competidor",
-  "consulta": "RPP0064MAB",
+  "consulta": "RPP0152MHA",
   "esperado": [
    "nombre:MDX Plus 10W40",
    "16001",
@@ -7051,9 +7051,9 @@
   "herramienta": "libre"
  },
  {
-  "id": "ref_competidor-0bc152da",
+  "id": "ref_competidor-b9e550a3",
   "categoria": "ref_competidor",
-  "consulta": "RPP0064MBA",
+  "consulta": "RPP0064MAB",
   "esperado": [
    "nombre:MDXs Plus 10W40",
    "57001",
@@ -7115,9 +7115,9 @@
   "herramienta": "libre"
  },
  {
-  "id": "ref_competidor-f6a4c664",
+  "id": "ref_competidor-0bc152da",
   "categoria": "ref_competidor",
-  "consulta": "RPP0064MFB",
+  "consulta": "RPP0064MBA",
   "esperado": [
    "nombre:MDXs Plus 10W40",
    "57001",
@@ -7179,9 +7179,9 @@
   "herramienta": "libre"
  },
  {
-  "id": "ref_competidor-58b94cf9",
+  "id": "ref_competidor-f6a4c664",
   "categoria": "ref_competidor",
-  "consulta": "RPP0152MHA",
+  "consulta": "RPP0064MFB",
   "esperado": [
    "nombre:MDXs Plus 10W40",
    "57001",
