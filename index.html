@@ -1368,6 +1368,11 @@ body::after {
   line-height: 1.5;
 }
 
+.desc-visc-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 var(--s-4); }
+.desc-visc-filter-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); }
+.desc-visc-chip { border: 1px solid var(--border, #d0d7e2); background: var(--bg-secondary); color: var(--text-primary, inherit); padding: 4px 12px; border-radius: var(--r-full); font: inherit; font-size: 13px; cursor: pointer; }
+.desc-visc-chip.active { background: #e30613; border-color: #e30613; color: #fff; }
+
 .desc-result-section {
   margin-bottom: var(--s-5);
 }
@@ -10032,6 +10037,7 @@ function febiTCForSpec(canonical) {
 
 function renderDescResult(result) {
   const target = document.getElementById('results-section');
+  window._lastDescResult = result;
   
   if (!result || result.match === 'none') {
     target.innerHTML = `
@@ -10130,7 +10136,27 @@ function renderDescResult(result) {
 
   canonical = result.canonical;
   info = result.info;
-  const { adProducts, equivs } = productsForSpec(canonical);
+  let { adProducts, equivs } = productsForSpec(canonical);
+
+  // Si la norma la cumplen productos de varias viscosidades (ej. MB 229.3 → 5W40 y 10W40),
+  // se ofrece filtrar por viscosidad. El filtro solo reordena lo mostrado: sin filtro sale todo.
+  const viscDe = (t) => { const m = String(t || '').toUpperCase().match(/\b(\d{1,2})W-?(\d{2,3})\b/); return m ? m[1] + 'W' + m[2] : ''; };
+  const viscProd = (p) => viscDe(p.viscosity) || viscDe(p.ref);
+  const viscsNorma = [...new Set(adProducts.map(viscProd).filter(Boolean))].sort();
+  if (!window._descViscFiltro || window._descViscFiltro.canonical !== canonical) window._descViscFiltro = { canonical, visc: '' };
+  const viscSel = viscsNorma.includes(window._descViscFiltro.visc) ? window._descViscFiltro.visc : '';
+  if (viscSel) {
+    adProducts = adProducts.filter(p => viscProd(p) === viscSel);
+    const deGrupo = [], vistos = new Set();
+    adProducts.forEach(p => (p.equivs || []).forEach(e => { const k = e.sku || e.ref; if (!vistos.has(k)) { vistos.add(k); deGrupo.push(e); } }));
+    equivs = deGrupo.length ? deGrupo : equivs.filter(e => { const v = viscDe(e.ref); return !v || v === viscSel; });
+  }
+  const viscBar = viscsNorma.length > 1 ? `
+      <div class="desc-visc-filter">
+        <span class="desc-visc-filter-label">Filtrar por viscosidad:</span>
+        <button type="button" class="desc-visc-chip${viscSel ? '' : ' active'}" onclick="setDescViscFiltro('')">Todas</button>
+        ${viscsNorma.map(v => `<button type="button" class="desc-visc-chip${v === viscSel ? ' active' : ''}" onclick="setDescViscFiltro('${v}')">${v.replace('W', 'W-')}</button>`).join('')}
+      </div>` : '';
   const { febi: febiProds, tcmatic: tcmaticProds } = febiTCForSpec(canonical);
 
   // En coincidencias por OEM el ref de febi viene confirmado directamente por el índice OEM
@@ -10165,11 +10191,17 @@ function renderDescResult(result) {
           ${info ? `<div class="desc-result-desc">${info.description}</div>` : ''}
         </div>
       </div>
+      ${viscBar}
       ${renderProductsBlock(adProducts, equivs)}
       ${renderFebiProductsBlock(febiProds)}
       ${renderTCMaticBlock(tcmaticProds)}
       ${emptyMsg}
     </div>`;
+}
+
+function setDescViscFiltro(v) {
+  if (window._descViscFiltro) window._descViscFiltro.visc = v;
+  if (window._lastDescResult) renderDescResult(window._lastDescResult);
 }
 
 function renderProductsBlock(adProducts, equivs) {
@@ -13898,6 +13930,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="changelog-version">v42 <span class="changelog-date">Noviembre 2026</span></div>
           <ul class="changelog-list">
             <li>Aprobaciones oficiales de Mercedes-Benz cruzadas con productos de Castrol, Repsol, Shell y AD Parts (51 productos reciben normas MB nuevas)</li>
+            <li>Al buscar una norma que cumplen productos de varias viscosidades, se ofrece filtrar por viscosidad</li>
           </ul>
         </div>
         <div class="changelog-entry">
