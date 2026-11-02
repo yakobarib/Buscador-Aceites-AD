@@ -348,6 +348,57 @@ def cargar_equiv_bloques():
                                 nota=nombre_nota(libro, ws.title), hoja=ws.title, items=items))
 
 
+DIR_MODERNO = "SISTEMA ACTUAL DE EQUIVALENCIAS"
+CFG_MODERNO = {  # libro del sistema actual por tipo de uso final -> tipo. Ligero (la matriz grande) y Grasas (ya cargada arriba) no se repiten
+    "Equivalencias Vehiculo Pesado.xlsx": "Vehículo pesado (sistema actual)",
+    "Equivalencias Vehiculo Agricola.xlsx": "Vehículo agrícola (sistema actual)",
+    "Equivalencias Vehiculo Electrico.xlsx": "Vehículo eléctrico (sistema actual)",
+    "Equivalencias Industria Hidraulicos.xlsx": "Hidráulicos (sistema actual)",
+    "Equivalencias Transmision Automatica.xlsx": "Transmisión automática (sistema actual)",
+    "Equivalencias Transmision Manual y Ejes.xlsx": "Transmisión manual y ejes (sistema actual)",
+}
+MARCAS_MODERNO = {7: "AD Parts", 8: "AD Standard", 9: "Eni", 10: "Shell", 11: "Castrol", 12: "Repsol"}
+SIN_REF = ("SIN ", "EN OTROS", "FUERA DE", "PENDIENTE", "NO EN", "SOLO EN", "PTE")
+
+
+def cargar_equiv_moderno():
+    """Sistema actual de equivalencias por tipo de uso final (GAMA|VISCO|ACEA|ILSAC|AD|LITROS||AD PARTS|AD STANDARD|ENI|SHELL|CASTROL|REPSOL).
+    Una fila = un formato; solo se anade si tiene >=2 marcas con referencia y no repite un grupo ya cargado de las tablas antiguas."""
+    ya = [frozenset((m, r) for m, r, _, _ in e["items"]) for e in EQUIV_B]
+    for nombre, tipo in CFG_MODERNO.items():
+        libro = BASE / DIR_MODERNO / nombre
+        if not libro.exists():
+            continue
+        ws = openpyxl.load_workbook(libro, data_only=True).worksheets[0]
+        for n, f in enumerate(ws.iter_rows(values_only=True), 1):
+            if n == 1:
+                continue
+            g = lambda i: limpio(f[i]) if i < len(f) else ""
+            items = [(m, g(i), "", "") for i, m in MARCAS_MODERNO.items() if g(i) and not g(i).upper().startswith(SIN_REF)]
+            if len(items) < 2:
+                continue
+            clave_grupo = frozenset((m, r) for m, r, _, _ in items)
+            if any(clave_grupo <= o for o in ya):
+                continue
+            ya.append(clave_grupo)
+            props, mapa = {}, {"LITROS": "cant"}
+            v, a, il, ad = g(1), g(2), g(3), g(4)
+            if v:
+                props["VISCO"] = v
+                mapa["VISCO"] = "sae" if re.fullmatch(r"\d{1,2}W-?\d{2,3}|\d{2,3}", v, re.I) else "texto"
+            if a and not a.upper().startswith("SIN "):
+                props["ACEA"] = a
+                mapa["ACEA"] = "acea" if all(re.fullmatch(r"[A-E]\d{1,2}(?:-\d{2})?", t, re.I) for t in lista_plana(a)) else "texto"
+            if il and not il.upper().startswith("SIN "):
+                props["ILSAC"] = il
+                mapa["ILSAC"] = "texto"
+            if ad and not ad.upper().startswith(("NO EN", "SIN ")):
+                props["AD"] = ad
+                mapa["AD"] = "texto"
+            EQUIV_B.append(dict(tipo=tipo, props=props, mapa=mapa, cant=g(5), unidad="L", fila=n, libro=libro.name, dir=DIR_MODERNO,
+                                nota=nombre_nota(libro, ws.title), hoja=ws.title, items=items))
+
+
 FAMILIAS = []  # catalogo AD Parts
 
 
@@ -505,7 +556,7 @@ def con_implicadas(pares):
 def main():
     for c in (cargar_listas_simples, cargar_febi, cargar_tcmatic, cargar_refrigerantes_ad, cargar_catalogo_ad, cargar_aceites_nuevos,
               cargar_homologaciones_repsol,
-              cargar_equivalencias, cargar_equiv_bloques, cargar_febi_tcmatic):
+              cargar_equivalencias, cargar_equiv_bloques, cargar_equiv_moderno, cargar_febi_tcmatic):
         c()
     corregir_excel_repsol(CORR_EXCEL)
 
@@ -585,7 +636,7 @@ def main():
         for marca, ref, desc, cant in eq["items"]:
             prods = POR_REF.get((marca, ref), [])
             if not prods:
-                p = anadir_producto(marca, ref, desc, cant or eq["cant"], eq["fila"], BASE / "EQUIVALENCIAS" / eq["libro"], eq["hoja"])
+                p = anadir_producto(marca, ref, desc, cant or eq["cant"], eq["fila"], BASE / eq.get("dir", "EQUIVALENCIAS") / eq["libro"], eq["hoja"])
                 p["pagina"] = fichero(f"{marca} {ref}")
                 usados.add(p["pagina"].lower())
                 v = visc_de(desc)

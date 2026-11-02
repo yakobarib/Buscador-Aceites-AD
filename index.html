@@ -3370,7 +3370,7 @@ m19 -235 c15 -5 31 -16 35 -22 11 -16 10 -119 -1 -136 -12 -19 -80 -30 -183
 </main>
 
 <footer class="demo-footer">
-  <code>DEMO</code> &nbsp;·&nbsp; <span class="app-ver">v42 · 2 nov 2026</span> &nbsp;·&nbsp; Diseñado por <strong>Yakoba Moreno</strong> &nbsp;·&nbsp; Desarrollado en <strong>Claude Code</strong>
+  <code>DEMO</code> &nbsp;·&nbsp; <span class="app-ver">v43 · 2 nov 2026</span> &nbsp;·&nbsp; Diseñado por <strong>Yakoba Moreno</strong> &nbsp;·&nbsp; Desarrollado en <strong>Claude Code</strong>
 </footer>
 
 <!-- Toast de fase -->
@@ -4317,7 +4317,7 @@ const HUMAN_EQUIV = {
   'XTD':    { castrol:'15F43B',  repsol:'RPP1042QFB', shell:'550055173', eni:'108087' },
   'SDX+':   { castrol:'15F3D1',  repsol:'RPP1002MFB', shell:'550054436', eni:'OTROS_FORMATOS' },
   'SDX':    { castrol:'OTROS_FORMATOS', repsol:'RPP1042MFB', shell:'550054435', eni:'OTROS_FORMATOS' },
-  'STB':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS',                eni:'106787' },
+  'STB':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', shell:'OTROS_FORMATOS', eni:'106787' },
   'SDV':    { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS',               eni:'106887' },
   'STFE':   { castrol:'OTROS_FORMATOS', repsol:'RPP1004IFB', shell:'550053997', eni:'OTROS_FORMATOS' },
   'SHP':    { castrol:'15DD09',  repsol:'RPP4002JBA', shell:'550027931', eni:'OTROS_FORMATOS' },
@@ -4332,14 +4332,14 @@ const HUMAN_EQUIV = {
   'HHM 32': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', shell:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
   'HHM 46': { castrol:'OTROS_FORMATOS', repsol:'RPP6008HFA', shell:'OTROS_FORMATOS', eni:'G00483' },
   'HHM 68': { castrol:'OTROS_FORMATOS', repsol:'RPP6008IFA', shell:'OTROS_FORMATOS', eni:'G00583' },
-  'ATF DEX':{ repsol:'RPP4067ZFA',                                       eni:'129797' },
-  'ATF DEX III':{ castrol:'15D678', repsol:'RPP4066ZFA',                eni:'129897' },
+  'ATF DEX':{ repsol:'RPP4067ZFA', shell:'OTROS_FORMATOS',                  eni:'129797' },
+  'ATF DEX III':{ castrol:'15D678', repsol:'RPP4066ZFA', shell:'OTROS_FORMATOS', eni:'129897' },
   'ATF +3 +4':{ repsol:'RPP4064ZGA', eni:'OTROS_FORMATOS'                            },
-  'AGR STOU':{ castrol:'OTROS_FORMATOS', repsol:'RPP4130QFA'                         },
+  'AGR STOU':{ castrol:'OTROS_FORMATOS', repsol:'RPP4130QFA', eni:'130487' },
   'AGR FLUID':{ castrol:'OTROS_FORMATOS', repsol:'RPP4131ZFA', shell:'550045025', eni:'128197' },
-  'HTO 10': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
-  'DS3 30': { castrol:'OTROS_FORMATOS', repsol:'RPP1163CFB',            eni:'108887' },
-  'DS3 40': { castrol:'OTROS_FORMATOS', repsol:'RPP1163DFB', eni:'OTROS_FORMATOS'   },
+  'HTO 10': { castrol:'OTROS_FORMATOS', repsol:'OTROS_FORMATOS', shell:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
+  'DS3 30': { castrol:'OTROS_FORMATOS', repsol:'RPP1163CFB', shell:'OTROS_FORMATOS', eni:'108887' },
+  'DS3 40': { castrol:'OTROS_FORMATOS', repsol:'RPP1163DFB', shell:'OTROS_FORMATOS', eni:'OTROS_FORMATOS' },
 };
 
 // Función que resuelve ref → {brand, sku, name, otrosFormatos?}
@@ -13901,7 +13901,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- PANEL: ABOUT -->
       <div class="help-panel" data-panel="about">
         <div class="about-app-name">Buscador de Aceites AD Parts</div>
-        <span class="about-version">v42</span>
+        <span class="about-version">v43</span>
         <hr class="about-divider">
         <div class="about-credits">
           <p><strong>Diseñado por</strong> Yakoba Moreno</p>
@@ -13926,6 +13926,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <!-- PANEL: CHANGELOG -->
       <div class="help-panel" data-panel="changelog">
+        <div class="changelog-entry">
+          <div class="changelog-version">v43 <span class="changelog-date">Noviembre 2026</span></div>
+          <ul class="changelog-list">
+            <li>Sistema actual de equivalencias por tipo de uso final incorporado a la wiki (pesado, agrícola, eléctrico, hidráulicos y transmisión)</li>
+            <li>Equivalencias de Shell y Eni completadas para varios productos AD (ATF Dex, DS3, HTO 10, STB, AGR STOU)</li>
+          </ul>
+        </div>
         <div class="changelog-entry">
           <div class="changelog-version">v42 <span class="changelog-date">Noviembre 2026</span></div>
           <ul class="changelog-list">
