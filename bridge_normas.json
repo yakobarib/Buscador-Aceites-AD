@@ -665,6 +665,31 @@
 },
 {
 "altSkus": [
+"15ED7A"
+],
+"brand": "Castrol",
+"ref": "Radicool Si-OAT",
+"sku": "15ED78",
+"specs": [
+"G12++"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
+"15D73D",
+"161AC4"
+],
+"brand": "Castrol",
+"ref": "Transmax ATF DVIMLV Multi",
+"sku": "161AD0",
+"specs": [
+"FORD Mercon LV"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
 "15D6C7",
 "15D6C8"
 ],
@@ -885,6 +910,16 @@
 "ZF TE-ML 17A"
 ],
 "viscosity": "80W90"
+},
+{
+"altSkus": [],
+"brand": "Castrol",
+"ref": "Transmax Manual FE 75W",
+"sku": "15F1DB",
+"specs": [
+"API GL-4"
+],
+"viscosity": ""
 },
 {
 "altSkus": [

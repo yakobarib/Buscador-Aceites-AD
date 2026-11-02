@@ -906,7 +906,7 @@ def main():
     # catalogos de Castrol transcritos leyendo el PDF como imagen (castrol_curado_*.json): Transmax, grasas, Radicool, CRB y gama agricola.
     # Se enlazan por NOMBRE de producto (tarifa de abril 2026); lo que no coincide queda sin enlazar (nunca se adivina).
     CURADOS = []
-    for nom_c in ("web", "pesado_resto", "pesado_crb", "agricola"):
+    for nom_c in ("web", "web2", "pesado_resto", "pesado_crb", "agricola"):
         ruta_cur = RAIZ / f"castrol_curado_{nom_c}.json"
         if ruta_cur.exists():
             dc = json.loads(ruta_cur.read_text(encoding="utf-8"))
@@ -919,6 +919,8 @@ def main():
         k = re.sub(r"UNIVER(?!SAL)", "UNIVERSAL", k)
         k = re.sub(r"UNIV(?!ER)", "UNIVERSAL", k)
         k = k.replace("TRANSMAXMANZLL", "TRANSMAXMANUALZLL").replace("AXLELD", "AXLELONGDRAIN").replace("ATFDXIIIMV", "ATFDXIIIMULTIVEHICLE")
+        k = {"TRANSMAXATFDVIMLVMULTI": "TRANSMAXATFDXVIMERCONLVMULTIVEHICLE", "TRANSMAXATFDEXMERCMV": "TRANSMAXATFDEXMERCMULTIVEHICLE",
+             "TRANSMAXDUALMULTIVEHIC": "TRANSMAXDUALMULTIVEHICLE"}.get(k, k)
         k = re.sub(r"^AGRIMPP(?=\d)", "AGRIMPPLUS", k)
         k = re.sub(r"^AGRITRANSPL(?=\d)", "AGRITRANSPLUS", k)
         k = re.sub(r"^AGRITRANSAS", "AGRITRANSPLUSAS", k)

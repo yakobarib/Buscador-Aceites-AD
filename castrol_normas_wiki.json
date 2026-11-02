@@ -1695,6 +1695,16 @@
 "FIAT 9.55535-S2"
 ]
 ],
+"15D575": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
 "15D66F": [
 [
 "homologacion",
@@ -1949,6 +1959,16 @@
 "MB 235.11"
 ]
 ],
+"15D73D": [
+[
+"homologacion",
+"FORD MERCON LV"
+],
+[
+"homologacion",
+"GM DEXRON VI"
+]
+],
 "15D761": [
 [
 "api",
@@ -2027,6 +2047,20 @@
 [
 "homologacion",
 "ZF TE-ML 17A"
+]
+],
+"15D7F3": [
+[
+"api",
+"API GL-4+"
+],
+[
+"homologacion",
+"VW TL 52532-A"
+],
+[
+"homologacion",
+"VW TL 52532-B"
 ]
 ],
 "15D87A": [
@@ -2161,6 +2195,12 @@
 "ZF TE-ML 16P"
 ]
 ],
+"15D911": [
+[
+"homologacion",
+"VW/AUDI TL 52529 (G 052 529)"
+]
+],
 "15D94C": [
 [
 "api",
@@ -2203,6 +2243,20 @@
 [
 "homologacion",
 "Scania STO 2:0A"
+]
+],
+"15D96F": [
+[
+"api",
+"API GL-4+"
+],
+[
+"homologacion",
+"VW TL 52532-A"
+],
+[
+"homologacion",
+"VW TL 52532-B"
 ]
 ],
 "15D983": [
@@ -2721,6 +2775,12 @@
 "ZF TE-ML 03C"
 ]
 ],
+"15ED2F": [
+[
+"homologacion",
+"ASTM D3306"
+]
+],
 "15ED78": [
 [
 "homologacion",
@@ -2740,11 +2800,11 @@
 ],
 [
 "homologacion",
-"MAN 324 Tipo Si-OAT"
+"MAN 324 Type Si-OAT"
 ],
 [
 "homologacion",
-"DTFR 29D120 (MB 325.5)"
+"MB 325.5"
 ],
 [
 "homologacion",
@@ -2770,11 +2830,11 @@
 ],
 [
 "homologacion",
-"MAN 324 Tipo Si-OAT"
+"MAN 324 Type Si-OAT"
 ],
 [
 "homologacion",
-"DTFR 29D120 (MB 325.5)"
+"MB 325.5"
 ],
 [
 "homologacion",
@@ -2917,6 +2977,36 @@
 "MB 264.0"
 ]
 ],
+"15EFFA": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
+"15EFFB": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
+"15EFFD": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
 "15F00D": [
 [
 "homologacion",
@@ -2925,6 +3015,46 @@
 [
 "homologacion",
 "ZF TE-ML 07F"
+]
+],
+"15F00F": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
+"15F010": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
+"15F01B": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
+"15F01C": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
 ]
 ],
 "15F01D": [
@@ -2947,6 +3077,46 @@
 [
 "homologacion",
 "ZF TE-ML 21A"
+]
+],
+"15F020": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
+"15F021": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
+"15F03F": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
+"15F040": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
 ]
 ],
 "15F087": [
@@ -3293,6 +3463,36 @@
 [
 "homologacion",
 "ZF TE-ML 21A"
+]
+],
+"15F1DB": [
+[
+"api",
+"API GL-4"
+],
+[
+"homologacion",
+"MB 235.73"
+]
+],
+"15F201": [
+[
+"homologacion",
+"VW/AUDI TL 52529 (G 052 529)"
+]
+],
+"15F22A": [
+[
+"api",
+"API GL-4+"
+],
+[
+"homologacion",
+"VW TL 52532-A"
+],
+[
+"homologacion",
+"VW TL 52532-B"
 ]
 ],
 "15F249": [
@@ -4195,6 +4395,26 @@
 [
 "homologacion",
 "RENAULT RN0710"
+]
+],
+"15F694": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
+"15F6A0": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
 ]
 ],
 "15F6A4": [
@@ -5801,6 +6021,16 @@
 "RENAULT RN0710"
 ]
 ],
+"15F8EB": [
+[
+"homologacion",
+"ISO HM"
+],
+[
+"homologacion",
+"DIN 51524-2 HLP"
+]
+],
 "15F8F8": [
 [
 "acea",
@@ -6708,15 +6938,7 @@
 ],
 [
 "homologacion",
-"Deutz DQC CA-14"
-],
-[
-"homologacion",
 "MAN 324 Typ NF"
-],
-[
-"homologacion",
-"DTFR 29C100 (MB 325.0)"
 ],
 [
 "homologacion",
@@ -6729,12 +6951,16 @@
 [
 "homologacion",
 "VW TL-774C (G11)"
+],
+[
+"homologacion",
+"DEUTZ DQC CA-14"
 ]
 ],
 "15FE9E": [
 [
 "homologacion",
-"ASTM D3306(III)"
+"ASTM D3306"
 ],
 [
 "homologacion",
@@ -6743,6 +6969,10 @@
 [
 "homologacion",
 "ASTM D6210"
+],
+[
+"homologacion",
+"BS 6580:2010"
 ],
 [
 "homologacion",
@@ -6758,7 +6988,7 @@
 ],
 [
 "homologacion",
-"Deutz DQC CB-14"
+"DEUTZ DQC CB-14"
 ],
 [
 "homologacion",
@@ -6768,7 +6998,7 @@
 "15FEA0": [
 [
 "homologacion",
-"ASTM D3306(III)"
+"ASTM D3306"
 ],
 [
 "homologacion",
@@ -6777,6 +7007,10 @@
 [
 "homologacion",
 "ASTM D6210"
+],
+[
+"homologacion",
+"BS 6580:2010"
 ],
 [
 "homologacion",
@@ -6792,7 +7026,7 @@
 ],
 [
 "homologacion",
-"Deutz DQC CB-14"
+"DEUTZ DQC CB-14"
 ],
 [
 "homologacion",
@@ -6925,6 +7159,52 @@
 [
 "homologacion",
 "FORD WSS-M2C961-A1"
+]
+],
+"16000E": [
+[
+"homologacion",
+"ASTM D3306"
+],
+[
+"homologacion",
+"BS 6580:2010"
+]
+],
+"16000F": [
+[
+"homologacion",
+"ASTM D3306"
+],
+[
+"homologacion",
+"BS 6580:2010"
+]
+],
+"1602C4": [
+[
+"homologacion",
+"ASTM D3306"
+]
+],
+"16044F": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
+]
+],
+"1604B2": [
+[
+"homologacion",
+"ISO HV"
+],
+[
+"homologacion",
+"DIN 51524-3 HVLP"
 ]
 ],
 "16061C": [
@@ -7710,7 +7990,7 @@
 "161A3E": [
 [
 "homologacion",
-"ASTM D3306(III)"
+"ASTM D3306"
 ],
 [
 "homologacion",
@@ -7719,6 +7999,10 @@
 [
 "homologacion",
 "ASTM D6210"
+],
+[
+"homologacion",
+"BS 6580:2010"
 ],
 [
 "homologacion",
@@ -7734,7 +8018,7 @@
 ],
 [
 "homologacion",
-"Deutz DQC CB-14"
+"DEUTZ DQC CB-14"
 ],
 [
 "homologacion",
@@ -7790,15 +8074,7 @@
 ],
 [
 "homologacion",
-"Deutz DQC CA-14"
-],
-[
-"homologacion",
 "MAN 324 Typ NF"
-],
-[
-"homologacion",
-"DTFR 29C100 (MB 325.0)"
 ],
 [
 "homologacion",
@@ -7811,6 +8087,30 @@
 [
 "homologacion",
 "VW TL-774C (G11)"
+],
+[
+"homologacion",
+"DEUTZ DQC CA-14"
+]
+],
+"161AC4": [
+[
+"homologacion",
+"FORD MERCON LV"
+],
+[
+"homologacion",
+"GM DEXRON VI"
+]
+],
+"161AD0": [
+[
+"homologacion",
+"FORD MERCON LV"
+],
+[
+"homologacion",
+"GM DEXRON VI"
 ]
 ],
 "161D4A": [
