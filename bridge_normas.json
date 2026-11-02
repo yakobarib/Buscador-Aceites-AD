@@ -1341,33 +1341,6 @@
 },
 {
 "altSkus": [
-"1628C0",
-"1628C2",
-"1629A7"
-],
-"brand": "Castrol",
-"ref": "Vecton LD 10W-40 E8/E11",
-"sku": "1628C3",
-"specs": [
-"ACEA E11",
-"ACEA E6",
-"ACEA E7",
-"ACEA E9",
-"API CK-4",
-"CATERPILLAR ECF-3",
-"CUMMINS CES 20086",
-"DEUTZ DQC IV-18 LA",
-"JASO DH-2",
-"MACK EOS-4.5",
-"MTU Type 3.1",
-"RENAULT RLD-3",
-"VOLVO CNG",
-"VOLVO VDS-4.5"
-],
-"viscosity": "10W40"
-},
-{
-"altSkus": [
 "161A46",
 "161A47"
 ],
@@ -1448,6 +1421,32 @@
 "viscosity": "5W30"
 }
 ],
+"castrol_sust": {
+"15F3D1": {
+"alt": [
+"1628C0",
+"1628C2",
+"1628C3",
+"1629A7"
+],
+"specs": [
+"ACEA E11",
+"ACEA E6",
+"ACEA E7",
+"ACEA E9",
+"API CK-4",
+"CATERPILLAR ECF-3",
+"CUMMINS CES 20086",
+"DEUTZ DQC IV-18 LA",
+"JASO DH-2",
+"MACK EOS-4.5",
+"MTU Type 3.1",
+"RENAULT RLD-3",
+"VOLVO CNG",
+"VOLVO VDS-4.5"
+]
+}
+},
 "nuevas": {
 "ACEA A1": {
 "description": "Aceite motor de baja viscosidad y bajo rozamiento para ahorro de combustible, en motores de gasolina y diésel ligero",

@@ -1,0 +1,29 @@
+{
+ "_comentario": "Referencias Castrol sustituidas, segun «Castrol Camión unificado septiembre 2026.xlsx» (columnas ref nueva / sustituye a ref; sin precios). Yakoba confirma (2026-11-02) que son el mismo producto.",
+ "sustituciones": {
+  "1620B1": {
+   "antigua": "15C301",
+   "antiguo_nombre": ""
+  },
+  "1620B3": {
+   "antigua": "15C302",
+   "antiguo_nombre": ""
+  },
+  "1628C0": {
+   "antigua": "15B349",
+   "antiguo_nombre": "VECTON LONG DRAIN 10W40 E6/E9 1000L"
+  },
+  "1628C2": {
+   "antigua": "15B34A",
+   "antiguo_nombre": "VECTON LONG DRAIN 10W40 E6/E9 208L"
+  },
+  "16229C": {
+   "antigua": "16051B",
+   "antiguo_nombre": "VECTON LONG DRAIN 5W30 E6/E9 1000L"
+  },
+  "16229E": {
+   "antigua": "16051C",
+   "antiguo_nombre": "VECTON LONG DRAIN 5W30 E6/E9 208L"
+  }
+ }
+}

@@ -222,7 +222,7 @@ def codigo_y_sufijo(ref):
     return None, None
 
 
-def castrol_nuevos(skus_existentes):
+def castrol_nuevos(skus_existentes, existentes_ref):
     """Familias Castrol de la tarifa que el buscador no tiene en EQUIV_CATALOG: una entrada por familia (ref de menor formato).
     Las normas son las de los catalogos de Castrol que el buscador YA conoce (sin crear normas nuevas)."""
     rp, rn = RAIZ / "castrol_productos_wiki.json", RAIZ / "castrol_normas_wiki.json"
@@ -237,10 +237,32 @@ def castrol_nuevos(skus_existentes):
         fam.setdefault(nombre, []).append((ref, d))
     lits = sorted({l for refs in fam.values() for ref, _ in refs for t, l in wiki.get(ref, []) if t in ("acea", "api", "ilsac", "jaso", "homologacion")})
     res = resolver_en_app(lits) if lits else {}
-    nuevos, informe = [], []
+    nuevos, informe, sust_app = [], [], {}
+    rs = RAIZ / "castrol_sustituciones.json"
+    sust = json.loads(rs.read_text(encoding="utf-8"))["sustituciones"] if rs.exists() else {}
+    # familia antigua (nombre de abril sin formato) -> familia nueva (nombre de septiembre sin formato), segun las referencias sustituidas
+    ant_a_nueva = {}
+    for nueva, v in sust.items():
+        if nueva in prods and v["antiguo_nombre"]:
+            ant_a_nueva[re.sub(r"[^A-Z0-9]", "", quita_pack.sub("", v["antiguo_nombre"]).upper())] = quita_pack.sub("", prods[nueva]["desc"].replace("\xa0", " ").strip())
+    fam_sustituye = set(ant_a_nueva.values())
     for nombre, refs in sorted(fam.items()):
         if any(ref in skus_existentes for ref, _ in refs):
             continue
+        if nombre in fam_sustituye:
+            # el buscador ya tiene la familia antigua (mismo producto segun Castrol): se enriquece esa entrada y no se duplica
+            viejas = [(sku, n) for sku, n in existentes_ref.items() if ant_a_nueva.get(re.sub(r"[^A-Z0-9]", "", quita_pack.sub("", n).upper())) == nombre]
+            if viejas:
+                sp = set()
+                for r, _ in refs:
+                    for t, l in wiki.get(r, []):
+                        x = res.get(l)
+                        if x and x["canonical"] and x["match"] in ("exact", "alias", "category"):
+                            sp.add(x["canonical"])
+                for sku, n in viejas:
+                    sust_app[sku] = {"specs": sorted(sp), "alt": sorted(r for r, _ in refs)}
+                informe.append(f"Castrol: «{nombre}» sustituye a {', '.join(n for _, n in viejas)} (se mantiene la entrada antigua y se enriquece)")
+                continue
         def litros(x):
             try:
                 return float(x[1]["litros"])
@@ -261,7 +283,7 @@ def castrol_nuevos(skus_existentes):
                        "altSkus": sorted(r for r, _ in refs if r != ref)})
     informe.append(f"Castrol: {len(nuevos)} familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); "
                    f"{sum(1 for x in nuevos if not x['specs'])} sin normas conocidas (solo viscosidad)")
-    return nuevos, informe
+    return nuevos, informe, sust_app
 
 
 def puente_castrol():
@@ -387,7 +409,10 @@ def main():
     js_sk = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('" + HTML_LIMPIO.as_posix() + "');"
              "process.stdout.write(JSON.stringify(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').flatMap(p=>[p.sku].concat(p.altSkus||[]))\")))")
     existentes = set(json.loads(subprocess.run(["node", "-e", js_sk], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout))
-    normas["castrol_nuevos"], informe_cn = castrol_nuevos(existentes)
+    js_nm = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('" + HTML_LIMPIO.as_posix() + "');"
+             "process.stdout.write(JSON.stringify(Object.fromEntries(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').map(p=>[p.sku,p.ref])\"))))")
+    existentes_ref = json.loads(subprocess.run(["node", "-e", js_nm], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout)
+    normas["castrol_nuevos"], informe_cn, normas["castrol_sust"] = castrol_nuevos(existentes, existentes_ref)
     informe += informe_cn
     aplicar_descripciones(normas["nuevas"], usado_en, informe)
     normas["retoques"] = {k: v["description"] for k, v in json.loads((RAIZ / "retoques_descripciones.json").read_text(encoding="utf-8"))["retoques"].items()}
@@ -432,6 +457,11 @@ def main():
   }));
   // familias Castrol de la tarifa de septiembre 2026 que el buscador no tenia (una entrada por familia)
   (AD_NORMAS_PUENTE.castrol_nuevos || []).forEach(e => { if (!EQUIV_CATALOG.some(x => x.sku === e.sku)) EQUIV_CATALOG.push(e); });
+  // productos antiguos de Castrol sustituidos por una referencia nueva (mismo producto): se anaden sus normas y las referencias nuevas
+  EQUIV_CATALOG.forEach(p => { const v = (AD_NORMAS_PUENTE.castrol_sust || {})[p.sku]; if (p.brand === 'Castrol' && v) {
+    v.specs.forEach(s => { if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s); });
+    p.altSkus = Array.from(new Set((p.altSkus || []).concat(v.alt)));
+  } });
   // normas de los catalogos de Castrol para los productos Castrol que el buscador ya tenia (solo normas ya conocidas)
   EQUIV_CATALOG.forEach(p => { if (p.brand === 'Castrol') ((AD_NORMAS_PUENTE.specs_castrol || {})[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);

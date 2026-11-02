@@ -948,6 +948,9 @@ def main():
             nf.append((m.group(1).lower() if m else "homologacion", lit))
         nf += [("homologacion", lit) for lit in x.get("homologaciones", [])]
 
+    ruta_s = RAIZ / "castrol_sustituciones.json"
+    SUST_CASTROL = json.loads(ruta_s.read_text(encoding="utf-8"))["sustituciones"] if ruta_s.exists() else {}
+
     # ---------------- registro de normas
     menciones = defaultdict(list)  # clave -> [(literal, tipo)]
     for origen in list(PRODUCTOS) + FAMILIAS:
@@ -1062,6 +1065,10 @@ def main():
         cu = [f"# {titulo}", ""]
         if p["litros"]:
             cu += [f'**Formato:** {p["litros"]} L', ""]
+        sust_c = SUST_CASTROL.get(p["ref"]) if p["marca"] == "Castrol" else None
+        if sust_c:
+            cu += [f'**Sustituye a la referencia antigua** {sust_c["antigua"]}' + (f' ({sust_c["antiguo_nombre"]}, tarifa de abril 2026)' if sust_c["antiguo_nombre"] else "")
+                   + " · fuente: «Castrol Camión unificado septiembre 2026.xlsx» (columnas «ref nueva» y «sustituye a ref»); confirmado por Yakoba el 2026-11-02.", ""]
         for dec in p["decisiones"]:
             cu += [f'> ✅ **Decisión confirmada ({dec["fecha"]}):** {dec["texto"]}', ""]
         cu += bullets_normas(p)
