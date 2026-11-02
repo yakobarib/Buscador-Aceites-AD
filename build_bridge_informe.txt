@@ -152,8 +152,11 @@ norma nueva para el buscador: «AFNOR NFR 15-601» (leída como «AFNOR NFR 15-6
 norma nueva para el buscador: «JIS K 2234:2006» (leída como «JIS K 2234:2006»)
 norma nueva para el buscador: «SANS 1251:2005» (leída como «SANS 1251:2005»)
 norma nueva para el buscador: «GB 29743-2013» (leída como «GB 29743-2013»)
-Castrol: 31 productos reciben 128 normas nuevas de sus catálogos; 30 literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)
+Castrol: 51 productos reciben 223 normas nuevas de sus catálogos; 94 literales no se incorporan por no ser normas que el buscador conozca (se quedan en la wiki)
+norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 229.71»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.72»
+norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 236.7»
+norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 237.11»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 326.0»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 326.6»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «ZF TE-ML 16S»
@@ -161,9 +164,11 @@ norma nueva (descripción oficial) a partir de los catálogos de Castrol: «ZF T
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «ZF TE-ML 21C»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «ZF TE-ML 16P»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.11»
+norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.21»
+norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.14»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.73»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «MB 235.4»
 norma nueva (descripción oficial) a partir de los catálogos de Castrol: «ZF TE-ML 07F»
 Castrol: «Vecton LD 10W-40 E8/E11» sustituye a VECTON LONG DRAIN 10W40 E6/E9 5L (se mantiene la entrada antigua y se enriquece)
-Castrol: 78 familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); 11 sin normas conocidas (solo viscosidad)
-descripciones de normas: 91 de 109 escritas por Yakoba en «Descripciones de normas para curar.xlsx»
+Castrol: 79 familias nuevas de la tarifa de septiembre se añaden al buscador (EQUIV_CATALOG); 10 sin normas conocidas (solo viscosidad)
+descripciones de normas: 91 de 114 escritas por Yakoba en «Descripciones de normas para curar.xlsx»

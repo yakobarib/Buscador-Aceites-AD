@@ -328,7 +328,7 @@ def puente_castrol():
         return {}, []
     wiki = json.loads(ruta.read_text(encoding="utf-8"))
     js = ("const {cargar}=require('./evals/buscador_headless');const b=cargar('" + HTML_LIMPIO.as_posix() + "');"
-          "process.stdout.write(JSON.stringify(b.llamar(\"EQUIV_CATALOG.filter(p=>p.brand==='Castrol').map(p=>({sku:p.sku,specs:p.specs||[]}))\")))")
+          "process.stdout.write(JSON.stringify(b.llamar(\"EQUIV_CATALOG.filter(p=>['Castrol','Repsol','Shell','Eni','ENI'].includes(p.brand)).map(p=>({sku:p.sku,specs:p.specs||[]}))\")))")
     cat = json.loads(subprocess.run(["node", "-e", js], capture_output=True, text=True, encoding="utf-8", cwd=RAIZ).stdout)
     lits = sorted({l for c in cat for t, l in wiki.get(c["sku"], []) if t in ("acea", "api", "ilsac", "jaso", "homologacion")})
     res = resolver_en_app(lits) if lits else {}
@@ -503,7 +503,7 @@ def main():
     p.altSkus = Array.from(new Set((p.altSkus || []).concat(v.alt)));
   } });
   // normas de los catalogos de Castrol para los productos Castrol que el buscador ya tenia (solo normas ya conocidas)
-  EQUIV_CATALOG.forEach(p => { if (p.brand === 'Castrol') ((AD_NORMAS_PUENTE.specs_castrol || {})[p.sku] || []).forEach(s => {
+  EQUIV_CATALOG.forEach(p => { if (p.brand !== 'AD Standard' && p.brand !== 'AD Parts') ((AD_NORMAS_PUENTE.specs_castrol || {})[p.sku] || []).forEach(s => {
     if (!p.specs.some(x => x.toUpperCase() === s.toUpperCase())) p.specs.push(s);
   }); });
 })();"""

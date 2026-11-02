@@ -954,6 +954,55 @@ def main():
     ruta_s = RAIZ / "castrol_sustituciones.json"
     SUST_CASTROL = json.loads(ruta_s.read_text(encoding="utf-8"))["sustituciones"] if ruta_s.exists() else {}
 
+    # aprobaciones OFICIALES de Mercedes-Benz (operatingfluids.mercedes-benz.com) cruzadas por NOMBRE de producto con la tarifa y el catalogo AD.
+    # Solo coincidencias exactas del nombre (sin parecidos): lo que no coincide se queda sin enlazar.
+    rmb2 = RAIZ / "BASE DE CONOCIMIENTO" / "CATALOGOS" / "Mercedes" / "mb_operating_fluids.json"
+    MB_IDX = defaultdict(list)  # (marca, clave de nombre) -> [(hoja, nombre MB)]
+    MB_NO_PRODUCTO = {"223.2", "224.1", "231.0", "231.1", "310.1", "320.1", "340.1", "219.0"}
+    if rmb2.exists():
+        marcas_mb = (("castrol", "Castrol"), ("repsol", "Repsol"), ("shell", "Shell"), ("pennzoil", "Shell"), ("eni ", "Eni"), ("eni,", "Eni"), ("ad parts", "AD Parts"))
+        for cat_mb, vmb in json.loads(rmb2.read_text(encoding="utf-8"))["categorias"].items():
+            for h in vmb["hojas"]:
+                if h["hoja"] in MB_NO_PRODUCTO:
+                    continue
+                for x in h["productos"]:
+                    fab = (x["fabricante"] + " ").lower()
+                    marca = next((m for k_, m in marcas_mb if k_ in fab), None)
+                    if not marca:
+                        continue
+                    nom_mb = re.sub(r"(?i)\b(castrol|shell|repsol|eni|pennzoil)\b", " ", x["nombre"])
+                    base = clave(nom_mb)
+                    claves = {base} | {base + clave(v) for v in x["viscosidades"] if base and not re.search(r"\dW", nom_mb)}
+                    for kk in claves:
+                        if kk:
+                            MB_IDX[(marca, kk)].append((h["hoja"].rstrip("H"), x["nombre"]))
+
+    def mb_de(marca, nombre):
+        r_, vistos = [], set()
+        for hoja, nm in MB_IDX.get((marca, clave(re.sub(r"(?i)\b(castrol|shell|repsol|eni|pennzoil)\b", " ", nombre))), []):
+            if (hoja, nm) not in vistos:
+                vistos.add((hoja, nm))
+                r_.append((hoja, nm))
+        return sorted(r_)
+
+    for p in PRODUCTOS:
+        if p["marca"] not in ("Castrol", "Repsol", "Shell", "Eni"):
+            continue
+        nombre_p = re.sub(r"\s+(?:\d+X)?\d+(?:[.,]\d+)?\s*(?:L|KG|K|GR|G|ML)\b.*$", "", p["desc"].replace("\xa0", " ").strip(), flags=re.I)
+        ap = mb_de(p["marca"], nombre_p)
+        if ap:
+            p["mb_aprob"] = ap
+            p.setdefault("normas_f", []).extend(("homologacion", f"MB {h_}") for h_ in dict.fromkeys(h_ for h_, _ in ap))
+    for fam in FAMILIAS:
+        ap = mb_de("AD Parts", f'{fam["producto"]} {fam["visc"]}')
+        if ap:
+            fam["mb_aprob"] = ap
+            ya = {clave(canon_lit(l)) for t, l in fam["normas"]}
+            fam["mb_nuevas"] = [h_ for h_ in dict.fromkeys(h_ for h_, _ in ap) if clave(canon_lit(f"MB {h_}")) not in ya]
+            fam["normas"].extend(("homologacion", f"MB {h_}") for h_ in fam["mb_nuevas"])
+            oficiales_k = {clave(canon_lit(f"MB {h_}")) for h_, _ in ap}
+            fam["mb_sin_aprob"] = sorted({l for t, l in fam["normas"] if re.match(r"(?i)MB\s*\d{3}\.\d", l) and clave(canon_lit(l)) not in oficiales_k})
+
     # ---------------- registro de normas
     menciones = defaultdict(list)  # clave -> [(literal, tipo)]
     for origen in list(PRODUCTOS) + FAMILIAS:
@@ -1167,6 +1216,10 @@ def main():
                     filas_t.append(f'| {col} | {" / ".join(sg["valores"])} | {estado} | {comp} |')
             if filas_t:
                 cu += ["", "| Fabricante | Valor | Estado | Comprobación con la ficha |", "|---|---|---|---|"] + filas_t
+        if p.get("mb_aprob"):
+            cu += ["", "## Aprobaciones oficiales de Mercedes-Benz", "",
+                   "*Fuente: lista oficial de operatingfluids.mercedes-benz.com (producto con este mismo nombre).*", ""]
+            cu += [f'- [[MB {h_}]] · «{nm_}»' for h_, nm_ in p["mb_aprob"]]
         if p.get("hom_curada"):
             d = p["hom_curada"]
             cu += ["", "## Homologaciones según el catálogo de Castrol", "",
@@ -1229,6 +1282,14 @@ def main():
         eqs = [e for e in EQUIV if fam in e["ad_fam"]]
         if eqs:
             cu += ["", "## Equivalencias con otras marcas", ""] + [f'- [[{e["pagina"]}]]' for e in eqs]
+        if fam.get("mb_aprob"):
+            cu += ["", "## Aprobaciones oficiales de Mercedes-Benz", "",
+                   "*Fuente: lista oficial de operatingfluids.mercedes-benz.com (producto con este mismo nombre).*", ""]
+            cu += [f'- [[MB {h_}]] · «{nm_}»' for h_, nm_ in fam["mb_aprob"]]
+            if fam.get("mb_nuevas"):
+                cu.append("- **Aprobadas por Mercedes-Benz y que el catálogo AD no recogía (se han añadido):** " + " · ".join(f"[[MB {h_}]]" for h_ in fam["mb_nuevas"]))
+            if fam.get("mb_sin_aprob"):
+                cu.append("- ⚠ **El catálogo AD cita estas normas MB que la lista oficial de Mercedes-Benz no recoge para este producto:** " + " · ".join(fam["mb_sin_aprob"]))
         cu += ["", "## Fuente", "", fuente(fam), ""]
         (WIKI / "familias_ad" / f'{fam["pagina"]}.md').write_text("\n".join(fm + cu), encoding="utf-8")
         for tipo, k in fam["normas_n"]:
@@ -1357,6 +1418,11 @@ def main():
             "Se unifican solas (espacios, guiones, mayúsculas) o por `normas_alias.json` (confirmadas por Yakoba).")
     seccion("Combinaciones 'A / B' separadas en dos normas", [f"`{a}` → " + ", ".join(f"`{x}`" for x in b) for a, b in sorted(set((a, tuple(b)) for a, b in COMBOS))],
             "Regla: «VW 504 00 / 507 00» pasa a «VW 504 00» y «VW 507 00». Revisar que ninguna sea un código indivisible.")
+    seccion("Familias AD que citan normas MB que la lista oficial de Mercedes-Benz no recoge para ese producto",
+            [f'[[{f["pagina"]}]]: ' + ", ".join(f["mb_sin_aprob"]) for f in FAMILIAS if f.get("mb_sin_aprob")],
+            "Se compara por nombre de producto con operatingfluids.mercedes-benz.com. Puede ser que el producto no figure en MB con ese nombre exacto; revisar.")
+    seccion("Familias AD con aprobaciones MB oficiales que el catálogo no recogía (añadidas)",
+            [f'[[{f["pagina"]}]]: ' + ", ".join(f"MB {h_}" for h_ in f["mb_nuevas"]) for f in FAMILIAS if f.get("mb_nuevas")])
     seccion("OEM compartido por productos distintos", [f"[[{'OEM ' + o}]]: " + ", ".join(f'[[{q["pagina"]}]]' for q in ps) for o, ps in oem_comp])
     dups = [f'{m} {r} (filas ' + ", ".join(str(p["fila"]) for p in POR_REF[(m, r)]) + ")" for (m, r), n in cuenta.items() if n > 1]
     seccion("Referencias repetidas dentro de una misma lista de precios", dups)
@@ -1564,7 +1630,7 @@ def main():
         ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     # normas por producto Castrol segun sus catalogos (las lee build_bridge.py)
     (RAIZ / "castrol_normas_wiki.json").write_text(json.dumps(
-        {q["ref"]: [[t, l] for t, l in q.get("normas_f", [])] for q in PRODUCTOS if q["marca"] == "Castrol" and q.get("normas_f")},
+        {q["ref"]: [[t, l] for t, l in q.get("normas_f", [])] for q in PRODUCTOS if q["marca"] in ("Castrol", "Repsol", "Shell", "Eni") and q.get("normas_f")},
         ensure_ascii=False, indent=0, sort_keys=True), encoding="utf-8")
     print(f"productos={len(PRODUCTOS)} familias={len(FAMILIAS)} equivalencias={len(EQUIV)} normas={len(NOM)} oem={len(oem_idx)}")
     for t in sorted(lint_eq):

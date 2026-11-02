@@ -74,6 +74,7 @@
 "MAN3775": "MAN 3775",
 "MASSEYFERGUSONM1141": "Massey Ferguson M1141",
 "MB22652": "MB 226.52",
+"MBAPPROVAL22971": "MB 229.71",
 "MERCON": "Mercon",
 "MITSUBISHISPIISPIII": "Mitsubishi SP-II/SP-III",
 "MTUTYPE31": "MTU Type 3.1",
@@ -164,7 +165,9 @@
 "brand": "Castrol",
 "ref": "EDGE 0W-40 MP",
 "sku": "162AA4",
-"specs": [],
+"specs": [
+"MB 229.52"
+],
 "viscosity": "0W40"
 },
 {
@@ -214,6 +217,7 @@
 "ACEA C3",
 "API SQ",
 "BMW LL-04",
+"MB 229.31",
 "MB 229.51",
 "MB 229.52"
 ],
@@ -279,6 +283,8 @@
 "API SN",
 "BMW LL-04",
 "FIAT 9.55535-S2",
+"MB 229.51",
+"MB 229.52",
 "PORSCHE C40",
 "VW 511 00"
 ],
@@ -618,6 +624,18 @@
 },
 {
 "altSkus": [
+"160B09"
+],
+"brand": "Castrol",
+"ref": "ON EV TransmissionFluidD1",
+"sku": "16269C",
+"specs": [
+"MB 237.11"
+],
+"viscosity": ""
+},
+{
+"altSkus": [
 "15FE6C"
 ],
 "brand": "Castrol",
@@ -684,6 +702,7 @@
 "ref": "Radicool Si-OAT Premix",
 "sku": "15EED6",
 "specs": [
+"G12++",
 "MB 326.6"
 ],
 "viscosity": ""
@@ -899,7 +918,8 @@
 "sku": "16096A",
 "specs": [
 "API GL-4",
-"MB 235.11"
+"MB 235.11",
+"MB 235.21"
 ],
 "viscosity": "75W90"
 },
@@ -913,6 +933,7 @@
 "specs": [
 "API GL-4",
 "MB 235.1",
+"MB 235.14",
 "ZF TE-ML 17A"
 ],
 "viscosity": ""
@@ -1836,9 +1857,24 @@
 "segment": "ligero",
 "tipo": "motor"
 },
+"MB 229.71": {
+"description": "Aceites de motor multigrado de servicio de bajas cenizas (Low SPAsh) (hoja MB 229.71 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 193 productos aprobados",
+"segment": "ligero",
+"tipo": "motor"
+},
 "MB 235.11": {
 "description": "Aceites de engranajes para caja de transferencia (hoja MB 235.11 de Mercedes-Benz); hoja transferida a Daimler Truck AG",
 "segment": "pesado",
+"tipo": "transmision"
+},
+"MB 235.14": {
+"description": "Aceites de engranajes para dirección y caja de cambios manual (hoja MB 235.14 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 7 productos aprobados",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MB 235.21": {
+"description": "Aceites de engranajes para caja de transferencia (hoja MB 235.21 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 5 productos aprobados",
+"segment": "ligero",
 "tipo": "transmision"
 },
 "MB 235.4": {
@@ -1853,6 +1889,16 @@
 },
 "MB 235.73": {
 "description": "Aceites de engranajes para caja de doble embrague (DCT) (hoja MB 235.73 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 2 productos aprobados",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MB 236.7": {
+"description": "Fluidos ATF para dirección y caja automática (hoja MB 236.7 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 9 productos aprobados",
+"segment": "ligero",
+"tipo": "transmision"
+},
+"MB 237.11": {
+"description": "Aceite de engranajes para accionamiento eléctrico (e-Drive) (hoja MB 237.11 de Mercedes-Benz); la lista oficial de Mercedes-Benz recoge 1 productos aprobados",
 "segment": "ligero",
 "tipo": "transmision"
 },
@@ -2727,6 +2773,7 @@
 "MB 229.5"
 ],
 "15F64F": [
+"MB 229.31",
 "MB 229.51"
 ],
 "15F6A5": [
@@ -2817,6 +2864,140 @@
 ],
 "1612B5": [
 "PSA B71 2290"
+],
+"550043345": [
+"MB 236.7"
+],
+"550051433": [
+"MB 226.51"
+],
+"RPP0008DBA": [
+"API SN PLUS",
+"OPEL OV401547"
+],
+"RPP0059JBA": [
+"MB 229.5"
+],
+"RPP0064MBA": [
+"MB 229.3"
+],
+"RPP1000IBA": [
+"ACEA E4",
+"CUMMINS CES 20086",
+"DAF Extended Drain",
+"DEUTZ DQC IV-18 LA",
+"MB 228.52"
+],
+"RPP1002MBA": [
+"ACEA E11",
+"ACEA E4",
+"ACEA E6",
+"ACEA E7",
+"API CK-4",
+"CUMMINS CES 20081",
+"CUMMINS CES 20086",
+"DAF Extended Drain",
+"DEUTZ DQC IV-18 LA",
+"JASO DH-2",
+"MACK EOS-4.5",
+"MAN M3271-1",
+"MAN M3477",
+"MAN M3775",
+"MB 228.31",
+"MB 228.51",
+"MB 228.52",
+"MTU Type 3.1",
+"RENAULT RLD-3",
+"SCANIA LOW ASH",
+"VOLVO VDS-4.5"
+],
+"RPP1004IBA": [
+"API CF",
+"DAF Extended Drain",
+"RENAULT RLD-2"
+],
+"RPP1040LBA": [
+"API CI-4",
+"API CI-4 Plus",
+"API CJ-4",
+"MTU Type 2.1"
+],
+"RPP1042MBA": [
+"API CI-4",
+"API SL",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"DEUTZ DQC III-10",
+"MB 228.3",
+"MTU Type 2"
+],
+"RPP1042QBA": [
+"ACEA E5",
+"API CH-4",
+"API CI-4",
+"API GL-4",
+"API SL",
+"CUMMINS CES 20076",
+"CUMMINS CES 20077",
+"CUMMINS CES 20078",
+"DEUTZ DQC III-18",
+"MACK EO-N",
+"MAN 3275-1",
+"MB 228.3",
+"MTU Type 2",
+"VOLVO VDS-3"
+],
+"RPP1163CBA": [
+"ALLISON C-3",
+"API CF",
+"API SF",
+"MAN 270",
+"MB 228.0"
+],
+"RPP1163DBA": [
+"ALLISON C-3",
+"API CF",
+"API SF",
+"MAN 270",
+"MB 228.0"
+],
+"RPP4002JBA": [
+"API MT-1",
+"ARVIN MERITOR 0-76-N",
+"MACK GO-J",
+"MIL-PRF-2105E",
+"SCANIA STO 1:0",
+"VOLVO 97312"
+],
+"RPP4005AFA": [
+"MB 235.0"
+],
+"RPP4006JBA": [
+"API GL-4",
+"ZF TE-ML 08"
+],
+"RPP4006KFA": [
+"API GL-4",
+"IVECO 18-1807 MGS2",
+"MB 235.1",
+"ZF TE-ML 17A"
+],
+"RPP4014LBA": [
+"MIL-L-2105-D"
+],
+"RPP4066ZBA": [
+"FORD Mercon V",
+"GM Dexron III",
+"MB 236.9",
+"VOITH H55.6336",
+"VOLVO 97341"
+],
+"RPP4067ZBA": [
+"ALLISON C-4",
+"FORD MERCON",
+"GM Dexron II D",
+"MB 236.9",
+"VOLVO 97341"
 ]
 }
 }
